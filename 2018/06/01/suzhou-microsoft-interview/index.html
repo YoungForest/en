@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>微软苏州面试 | YoungForest&#39;s blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="在@lxc师兄的内推下，我有幸可以前往 苏州微软，面试O365部门的暑期实习生。虽然最后失败了，但从这次失败的经历中，我学习到很多。总结在此，为未来的找实习和工作做准备。   面试环节一面 尾递归，斐波那契（不会） 合并2个列表 makefile 编译顺序确定 memcpy的实现方式和安全问题  用尾递归优化递归斐波那契数列斐波那契数列大家应该都很熟悉，高中数学课本上提到的经典递归数列。其数学定义">
+<meta property="og:type" content="article">
+<meta property="og:title" content="微软苏州面试">
+<meta property="og:url" content="https://youngforest.github.io/2018/06/01/suzhou-microsoft-interview/index.html">
+<meta property="og:site_name" content="YoungForest&#39;s blog">
+<meta property="og:description" content="在@lxc师兄的内推下，我有幸可以前往 苏州微软，面试O365部门的暑期实习生。虽然最后失败了，但从这次失败的经历中，我学习到很多。总结在此，为未来的找实习和工作做准备。   面试环节一面 尾递归，斐波那契（不会） 合并2个列表 makefile 编译顺序确定 memcpy的实现方式和安全问题  用尾递归优化递归斐波那契数列斐波那契数列大家应该都很熟悉，高中数学课本上提到的经典递归数列。其数学定义">
+<meta property="og:locale">
+<meta property="article:published_time" content="2018-06-01T14:54:08.000Z">
+<meta property="article:modified_time" content="2021-07-11T04:47:44.834Z">
+<meta property="article:author" content="杨森">
+<meta property="article:tag" content="intern">
+<meta property="article:tag" content="Microsoft">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="YoungForest&#39;s blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', '[object Object]', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">YoungForest&#39;s blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/%20%7C%7C%20fa%20fa-home">home</a>
+        
+          <a class="main-nav-link" href="/about/%20%7C%7C%20fa%20fa-user">about</a>
+        
+          <a class="main-nav-link" href="/tags/%20%7C%7C%20fa%20fa-tags">tags</a>
+        
+          <a class="main-nav-link" href="/categories/%20%7C%7C%20fa%20fa-th">categories</a>
+        
+          <a class="main-nav-link" href="/archives/%20%7C%7C%20fa%20fa-archive">archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://youngforest.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-suzhou-microsoft-interview" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/06/01/suzhou-microsoft-interview/" class="article-date">
+  <time datetime="2018-06-01T14:54:08.000Z" itemprop="datePublished">2018-06-01</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/interview/">interview</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      微软苏州面试
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在@lxc师兄的内推下，我有幸可以前往 苏州微软，面试O365部门的暑期实习生。虽然最后失败了，但从这次失败的经历中，我学习到很多。<br>总结在此，为未来的找实习和工作做准备。</p>
+<span id="more"></span>
+
+<h1 id="面试环节"><a href="#面试环节" class="headerlink" title="面试环节"></a>面试环节</h1><h2 id="一面"><a href="#一面" class="headerlink" title="一面"></a>一面</h2><ul>
+<li>尾递归，斐波那契（不会）</li>
+<li>合并2个列表</li>
+<li>makefile 编译顺序确定</li>
+<li>memcpy的实现方式和安全问题</li>
+</ul>
+<h3 id="用尾递归优化递归斐波那契数列"><a href="#用尾递归优化递归斐波那契数列" class="headerlink" title="用尾递归优化递归斐波那契数列"></a>用尾递归优化递归斐波那契数列</h3><p>斐波那契数列大家应该都很熟悉，高中数学课本上提到的经典递归数列。<br>其数学定义为：<br>$$<br>f_n = \begin{cases}<br>f_{n-1} + f_(n-2) &amp; \quad \text{if } n &gt; 2 \<br>1 &amp; \quad \text{if } n = 0, 1<br>\end{cases}<br>$$</p>
+<p>根据数学递推式，很容易地可以写出递归版的斐波那契数列：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fibonacci</span>(<span class="params">n</span>):</span></span><br><span class="line">    <span class="keyword">if</span> n == <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">    <span class="keyword">elif</span> n == <span class="number">1</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> fibonacci(n-<span class="number">1</span>) + fibonacci(n-<span class="number">2</span>)</span><br></pre></td></tr></table></figure>
+
+<p>根据函数调用的原理，每次需要递归调用2次本函数，当参数为n时，需要的栈帧的数目为O(2^n)。<br>可以利用尾递归来优化这个问题。<br>尾递归是<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Tail_call">尾调用</a>的一种递归调用形式。<br>我对尾递归的理解是<br>函数式编程中使用函数调用以实现循环的方式。<br>所以，首先给出内存占用为O(1)的斐波那契数列循环实现。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fibonacci</span>(<span class="params">n</span>):</span></span><br><span class="line">    <span class="keyword">if</span> n == <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">    f_n_sub_1 = <span class="number">1</span></span><br><span class="line">    f_n_sub_2 = <span class="number">0</span></span><br><span class="line">    i = n</span><br><span class="line">    <span class="keyword">while</span> i &gt; <span class="number">1</span>:</span><br><span class="line">        f_n_sub_1, f_n_sub_2 = f_n_sub_1 + f_n_sub_2, f_n_sub_1</span><br><span class="line">        i -= <span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> f_n_sub_1</span><br></pre></td></tr></table></figure>
+
+<p>从循环实现可以看出，整个循环实现需要2个变量(f_n_sub_1和f_n_sub_2)来记录中间的结果，<br>一个循环变量(i)以控制循环次数(即循环结束条件)。<br>将这些变量当作函数的参数即可得到尾递归版本的斐波那契数列实现。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fibonacci</span>(<span class="params">n</span>):</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">func</span>(<span class="params">n, ret1, ret2</span>):</span></span><br><span class="line">        <span class="keyword">if</span> n == <span class="number">0</span>:</span><br><span class="line">            <span class="keyword">return</span> ret1</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> func(n - <span class="number">1</span>, ret2, ret1 + ret2)</span><br><span class="line">    <span class="keyword">return</span> func(n, <span class="number">0</span>, <span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="memcpy的实现方式和安全性问题"><a href="#memcpy的实现方式和安全性问题" class="headerlink" title="memcpy的实现方式和安全性问题"></a>memcpy的实现方式和安全性问题</h3><p>也是一个字节一个字节的复制。不是我想当然的认为一整块一整块的复制，这样会更快。<br>回忆计算机组成原理的知识：<br>CPU和Memory之间由总线连接，一次（一个时钟周期）只能读取和写入一个字的数据。</p>
+<p>安全性：很不安全。<br>回忆操作系统的知识：进程的内存空间映射到物理内存。<br>直接一个一个字节从低到高地复制粘贴容易覆盖到其他指针指到的数据（破坏了其他指针的数据）甚至本身的数据。</p>
+<p>比如memcpy一个大小为200字节的指针(地址100)到地址200，会把自己的数据(200-300)的部分先覆盖掉，之后的copy就都是错的。（这是面试官给出的解释，但我后来发现，这点是不一定不成立的。因为之后我查了一些标准库中memcpy的实现，这种情况下可能会采用自后向前复制的方法防止覆盖要复制的数据。<br><a target="_blank" rel="noopener" href="https://github.com/gcc-mirror/gcc/blob/master/libgcc/memcpy.c">无保护措施的gcc</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/laoyang360/article/details/8020409">有保护措施</a><br>）</p>
+<h3 id="面试官指点"><a href="#面试官指点" class="headerlink" title="面试官指点"></a>面试官指点</h3><p>面试时在Notepad里写代码，在纸上写代码，和在白板上写，<br>容易程度或方便程度是：<br>白板 &gt; 纸 &gt; Notepad</p>
+<p>被告知面试题目后，首先要考虑清楚初始条件和具体要求，不清楚的一定要和面试官问清楚，不要上来就写。<br>否则后来发现歧义，再问时就晚了。</p>
+<h3 id="其他收获"><a href="#其他收获" class="headerlink" title="其他收获"></a>其他收获</h3><p>有时间一定要好好看看SICP，函数式编程的尾递归在其中就有讲。<br>面试官估计也读过。</p>
+<h2 id="二面"><a href="#二面" class="headerlink" title="二面"></a>二面</h2><ul>
+<li>求树的最深度</li>
+<li>最大和的链</li>
+<li>可以拐弯的最大和的链</li>
+<li>数组权重最大的重新排序（不会）</li>
+</ul>
+<h3 id="其他收获-1"><a href="#其他收获-1" class="headerlink" title="其他收获"></a>其他收获</h3><p>在面试时，ACM选手有天然的优势。<br>该面试官本科时，可能玩过ACM，因为他说“数组权重”那道题是他上学时自己出得。</p>
+<p>p.s. 面试官说他也毕业不久。</p>
+<h2 id="三面"><a href="#三面" class="headerlink" title="三面"></a>三面</h2><p>周二去苏州参加完面试后，周五出结果，约了第二周周二的视频面试。<br>说实话，视频面试前我还真有点紧张，而且由于学校出了点状况，上午才知道下午有视频面试。<br>仓促之前，也没有午睡，休息好。面试之前特别困。<br>好在真正到面试时，肾上腺素上升，不困了。</p>
+<p>三面的面试官也很nice。<br>听说我熟悉SQL，就出了一道SQL题目给我。</p>
+<p>类似教务管理系统。有3张表：学生（学号，姓名），课程表（课程ID，课程名），选课表（学号，课程ID，成绩）。<br>查询每个学生的数学成绩和语文成绩，结果为（姓名，数学成绩，语文成绩）。<br>刚开始假设每个学生都选了数学和语文，后来取消了这个假设（考察outer join）。</p>
+<h2 id="第二道题"><a href="#第二道题" class="headerlink" title="第二道题"></a>第二道题</h2><p>第二道题目考察<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/IEEE_754#Rounding_rules">IEEE的一种round实现</a>。</p>
+<p>首先，列出一些数字，让我观察规律。<br>在面试官的引导下，我猜测出来了：四舍六入五看下一位。<br>之后使用C语言实现这一ieee_round。</p>
+<h2 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h2><p>No Hire.</p>
+<blockquote>
+<p>很遗憾，Lead面试官最后给的是No Hire。他认为你编写代码能力不稳固。你的优点是思考能力很强，缺点是不善于展现和询问，不能从错误中获取新的解决办法，今后需要加强这方面。</p>
+<p>希望你研究生期间继续努力，欢迎再加入苏州微软。</p>
+</blockquote>
+<p>Lead面试官的眼光还是蛮准的，给出的建议的是一针见血的。我会继续努力，早日达到微软爸爸的要求的。</p>
+<p>除此之外，一开始说好的报销火车票最后也没给报，经济上还损失了1200￥。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://youngforest.github.io/2018/06/01/suzhou-microsoft-interview/" data-id="ckqz0rr1u00mshltk8v9p2prc" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Microsoft/" rel="tag">Microsoft</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/intern/" rel="tag">intern</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/07/03/recommender-systems-of-popular-apps/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          论推荐系统如何改造和奴役你的思维
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/05/08/ssh-login-remote-server-without-password/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">ssh免密登陆服务器</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+<!---
+
+-->
+
+
+    
+      <div class="duoshuo" id="comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="2018/06/01/suzhou-microsoft-interview/" data-title="微软苏州面试" data-url="https://youngforest.github.io/2018/06/01/suzhou-microsoft-interview/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:"youngforest"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+    <!-- 多说公共JS代码 end -->
+</div>
+
+    
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/KickStart/">KickStart</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Laboratory/">Laboratory</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/LeetCode/">LeetCode</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Life/">Life</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Paper/">Paper</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/">Programming</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tech/">Tech</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/dairy/">dairy</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/intern/">intern</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/interview/">interview</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/kaggle/">kaggle</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/tech/">tech</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E4%B9%A6%E8%AF%84/">书评</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%8A%98%E8%85%BE/">折腾</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B8%B8%E8%AE%B0/">游记</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Algorithm/" rel="tag">Algorithm</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Alibaba/" rel="tag">Alibaba</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ByteDance/" rel="tag">ByteDance</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/" rel="tag">C++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-11/" rel="tag">C++11</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Competitive-Programming/" rel="tag">Competitive Programming</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Database/" rel="tag">Database</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Django/" rel="tag">Django</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Europe/" rel="tag">Europe</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LeetCode/" rel="tag">LeetCode</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/" rel="tag">Linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/" rel="tag">Mac</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Microsoft/" rel="tag">Microsoft</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mihayo/" rel="tag">Mihayo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/New-Graduate/" rel="tag">New Graduate</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Owncloud/" rel="tag">Owncloud</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tencent/" rel="tag">Tencent</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Ubuntu/" rel="tag">Ubuntu</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WeRide/" rel="tag">WeRide</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows/" rel="tag">Windows</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/atom/" rel="tag">atom</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bank/" rel="tag">bank</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/benchmark/" rel="tag">benchmark</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/codeforces/" rel="tag">codeforces</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/contest/" rel="tag">contest</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gcc/" rel="tag">gcc</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hash/" rel="tag">hash</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/intern/" rel="tag">intern</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/interview/" rel="tag">interview</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/kuaishou/" rel="tag">kuaishou</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/life/" rel="tag">life</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/money/" rel="tag">money</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sensetime/" rel="tag">sensetime</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sublime/" rel="tag">sublime</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tech/" rel="tag">tech</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tex/" rel="tag">tex</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/travel/" rel="tag">travel</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/trvalling/" rel="tag">trvalling</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/unordered-map/" rel="tag">unordered_map</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/" rel="tag">vim</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vscode/" rel="tag">vscode</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8A%98%E8%85%BE/" rel="tag">折腾</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%97%B7%E8%A7%86/" rel="tag">旷视</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Algorithm/" style="font-size: 12.86px;">Algorithm</a> <a href="/tags/Alibaba/" style="font-size: 11.43px;">Alibaba</a> <a href="/tags/ByteDance/" style="font-size: 12.86px;">ByteDance</a> <a href="/tags/C/" style="font-size: 15.71px;">C++</a> <a href="/tags/C-11/" style="font-size: 10px;">C++11</a> <a href="/tags/Competitive-Programming/" style="font-size: 20px;">Competitive Programming</a> <a href="/tags/Database/" style="font-size: 10px;">Database</a> <a href="/tags/Django/" style="font-size: 10px;">Django</a> <a href="/tags/Europe/" style="font-size: 10px;">Europe</a> <a href="/tags/Hexo/" style="font-size: 12.86px;">Hexo</a> <a href="/tags/LeetCode/" style="font-size: 15.71px;">LeetCode</a> <a href="/tags/Linux/" style="font-size: 11.43px;">Linux</a> <a href="/tags/Mac/" style="font-size: 10px;">Mac</a> <a href="/tags/Microsoft/" style="font-size: 10px;">Microsoft</a> <a href="/tags/Mihayo/" style="font-size: 10px;">Mihayo</a> <a href="/tags/New-Graduate/" style="font-size: 10px;">New Graduate</a> <a href="/tags/Owncloud/" style="font-size: 10px;">Owncloud</a> <a href="/tags/Tencent/" style="font-size: 10px;">Tencent</a> <a href="/tags/Ubuntu/" style="font-size: 10px;">Ubuntu</a> <a href="/tags/WeRide/" style="font-size: 10px;">WeRide</a> <a href="/tags/Windows/" style="font-size: 10px;">Windows</a> <a href="/tags/atom/" style="font-size: 10px;">atom</a> <a href="/tags/bank/" style="font-size: 10px;">bank</a> <a href="/tags/benchmark/" style="font-size: 10px;">benchmark</a> <a href="/tags/codeforces/" style="font-size: 10px;">codeforces</a> <a href="/tags/contest/" style="font-size: 10px;">contest</a> <a href="/tags/gcc/" style="font-size: 10px;">gcc</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hash/" style="font-size: 11.43px;">hash</a> <a href="/tags/intern/" style="font-size: 18.57px;">intern</a> <a href="/tags/interview/" style="font-size: 10px;">interview</a> <a href="/tags/kuaishou/" style="font-size: 11.43px;">kuaishou</a> <a href="/tags/life/" style="font-size: 17.14px;">life</a> <a href="/tags/money/" style="font-size: 11.43px;">money</a> <a href="/tags/sensetime/" style="font-size: 10px;">sensetime</a> <a href="/tags/sublime/" style="font-size: 10px;">sublime</a> <a href="/tags/tech/" style="font-size: 15.71px;">tech</a> <a href="/tags/tex/" style="font-size: 10px;">tex</a> <a href="/tags/travel/" style="font-size: 14.29px;">travel</a> <a href="/tags/trvalling/" style="font-size: 12.86px;">trvalling</a> <a href="/tags/unordered-map/" style="font-size: 11.43px;">unordered_map</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a> <a href="/tags/vscode/" style="font-size: 10px;">vscode</a> <a href="/tags/%E6%8A%98%E8%85%BE/" style="font-size: 10px;">折腾</a> <a href="/tags/%E6%97%B7%E8%A7%86/" style="font-size: 10px;">旷视</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/06/">June 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">May 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/04/">April 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/02/">February 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/01/">January 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">November 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">October 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">September 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">June 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/">November 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">February 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">September 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/07/03/my-3-years-master/">my 3 years master</a>
+          </li>
+        
+          <li>
+            <a href="/2021/06/16/LeetCode-biweekly-contest-54/">LeetCode biweekly contest 54</a>
+          </li>
+        
+          <li>
+            <a href="/2021/06/13/LeetCode-weekly-contest-245/">LeetCode weekly contest 245</a>
+          </li>
+        
+          <li>
+            <a href="/2021/06/06/LeetCode-weekly-contest-244/">LeetCode weekly contest 244</a>
+          </li>
+        
+          <li>
+            <a href="/2021/05/30/LeetCode-weekly-contest-243/">LeetCode weekly contest 243</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2021 杨森<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/%20%7C%7C%20fa%20fa-home" class="mobile-nav-link">home</a>
+  
+    <a href="/about/%20%7C%7C%20fa%20fa-user" class="mobile-nav-link">about</a>
+  
+    <a href="/tags/%20%7C%7C%20fa%20fa-tags" class="mobile-nav-link">tags</a>
+  
+    <a href="/categories/%20%7C%7C%20fa%20fa-th" class="mobile-nav-link">categories</a>
+  
+    <a href="/archives/%20%7C%7C%20fa%20fa-archive" class="mobile-nav-link">archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+  </div>
+</body>
+</html>

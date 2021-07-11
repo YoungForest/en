@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>YoungForest&#39;s blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="佛系更新；生活、学习">
+<meta property="og:type" content="website">
+<meta property="og:title" content="YoungForest&#39;s blog">
+<meta property="og:url" content="https://youngforest.github.io/page/7/index.html">
+<meta property="og:site_name" content="YoungForest&#39;s blog">
+<meta property="og:description" content="佛系更新；生活、学习">
+<meta property="og:locale">
+<meta property="article:author" content="杨森">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="YoungForest&#39;s blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', '[object Object]', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">YoungForest&#39;s blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/%20%7C%7C%20fa%20fa-home">home</a>
+        
+          <a class="main-nav-link" href="/about/%20%7C%7C%20fa%20fa-user">about</a>
+        
+          <a class="main-nav-link" href="/tags/%20%7C%7C%20fa%20fa-tags">tags</a>
+        
+          <a class="main-nav-link" href="/categories/%20%7C%7C%20fa%20fa-th">categories</a>
+        
+          <a class="main-nav-link" href="/archives/%20%7C%7C%20fa%20fa-archive">archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://youngforest.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-LeetCode-biweekly-contest-27" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/05/31/LeetCode-biweekly-contest-27/" class="article-date">
+  <time datetime="2020-05-31T09:41:49.000Z" itemprop="datePublished">2020-05-31</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/LeetCode/">LeetCode</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/31/LeetCode-biweekly-contest-27/">LeetCode weekly contest 27</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Name</th>
+<th>Score</th>
+<th>Finish Time</th>
+<th>Q1 (3)</th>
+<th>Q2 (4)</th>
+<th>Q3 (5)</th>
+<th>Q4 (6)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>231 / 7926</td>
+<td>YoungForest</td>
+<td>18</td>
+<td>0:42:16</td>
+<td>0:04:51</td>
+<td>0:10:55</td>
+<td>0:22:31  1</td>
+<td>0:37:16</td>
+</tr>
+</tbody></table>
+<p>质量还可以的手速场。有些问题值得思考，只有发现本质，才能迅速解决。</p>
+<h2 id="1460-Make-Two-Arrays-Equal-by-Reversing-Sub-arrays"><a href="#1460-Make-Two-Arrays-Equal-by-Reversing-Sub-arrays" class="headerlink" title="1460. Make Two Arrays Equal by Reversing Sub-arrays"></a>1460. Make Two Arrays Equal by Reversing Sub-arrays</h2><p>由于对reverse操作的数目不限，我们可以采用这样的策略构造将2个array转成相同的array。用类似select sort的思想，每次reverse可以将一个位置排好序。所以问题转化为，2个数组排好序后是否相等。<br>C++中vector的<code>==</code>的作用正是如此。</p>
+<p>时间复杂度: O(N log N),<br>空间复杂度: O(1).</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">canBeEqual</span><span class="params">(vector&lt;<span class="keyword">int</span>&gt;&amp; target, vector&lt;<span class="keyword">int</span>&gt;&amp; arr)</span> </span>&#123;</span><br><span class="line">        <span class="built_in">sort</span>(target.<span class="built_in">begin</span>(), target.<span class="built_in">end</span>());</span><br><span class="line">        <span class="built_in">sort</span>(arr.<span class="built_in">begin</span>(), arr.<span class="built_in">end</span>());</span><br><span class="line">        <span class="keyword">return</span> target == arr;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="1461-Check-If-a-String-Contains-All-Binary-Codes-of-Size-K"><a href="#1461-Check-If-a-String-Contains-All-Binary-Codes-of-Size-K" class="headerlink" title="1461. Check If a String Contains All Binary Codes of Size K"></a>1461. Check If a String Contains All Binary Codes of Size K</h2><p>滑动窗口。窗口大小K，判断所有<code>0 - 2^K - 1</code>的二进制是否出现。</p>
+<p>时间复杂度: O(s.size()),<br>空间复杂度: O(1 &lt;&lt; K).</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">hasAllCodes</span><span class="params">(string s, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">        <span class="function">vector&lt;<span class="keyword">bool</span>&gt; <span class="title">seen</span><span class="params">(<span class="number">1</span> &lt;&lt; k, <span class="literal">false</span>)</span></span>;</span><br><span class="line">        <span class="keyword">int</span> current = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; k &amp;&amp; i &lt; s.<span class="built_in">size</span>(); ++i) &#123;</span><br><span class="line">            current = current * <span class="number">2</span> - <span class="string">&#x27;0&#x27;</span> + s[i];</span><br><span class="line">        &#125;</span><br><span class="line">        seen[current] = <span class="literal">true</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = k; i &lt; s.<span class="built_in">size</span>(); ++i) &#123;</span><br><span class="line">            current = (current - (s[i-k]-<span class="string">&#x27;0&#x27;</span>) * (<span class="number">1</span> &lt;&lt; (k<span class="number">-1</span>))) * <span class="number">2</span> - <span class="string">&#x27;0&#x27;</span> + s[i];</span><br><span class="line">            seen[current] = <span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">all_of</span>(seen.<span class="built_in">begin</span>(), seen.<span class="built_in">end</span>(), [](<span class="keyword">const</span> <span class="keyword">auto</span>&amp; a) -&gt; <span class="keyword">bool</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> a;</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+        
+          <p class="article-more-link">
+            <a href="/2020/05/31/LeetCode-biweekly-contest-27/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://youngforest.github.io/2020/05/31/LeetCode-biweekly-contest-27/" data-id="ckqz0rqy4007mhltk8nmi1t2e" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Competitive-Programming/" rel="tag">Competitive Programming</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!---
+
+-->
+
+
+  
+    <article id="post-LeetCode-weekly-contest-191" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/05/31/LeetCode-weekly-contest-191/" class="article-date">
+  <time datetime="2020-05-31T09:40:09.000Z" itemprop="datePublished">2020-05-31</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/LeetCode/">LeetCode</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/31/LeetCode-weekly-contest-191/">LeetCode weekly contest 191</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Name</th>
+<th>Score</th>
+<th>Finish Time</th>
+<th>Q1 (3)</th>
+<th>Q2 (4)</th>
+<th>Q3 (5)</th>
+<th>Q4 (7)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>765 / 13283</td>
+<td>YoungForest</td>
+<td>12</td>
+<td>0:27:19</td>
+<td>0:02:16</td>
+<td>0:12:53</td>
+<td>0:27:19</td>
+<td>null</td>
+</tr>
+</tbody></table>
+<p>本周最后一题着实比较难，涉及概率和组合数学等知识。恰好触及到我的知识盲区，所以没有做出来。对于数学好的同学应该会好很多。</p>
+<h2 id="1464-Maximum-Product-of-Two-Elements-in-an-Array"><a href="#1464-Maximum-Product-of-Two-Elements-in-an-Array" class="headerlink" title="1464. Maximum Product of Two Elements in an Array"></a>1464. Maximum Product of Two Elements in an Array</h2><p>签到题。由于<code>nums.size()</code>比较小，所以暴力即可。</p>
+<p>时间复杂度: O(N^2),<br>空间复杂度: O(1).</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line">    <span class="keyword">const</span> <span class="keyword">int</span> INF = <span class="number">0x3f3f3f3f</span>;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">maxProduct</span><span class="params">(vector&lt;<span class="keyword">int</span>&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> ans = -INF;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.<span class="built_in">size</span>(); ++i) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = i+<span class="number">1</span>; j &lt; nums.<span class="built_in">size</span>(); ++j) &#123;</span><br><span class="line">                ans = <span class="built_in">max</span>(ans, (nums[i] - <span class="number">1</span>) * (nums[j] - <span class="number">1</span>));</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="1465-Maximum-Area-of-a-Piece-of-Cake-After-Horizontal-and-Vertical-Cuts"><a href="#1465-Maximum-Area-of-a-Piece-of-Cake-After-Horizontal-and-Vertical-Cuts" class="headerlink" title="1465. Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts"></a>1465. Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts</h2><p>分别找出最大的horizontal和vertical间隔，相乘即可。需要注意，把边界也当作cut处理。<br>数据类型最好使用<code>long long</code>，因为会有<code>int32</code>的溢出问题。</p>
+<p>时间复杂度: O(horizontalCuts.size() * log + verticalCuts.size() * log),<br>空间复杂度: O(1).</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line">    <span class="keyword">using</span> ll = <span class="keyword">long</span> <span class="keyword">long</span>;</span><br><span class="line">    <span class="keyword">const</span> ll MOD = <span class="number">1e9</span> + <span class="number">7</span>;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">maxArea</span><span class="params">(<span class="keyword">int</span> h, <span class="keyword">int</span> w, vector&lt;<span class="keyword">int</span>&gt;&amp; horizontalCuts, vector&lt;<span class="keyword">int</span>&gt;&amp; verticalCuts)</span> </span>&#123;</span><br><span class="line">        horizontalCuts.<span class="built_in">insert</span>(horizontalCuts.<span class="built_in">begin</span>(), <span class="number">0</span>);</span><br><span class="line">        horizontalCuts.<span class="built_in">push_back</span>(h);</span><br><span class="line">        verticalCuts.<span class="built_in">insert</span>(verticalCuts.<span class="built_in">begin</span>(), <span class="number">0</span>);</span><br><span class="line">        verticalCuts.<span class="built_in">push_back</span>(w);</span><br><span class="line">        <span class="built_in">sort</span> (<span class="built_in">begin</span>(horizontalCuts), <span class="built_in">end</span>(horizontalCuts));</span><br><span class="line">        <span class="built_in">sort</span> (<span class="built_in">begin</span>(verticalCuts), <span class="built_in">end</span>(verticalCuts));</span><br><span class="line">        <span class="keyword">int</span> maxH = <span class="number">0</span>, maxW = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; horizontalCuts.<span class="built_in">size</span>(); ++i) &#123;</span><br><span class="line">            maxH = <span class="built_in">max</span>(maxH, horizontalCuts[i] - horizontalCuts[i<span class="number">-1</span>]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt; verticalCuts.<span class="built_in">size</span>(); ++j) &#123;</span><br><span class="line">            maxW = <span class="built_in">max</span>(maxW, verticalCuts[j] - verticalCuts[j<span class="number">-1</span>]);</span><br><span class="line">        &#125;</span><br><span class="line">        ll mxh = maxH;</span><br><span class="line">        ll mxw = maxW;</span><br><span class="line">        <span class="keyword">return</span> (mxh * mxw) % MOD;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+        
+          <p class="article-more-link">
+            <a href="/2020/05/31/LeetCode-weekly-contest-191/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://youngforest.github.io/2020/05/31/LeetCode-weekly-contest-191/" data-id="ckqz0rqzv00eohltk7b5aapk4" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Competitive-Programming/" rel="tag">Competitive Programming</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!---
+
+-->
+
+
+  
+    <article id="post-best-implement-to-use-pair-as-key-to-std-unordered-map-in-C" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/05/27/best-implement-to-use-pair-as-key-to-std-unordered-map-in-C/" class="article-date">
+  <time datetime="2020-05-27T04:29:34.000Z" itemprop="datePublished">2020-05-27</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Programming/">Programming</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/27/best-implement-to-use-pair-as-key-to-std-unordered-map-in-C/">Best implement to use pair as key to std::unordered_map in C++</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Reference: <a target="_blank" rel="noopener" href="https://www.mica.edu.vn/perso/Vu-Hai/EE3490/Ref/The%20C++Standard%20Library%20-%202nd%20Edition.pdf">C++ Standard Library: A tutorial and reference, Second version</a> Chapter 7.9.2: Creating and Controlling unordered Container</p>
+<p>All solutions I found in Google use <code>XOR</code> to generate hashcode of <code>pair</code>, which is totally bad. see <a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/5889238/why-is-xor-the-default-way-to-combine-hashes">why-is-xor-the-default-way-to-combine-hashes</a>. However, the book has given us the best solution, using <code>hash_combine</code>, which is taken from <code>Boost</code>. The solution is much better than XOR when I tested it in Online Judge(<a target="_blank" rel="noopener" href="https://atcoder.jp/contests/abc168/tasks/abc168_e">Atcoder</a>). I organized the code as a template as follow. You can copy and paste it as much as you can. And it is convenient to change it to fit any custom struct/class.</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;functional&gt;</span></span></span><br><span class="line"><span class="comment">// from boost (functional/hash):</span></span><br><span class="line"><span class="comment">// see http://www.boost.org/doc/libs/1_35_0/doc/html/hash/combine.html template</span></span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">hash_combine</span><span class="params">(std::<span class="keyword">size_t</span> &amp;seed, <span class="keyword">const</span> T &amp;val)</span> </span>&#123;</span><br><span class="line">    seed ^= std::hash&lt;T&gt;()(val) + <span class="number">0x9e3779b9</span> + (seed &lt;&lt; <span class="number">6</span>) + (seed &gt;&gt; <span class="number">2</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// auxiliary generic functions to create a hash value using a seed</span></span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">hash_val</span><span class="params">(std::<span class="keyword">size_t</span> &amp;seed, <span class="keyword">const</span> T &amp;val)</span> </span>&#123;</span><br><span class="line">    <span class="built_in">hash_combine</span>(seed, val);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Types&gt;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">hash_val</span><span class="params">(std::<span class="keyword">size_t</span> &amp;seed, <span class="keyword">const</span> T &amp;val, <span class="keyword">const</span> Types &amp;... args)</span> </span>&#123;</span><br><span class="line">    <span class="built_in">hash_combine</span>(seed, val);</span><br><span class="line">    <span class="built_in">hash_val</span>(seed, args...);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Types&gt;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> std::<span class="keyword">size_t</span> <span class="title">hash_val</span><span class="params">(<span class="keyword">const</span> Types &amp;... args)</span> </span>&#123;</span><br><span class="line">    std::<span class="keyword">size_t</span> seed = <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">hash_val</span>(seed, args...);</span><br><span class="line">    <span class="keyword">return</span> seed;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">pair_hash</span> &#123;</span></span><br><span class="line">    <span class="keyword">template</span> &lt;<span class="class"><span class="keyword">class</span> <span class="title">T1</span>, <span class="keyword">class</span> <span class="title">T2</span>&gt;</span></span><br><span class="line">    <span class="function">std::<span class="keyword">size_t</span> <span class="title">operator</span><span class="params">()</span><span class="params">(<span class="keyword">const</span> std::pair&lt;T1, T2&gt; &amp;p)</span> <span class="keyword">const</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">hash_val</span>(p.first, p.second);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">using</span> ll = <span class="keyword">long</span> <span class="keyword">long</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    unordered_map&lt;pair&lt;ll, ll&gt;, ll, pair_hash&gt; slopeCount;</span><br><span class="line">    unordered_set&lt;pair&lt;ll, ll&gt;, pair_hash&gt; seen;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>There is a hash implementation for <code>Tuple</code>. I updated the answer in<a target="_blank" rel="noopener" href="https://stackoverflow.com/a/62035742/6393787">StackOverflow</a>。Please go there if you need hash tuple.</p>
+
+        
+          <p class="article-more-link">
+            <a href="/2020/05/27/best-implement-to-use-pair-as-key-to-std-unordered-map-in-C/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://youngforest.github.io/2020/05/27/best-implement-to-use-pair-as-key-to-std-unordered-map-in-C/" data-id="ckqz0rr0t00ikhltka4r3d023" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hash/" rel="tag">hash</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unordered-map/" rel="tag">unordered_map</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!---
+
+-->
+
+
+  
+    <article id="post-unordered-map-hash-pair-c" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/05/27/unordered-map-hash-pair-c/" class="article-date">
+  <time datetime="2020-05-27T03:57:01.000Z" itemprop="datePublished">2020-05-27</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Programming/">Programming</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/27/unordered-map-hash-pair-c/">pair 作为 unordered_map unordered_set 的键值 C++</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>今天在做<a target="_blank" rel="noopener" href="https://atcoder.jp/contests/abc168/tasks/abc168_e">一道AtCoder的题目</a>，有个test case一直TLE。研究这个测试用例和其他用例的区别，苦思不得其解。后来把unordered_map换成map就过了。虽然在小数据集上hashmap和treemap区别不大，但数据量大的话，hashmap还是好些。所以最佳实践是，在不需要排序特性时，就用hashmap。<br>而且之前也从来没有遇到过hashmap比treemap效果差这么多的原因。最后花了一上午时间，才定位到是我的 pair 的hash函数实现太糟糕了。因为C++ STL中并没有pair的hash特化，所以如果想把pair当作键用在unordered_map中的话，就需要自己实现hash函数。我直接从网上抄了一个实现, 直接将 <code>std::hash&lt;T&gt;()(pair.first) ^ std::hash&lt;U&gt;()(pair.second)</code>。为了避免误人子弟，我就不贴代码了。正是抄的这个实现害苦我了，hash函数碰撞严重，导致效率低下。令人惊讶的是，这种错误的实现遍布全网，无论是中文的还是英文的。我从犄角旮旯（<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/20590656/error-for-hash-function-of-pair-of-ints">stackoverflow问题</a>的评论区中）里才找到问题所在和正确的实现。所以特意总结此博文，避免更多的同学踩坑。</p>
+<blockquote>
+<p>std::hash<t>()(x.first) ^ std::hash<t>()(x.second); - that’s a spectacularly collision-prone way to hash a pair, as every pair with two identical value hashes to 0, and every pair {a, b} hashes the same as {b, a}. For vaguely demanding use, much better to find a hash_combine function and employ that.</t></t></p>
+</blockquote>
+<p>惊讶的是，一看到这个评论，我就像中电一样。忽然记起，多年前，当我还是一只小白时，读《C++ 标准库（第二版）》时，作者就已经给出了绝佳的解决方案。我匆忙翻出珍藏的《C++ 标准库（第二版）》的unordered_map对应章节，“7.9.2 Creating and Controlling Unordered Container”，把任意结构hash化的代码搬出来，模版如下：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;functional&gt;</span></span></span><br><span class="line"><span class="comment">// from boost (functional/hash):</span></span><br><span class="line"><span class="comment">// see http://www.boost.org/doc/libs/1_35_0/doc/html/hash/combine.html template</span></span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">hash_combine</span><span class="params">(std::<span class="keyword">size_t</span> &amp;seed, <span class="keyword">const</span> T &amp;val)</span> </span>&#123;</span><br><span class="line">    seed ^= std::hash&lt;T&gt;()(val) + <span class="number">0x9e3779b9</span> + (seed &lt;&lt; <span class="number">6</span>) + (seed &gt;&gt; <span class="number">2</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// auxiliary generic functions to create a hash value using a seed</span></span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">hash_val</span><span class="params">(std::<span class="keyword">size_t</span> &amp;seed, <span class="keyword">const</span> T &amp;val)</span> </span>&#123;</span><br><span class="line">    <span class="built_in">hash_combine</span>(seed, val);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Types&gt;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">hash_val</span><span class="params">(std::<span class="keyword">size_t</span> &amp;seed, <span class="keyword">const</span> T &amp;val, <span class="keyword">const</span> Types &amp;... args)</span> </span>&#123;</span><br><span class="line">    <span class="built_in">hash_combine</span>(seed, val);</span><br><span class="line">    <span class="built_in">hash_val</span>(seed, args...);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Types&gt;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> std::<span class="keyword">size_t</span> <span class="title">hash_val</span><span class="params">(<span class="keyword">const</span> Types &amp;... args)</span> </span>&#123;</span><br><span class="line">    std::<span class="keyword">size_t</span> seed = <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">hash_val</span>(seed, args...);</span><br><span class="line">    <span class="keyword">return</span> seed;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">pair_hash</span> &#123;</span></span><br><span class="line">    <span class="keyword">template</span> &lt;<span class="class"><span class="keyword">class</span> <span class="title">T1</span>, <span class="keyword">class</span> <span class="title">T2</span>&gt;</span></span><br><span class="line">    <span class="function">std::<span class="keyword">size_t</span> <span class="title">operator</span><span class="params">()</span><span class="params">(<span class="keyword">const</span> std::pair&lt;T1, T2&gt; &amp;p)</span> <span class="keyword">const</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">hash_val</span>(p.first, p.second);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">using</span> ll = <span class="keyword">long</span> <span class="keyword">long</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    unordered_map&lt;pair&lt;ll, ll&gt;, ll, pair_hash&gt; slopeCount;</span><br><span class="line">    unordered_set&lt;pair&lt;ll, ll&gt;, pair_hash&gt; seen;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>也有Tuple版本的hash实现，我更新回答在了<a target="_blank" rel="noopener" href="https://stackoverflow.com/a/62035742/6393787">StackOverflow</a>。有需要的同学可以自取+点赞。</p>
+<p>修改了hash_pair的实现后，我如愿地AC了。一个hash函数的错误，我花了一上午时间解决。并由此从多年前的学习经验中获益。当时我苦读《C++标准库》时，并没有对这段代码特别注意。由此可见，多读书总是没坏处的。</p>
+<p>平时因为Google搜索很方便，遇到问题总是倾向于简单地 复制粘贴。通常情况下，问题就解决了。这样固然可以更快地完成任务，效果也不错。但这种不求甚解的思想对自己的成长是十分不利的。所以需要遇到问题深入钻研（当然是在时间足够的情况下），多读一些经典的书。很多问题和解决方案，经典的书本都已给出了。读书也更能启发自己思考和成长。本次的pair的 unordered_map实践就是最好的证明。</p>
+
+        
+          <p class="article-more-link">
+            <a href="/2020/05/27/unordered-map-hash-pair-c/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://youngforest.github.io/2020/05/27/unordered-map-hash-pair-c/" data-id="ckqz0rr1w00n1hltkd9ym3l9r" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hash/" rel="tag">hash</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unordered-map/" rel="tag">unordered_map</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!---
+
+-->
+
+
+  
+    <article id="post-LeetCode-weekly-contest-190" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/05/24/LeetCode-weekly-contest-190/" class="article-date">
+  <time datetime="2020-05-24T04:43:24.000Z" itemprop="datePublished">2020-05-24</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/LeetCode/">LeetCode</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/24/LeetCode-weekly-contest-190/">LeetCode weekly contest 190</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>昨晚老爸帮我掏耳朵，一不小心掏出了血。今天一大早就去地区医院检查，还好并无大碍，只损伤了外耳道，休息一周，自然痊愈就好了。只要不感染，就没问题。开了些阿姆西林吃了。<br>所以鸽了周赛，赛后补题。</p>
+<h2 id="1455-Check-If-a-Word-Occurs-As-a-Prefix-of-Any-Word-in-a-Sentence"><a href="#1455-Check-If-a-Word-Occurs-As-a-Prefix-of-Any-Word-in-a-Sentence" class="headerlink" title="1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence"></a>1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence</h2><p>C++没有自带的切割字符串的方法，不过可以用自己的模版。通过stringstream实现分割，O(N)的复杂度.</p>
+<p>时间复杂度: O(N),<br>空间复杂度: O(N).</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line">    <span class="function">vector&lt;string&gt; <span class="title">splitSentence</span><span class="params">(<span class="keyword">const</span> string&amp; text)</span> </span>&#123;</span><br><span class="line">        string tmp;</span><br><span class="line">        vector&lt;string&gt; stk;</span><br><span class="line">        <span class="function">stringstream <span class="title">ss</span><span class="params">(text)</span></span>;</span><br><span class="line">        <span class="keyword">while</span>(<span class="built_in">getline</span>(ss,tmp,<span class="string">&#x27; &#x27;</span>)) &#123;</span><br><span class="line">            stk.<span class="built_in">push_back</span>(tmp);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> stk;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">isPrefixOfWord</span><span class="params">(string sentence, string searchWord)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">auto</span> words = <span class="built_in">splitSentence</span>(sentence);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; words.<span class="built_in">size</span>(); ++i) &#123;</span><br><span class="line">            <span class="keyword">if</span> (words[i].<span class="built_in">find</span>(searchWord) == <span class="number">0</span>) <span class="keyword">return</span> i + <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="1456-Maximum-Number-of-Vowels-in-a-Substring-of-Given-Length"><a href="#1456-Maximum-Number-of-Vowels-in-a-Substring-of-Given-Length" class="headerlink" title="1456. Maximum Number of Vowels in a Substring of Given Length"></a>1456. Maximum Number of Vowels in a Substring of Given Length</h2><p>滑动窗口。窗口大小为k，统计窗口内的vowels。</p>
+<p>时间复杂度: O(N),<br>空间复杂度: O(1).</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">maxVowels</span><span class="params">(string s, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line">        unordered_set&lt;<span class="keyword">int</span>&gt; vowels = &#123;</span><br><span class="line">            <span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;e&#x27;</span>, <span class="string">&#x27;i&#x27;</span>, <span class="string">&#x27;o&#x27;</span>, <span class="string">&#x27;u&#x27;</span></span><br><span class="line">        &#125;;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; k; ++i) &#123;</span><br><span class="line">            <span class="keyword">if</span> (vowels.<span class="built_in">find</span>(s[i]) != vowels.<span class="built_in">end</span>()) &#123;</span><br><span class="line">                ++count;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> ans = count;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = k; i &lt; s.<span class="built_in">size</span>(); ++i) &#123;</span><br><span class="line">            <span class="keyword">if</span> (vowels.<span class="built_in">find</span>(s[i]) != vowels.<span class="built_in">end</span>()) &#123;</span><br><span class="line">                ++count;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (vowels.<span class="built_in">find</span>(s[i-k]) != vowels.<span class="built_in">end</span>()) &#123;</span><br><span class="line">                --count;</span><br><span class="line">            &#125;</span><br><span class="line">            ans = <span class="built_in">max</span>(ans, count);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="1457-Pseudo-Palindromic-Paths-in-a-Binary-Tree"><a href="#1457-Pseudo-Palindromic-Paths-in-a-Binary-Tree" class="headerlink" title="1457. Pseudo-Palindromic Paths in a Binary Tree"></a>1457. Pseudo-Palindromic Paths in a Binary Tree</h2>
+        
+          <p class="article-more-link">
+            <a href="/2020/05/24/LeetCode-weekly-contest-190/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://youngforest.github.io/2020/05/24/LeetCode-weekly-contest-190/" data-id="ckqz0rqzu00elhltkcie7gcu7" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Competitive-Programming/" rel="tag">Competitive Programming</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!---
+
+-->
+
+
+  
+    <article id="post-kick-start-2020-round-C" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/05/18/kick-start-2020-round-C/" class="article-date">
+  <time datetime="2020-05-18T02:55:44.000Z" itemprop="datePublished">2020-05-18</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/KickStart/">KickStart</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/18/kick-start-2020-round-C/">kick start 2020 round C</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <table>
+<thead>
+<tr>
+<th>ID</th>
+<th>score</th>
+<th>rank</th>
+<th>Bike Tour</th>
+<th>Bus Routes</th>
+<th>Robot Path Coding</th>
+<th>Wandering Robot</th>
+<th>Time</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>YoungForest</td>
+<td>74</td>
+<td>524</td>
+<td>5 + 7</td>
+<td>10 + 13</td>
+<td>11 + 16</td>
+<td>14 + 0</td>
+<td>1:35:18</td>
+</tr>
+</tbody></table>
+<p>上个月因为Round B结果还不错，收到了Google CN HR的Congraduation邮件。本月再接再厉，为了进入Google的梦想而努力。</p>
+<h2 id="A-Countdown"><a href="#A-Countdown" class="headerlink" title="A. Countdown"></a>A. Countdown</h2><p>One pass. 寻找countdown的模式。由于开始数字一定为K，所以countdown的过程中如果失败了的话，可以直接从失败的位置继续寻找。</p>
+<p>时间复杂度: O(N),<br>空间复杂度: O(N).</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> T;</span><br><span class="line">    cin &gt;&gt; T;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> iCase = <span class="number">1</span>; iCase &lt;= T; ++iCase) &#123;</span><br><span class="line">        <span class="keyword">int</span> N, K;</span><br><span class="line">        cin &gt;&gt; N &gt;&gt; K;</span><br><span class="line">        <span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">mountains</span><span class="params">(N)</span></span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; N; ++i) &#123;</span><br><span class="line">            cin &gt;&gt; mountains[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> ans = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; N; ) &#123;</span><br><span class="line">            <span class="keyword">if</span> (mountains[i] == K) &#123;</span><br><span class="line">                <span class="keyword">int</span> need = K - <span class="number">1</span>;</span><br><span class="line">                <span class="keyword">int</span> j = <span class="number">1</span>;</span><br><span class="line">                <span class="keyword">while</span> (i + j &lt; N &amp;&amp; need &gt;= <span class="number">1</span> &amp;&amp; mountains[i+j] == need) &#123;</span><br><span class="line">                    ++j;</span><br><span class="line">                    --need;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">if</span> (need == <span class="number">0</span>) ++ans;</span><br><span class="line">                i = i + j;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                ++i;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;Case #&quot;</span> &lt;&lt; iCase &lt;&lt; <span class="string">&quot;: &quot;</span> &lt;&lt; ans &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="B-Stable-Wall"><a href="#B-Stable-Wall" class="headerlink" title="B. Stable Wall"></a>B. Stable Wall</h2><p>题目本身比较难懂。但实质就是一个拓扑排序的问题，下面的必须先放。<br>这里需要注意一个corner case：只有一行的情况。<br>因为我第一版的代码，更新<code>seen</code>是在判断上下层关系时更新的。如果只有一行的话，就会忽略第一行的字母。<br>把<code>seen</code>单独拿出来更新就可以了。</p>
+<p>时间复杂度: O(R * C * 26),<br>空间复杂度: O(R * C + 26).</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> T;</span><br><span class="line">    cin &gt;&gt; T;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> iCase = <span class="number">1</span>; iCase &lt;= T; ++iCase) &#123;</span><br><span class="line">        <span class="keyword">int</span> R, C;</span><br><span class="line">        cin &gt;&gt; R &gt;&gt; C;</span><br><span class="line">        <span class="function">vector&lt;string&gt; <span class="title">rows</span><span class="params">(R)</span></span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; R; ++i) &#123;</span><br><span class="line">            cin &gt;&gt; rows[i];</span><br><span class="line">        &#125;</span><br><span class="line">        string ans;</span><br><span class="line">        <span class="comment">// 拓扑排序</span></span><br><span class="line">        unordered_map&lt;<span class="keyword">char</span>, unordered_set&lt;<span class="keyword">char</span>&gt;&gt; out;</span><br><span class="line">        unordered_map&lt;<span class="keyword">char</span>, unordered_set&lt;<span class="keyword">char</span>&gt;&gt; in;</span><br><span class="line">        unordered_set&lt;<span class="keyword">char</span>&gt; seen;</span><br><span class="line">        queue&lt;<span class="keyword">char</span>&gt; zeroIn;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; R; ++i) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; C; ++j) &#123;</span><br><span class="line">                seen.<span class="built_in">insert</span>(rows[i][j]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i + <span class="number">1</span> &lt; R; ++i) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; C; ++j) &#123;</span><br><span class="line">                <span class="keyword">char</span> down = rows[i + <span class="number">1</span>][j];</span><br><span class="line">                <span class="keyword">char</span> up = rows[i][j];</span><br><span class="line">                <span class="keyword">if</span> (down == up)</span><br><span class="line">                    <span class="keyword">continue</span>;</span><br><span class="line">                out[down].<span class="built_in">insert</span>(up);</span><br><span class="line">                in[up].<span class="built_in">insert</span>(down);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">char</span> c : seen) &#123;</span><br><span class="line">            <span class="keyword">if</span> (in[c].<span class="built_in">empty</span>()) &#123;</span><br><span class="line">                zeroIn.<span class="built_in">push</span>(c);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span> (!zeroIn.<span class="built_in">empty</span>()) &#123;</span><br><span class="line">            <span class="keyword">char</span> base = zeroIn.<span class="built_in">front</span>();</span><br><span class="line">            zeroIn.<span class="built_in">pop</span>();</span><br><span class="line">            ans.<span class="built_in">push_back</span>(base);</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">char</span> up : out[base]) &#123;</span><br><span class="line">                in[up].<span class="built_in">erase</span>(base);</span><br><span class="line">                <span class="keyword">if</span> (in[up].<span class="built_in">empty</span>()) &#123;</span><br><span class="line">                    zeroIn.<span class="built_in">push</span>(up);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;Case #&quot;</span> &lt;&lt; iCase &lt;&lt; <span class="string">&quot;: &quot;</span></span><br><span class="line">             &lt;&lt; (ans.<span class="built_in">size</span>() == seen.<span class="built_in">size</span>() ? ans : <span class="string">&quot;-1&quot;</span>) &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        
+          <p class="article-more-link">
+            <a href="/2020/05/18/kick-start-2020-round-C/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://youngforest.github.io/2020/05/18/kick-start-2020-round-C/" data-id="ckqz0rr1c00kohltk23z60ldh" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Competitive-Programming/" rel="tag">Competitive Programming</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!---
+
+-->
+
+
+  
+    <article id="post-vscode-include-bits-stdc-h" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/05/18/vscode-include-bits-stdc-h/" class="article-date">
+  <time datetime="2020-05-18T02:41:29.000Z" itemprop="datePublished">2020-05-18</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Programming/">Programming</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/18/vscode-include-bits-stdc-h/">vscode include 万能头文件 bits/stdc++.h</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>最近经常打kickstart需要include万能头文件<code>bits/stdc++.h</code>，然而，我喜爱的编辑器vs code总是不能正确地找到该头文件，会有红色波浪线表示错误。作为程序员的我完全不能忍受，所以尝试解决该问题。在网络上搜了很多解决方案，大多数并不能直接地解决我的问题。所以，我总结自己的解决方案于此，方便各位取用。</p>
+<p>编程环境:<br>g++ 9.1.0, Mac 10.14.2, vs code 1.45.1</p>
+<p>总的思路是:</p>
+<ol>
+<li>寻找gcc编译器头文件的路径,</li>
+<li>更改VS Code设置，让其用上面的路径可以找到<code>bits/stdc++.h</code></li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gcc-9 -v -E -x c++ -</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/vscode-include-bits-stdc-h/gcc-include-path.png" alt="gcc include path"></p>
+<p>图中所示，就是编译器默认找的路径顺序。将这些路径全部加到vscode的includePath里。</p>
+<p><img src="/images/vscode-include-bits-stdc-h/vscode-include-path.png" alt="vscode-include-path"></p>
+<p><img src="/images/vscode-include-bits-stdc-h/vscode-settings.png" alt="vscode-settings"></p>
+<p>Done!</p>
+        
+          <p class="article-more-link">
+            <a href="/2020/05/18/vscode-include-bits-stdc-h/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://youngforest.github.io/2020/05/18/vscode-include-bits-stdc-h/" data-id="ckqz0rr1x00n4hltk3qys5g60" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/gcc/" rel="tag">gcc</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vscode/" rel="tag">vscode</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!---
+
+-->
+
+
+  
+    <article id="post-LeetCode-weekly-contest-189" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/05/17/LeetCode-weekly-contest-189/" class="article-date">
+  <time datetime="2020-05-17T10:47:50.000Z" itemprop="datePublished">2020-05-17</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/LeetCode/">LeetCode</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/17/LeetCode-weekly-contest-189/">LeetCode weekly contest 189</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Name</th>
+<th>Score</th>
+<th>Finish Time</th>
+<th>Q1 (3)</th>
+<th>Q2 (4)</th>
+<th>Q3 (5)</th>
+<th>Q4 (7)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>484 / 13036</td>
+<td>YoungForest</td>
+<td>19</td>
+<td>1:27:45</td>
+<td>0:11:20</td>
+<td>0:19:20  1</td>
+<td>0:08:48</td>
+<td>1:22:45</td>
+</tr>
+</tbody></table>
+<p>本周的最后一题是一个经典的计算几何问题，并不好写。不过通过率还是很高的，可能是test case比较弱的原因。</p>
+<p>在残酷群的排名降到了32名，跌幅达100%。之前感觉自己变强了错觉，是由于3周前的186周赛取得了113的好成绩，所以按照群排名算法，之后3周的排名都比较高。最好的一次成绩过去后，排名就恢复了本来的水平。30左右。并不是自己变强了，而是运气好而已。而且186正好用的python，python确实对手速场有优势。</p>
+<h2 id="1450-Number-of-Students-Doing-Homework-at-a-Given-Time"><a href="#1450-Number-of-Students-Doing-Homework-at-a-Given-Time" class="headerlink" title="1450. Number of Students Doing Homework at a Given Time"></a>1450. Number of Students Doing Homework at a Given Time</h2><p>签到题，One Pass.</p>
+<p>时间复杂度: O(N),<br>空间复杂度: O(1).</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">busyStudent</span><span class="params">(vector&lt;<span class="keyword">int</span>&gt;&amp; startTime, vector&lt;<span class="keyword">int</span>&gt;&amp; endTime, <span class="keyword">int</span> queryTime)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> ans = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; startTime.<span class="built_in">size</span>(); ++i) &#123;</span><br><span class="line">            <span class="keyword">if</span> (startTime[i] &lt;= queryTime &amp;&amp; queryTime &lt;= endTime[i]) ++ans;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="1451-Rearrange-Words-in-a-Sentence"><a href="#1451-Rearrange-Words-in-a-Sentence" class="headerlink" title="1451. Rearrange Words in a Sentence"></a>1451. Rearrange Words in a Sentence</h2><p>利用C++ STL提供的排序函数。</p>
+<p>时间复杂度: O(N log N),<br>空间复杂度: O(N).</p>
+        
+          <p class="article-more-link">
+            <a href="/2020/05/17/LeetCode-weekly-contest-189/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://youngforest.github.io/2020/05/17/LeetCode-weekly-contest-189/" data-id="ckqz0rqzt00ehhltkem4cfuut" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Competitive-Programming/" rel="tag">Competitive Programming</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!---
+
+-->
+
+
+  
+    <article id="post-LeetCode-biweekly-contest-26" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/05/17/LeetCode-biweekly-contest-26/" class="article-date">
+  <time datetime="2020-05-17T02:15:47.000Z" itemprop="datePublished">2020-05-17</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/LeetCode/">LeetCode</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/17/LeetCode-biweekly-contest-26/">LeetCode biweekly contest 26</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Name</th>
+<th>Score</th>
+<th>Finish Time</th>
+<th>Q1 (3)</th>
+<th>Q2 (4)</th>
+<th>Q3 (5)</th>
+<th>Q4 (7)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>115 / 7795</td>
+<td>YoungForest</td>
+<td>19</td>
+<td>0:33:49</td>
+<td>0:03:55</td>
+<td>0:08:25</td>
+<td>0:11:57</td>
+<td>0:28:49  1</td>
+</tr>
+</tbody></table>
+<p>上上周是五一假期，去河北正定和，因疫情原因，3个月没有见面的女朋友约会。所以周六晚上就时间不太合适，鸽了一场双周赛。之后还是会尽量参加的。最近比赛越来越顺手了，无论是每次的排名，还是rating，或是残酷群的排名。比之前都有所上升。尤其要感谢残酷群的每日一题和不定时的讲座，让我对DP和很多Hard的题目有了解决的信心。在此，再次安利一下<a target="_blank" rel="noopener" href="https://wisdompeak.github.io/lc-score-board/">残酷刷题群</a>.</p>
+<h2 id="1446-Consecutive-Characters"><a href="#1446-Consecutive-Characters" class="headerlink" title="1446. Consecutive Characters"></a>1446. Consecutive Characters</h2><p>滑动窗口，维持整个窗口的字母相等。</p>
+<p>时间复杂度: O(N),<br>空间复杂度: O(1).</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">maxPower</span><span class="params">(string s)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">const</span> <span class="keyword">int</span> n = s.<span class="built_in">size</span>();</span><br><span class="line">        <span class="keyword">int</span> l = <span class="number">0</span>, r = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> ans = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span> (; r &lt; s.<span class="built_in">size</span>(); ++r) &#123;</span><br><span class="line">            <span class="keyword">if</span> (s[r] == s[l]) <span class="keyword">continue</span>;</span><br><span class="line">            <span class="keyword">else</span> &#123;</span><br><span class="line">                ans = <span class="built_in">max</span>(ans, r - l);</span><br><span class="line">                l = r;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        ans = <span class="built_in">max</span>(ans, n - l);</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="1447-Simplified-Fractions"><a href="#1447-Simplified-Fractions" class="headerlink" title="1447. Simplified Fractions"></a>1447. Simplified Fractions</h2><p>枚举所有的分母和分子，并判断是否是最简形式。幸运的是，C++17已经内置提供<code>gcd</code>函数。</p>
+<p>时间复杂度: O(n^2),<br>空间复杂度: O(n).</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">vector&lt;string&gt; <span class="title">simplifiedFractions</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        vector&lt;string&gt; ans;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> down = <span class="number">2</span>; down &lt;= n; ++down) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> up = <span class="number">1</span>; up &lt; down; ++up) &#123;</span><br><span class="line">                <span class="keyword">if</span> (<span class="built_in">gcd</span>(up, down) == <span class="number">1</span>) &#123;</span><br><span class="line">                    ans.<span class="built_in">push_back</span>(<span class="built_in">to_string</span>(up) + <span class="string">&quot;/&quot;</span> + <span class="built_in">to_string</span>(down));</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+        
+          <p class="article-more-link">
+            <a href="/2020/05/17/LeetCode-biweekly-contest-26/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://youngforest.github.io/2020/05/17/LeetCode-biweekly-contest-26/" data-id="ckqz0rqy4007khltkerj3151o" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Competitive-Programming/" rel="tag">Competitive Programming</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!---
+
+-->
+
+
+  
+    <article id="post-LeetCode-weekly-contest-188" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/05/10/LeetCode-weekly-contest-188/" class="article-date">
+  <time datetime="2020-05-10T10:25:30.000Z" itemprop="datePublished">2020-05-10</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/LeetCode/">LeetCode</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/10/LeetCode-weekly-contest-188/">LeetCode weekly contest 188</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Name</th>
+<th>Score</th>
+<th>Finish Time</th>
+<th>Q1 (3)</th>
+<th>Q2 (4)</th>
+<th>Q3 (5)</th>
+<th>Q4 (7)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>445 / 12715</td>
+<td>YoungForest</td>
+<td>19</td>
+<td>1:14:29</td>
+<td>0:07:04</td>
+<td>0:17:33</td>
+<td>0:56:49</td>
+<td>1:14:29</td>
+</tr>
+</tbody></table>
+<p>Rating 稳定在2200+2周了，虽然本周的rating还没有更新，但根据排名应该是会继续升的。争取早日到达2300+的分数线。最近刷题遇到了瓶颈，很多hard的题目还是不会做，也没有总结出自己刷题的模版和类别。我发现很多大佬之所以很强，是因为看到题目描述，可以很快地发现该题目属于具体的哪类，迅速和之前做过的题目建立联系，才能又快又bug free的AC。</p>
+<h2 id="1441-Build-an-Array-With-Stack-Operations"><a href="#1441-Build-an-Array-With-Stack-Operations" class="headerlink" title="1441. Build an Array With Stack Operations"></a>1441. Build an Array With Stack Operations</h2><p>One pass. 2个下标分别指向target的位置和n中的位置。</p>
+<p>时间复杂度: O(max(N, target.size())),<br>空间复杂度: O(N).</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">vector&lt;string&gt; <span class="title">buildArray</span><span class="params">(vector&lt;<span class="keyword">int</span>&gt;&amp; target, <span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> i = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">int</span> index = <span class="number">0</span>;</span><br><span class="line">        vector&lt;string&gt; ans;</span><br><span class="line">        <span class="keyword">for</span> (; i &lt;= n &amp;&amp; index &lt; target.<span class="built_in">size</span>(); ++i) &#123;</span><br><span class="line">            <span class="keyword">if</span> (target[index] == i) &#123;</span><br><span class="line">                ans.<span class="built_in">push_back</span>(<span class="string">&quot;Push&quot;</span>);</span><br><span class="line">                ++index;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                ans.<span class="built_in">push_back</span>(<span class="string">&quot;Push&quot;</span>);</span><br><span class="line">                ans.<span class="built_in">push_back</span>(<span class="string">&quot;Pop&quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="1442-Count-Triplets-That-Can-Form-Two-Arrays-of-Equal-XOR"><a href="#1442-Count-Triplets-That-Can-Form-Two-Arrays-of-Equal-XOR" class="headerlink" title="1442. Count Triplets That Can Form Two Arrays of Equal XOR"></a>1442. Count Triplets That Can Form Two Arrays of Equal XOR</h2><p>本题需要利用 异或 的一个性质。<code>a ^ a = 0</code>, <code>a ^ b = b ^ a</code>, <code>(a ^ b) ^ c = a ^ (b ^ c)</code>. 即 自反律，交换律，结合律。<br>所以可以根据类似 presum 的操作在O(1)的时间里算出整个区间的异或值。<br>然后枚举 所有三元组，找到符合条件的。</p>
+<p>时间复杂度: O(N ^ 3),<br>空间复杂度: O(N).</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">countTriplets</span><span class="params">(vector&lt;<span class="keyword">int</span>&gt;&amp; arr)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// Time: O(n ^ 3)</span></span><br><span class="line">        <span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">prexor</span><span class="params">(arr.size() + <span class="number">1</span>)</span></span>;</span><br><span class="line">        prexor[<span class="number">0</span>] = <span class="number">0</span>;</span><br><span class="line">        <span class="comment">// prexor[i]: arr[0] ^ ... ^ arr[i-1]</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr.<span class="built_in">size</span>(); ++i) &#123;</span><br><span class="line">            prexor[i+<span class="number">1</span>] = prexor[i] ^ arr[i]; </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// [i, j)</span></span><br><span class="line">        <span class="keyword">auto</span> xorquick = [&amp;](<span class="keyword">int</span> i, <span class="keyword">int</span> j) -&gt; <span class="keyword">int</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> prexor[j] ^ prexor[i];</span><br><span class="line">        &#125;;</span><br><span class="line">        <span class="keyword">int</span> ans = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr.<span class="built_in">size</span>(); ++i) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = i + <span class="number">1</span>; j &lt; arr.<span class="built_in">size</span>(); ++j) &#123;</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> k = j; k &lt; arr.<span class="built_in">size</span>(); ++k) &#123;</span><br><span class="line">                    <span class="keyword">if</span> (<span class="built_in">xorquick</span>(i, j) == <span class="built_in">xorquick</span>(j, k + <span class="number">1</span>)) &#123;</span><br><span class="line">                        ++ans;</span><br><span class="line">                        <span class="comment">// cout &lt;&lt; &quot;(&quot; &lt;&lt; i &lt;a&lt; &quot;,&quot; &lt;&lt; j &lt;&lt; &quot;,&quot; &lt;&lt; k &lt;&lt; &quot;)&quot; &lt;&lt; endl;</span></span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+        
+          <p class="article-more-link">
+            <a href="/2020/05/10/LeetCode-weekly-contest-188/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://youngforest.github.io/2020/05/10/LeetCode-weekly-contest-188/" data-id="ckqz0rqzs00eehltk3wvq3ran" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Competitive-Programming/" rel="tag">Competitive Programming</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!---
+
+-->
+
+
+  
+
+
+  <nav id="page-nav">
+    <a class="extend prev" rel="prev" href="/page/6/">&amp;laquo; __(&#39;prev&#39;)</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><span class="page-number current">7</span><a class="page-number" href="/page/8/">8</a><a class="page-number" href="/page/9/">9</a><span class="space">&hellip;</span><a class="page-number" href="/page/22/">22</a><a class="extend next" rel="next" href="/page/8/">__(&#39;next&#39;) &amp;raquo;</a>
+  </nav>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/KickStart/">KickStart</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Laboratory/">Laboratory</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/LeetCode/">LeetCode</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Life/">Life</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Paper/">Paper</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/">Programming</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tech/">Tech</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/dairy/">dairy</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/intern/">intern</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/interview/">interview</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/kaggle/">kaggle</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/tech/">tech</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E4%B9%A6%E8%AF%84/">书评</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%8A%98%E8%85%BE/">折腾</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B8%B8%E8%AE%B0/">游记</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Algorithm/" rel="tag">Algorithm</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Alibaba/" rel="tag">Alibaba</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ByteDance/" rel="tag">ByteDance</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/" rel="tag">C++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-11/" rel="tag">C++11</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Competitive-Programming/" rel="tag">Competitive Programming</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Database/" rel="tag">Database</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Django/" rel="tag">Django</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Europe/" rel="tag">Europe</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LeetCode/" rel="tag">LeetCode</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/" rel="tag">Linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/" rel="tag">Mac</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Microsoft/" rel="tag">Microsoft</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mihayo/" rel="tag">Mihayo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/New-Graduate/" rel="tag">New Graduate</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Owncloud/" rel="tag">Owncloud</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tencent/" rel="tag">Tencent</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Ubuntu/" rel="tag">Ubuntu</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WeRide/" rel="tag">WeRide</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows/" rel="tag">Windows</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/atom/" rel="tag">atom</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bank/" rel="tag">bank</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/benchmark/" rel="tag">benchmark</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/codeforces/" rel="tag">codeforces</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/contest/" rel="tag">contest</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gcc/" rel="tag">gcc</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hash/" rel="tag">hash</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/intern/" rel="tag">intern</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/interview/" rel="tag">interview</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/kuaishou/" rel="tag">kuaishou</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/life/" rel="tag">life</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/money/" rel="tag">money</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sensetime/" rel="tag">sensetime</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sublime/" rel="tag">sublime</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tech/" rel="tag">tech</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tex/" rel="tag">tex</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/travel/" rel="tag">travel</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/trvalling/" rel="tag">trvalling</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/unordered-map/" rel="tag">unordered_map</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/" rel="tag">vim</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vscode/" rel="tag">vscode</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8A%98%E8%85%BE/" rel="tag">折腾</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%97%B7%E8%A7%86/" rel="tag">旷视</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Algorithm/" style="font-size: 12.86px;">Algorithm</a> <a href="/tags/Alibaba/" style="font-size: 11.43px;">Alibaba</a> <a href="/tags/ByteDance/" style="font-size: 12.86px;">ByteDance</a> <a href="/tags/C/" style="font-size: 15.71px;">C++</a> <a href="/tags/C-11/" style="font-size: 10px;">C++11</a> <a href="/tags/Competitive-Programming/" style="font-size: 20px;">Competitive Programming</a> <a href="/tags/Database/" style="font-size: 10px;">Database</a> <a href="/tags/Django/" style="font-size: 10px;">Django</a> <a href="/tags/Europe/" style="font-size: 10px;">Europe</a> <a href="/tags/Hexo/" style="font-size: 12.86px;">Hexo</a> <a href="/tags/LeetCode/" style="font-size: 15.71px;">LeetCode</a> <a href="/tags/Linux/" style="font-size: 11.43px;">Linux</a> <a href="/tags/Mac/" style="font-size: 10px;">Mac</a> <a href="/tags/Microsoft/" style="font-size: 10px;">Microsoft</a> <a href="/tags/Mihayo/" style="font-size: 10px;">Mihayo</a> <a href="/tags/New-Graduate/" style="font-size: 10px;">New Graduate</a> <a href="/tags/Owncloud/" style="font-size: 10px;">Owncloud</a> <a href="/tags/Tencent/" style="font-size: 10px;">Tencent</a> <a href="/tags/Ubuntu/" style="font-size: 10px;">Ubuntu</a> <a href="/tags/WeRide/" style="font-size: 10px;">WeRide</a> <a href="/tags/Windows/" style="font-size: 10px;">Windows</a> <a href="/tags/atom/" style="font-size: 10px;">atom</a> <a href="/tags/bank/" style="font-size: 10px;">bank</a> <a href="/tags/benchmark/" style="font-size: 10px;">benchmark</a> <a href="/tags/codeforces/" style="font-size: 10px;">codeforces</a> <a href="/tags/contest/" style="font-size: 10px;">contest</a> <a href="/tags/gcc/" style="font-size: 10px;">gcc</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hash/" style="font-size: 11.43px;">hash</a> <a href="/tags/intern/" style="font-size: 18.57px;">intern</a> <a href="/tags/interview/" style="font-size: 10px;">interview</a> <a href="/tags/kuaishou/" style="font-size: 11.43px;">kuaishou</a> <a href="/tags/life/" style="font-size: 17.14px;">life</a> <a href="/tags/money/" style="font-size: 11.43px;">money</a> <a href="/tags/sensetime/" style="font-size: 10px;">sensetime</a> <a href="/tags/sublime/" style="font-size: 10px;">sublime</a> <a href="/tags/tech/" style="font-size: 15.71px;">tech</a> <a href="/tags/tex/" style="font-size: 10px;">tex</a> <a href="/tags/travel/" style="font-size: 14.29px;">travel</a> <a href="/tags/trvalling/" style="font-size: 12.86px;">trvalling</a> <a href="/tags/unordered-map/" style="font-size: 11.43px;">unordered_map</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a> <a href="/tags/vscode/" style="font-size: 10px;">vscode</a> <a href="/tags/%E6%8A%98%E8%85%BE/" style="font-size: 10px;">折腾</a> <a href="/tags/%E6%97%B7%E8%A7%86/" style="font-size: 10px;">旷视</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/06/">June 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">May 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/04/">April 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/02/">February 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/01/">January 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">November 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">October 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">September 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">June 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/">November 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">February 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">September 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/07/03/my-3-years-master/">my 3 years master</a>
+          </li>
+        
+          <li>
+            <a href="/2021/06/16/LeetCode-biweekly-contest-54/">LeetCode biweekly contest 54</a>
+          </li>
+        
+          <li>
+            <a href="/2021/06/13/LeetCode-weekly-contest-245/">LeetCode weekly contest 245</a>
+          </li>
+        
+          <li>
+            <a href="/2021/06/06/LeetCode-weekly-contest-244/">LeetCode weekly contest 244</a>
+          </li>
+        
+          <li>
+            <a href="/2021/05/30/LeetCode-weekly-contest-243/">LeetCode weekly contest 243</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2021 杨森<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/%20%7C%7C%20fa%20fa-home" class="mobile-nav-link">home</a>
+  
+    <a href="/about/%20%7C%7C%20fa%20fa-user" class="mobile-nav-link">about</a>
+  
+    <a href="/tags/%20%7C%7C%20fa%20fa-tags" class="mobile-nav-link">tags</a>
+  
+    <a href="/categories/%20%7C%7C%20fa%20fa-th" class="mobile-nav-link">categories</a>
+  
+    <a href="/archives/%20%7C%7C%20fa%20fa-archive" class="mobile-nav-link">archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+  </div>
+</body>
+</html>

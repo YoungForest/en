@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>YoungForest&#39;s blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="佛系更新；生活、学习">
+<meta property="og:type" content="website">
+<meta property="og:title" content="YoungForest&#39;s blog">
+<meta property="og:url" content="https://youngforest.github.io/page/11/index.html">
+<meta property="og:site_name" content="YoungForest&#39;s blog">
+<meta property="og:description" content="佛系更新；生活、学习">
+<meta property="og:locale">
+<meta property="article:author" content="杨森">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="YoungForest&#39;s blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', '[object Object]', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">YoungForest&#39;s blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/%20%7C%7C%20fa%20fa-home">home</a>
+        
+          <a class="main-nav-link" href="/about/%20%7C%7C%20fa%20fa-user">about</a>
+        
+          <a class="main-nav-link" href="/tags/%20%7C%7C%20fa%20fa-tags">tags</a>
+        
+          <a class="main-nav-link" href="/categories/%20%7C%7C%20fa%20fa-th">categories</a>
+        
+          <a class="main-nav-link" href="/archives/%20%7C%7C%20fa%20fa-archive">archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://youngforest.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-find-all-unique-pairs-of-maximum-and-second-maximum-elements-over-all-sub-arrays-in-onlogn" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/12/14/find-all-unique-pairs-of-maximum-and-second-maximum-elements-over-all-sub-arrays-in-onlogn/" class="article-date">
+  <time datetime="2019-12-14T14:07:31.000Z" itemprop="datePublished">2019-12-14</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Programming/">Programming</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/12/14/find-all-unique-pairs-of-maximum-and-second-maximum-elements-over-all-sub-arrays-in-onlogn/">Find all unique pairs of maximum and second maximum elements 子数组的最大值和次大值对</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>问题的根源是有个同学问了个lucky number的问题<a target="_blank" rel="noopener" href="https://codeforces.com/problemset/problem/280/B">Codeforces 280B</a>, <a target="_blank" rel="noopener" href="https://codeforces.com/problemset/problem/281/D">Codeforces 281D</a>也是同样的问题。</p>
+<p><a target="_blank" rel="noopener" href="https://www.geeksforgeeks.org/find-all-unique-pairs-of-maximum-and-second-maximum-elements-over-all-sub-arrays-in-onlogn/">Find all unique pairs of maximum and second maximum elements over all sub-arrays in O(NlogN)</a></p>
+<p>幸运数的定义为：数组中子数组的最大值和次大值的XOR值。寻找所有幸运数中的最大的。</p>
+<p>Brute force 的解法是枚举所有的子数组，时间复杂度为O(N ^ 2).<br>有没有更优的方法呢？<br>今天要讨论的就是这个问题。</p>
+<h2 id="通用的解法，快速寻找-最大次大值对-算法"><a href="#通用的解法，快速寻找-最大次大值对-算法" class="headerlink" title="通用的解法，快速寻找 最大次大值对 算法"></a>通用的解法，快速寻找 最大次大值对 算法</h2><p>寻找子数组中最大值和次大值其实是有快速算法的:<br><a target="_blank" rel="noopener" href="https://www.geeksforgeeks.org/find-all-unique-pairs-of-maximum-and-second-maximum-elements-over-all-sub-arrays-in-onlogn/">Find all unique pairs of maximum and second maximum elements over all sub-arrays in O(NlogN)</a></p>
+<p>基于这个的观察：数组中的每个数，如果想要成为次大值，就只能和向前的第一个比他大的数 或 向后的第一个比他大的数组成。<br>我们可以维护一个 单调递减栈，加入新数时，维持单调递增需要弹出所有小于它的数，这时新数就是被弹出来的数后面的第一个比他大的数；栈顶中最大的数 就是 新数 向前的第一个比他大的数。</p>
+<p>时间复杂度: O(N),<br>空间复杂度: O(N).</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stack&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">using</span> ll = <span class="keyword">long</span> <span class="keyword">long</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">solve</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    ll N;</span><br><span class="line">    cin &gt;&gt; N;</span><br><span class="line">    <span class="function">vector&lt;ll&gt; <span class="title">nums</span><span class="params">(N)</span></span>;</span><br><span class="line">    <span class="keyword">for</span> (ll i = <span class="number">0</span>; i &lt; N; ++i) &#123;</span><br><span class="line">        cin &gt;&gt; nums[i];</span><br><span class="line">    &#125;</span><br><span class="line">    stack&lt;ll&gt; st;</span><br><span class="line">    st.<span class="built_in">push</span>(nums[<span class="number">0</span>]);</span><br><span class="line">    ll ans = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (ll i = <span class="number">1</span>; i &lt; N; ++i) &#123;</span><br><span class="line">        <span class="keyword">while</span> (!st.<span class="built_in">empty</span>() &amp;&amp; nums[i] &gt; st.<span class="built_in">top</span>()) &#123;</span><br><span class="line">            ans = <span class="built_in">max</span>(ans, nums[i] ^ st.<span class="built_in">top</span>());</span><br><span class="line">            st.<span class="built_in">pop</span>();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (!st.<span class="built_in">empty</span>()) &#123;</span><br><span class="line">            ans = <span class="built_in">max</span>(ans, nums[i] ^ st.<span class="built_in">top</span>());</span><br><span class="line">        &#125;</span><br><span class="line">        st.<span class="built_in">push</span>(nums[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    ll ans = <span class="built_in">solve</span>();</span><br><span class="line">    cout &lt;&lt; ans &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="我独立思考出的解法"><a href="#我独立思考出的解法" class="headerlink" title="我独立思考出的解法"></a>我独立思考出的解法</h2>
+        
+          <p class="article-more-link">
+            <a href="/2019/12/14/find-all-unique-pairs-of-maximum-and-second-maximum-elements-over-all-sub-arrays-in-onlogn/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://youngforest.github.io/2019/12/14/find-all-unique-pairs-of-maximum-and-second-maximum-elements-over-all-sub-arrays-in-onlogn/" data-id="ckqz0rr0x00izhltk9mi59xo4" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Algorithm/" rel="tag">Algorithm</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!---
+
+-->
+
+
+  
+    <article id="post-LeetCode-biweekly-contest-15" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/12/14/LeetCode-biweekly-contest-15/" class="article-date">
+  <time datetime="2019-12-14T08:12:29.000Z" itemprop="datePublished">2019-12-14</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/LeetCode/">LeetCode</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/12/14/LeetCode-biweekly-contest-15/">LeetCode biweekly contest 14</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>这周没有出去玩，恰好遇到双周赛。久违地参加了一场，确实难得。<br>本次双周赛都是常规题目，不难。我提前50min全部一次AC, 典型的手速场。</p>
+<table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Name</th>
+<th>Score</th>
+<th>Finish Time</th>
+<th>Q1 (2)</th>
+<th>Q2 (4)</th>
+<th>Q3 (5)</th>
+<th>Q4 (7)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>119 / 2503</td>
+<td>YoungForest</td>
+<td>18</td>
+<td>0:39:28</td>
+<td>0:02:18</td>
+<td>0:08:49</td>
+<td>0:21:07</td>
+<td>0:39:28</td>
+</tr>
+</tbody></table>
+<p>比赛结束之前的排名是92，参与人数为1900，赛后发现名次掉了。我猜测并验证是，赛后的排名把中国区的人也算进来了。增加的人数和第一名的变化完全符合我的猜测。到leetcode-cn上看了下，那里的排名是分为中国区和全球区的。看来以后比赛时要更加油了，有许多不知道的人在中国区打同样的比赛。</p>
+<h2 id="1287-Element-Appearing-More-Than-25-In-Sorted-Array"><a href="#1287-Element-Appearing-More-Than-25-In-Sorted-Array" class="headerlink" title="1287. Element Appearing More Than 25% In Sorted Array"></a>1287. Element Appearing More Than 25% In Sorted Array</h2><p>One pass统计所有数的出现次数。<br>时间复杂度: O(N),<br>空间复杂度: O(N).</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">findSpecialInteger</span><span class="params">(vector&lt;<span class="keyword">int</span>&gt;&amp; arr)</span> </span>&#123;</span><br><span class="line">        unordered_map&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt; count;</span><br><span class="line">        <span class="keyword">const</span> <span class="keyword">int</span> target = arr.<span class="built_in">size</span>() / <span class="number">4</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i : arr) &#123;</span><br><span class="line">            ++count[i];</span><br><span class="line">            <span class="keyword">if</span> (count[i] &gt; target)</span><br><span class="line">                <span class="keyword">return</span> i;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>这个解法的缺陷在于没有利用题目中给的限制条件，数组是已经排好序的。但本题是签到题，数据规模10^4，此解法方便快速实现。</p>
+<p>更优的解法，利用二分搜索，每次可以递增的更快些。<br>时间复杂度: O(N log N),<br>空间复杂度: O(1).</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">findSpecialInteger</span><span class="params">(vector&lt;<span class="keyword">int</span>&gt;&amp; arr)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">auto</span> it = arr.<span class="built_in">begin</span>();</span><br><span class="line">        <span class="keyword">while</span> (it != arr.<span class="built_in">end</span>()) &#123;</span><br><span class="line">            <span class="keyword">auto</span> it2 = <span class="built_in">upper_bound</span>(it, arr.<span class="built_in">end</span>(), *it);</span><br><span class="line">            <span class="keyword">auto</span> diff = it2 - it;</span><br><span class="line">            <span class="keyword">if</span> (diff &gt; arr.<span class="built_in">size</span>() / <span class="number">4</span>)</span><br><span class="line">                <span class="keyword">return</span> *it;</span><br><span class="line">            it = it2;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="1288-Remove-Covered-Intervals"><a href="#1288-Remove-Covered-Intervals" class="headerlink" title="1288. Remove Covered Intervals"></a>1288. Remove Covered Intervals</h2>
+        
+          <p class="article-more-link">
+            <a href="/2019/12/14/LeetCode-biweekly-contest-15/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://youngforest.github.io/2019/12/14/LeetCode-biweekly-contest-15/" data-id="ckqz0rqxx006yhltkaoul9zi9" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Competitive-Programming/" rel="tag">Competitive Programming</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!---
+
+-->
+
+
+  
+    <article id="post-Europe-bank-accounts" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/12/07/Europe-bank-accounts/" class="article-date">
+  <time datetime="2019-12-07T04:22:12.000Z" itemprop="datePublished">2019-12-07</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Life/">Life</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/12/07/Europe-bank-accounts/">留学在欧洲，聊聊关于银行和钱的事儿</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>本学期有幸来比利时交换一学期，在“钱”上遇到很多困难，在同学的帮助下逐步克服。在此感谢帮助过我的一系列好友，并将自己的经验分享给大家，让更多的人收益。</p>
+<p>在全球化的今天，来到欧洲，如何方便的花钱，省钱，是每个留学生关心的事情。在欧洲花钱基本可以分为2类：现金、刷卡。2者是相辅相成的关系，并不像在国内，一部手机走天下。<br>我的经历是：在国内换了700欧的现金带过来，还带了一张招商银行的Visa全币种信用卡。因为办签证需要经济证明，我还提前转了3000多欧给学校的账户，学校之后每个月给我的账户返还666欧，作为生活费。来了之后，我分别办了 ING的Green Account，网上银行 Revult, Curve, Bunq, Monese; 配置了Google Pay 和 PayPal。并经过到欧洲到处自由行，结合不同的花钱方式，达到最便利和最省钱。</p>
+<p>接下来，我分别介绍各种方式的办理方法和优缺点。</p>
+<h1 id="现金-和-刷卡"><a href="#现金-和-刷卡" class="headerlink" title="现金 和 刷卡"></a>现金 和 刷卡</h1><p>在刚来比利时的时候，从国内带足够的现金是必要的，心里也有底。我带了700欧，事实证明，在有信用卡夹持的情况下，这些绰绰有余。比利时作为欧洲最发达的地区之一，刷卡几乎可以覆盖大多数消费场景。甚至一些大额的消费，如交房租，必须刷卡。幸好我信用卡的额度足够，在第一次交房租时，我还需要替同行的2个同学帮付。这时候就体现出国带信用卡的好处了。</p>
+<h2 id="现金"><a href="#现金" class="headerlink" title="现金"></a>现金</h2><p><img src="/images/money/5euro.jpg" alt="5Euro 纸币"></p>
+<p>在欧洲，身上带少量现金是必要的。尤其是50分的硬币，因为这里很多公共卫生间都是收费的，大多数是50分, 这可是救命钱。我建议多带些5欧的钱，面额越大，用处越小，越不方便。在某些消费场合，比如集市、地摊，也只能用现金。在欧洲某些相对欠发达地区，如希腊、意大利，不能刷卡的场合也比较多。西欧和北欧相对好很多，丹麦甚至上厕所都能刷卡。</p>
+<h2 id="信用卡"><a href="#信用卡" class="headerlink" title="信用卡"></a>信用卡</h2><p><img src="/images/money/zhaohang-visa-credit.jpg" alt="招商银行全币种Visa信用卡"></p>
+        
+          <p class="article-more-link">
+            <a href="/2019/12/07/Europe-bank-accounts/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://youngforest.github.io/2019/12/07/Europe-bank-accounts/" data-id="ckqz0rqxj005jhltk4f94hrps" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Europe/" rel="tag">Europe</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/bank/" rel="tag">bank</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/money/" rel="tag">money</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!---
+
+-->
+
+
+  
+    <article id="post-kick-start-2019-round-H" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/11/25/kick-start-2019-round-H/" class="article-date">
+  <time datetime="2019-11-25T14:11:22.000Z" itemprop="datePublished">2019-11-25</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/KickStart/">KickStart</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/11/25/kick-start-2019-round-H/">kick start 2019 round H</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>由于欧洲这边夏令时的原因，处于UTC +1.00，所以本次比赛我是特意早上6点起来打的。打完后休息了一个小时，又和小伙伴去根特玩了一天。晚上回来的时候，才想起来Machine Learning的assignment 2当天截止，又疯狂地赶起了Deadline。事实证明，没有认真学习还是搞不定作业的。马马虎虎交上去了，总比不交好些。空白的题目，大方地告诉助教我就是不会。</p>
+<p>本次比赛是Kick start 2019的最后一个轮次，我还是很想参加的。今年我共参加了6轮kick start。虽然A轮就拿到了面试的邀请，但仍然不可马虎。各次的排名如下所示:</p>
+<table>
+<thead>
+<tr>
+<th>轮次</th>
+<th>A</th>
+<th>D</th>
+<th>E</th>
+<th>F</th>
+<th>G</th>
+<th>H</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Rank</td>
+<td>600</td>
+<td>765</td>
+<td>1566</td>
+<td>1341</td>
+<td>462</td>
+<td>330</td>
+</tr>
+<tr>
+<td>Score</td>
+<td>35</td>
+<td>27</td>
+<td>22</td>
+<td>11</td>
+<td>42</td>
+<td>41</td>
+</tr>
+</tbody></table>
+<p>除了F轮，我当时在巴黎玩，趁晚上在青旅的功夫瞎做的外。其他轮次还是可以说是全力以赴的。<br>总的名次是先下降后上升，并不能体现实力的变化，更多的是心态的改变。因为D轮次比较重要，当时也有同学一起竞争，不忍心与他比赛时交流。E轮次时，当时是在字节跳动的夏令营，和一个妹子一起做的。本身还是很想打好的，但由于并查集没有实现find的折叠，导致 超时。这也是之前没有注意到的盲点。其他3次结果相对好的轮次反而是没有包袱，更放松的时候。</p>
+<p>最近还意外地收获了Google北京 A day with Google的邀请。无奈我不再北京，只能拒绝了。另外，我还通过邮件向Google反映了Google所有招聘相关的Form中My University中都没有 Beihang University的选项（我猜测这可能是因为北航在美国商务部的黑名单上的原因）。Google很快解决了，我航以后再也不是野鸡大学了。</p>
+<p>本次做出签到题和第3题的小测试集1，算是正常发挥吧。</p>
+<h2 id="A-H-index"><a href="#A-H-index" class="headerlink" title="A. H-index"></a>A. H-index</h2><p>第一次做误解了题意，以为是求最后的H-index就可以了。简单地写了个二分查找用判定问题求最大值的解法。<br>后来才发现是需要求每次论文的结果，之后又因编写了几个bug的问题影响了耗时。</p>
+<p>Intuition：<br>随着论文的发表，H-index是单调递增的。利用这一特性，每次发表论文后，尝试去增加H-index.<br>这里我利用里C++ STL set中有序的特点和基于节点的container再插入新节点后iterator的不变性，高效地实现了尝试增加H-index的操作。</p>
+<p>时间复杂度: O(N log N),<br>空间复杂度: O(N).</p>
+        
+          <p class="article-more-link">
+            <a href="/2019/11/25/kick-start-2019-round-H/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://youngforest.github.io/2019/11/25/kick-start-2019-round-H/" data-id="ckqz0rr1a00kehltkgt1xboco" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Competitive-Programming/" rel="tag">Competitive Programming</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!---
+
+-->
+
+
+  
+    <article id="post-mac-write-ntfs-solution" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/11/11/mac-write-ntfs-solution/" class="article-date">
+  <time datetime="2019-11-11T02:10:44.000Z" itemprop="datePublished">2019-11-11</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Tech/">Tech</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/11/11/mac-write-ntfs-solution/">Mac OS写入ntfs解决方案</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>使用Mac系统确实存在一些不方便的地方，比如 写入 NTFS的硬盘或U盘。默认情况下，MAC 只支持读取NTFS。不过只要你有勇气折腾，解决方案还是很简单的。</p>
+<h2 id="最推荐方法"><a href="#最推荐方法" class="headerlink" title="最推荐方法"></a>最推荐方法</h2><p><a target="_blank" rel="noopener" href="https://mounty.app/">Mounty for NTFS</a></p>
+<p>优点：免费，小巧<br>缺点：不hack，其实就是命令行的包装。有些同学可能更喜欢命令行的方式。</p>
+<h2 id="最hack的方法"><a href="#最hack的方法" class="headerlink" title="最hack的方法"></a>最hack的方法</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo umount <span class="string">&quot;/Volumes/Seagate Expansion Drive&quot;</span></span><br><span class="line">sudo mount -t ntfs -o rw,auto,nobrowse /dev/disk3s1 ~/ntfs-volume</span><br></pre></td></tr></table></figure>
+
+<p>reference: <a target="_blank" rel="noopener" href="https://mounty.app/">mounty</a></p>
+<p>经过一段时间的斗争，我还是采用了安装第三方应用的推荐方法。因为命令行确实经常忘记或是输错，每次都要重新Google，与我使用Mac系统想要的优雅方便不符。</p>
+
+        
+          <p class="article-more-link">
+            <a href="/2019/11/11/mac-write-ntfs-solution/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://youngforest.github.io/2019/11/11/mac-write-ntfs-solution/" data-id="ckqz0rr1g00l4hltkfi5w90hj" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mac/" rel="tag">Mac</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!---
+
+-->
+
+
+  
+    <article id="post-LeetCode-weekly-contest-159" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/10/21/LeetCode-weekly-contest-159/" class="article-date">
+  <time datetime="2019-10-21T01:29:11.000Z" itemprop="datePublished">2019-10-21</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/LeetCode/">LeetCode</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/21/LeetCode-weekly-contest-159/">LeetCode weekly contest 159</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="1232-Check-If-It-Is-a-Straight-Line"><a href="#1232-Check-If-It-Is-a-Straight-Line" class="headerlink" title="1232. Check If It Is a Straight Line"></a>1232. Check If It Is a Straight Line</h2><p>依次检查3个点是否共线。</p>
+<p>时间复杂度: O(N),<br>空间复杂度: O(1).</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">right</span><span class="params">(<span class="keyword">const</span> vector&lt;<span class="keyword">int</span>&gt;&amp; p1, <span class="keyword">const</span> vector&lt;<span class="keyword">int</span>&gt;&amp; p2, <span class="keyword">const</span> vector&lt;<span class="keyword">int</span>&gt;&amp; p3)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> (p1[<span class="number">0</span>] - p2[<span class="number">0</span>]) * (p2[<span class="number">1</span>] -  p3[<span class="number">1</span>]) == (p1[<span class="number">1</span>] - p2[<span class="number">1</span>]) * (p2[<span class="number">0</span>] - p3[<span class="number">0</span>]);</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">checkStraightLine</span><span class="params">(vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt;&amp; coordinates)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i =   <span class="number">0</span>; i + <span class="number">2</span> &lt; coordinates.<span class="built_in">size</span>(); ++i) &#123;</span><br><span class="line">            <span class="keyword">if</span> (!<span class="built_in">right</span>(coordinates[i], coordinates[i + <span class="number">1</span>], coordinates[i + <span class="number">2</span>])) &#123;</span><br><span class="line">                <span class="keyword">return</span>  <span class="literal">false</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="1233-Remove-Sub-Folders-from-the-Filesystem"><a href="#1233-Remove-Sub-Folders-from-the-Filesystem" class="headerlink" title="1233. Remove Sub-Folders from the Filesystem"></a>1233. Remove Sub-Folders from the Filesystem</h2><p>用一个HashSet记录出现过的路径，再遍历所有路径，依次分解每层的父目录，判断是否再记录中即可。</p>
+<p>时间复杂度: O(folder.size() * string.size()),<br>空间复杂度: O(folder.size() * string.size()).</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">vector&lt;string&gt; <span class="title">removeSubfolders</span><span class="params">(vector&lt;string&gt;&amp; folder)</span> </span>&#123;</span><br><span class="line">        unordered_set&lt;string&gt; memo;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">auto</span>&amp; f : folder) &#123;</span><br><span class="line">            memo.<span class="built_in">insert</span>(f);</span><br><span class="line">        &#125;</span><br><span class="line">        vector&lt;string&gt; ans;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">auto</span>&amp; f : folder) &#123;</span><br><span class="line">            <span class="keyword">int</span> i = f.<span class="built_in">size</span>() - <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">bool</span> appear = <span class="literal">false</span>;</span><br><span class="line">            <span class="keyword">while</span> (i &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">                <span class="keyword">while</span> (i &gt;= <span class="number">0</span> &amp;&amp; f[i] != <span class="string">&#x27;/&#x27;</span>) &#123;</span><br><span class="line">                    --i;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">auto</span> head = f.<span class="built_in">substr</span>(<span class="number">0</span>, i);</span><br><span class="line">                <span class="keyword">if</span> (memo.<span class="built_in">find</span>(head) != memo.<span class="built_in">end</span>()) &#123;</span><br><span class="line">                    appear = <span class="literal">true</span>;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                --i;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (!appear) &#123;</span><br><span class="line">                ans.<span class="built_in">push_back</span>(f);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="1234-Replace-the-Substring-for-Balanced-String"><a href="#1234-Replace-the-Substring-for-Balanced-String" class="headerlink" title="1234. Replace the Substring for Balanced String"></a>1234. Replace the Substring for Balanced String</h2><p>滑动窗口。<br>记录所有多的字母，然后设置一个窗口使得多的字母出现字数多于多的次数。然后移动该窗口，保持窗口的特性(多的字母出现字数多于多的次数)不变。记录 窗口的最小长度。</p>
+        
+          <p class="article-more-link">
+            <a href="/2019/10/21/LeetCode-weekly-contest-159/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://youngforest.github.io/2019/10/21/LeetCode-weekly-contest-159/" data-id="ckqz0rqzf00d1hltkh81gef5m" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Competitive-Programming/" rel="tag">Competitive Programming</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!---
+
+-->
+
+
+  
+    <article id="post-kick-start-2019-round-G" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/10/20/kick-start-2019-round-G/" class="article-date">
+  <time datetime="2019-10-20T10:53:36.000Z" itemprop="datePublished">2019-10-20</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/KickStart/">KickStart</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/20/kick-start-2019-round-G/">kick start 2019 round G</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>本轮是今年的倒数第二轮，也是相对比较简单的一个轮次。<br>我做出了第3题和1 2题的小数据集。第二题我本身的算法是对的，但是没有正确的评估最大的k的位数，并防止溢出操作，所以字大数据集上WA。第一题其实本身不难，只是我对约数不很敏感，导致错失没有想出更好的解法。总的来说，本轮是我最接近AC的轮次，运气相对不错，也提前1个小时完成了比赛。因为后来实在想不出解法 和 要注意的点了，就放弃了。</p>
+<h2 id="Book-Reading"><a href="#Book-Reading" class="headerlink" title="Book Reading"></a>Book Reading</h2><p>暴力法加memo可以直接过。可以我的记忆化写错了，忘记记忆了。导致TLE，损失了不少分数，太可惜 了。<br>另外，能用<code>long long</code>就不要用<code>int</code>。否则最后的<code>ans</code>会溢出。</p>
+<p>时间复杂度: O(N log (N)).</p>
+<p>因为记忆化 的存在，计算的页数最多是<code>1 + 1 / 2 + 1 / 3 + ... + 1 / N = log N</code>, 即调和级数。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;unordered_map&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">using</span> ll = <span class="keyword">long</span> <span class="keyword">long</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    ll T;</span><br><span class="line">    cin &gt;&gt; T;</span><br><span class="line">    <span class="keyword">for</span> (ll iCase = <span class="number">1</span>; iCase &lt;= T; ++iCase) &#123;</span><br><span class="line">        ll ans = <span class="number">0</span>;</span><br><span class="line">        ll N, M, Q;</span><br><span class="line">        cin &gt;&gt; N &gt;&gt; M &gt;&gt; Q;</span><br><span class="line">        <span class="function">vector&lt;<span class="keyword">bool</span>&gt; <span class="title">pages</span><span class="params">(N + <span class="number">1</span>, <span class="literal">true</span>)</span></span>;</span><br><span class="line">        pages[<span class="number">0</span>] = <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">for</span> (ll i = <span class="number">0</span>; i &lt; M; ++i) &#123;</span><br><span class="line">            ll P;</span><br><span class="line">            cin &gt;&gt; P;</span><br><span class="line">            pages[P] = <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        unordered_map&lt;ll, ll&gt; memo;</span><br><span class="line">        <span class="keyword">for</span> (ll i = <span class="number">0</span>; i &lt; Q; ++i) &#123;</span><br><span class="line">            ll R;</span><br><span class="line">            cin &gt;&gt; R;</span><br><span class="line">            ll count = <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">if</span> (memo.<span class="built_in">find</span>(R) != memo.<span class="built_in">end</span>()) &#123;</span><br><span class="line">                count = memo[R];</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">for</span> (ll j = <span class="number">1</span>; j * R &lt;= N; ++j) &#123;</span><br><span class="line">                    <span class="keyword">if</span> (pages[j * R]) &#123;</span><br><span class="line">                        ++count;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">                memo[R] = count;</span><br><span class="line">            &#125;</span><br><span class="line">            ans += count;</span><br><span class="line">        &#125;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;Case #&quot;</span> &lt;&lt; iCase &lt;&lt; <span class="string">&quot;: &quot;</span> &lt;&lt; ans &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="The-Equation"><a href="#The-Equation" class="headerlink" title="The Equation"></a>The Equation</h2><p>本题要注意的点相对比较多，本身算法并不难。</p>
+<ol>
+<li>long long  常数是<code>1L</code>。否则<code>1</code>默认 是<code>int</code>，会有溢出风险。</li>
+<li>我们不能从A中的最高位开始找，因为可能k会是更大的数。而应该从 M的角度考虑k的最大值，这里M是15位的，对应二进制50位。然而，我们同样不能从太高的位开始找，否则 <code>N*( 1&lt;&lt;i )</code>会溢出64位。鉴于N最大是1000，二进制10位。我们可以从50~53位开始找。</li>
+</ol>
+<p>因为要最大化k，所以我们可以使用贪心的思路，从高位向低位数，尽量放置1，否则放置0，超过要求回溯。</p>
+        
+          <p class="article-more-link">
+            <a href="/2019/10/20/kick-start-2019-round-G/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://youngforest.github.io/2019/10/20/kick-start-2019-round-G/" data-id="ckqz0rr1900k9hltk8z6a0zhm" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Competitive-Programming/" rel="tag">Competitive Programming</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!---
+
+-->
+
+
+  
+    <article id="post-LeetCode-weekly-contest-158" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/10/14/LeetCode-weekly-contest-158/" class="article-date">
+  <time datetime="2019-10-14T02:09:33.000Z" itemprop="datePublished">2019-10-14</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/LeetCode/">LeetCode</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/14/LeetCode-weekly-contest-158/">LeetCode weekly  contest 158</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="1221-Split-a-String-in-Balanced-Strings"><a href="#1221-Split-a-String-in-Balanced-Strings" class="headerlink" title="1221. Split a String in Balanced Strings"></a>1221. Split a String in Balanced Strings</h2><p>理解balanced的定义，发现只需要找到 L 和 R 出现个数相等的位置即可。</p>
+<p>Time complexity: O(N),<br>Space complexity: O(1).</p>
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">impl</span> Solution &#123;</span><br><span class="line">    <span class="keyword">pub</span> <span class="function"><span class="keyword">fn</span> <span class="title">balanced_string_split</span></span>(s: <span class="built_in">String</span>) -&gt; <span class="built_in">i32</span> &#123;</span><br><span class="line">        <span class="keyword">let</span> <span class="keyword">mut</span> ans = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">let</span> <span class="keyword">mut</span> l = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">let</span> <span class="keyword">mut</span> r = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> c <span class="keyword">in</span> s.chars() &#123;</span><br><span class="line">            <span class="keyword">match</span> c &#123;</span><br><span class="line">                <span class="string">&#x27;L&#x27;</span> =&gt; &#123; l += <span class="number">1</span>&#125;,</span><br><span class="line">                <span class="string">&#x27;R&#x27;</span> =&gt; &#123; r += <span class="number">1</span>&#125;,</span><br><span class="line">                _ =&gt; (),</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> l == r &#123;</span><br><span class="line">                ans += <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        ans</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="1222-Queens-That-Can-Attack-the-King"><a href="#1222-Queens-That-Can-Attack-the-King" class="headerlink" title="1222. Queens That Can Attack the King"></a>1222. Queens That Can Attack the King</h2><p>虽然理解题目稍微复杂些，但算法其实很直接，从King往外找，而不是从queue开始找。</p>
+<p>时间复杂度: O(queens.len() + chessboard.len()),<br>空间复杂度: O(queens.len()).</p>
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">pub</span> <span class="function"><span class="keyword">fn</span> <span class="title">queens_attackthe_king</span></span>(queens: <span class="built_in">Vec</span>&lt;<span class="built_in">Vec</span>&lt;<span class="built_in">i32</span>&gt;&gt;, king: <span class="built_in">Vec</span>&lt;<span class="built_in">i32</span>&gt;) -&gt; <span class="built_in">Vec</span>&lt;<span class="built_in">Vec</span>&lt;<span class="built_in">i32</span>&gt;&gt; &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut</span> qs: HashSet&lt;(<span class="built_in">i32</span>, <span class="built_in">i32</span>)&gt; = HashSet::new();</span><br><span class="line">    <span class="keyword">for</span> queen <span class="keyword">in</span> queens.iter() &#123;</span><br><span class="line">        qs.insert((queen[<span class="number">0</span>], queen[<span class="number">1</span>]));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut</span> ans: <span class="built_in">Vec</span>&lt;<span class="built_in">Vec</span>&lt;<span class="built_in">i32</span>&gt;&gt; = <span class="built_in">Vec</span>::new();</span><br><span class="line">    <span class="keyword">let</span> direction = <span class="built_in">vec!</span>[</span><br><span class="line">        (<span class="number">0</span>, <span class="number">1</span>),</span><br><span class="line">        (<span class="number">1</span>, <span class="number">1</span>),</span><br><span class="line">        (<span class="number">1</span>, <span class="number">0</span>),</span><br><span class="line">        (<span class="number">1</span>, -<span class="number">1</span>),</span><br><span class="line">        (<span class="number">0</span>, -<span class="number">1</span>),</span><br><span class="line">        (-<span class="number">1</span>, -<span class="number">1</span>),</span><br><span class="line">        (-<span class="number">1</span>, <span class="number">0</span>),</span><br><span class="line">        (-<span class="number">1</span>, <span class="number">1</span>),</span><br><span class="line">    ];</span><br><span class="line">    <span class="keyword">let</span> k = (king[<span class="number">0</span>], king[<span class="number">1</span>]);</span><br><span class="line">    <span class="keyword">for</span> (x, y) <span class="keyword">in</span> direction.iter() &#123;</span><br><span class="line">        <span class="keyword">let</span> <span class="keyword">mut</span> target: (<span class="built_in">i32</span>, <span class="built_in">i32</span>) = k;</span><br><span class="line">        <span class="keyword">loop</span> &#123;</span><br><span class="line">            target.<span class="number">0</span> += x;</span><br><span class="line">            target.<span class="number">1</span> += y;</span><br><span class="line">            <span class="keyword">if</span> target.<span class="number">0</span> &gt;= <span class="number">0</span> &amp;&amp; target.<span class="number">0</span> &lt; <span class="number">8</span> &amp;&amp; target.<span class="number">1</span> &gt;= <span class="number">0</span> &amp;&amp; target.<span class="number">1</span> &lt; <span class="number">8</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> qs.contains(&amp;target) &#123;</span><br><span class="line">                    ans.push(<span class="built_in">vec!</span>[target.<span class="number">0</span>, target.<span class="number">1</span>]);</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    ans</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="1223-Dice-Roll-Simulation"><a href="#1223-Dice-Roll-Simulation" class="headerlink" title="1223. Dice Roll Simulation"></a>1223. Dice Roll Simulation</h2><p>有memoization的dfs。</p>
+        
+          <p class="article-more-link">
+            <a href="/2019/10/14/LeetCode-weekly-contest-158/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://youngforest.github.io/2019/10/14/LeetCode-weekly-contest-158/" data-id="ckqz0rqze00cxhltkfc5mbbmi" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Competitive-Programming/" rel="tag">Competitive Programming</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!---
+
+-->
+
+
+  
+    <article id="post-LeetCode-weekly-contest-156" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/10/04/LeetCode-weekly-contest-156/" class="article-date">
+  <time datetime="2019-10-04T04:41:57.000Z" itemprop="datePublished">2019-10-04</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/LeetCode/">LeetCode</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/04/LeetCode-weekly-contest-156/">LeetCode weekly contest 156</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>赛后补题。</p>
+<h2 id="1207-Unique-Number-of-Occurrences"><a href="#1207-Unique-Number-of-Occurrences" class="headerlink" title="1207. Unique Number of Occurrences"></a>1207. Unique Number of Occurrences</h2><p>Record the number of occurrences of each value by <code>unordered_map</code>.<br>Check the unique using <code>unordered_set</code>.</p>
+<p>Time complexity: O(N),<br>Space complexity: O(N).</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">uniqueOccurrences</span><span class="params">(vector&lt;<span class="keyword">int</span>&gt;&amp; arr)</span> </span>&#123;</span><br><span class="line">        unordered_set&lt;<span class="keyword">int</span>&gt; count;</span><br><span class="line">        unordered_map&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt; seen;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i : arr) &#123;</span><br><span class="line">            ++seen[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; p : seen) &#123;</span><br><span class="line">            <span class="keyword">if</span> (count.<span class="built_in">find</span>(p.second) != count.<span class="built_in">end</span>()) &#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                count.<span class="built_in">insert</span>(p.second);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="1208-Get-Equal-Substrings-Within-Budget"><a href="#1208-Get-Equal-Substrings-Within-Budget" class="headerlink" title="1208. Get Equal Substrings Within Budget"></a>1208. Get Equal Substrings Within Budget</h2><p>Sliding window.<br>Use a sliding window to represent the available substring.</p>
+<p>Time complexity: O(N),<br>space complexity: O(1).</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">equalSubstring</span><span class="params">(string s, string t, <span class="keyword">const</span> <span class="keyword">int</span> maxCost)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> left = <span class="number">0</span>, right = <span class="number">0</span>;</span><br><span class="line">        <span class="comment">// window: [left, right), length = right - left</span></span><br><span class="line">        <span class="keyword">int</span> cost = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> ans = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (left &lt; s.<span class="built_in">size</span>()) &#123;</span><br><span class="line">            <span class="keyword">while</span> (right &lt; s.<span class="built_in">size</span>() &amp;&amp; cost + std::<span class="built_in">abs</span>(s[right] - t[right]) &lt;= maxCost) &#123;</span><br><span class="line">                cost += std::<span class="built_in">abs</span>(s[right] - t[right]);</span><br><span class="line">                ++right;</span><br><span class="line">                ans = <span class="built_in">max</span>(ans, right - left);</span><br><span class="line">            &#125;</span><br><span class="line">            cost -= std::<span class="built_in">abs</span>(s[left] - t[left]);</span><br><span class="line">            ++left;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="1209-Remove-All-Adjacent-Duplicates-in-String-II"><a href="#1209-Remove-All-Adjacent-Duplicates-in-String-II" class="headerlink" title="1209. Remove All Adjacent Duplicates in String II"></a>1209. Remove All Adjacent Duplicates in String II</h2>
+        
+          <p class="article-more-link">
+            <a href="/2019/10/04/LeetCode-weekly-contest-156/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://youngforest.github.io/2019/10/04/LeetCode-weekly-contest-156/" data-id="ckqz0rqzd00cuhltkhith1r1s" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Competitive-Programming/" rel="tag">Competitive Programming</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!---
+
+-->
+
+
+  
+    <article id="post-Paris" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/09/30/Paris/" class="article-date">
+  <time datetime="2019-09-30T14:24:49.000Z" itemprop="datePublished">2019-09-30</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%B8%B8%E8%AE%B0/">游记</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/09/30/Paris/">巴黎</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>上周五赶上了9月27日比利时的法语区节日，学校放假，连上周末，我们恰好有3天的假期。在上上周从阿姆斯特丹回来的火车上，我们就定下了本次的去巴黎之旅。本次旅行的成员有：我、zfn、lsd、wyd。</p>
+<p>总的感受是：我太喜欢巴黎了，我爱巴黎.<br>在这里，我深刻地感受到法国的文化自信。</p>
+<span id="more"></span>
+
+<h2 id="第一天"><a href="#第一天" class="headerlink" title="第一天"></a>第一天</h2><p>周五一大早，我们先乘火车到达Bruxell Nord站，转乘FlixBus直达巴黎。之所以坐大巴去，主要还是因为穷。最快的方式是 大力神火车，但需要99欧。大巴只需要15欧，缺点就是舒适性不足、速度慢。到达巴黎已经是下午1点半了。我们先买了巴黎公共交通的3天旅行通票，1-3Zone的。巴黎的行政区域划分为很多区，但交通系统分为5区，类似北京的二环、三环、四环、5环。买票可以选3区或5区。3区基本上可以满足大多数旅行需求，除了西北的莫奈花园和西南的凡尔赛宫。<br>我们没有选择直接去青旅放行李，而是一鼓作气开始了市区的旅行。依次参观了巴黎圣母院、先贤祠，晚上吃了正宗的法餐，放了行李后又游览了凯旋门和埃菲尔铁塔。</p>
+<p>巴黎圣母院由于被烧毁还在修复，所以无法参观。我们仅在远处瞻仰了这座巴黎最有名的教堂。巴黎圣母院可以算是巴黎的地标，因为雨果的作品而名扬天下。即时被毁了，仍然是游客留念的必经之地。我们在被巴黎圣母院前合了影。从侧面可以看到正在修复的工程，之前从新闻上还不了解真正的损坏程度，近距离看的时候才发现，真的是毁了大半。修复工作需要持续数年，但愿之后我还有机会再次来到此地。</p>
+<p><img src="/images/paris/church.jpg" alt="巴黎圣母院前的合影"></p>
+<p>先贤祠是法兰西民族纪念民族伟人的地方。地宫中摆放着很多我们耳熟能详的人的遗体，如伏尔泰、卢梭、雨果、居里夫人、戴高乐（遗体没进来，但名字进来了）等。地位有点像我国的“八宝山”。<br>先贤祠位于一处高地，相比周围的建筑物可算宏伟。正门的门廊上刻着“伟人，祖国感谢你们”几个大字。在这里，我们也第一次感受到了巴黎的善意，我们凭借着比利时的D类签证，算是18～25岁的在欧洲居住的青年，国家维护的博物馆和景点全部免费。之后的凯旋门、卢浮宫、凡尔赛宫均免费。埃菲尔铁塔对所有12～24岁的Youth半价。<br>正殿里用壁画讲述了巴黎的主保圣人 圣女日南斐法 的事迹。同时还摆放着著名的“科博拜”，1851年科博用这个摆证明了地球的自转。以往只在教科书上看到的照片，如今却身临其境。这种感觉还是很奇妙的。</p>
+<p><img src="/images/paris/pantheon.jpg" alt="伟人，祖国感谢你们"></p>
+<p><img src="/images/paris/%E4%BC%8F%E5%B0%94%E6%B3%B0.jpg" alt="我和伏尔泰"></p>
+        
+          <p class="article-more-link">
+            <a href="/2019/09/30/Paris/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://youngforest.github.io/2019/09/30/Paris/" data-id="ckqz0rr0m00huhltkbsn9b6fd" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/travel/" rel="tag">travel</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!---
+
+-->
+
+
+  
+
+
+  <nav id="page-nav">
+    <a class="extend prev" rel="prev" href="/page/10/">&amp;laquo; __(&#39;prev&#39;)</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><a class="page-number" href="/page/10/">10</a><span class="page-number current">11</span><a class="page-number" href="/page/12/">12</a><a class="page-number" href="/page/13/">13</a><span class="space">&hellip;</span><a class="page-number" href="/page/22/">22</a><a class="extend next" rel="next" href="/page/12/">__(&#39;next&#39;) &amp;raquo;</a>
+  </nav>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/KickStart/">KickStart</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Laboratory/">Laboratory</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/LeetCode/">LeetCode</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Life/">Life</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Paper/">Paper</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/">Programming</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tech/">Tech</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/dairy/">dairy</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/intern/">intern</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/interview/">interview</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/kaggle/">kaggle</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/tech/">tech</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E4%B9%A6%E8%AF%84/">书评</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%8A%98%E8%85%BE/">折腾</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B8%B8%E8%AE%B0/">游记</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Algorithm/" rel="tag">Algorithm</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Alibaba/" rel="tag">Alibaba</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ByteDance/" rel="tag">ByteDance</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/" rel="tag">C++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-11/" rel="tag">C++11</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Competitive-Programming/" rel="tag">Competitive Programming</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Database/" rel="tag">Database</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Django/" rel="tag">Django</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Europe/" rel="tag">Europe</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LeetCode/" rel="tag">LeetCode</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/" rel="tag">Linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/" rel="tag">Mac</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Microsoft/" rel="tag">Microsoft</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mihayo/" rel="tag">Mihayo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/New-Graduate/" rel="tag">New Graduate</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Owncloud/" rel="tag">Owncloud</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tencent/" rel="tag">Tencent</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Ubuntu/" rel="tag">Ubuntu</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WeRide/" rel="tag">WeRide</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows/" rel="tag">Windows</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/atom/" rel="tag">atom</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bank/" rel="tag">bank</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/benchmark/" rel="tag">benchmark</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/codeforces/" rel="tag">codeforces</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/contest/" rel="tag">contest</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gcc/" rel="tag">gcc</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hash/" rel="tag">hash</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/intern/" rel="tag">intern</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/interview/" rel="tag">interview</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/kuaishou/" rel="tag">kuaishou</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/life/" rel="tag">life</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/money/" rel="tag">money</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sensetime/" rel="tag">sensetime</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sublime/" rel="tag">sublime</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tech/" rel="tag">tech</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tex/" rel="tag">tex</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/travel/" rel="tag">travel</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/trvalling/" rel="tag">trvalling</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/unordered-map/" rel="tag">unordered_map</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/" rel="tag">vim</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vscode/" rel="tag">vscode</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8A%98%E8%85%BE/" rel="tag">折腾</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%97%B7%E8%A7%86/" rel="tag">旷视</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Algorithm/" style="font-size: 12.86px;">Algorithm</a> <a href="/tags/Alibaba/" style="font-size: 11.43px;">Alibaba</a> <a href="/tags/ByteDance/" style="font-size: 12.86px;">ByteDance</a> <a href="/tags/C/" style="font-size: 15.71px;">C++</a> <a href="/tags/C-11/" style="font-size: 10px;">C++11</a> <a href="/tags/Competitive-Programming/" style="font-size: 20px;">Competitive Programming</a> <a href="/tags/Database/" style="font-size: 10px;">Database</a> <a href="/tags/Django/" style="font-size: 10px;">Django</a> <a href="/tags/Europe/" style="font-size: 10px;">Europe</a> <a href="/tags/Hexo/" style="font-size: 12.86px;">Hexo</a> <a href="/tags/LeetCode/" style="font-size: 15.71px;">LeetCode</a> <a href="/tags/Linux/" style="font-size: 11.43px;">Linux</a> <a href="/tags/Mac/" style="font-size: 10px;">Mac</a> <a href="/tags/Microsoft/" style="font-size: 10px;">Microsoft</a> <a href="/tags/Mihayo/" style="font-size: 10px;">Mihayo</a> <a href="/tags/New-Graduate/" style="font-size: 10px;">New Graduate</a> <a href="/tags/Owncloud/" style="font-size: 10px;">Owncloud</a> <a href="/tags/Tencent/" style="font-size: 10px;">Tencent</a> <a href="/tags/Ubuntu/" style="font-size: 10px;">Ubuntu</a> <a href="/tags/WeRide/" style="font-size: 10px;">WeRide</a> <a href="/tags/Windows/" style="font-size: 10px;">Windows</a> <a href="/tags/atom/" style="font-size: 10px;">atom</a> <a href="/tags/bank/" style="font-size: 10px;">bank</a> <a href="/tags/benchmark/" style="font-size: 10px;">benchmark</a> <a href="/tags/codeforces/" style="font-size: 10px;">codeforces</a> <a href="/tags/contest/" style="font-size: 10px;">contest</a> <a href="/tags/gcc/" style="font-size: 10px;">gcc</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hash/" style="font-size: 11.43px;">hash</a> <a href="/tags/intern/" style="font-size: 18.57px;">intern</a> <a href="/tags/interview/" style="font-size: 10px;">interview</a> <a href="/tags/kuaishou/" style="font-size: 11.43px;">kuaishou</a> <a href="/tags/life/" style="font-size: 17.14px;">life</a> <a href="/tags/money/" style="font-size: 11.43px;">money</a> <a href="/tags/sensetime/" style="font-size: 10px;">sensetime</a> <a href="/tags/sublime/" style="font-size: 10px;">sublime</a> <a href="/tags/tech/" style="font-size: 15.71px;">tech</a> <a href="/tags/tex/" style="font-size: 10px;">tex</a> <a href="/tags/travel/" style="font-size: 14.29px;">travel</a> <a href="/tags/trvalling/" style="font-size: 12.86px;">trvalling</a> <a href="/tags/unordered-map/" style="font-size: 11.43px;">unordered_map</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a> <a href="/tags/vscode/" style="font-size: 10px;">vscode</a> <a href="/tags/%E6%8A%98%E8%85%BE/" style="font-size: 10px;">折腾</a> <a href="/tags/%E6%97%B7%E8%A7%86/" style="font-size: 10px;">旷视</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/06/">June 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">May 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/04/">April 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/02/">February 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/01/">January 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">November 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">October 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">September 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">June 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/">November 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">February 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">September 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/07/03/my-3-years-master/">my 3 years master</a>
+          </li>
+        
+          <li>
+            <a href="/2021/06/16/LeetCode-biweekly-contest-54/">LeetCode biweekly contest 54</a>
+          </li>
+        
+          <li>
+            <a href="/2021/06/13/LeetCode-weekly-contest-245/">LeetCode weekly contest 245</a>
+          </li>
+        
+          <li>
+            <a href="/2021/06/06/LeetCode-weekly-contest-244/">LeetCode weekly contest 244</a>
+          </li>
+        
+          <li>
+            <a href="/2021/05/30/LeetCode-weekly-contest-243/">LeetCode weekly contest 243</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2021 杨森<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/%20%7C%7C%20fa%20fa-home" class="mobile-nav-link">home</a>
+  
+    <a href="/about/%20%7C%7C%20fa%20fa-user" class="mobile-nav-link">about</a>
+  
+    <a href="/tags/%20%7C%7C%20fa%20fa-tags" class="mobile-nav-link">tags</a>
+  
+    <a href="/categories/%20%7C%7C%20fa%20fa-th" class="mobile-nav-link">categories</a>
+  
+    <a href="/archives/%20%7C%7C%20fa%20fa-archive" class="mobile-nav-link">archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+  </div>
+</body>
+</html>

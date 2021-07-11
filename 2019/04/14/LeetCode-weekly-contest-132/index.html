@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>LeetCode weekly contest 132 | YoungForest&#39;s blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="本次比赛不难，但代码实现起来不易。不容易一次写到bug-free。考察的是用编程语言处理复杂的逻辑，和各种意外情况。比如 第3题，当前一个dp为0时，长度应该更新为2，除此之外，dp+1。第四题，在各种情况下寻找分隔符时，没有找到，应该如何处理。    Rank Name Score Finish Time Q1 (4) Q2 (5) Q3 (5) Q4 (5)    388 &#x2F; 4765 You">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LeetCode weekly contest 132">
+<meta property="og:url" content="https://youngforest.github.io/2019/04/14/LeetCode-weekly-contest-132/index.html">
+<meta property="og:site_name" content="YoungForest&#39;s blog">
+<meta property="og:description" content="本次比赛不难，但代码实现起来不易。不容易一次写到bug-free。考察的是用编程语言处理复杂的逻辑，和各种意外情况。比如 第3题，当前一个dp为0时，长度应该更新为2，除此之外，dp+1。第四题，在各种情况下寻找分隔符时，没有找到，应该如何处理。    Rank Name Score Finish Time Q1 (4) Q2 (5) Q3 (5) Q4 (5)    388 &#x2F; 4765 You">
+<meta property="og:locale">
+<meta property="article:published_time" content="2019-04-14T03:55:04.000Z">
+<meta property="article:modified_time" content="2021-07-11T04:47:44.804Z">
+<meta property="article:author" content="杨森">
+<meta property="article:tag" content="Competitive Programming">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="YoungForest&#39;s blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', '[object Object]', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">YoungForest&#39;s blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/%20%7C%7C%20fa%20fa-home">home</a>
+        
+          <a class="main-nav-link" href="/about/%20%7C%7C%20fa%20fa-user">about</a>
+        
+          <a class="main-nav-link" href="/tags/%20%7C%7C%20fa%20fa-tags">tags</a>
+        
+          <a class="main-nav-link" href="/categories/%20%7C%7C%20fa%20fa-th">categories</a>
+        
+          <a class="main-nav-link" href="/archives/%20%7C%7C%20fa%20fa-archive">archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://youngforest.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-LeetCode-weekly-contest-132" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/04/14/LeetCode-weekly-contest-132/" class="article-date">
+  <time datetime="2019-04-14T03:55:04.000Z" itemprop="datePublished">2019-04-14</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/LeetCode/">LeetCode</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      LeetCode weekly contest 132
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>本次比赛不难，但代码实现起来不易。不容易一次写到bug-free。考察的是用编程语言处理复杂的逻辑，和各种意外情况。比如 第3题，当前一个dp为0时，长度应该更新为2，除此之外，dp+1。第四题，在各种情况下寻找分隔符时，没有找到，应该如何处理。</p>
+<table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Name</th>
+<th>Score</th>
+<th>Finish Time</th>
+<th>Q1 (4)</th>
+<th>Q2 (5)</th>
+<th>Q3 (5)</th>
+<th>Q4 (5)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>388 / 4765</td>
+<td>YoungForest</td>
+<td>24</td>
+<td>1:21:20</td>
+<td>0:15:54</td>
+<td>0:30:16</td>
+<td>0:38:05</td>
+<td>1:21:20</td>
+</tr>
+<tr>
+<td>大概需要1个小时内做完，才能进入前200。</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>第4题由于一些边界条件，我调试了不少时间。我分析花这么长时间的原因。还是写代码写的少，对变量更新的边界条件不敏感。比如string::find没有找到的时候，其他各个坐标该如何更新。我就是由于没找到的时候，返回了npos(-1), <code>current_find_index</code>此时应该等于<code>end</code>，而不是继续在-1上加分隔符的长度。</p>
+<h2 id="1025-Divisor-Game"><a href="#1025-Divisor-Game" class="headerlink" title="1025. Divisor Game"></a>1025. Divisor Game</h2><p>一道找规律的题目。<br>Intution:<br>dp。 Solution(N) = true if any Solution(N’s divisor) is false, else false。<br>时间复杂度: O(N^2),<br>空间复杂度: O(N).</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">divisorGame</span><span class="params">(<span class="keyword">int</span> N)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 1, false</span></span><br><span class="line">        <span class="comment">// 2, 1 true</span></span><br><span class="line">        <span class="comment">// 3, false</span></span><br><span class="line">        <span class="comment">// 4, 1 true</span></span><br><span class="line">        <span class="comment">// 5, 1 false</span></span><br><span class="line">        <span class="comment">// 6. 3, true</span></span><br><span class="line">        <span class="comment">// 7, 1, false</span></span><br><span class="line">        <span class="comment">// 8, 1, true</span></span><br><span class="line">        <span class="comment">// 9, false</span></span><br><span class="line">        <span class="function">vector&lt;<span class="keyword">bool</span>&gt; <span class="title">dp</span><span class="params">(<span class="number">1001</span>, <span class="literal">false</span>)</span></span>;</span><br><span class="line">        dp[<span class="number">1</span>] = <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">2</span>; i &lt;= N; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt; i; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (i % j == <span class="number">0</span> &amp;&amp; dp[i - j] == <span class="literal">false</span>) &#123;</span><br><span class="line">                    dp[i] = <span class="literal">true</span>;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dp[N];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>把1～9的结果输出之后发现了了不得的规律。试了一下，一行代码就搞定了。<br>用数学归纳法可以证明:<br>前提:<br>N 为奇数，false;<br>N 为偶数，true。</p>
+<ol>
+<li>如果N为偶数，取x=1，N-1为false。则N为True.</li>
+<li>如果N为奇数，它所有的因子也必为奇数，即N-x一定为偶数，true. 则N为False。</li>
+</ol>
+<p>时间复杂度: O(1),<br>空间复杂度: O(1).</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">divisorGame</span><span class="params">(<span class="keyword">int</span> N)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 1, false</span></span><br><span class="line">        <span class="comment">// 2, 1 true</span></span><br><span class="line">        <span class="comment">// 3, false</span></span><br><span class="line">        <span class="comment">// 4, 1 true</span></span><br><span class="line">        <span class="comment">// 5, 1 false</span></span><br><span class="line">        <span class="comment">// 6. 3, true</span></span><br><span class="line">        <span class="comment">// 7, 1, false</span></span><br><span class="line">        <span class="comment">// 8, 1, true</span></span><br><span class="line">        <span class="comment">// 9, false</span></span><br><span class="line">        <span class="keyword">return</span> N % <span class="number">2</span> != <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="1026-Maximum-Difference-Between-Node-and-Ancestor"><a href="#1026-Maximum-Difference-Between-Node-and-Ancestor" class="headerlink" title="1026. Maximum Difference Between Node and Ancestor"></a>1026. Maximum Difference Between Node and Ancestor</h2><p>Intution:<br>递归。由于possible difference可能是<code>| root-&gt;val - 左子树中的最小值 |</code>或<code>| root-&gt;val - 左子树中的最大值 |</code>或 减去右子树中的最大最小值，或 左右子树中Maximun Difference中的较大者。<br>所以递归函数返回3个值，分别是Maximun Different, 树中最小值，树中最大值。</p>
+<p>时间复杂度: O(N)，每个节点都会被递归调用一次。<br>空间复杂度: O(N)，树的高度，平均情况O(log N), 最差O(N)。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for a binary tree node.</span></span><br><span class="line"><span class="comment"> * struct TreeNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     TreeNode *left;</span></span><br><span class="line"><span class="comment"> *     TreeNode *right;</span></span><br><span class="line"><span class="comment"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</span></span><br><span class="line"><span class="comment"> * &#125;;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line">    <span class="comment">// max_different, max, min</span></span><br><span class="line">    <span class="function">tuple&lt;<span class="keyword">int</span>, <span class="keyword">int</span>, <span class="keyword">int</span>&gt; <span class="title">dfs</span><span class="params">(TreeNode* root)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (!root) &#123;</span><br><span class="line">            <span class="keyword">return</span> &#123;<span class="number">0</span>, <span class="number">-1</span>, <span class="number">100001</span>&#125;;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">auto</span> l = <span class="built_in">dfs</span>(root-&gt;left);</span><br><span class="line">        <span class="keyword">auto</span> r = <span class="built_in">dfs</span>(root-&gt;right);</span><br><span class="line">        <span class="keyword">return</span> &#123;</span><br><span class="line">            <span class="built_in">max</span>(&#123;get&lt;<span class="number">0</span>&gt;(l), get&lt;<span class="number">0</span>&gt;(r), get&lt;<span class="number">1</span>&gt;(l) == <span class="number">-1</span> ? <span class="number">-1</span> : <span class="built_in">abs</span>(root-&gt;val - get&lt;<span class="number">1</span>&gt;(l)), get&lt;<span class="number">1</span>&gt;(r) == <span class="number">-1</span> ? <span class="number">-1</span> : <span class="built_in">abs</span>(root-&gt;val - get&lt;<span class="number">1</span>&gt;(r)), get&lt;<span class="number">2</span>&gt;(l) == <span class="number">100001</span> ? <span class="number">-1</span> : <span class="built_in">abs</span>(root-&gt;val - get&lt;<span class="number">2</span>&gt;(l)), get&lt;<span class="number">2</span>&gt;(r) == <span class="number">100001</span> ? <span class="number">-1</span> : <span class="built_in">abs</span>(root-&gt;val - get&lt;<span class="number">2</span>&gt;(r))&#125;), </span><br><span class="line">            <span class="built_in">max</span>(&#123;root-&gt;val, get&lt;<span class="number">1</span>&gt;(l), get&lt;<span class="number">1</span>&gt;(r)&#125;), </span><br><span class="line">            <span class="built_in">min</span>(&#123;root-&gt;val, get&lt;<span class="number">2</span>&gt;(l), get&lt;<span class="number">2</span>&gt;(r)&#125;)</span><br><span class="line">        &#125;;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">maxAncestorDiff</span><span class="params">(TreeNode* root)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">auto</span> ret = <span class="built_in">dfs</span>(root);</span><br><span class="line">        <span class="keyword">return</span> get&lt;<span class="number">0</span>&gt;(ret);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="1027-Longest-Arithmetic-Sequence"><a href="#1027-Longest-Arithmetic-Sequence" class="headerlink" title="1027. Longest Arithmetic Sequence"></a>1027. Longest Arithmetic Sequence</h2><p>Intution:<br>DP.<br>最优子结构，其中dp[a][b]表示，以坐标a结尾，且差值为b的子序列的长度。<br>dp[i][A[i] - A[j]] = dp[j][A[i] - A[j]] == 0 ? 2 : dp[j][A[i] - A[j]] + 1。</p>
+<p>时间复杂度: O(N ^ 2 log N), 用unordered_map的话可以进一步降为O(N^2).<br>空间复杂度: O(N ^ 2). 最差情况下，两两差值均不同。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">longestArithSeqLength</span><span class="params">(vector&lt;<span class="keyword">int</span>&gt;&amp; A)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// n^2</span></span><br><span class="line">        <span class="keyword">int</span> ret = <span class="number">0</span>;</span><br><span class="line">        vector&lt;map&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt;&gt; <span class="built_in">dp</span>(A.<span class="built_in">size</span>()); <span class="comment">// diff, length</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; A.<span class="built_in">size</span>(); ++i) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; i; ++j) &#123;</span><br><span class="line">                dp[i][A[i] - A[j]] = dp[j][A[i] - A[j]] == <span class="number">0</span> ? <span class="number">2</span> : dp[j][A[i] - A[j]] + <span class="number">1</span>;</span><br><span class="line">                ret = <span class="built_in">max</span>(ret, dp[i][A[i] - A[j]]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> ret;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="1028-Recover-a-Tree-From-Preorder-Traversal"><a href="#1028-Recover-a-Tree-From-Preorder-Traversal" class="headerlink" title="1028. Recover a Tree From Preorder Traversal"></a>1028. Recover a Tree From Preorder Traversal</h2><p>Intution:<br>递归构造Tree。难点在于字符串的处理，如何迅速并bug-free地实现。</p>
+<p>时间复杂度：O(N * M), 每个节点最多遍历一次字符串；<br>空间复杂度：O(N), 需要存储最后的树，递归深度最多为N，递归函数本身内存消耗O(1).</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for a binary tree node.</span></span><br><span class="line"><span class="comment"> * struct TreeNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     TreeNode *left;</span></span><br><span class="line"><span class="comment"> *     TreeNode *right;</span></span><br><span class="line"><span class="comment"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</span></span><br><span class="line"><span class="comment"> * &#125;;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line">    <span class="comment">// [Begin, end)</span></span><br><span class="line">    <span class="function">TreeNode* <span class="title">dfs</span><span class="params">(string&amp; S, <span class="keyword">int</span> begin, <span class="keyword">int</span> end, <span class="keyword">int</span> depth)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// cout &lt;&lt; begin &lt;&lt; &quot; &quot; &lt;&lt; end &lt;&lt; &quot; &quot; &lt;&lt; depth &lt;&lt; endl;</span></span><br><span class="line">        <span class="function">string <span class="title">delimiter</span><span class="params">(depth + <span class="number">1</span>, <span class="string">&#x27;-&#x27;</span>)</span></span>;</span><br><span class="line">        <span class="keyword">int</span> first_dash = S.<span class="built_in">find</span>(<span class="string">&#x27;-&#x27;</span>, begin);</span><br><span class="line">        <span class="keyword">int</span> val_end_index = <span class="built_in">min</span>(end, first_dash == string::npos ? numeric_limits&lt;<span class="keyword">int</span>&gt;::<span class="built_in">max</span>() : first_dash);</span><br><span class="line">        TreeNode* ret = <span class="keyword">new</span> <span class="built_in">TreeNode</span>(<span class="built_in">stoi</span>(S.<span class="built_in">substr</span>(begin, val_end_index - begin)));</span><br><span class="line">        <span class="comment">// 找到左右子树的分界点</span></span><br><span class="line">        <span class="keyword">int</span> left_begin = S.<span class="built_in">find</span>(delimiter, begin);</span><br><span class="line">        <span class="keyword">if</span> (left_begin == string::npos || left_begin &gt;= end) &#123;</span><br><span class="line">            <span class="keyword">return</span> ret;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> current_find_index = left_begin + delimiter.<span class="built_in">size</span>();</span><br><span class="line">        <span class="comment">// cout &lt;&lt; &quot;   &quot; &lt;&lt; current_find_index &lt;&lt; endl;</span></span><br><span class="line">        <span class="keyword">int</span> left_end = S.<span class="built_in">find</span>(delimiter, current_find_index);</span><br><span class="line">        <span class="comment">// cout &lt;&lt; &quot;   &quot; &lt;&lt; left_end &lt;&lt; endl;</span></span><br><span class="line">        current_find_index = (left_end == string::npos) ? end : left_end + delimiter.<span class="built_in">size</span>();</span><br><span class="line">        <span class="comment">// cout &lt;&lt; &quot;   &quot; &lt;&lt; current_find_index &lt;&lt; endl;</span></span><br><span class="line">        <span class="keyword">while</span> (left_end != string::npos &amp;&amp; left_end &lt; end &amp;&amp; S[current_find_index] == <span class="string">&#x27;-&#x27;</span>) &#123;</span><br><span class="line">            <span class="keyword">while</span> (S[current_find_index] == <span class="string">&#x27;-&#x27;</span>) ++current_find_index;</span><br><span class="line">            <span class="comment">// cout &lt;&lt; &quot;   &quot; &lt;&lt; current_find_index &lt;&lt; endl;</span></span><br><span class="line">            left_end = S.<span class="built_in">find</span>(delimiter, current_find_index);</span><br><span class="line">            <span class="comment">// cout &lt;&lt; &quot;   &quot; &lt;&lt; left_end &lt;&lt; endl;</span></span><br><span class="line">            current_find_index = (left_end == string::npos) ? end : left_end + delimiter.<span class="built_in">size</span>();</span><br><span class="line">            <span class="comment">// cout &lt;&lt; &quot;   &quot; &lt;&lt; current_find_index &lt;&lt; endl;</span></span><br><span class="line">        &#125;</span><br><span class="line">        ret-&gt;left = <span class="built_in">dfs</span>(S, left_begin + delimiter.<span class="built_in">size</span>(), left_end &lt; end &amp;&amp; left_end != string::npos ? left_end : end, depth + <span class="number">1</span>);</span><br><span class="line">        <span class="keyword">int</span> right_begin = current_find_index;</span><br><span class="line">        <span class="keyword">if</span> (right_begin &lt; end)</span><br><span class="line">            ret-&gt;right = <span class="built_in">dfs</span>(S, right_begin, end, depth + <span class="number">1</span>);</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> ret;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">TreeNode* <span class="title">recoverFromPreorder</span><span class="params">(string S)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">dfs</span>(S, <span class="number">0</span>, S.<span class="built_in">size</span>(), <span class="number">0</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>由于自己的实现虽然想法简单，但实现不易，而且容易写错。我自己就调试了很长时间。<br>于是去评论区找到了更 优的方案，Iterative Stack.</p>
+<p>时间复杂度: O(M), one pass.<br>空间复杂度: O(N).</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for a binary tree node.</span></span><br><span class="line"><span class="comment"> * struct TreeNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     TreeNode *left;</span></span><br><span class="line"><span class="comment"> *     TreeNode *right;</span></span><br><span class="line"><span class="comment"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</span></span><br><span class="line"><span class="comment"> * &#125;;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">TreeNode* <span class="title">recoverFromPreorder</span><span class="params">(string S)</span> </span>&#123;</span><br><span class="line">        stack&lt;TreeNode*&gt; s;</span><br><span class="line">        <span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (i &lt; S.<span class="built_in">size</span>()) &#123;</span><br><span class="line">            <span class="keyword">int</span> value = <span class="number">0</span>, level = <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">while</span> (i &lt; S.<span class="built_in">size</span>() &amp;&amp; S[i] == <span class="string">&#x27;-&#x27;</span>) &#123;</span><br><span class="line">                ++level;</span><br><span class="line">                ++i;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">while</span> (i &lt; S.<span class="built_in">size</span>() &amp;&amp; S[i] != <span class="string">&#x27;-&#x27;</span>) &#123;</span><br><span class="line">                value = value * <span class="number">10</span> + S[i] - <span class="string">&#x27;0&#x27;</span>;</span><br><span class="line">                ++i;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">while</span> (s.<span class="built_in">size</span>() &gt; level) &#123;</span><br><span class="line">                s.<span class="built_in">pop</span>();</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">auto</span> node = <span class="keyword">new</span> <span class="built_in">TreeNode</span>(value);</span><br><span class="line">            <span class="keyword">if</span> (!s.<span class="built_in">empty</span>() &amp;&amp; !s.<span class="built_in">top</span>()-&gt;left) &#123;</span><br><span class="line">                s.<span class="built_in">top</span>()-&gt;left = node;</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (!s.<span class="built_in">empty</span>()) &#123;</span><br><span class="line">                s.<span class="built_in">top</span>()-&gt;right = node;</span><br><span class="line">            &#125;</span><br><span class="line">            s.<span class="built_in">push</span>(node);</span><br><span class="line">        &#125;</span><br><span class="line">        TreeNode* ret;</span><br><span class="line">        <span class="keyword">while</span> (!s.<span class="built_in">empty</span>()) &#123;</span><br><span class="line">            ret = s.<span class="built_in">top</span>();</span><br><span class="line">            s.<span class="built_in">pop</span>();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ret;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>每周在这里总结一下最近生活的进展吧。</p>
+<ol>
+<li>Google summer of code 的申请放弃了。理由是看了一些感兴趣的organization，发现proposal的要求很高。自己很多都达不到。另一方面，自己开源项目的经历确实不够。能拿出手的仅仅是去年在Apache/HAWQ上的一次Contribution。今年可以多参加一些开源活动，丰富简历。</li>
+<li>微软的summer intern的笔试的后续结果还没有。Action Center的最新的更新还处于3月31号。</li>
+</ol>
+<p>最近在读Lippman的《Essential C++》，侯捷老师在翻译的序里有这么一段话，送给大家。</p>
+<blockquote>
+<p>有些人的学习，自练一身铜筋铁骨，可以在热带丛林中披襟斩棘，在莽莽草原中追奔逐北。有些人的学习，既未习惯大部头书，也未习惯严谨格调，更未习惯自修勤学，是温室里的一朵花，没有自强自立的本钱。</p>
+</blockquote>
+<p>不知道大家怎么样。我反思自己学习的过程，常常“趋利避害”，喜欢简单的皮毛，面对需要花费大量时间钻研的技术即浅尝辄止。而我也知道，作为一名“程序员”，真正拉开与别人距离的都是需要沉下心去钻研的。放眼其他领域，其实也是这样。由于大家都是理智的人，拥有惰性的人，简单的好事一定是趋之若鹜的，做的人多了，供需平衡一打破，门槛一定也日渐提高。<br>侯老师的话让我醍醐灌顶，自己也需每天反思自己的学习状态，即使纠正错误的思想和方法。这样才能走的更远，飞的更高。</p>
+<!-- 3. 交换项目准备的材料还差成绩单，而研究生的成绩单开具需要导师的签字。一直没找到老板。
+4. 商汤的实习一如既往的忙碌。学到的东西不少，但都是皮毛，没有深入的，不可替代的技术。还是自己的钻研程度不够吧。 -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://youngforest.github.io/2019/04/14/LeetCode-weekly-contest-132/" data-id="ckqz0rqyt00alhltk16gsa2hk" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Competitive-Programming/" rel="tag">Competitive Programming</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/04/21/LeetCode-weekly-contest-133/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          LeetCode weekly contest 133
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/04/07/LeetCode-weekly-contest-131/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">LeetCode weekly contest 131</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+<!---
+
+-->
+
+
+    
+      <div class="duoshuo" id="comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="2019/04/14/LeetCode-weekly-contest-132/" data-title="LeetCode weekly contest 132" data-url="https://youngforest.github.io/2019/04/14/LeetCode-weekly-contest-132/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:"youngforest"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+    <!-- 多说公共JS代码 end -->
+</div>
+
+    
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/KickStart/">KickStart</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Laboratory/">Laboratory</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/LeetCode/">LeetCode</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Life/">Life</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Paper/">Paper</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/">Programming</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tech/">Tech</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/dairy/">dairy</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/intern/">intern</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/interview/">interview</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/kaggle/">kaggle</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/tech/">tech</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E4%B9%A6%E8%AF%84/">书评</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%8A%98%E8%85%BE/">折腾</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B8%B8%E8%AE%B0/">游记</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Algorithm/" rel="tag">Algorithm</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Alibaba/" rel="tag">Alibaba</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ByteDance/" rel="tag">ByteDance</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/" rel="tag">C++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-11/" rel="tag">C++11</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Competitive-Programming/" rel="tag">Competitive Programming</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Database/" rel="tag">Database</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Django/" rel="tag">Django</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Europe/" rel="tag">Europe</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LeetCode/" rel="tag">LeetCode</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/" rel="tag">Linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/" rel="tag">Mac</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Microsoft/" rel="tag">Microsoft</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mihayo/" rel="tag">Mihayo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/New-Graduate/" rel="tag">New Graduate</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Owncloud/" rel="tag">Owncloud</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tencent/" rel="tag">Tencent</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Ubuntu/" rel="tag">Ubuntu</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WeRide/" rel="tag">WeRide</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows/" rel="tag">Windows</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/atom/" rel="tag">atom</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bank/" rel="tag">bank</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/benchmark/" rel="tag">benchmark</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/codeforces/" rel="tag">codeforces</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/contest/" rel="tag">contest</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gcc/" rel="tag">gcc</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hash/" rel="tag">hash</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/intern/" rel="tag">intern</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/interview/" rel="tag">interview</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/kuaishou/" rel="tag">kuaishou</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/life/" rel="tag">life</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/money/" rel="tag">money</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sensetime/" rel="tag">sensetime</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sublime/" rel="tag">sublime</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tech/" rel="tag">tech</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tex/" rel="tag">tex</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/travel/" rel="tag">travel</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/trvalling/" rel="tag">trvalling</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/unordered-map/" rel="tag">unordered_map</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/" rel="tag">vim</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vscode/" rel="tag">vscode</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8A%98%E8%85%BE/" rel="tag">折腾</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%97%B7%E8%A7%86/" rel="tag">旷视</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Algorithm/" style="font-size: 12.86px;">Algorithm</a> <a href="/tags/Alibaba/" style="font-size: 11.43px;">Alibaba</a> <a href="/tags/ByteDance/" style="font-size: 12.86px;">ByteDance</a> <a href="/tags/C/" style="font-size: 15.71px;">C++</a> <a href="/tags/C-11/" style="font-size: 10px;">C++11</a> <a href="/tags/Competitive-Programming/" style="font-size: 20px;">Competitive Programming</a> <a href="/tags/Database/" style="font-size: 10px;">Database</a> <a href="/tags/Django/" style="font-size: 10px;">Django</a> <a href="/tags/Europe/" style="font-size: 10px;">Europe</a> <a href="/tags/Hexo/" style="font-size: 12.86px;">Hexo</a> <a href="/tags/LeetCode/" style="font-size: 15.71px;">LeetCode</a> <a href="/tags/Linux/" style="font-size: 11.43px;">Linux</a> <a href="/tags/Mac/" style="font-size: 10px;">Mac</a> <a href="/tags/Microsoft/" style="font-size: 10px;">Microsoft</a> <a href="/tags/Mihayo/" style="font-size: 10px;">Mihayo</a> <a href="/tags/New-Graduate/" style="font-size: 10px;">New Graduate</a> <a href="/tags/Owncloud/" style="font-size: 10px;">Owncloud</a> <a href="/tags/Tencent/" style="font-size: 10px;">Tencent</a> <a href="/tags/Ubuntu/" style="font-size: 10px;">Ubuntu</a> <a href="/tags/WeRide/" style="font-size: 10px;">WeRide</a> <a href="/tags/Windows/" style="font-size: 10px;">Windows</a> <a href="/tags/atom/" style="font-size: 10px;">atom</a> <a href="/tags/bank/" style="font-size: 10px;">bank</a> <a href="/tags/benchmark/" style="font-size: 10px;">benchmark</a> <a href="/tags/codeforces/" style="font-size: 10px;">codeforces</a> <a href="/tags/contest/" style="font-size: 10px;">contest</a> <a href="/tags/gcc/" style="font-size: 10px;">gcc</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hash/" style="font-size: 11.43px;">hash</a> <a href="/tags/intern/" style="font-size: 18.57px;">intern</a> <a href="/tags/interview/" style="font-size: 10px;">interview</a> <a href="/tags/kuaishou/" style="font-size: 11.43px;">kuaishou</a> <a href="/tags/life/" style="font-size: 17.14px;">life</a> <a href="/tags/money/" style="font-size: 11.43px;">money</a> <a href="/tags/sensetime/" style="font-size: 10px;">sensetime</a> <a href="/tags/sublime/" style="font-size: 10px;">sublime</a> <a href="/tags/tech/" style="font-size: 15.71px;">tech</a> <a href="/tags/tex/" style="font-size: 10px;">tex</a> <a href="/tags/travel/" style="font-size: 14.29px;">travel</a> <a href="/tags/trvalling/" style="font-size: 12.86px;">trvalling</a> <a href="/tags/unordered-map/" style="font-size: 11.43px;">unordered_map</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a> <a href="/tags/vscode/" style="font-size: 10px;">vscode</a> <a href="/tags/%E6%8A%98%E8%85%BE/" style="font-size: 10px;">折腾</a> <a href="/tags/%E6%97%B7%E8%A7%86/" style="font-size: 10px;">旷视</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/06/">June 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">May 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/04/">April 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/02/">February 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/01/">January 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">November 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">October 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">September 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">June 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/">November 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">February 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">September 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/07/03/my-3-years-master/">my 3 years master</a>
+          </li>
+        
+          <li>
+            <a href="/2021/06/16/LeetCode-biweekly-contest-54/">LeetCode biweekly contest 54</a>
+          </li>
+        
+          <li>
+            <a href="/2021/06/13/LeetCode-weekly-contest-245/">LeetCode weekly contest 245</a>
+          </li>
+        
+          <li>
+            <a href="/2021/06/06/LeetCode-weekly-contest-244/">LeetCode weekly contest 244</a>
+          </li>
+        
+          <li>
+            <a href="/2021/05/30/LeetCode-weekly-contest-243/">LeetCode weekly contest 243</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2021 杨森<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/%20%7C%7C%20fa%20fa-home" class="mobile-nav-link">home</a>
+  
+    <a href="/about/%20%7C%7C%20fa%20fa-user" class="mobile-nav-link">about</a>
+  
+    <a href="/tags/%20%7C%7C%20fa%20fa-tags" class="mobile-nav-link">tags</a>
+  
+    <a href="/categories/%20%7C%7C%20fa%20fa-th" class="mobile-nav-link">categories</a>
+  
+    <a href="/archives/%20%7C%7C%20fa%20fa-archive" class="mobile-nav-link">archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+  </div>
+</body>
+</html>
