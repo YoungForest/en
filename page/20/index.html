@@ -89,6 +89,238 @@ ga('send', 'pageview');
       <div class="outer">
         <section id="main">
   
+    <article id="post-suzhou-microsoft-interview" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/06/01/suzhou-microsoft-interview/" class="article-date">
+  <time datetime="2018-06-01T14:54:08.000Z" itemprop="datePublished">2018-06-01</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/interview/">interview</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/06/01/suzhou-microsoft-interview/">微软苏州面试</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在@lxc师兄的内推下，我有幸可以前往 苏州微软，面试O365部门的暑期实习生。虽然最后失败了，但从这次失败的经历中，我学习到很多。<br>总结在此，为未来的找实习和工作做准备。</p>
+<span id="more"></span>
+
+<h1 id="面试环节"><a href="#面试环节" class="headerlink" title="面试环节"></a>面试环节</h1><h2 id="一面"><a href="#一面" class="headerlink" title="一面"></a>一面</h2><ul>
+<li>尾递归，斐波那契（不会）</li>
+<li>合并2个列表</li>
+<li>makefile 编译顺序确定</li>
+<li>memcpy的实现方式和安全问题</li>
+</ul>
+<h3 id="用尾递归优化递归斐波那契数列"><a href="#用尾递归优化递归斐波那契数列" class="headerlink" title="用尾递归优化递归斐波那契数列"></a>用尾递归优化递归斐波那契数列</h3><p>斐波那契数列大家应该都很熟悉，高中数学课本上提到的经典递归数列。<br>其数学定义为：<br>$$<br>f_n = \begin{cases}<br>f_{n-1} + f_(n-2) &amp; \quad \text{if } n &gt; 2 \<br>1 &amp; \quad \text{if } n = 0, 1<br>\end{cases}<br>$$</p>
+<p>根据数学递推式，很容易地可以写出递归版的斐波那契数列：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fibonacci</span>(<span class="params">n</span>):</span></span><br><span class="line">    <span class="keyword">if</span> n == <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">    <span class="keyword">elif</span> n == <span class="number">1</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> fibonacci(n-<span class="number">1</span>) + fibonacci(n-<span class="number">2</span>)</span><br></pre></td></tr></table></figure>
+
+<p>根据函数调用的原理，每次需要递归调用2次本函数，当参数为n时，需要的栈帧的数目为O(2^n)。<br>可以利用尾递归来优化这个问题。<br>尾递归是<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Tail_call">尾调用</a>的一种递归调用形式。<br>我对尾递归的理解是<br>函数式编程中使用函数调用以实现循环的方式。<br>所以，首先给出内存占用为O(1)的斐波那契数列循环实现。</p>
+        
+          <p class="article-more-link">
+            <a href="/2018/06/01/suzhou-microsoft-interview/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://youngforest.github.io/2018/06/01/suzhou-microsoft-interview/" data-id="ckqz0rr1u00mshltk8v9p2prc" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Microsoft/" rel="tag">Microsoft</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/intern/" rel="tag">intern</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!---
+
+-->
+
+
+  
+    <article id="post-ssh-login-remote-server-without-password" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/05/08/ssh-login-remote-server-without-password/" class="article-date">
+  <time datetime="2018-05-08T10:47:09.000Z" itemprop="datePublished">2018-05-08</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%8A%98%E8%85%BE/">折腾</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/05/08/ssh-login-remote-server-without-password/">ssh免密登陆服务器</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>以下命令仅针对Unix-like系统。<br>Windows是不需要这样的解决方法的，Windows下很多类Putty工具都可以选择”记住密码”来实现免密登陆。<br>我在Mac上没有找到类似记住密码的解决方案，但使用Key事实上是更安全的一种方式。</p>
+<span id="more"></span>
+
+<h2 id="step1-生成rsa密钥对"><a href="#step1-生成rsa密钥对" class="headerlink" title="step1: 生成rsa密钥对"></a>step1: 生成rsa密钥对</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa</span><br></pre></td></tr></table></figure>
+
+<h2 id="step2-上传rsa公钥到服务器"><a href="#step2-上传rsa公钥到服务器" class="headerlink" title="step2: 上传rsa公钥到服务器"></a>step2: 上传rsa公钥到服务器</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat id_rsa.pub | ssh -p 26757 root@138.128.193.150 <span class="string">&#x27;cat &gt;&gt; .ssh/authorized_keys&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="step3-更改权限"><a href="#step3-更改权限" class="headerlink" title="step3: 更改权限"></a>step3: 更改权限</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -p 26757 root@138.128.193.150 <span class="string">&quot;chmod 700 .ssh; chmod 640 .ssh/authorized_keys&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="step4-success"><a href="#step4-success" class="headerlink" title="step4: success!"></a>step4: success!</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -p 26757 root@138.128.193.150</span><br></pre></td></tr></table></figure>
+        
+          <p class="article-more-link">
+            <a href="/2018/05/08/ssh-login-remote-server-without-password/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://youngforest.github.io/2018/05/08/ssh-login-remote-server-without-password/" data-id="ckqz0rr1s00mlhltkbvq26sbm" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tech/" rel="tag">tech</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!---
+
+-->
+
+
+  
+    <article id="post-Advanced-SQL-practice" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/05/07/Advanced-SQL-practice/" class="article-date">
+  <time datetime="2018-05-07T15:30:25.000Z" itemprop="datePublished">2018-05-07</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/intern/">intern</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/05/07/Advanced-SQL-practice/">SQL实践进阶</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>这一周在公司写了很多很长功能很复杂的sql语句，深感自己的数据库和SQL学的还只是皮毛，完全没法满足工程上的要求。<br>负责带我的二mentor对SQL比较也精通，对我有很多指导和建议。<br>没有对比就没有伤害，自己的菜和师兄的强让我知耻而后勇，有了进阶SQL的想法和行动。</p>
+<span id="more"></span>
+<p>我被推荐的2份教程（感谢快手师兄和二mentor）：</p>
+<ul>
+<li>sql必知必会</li>
+<li><a target="_blank" rel="noopener" href="http://www.runoob.com/sql/sql-constraints.html">runoob</a></li>
+</ul>
+<p>其中《sql必知必会》我系统的看过一遍，runoob教程只是大致浏览一遍。<br>我认为只看一个教程就够了。<br>runoob的优点是可以在网站提供的线上数据库进行测试和练习，这一点和<a target="_blank" rel="noopener" href="https://www.w3schools.com/sql/">w3school的教程</a>有些像。<br>《sql必知必会》的优点是内容比较多，作者会传授一些写sql的经验，还会涉及到不同数据库的移植性和区别。</p>
+<p><a target="_blank" rel="noopener" href="https://leetcode.com/problemset/database/">leetcode上有42道Database的面试题目</a>，有时间一定要刷一刷。</p>
+<h1 id="实践中遇到的问题"><a href="#实践中遇到的问题" class="headerlink" title="实践中遇到的问题"></a>实践中遇到的问题</h1><p>由于我的岗位是推荐组的算法工程师，有大量的数据挖掘的需要。<br>而且写的不是纯sql，而是<a target="_blank" rel="noopener" href="https://cwiki.apache.org/confluence/display/Hive/Home">Hive</a>-sql。<br>Hive上存在很多限制和挑战，比如不能在select中嵌套select子句，<code>select 2 * (select 3);</code>就是不可以的（最后摸索出得解决方案是：使用聚集函数或列之间的可计算进行需要的计算，这就很考验<code>union</code>或<code>join</code>的灵活使用了。）；数据量特别大，每次查询很耗时（学会了用小的查询验证想法，从内到外层层验证，还有在‘jupyter notebook’上进行查询和计算）。</p>
+<h1 id="回答面试中的问题"><a href="#回答面试中的问题" class="headerlink" title="回答面试中的问题"></a>回答面试中的问题</h1><p>一面的小哥哥当时问我：你会SQL吗？</p>
+        
+          <p class="article-more-link">
+            <a href="/2018/05/07/Advanced-SQL-practice/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://youngforest.github.io/2018/05/07/Advanced-SQL-practice/" data-id="ckqz0rqx8004hhltk3z3z8kns" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/kuaishou/" rel="tag">kuaishou</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tech/" rel="tag">tech</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!---
+
+-->
+
+
+  
+    <article id="post-github-page-binding-domain" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/05/07/github-page-binding-domain/" class="article-date">
+  <time datetime="2018-05-07T15:29:46.000Z" itemprop="datePublished">2018-05-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/05/07/github-page-binding-domain/">为GitHub Page绑定自己的域名</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>我使用的是腾讯云的免费域名.</p>
+<p>除此之外, github上也需要进行一定的设置, 可以参考<a target="_blank" rel="noopener" href="https://help.github.com/articles/about-supported-custom-domains/">官方帮助文件</a>.</p>
+
+        
+          <p class="article-more-link">
+            <a href="/2018/05/07/github-page-binding-domain/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://youngforest.github.io/2018/05/07/github-page-binding-domain/" data-id="ckqz0rr1000j5hltkepd2c0rg" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!---
+
+-->
+
+
+  
     <article id="post-kuaishou-intern-interview" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/04/30/kuaishou-intern-interview/" class="article-date">
@@ -425,246 +657,6 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-atom-explore" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/04/08/atom-explore/" class="article-date">
-  <time datetime="2017-04-08T14:20:36.000Z" itemprop="datePublished">2017-04-08</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E6%8A%98%E8%85%BE/">折腾</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/04/08/atom-explore/">atom 浅尝辄止</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="配置代理"><a href="#配置代理" class="headerlink" title="配置代理"></a>配置代理</h2><p>笔者的需求是在markdown文档中插入LaTeX公式, atom默认的<code>markdown-preview</code>包无法满足要求. 经过搜索, 社区包<code>markdown-preview-plus</code>可是满足该需求.</p>
-<h3 id="atom包管理"><a href="#atom包管理" class="headerlink" title="atom包管理"></a><a target="_blank" rel="noopener" href="http://flight-manual.atom.io/using-atom/sections/atom-packages/#atom-packages">atom包管理</a></h3><p>按照官方教程, 安装失败</p>
-<blockquote>
-<p>Installing “<a href="mailto:&#x6d;&#x61;&#114;&#107;&#100;&#x6f;&#x77;&#110;&#x2d;&#x70;&#114;&#101;&#x76;&#105;&#101;&#x77;&#45;&#x70;&#x6c;&#117;&#x73;&#64;&#x32;&#46;&#52;&#x2e;&#57;">&#x6d;&#x61;&#114;&#107;&#100;&#x6f;&#x77;&#110;&#x2d;&#x70;&#114;&#101;&#x76;&#105;&#101;&#x77;&#45;&#x70;&#x6c;&#117;&#x73;&#64;&#x32;&#46;&#52;&#x2e;&#57;</a>” failed.</p>
-</blockquote>
-<p>在log中, 笔者发现了这样的请求</p>
-<blockquote>
-<p>GET <a target="_blank" rel="noopener" href="https://atom.io/download/electron/v1.3.13/iojs-v1.3.13.tar.gz">https://atom.io/download/electron/v1.3.13/iojs-v1.3.13.tar.gz</a></p>
-</blockquote>
-<p>笔者接着使用浏览器测试该网址, 无法相应, 猜测是被q了. 幸运的是, atom文档中考虑到使用代理的需要, 并给出了guide.</p>
-<p> <a target="_blank" rel="noopener" href="http://flight-manual.atom.io/getting-started/sections/installing-atom/#using-a-proxy">配置apm的代理</a></p>
-<p>最后, <a target="_blank" rel="noopener" href="http://blog.youngforest.me/2016/11/02/%E5%AE%9E%E7%8E%B0terminal%E4%BB%A3%E7%90%86/">fq基本功</a>. 不解释.</p>
-        
-          <p class="article-more-link">
-            <a href="/2017/04/08/atom-explore/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://youngforest.github.io/2017/04/08/atom-explore/" data-id="ckqz0rr0q00iahltk4sv1a8a4" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/atom/" rel="tag">atom</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-<!---
-
--->
-
-
-  
-    <article id="post-gvim-configuration-for-windows" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/03/26/gvim-configuration-for-windows/" class="article-date">
-  <time datetime="2017-03-26T10:46:41.000Z" itemprop="datePublished">2017-03-26</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E6%8A%98%E8%85%BE/">折腾</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/26/gvim-configuration-for-windows/">gvim configuration for windows</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>最近由于准备GRE, 整天背单词, 练听力和写作, 很是心烦, 很久没折腾了, 所以抽出时间, 给自己的笔记本下载并配置gvim, 也算是休憩.</p>
-<h1 id="下载"><a href="#下载" class="headerlink" title="下载"></a><a target="_blank" rel="noopener" href="http://www.vim.org/download.php#pc">下载</a></h1><h1 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h1><p>与Linux不同, Windows中gvim的配置文件为<code>$HOME/_vimrc</code>(个人配置文件), <code>$VIMROOT/_vimrc</code>(系统配置文件), 默认情况下为<code>C:\Program Files (x86)\Vim</code>. 除此之外, 还可以有<code>_gvimrc</code>文件, 只有在gui情况下打开才会读取, 在terminal下不会. 这对于两者应用不同的配置很有帮助, 尤其是使用不同的主题, 同一主题下, 两者的效果很不同. 这样就避免了使用<code>if(has&#39;gui_running&#39;)</code>这样复杂的配置内容.</p>
-<h1 id="vimrc配置"><a href="#vimrc配置" class="headerlink" title=".vimrc配置"></a>.vimrc配置</h1><h2 id="打开配置文件"><a href="#打开配置文件" class="headerlink" title="打开配置文件"></a>打开配置文件</h2><ul>
-<li><code>:e $MYVIMRC</code>: 打开用户配置文件, 如果没有的话可以参考<code>help vimrc</code></li>
-<li><code>:e $MYGVIMRC</code>: 打开GUI用户配置<br><code>help vimrc</code>中推荐的配置文件位置是<code>$HOME/vimfiles/vimrc</code>(Windows)或<code>~/.vim/vimrc(Windows)</code>, 这样比起<code>$HOME/_vimrc</code>和<code>~/.vim</code>更portable.</li>
-</ul>
-<h2 id="个性化内容"><a href="#个性化内容" class="headerlink" title="个性化内容"></a>个性化内容</h2><p>$MYGVIMRC</p>
-<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">set</span> clipboard=unnamed   <span class="comment">&quot; 与Windows公用clipboard, 默认情况下, y, p只使用vim的clipboard, 不是很方便</span></span><br><span class="line"><span class="keyword">set</span> <span class="keyword">colorscheme</span> monokai <span class="comment">&quot; 一个我比较喜欢的主题, 不过在terminal下很难看, 所以放在gvimrc中</span></span><br><span class="line"><span class="keyword">set</span> guifont=Consola<span class="variable">s:h18</span>:cANSI:qDRAFT   <span class="comment">&quot;换个字体, 默认字体忍不了</span></span><br></pre></td></tr></table></figure>
-        
-          <p class="article-more-link">
-            <a href="/2017/03/26/gvim-configuration-for-windows/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://youngforest.github.io/2017/03/26/gvim-configuration-for-windows/" data-id="ckqz0rr1200jfhltkh40bfvip" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vim/" rel="tag">vim</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-<!---
-
--->
-
-
-  
-    <article id="post-2017-resolutions" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/02/22/2017-resolutions/" class="article-date">
-  <time datetime="2017-02-22T04:36:31.000Z" itemprop="datePublished">2017-02-22</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/dairy/">dairy</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/02/22/2017-resolutions/">2017 resolutions</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>现在是大年初七, 是大多数有工作的人上班的日子, 也是襄中开学的日子, 而我作为一个大学生, 居然可以放假到农历二月, 致使现在凌晨2点还有时间码字. 刚刚看了<a target="_blank" rel="noopener" href="http://www.jianshu.com/p/0566385dceff">一篇文章</a>, 作者的话很大程度上描述了我的状态, 咸鱼懒的翻身. 而作者的亲身经历和劝说也让我愧疚. </p>
-<p>最近刚读了蔡东藩的<a target="_blank" rel="noopener" href="https://book.douban.com/subject/3089584/">五代史</a>, 了解五代混乱的历史, 感叹大多数主子昏庸误国, 英明的主子也多少有瑕疵的同时, 也将心比心, 自己是否是一个英明的帝王. 答案却是否定的. 我是一个懒惰的人, 没有意志力的人, 不喜欢批评, 只喜欢表扬. 如果把自己放在帝王的位置上, 一定是个亡国之君了. 想想还是很可怕的.</p>
-<p>综上两点原因, 我打算在新的一年里有所改变, 制定新年目标, 完成新年计划, 做更好地自己.</p>
-<h2 id="2017目标及计划"><a href="#2017目标及计划" class="headerlink" title="2017目标及计划"></a>2017目标及计划</h2><ul>
-<li>英语每日打卡学习, 加大任务量(小镇做题家欠下的，语言关必须过)</li>
-<li>早起, 8点之前</li>
-<li>早睡, 12点之前</li>
-<li>坚持吃早饭</li>
-<li>坚持每日锻炼身体, 天气好出门跑步, 天气差在室内运动</li>
-<li>凡事不要以懒惰为借口</li>
-</ul>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>姐姐今年就要毕业找工作了, 我也要准备尽力保研了, 深感世事艰辛, 人间险阻, 唯有努力学习才能获得拯救.</p>
-<p>最后, 二句”名言”镇文.</p>
-<pre><code>学习使我快乐.
-
-我爱学习, 学习爱我.
-</code></pre>
-        
-          <p class="article-more-link">
-            <a href="/2017/02/22/2017-resolutions/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://youngforest.github.io/2017/02/22/2017-resolutions/" data-id="ckqz0rqx20047hltk2mhyevij" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/life/" rel="tag">life</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-<!---
-
--->
-
-
-  
-    <article id="post-Django-note" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/01/23/Django-note/" class="article-date">
-  <time datetime="2017-01-23T11:18:20.000Z" itemprop="datePublished">2017-01-23</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/01/23/Django-note/">Django使用总结</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><strong>[摘要]</strong> <a target="_blank" rel="noopener" href="https://www.djangoproject.com/">Django</a> 是一个高水平的Python Web框架, 可以帮助我们迅速开发, 设计一个干净, 程序化的应用. 虽然Django比较臃肿(现在大神都用<a target="_blank" rel="noopener" href="http://flask.pocoo.org/">Flask</a>?), 适合大型Web应用的开发, 笔者的数据库课程设计是一个小型工程, 但Django名声是在太大, 笔者之前在实验室也稍稍接触过, 所以和队友果断选择了Django. 我们的课设, 在Django的帮助下, 实现起来就和切菜一样.</p>
-<span id="more"></span>
-<p>数据库课设最近出分了, 只得了良好, 未如愿取得优秀. 但两天完成数据库的经验确实使笔者学到了很多, Django框架的使用, 前后端的概念, 结对编程的合作… 其中最想和大家分享的是Django框架的使用, 幸亏有该框架, 让我们可以专注于后端和数据库的设计实现, 还能轻松实现一个看得过去的前端. 事半功倍, 没有被拖延症害死.</p>
-<h4 id="时间分配"><a href="#时间分配" class="headerlink" title="时间分配:"></a>时间分配:</h4><p>完成数据库用了两天(而且有一天是边刷”潜伏”边写程序的), 之前都是在学习Django, 文档甚至大部分是答辩完之后补完的.</p>
-<h4 id="人员分配"><a href="#人员分配" class="headerlink" title="人员分配:"></a>人员分配:</h4><p>原本的计划是抱tls大腿, 所有前后端由tls完成, 笔者帮助写写文档. 不过后来, 鉴于tls经常养精蓄锐, 一直在学习Django, 最后几个小时仍未有看的见的成果. 笔者就慌了, 在之前练习的基础上, 修补完善, 勉强实现预计功能, 完成课设. 最后文档是两个人一起紧急补完的, tls最后一个小时又帮助实现了两个新功能.</p>
-<h2 id="Django使用总结"><a href="#Django使用总结" class="headerlink" title="Django使用总结"></a>Django使用总结</h2><p><a target="_blank" rel="noopener" href="https://docs.djangoproject.com/en/1.10/">官方文档</a>是很完善和亲民的, 需要用的功能都可以在上面找到. 缺点是, 太庞大, 不好找; 而且是英文的, 官方文档更新太快, 中文文档的翻译根本跟不上, 笔者的六级刚刚飘过, 很是头疼, 不过仍是喜欢看官方的英文文档, 感觉更有帮助.</p>
-<h4 id="练习"><a href="#练习" class="headerlink" title="练习"></a>练习</h4>
-        
-          <p class="article-more-link">
-            <a href="/2017/01/23/Django-note/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://youngforest.github.io/2017/01/23/Django-note/" data-id="ckqz0rqxh005dhltk1rpvf1fi" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Database/" rel="tag">Database</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Django/" rel="tag">Django</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-<!---
-
--->
-
-
-  
 
 
   <nav id="page-nav">
@@ -698,7 +690,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Algorithm/" style="font-size: 12.86px;">Algorithm</a> <a href="/tags/Alibaba/" style="font-size: 11.43px;">Alibaba</a> <a href="/tags/ByteDance/" style="font-size: 12.86px;">ByteDance</a> <a href="/tags/C/" style="font-size: 15.71px;">C++</a> <a href="/tags/C-11/" style="font-size: 10px;">C++11</a> <a href="/tags/Competitive-Programming/" style="font-size: 20px;">Competitive Programming</a> <a href="/tags/Database/" style="font-size: 10px;">Database</a> <a href="/tags/Django/" style="font-size: 10px;">Django</a> <a href="/tags/Europe/" style="font-size: 10px;">Europe</a> <a href="/tags/Hexo/" style="font-size: 12.86px;">Hexo</a> <a href="/tags/LeetCode/" style="font-size: 15.71px;">LeetCode</a> <a href="/tags/Linux/" style="font-size: 11.43px;">Linux</a> <a href="/tags/Mac/" style="font-size: 10px;">Mac</a> <a href="/tags/Microsoft/" style="font-size: 10px;">Microsoft</a> <a href="/tags/Mihayo/" style="font-size: 10px;">Mihayo</a> <a href="/tags/New-Graduate/" style="font-size: 10px;">New Graduate</a> <a href="/tags/Owncloud/" style="font-size: 10px;">Owncloud</a> <a href="/tags/Tencent/" style="font-size: 10px;">Tencent</a> <a href="/tags/Ubuntu/" style="font-size: 10px;">Ubuntu</a> <a href="/tags/WeRide/" style="font-size: 10px;">WeRide</a> <a href="/tags/Windows/" style="font-size: 10px;">Windows</a> <a href="/tags/atom/" style="font-size: 10px;">atom</a> <a href="/tags/bank/" style="font-size: 10px;">bank</a> <a href="/tags/benchmark/" style="font-size: 10px;">benchmark</a> <a href="/tags/codeforces/" style="font-size: 10px;">codeforces</a> <a href="/tags/contest/" style="font-size: 10px;">contest</a> <a href="/tags/gcc/" style="font-size: 10px;">gcc</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hash/" style="font-size: 11.43px;">hash</a> <a href="/tags/intern/" style="font-size: 18.57px;">intern</a> <a href="/tags/interview/" style="font-size: 10px;">interview</a> <a href="/tags/kuaishou/" style="font-size: 11.43px;">kuaishou</a> <a href="/tags/life/" style="font-size: 17.14px;">life</a> <a href="/tags/money/" style="font-size: 11.43px;">money</a> <a href="/tags/sensetime/" style="font-size: 10px;">sensetime</a> <a href="/tags/sublime/" style="font-size: 10px;">sublime</a> <a href="/tags/tech/" style="font-size: 15.71px;">tech</a> <a href="/tags/tex/" style="font-size: 10px;">tex</a> <a href="/tags/travel/" style="font-size: 14.29px;">travel</a> <a href="/tags/trvalling/" style="font-size: 12.86px;">trvalling</a> <a href="/tags/unordered-map/" style="font-size: 11.43px;">unordered_map</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a> <a href="/tags/vscode/" style="font-size: 10px;">vscode</a> <a href="/tags/%E6%8A%98%E8%85%BE/" style="font-size: 10px;">折腾</a> <a href="/tags/%E6%97%B7%E8%A7%86/" style="font-size: 10px;">旷视</a>
+      <a href="/tags/Algorithm/" style="font-size: 12.86px;">Algorithm</a> <a href="/tags/Alibaba/" style="font-size: 11.43px;">Alibaba</a> <a href="/tags/ByteDance/" style="font-size: 12.86px;">ByteDance</a> <a href="/tags/C/" style="font-size: 15.71px;">C++</a> <a href="/tags/C-11/" style="font-size: 10px;">C++11</a> <a href="/tags/Competitive-Programming/" style="font-size: 20px;">Competitive Programming</a> <a href="/tags/Database/" style="font-size: 10px;">Database</a> <a href="/tags/Django/" style="font-size: 10px;">Django</a> <a href="/tags/Europe/" style="font-size: 10px;">Europe</a> <a href="/tags/Hexo/" style="font-size: 12.86px;">Hexo</a> <a href="/tags/LeetCode/" style="font-size: 15.71px;">LeetCode</a> <a href="/tags/Linux/" style="font-size: 11.43px;">Linux</a> <a href="/tags/Mac/" style="font-size: 10px;">Mac</a> <a href="/tags/Microsoft/" style="font-size: 10px;">Microsoft</a> <a href="/tags/Mihayo/" style="font-size: 10px;">Mihayo</a> <a href="/tags/New-Graduate/" style="font-size: 10px;">New Graduate</a> <a href="/tags/Owncloud/" style="font-size: 10px;">Owncloud</a> <a href="/tags/Tencent/" style="font-size: 10px;">Tencent</a> <a href="/tags/Ubuntu/" style="font-size: 10px;">Ubuntu</a> <a href="/tags/WeRide/" style="font-size: 10px;">WeRide</a> <a href="/tags/Windows/" style="font-size: 10px;">Windows</a> <a href="/tags/atom/" style="font-size: 10px;">atom</a> <a href="/tags/bank/" style="font-size: 10px;">bank</a> <a href="/tags/benchmark/" style="font-size: 10px;">benchmark</a> <a href="/tags/codeforces/" style="font-size: 10px;">codeforces</a> <a href="/tags/contest/" style="font-size: 10px;">contest</a> <a href="/tags/gcc/" style="font-size: 10px;">gcc</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hash/" style="font-size: 11.43px;">hash</a> <a href="/tags/intern/" style="font-size: 18.57px;">intern</a> <a href="/tags/interview/" style="font-size: 10px;">interview</a> <a href="/tags/kuaishou/" style="font-size: 11.43px;">kuaishou</a> <a href="/tags/life/" style="font-size: 17.14px;">life</a> <a href="/tags/money/" style="font-size: 11.43px;">money</a> <a href="/tags/sensetime/" style="font-size: 10px;">sensetime</a> <a href="/tags/sublime/" style="font-size: 10px;">sublime</a> <a href="/tags/tech/" style="font-size: 15.71px;">tech</a> <a href="/tags/tex/" style="font-size: 10px;">tex</a> <a href="/tags/travel/" style="font-size: 14.29px;">travel</a> <a href="/tags/trvalling/" style="font-size: 14.29px;">trvalling</a> <a href="/tags/unordered-map/" style="font-size: 11.43px;">unordered_map</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a> <a href="/tags/vscode/" style="font-size: 10px;">vscode</a> <a href="/tags/%E6%8A%98%E8%85%BE/" style="font-size: 10px;">折腾</a> <a href="/tags/%E6%97%B7%E8%A7%86/" style="font-size: 10px;">旷视</a>
     </div>
   </div>
 
@@ -720,23 +712,23 @@ ga('send', 'pageview');
       <ul>
         
           <li>
-            <a href="/2021/07/03/my-3-years-master/">my 3 years master</a>
+            <a href="/2021/07/19/LeetCode-weekly-contest-250/">LeetCode weekly contest 250</a>
           </li>
         
           <li>
-            <a href="/2021/06/16/LeetCode-biweekly-contest-54/">LeetCode biweekly contest 54</a>
+            <a href="/2021/07/12/LeetCode-biweekly-contest-56/">LeetCode biweekly contest 56</a>
           </li>
         
           <li>
-            <a href="/2021/06/13/LeetCode-weekly-contest-245/">LeetCode weekly contest 245</a>
+            <a href="/2021/07/11/LeetCode-weekly-contest-249/">LeetCode weekly contest 249</a>
           </li>
         
           <li>
-            <a href="/2021/06/06/LeetCode-weekly-contest-244/">LeetCode weekly contest 244</a>
+            <a href="/2021/07/11/my-3-years-master/">硕士3年复盘</a>
           </li>
         
           <li>
-            <a href="/2021/05/30/LeetCode-weekly-contest-243/">LeetCode weekly contest 243</a>
+            <a href="/2021/07/02/Wuhan-trip/">武汉游记 暨硕士毕业旅行</a>
           </li>
         
       </ul>

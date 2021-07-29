@@ -89,6 +89,285 @@ ga('send', 'pageview');
       <div class="outer">
         <section id="main">
   
+    <article id="post-LeetCode-weekly-contest-125" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/02/24/LeetCode-weekly-contest-125/" class="article-date">
+  <time datetime="2019-02-24T03:11:14.000Z" itemprop="datePublished">2019-02-24</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/LeetCode/">LeetCode</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/02/24/LeetCode-weekly-contest-125/">LeetCode weeekly contest 125</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>本周末真是忙炸，为自己的拖延和懒惰付出了代价。事情都堆在了一起，周日的deadline超级多。早上10点和老板开会，商量 怎么出本科计算机组成原理补考试题 的事儿。开完会回到实验室，contest已经开始了。在短暂犹豫是否按计划参加contest，还是先完成出补考题的任务后，我开始了本周的weekly contest。也算是自己这2个月来坚持的为数不多的事情，继续坚持下去对我来说不仅是提高算法能力的事情了，更是对掌控自己生活的信心的一种极大鼓舞。</p>
+<span id="more"></span>
+
+<p>本周的weekly contest相对还说比较简单，虽然迟到了10min，但仍然提前30min完成4道题目。尤其是第4题，虽然值8分，难度是hard，但也很快解出来了。我认为难度最多Medium。</p>
+<p>结果：</p>
+<table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Name</th>
+<th>Score</th>
+<th>Finish Time</th>
+<th>Q1 (4)</th>
+<th>Q2 (4)</th>
+<th>Q3 (6)</th>
+<th>Q4 (8)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>284 / 4238</td>
+<td>YoungForest</td>
+<td>22</td>
+<td>1:08:40</td>
+<td>0:18:40</td>
+<td>0:31:07  WA(1)</td>
+<td>0:39:39</td>
+<td>1:03:40</td>
+</tr>
+</tbody></table>
+<h2 id="997-Find-the-Town-Judge"><a href="#997-Find-the-Town-Judge" class="headerlink" title="997. Find the Town Judge"></a>997. Find the Town Judge</h2><p>使用2个hashmap，分别记录每个person trust的人数和被多少人trust。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">findJudge</span><span class="params">(<span class="keyword">int</span> N, vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt;&amp; trust)</span> </span>&#123;</span><br><span class="line">        unordered_map&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt; vote;</span><br><span class="line">        unordered_map&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt; untrust;</span><br><span class="line">        <span class="keyword">for</span> (vector&lt;<span class="keyword">int</span>&gt; &amp; p : trust) &#123;</span><br><span class="line">            vote[p[<span class="number">1</span>]]++;</span><br><span class="line">            untrust[p[<span class="number">0</span>]]++;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= N; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (vote[i] == N - <span class="number">1</span> &amp;&amp; untrust[i] == <span class="number">0</span>) <span class="keyword">return</span> i;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="999-Available-Captures-for-Rook"><a href="#999-Available-Captures-for-Rook" class="headerlink" title="999. Available Captures for Rook"></a>999. Available Captures for Rook</h2><p>完全符合Easy的难度，直接模拟rook(行为应该类似中国象棋里的 车)向4个方向一步一步走就可以了。<br>用discuss中的一个道友的话来说，就是 search and capture.</p>
+        
+          <p class="article-more-link">
+            <a href="/2019/02/24/LeetCode-weekly-contest-125/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://youngforest.github.io/2019/02/24/LeetCode-weekly-contest-125/" data-id="ckqz0rqyo009xhltk3nf32ipa" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Competitive-Programming/" rel="tag">Competitive Programming</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!---
+
+-->
+
+
+  
+    <article id="post-Queue-and-Stack" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/02/17/Queue-and-Stack/" class="article-date">
+  <time datetime="2019-02-17T09:33:33.000Z" itemprop="datePublished">2019-02-17</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Programming/">Programming</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/02/17/Queue-and-Stack/">Queue and Stack</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>今天我们一起学习2种重要的数据结构：队列 和 栈。<br>本文根据LeetCode上的Explore教程 <a target="_blank" rel="noopener" href="https://leetcode.com/explore/featured/card/queue-stack/">Introduction to Data Structure - Queue &amp; Stack</a> 整理而成。</p>
+<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>最常用的Collection是数组(Array)，其最常使用的获取数据的操作是随机获取(Random access), 在C++中一般称作 subscribe。<br>但是有时，我们想要限制处理数据的顺序。最常见的限制是：先进先出(First in first out), 后进先出(Last in first out)。分别对应2种数据结构 队列(Queue) 和 栈(Stack)。</p>
+<p>我们从 定义、实现 和 每种数据结构的内置操作 分别学习 队列 和 栈。<br>学习目标：</p>
+<ol>
+<li>理解数据处理顺序FIFO和LIFO的原则；</li>
+<li>手动实现数据结构；</li>
+<li>熟悉语言内置的Queue和Stack；</li>
+<li>解决基础的Queue-related问题，尤其是BFS；</li>
+<li>解决基础的Stack-related问题；</li>
+<li>理解系统的栈如何帮助你，在解决dfs和其他递归问题的时候。</li>
+</ol>
+<h2 id="Queue-First-in-first-out-Data-Structure"><a href="#Queue-First-in-first-out-Data-Structure" class="headerlink" title="Queue: First-in-first-out Data Structure"></a>Queue: First-in-first-out Data Structure</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>先进先出 最普遍的比喻是排队(也就是队列), 最早进入队列的人最早被服务到。<br>所以队列总共只有2个modify 方法：</p>
+<ul>
+<li>enqueue</li>
+<li>dequeue</li>
+</ul>
+<h3 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h3>
+        
+          <p class="article-more-link">
+            <a href="/2019/02/17/Queue-and-Stack/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://youngforest.github.io/2019/02/17/Queue-and-Stack/" data-id="ckqz0rr0n00hyhltkbrd22yf7" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LeetCode/" rel="tag">LeetCode</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!---
+
+-->
+
+
+  
+    <article id="post-LeetCode-weekly-contest-124" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/02/17/LeetCode-weekly-contest-124/" class="article-date">
+  <time datetime="2019-02-17T07:11:48.000Z" itemprop="datePublished">2019-02-17</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/LeetCode/">LeetCode</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/02/17/LeetCode-weekly-contest-124/">LeetCode weekly contest 124</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>今天是开工后第一次参加LeetCode weekly contest，共作出3道题目，排名为772 / 4174。看着每次排名从200+落到了700+，心情蛮失落的。我认为排名掉落的原因有：1. 排名为200是状态和运气都比较好的情况，之前大多数时候也是700左右。2. 第3题虽然为Hard，最后提交TLE了。但我认为如果再多给半个小时就可以AC了。之所以后面时间不够了，与第2、4题花了比较多时间调试直接相关。还是很多实现不够熟悉，比如bfs, backtracking，不能灵活地默写出来。甚至在做第4题的时候，还需要现场查C++的API，对语言的熟悉程度也不够。</p>
+<h2 id="993-Cousins-in-Binary-Tree"><a href="#993-Cousins-in-Binary-Tree" class="headerlink" title="993. Cousins in Binary Tree"></a>993. Cousins in Binary Tree</h2><p>在一棵二叉树上找表兄弟。所谓“表兄弟”的定义为，2个节点在同一层，但父节点不同。</p>
+<p>Intuition: 递归地找节点的父亲和层数，比较2个节点的父亲和层数是否相同。也即，dfs遍历2遍二叉树。</p>
+<p>时间复杂度：O(N),<br>空间复杂度: 平均O(Log N)，最差O(N), 因为需要递归栈。</p>
+<p>由于春节假期期间看了LeetCode上的递归专题<a target="_blank" rel="noopener" href="https://leetcode.com/explore/learn/card/recursion-i/">Introduction to Algorithms - Recursion I</a>。10min搞定该签到题。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for a binary tree node.</span></span><br><span class="line"><span class="comment"> * struct TreeNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     TreeNode *left;</span></span><br><span class="line"><span class="comment"> *     TreeNode *right;</span></span><br><span class="line"><span class="comment"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</span></span><br><span class="line"><span class="comment"> * &#125;;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line">    <span class="comment">// parent, depth</span></span><br><span class="line">    <span class="function">pair&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt; <span class="title">findNode</span><span class="params">(TreeNode* root, <span class="keyword">int</span> value, <span class="keyword">int</span> parent, <span class="keyword">int</span> depth)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (!root) <span class="keyword">return</span> &#123;<span class="number">0</span>, depth + <span class="number">1</span>&#125;;</span><br><span class="line">        <span class="keyword">if</span> (root-&gt;val == value) <span class="keyword">return</span> &#123;parent, depth + <span class="number">1</span>&#125;;</span><br><span class="line">        <span class="keyword">auto</span> left = <span class="built_in">findNode</span>(root-&gt;left, value, root-&gt;val, depth + <span class="number">1</span>);</span><br><span class="line">        <span class="keyword">auto</span> right = <span class="built_in">findNode</span>(root-&gt;right, value, root-&gt;val, depth + <span class="number">1</span>);</span><br><span class="line">        <span class="keyword">if</span> (left.first != <span class="number">0</span>) <span class="keyword">return</span> left;</span><br><span class="line">        <span class="keyword">if</span> (right.first != <span class="number">0</span>) <span class="keyword">return</span> right;</span><br><span class="line">        <span class="keyword">return</span> &#123;<span class="number">0</span>, depth + <span class="number">1</span>&#125;;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">isCousins</span><span class="params">(TreeNode* root, <span class="keyword">int</span> x, <span class="keyword">int</span> y)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">auto</span> xNode = <span class="built_in">findNode</span>(root, x, <span class="number">0</span>, <span class="number">0</span>);</span><br><span class="line">        <span class="keyword">auto</span> yNode = <span class="built_in">findNode</span>(root, y, <span class="number">0</span>, <span class="number">0</span>);</span><br><span class="line">        <span class="keyword">if</span> (xNode.first != yNode.first &amp;&amp; xNode.second == yNode.second)</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="994-Rotting-Oranges"><a href="#994-Rotting-Oranges" class="headerlink" title="994. Rotting Oranges"></a>994. Rotting Oranges</h2><p>给定一个网格，每个格子有3种状态</p>
+<ul>
+<li>什么也没有</li>
+<li>好橘子</li>
+<li>坏橘子<br>每天坏橘子会将临近的好橘子变成坏橘子，求所有橘子变坏的天数。如果无穷大的话，返回-1.</li>
+</ul>
+        
+          <p class="article-more-link">
+            <a href="/2019/02/17/LeetCode-weekly-contest-124/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://youngforest.github.io/2019/02/17/LeetCode-weekly-contest-124/" data-id="ckqz0rqyn009thltkcyfu4yb6" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Competitive-Programming/" rel="tag">Competitive Programming</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!---
+
+-->
+
+
+  
+    <article id="post-recursion" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/02/11/recursion/" class="article-date">
+  <time datetime="2019-02-11T04:58:52.000Z" itemprop="datePublished">2019-02-11</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Programming/">Programming</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/02/11/recursion/">recursion</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>本文根据LeetCode上的教程 <a target="_blank" rel="noopener" href="https://leetcode.com/explore/learn/card/recursion-i/">Introduction to Algorithms - Recursion I</a> 整理而成。目的在于帮助笔者自己更熟悉“递归”这一重要的编程概念，如果能够同时对他人产生帮助，那更好不过了。</p>
+<p>本文的结构和LeetCode上的完全相同，分为 简介、递归原则、复现关系、备忘录、复杂度分析、总结 6个部分。</p>
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>本Card的目的，回答以下问题：</p>
+<ol>
+<li>什么是递归？递归如何工作？</li>
+<li>如何递归地解决一个问题？</li>
+<li>如何分析一个递归算法的时间复杂度和空间复杂度？</li>
+<li>如何以一种更好的方式应用递归？</li>
+</ol>
+<h2 id="递归的原理"><a href="#递归的原理" class="headerlink" title="递归的原理"></a>递归的原理</h2><p>每次递归函数调用自身，都将给定问题变为子问题。递归过程一直继续指导子问题可以不通过进一步递归就可以直接解决。</p>
+<p>递归函数避免无限递归的必要属性：</p>
+<ol>
+<li>递归结束条件(<strong>base cases</strong>)</li>
+<li>一套规则(<strong>recurrence relation</strong>)，可以将所有其他的cases规约为base cases。</li>
+</ol>
+<p>递归函数中可以有多个地方调用本身。</p>
+        
+          <p class="article-more-link">
+            <a href="/2019/02/11/recursion/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://youngforest.github.io/2019/02/11/recursion/" data-id="ckqz0rr1p00m7hltka99d1e6e" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Algorithm/" rel="tag">Algorithm</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LeetCode/" rel="tag">LeetCode</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!---
+
+-->
+
+
+  
     <article id="post-LeetCode-weekly-contest-123" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/02/10/LeetCode-weekly-contest-123/" class="article-date">
@@ -457,248 +736,6 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-LeetCode-weekly-contest-117" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/12/30/LeetCode-weekly-contest-117/" class="article-date">
-  <time datetime="2018-12-30T02:47:49.000Z" itemprop="datePublished">2018-12-30</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/LeetCode/">LeetCode</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/12/30/LeetCode-weekly-contest-117/">LeetCode weekly contest 117</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>今天参加LeetCode weekly contest 117, 采取了不同的策略：边做题边写博客总结。期望这样可以真实地记录所思所想，提高写博客的效率。因为之前2次，事后写博客总是耽误几天时间才写完。</p>
-<h2 id="965-Univalued-Binary-Tree"><a href="#965-Univalued-Binary-Tree" class="headerlink" title="965. Univalued Binary Tree"></a>965. Univalued Binary Tree</h2><p>一道很简单、很弱智的题目，直接DFS/BFS即可。因为BFS在遇到异常节点的时候可以直接返回，更方便。我选择了BFS实现。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Definition for a binary tree node.</span></span><br><span class="line"><span class="comment"># class TreeNode:</span></span><br><span class="line"><span class="comment">#     def __init__(self, x):</span></span><br><span class="line"><span class="comment">#         self.val = x</span></span><br><span class="line"><span class="comment">#         self.left = None</span></span><br><span class="line"><span class="comment">#         self.right = None</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">isUnivalTree</span>(<span class="params">self, root</span>):</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        :type root: TreeNode</span></span><br><span class="line"><span class="string">        :rtype: bool</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        <span class="keyword">if</span> root == <span class="literal">None</span>: <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">        univalue = root.val</span><br><span class="line">        queue = [root]</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">while</span> <span class="built_in">len</span>(queue) &gt; <span class="number">0</span>:</span><br><span class="line">            node = queue.pop(<span class="number">0</span>)</span><br><span class="line">            <span class="keyword">if</span> node.left != <span class="literal">None</span>: queue.append(node.left)</span><br><span class="line">            <span class="keyword">if</span> node.right != <span class="literal">None</span>: queue.append(node.right)</span><br><span class="line">            <span class="keyword">if</span> node.val != univalue: <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">            </span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="967-Numbers-With-Same-Consecutive-Differences"><a href="#967-Numbers-With-Same-Consecutive-Differences" class="headerlink" title="967. Numbers With Same Consecutive Differences"></a>967. Numbers With Same Consecutive Differences</h2><p>第二题也是一道十分弱智的题目，直接搜索即可。需要注意的地方是，N == 1 和 K == 0时的特殊处理。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> functools <span class="keyword">import</span> reduce</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">numsSameConsecDiff</span>(<span class="params">self, N, K</span>):</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        :type N: int</span></span><br><span class="line"><span class="string">        :type K: int</span></span><br><span class="line"><span class="string">        :rtype: List[int]</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        <span class="keyword">if</span> N == <span class="number">1</span>:</span><br><span class="line">            <span class="keyword">return</span> [<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>]</span><br><span class="line">        ret = []</span><br><span class="line">        hashmap = &#123;&#125;</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span> (<span class="number">10</span>):</span><br><span class="line">            hashmap[i] = []</span><br><span class="line">            <span class="keyword">if</span> K == <span class="number">0</span>:</span><br><span class="line">                hashmap[i].append(i)</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">if</span> i + K &lt;= <span class="number">9</span>:</span><br><span class="line">                    hashmap[i].append(i + K)</span><br><span class="line">                <span class="keyword">if</span> i - K &gt;= <span class="number">0</span>:</span><br><span class="line">                    hashmap[i].append(i - K)</span><br><span class="line">        </span><br><span class="line">        </span><br><span class="line">        <span class="function"><span class="keyword">def</span> <span class="title">helper</span>(<span class="params">n, digits</span>):</span></span><br><span class="line">            <span class="keyword">if</span> n == N:</span><br><span class="line">                ret.append(reduce(<span class="keyword">lambda</span> x, y: x * <span class="number">10</span> + y, digits))</span><br><span class="line">                <span class="keyword">return</span></span><br><span class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> hashmap[digits[n-<span class="number">1</span>]]:</span><br><span class="line">                digits.append(i)</span><br><span class="line">                helper(n+<span class="number">1</span>, digits)</span><br><span class="line">                digits.pop()</span><br><span class="line">                </span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, <span class="number">10</span>):</span><br><span class="line">            digits = [i]</span><br><span class="line">            helper(<span class="number">1</span>, digits)</span><br><span class="line">            </span><br><span class="line">        <span class="keyword">return</span> ret</span><br></pre></td></tr></table></figure>
-
-<h2 id="966-Vowel-Spellchecker"><a href="#966-Vowel-Spellchecker" class="headerlink" title="966. Vowel Spellchecker"></a>966. Vowel Spellchecker</h2><p>由于前2题用brute search都解决了，本题我也上来就直接干。结果TLE了，因为暴力法的时间复杂度为O(MN)，M = len(wordlist), N = len(queries)。<br>怎样才能进一步降低时间复杂度呢？我脑子中闪过的第一个词是 单词书(Tire)，最近刚在 算法第四版 中学到这一技术。 时间复杂度为O(max(N * wordlist中最长单词的长度, M), 不出意料的话，可以AC，现在已经11:46了。应该写不完了，让我先看一下第4题吧。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">spellchecker</span>(<span class="params">self, wordlist, queries</span>):</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        :type wordlist: List[str]</span></span><br><span class="line"><span class="string">        :type queries: List[str]</span></span><br><span class="line"><span class="string">        :rtype: List[str]</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        wordlist_replace_vowel = []</span><br><span class="line">        vowel = [<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;e&#x27;</span>, <span class="string">&#x27;i&#x27;</span>, <span class="string">&#x27;o&#x27;</span>, <span class="string">&#x27;u&#x27;</span>, <span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;E&#x27;</span>, <span class="string">&#x27;I&#x27;</span>, <span class="string">&#x27;O&#x27;</span>, <span class="string">&#x27;U&#x27;</span>]</span><br><span class="line">        word_lower = []</span><br><span class="line">        <span class="keyword">for</span> word <span class="keyword">in</span> wordlist:</span><br><span class="line">            word_lower.append(word.lower())</span><br><span class="line">            temp = <span class="built_in">list</span>(word)</span><br><span class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(temp)):</span><br><span class="line">                <span class="keyword">if</span> temp[i] <span class="keyword">in</span> vowel:</span><br><span class="line">                    temp[i] = <span class="string">&#x27;0&#x27;</span></span><br><span class="line">            wordlist_replace_vowel.append(<span class="string">&#x27;&#x27;</span>.join(temp).lower())</span><br><span class="line">            </span><br><span class="line">        ret = []</span><br><span class="line">        <span class="keyword">for</span> query <span class="keyword">in</span> queries:</span><br><span class="line">            flag = <span class="number">0</span></span><br><span class="line">            match = <span class="string">&#x27;&#x27;</span></span><br><span class="line">            temp = <span class="built_in">list</span>(query)</span><br><span class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(temp)):</span><br><span class="line">                <span class="keyword">if</span> temp[i] <span class="keyword">in</span> vowel:</span><br><span class="line">                    temp[i] = <span class="string">&#x27;0&#x27;</span></span><br><span class="line">            query_replace_vowel = <span class="string">&#x27;&#x27;</span>.join(temp).lower()</span><br><span class="line">            query_lower = query.lower()</span><br><span class="line">            </span><br><span class="line">            <span class="keyword">for</span> wi, word <span class="keyword">in</span> <span class="built_in">enumerate</span>(wordlist):</span><br><span class="line">                <span class="keyword">if</span> flag &lt; <span class="number">4</span> <span class="keyword">and</span> word == query:</span><br><span class="line">                    match = word</span><br><span class="line">                    flag = <span class="number">4</span></span><br><span class="line">                    <span class="keyword">break</span></span><br><span class="line">                <span class="keyword">if</span> flag  &lt; <span class="number">3</span> <span class="keyword">and</span> word_lower[wi] == query_lower:</span><br><span class="line">                    match = word</span><br><span class="line">                    flag = <span class="number">3</span></span><br><span class="line">                <span class="keyword">if</span> flag &lt; <span class="number">2</span> <span class="keyword">and</span> wordlist_replace_vowel[wi] == query_replace_vowel:</span><br><span class="line">                    match = word</span><br><span class="line">                    flag = <span class="number">2</span></span><br><span class="line">            </span><br><span class="line">            ret.append(match)</span><br><span class="line">            </span><br><span class="line">        <span class="keyword">return</span> ret</span><br></pre></td></tr></table></figure>
-        
-          <p class="article-more-link">
-            <a href="/2018/12/30/LeetCode-weekly-contest-117/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://youngforest.github.io/2018/12/30/LeetCode-weekly-contest-117/" data-id="ckqz0rqyj0096hltkfkeg4mw2" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Competitive-Programming/" rel="tag">Competitive Programming</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-<!---
-
--->
-
-
-  
-    <article id="post-LeetCode-weekly-contest-116" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/12/26/LeetCode-weekly-contest-116/" class="article-date">
-  <time datetime="2018-12-26T03:26:03.000Z" itemprop="datePublished">2018-12-26</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/LeetCode/">LeetCode</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/12/26/LeetCode-weekly-contest-116/">LeetCode weekly contest 116</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>又到周末LeetCode weekly contest的时候了，这次战果不佳。原因主要是，二三题都想做出来，结果都没有做出来。如果把时间都集中于第二题，应该也还是能AC的。</p>
-<h2 id="961-N-Repeated-Element-in-Size-2N-Array"><a href="#961-N-Repeated-Element-in-Size-2N-Array" class="headerlink" title="961. N-Repeated Element in Size 2N Array"></a>961. N-Repeated Element in Size 2N Array</h2><p>这道题总觉得之前在LeetCode上已经做过了，还记得solution的方向。<br>思路是这样的，既然有一半的元素是一样的，我们随机抽取2个元素，判断是否相等就可以了。从概率上来讲，虽然有永远算不出来的概率，但在实际应用中效果很好。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> random</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">repeatedNTimes</span>(<span class="params">self, A</span>):</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        :type A: List[int]</span></span><br><span class="line"><span class="string">        :rtype: int</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">            s = random.sample(A, <span class="number">2</span>)</span><br><span class="line">            <span class="keyword">if</span> s[<span class="number">0</span>] == s[<span class="number">1</span>]:</span><br><span class="line">                <span class="keyword">return</span> s[<span class="number">0</span>]</span><br></pre></td></tr></table></figure>
-
-<h2 id="962-Maximum-Width-Ramp"><a href="#962-Maximum-Width-Ramp" class="headerlink" title="962. Maximum Width Ramp"></a>962. Maximum Width Ramp</h2><p>或许是最近dp学的有点多，遇见道题目就想着空间换时间。殊不知，忘记了dp的用武之地：<br>When should we look for a Dynamic Programming solution to a problem?</p>
-<ol>
-<li>最优解结构</li>
-<li>重叠子问题<br>找了半天最优解结构和重叠子问题：<br>dp[x] = max[dp[x] + x - k] for all A[x] &gt;= A[k],<br>发现时间复杂度和brute search一样，都是O(n^2)呀！</li>
-</ol>
-<p>真是dp学魔怔了，忘记了其他更基础的算法。其实这道题用简单的排序就能解决。<br>排序可以避免二次循环，将复杂度从O(n^2)降为O(n logn)。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">maxWidthRamp</span>(<span class="params">self, A</span>):</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        :type A: List[int]</span></span><br><span class="line"><span class="string">        :rtype: int</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        min_value = math.inf</span><br><span class="line">        ret = <span class="number">0</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">sorted</span>(<span class="built_in">range</span>(<span class="built_in">len</span>(A)), key=A.__getitem__):</span><br><span class="line">            min_value = <span class="built_in">min</span>(min_value, i)</span><br><span class="line">            ret = <span class="built_in">max</span>(ret, i - min_value)</span><br><span class="line">            </span><br><span class="line">        <span class="keyword">return</span> ret</span><br></pre></td></tr></table></figure>
-
-<p>Solution中还有一种利用二分查找的方法，我觉得很巧妙。<br>关键点在于注意到，对于j1 &lt; j2, A[j1] &lt;= A[j2], 此时，我们总是倾向于选择j2的。所以，对于这样的输入[6,0,8,2,1,5]，maximum width ramp的A[j] 一定会出现在[5, 8]中。对于i的选择，就需要遍历一遍了。那么A[j]是[5, 8]中的哪一个呢？就需要根据A[i]就行二分查找了，选择比A[i]恰好大一点的A[j]。</p>
-        
-          <p class="article-more-link">
-            <a href="/2018/12/26/LeetCode-weekly-contest-116/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://youngforest.github.io/2018/12/26/LeetCode-weekly-contest-116/" data-id="ckqz0rqyi0093hltkf80x9rhx" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Competitive-Programming/" rel="tag">Competitive Programming</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-<!---
-
--->
-
-
-  
-    <article id="post-LeetCode-weekly-contest-115" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/12/19/LeetCode-weekly-contest-115/" class="article-date">
-  <time datetime="2018-12-19T02:34:23.000Z" itemprop="datePublished">2018-12-19</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/LeetCode/">LeetCode</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/12/19/LeetCode-weekly-contest-115/">LeetCode weekly contest 115</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>有些日子没有参加LeetCode的weekly contest了，最近由于准备一月末的Google电话面试，需要重新把算法捡起来。复习算法书是一部分，另一手就是准备刷题啦。由于时间有限，LeetCode的weekly contest不失为一个更好的选择。因为contest有时间限制，和实际面试更像。<br>weekly contest时长为1个半小时，4道不同难度的题目，每周末10点半开始(之前是9点半，可能是因为美国冬令时的原因，所以后沿了一小时)。<br>和之前一样，只完成了2道题目，第三道题有些思路(后来证明不对)，第四题看了下题目，果断放弃。<br>下面分享4道题目的思路和Solution，当然后2道是之后补题的。</p>
-<h2 id="958-Check-Completeness-of-a-Binary-Tree"><a href="#958-Check-Completeness-of-a-Binary-Tree" class="headerlink" title="958. Check Completeness of a Binary Tree"></a>958. Check Completeness of a Binary Tree</h2><p>判断一颗树是否是完全树。<br>关于树的题目，递归、BFS、DFS是常用手段，可以很快发现，BFS最适合解决该题目。<br>一旦发现某个结点缺少child，就将<code>no_child</code>置为True，之后再搜索的时候，其他节点就不能有child了。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Definition for a binary tree node.</span></span><br><span class="line"><span class="comment"># class TreeNode:</span></span><br><span class="line"><span class="comment">#     def __init__(self, x):</span></span><br><span class="line"><span class="comment">#         self.val = x</span></span><br><span class="line"><span class="comment">#         self.left = None</span></span><br><span class="line"><span class="comment">#         self.right = None</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">isCompleteTree</span>(<span class="params">self, root: TreeNode</span>) -&gt; <span class="built_in">bool</span>:</span></span><br><span class="line">        no_child = <span class="literal">False</span></span><br><span class="line">        myqueue = collections.deque()</span><br><span class="line">        <span class="keyword">if</span> root:</span><br><span class="line">            myqueue.append(root)</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">while</span> <span class="built_in">len</span>(myqueue) &gt; <span class="number">0</span>:</span><br><span class="line">            node = myqueue.popleft()</span><br><span class="line">            <span class="keyword">if</span> no_child:</span><br><span class="line">                <span class="keyword">if</span> node.left != <span class="literal">None</span> <span class="keyword">or</span> node.right != <span class="literal">None</span>:</span><br><span class="line">                    <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">if</span> node.left != <span class="literal">None</span>:</span><br><span class="line">                    myqueue.append(node.left)</span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    no_child = <span class="literal">True</span></span><br><span class="line">                <span class="keyword">if</span> node.right != <span class="literal">None</span>:</span><br><span class="line">                    <span class="keyword">if</span> no_child:</span><br><span class="line">                        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">                    <span class="keyword">else</span>:</span><br><span class="line">                        myqueue.append(node.right)</span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    no_child = <span class="literal">True</span></span><br><span class="line">                    </span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br></pre></td></tr></table></figure>
-
-<p>时间复杂度：O(n), n 为节点数，因为在BFS中每个节点都要被遍历到(至少在完全树中，非完全树会提前退出)；<br>空间复杂度：O(n), BFS要用到一个队列，队列中最多要存一层的节点。</p>
-<p>这道题的难度更像Easy，Medium真是高估了。</p>
-<h2 id="957-Prison-Cells-After-N-Days"><a href="#957-Prison-Cells-After-N-Days" class="headerlink" title="957 Prison Cells After N Days"></a>957 Prison Cells After N Days</h2><p>状态转移的题目，可以直接模拟。但缺点是但N太大时，会TLE。<br>不难发现，Cells的状态最多有<code>2^6 = 64</code>种，所以在状态转移时，必然会出现循环。所以只要保存之前遇到的状态，如果再次遇到，就可以直接模掉循环长度了。<br>把状态转移打印出来，很快就可以发现，14是一个很神奇的数，每隔14必循环。所以最后的实现很多人都是直接mod 14了事。</p>
-<p>时间复杂度: O(1),<br>空间复杂度: O(1).</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">prisonAfterNDays</span>(<span class="params">self, cells, N</span>):</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        :type cells: List[int]</span></span><br><span class="line"><span class="string">        :type N: int</span></span><br><span class="line"><span class="string">        :rtype: List[int]</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        last_day = cells</span><br><span class="line">        new_day = [<span class="number">0</span>] * <span class="number">8</span></span><br><span class="line">        N = N % <span class="number">14</span> + <span class="number">14</span></span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, <span class="number">7</span>):</span><br><span class="line">            <span class="keyword">if</span> last_day[i-<span class="number">1</span>] == last_day[i+<span class="number">1</span>]:</span><br><span class="line">                new_day[i] = <span class="number">1</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                new_day[i] = <span class="number">0</span></span><br><span class="line">        new_day[<span class="number">0</span>] = <span class="number">0</span></span><br><span class="line">        new_day[<span class="number">7</span>] = <span class="number">0</span></span><br><span class="line">        last_day[<span class="number">0</span>] = <span class="number">0</span></span><br><span class="line">        last_day[<span class="number">7</span>] = <span class="number">0</span></span><br><span class="line">        last_day, new_day = new_day, last_day</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, N):</span><br><span class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, <span class="number">7</span>):</span><br><span class="line">                <span class="keyword">if</span> last_day[i-<span class="number">1</span>] == last_day[i+<span class="number">1</span>]:</span><br><span class="line">                    new_day[i] = <span class="number">1</span></span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    new_day[i] = <span class="number">0</span></span><br><span class="line">            last_day, new_day = new_day, last_day</span><br><span class="line">            </span><br><span class="line">        <span class="keyword">return</span> last_day</span><br></pre></td></tr></table></figure>
-        
-          <p class="article-more-link">
-            <a href="/2018/12/19/LeetCode-weekly-contest-115/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://youngforest.github.io/2018/12/19/LeetCode-weekly-contest-115/" data-id="ckqz0rqyh008zhltkbpyrcrow" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Competitive-Programming/" rel="tag">Competitive Programming</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-<!---
-
--->
-
-
-  
-    <article id="post-2018-summary-and-2019-resolutions" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/12/12/2018-summary-and-2019-resolutions/" class="article-date">
-  <time datetime="2018-12-12T13:29:47.000Z" itemprop="datePublished">2018-12-12</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/dairy/">dairy</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/12/12/2018-summary-and-2019-resolutions/">2018年终总结 与 2019新年愿望</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Merry Christmas!</p>
-<p>离2019年还有5天，2018年就要结束了。一年过的真快呀。不知道你的2018年怎么样呀？一年前制定的新年计划实现了多少呢？</p>
-<p>我曾在2017年的新年计划中写下这样一段话：</p>
-<blockquote>
-<p>最近刚读了蔡东藩的<a target="_blank" rel="noopener" href="https://book.douban.com/subject/3089584/">五代史</a>, 了解五代混乱的历史, 感叹大多数主子昏庸误国, 英明的主子也多少有瑕疵的同时, 也将心比心, 自己是否是一个英明的帝王. 答案却是否定的. 我是一个懒惰的人, 没有意志力的人, 不喜欢批评, 只喜欢表扬. 如果把自己放在帝王的位置上, 一定是个亡国之君了. 想想还是很可怕的.</p>
-</blockquote>
-<p>当时真的是处于人生中一个非常没有自信的阶段。大三的寒假，刚刚被编译虐了一学期，面临未来人生道路的选择，自己完全没有信心把握自己的未来，甚至对人生的职业规划完全没有一个清楚的认识。现在近2年过去了(当时是农历新年写的)，不敢说我的境遇好了多少，但起码对未来，对自己有了更清醒的认识。自信心也逐渐建立起来了。<br>现在如果重新回答17年时的问题，我会有不一样的答案。</p>
-<p>将心比心, 自己是否是一个英明的帝王。<br>我想，我可能会成为宋仁宗那样的君主。虽然在唐宗宋祖、秦皇汉武看来，完全没有帝王的权威。但宋仁宗是真正的仁主，他在位的40年，北宋人才辈出，经济也发展到古中国的顶峰。他是一个读书人所期待的最理想的皇帝。感兴趣的同学可以更多地了解一下那个时代，那个皇帝。类似的帝王还有汉文帝、明孝宗。“仁”是他们的共同特点，也是我给自己的一个很高的评价。</p>
-<h2 id="回顾与展望"><a href="#回顾与展望" class="headerlink" title="回顾与展望"></a>回顾与展望</h2><p>新的一年，既要坚持既往好的传统，又要摒弃坏的习惯，培养好的习性。</p>
-<p>坚持一切以<strong>找一份好的工作</strong>为中心。</p>
-<p>2018年我为此着实付出了不少努力，包括3次实习和多次实习面试。<br>3次实习分别是，17年9月到今年3月的偶数科技的云平台开发工程师，4月到6月在快手的推荐系统算法工程师，还有11月到目前的文远知行数据平台开发工程师。3次实习极大地让我接触到业界的需求和实际工作，提高了我的代码能力，最重要的是，帮助我更好地认识自己，从而作出合理的职业规划。<br>实习面试有：快手、face++、Microsoft、小红书、景驰、商汤。成功率大概只有一半，而且成功与否更多地和对方缺人程度相关。</p>
-        
-          <p class="article-more-link">
-            <a href="/2018/12/12/2018-summary-and-2019-resolutions/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://youngforest.github.io/2018/12/12/2018-summary-and-2019-resolutions/" data-id="ckqz0rqx30048hltkhi3j72ps" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/life/" rel="tag">life</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-<!---
-
--->
-
-
-  
 
 
   <nav id="page-nav">
@@ -732,7 +769,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Algorithm/" style="font-size: 12.86px;">Algorithm</a> <a href="/tags/Alibaba/" style="font-size: 11.43px;">Alibaba</a> <a href="/tags/ByteDance/" style="font-size: 12.86px;">ByteDance</a> <a href="/tags/C/" style="font-size: 15.71px;">C++</a> <a href="/tags/C-11/" style="font-size: 10px;">C++11</a> <a href="/tags/Competitive-Programming/" style="font-size: 20px;">Competitive Programming</a> <a href="/tags/Database/" style="font-size: 10px;">Database</a> <a href="/tags/Django/" style="font-size: 10px;">Django</a> <a href="/tags/Europe/" style="font-size: 10px;">Europe</a> <a href="/tags/Hexo/" style="font-size: 12.86px;">Hexo</a> <a href="/tags/LeetCode/" style="font-size: 15.71px;">LeetCode</a> <a href="/tags/Linux/" style="font-size: 11.43px;">Linux</a> <a href="/tags/Mac/" style="font-size: 10px;">Mac</a> <a href="/tags/Microsoft/" style="font-size: 10px;">Microsoft</a> <a href="/tags/Mihayo/" style="font-size: 10px;">Mihayo</a> <a href="/tags/New-Graduate/" style="font-size: 10px;">New Graduate</a> <a href="/tags/Owncloud/" style="font-size: 10px;">Owncloud</a> <a href="/tags/Tencent/" style="font-size: 10px;">Tencent</a> <a href="/tags/Ubuntu/" style="font-size: 10px;">Ubuntu</a> <a href="/tags/WeRide/" style="font-size: 10px;">WeRide</a> <a href="/tags/Windows/" style="font-size: 10px;">Windows</a> <a href="/tags/atom/" style="font-size: 10px;">atom</a> <a href="/tags/bank/" style="font-size: 10px;">bank</a> <a href="/tags/benchmark/" style="font-size: 10px;">benchmark</a> <a href="/tags/codeforces/" style="font-size: 10px;">codeforces</a> <a href="/tags/contest/" style="font-size: 10px;">contest</a> <a href="/tags/gcc/" style="font-size: 10px;">gcc</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hash/" style="font-size: 11.43px;">hash</a> <a href="/tags/intern/" style="font-size: 18.57px;">intern</a> <a href="/tags/interview/" style="font-size: 10px;">interview</a> <a href="/tags/kuaishou/" style="font-size: 11.43px;">kuaishou</a> <a href="/tags/life/" style="font-size: 17.14px;">life</a> <a href="/tags/money/" style="font-size: 11.43px;">money</a> <a href="/tags/sensetime/" style="font-size: 10px;">sensetime</a> <a href="/tags/sublime/" style="font-size: 10px;">sublime</a> <a href="/tags/tech/" style="font-size: 15.71px;">tech</a> <a href="/tags/tex/" style="font-size: 10px;">tex</a> <a href="/tags/travel/" style="font-size: 14.29px;">travel</a> <a href="/tags/trvalling/" style="font-size: 12.86px;">trvalling</a> <a href="/tags/unordered-map/" style="font-size: 11.43px;">unordered_map</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a> <a href="/tags/vscode/" style="font-size: 10px;">vscode</a> <a href="/tags/%E6%8A%98%E8%85%BE/" style="font-size: 10px;">折腾</a> <a href="/tags/%E6%97%B7%E8%A7%86/" style="font-size: 10px;">旷视</a>
+      <a href="/tags/Algorithm/" style="font-size: 12.86px;">Algorithm</a> <a href="/tags/Alibaba/" style="font-size: 11.43px;">Alibaba</a> <a href="/tags/ByteDance/" style="font-size: 12.86px;">ByteDance</a> <a href="/tags/C/" style="font-size: 15.71px;">C++</a> <a href="/tags/C-11/" style="font-size: 10px;">C++11</a> <a href="/tags/Competitive-Programming/" style="font-size: 20px;">Competitive Programming</a> <a href="/tags/Database/" style="font-size: 10px;">Database</a> <a href="/tags/Django/" style="font-size: 10px;">Django</a> <a href="/tags/Europe/" style="font-size: 10px;">Europe</a> <a href="/tags/Hexo/" style="font-size: 12.86px;">Hexo</a> <a href="/tags/LeetCode/" style="font-size: 15.71px;">LeetCode</a> <a href="/tags/Linux/" style="font-size: 11.43px;">Linux</a> <a href="/tags/Mac/" style="font-size: 10px;">Mac</a> <a href="/tags/Microsoft/" style="font-size: 10px;">Microsoft</a> <a href="/tags/Mihayo/" style="font-size: 10px;">Mihayo</a> <a href="/tags/New-Graduate/" style="font-size: 10px;">New Graduate</a> <a href="/tags/Owncloud/" style="font-size: 10px;">Owncloud</a> <a href="/tags/Tencent/" style="font-size: 10px;">Tencent</a> <a href="/tags/Ubuntu/" style="font-size: 10px;">Ubuntu</a> <a href="/tags/WeRide/" style="font-size: 10px;">WeRide</a> <a href="/tags/Windows/" style="font-size: 10px;">Windows</a> <a href="/tags/atom/" style="font-size: 10px;">atom</a> <a href="/tags/bank/" style="font-size: 10px;">bank</a> <a href="/tags/benchmark/" style="font-size: 10px;">benchmark</a> <a href="/tags/codeforces/" style="font-size: 10px;">codeforces</a> <a href="/tags/contest/" style="font-size: 10px;">contest</a> <a href="/tags/gcc/" style="font-size: 10px;">gcc</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hash/" style="font-size: 11.43px;">hash</a> <a href="/tags/intern/" style="font-size: 18.57px;">intern</a> <a href="/tags/interview/" style="font-size: 10px;">interview</a> <a href="/tags/kuaishou/" style="font-size: 11.43px;">kuaishou</a> <a href="/tags/life/" style="font-size: 17.14px;">life</a> <a href="/tags/money/" style="font-size: 11.43px;">money</a> <a href="/tags/sensetime/" style="font-size: 10px;">sensetime</a> <a href="/tags/sublime/" style="font-size: 10px;">sublime</a> <a href="/tags/tech/" style="font-size: 15.71px;">tech</a> <a href="/tags/tex/" style="font-size: 10px;">tex</a> <a href="/tags/travel/" style="font-size: 14.29px;">travel</a> <a href="/tags/trvalling/" style="font-size: 14.29px;">trvalling</a> <a href="/tags/unordered-map/" style="font-size: 11.43px;">unordered_map</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a> <a href="/tags/vscode/" style="font-size: 10px;">vscode</a> <a href="/tags/%E6%8A%98%E8%85%BE/" style="font-size: 10px;">折腾</a> <a href="/tags/%E6%97%B7%E8%A7%86/" style="font-size: 10px;">旷视</a>
     </div>
   </div>
 
@@ -754,23 +791,23 @@ ga('send', 'pageview');
       <ul>
         
           <li>
-            <a href="/2021/07/03/my-3-years-master/">my 3 years master</a>
+            <a href="/2021/07/19/LeetCode-weekly-contest-250/">LeetCode weekly contest 250</a>
           </li>
         
           <li>
-            <a href="/2021/06/16/LeetCode-biweekly-contest-54/">LeetCode biweekly contest 54</a>
+            <a href="/2021/07/12/LeetCode-biweekly-contest-56/">LeetCode biweekly contest 56</a>
           </li>
         
           <li>
-            <a href="/2021/06/13/LeetCode-weekly-contest-245/">LeetCode weekly contest 245</a>
+            <a href="/2021/07/11/LeetCode-weekly-contest-249/">LeetCode weekly contest 249</a>
           </li>
         
           <li>
-            <a href="/2021/06/06/LeetCode-weekly-contest-244/">LeetCode weekly contest 244</a>
+            <a href="/2021/07/11/my-3-years-master/">硕士3年复盘</a>
           </li>
         
           <li>
-            <a href="/2021/05/30/LeetCode-weekly-contest-243/">LeetCode weekly contest 243</a>
+            <a href="/2021/07/02/Wuhan-trip/">武汉游记 暨硕士毕业旅行</a>
           </li>
         
       </ul>
