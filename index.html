@@ -134,7 +134,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">215</span>
+          <span class="site-state-item-count">216</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -194,6 +194,133 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/2021/08/15/LeetCode-weekly-contest-254/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="杨森">
+      <meta itemprop="description" content="佛系更新；生活、学习">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YoungForest's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/08/15/LeetCode-weekly-contest-254/" class="post-title-link" itemprop="url">LeetCode weekly contest 254</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-08-15 11:40:36 / Modified: 20:50:42" itemprop="dateCreated datePublished" datetime="2021-08-15T11:40:36+08:00">2021-08-15</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2021/08/15/LeetCode-weekly-contest-254/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/08/15/LeetCode-weekly-contest-254/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Name</th>
+<th>Score</th>
+<th>Finish Time</th>
+<th>Q1 (3)</th>
+<th>Q2 (4)</th>
+<th>Q3 (6)</th>
+<th>Q4 (6)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>616 / 13755</td>
+<td>YoungForest</td>
+<td>18</td>
+<td>1:28:25</td>
+<td>0:03:14</td>
+<td>0:08:43</td>
+<td>0:37:17  🐞4</td>
+<td>1:03:25  🐞1</td>
+</tr>
+</tbody></table>
+<p>一不小心，周赛博客又鸽了3周。虽然我一直在参加周赛，但赛后经常忘记总结和复盘。平日里对刷题也放松了练习。平时打卡不是让npy刷，就是抄之前的提交。毕竟自己做了1300+的题，经常出的题都是我做过的。<br>主要还是工作后生活丰富了许多，刷题和周赛的优先级降低不少。多场双周赛我都鸽了，快活的诱惑太大了。</p>
+<h2 id="1967-Number-of-Strings-That-Appear-as-Substrings-in-Word"><a href="#1967-Number-of-Strings-That-Appear-as-Substrings-in-Word" class="headerlink" title="1967. Number of Strings That Appear as Substrings in Word"></a>1967. Number of Strings That Appear as Substrings in Word</h2><p>签到题。字符串问题用<code>Python</code> So easy。可惜我Q3没有坚持用<code>Python</code>，否则这周免打卡也是极有可能的。距500名差10min。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">numOfStrings</span>(<span class="params">self, patterns: <span class="type">List</span>[<span class="built_in">str</span>], word: <span class="built_in">str</span></span>) -&gt; <span class="built_in">int</span>:</span></span><br><span class="line">        ans = <span class="number">0</span></span><br><span class="line">        <span class="keyword">for</span> s <span class="keyword">in</span> patterns:</span><br><span class="line">            <span class="keyword">if</span> s <span class="keyword">in</span> word:</span><br><span class="line">                ans += <span class="number">1</span></span><br><span class="line">        <span class="keyword">return</span> ans</span><br></pre></td></tr></table></figure>
+
+<p>时间复杂度: O(sum(patterns[i].length * word.length)),<br>空间复杂度: O(1).</p>
+<h2 id="1968-Array-With-Elements-Not-Equal-to-Average-of-Neighbors"><a href="#1968-Array-With-Elements-Not-Equal-to-Average-of-Neighbors" class="headerlink" title="1968. Array With Elements Not Equal to Average of Neighbors"></a>1968. Array With Elements Not Equal to Average of Neighbors</h2><p>贪心。这道题答案并不唯一，但我看到大多数人的思路和我一样。<br>即 大 小 间隔插，保证2侧的数都大于/小于中间的数。自然可以保证平均数也大于/小于中间的数。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">rearrangeArray</span><span class="params">(vector&lt;<span class="keyword">int</span>&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">        <span class="built_in">sort</span>(nums.<span class="built_in">begin</span>(), nums.<span class="built_in">end</span>());</span><br><span class="line">        <span class="keyword">const</span> <span class="keyword">int</span> n = nums.<span class="built_in">size</span>();</span><br><span class="line">        <span class="keyword">int</span> l = <span class="number">0</span>, r = n - <span class="number">1</span>;</span><br><span class="line">        <span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">ans</span><span class="params">(n)</span></span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; l &lt;= r; i += <span class="number">2</span>) &#123;</span><br><span class="line">            ans[i] = nums[l++];</span><br><span class="line">            <span class="keyword">if</span> (l &lt;= r)</span><br><span class="line">                ans[i+<span class="number">1</span>] = nums[r--];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>时间复杂度: O(n log n),<br>空间复杂度: O(n).</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/08/15/LeetCode-weekly-contest-254/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1310,139 +1437,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2021/05/30/LeetCode-weekly-contest-243/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/2021/05/30/LeetCode-biweekly-contest-53/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="杨森">
-      <meta itemprop="description" content="佛系更新；生活、学习">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="YoungForest's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/05/30/LeetCode-biweekly-contest-53/" class="post-title-link" itemprop="url">LeetCode biweekly contest 53</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-05-30 11:44:44" itemprop="dateCreated datePublished" datetime="2021-05-30T11:44:44+08:00">2021-05-30</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-07-11 12:47:44" itemprop="dateModified" datetime="2021-07-11T12:47:44+08:00">2021-07-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a>
-        </span>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus: </span>
-    
-    <a title="disqus" href="/2021/05/30/LeetCode-biweekly-contest-53/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/05/30/LeetCode-biweekly-contest-53/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <table>
-<thead>
-<tr>
-<th>Rank</th>
-<th>Name</th>
-<th>Score</th>
-<th>Finish Time</th>
-<th>Q1 (3)</th>
-<th>Q2 (5)</th>
-<th>Q3 (5)</th>
-<th>Q4 (6)</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>219 / 12291</td>
-<td>YoungForest</td>
-<td>18</td>
-<td>0:57:45</td>
-<td>0:19:12</td>
-<td>0:22:21</td>
-<td>0:46:08</td>
-<td>0:57:45</td>
-</tr>
-</tbody></table>
-<p>因为今天陪npy去参加斯巴达比赛，早上不到6点就起了，在外奔波了一天。<br>比赛前想着休息一下子，就打算睡20min。没想到太累了，闹铃响了自己给关了。因此迟到了10+min，否则我排名还可以更高些。题目不难，也不简单，属于出的比较好的。</p>
-<p>零神大数据<br>1876,Substrings of Size Three with Distinct Characters,substrings-of-size-three-with-distinct-characters,1248.7224675206<br>1877,Minimize Maximum Pair Sum in Array,minimize-maximum-pair-sum-in-array,1301.3817574010<br>1878,Get Biggest Three Rhombus Sums in a Grid,get-biggest-three-rhombus-sums-in-a-grid,1897.5516652727<br>1879,Minimum XOR Sum of Two Arrays,minimum-xor-sum-of-two-arrays,2145.1839952670</p>
-<span id="more"></span>
-
-<h2 id="1876-Substrings-of-Size-Three-with-Distinct-Characters"><a href="#1876-Substrings-of-Size-Three-with-Distinct-Characters" class="headerlink" title="1876. Substrings of Size Three with Distinct Characters"></a>1876. Substrings of Size Three with Distinct Characters</h2><p>签到题。因为子字符串长度是确定长度（3）。因此可以用一个滑动窗口枚举所有的长度为3的子串，判断是否每个字符都只出现一次。</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">countGoodSubstrings</span><span class="params">(string s)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">const</span> <span class="keyword">int</span> n = s.<span class="built_in">size</span>();</span><br><span class="line">        <span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">cnt</span><span class="params">(<span class="number">26</span>, <span class="number">0</span>)</span></span>;</span><br><span class="line">        <span class="keyword">auto</span> ok = [&amp;]() -&gt; <span class="keyword">bool</span> &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i : cnt) &#123;</span><br><span class="line">                <span class="keyword">if</span> (i &gt; <span class="number">1</span>) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125;;</span><br><span class="line">        <span class="keyword">if</span> (n &lt; <span class="number">3</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> ans = <span class="number">0</span>;</span><br><span class="line">        ++cnt[s[<span class="number">0</span>] - <span class="string">&#x27;a&#x27;</span>];</span><br><span class="line">        ++cnt[s[<span class="number">1</span>] - <span class="string">&#x27;a&#x27;</span>];</span><br><span class="line">        ++cnt[s[<span class="number">2</span>] - <span class="string">&#x27;a&#x27;</span>];</span><br><span class="line">        <span class="keyword">if</span> (<span class="built_in">ok</span>()) ++ans;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">3</span>; i &lt; n; ++i) &#123;</span><br><span class="line">            ++cnt[s[i] - <span class="string">&#x27;a&#x27;</span>];</span><br><span class="line">            --cnt[s[i - <span class="number">3</span>] - <span class="string">&#x27;a&#x27;</span>];</span><br><span class="line">            <span class="keyword">if</span> (<span class="built_in">ok</span>()) ++ans;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<p>时间复杂度: O(n),<br>空间复杂度: O(1).</p>
-<h2 id="1877-Minimize-Maximum-Pair-Sum-in-Array"><a href="#1877-Minimize-Maximum-Pair-Sum-in-Array" class="headerlink" title="1877. Minimize Maximum Pair Sum in Array"></a>1877. Minimize Maximum Pair Sum in Array</h2><p>贪心，让大的和小的组合。<br>可以让最大和最小，同时让最小和最大。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/05/30/LeetCode-biweekly-contest-53/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>

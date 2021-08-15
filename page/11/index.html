@@ -134,7 +134,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">215</span>
+          <span class="site-state-item-count">216</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -194,6 +194,138 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/2020/02/16/LeetCode-weekly-contest-176/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="杨森">
+      <meta itemprop="description" content="佛系更新；生活、学习">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YoungForest's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2020/02/16/LeetCode-weekly-contest-176/" class="post-title-link" itemprop="url">LeetCode weekly contest 176</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2020-02-16 12:07:55" itemprop="dateCreated datePublished" datetime="2020-02-16T12:07:55+08:00">2020-02-16</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-07-11 12:47:44" itemprop="dateModified" datetime="2021-07-11T12:47:44+08:00">2021-07-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2020/02/16/LeetCode-weekly-contest-176/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/02/16/LeetCode-weekly-contest-176/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Name</th>
+<th>Score</th>
+<th>Finish Time</th>
+<th>Q1 (3)</th>
+<th>Q2 (5)</th>
+<th>Q3 (5)</th>
+<th>Q4 (6)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>306 / 8105</td>
+<td>YoungForest</td>
+<td>19</td>
+<td>1:36:07</td>
+<td>0:02:47</td>
+<td>0:23:09</td>
+<td>0:54:53  1</td>
+<td>1:26:07  1</td>
+</tr>
+</tbody></table>
+<p>本次比赛在最后关头终于AC，也是极其的惊现刺激。自从加入中国区的同学之后，我周赛的排名都很难进入前200了。比如本次就从229掉到了306。不得不承认，我国内卷之严重呀。</p>
+<p>排名落后的主要原因在于第3题花费了很多时间调试和试，差点最后一题都没时间实现了。最近缺少练习也导致debug能力和一遍bug-free的能力急剧下降。</p>
+<h2 id="1351-Count-Negative-Numbers-in-a-Sorted-Matrix"><a href="#1351-Count-Negative-Numbers-in-a-Sorted-Matrix" class="headerlink" title="1351. Count Negative Numbers in a Sorted Matrix"></a>1351. Count Negative Numbers in a Sorted Matrix</h2><p>利用横竖都是有序的条件，可以实现O(m + n)的计数。<br>和<a target="_blank" rel="noopener" href="https://leetcode.com/problems/search-a-2d-matrix-ii/">search-a-2d-matrix-ii</a>类似。</p>
+<p>时间复杂度: O(m + n),<br>空间复杂度: O(1).</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">countNegatives</span><span class="params">(vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt;&amp; grid)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> ans = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">const</span> <span class="keyword">int</span> m = grid.<span class="built_in">size</span>();</span><br><span class="line">        <span class="keyword">const</span> <span class="keyword">int</span> n = grid[<span class="number">0</span>].<span class="built_in">size</span>();</span><br><span class="line">        <span class="keyword">int</span> row = <span class="number">0</span>, col = n - <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span> (row &lt; m &amp;&amp; col &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (grid[row][col] &lt; <span class="number">0</span>) &#123;</span><br><span class="line">                ans += m - row;</span><br><span class="line">                --col;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                ++row;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="1352-Product-of-the-Last-K-Numbers"><a href="#1352-Product-of-the-Last-K-Numbers" class="headerlink" title="1352. Product of the Last K Numbers"></a>1352. Product of the Last K Numbers</h2><p>记录最后0的位置和累计的乘积。判断最后K个数中是否有0，如果没有的话，借助最后的乘积除以倒数第k + 1个乘积即可。</p>
+<p>时间复杂度:</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/02/16/LeetCode-weekly-contest-176/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1269,115 +1401,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2019/11/11/mac-write-ntfs-solution/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/2019/10/21/LeetCode-weekly-contest-159/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="杨森">
-      <meta itemprop="description" content="佛系更新；生活、学习">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="YoungForest's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2019/10/21/LeetCode-weekly-contest-159/" class="post-title-link" itemprop="url">LeetCode weekly contest 159</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2019-10-21 09:29:11" itemprop="dateCreated datePublished" datetime="2019-10-21T09:29:11+08:00">2019-10-21</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-07-11 12:47:44" itemprop="dateModified" datetime="2021-07-11T12:47:44+08:00">2021-07-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a>
-        </span>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus: </span>
-    
-    <a title="disqus" href="/2019/10/21/LeetCode-weekly-contest-159/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/10/21/LeetCode-weekly-contest-159/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="1232-Check-If-It-Is-a-Straight-Line"><a href="#1232-Check-If-It-Is-a-Straight-Line" class="headerlink" title="1232. Check If It Is a Straight Line"></a>1232. Check If It Is a Straight Line</h2><p>依次检查3个点是否共线。</p>
-<p>时间复杂度: O(N),<br>空间复杂度: O(1).</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">right</span><span class="params">(<span class="keyword">const</span> vector&lt;<span class="keyword">int</span>&gt;&amp; p1, <span class="keyword">const</span> vector&lt;<span class="keyword">int</span>&gt;&amp; p2, <span class="keyword">const</span> vector&lt;<span class="keyword">int</span>&gt;&amp; p3)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> (p1[<span class="number">0</span>] - p2[<span class="number">0</span>]) * (p2[<span class="number">1</span>] -  p3[<span class="number">1</span>]) == (p1[<span class="number">1</span>] - p2[<span class="number">1</span>]) * (p2[<span class="number">0</span>] - p3[<span class="number">0</span>]);</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">checkStraightLine</span><span class="params">(vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt;&amp; coordinates)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i =   <span class="number">0</span>; i + <span class="number">2</span> &lt; coordinates.<span class="built_in">size</span>(); ++i) &#123;</span><br><span class="line">            <span class="keyword">if</span> (!<span class="built_in">right</span>(coordinates[i], coordinates[i + <span class="number">1</span>], coordinates[i + <span class="number">2</span>])) &#123;</span><br><span class="line">                <span class="keyword">return</span>  <span class="literal">false</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h2 id="1233-Remove-Sub-Folders-from-the-Filesystem"><a href="#1233-Remove-Sub-Folders-from-the-Filesystem" class="headerlink" title="1233. Remove Sub-Folders from the Filesystem"></a>1233. Remove Sub-Folders from the Filesystem</h2><p>用一个HashSet记录出现过的路径，再遍历所有路径，依次分解每层的父目录，判断是否再记录中即可。</p>
-<p>时间复杂度: O(folder.size() * string.size()),<br>空间复杂度: O(folder.size() * string.size()).</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">vector&lt;string&gt; <span class="title">removeSubfolders</span><span class="params">(vector&lt;string&gt;&amp; folder)</span> </span>&#123;</span><br><span class="line">        unordered_set&lt;string&gt; memo;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">auto</span>&amp; f : folder) &#123;</span><br><span class="line">            memo.<span class="built_in">insert</span>(f);</span><br><span class="line">        &#125;</span><br><span class="line">        vector&lt;string&gt; ans;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">auto</span>&amp; f : folder) &#123;</span><br><span class="line">            <span class="keyword">int</span> i = f.<span class="built_in">size</span>() - <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">bool</span> appear = <span class="literal">false</span>;</span><br><span class="line">            <span class="keyword">while</span> (i &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">                <span class="keyword">while</span> (i &gt;= <span class="number">0</span> &amp;&amp; f[i] != <span class="string">&#x27;/&#x27;</span>) &#123;</span><br><span class="line">                    --i;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">auto</span> head = f.<span class="built_in">substr</span>(<span class="number">0</span>, i);</span><br><span class="line">                <span class="keyword">if</span> (memo.<span class="built_in">find</span>(head) != memo.<span class="built_in">end</span>()) &#123;</span><br><span class="line">                    appear = <span class="literal">true</span>;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                --i;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (!appear) &#123;</span><br><span class="line">                ans.<span class="built_in">push_back</span>(f);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h2 id="1234-Replace-the-Substring-for-Balanced-String"><a href="#1234-Replace-the-Substring-for-Balanced-String" class="headerlink" title="1234. Replace the Substring for Balanced String"></a>1234. Replace the Substring for Balanced String</h2><p>滑动窗口。<br>记录所有多的字母，然后设置一个窗口使得多的字母出现字数多于多的次数。然后移动该窗口，保持窗口的特性(多的字母出现字数多于多的次数)不变。记录 窗口的最小长度。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2019/10/21/LeetCode-weekly-contest-159/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>

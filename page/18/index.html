@@ -134,7 +134,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">215</span>
+          <span class="site-state-item-count">216</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -194,6 +194,116 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/2019/01/06/LeetCode-weekly-contest-118/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="杨森">
+      <meta itemprop="description" content="佛系更新；生活、学习">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YoungForest's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2019/01/06/LeetCode-weekly-contest-118/" class="post-title-link" itemprop="url">LeetCode weekly contest 118</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2019-01-06 10:37:36" itemprop="dateCreated datePublished" datetime="2019-01-06T10:37:36+08:00">2019-01-06</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-07-11 12:47:44" itemprop="dateModified" datetime="2021-07-11T12:47:44+08:00">2021-07-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2019/01/06/LeetCode-weekly-contest-118/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/01/06/LeetCode-weekly-contest-118/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>一周一度的LeetCode weekly contest 开始啦。本周着实比之前有所进步，首先是对C++更加熟悉了，之前都是用Python写的。答题过程也更流畅了，差点做出来3道题目。</p>
+<span id="more"></span>
+
+<h2 id="970-Powerful-Integers"><a href="#970-Powerful-Integers" class="headerlink" title="970. Powerful Integers"></a>970. Powerful Integers</h2><p>第一题只有3分，而且无法从算法上就行优化，brute approach即可。<br>需要注意的是corner case, 当x == 1 or y == 1时，1^n = 1.</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">powerfulIntegers</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y, <span class="keyword">int</span> bound)</span> </span>&#123;</span><br><span class="line">        unordered_set&lt;<span class="keyword">int</span>&gt; res;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; ; ++i) &#123;</span><br><span class="line">            <span class="keyword">int</span> ans = <span class="built_in">pow</span>(x, i);</span><br><span class="line">            <span class="keyword">if</span> (ans &gt; bound) <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; ; ++j) &#123;</span><br><span class="line">                <span class="keyword">int</span> ans_new = ans + <span class="built_in">pow</span>(y, j);</span><br><span class="line">                <span class="keyword">if</span> (ans_new &lt;= bound)</span><br><span class="line">                    res.<span class="built_in">insert</span>(ans_new);</span><br><span class="line">                <span class="keyword">else</span></span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">if</span> (y == <span class="number">1</span>) <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (x == <span class="number">1</span>) <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        vector&lt;<span class="keyword">int</span>&gt; res_vec;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> a: res) &#123;</span><br><span class="line">            res_vec.<span class="built_in">push_back</span>(a);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res_vec;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="969-Pancake-Sorting"><a href="#969-Pancake-Sorting" class="headerlink" title="969. Pancake Sorting"></a>969. Pancake Sorting</h2><p>首先想到一种暴力方法，每次把最后一个元素排好序，类似选择排序的算法。<br>即先找到最后一个元素的位置，将其flip到第一个位置，然后再flip一次，放在最后一个位置。<br>不变式为，最后一个位置之后的元素都是排好序的。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">flip</span><span class="params">(vector&lt;<span class="keyword">int</span>&gt;&amp; A, <span class="keyword">int</span> begin,<span class="keyword">int</span> end)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (; begin &lt; end; ++begin, --end) &#123;</span><br><span class="line">            <span class="keyword">int</span> temp;</span><br><span class="line">            temp = A[begin];</span><br><span class="line">            A[begin] = A[end];</span><br><span class="line">            A[end] = temp;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">pancakeSort</span><span class="params">(vector&lt;<span class="keyword">int</span>&gt;&amp; A)</span> </span>&#123;</span><br><span class="line">        vector&lt;<span class="keyword">int</span>&gt; res;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = A.<span class="built_in">size</span>(); i &gt; <span class="number">1</span>; --i) &#123;</span><br><span class="line">            <span class="keyword">int</span> index = <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; i; ++j) &#123;</span><br><span class="line">                <span class="keyword">if</span> (A[j] == i) &#123;</span><br><span class="line">                    index = j;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;           </span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (index + <span class="number">1</span> != i) &#123;</span><br><span class="line">                res.<span class="built_in">push_back</span>(index+<span class="number">1</span>);</span><br><span class="line">                <span class="built_in">flip</span>(A, <span class="number">0</span>, index);</span><br><span class="line">                res.<span class="built_in">push_back</span>(i);</span><br><span class="line">                <span class="built_in">flip</span>(A, <span class="number">0</span>, i - <span class="number">1</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="971-Flip-Binary-Tree-To-Match-Preorder-Traversal"><a href="#971-Flip-Binary-Tree-To-Match-Preorder-Traversal" class="headerlink" title="971. Flip Binary Tree To Match Preorder Traversal"></a>971. Flip Binary Tree To Match Preorder Traversal</h2><p>该题也是straight forward解决即可，不断递归判断每个子树是否可以flip。由于搞错了一个参数的含义(设计的是没问题的，但实现的时候有疏忽)，voyageIndex传入的是root的位置，flip返回的是预计下一个子树的根结点在voyage中的位置。<br>导致12:19才AC，超时20min。而且还WA了4次。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/01/06/LeetCode-weekly-contest-118/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1134,114 +1244,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2018/10/23/LeetCode-29-Divide-Two-Integer/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/2018/10/09/guangzhou-tour/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="杨森">
-      <meta itemprop="description" content="佛系更新；生活、学习">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="YoungForest's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2018/10/09/guangzhou-tour/" class="post-title-link" itemprop="url">游记 | 穗港澳</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2018-10-09 17:26:52" itemprop="dateCreated datePublished" datetime="2018-10-09T17:26:52+08:00">2018-10-09</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-07-11 12:47:44" itemprop="dateModified" datetime="2021-07-11T12:47:44+08:00">2021-07-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E6%B8%B8%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">游记</span></a>
-        </span>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus: </span>
-    
-    <a title="disqus" href="/2018/10/09/guangzhou-tour/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/10/09/guangzhou-tour/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>国庆节后，我和二师兄有机会前往广东，依次游览了广州、澳门 和 香港。10月6号从北京出发，坐10个小时高铁，来到广州南站，之后落塌广东大厦。</p>
-<h2 id="广州"><a href="#广州" class="headerlink" title="广州"></a>广州</h2><p>第一天先歇一天，在广州玩。早起去爬越秀公园。由于是长假的最后一天，年轻人都玩累了躺在家里休息，大街上和公园里只能看到大量的中老年人在锻炼身体。在公园里，我终于亲眼看到了生长在南方的“木棉”。想起《致橡树》中的诗句，“我愿做你身旁的一株木棉…“；和 《致橡树》电视剧中的情节。橡树 和 木棉 分别生长在北方和南方，注定不能生长在一起。知道这一点的话，才能体会到《致橡树》中传达的悲伤的情感。</p>
-<p>之后到了9点，吃早茶的时间。我们来到“陶陶居”–广州很有名的早茶连锁店，一起吃早茶。早茶是广东的特色。算是早餐，但是可以吃一上午。很多本地人会每天吃早茶，在那里喝一上午的茶，聊一上午的天。很佩服那些吃早茶可以吃一上午的人，羡慕他们的悠闲自在。我是绝对坐不住的，也坐不起。每天早上不学习工作的话，我估计很快就会被淘汰、饿死。早茶 主要包含茶和茶点。一上来会给你一个小盆，后来我才知道是用来涮餐具的。用滚烫的茶水清洗盘子和碗筷，既消了毒，又给餐具带来了茶的清香。茶可以无限续杯，否则怎么坐一上午呢。茶点真是好吃极了，此行不虚。</p>
-<p>吃完早茶后，时间还早，我们就去了城南的沙面公园玩。这里有大量租借时期的建筑和遗留。我很喜欢这里。有很多家长带着来自在公园嬉戏，西式建筑也很符合我的口味，每栋都有自己的特色，因为是不同国家修的。让我想起天津的租界和老房子。在这里，我们还误打误撞进了一家豪华的酒店–白天鹅。二楼的自助餐给我留下了深刻印象。385一位，但由于当天还是国庆假期，425一位。我们进去看了看就出来了，还是等以后有钱了再光临这里吧。我对这里的深刻印象不是因为这里的自助餐有多豪华、多可口，而是这里的位置。落地窗外就是珠江，给人一种整座酒店浮在珠江上一样。满足了我对有钱人奢华生活的想象。这样贵的酒店，生意竟然特别好。更是有人包下整个餐厅举办婚礼。中国有钱人真多，贫穷限制了我的想象。我等屁民，还是紧衣缩食，看看就好了。</p>
-<p>中午吃饭的时候去了一家网红店–吴财记云吞面。位置极其偏僻，人还居多，几乎座无虚席，等的时间还很长。好在味道还可以。我点的炸云吞，不过二师兄点的云吞面味道就一般了。城南是老城区，怎一个破字了得，一点也没有一线城市的氛围。不过晚上到天河区后，就知道，广州当得起一线的地位。</p>
-<p>吃完饭后坐地铁回酒店休息。4点时出发去 中山大学（也叫 双鸭山大学）参观。中山大学的校园很漂亮，妹子也特别多，有个门直接面向珠江，顺江而上就是广州塔。我们骑单车沿着江、跨过桥，总算来到最繁华的天河区了。在这里我们体验了资本主义的奢华和腐败，从此励志好好学习，做共产主义的接班人。我们晚上在地下商场的网红店吃了 鸡煲。打算找个超市买点水果和早餐就回酒店。跟着导航到了一家附近看起来不错的超市，进去后，才一脸蒙蔽，太贵了，消费不起。在二师兄的怂恿下，我破费了一码，买了价值50元的一小盒指头大小的西瓜。最后证明，小西瓜巨难吃，全都浪费了。二师兄这次旅程中都是，聊什么吃的都吹牛说巨好吃。除此之外，没有其他形容词了。等我真正吃到是，发现大多数都一般般，少数食物倒是挺好吃的。我不是个吃货，对这些也没有研究和感受。吃了更多的也是浪费。</p>
-<p><img src="/images/zaocha.jpg" alt="巨好吃的早茶"></p>
-<h2 id="澳门"><a href="#澳门" class="headerlink" title="澳门"></a>澳门</h2><p>去港澳的行程是早就规划好的，也正是这两个特别行政区吸引了二师兄，否则，单单一个广州他是不会和我来的。我提前一个月办好了港澳通行证，当时还经历了一些小波折。出入境管理中心的网站今年更新了，但最近新系统一直处于宕机状态。不知道是有意还是无意，但这无疑很大地提高了公民出境的难度。我等不到系统修复了，只好去不需要预约的海淀出入境大厅办理了港澳通行证。从办理到收到，算上休息日一共14天，效率还可以。二师兄是在我之后办的。他的做法是不停地刷新预约系统，偶尔就可以进去，完成了预约，在花园路派出所就直接办了，而且还办了二次往返的签注。我只有一次出入境的签注，但已经足够了。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2018/10/09/guangzhou-tour/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>

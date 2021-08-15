@@ -134,7 +134,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">215</span>
+          <span class="site-state-item-count">216</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -194,6 +194,140 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/2019/06/16/LeetCode-weekly-contest-141/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="杨森">
+      <meta itemprop="description" content="佛系更新；生活、学习">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YoungForest's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2019/06/16/LeetCode-weekly-contest-141/" class="post-title-link" itemprop="url">LeetCode weekly contest 141</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2019-06-16 11:44:47" itemprop="dateCreated datePublished" datetime="2019-06-16T11:44:47+08:00">2019-06-16</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-07-11 12:47:44" itemprop="dateModified" datetime="2021-07-11T12:47:44+08:00">2021-07-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2019/06/16/LeetCode-weekly-contest-141/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/06/16/LeetCode-weekly-contest-141/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Name</th>
+<th>Score</th>
+<th>Finish Time</th>
+<th>Q1 (4)</th>
+<th>Q2 (5)</th>
+<th>Q3 (6)</th>
+<th>Q4 (8)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>234 / 4126</td>
+<td>YoungForest</td>
+<td>22</td>
+<td>1:18:45</td>
+<td>0:25:23  1</td>
+<td>0:36:29</td>
+<td>0:51:47</td>
+<td>1:13:45</td>
+</tr>
+</tbody></table>
+<p>周一自然辩证法考试，周二矩阵考试，还是强行抽出时间参加contest。本身复习就不充分，平时的学习也没有十分扎实，我也是心大。<br>200名的时间至少要在1:14:23以内。</p>
+<h2 id="1089-Duplicate-Zeros"><a href="#1089-Duplicate-Zeros" class="headerlink" title="1089. Duplicate Zeros"></a>1089. Duplicate Zeros</h2><p>Intuition:<br>因为要求in-place, 一个自然的想法是从后向前更新值。<br>2次遍历，第一次正向遍历，得到结果数组最后一位的原始坐标。<br>第二次逆向遍历，更新结果数组。</p>
+<p>Time complexity: O(N),<br>Space complexity: O(1).</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">duplicateZeros</span><span class="params">(vector&lt;<span class="keyword">int</span>&gt;&amp; arr)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> zeros = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; arr.<span class="built_in">size</span>() &amp;&amp; i + zeros &lt; arr.<span class="built_in">size</span>(); ++i) &#123;</span><br><span class="line">            <span class="keyword">if</span> (arr[i] == <span class="number">0</span>) &#123;</span><br><span class="line">                ++zeros;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        --i;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = arr.<span class="built_in">size</span>() - <span class="number">1</span>; j &gt;= <span class="number">0</span>; --j, --i) &#123;</span><br><span class="line">            arr[j] = arr[i];</span><br><span class="line">            <span class="keyword">if</span> (arr[i] == <span class="number">0</span> &amp;&amp; (i + zeros &lt; arr.<span class="built_in">size</span>())) &#123;</span><br><span class="line">                --j;    <span class="comment">// 多减一j</span></span><br><span class="line">                <span class="keyword">if</span> (j &gt;= <span class="number">0</span>)</span><br><span class="line">                    arr[j] = <span class="number">0</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>因为忽略 最后一个0如果位数不够的话，将不进行扩展。被罚时一次。</p>
+<p>测试用例:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[0]</span><br><span class="line">[0,0]</span><br><span class="line">[0,0,0]</span><br><span class="line">[0,0,1]</span><br><span class="line">[8,4,5,0,0,0,0,7]</span><br><span class="line">[8,4,5,0,0,0,0,0,7]</span><br></pre></td></tr></table></figure>
+
+<h2 id="1090-Largest-Values-From-Labels"><a href="#1090-Largest-Values-From-Labels" class="headerlink" title="1090. Largest Values From Labels"></a>1090. Largest Values From Labels</h2>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/06/16/LeetCode-weekly-contest-141/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1340,138 +1474,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2019/04/28/LeetCode-weekly-contest-134/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/2019/04/21/LeetCode-weekly-contest-133/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="杨森">
-      <meta itemprop="description" content="佛系更新；生活、学习">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="YoungForest's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2019/04/21/LeetCode-weekly-contest-133/" class="post-title-link" itemprop="url">LeetCode weekly contest 133</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2019-04-21 20:50:55" itemprop="dateCreated datePublished" datetime="2019-04-21T20:50:55+08:00">2019-04-21</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-07-11 12:47:44" itemprop="dateModified" datetime="2021-07-11T12:47:44+08:00">2021-07-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a>
-        </span>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus: </span>
-    
-    <a title="disqus" href="/2019/04/21/LeetCode-weekly-contest-133/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/04/21/LeetCode-weekly-contest-133/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <table>
-<thead>
-<tr>
-<th>Rank</th>
-<th>Name</th>
-<th>Score</th>
-<th>Finish Time</th>
-<th>Q1 (4)</th>
-<th>Q2 (5)</th>
-<th>Q3 (5)</th>
-<th>Q4 (5)</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>864 / 4860</td>
-<td>YoungForest</td>
-<td>14</td>
-<td>1:10:35</td>
-<td>0:42:32</td>
-<td>0:54:38</td>
-<td>1:10:35</td>
-<td>null</td>
-</tr>
-</tbody></table>
-<p>本周的题目相比前几周质量有了不少提升，水题减少，考察的算法知识也更多。即使是前2题是easy题，也考察了足够的编程能力。本次比赛由于一开始肚子疼耽误了半个小时，所以开始的比较晚。最后一题其实差一点是可以AC的。总的方向是对的，即使用<code>Trie</code>单词树。但最后10min时提交后，TLE，也没时间改了。单词树的构造方向走反了，对于匹配问题，我们可以从前向后，也可以从后向前。这道题从后向前不仅实现起来更简单，时间上也会更好些(即使最坏情况的时间复杂度是一样的)。</p>
-<h2 id="1030-Matrix-Cells-in-Distance-Order"><a href="#1030-Matrix-Cells-in-Distance-Order" class="headerlink" title="1030. Matrix Cells in Distance Order"></a>1030. Matrix Cells in Distance Order</h2><p>Intuition:<br>根据距离对所有格子进行排序。<br>这里我是用了treemap，可以插入后保持有序。你也可以构造一个vector，然后再排序。<br>时间复杂度：O(R * C * log (R*C)).<br>空间复杂度：O(R * C).</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt; <span class="built_in">allCellsDistOrder</span>(<span class="keyword">int</span> R, <span class="keyword">int</span> C, <span class="keyword">int</span> r0, <span class="keyword">int</span> c0) &#123;</span><br><span class="line">        multimap&lt;<span class="keyword">int</span>, pair&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt;&gt; distance;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; R; ++i) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; C; ++j) &#123;</span><br><span class="line">                distance.<span class="built_in">insert</span>(&#123;<span class="built_in">abs</span>(r0 - i) + <span class="built_in">abs</span>(c0 - j), &#123;i, j&#125;&#125;);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt; ret;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; item : distance) &#123;</span><br><span class="line">            ret.<span class="built_in">push_back</span>(vector&lt;<span class="keyword">int</span>&gt; &#123; item.second.first, item.second.second&#125;);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> ret;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<p>刚开始试图直接构造出结果，但发现不是很好写。果断放弃，不过还是耽误了些时间。<br>看了discuss后，发现主流的解法还是从构造出发的。不过用了标准的BFS，会好写的多。</p>
-<h2 id="1029-Two-City-Scheduling"><a href="#1029-Two-City-Scheduling" class="headerlink" title="1029. Two City Scheduling"></a>1029. Two City Scheduling</h2><p>Intuition:<br>贪心。<br>因为每个人肯定要被派到一个城市，而且结果是求最小花费和。<br>所以以每个人的不同城市的花费之差为标准进行排序，前一半去A，后一半去B即可。</p>
-<p>时间复杂度: O(N log N),<br>空间复杂度: O(1).</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">twoCitySchedCost</span><span class="params">(vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt;&amp; costs)</span> </span>&#123;</span><br><span class="line">        <span class="built_in">sort</span>(costs.<span class="built_in">begin</span>(), costs.<span class="built_in">end</span>(), [](<span class="keyword">const</span> vector&lt;<span class="keyword">int</span>&gt;&amp; lhs, <span class="keyword">const</span> vector&lt;<span class="keyword">int</span>&gt;&amp; rhs) -&gt; <span class="keyword">bool</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> lhs[<span class="number">1</span>] - lhs[<span class="number">0</span>] &gt; rhs[<span class="number">1</span>] - rhs[<span class="number">0</span>];</span><br><span class="line">        &#125;);</span><br><span class="line">        <span class="keyword">int</span> N = costs.<span class="built_in">size</span>() / <span class="number">2</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">int</span> ret = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; N; ++i) &#123;</span><br><span class="line">            ret += costs[i][<span class="number">0</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = N; i &lt; <span class="number">2</span>*N; ++i) &#123;</span><br><span class="line">            ret += costs[i][<span class="number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ret;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2019/04/21/LeetCode-weekly-contest-133/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>

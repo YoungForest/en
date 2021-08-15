@@ -134,7 +134,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">215</span>
+          <span class="site-state-item-count">216</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -194,6 +194,139 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/2020/11/15/LeetCode-biweekly-contest-39/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="杨森">
+      <meta itemprop="description" content="佛系更新；生活、学习">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YoungForest's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2020/11/15/LeetCode-biweekly-contest-39/" class="post-title-link" itemprop="url">LeetCode biweekly contest 39</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2020-11-15 09:56:39" itemprop="dateCreated datePublished" datetime="2020-11-15T09:56:39+08:00">2020-11-15</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-07-11 12:47:44" itemprop="dateModified" datetime="2021-07-11T12:47:44+08:00">2021-07-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2020/11/15/LeetCode-biweekly-contest-39/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/11/15/LeetCode-biweekly-contest-39/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Name</th>
+<th>Score</th>
+<th>Finish Time</th>
+<th>Q1 (3)</th>
+<th>Q2 (4)</th>
+<th>Q3 (5)</th>
+<th>Q4 (6)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>688 / 6047</td>
+<td>YoungForest</td>
+<td>7</td>
+<td>0:16:02</td>
+<td>0:03:44</td>
+<td>0:11:02  1</td>
+<td>null</td>
+<td>0:41:26</td>
+</tr>
+</tbody></table>
+<p>本周双周赛难度还是很大的，虽然是3456，但三四题我觉得不止5/6分。当然我也只做出前2题。三四题只试图用暴力解法做，但事实证明虽然很接近正确答案了，但还是全部TLE了。</p>
+<h2 id="5550-Defuse-the-Bomb"><a href="#5550-Defuse-the-Bomb" class="headerlink" title="5550. Defuse the Bomb"></a>5550. Defuse the Bomb</h2><p>签到题。使用辅助数组，按照题目要求填充即可。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">decrypt</span><span class="params">(vector&lt;<span class="keyword">int</span>&gt;&amp; code, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">const</span> <span class="keyword">int</span> n = code.<span class="built_in">size</span>();</span><br><span class="line">        <span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">ans</span><span class="params">(n, <span class="number">0</span>)</span></span>;</span><br><span class="line">        <span class="keyword">if</span> (k == <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> ans;</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (k &gt; <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; ++i) &#123;</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= k; ++j) &#123;</span><br><span class="line">                    ans[i] += code[(i + j) % n];</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> ans;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            k = -k;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; ++i) &#123;</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= k; ++j) &#123;</span><br><span class="line">                    ans[i] += code[(i - j + n) % n];</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> ans;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>时间复杂度: O(N),<br>空间复杂度: O(N).</p>
+<h2 id="5551-Minimum-Deletions-to-Make-String-Balanced"><a href="#5551-Minimum-Deletions-to-Make-String-Balanced" class="headerlink" title="5551. Minimum Deletions to Make String Balanced"></a>5551. Minimum Deletions to Make String Balanced</h2><p>枚举每个分割点，删除分割点前所有的b，和分割点后所有的a。找到最小删除数。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">minimumDeletions</span><span class="params">(string s)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">const</span> <span class="keyword">int</span> n = s.<span class="built_in">size</span>();</span><br><span class="line">        <span class="keyword">int</span> ans = n;</span><br><span class="line">        <span class="keyword">const</span> <span class="keyword">int</span> totalA = <span class="built_in">count_if</span>(s.<span class="built_in">begin</span>(), s.<span class="built_in">end</span>(), [](<span class="keyword">char</span> c) -&gt; <span class="keyword">bool</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> c == <span class="string">&#x27;a&#x27;</span>;</span><br><span class="line">        &#125;);</span><br><span class="line">        <span class="keyword">int</span> a = <span class="number">0</span>, b = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; ++i) &#123;</span><br><span class="line">            ans = <span class="built_in">min</span>(ans, b + totalA - a);</span><br><span class="line">            <span class="keyword">if</span> (s[i] == <span class="string">&#x27;a&#x27;</span>) ++a;</span><br><span class="line">            <span class="keyword">else</span> ++b;</span><br><span class="line">        &#125;</span><br><span class="line">        ans = <span class="built_in">min</span>(ans, b + totalA - a);</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>时间复杂度: O(N),<br>空间复杂度: O(1).</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/11/15/LeetCode-biweekly-contest-39/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1368,139 +1501,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2020/10/06/LeetCode-biweekly-contest-36/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/2020/09/30/LeetCode-weekly-contest-208/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="杨森">
-      <meta itemprop="description" content="佛系更新；生活、学习">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="YoungForest's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2020/09/30/LeetCode-weekly-contest-208/" class="post-title-link" itemprop="url">LeetCode weekly contest 208</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2020-09-30 08:32:45" itemprop="dateCreated datePublished" datetime="2020-09-30T08:32:45+08:00">2020-09-30</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-07-11 12:47:44" itemprop="dateModified" datetime="2021-07-11T12:47:44+08:00">2021-07-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a>
-        </span>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus: </span>
-    
-    <a title="disqus" href="/2020/09/30/LeetCode-weekly-contest-208/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/09/30/LeetCode-weekly-contest-208/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>距上次写周赛总结已经过去3个半月了。坚持了半年的写周赛题解中断确实挺可惜的，但却是当时的不得已之举。7月份一直在忙小论文的事儿，8月份接着就是开题和中期，9月份正式开学，并且从7月初就在Amazon开始了暑期实习。任务确实比之前要多，当时因为事务压身，感觉精力不足以把所有事都做好。因为每次周赛写题解都要花大半天的时间，再加上打周赛，基本1天时间。打比赛和写题解对精力的损耗也是不言而喻的。虽然这3个月题解断更了，但比赛还是在照常的打，毕竟加入了残酷刷题群，有更多的人一起打周赛，每周打比赛的反馈和热爱也更强了。<br>这3个月，我残酷群的排名也是起起落落落落落…最好时有15名，最差已经90名了。总的感觉是，自己更擅长常规不难的题目。遇到之前没见过或做的不多的就很容易最后一题做不出来。</p>
-<p>昨天和Amazon的manager确认了转正事宜，之后基本上只用走流程了。有了理想offer后，秋招不知所措的弦终于可以放松下来了。有心情花时间做自己想做的事情了，读几本之前一直想看的书，认真打几场比赛，恢复写题解的习惯。当然实习和毕设大论文才是当前的主要任务，需要投入大部分时间。但终于有精力happy了。</p>
-<p>这3个月来，因为国服赞助商礼物比较丰富，我比赛已经从美服转战国服了。效果还不错，除了coins奖励更容易拿到外，实体奖励也是很香的。有幸2次进入前50名，拿到一个帆布包和一个小米无线鼠标。</p>
-<table>
-<thead>
-<tr>
-<th>Rank</th>
-<th>Name</th>
-<th>Score</th>
-<th>Finish Time</th>
-<th>Q1 (3)</th>
-<th>Q2 (4)</th>
-<th>Q3 (5)</th>
-<th>Q4 (6)</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>392 / 11499</td>
-<td>YoungForest</td>
-<td>18</td>
-<td>1:04:46</td>
-<td>0:28:38</td>
-<td>0:40:28</td>
-<td>1:04:46</td>
-<td>0:55:59</td>
-</tr>
-</tbody></table>
-<p>事实上，由于要处理突发的培养方案问题，我还迟到了25min，否则成绩会更好看。</p>
-<p>本次比赛被大家吐槽为阅读理解，读题难、题目描述迷惑。确实如此。</p>
-<h2 id="1598-Crawler-Log-Folder"><a href="#1598-Crawler-Log-Folder" class="headerlink" title="1598. Crawler Log Folder"></a>1598. Crawler Log Folder</h2><p>签到题。只需要关心向下一层和向上一层即可。可以用一个变量维护，在比赛中，我是用了一个栈去做，实际上是大材小用了。</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">minOperations</span><span class="params">(vector&lt;string&gt;&amp; logs)</span> </span>&#123;</span><br><span class="line">        stack&lt;string&gt; st;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">auto</span>&amp; s : logs) &#123;</span><br><span class="line">            <span class="keyword">if</span> (s == <span class="string">&quot;../&quot;</span>) &#123;</span><br><span class="line">                <span class="keyword">if</span> (!st.<span class="built_in">empty</span>()) &#123;</span><br><span class="line">                    st.<span class="built_in">pop</span>();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (s == <span class="string">&quot;./&quot;</span>) &#123;</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                s.<span class="built_in">pop_back</span>();</span><br><span class="line">                st.<span class="built_in">push</span>(s);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> st.<span class="built_in">size</span>();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<p>时间复杂度: O(N),<br>空间复杂度: O(N).</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/09/30/LeetCode-weekly-contest-208/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>

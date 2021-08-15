@@ -134,7 +134,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">215</span>
+          <span class="site-state-item-count">216</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -194,6 +194,138 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/2019/04/21/LeetCode-weekly-contest-133/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="杨森">
+      <meta itemprop="description" content="佛系更新；生活、学习">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YoungForest's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2019/04/21/LeetCode-weekly-contest-133/" class="post-title-link" itemprop="url">LeetCode weekly contest 133</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2019-04-21 20:50:55" itemprop="dateCreated datePublished" datetime="2019-04-21T20:50:55+08:00">2019-04-21</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-07-11 12:47:44" itemprop="dateModified" datetime="2021-07-11T12:47:44+08:00">2021-07-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2019/04/21/LeetCode-weekly-contest-133/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/04/21/LeetCode-weekly-contest-133/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Name</th>
+<th>Score</th>
+<th>Finish Time</th>
+<th>Q1 (4)</th>
+<th>Q2 (5)</th>
+<th>Q3 (5)</th>
+<th>Q4 (5)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>864 / 4860</td>
+<td>YoungForest</td>
+<td>14</td>
+<td>1:10:35</td>
+<td>0:42:32</td>
+<td>0:54:38</td>
+<td>1:10:35</td>
+<td>null</td>
+</tr>
+</tbody></table>
+<p>本周的题目相比前几周质量有了不少提升，水题减少，考察的算法知识也更多。即使是前2题是easy题，也考察了足够的编程能力。本次比赛由于一开始肚子疼耽误了半个小时，所以开始的比较晚。最后一题其实差一点是可以AC的。总的方向是对的，即使用<code>Trie</code>单词树。但最后10min时提交后，TLE，也没时间改了。单词树的构造方向走反了，对于匹配问题，我们可以从前向后，也可以从后向前。这道题从后向前不仅实现起来更简单，时间上也会更好些(即使最坏情况的时间复杂度是一样的)。</p>
+<h2 id="1030-Matrix-Cells-in-Distance-Order"><a href="#1030-Matrix-Cells-in-Distance-Order" class="headerlink" title="1030. Matrix Cells in Distance Order"></a>1030. Matrix Cells in Distance Order</h2><p>Intuition:<br>根据距离对所有格子进行排序。<br>这里我是用了treemap，可以插入后保持有序。你也可以构造一个vector，然后再排序。<br>时间复杂度：O(R * C * log (R*C)).<br>空间复杂度：O(R * C).</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt; <span class="built_in">allCellsDistOrder</span>(<span class="keyword">int</span> R, <span class="keyword">int</span> C, <span class="keyword">int</span> r0, <span class="keyword">int</span> c0) &#123;</span><br><span class="line">        multimap&lt;<span class="keyword">int</span>, pair&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt;&gt; distance;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; R; ++i) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; C; ++j) &#123;</span><br><span class="line">                distance.<span class="built_in">insert</span>(&#123;<span class="built_in">abs</span>(r0 - i) + <span class="built_in">abs</span>(c0 - j), &#123;i, j&#125;&#125;);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt; ret;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; item : distance) &#123;</span><br><span class="line">            ret.<span class="built_in">push_back</span>(vector&lt;<span class="keyword">int</span>&gt; &#123; item.second.first, item.second.second&#125;);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> ret;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>刚开始试图直接构造出结果，但发现不是很好写。果断放弃，不过还是耽误了些时间。<br>看了discuss后，发现主流的解法还是从构造出发的。不过用了标准的BFS，会好写的多。</p>
+<h2 id="1029-Two-City-Scheduling"><a href="#1029-Two-City-Scheduling" class="headerlink" title="1029. Two City Scheduling"></a>1029. Two City Scheduling</h2><p>Intuition:<br>贪心。<br>因为每个人肯定要被派到一个城市，而且结果是求最小花费和。<br>所以以每个人的不同城市的花费之差为标准进行排序，前一半去A，后一半去B即可。</p>
+<p>时间复杂度: O(N log N),<br>空间复杂度: O(1).</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">twoCitySchedCost</span><span class="params">(vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt;&amp; costs)</span> </span>&#123;</span><br><span class="line">        <span class="built_in">sort</span>(costs.<span class="built_in">begin</span>(), costs.<span class="built_in">end</span>(), [](<span class="keyword">const</span> vector&lt;<span class="keyword">int</span>&gt;&amp; lhs, <span class="keyword">const</span> vector&lt;<span class="keyword">int</span>&gt;&amp; rhs) -&gt; <span class="keyword">bool</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> lhs[<span class="number">1</span>] - lhs[<span class="number">0</span>] &gt; rhs[<span class="number">1</span>] - rhs[<span class="number">0</span>];</span><br><span class="line">        &#125;);</span><br><span class="line">        <span class="keyword">int</span> N = costs.<span class="built_in">size</span>() / <span class="number">2</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">int</span> ret = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; N; ++i) &#123;</span><br><span class="line">            ret += costs[i][<span class="number">0</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = N; i &lt; <span class="number">2</span>*N; ++i) &#123;</span><br><span class="line">            ret += costs[i][<span class="number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ret;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/04/21/LeetCode-weekly-contest-133/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1259,138 +1391,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2019/03/10/LeetCode-weekly-contest-127/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/2019/03/03/LeetCode-weekly-contest-126/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="杨森">
-      <meta itemprop="description" content="佛系更新；生活、学习">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="YoungForest's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2019/03/03/LeetCode-weekly-contest-126/" class="post-title-link" itemprop="url">LeetCode weekly contest 126</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2019-03-03 11:55:17" itemprop="dateCreated datePublished" datetime="2019-03-03T11:55:17+08:00">2019-03-03</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-07-11 12:47:44" itemprop="dateModified" datetime="2021-07-11T12:47:44+08:00">2021-07-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a>
-        </span>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus: </span>
-    
-    <a title="disqus" href="/2019/03/03/LeetCode-weekly-contest-126/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/03/03/LeetCode-weekly-contest-126/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>今天试着边做题边录视频，由于场地的限制，无法用麦克风进行讲解，效果差强人意。虽然可以用文字注释进行一些弥补，但丧失了视频传播的最大优势。以后还是以博客为主，传播自己的思想吧。<br>尤其是本次只做出2道题目，后2道题目都有尝试，但均失败了。视频效果太差。本身大家如果在B站上看视频的话，都是为了看up主秀的。这次没秀起来，遭遇了滑铁卢，甚是尴尬。不过最后我还是打算把视频放上去。就是这么脸皮厚，不怕丢人，不怕以后被翻黑历史。</p>
-<p>排名也直接飞到1500名开外，这周的ranking怕不是要跌。</p>
-<p>结果：</p>
-<table>
-<thead>
-<tr>
-<th>Rank</th>
-<th>Name</th>
-<th>Score</th>
-<th>Finish Time</th>
-<th>Q1 (3)</th>
-<th>Q2 (5)</th>
-<th>Q3 (6)</th>
-<th>Q4 (9)</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1684 / 4564</td>
-<td>YoungForest</td>
-<td>8</td>
-<td>0:38:19</td>
-<td>0:16:17</td>
-<td>0:33:19  WA(1)</td>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
-<h2 id="1002-Find-Common-Characters"><a href="#1002-Find-Common-Characters" class="headerlink" title="1002. Find Common Characters"></a>1002. Find Common Characters</h2><p>因为录视频的时候把思路都写在开始部分了。就只分析一下复杂度吧。<br>Time complexity: O(N), N为A中所有字符串长度之和。<br>空间复杂度：O(1), 因为字符被限制在26个小写字母里，否则的话，是和字符数成正比的。</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">vector&lt;string&gt; <span class="title">commonChars</span><span class="params">(vector&lt;string&gt;&amp; A)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 用一个vector记录出现的字母，因为只有小写，大小为26，还因为要记录出现的最小次数，所以类型为int即可</span></span><br><span class="line">        <span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">record</span><span class="params">(<span class="number">26</span>, numeric_limits&lt;<span class="keyword">int</span>&gt;::max())</span></span>;</span><br><span class="line">        <span class="keyword">for</span> (string &amp; s: A) &#123;</span><br><span class="line">            <span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">record1String</span><span class="params">(<span class="number">26</span>, <span class="number">0</span>)</span></span>;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">char</span> c : s) &#123;</span><br><span class="line">                record1String[c - <span class="string">&#x27;a&#x27;</span>]++;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">26</span>; ++i) &#123;</span><br><span class="line">                record[i] = <span class="built_in">min</span>(record[i], record1String[i]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        vector&lt;string&gt; result;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">26</span>; i++) &#123;</span><br><span class="line">            result.<span class="built_in">insert</span>(result.<span class="built_in">end</span>(), record[i], <span class="built_in">string</span>(<span class="number">1</span>, <span class="built_in"><span class="keyword">char</span></span>(i + <span class="string">&#x27;a&#x27;</span>)));</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h2 id="1003-Check-If-Word-Is-Valid-After-Substitutions"><a href="#1003-Check-If-Word-Is-Valid-After-Substitutions" class="headerlink" title="1003. Check If Word Is Valid After Substitutions"></a>1003. Check If Word Is Valid After Substitutions</h2><p>Time complexity: O(N ^ 2), 因为find, 构造 nextS的操作是O(N)的，每次while循环S的长度减3, 需要 长度/3 次循环。<br>Space complexity: O(N), 因为构造了新的nextS。不过这个是可以消除的，反复利用原来的S的空间就可以。但是要写多余的代码。</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">isValid</span><span class="params">(string S)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 首先理解valid string的定义:</span></span><br><span class="line">        <span class="comment">// 这个定义的递归的</span></span><br><span class="line">        <span class="comment">// 对于任何valid的string，把&quot;abc&quot;插入任何位置的字符串仍为valid</span></span><br><span class="line">        <span class="comment">// 初始的valid string只有&quot;abc&quot;</span></span><br><span class="line">        <span class="comment">// 所以，判断一个string是否是valid的，我们只需要不断地把&quot;abd&quot;抽掉，如果剩下&quot;abc&quot;，则true，否则false</span></span><br><span class="line">        <span class="comment">// 这个过程也可以递归进行</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 递归解法会stack overflow, 换迭代解法</span></span><br><span class="line">        <span class="keyword">while</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (S == <span class="string">&quot;abc&quot;</span>) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">            <span class="keyword">auto</span> index = S.<span class="built_in">find</span>(<span class="string">&quot;abc&quot;</span>);</span><br><span class="line">            <span class="keyword">if</span> (index == string::npos) &#123; <span class="comment">// 没找到&quot;abc&quot;字串</span></span><br><span class="line">                <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                string <span class="built_in">nextS</span>(S.<span class="built_in">begin</span>(), S.<span class="built_in">begin</span>() + index);</span><br><span class="line">                nextS.<span class="built_in">insert</span>(nextS.<span class="built_in">end</span>(), S.<span class="built_in">begin</span>() + index + <span class="number">3</span>, S.<span class="built_in">end</span>());</span><br><span class="line">                S = nextS;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2019/03/03/LeetCode-weekly-contest-126/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
