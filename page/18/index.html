@@ -134,7 +134,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">216</span>
+          <span class="site-state-item-count">217</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -194,6 +194,120 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/2019/01/13/LeetCode-weekly-contest-119/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="杨森">
+      <meta itemprop="description" content="佛系更新；生活、学习">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YoungForest's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2019/01/13/LeetCode-weekly-contest-119/" class="post-title-link" itemprop="url">LeetCode weekly contest 119</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2019-01-13 10:56:25" itemprop="dateCreated datePublished" datetime="2019-01-13T10:56:25+08:00">2019-01-13</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-07-11 12:47:44" itemprop="dateModified" datetime="2021-07-11T12:47:44+08:00">2021-07-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2019/01/13/LeetCode-weekly-contest-119/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/01/13/LeetCode-weekly-contest-119/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>这次contest做的比较惨，排名大致是1486 / 3845。出现的问题有：</p>
+<ul>
+<li>第二题，比较简单。由于是easy的题目，直接brute force了，结果TLE一次。之前由于粗心，for循环条件中的变量还写错了一次。导致2次罚时。</li>
+<li>第三题，也不是很难，但最后并没有想到O(n)的解法。只想到了O(n ^ 2)的。想到了要算前缀和，也注意到了divisible这一关键词。但并没有联想到前缀和相等就可以这一关键点。</li>
+<li>第四题，想到了dp。卡在了”找寻后面数组中刚刚大一点的数”这步，即没想到用<strong>TreeMap</strong>解决。归根结底是因为对基础的数据结构不熟悉。</li>
+</ul>
+<h2 id="973-K-Closest-Points-to-Origin"><a href="#973-K-Closest-Points-to-Origin" class="headerlink" title="973. K Closest Points to Origin"></a>973. K Closest Points to Origin</h2><p>直接用C++中的Map即可，用key进行排序。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt; <span class="built_in">kClosest</span>(vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt;&amp; points, <span class="keyword">int</span> K) &#123;</span><br><span class="line">        map&lt;<span class="keyword">int</span>, vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt;&gt; distance;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> point: points) &#123;</span><br><span class="line">            distance[point[<span class="number">0</span>]*point[<span class="number">0</span>] + point[<span class="number">1</span>]*point[<span class="number">1</span>]].<span class="built_in">push_back</span>(point);</span><br><span class="line">        &#125;</span><br><span class="line">        vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt; results;</span><br><span class="line">        <span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> d: distance) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> point: d.second) &#123;</span><br><span class="line">                results.<span class="built_in">push_back</span>(point);</span><br><span class="line">                i++;</span><br><span class="line">                <span class="keyword">if</span> (i &gt;= K) &#123;</span><br><span class="line">                    <span class="keyword">return</span> results;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> results;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="976-Largest-Perimeter-Triangle"><a href="#976-Largest-Perimeter-Triangle" class="headerlink" title="976. Largest Perimeter Triangle"></a>976. Largest Perimeter Triangle</h2><p>只用找最大的3个可以组成三角形的数就可以了。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">largestPerimeter</span><span class="params">(vector&lt;<span class="keyword">int</span>&gt;&amp; A)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> result = <span class="number">0</span>;</span><br><span class="line">        <span class="built_in">sort</span>(A.<span class="built_in">begin</span>(), A.<span class="built_in">end</span>());</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = A.<span class="built_in">size</span>() - <span class="number">3</span>; i &gt;= <span class="number">0</span>; i--) &#123;</span><br><span class="line">            <span class="keyword">if</span> (A[i] + A[i+<span class="number">1</span>] &gt; A[i+<span class="number">2</span>]) &#123;</span><br><span class="line">                result = A[i] + A[i+<span class="number">1</span>] + A[i+<span class="number">2</span>];</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="974-Subarray-Sums-Divisible-by-K"><a href="#974-Subarray-Sums-Divisible-by-K" class="headerlink" title="974. Subarray Sums Divisible by K"></a>974. Subarray Sums Divisible by K</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">subarraysDivByK</span><span class="params">(vector&lt;<span class="keyword">int</span>&gt;&amp; A, <span class="keyword">int</span> K)</span> </span>&#123;</span><br><span class="line">        unordered_map&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt; prefix_sum;</span><br><span class="line">        <span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> result = <span class="number">0</span>;</span><br><span class="line">        prefix_sum[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; A.<span class="built_in">size</span>(); i++) &#123;</span><br><span class="line">            sum = (sum + A[i] % K + K) % K;</span><br><span class="line">            result += prefix_sum[sum];</span><br><span class="line">            prefix_sum[sum]++;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/01/13/LeetCode-weekly-contest-119/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1134,116 +1248,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2018/10/25/LeetCode-15-3Sum/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/2018/10/23/LeetCode-29-Divide-Two-Integer/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="杨森">
-      <meta itemprop="description" content="佛系更新；生活、学习">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="YoungForest's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2018/10/23/LeetCode-29-Divide-Two-Integer/" class="post-title-link" itemprop="url">LeetCode 29 Divide Two Integer</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2018-10-23 16:41:47" itemprop="dateCreated datePublished" datetime="2018-10-23T16:41:47+08:00">2018-10-23</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-07-11 12:47:44" itemprop="dateModified" datetime="2021-07-11T12:47:44+08:00">2021-07-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a>
-        </span>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus: </span>
-    
-    <a title="disqus" href="/2018/10/23/LeetCode-29-Divide-Two-Integer/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/10/23/LeetCode-29-Divide-Two-Integer/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>有4周时间没有刷LeetCode了，理由一方面是紧迫感下降，另一方面是行动力不足。<br>最近又有一场面试要准备，小红书 视频组 的算法实习生。<br>一面看 机器学习的知识，防止重蹈 快手 面试的覆辙；另一面回顾自己的代码能力，果然4周不刷题，连代码都写不好了。作为未来的程序员，代码能力不好怎么行呢？还是要重新有规划的开始刷leetcode的。</p>
-<p>Description: <a target="_blank" rel="noopener" href="https://leetcode.com/problems/divide-two-integers/description/">https://leetcode.com/problems/divide-two-integers/description/</a><br>Solution: 无<br>Difficulty: Medium</p>
-<h2 id="brute-approach"><a href="#brute-approach" class="headerlink" title="brute approach"></a>brute approach</h2><p>直接暴力，用减法代替除法。不出所料，果然超时。<br>时间复杂度：O(m)，m为商的绝对值。<br>空间复杂度：O(1), 除常量外，并未申请额外空间。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">divide</span><span class="params">(<span class="keyword">int</span> dividend, <span class="keyword">int</span> divisor)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (dividend == Integer.MIN_VALUE &amp;&amp; divisor == -<span class="number">1</span>) <span class="keyword">return</span> Integer.MAX_VALUE;</span><br><span class="line">        <span class="keyword">if</span> (divisor == <span class="number">1</span>) <span class="keyword">return</span> dividend;</span><br><span class="line">        <span class="keyword">if</span> (dividend == <span class="number">0</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">boolean</span> positive = <span class="keyword">true</span>;</span><br><span class="line">        <span class="keyword">if</span> (Integer.signum(dividend) + Integer.signum(divisor) == <span class="number">0</span>) positive = <span class="keyword">false</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> originalDividend = dividend;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">while</span> (<span class="keyword">true</span>) &#123;</span><br><span class="line">            dividend = positive ? dividend - divisor : dividend + divisor;</span><br><span class="line">            <span class="keyword">if</span> (Integer.signum(dividend) == <span class="number">0</span>) &#123;</span><br><span class="line">                count = positive ? count + <span class="number">1</span> : count - <span class="number">1</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (Integer.signum(dividend) + Integer.signum(originalDividend) == <span class="number">0</span>) <span class="keyword">break</span>;</span><br><span class="line">            count = positive ? count + <span class="number">1</span> : count - <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> count;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="模拟除法笔算"><a href="#模拟除法笔算" class="headerlink" title="模拟除法笔算"></a>模拟除法笔算</h2><ul>
-<li><a target="_blank" rel="noopener" href="https://leetcode.com/problems/divide-two-integers/discuss/179759/Python-7-lines-(beats-99):-How-you-learned-to-divide-when-you-were-7-years-old">很好的解释和python代码</a></li>
-<li><a target="_blank" rel="noopener" href="https://leetcode.com/problems/divide-two-integers/discuss/13417/No-Use-of-Long-Java-Solution">Java Solution, explanation awful though</a></li>
-</ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">divide</span><span class="params">(<span class="keyword">int</span> dividend, <span class="keyword">int</span> divisor)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">if</span>(dividend==Integer.MIN_VALUE &amp;&amp; divisor==-<span class="number">1</span>) <span class="keyword">return</span> Integer.MAX_VALUE;</span><br><span class="line">        <span class="keyword">if</span>(dividend &gt; <span class="number">0</span> &amp;&amp; divisor &gt; <span class="number">0</span>) <span class="keyword">return</span> divideHelper(-dividend, -divisor);</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(dividend &gt; <span class="number">0</span>) <span class="keyword">return</span> -divideHelper(-dividend,divisor);</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(divisor &gt; <span class="number">0</span>) <span class="keyword">return</span> -divideHelper(dividend,-divisor);</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">return</span> divideHelper(dividend, divisor);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">int</span> <span class="title">divideHelper</span><span class="params">(<span class="keyword">int</span> dividend, <span class="keyword">int</span> divisor)</span></span>&#123;</span><br><span class="line">        <span class="comment">// base case</span></span><br><span class="line">        <span class="keyword">if</span>(divisor &lt; dividend) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        <span class="comment">// get highest digit of divisor</span></span><br><span class="line">        <span class="keyword">int</span> cur = <span class="number">0</span>, res = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span>((divisor &lt;&lt; cur) &gt;= dividend &amp;&amp; divisor &lt;&lt; cur &lt; <span class="number">0</span> &amp;&amp; cur &lt; <span class="number">31</span>) cur++;</span><br><span class="line">        res = dividend - (divisor &lt;&lt; cur-<span class="number">1</span>);</span><br><span class="line">        <span class="keyword">if</span>(res &gt; divisor) <span class="keyword">return</span> <span class="number">1</span> &lt;&lt; cur-<span class="number">1</span>;</span><br><span class="line">        <span class="comment">// 每次调用都只计算出来商里为1的一位</span></span><br><span class="line">        <span class="keyword">return</span> (<span class="number">1</span> &lt;&lt; cur-<span class="number">1</span>)+divide(res, divisor);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2018/10/23/LeetCode-29-Divide-Two-Integer/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>

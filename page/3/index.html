@@ -134,7 +134,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">216</span>
+          <span class="site-state-item-count">217</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -194,6 +194,116 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/2021/04/20/kick-start-2021-round-B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="杨森">
+      <meta itemprop="description" content="佛系更新；生活、学习">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YoungForest's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/04/20/kick-start-2021-round-B/" class="post-title-link" itemprop="url">kick start 2021 round B</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-04-20 19:31:25" itemprop="dateCreated datePublished" datetime="2021-04-20T19:31:25+08:00">2021-04-20</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-07-11 12:47:44" itemprop="dateModified" datetime="2021-07-11T12:47:44+08:00">2021-07-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/KickStart/" itemprop="url" rel="index"><span itemprop="name">KickStart</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2021/04/20/kick-start-2021-round-B/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/04/20/kick-start-2021-round-B/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>比赛时间是北京的19号上午7点到10点，因为恰好下午2点要交毕设初稿。最近忙着一直在写大论文。因此并未参加Round B. 现如今自己已经过了校招的年纪，打Kick Start纯粹是为了娱乐。<br>赛后补题。</p>
+<p><a target="_blank" rel="noopener" href="https://codingcompetitions.withgoogle.com/kickstart/round/0000000000435a5b">比赛题目链接</a></p>
+<h2 id="Increasing-Substring"><a href="#Increasing-Substring" class="headerlink" title="Increasing Substring"></a><a target="_blank" rel="noopener" href="https://codingcompetitions.withgoogle.com/kickstart/round/0000000000435a5b/000000000077a882">Increasing Substring</a></h2><p>签到题。DP，只需要和前一个字符比大小。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">solve</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> N ;</span><br><span class="line">    cin &gt;&gt; N;</span><br><span class="line">    string s;</span><br><span class="line">    cin &gt;&gt; s;</span><br><span class="line">    <span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">dp</span><span class="params">(N)</span></span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; N; ++i) &#123;</span><br><span class="line">        <span class="keyword">if</span> (i &gt; <span class="number">0</span> &amp;&amp; s[i] &gt; s[i<span class="number">-1</span>]) &#123;</span><br><span class="line">            dp[i] = dp[i<span class="number">-1</span>] + <span class="number">1</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            dp[i] = <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        cout &lt;&lt; dp[i] &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> T;</span><br><span class="line">    cin &gt;&gt; T;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; T; ++i) &#123;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;Case #&quot;</span> &lt;&lt; i + <span class="number">1</span> &lt;&lt; <span class="string">&quot;: &quot;</span>;</span><br><span class="line">        <span class="built_in">solve</span>();</span><br><span class="line">        cout &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>时间复杂度: O(N),<br>空间复杂度: O(N) -&gt; O(1). 虽然我的实现是O(N)的，但其实<code>dp</code>数组是没必要存的，只关心前一个的值。</p>
+<h2 id="Longest-Progression"><a href="#Longest-Progression" class="headerlink" title="Longest Progression"></a><a target="_blank" rel="noopener" href="https://codingcompetitions.withgoogle.com/kickstart/round/0000000000435a5b/000000000077a3a5">Longest Progression</a></h2><p>遇到WA，是因为C++类型的原因。列在这里引以为戒。<br>因为类型转换的原因，size() 和 -1比较时，-1永远大。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;unordered_map&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;unordered_set&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;functional&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;map&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> ll = <span class="keyword">int</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="class"><span class="keyword">class</span> <span class="title">Cmp</span>&gt;</span></span><br><span class="line">ostream&amp; <span class="keyword">operator</span> &lt;&lt;(ostream&amp; out, <span class="keyword">const</span> unordered_set&lt;T, Cmp&gt;&amp; a) &#123;</span><br><span class="line">  out &lt;&lt; <span class="string">&quot;&#123;&quot;</span>; <span class="keyword">bool</span> first = <span class="literal">true</span>;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">auto</span>&amp; v : a) &#123; out &lt;&lt; (first ? <span class="string">&quot;&quot;</span> : <span class="string">&quot;, &quot;</span>); out &lt;&lt; v; first = <span class="number">0</span>;&#125; out &lt;&lt; <span class="string">&quot;&#125;&quot;</span>;</span><br><span class="line">  <span class="keyword">return</span> out;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> U, <span class="keyword">typename</span> T, <span class="class"><span class="keyword">class</span> <span class="title">Cmp</span>&gt;</span></span><br><span class="line">ostream&amp; <span class="keyword">operator</span> &lt;&lt;(ostream&amp; out, <span class="keyword">const</span> unordered_map&lt;U, T, Cmp&gt;&amp; a) &#123;</span><br><span class="line">  out &lt;&lt; <span class="string">&quot;&#123;&quot;</span>; <span class="keyword">bool</span> first = <span class="literal">true</span>;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">auto</span>&amp; p : a) &#123; out &lt;&lt; (first ? <span class="string">&quot;&quot;</span> : <span class="string">&quot;, &quot;</span>); out &lt;&lt; p.first &lt;&lt; <span class="string">&quot;:&quot;</span> &lt;&lt; p.second; first = <span class="number">0</span>;&#125; out &lt;&lt; <span class="string">&quot;&#125;&quot;</span>;</span><br><span class="line">  <span class="keyword">return</span> out;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">solve</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> N ;</span><br><span class="line">    cin &gt;&gt; N;</span><br><span class="line">    <span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">nums</span><span class="params">(N)</span></span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; N; ++i) &#123;</span><br><span class="line">        cin &gt;&gt; nums[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (N &lt;= <span class="number">3</span>) <span class="keyword">return</span> N;</span><br><span class="line">    <span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">diff</span><span class="params">(N)</span></span>;</span><br><span class="line">    diff[<span class="number">0</span>] = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; N; ++i) &#123;</span><br><span class="line">        diff[i] = nums[i] - nums[i<span class="number">-1</span>];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">int</span> hi = N + <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">int</span> lo = <span class="number">4</span>;</span><br><span class="line">    <span class="keyword">auto</span> binary = [&amp;](ll lo, ll hi, function&lt;<span class="built_in"><span class="keyword">bool</span></span>(<span class="keyword">const</span> ll)&gt; predicate) -&gt; <span class="keyword">int</span> &#123;</span><br><span class="line">        <span class="comment">// return first true</span></span><br><span class="line">        <span class="keyword">while</span> (lo &lt; hi) &#123;</span><br><span class="line">            ll mid = lo + (hi - lo) / <span class="number">2</span>;</span><br><span class="line">            <span class="keyword">if</span> (<span class="built_in">predicate</span>(mid)) &#123;</span><br><span class="line">                hi = mid;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                lo = mid + <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> lo;</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="keyword">auto</span> pred = [&amp;](<span class="keyword">const</span> ll x) -&gt; <span class="keyword">bool</span> &#123;</span><br><span class="line">        unordered_map&lt;<span class="keyword">int</span>, unordered_set&lt;<span class="keyword">int</span>&gt;&gt; cnt;</span><br><span class="line">        map&lt;<span class="keyword">int</span>, unordered_set&lt;<span class="keyword">int</span>&gt;, greater&lt;<span class="keyword">int</span>&gt;&gt; reverseCnt; <span class="comment">// cnt-&gt;value, cnt-&gt;count</span></span><br><span class="line">        <span class="keyword">auto</span> addCnt = [&amp;](<span class="keyword">const</span> <span class="keyword">int</span> i) -&gt; <span class="keyword">void</span> &#123;</span><br><span class="line">            cnt[diff[i]].<span class="built_in">insert</span>(i);</span><br><span class="line">            reverseCnt[cnt[diff[i]].<span class="built_in">size</span>()].<span class="built_in">insert</span>(diff[i]);</span><br><span class="line">            reverseCnt[cnt[diff[i]].<span class="built_in">size</span>() - <span class="number">1</span>].<span class="built_in">erase</span>(diff[i]);</span><br><span class="line">            <span class="keyword">if</span> (reverseCnt[cnt[diff[i]].<span class="built_in">size</span>() - <span class="number">1</span>].<span class="built_in">empty</span>()) &#123;</span><br><span class="line">                reverseCnt.<span class="built_in">erase</span>(cnt[diff[i]].<span class="built_in">size</span>() - <span class="number">1</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;;</span><br><span class="line">        <span class="keyword">auto</span> eraseCnt = [&amp;](<span class="keyword">const</span> <span class="keyword">int</span> i) -&gt; <span class="keyword">void</span> &#123;</span><br><span class="line">            <span class="keyword">auto</span>&amp; first = cnt[diff[i]];</span><br><span class="line">            first.<span class="built_in">erase</span>(first.<span class="built_in">find</span>(i));</span><br><span class="line">            reverseCnt[cnt[diff[i]].<span class="built_in">size</span>() + <span class="number">1</span>].<span class="built_in">erase</span>(diff[i]);</span><br><span class="line">            <span class="keyword">if</span> (reverseCnt[cnt[diff[i]].<span class="built_in">size</span>() + <span class="number">1</span>].<span class="built_in">empty</span>()) &#123;</span><br><span class="line">                reverseCnt.<span class="built_in">erase</span>(cnt[diff[i]].<span class="built_in">size</span>() + <span class="number">1</span>);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (first.<span class="built_in">empty</span>()) &#123;</span><br><span class="line">                cnt.<span class="built_in">erase</span>(diff[i]);</span><br><span class="line">            &#125;</span><br><span class="line">            reverseCnt[cnt[diff[i]].<span class="built_in">size</span>()].<span class="built_in">insert</span>(diff[i]);</span><br><span class="line">        &#125;;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; x; ++i) &#123;</span><br><span class="line">            <span class="built_in">addCnt</span>(i);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">auto</span> check = [&amp;](<span class="keyword">const</span> <span class="keyword">int</span> lastIdx) -&gt; <span class="keyword">bool</span> &#123;</span><br><span class="line">            <span class="comment">// cout &lt;&lt; lastIdx &lt;&lt; &quot; ... &quot; &lt;&lt; cnt &lt;&lt; &quot; &quot; &lt;&lt; maxDiffIndex &lt;&lt; &quot; &quot; &lt;&lt; maxDiffValue &lt;&lt; endl;</span></span><br><span class="line">            <span class="keyword">auto</span> it = reverseCnt.<span class="built_in">begin</span>();</span><br><span class="line">            <span class="keyword">const</span> <span class="keyword">int</span> maxDiffValue = it-&gt;first;</span><br><span class="line">            <span class="keyword">const</span> <span class="keyword">int</span> maxDiffIndex = *(it-&gt;second.<span class="built_in">begin</span>());</span><br><span class="line">            <span class="keyword">if</span> (maxDiffValue == x - <span class="number">1</span>) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span> (maxDiffValue == x - <span class="number">2</span> || maxDiffValue == x - <span class="number">3</span>) &#123;</span><br><span class="line">                vector&lt;<span class="keyword">int</span>&gt; index;</span><br><span class="line">                index.<span class="built_in">reserve</span>(<span class="number">2</span>);</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; p : cnt) &#123;</span><br><span class="line">                    <span class="keyword">if</span> (p.first != maxDiffIndex) &#123;</span><br><span class="line">                        <span class="keyword">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; idx : p.second) &#123;</span><br><span class="line">                            index.<span class="built_in">push_back</span>(idx);</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">if</span> (maxDiffValue == x - <span class="number">2</span>) &#123;</span><br><span class="line">                    <span class="keyword">if</span> (index[<span class="number">0</span>] == lastIdx || index[<span class="number">0</span>] == lastIdx - x + <span class="number">2</span>) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">                    <span class="keyword">else</span> <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">                &#125; <span class="keyword">else</span> <span class="keyword">if</span> (maxDiffValue == x - <span class="number">3</span>) &#123;</span><br><span class="line">                    <span class="keyword">if</span> (index[<span class="number">1</span>] &lt; index[<span class="number">0</span>]) &#123;</span><br><span class="line">                        <span class="built_in">swap</span>(index[<span class="number">0</span>], index[<span class="number">1</span>]);</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">if</span> (index[<span class="number">0</span>] + <span class="number">1</span> != index[<span class="number">1</span>]) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">                    <span class="keyword">if</span> (nums[index[<span class="number">1</span>]] - nums[index[<span class="number">0</span>] - <span class="number">1</span>] == maxDiffIndex * <span class="number">2</span>) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">                    <span class="keyword">else</span> <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">                &#125; <span class="keyword">else</span> <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        &#125;;</span><br><span class="line">        <span class="comment">// cout &lt;&lt; &quot;Debug: &quot; &lt;&lt; maxDiffValue &lt;&lt; endl;</span></span><br><span class="line">        <span class="keyword">if</span> (<span class="built_in">check</span>(x<span class="number">-1</span>)) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        <span class="comment">// if check</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = x; i &lt; N; ++i) &#123;</span><br><span class="line">            <span class="comment">// cout &lt;&lt; &quot;before: &quot; &lt;&lt; cnt ;</span></span><br><span class="line">            <span class="built_in">eraseCnt</span>(i - x + <span class="number">1</span>);</span><br><span class="line">            <span class="built_in">addCnt</span>(i);</span><br><span class="line">            <span class="comment">// cout &lt;&lt; &quot;after: &quot; &lt;&lt; cnt &lt;&lt; &quot; !!! &quot;;</span></span><br><span class="line">            <span class="keyword">if</span> (<span class="built_in">check</span>(i)) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="comment">// for (int i = 4; i &lt; hi; ++i) &#123;</span></span><br><span class="line">    <span class="comment">//     cout &lt;&lt; i &lt;&lt; &quot;:&quot; &lt;&lt; pred(i) &lt;&lt; &quot; &quot;;</span></span><br><span class="line">    <span class="comment">// &#125;</span></span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">binary</span>(lo, hi, pred) - <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> T;</span><br><span class="line">    cin &gt;&gt; T;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; T; ++i) &#123;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;Case #&quot;</span> &lt;&lt; i + <span class="number">1</span> &lt;&lt; <span class="string">&quot;: &quot;</span>;</span><br><span class="line">        cout &lt;&lt; <span class="built_in">solve</span>();</span><br><span class="line">        cout &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>时间复杂度: O(N log N log N),<br>空间复杂度: O(N).</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/04/20/kick-start-2021-round-B/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1355,124 +1465,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2021/03/28/LeetCode-weekly-contest-234/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/2021/03/26/SSH-proxy-by-jump-server/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="杨森">
-      <meta itemprop="description" content="佛系更新；生活、学习">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="YoungForest's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/03/26/SSH-proxy-by-jump-server/" class="post-title-link" itemprop="url">SSH 通过跳板机登陆服务器</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-03-26 15:11:02" itemprop="dateCreated datePublished" datetime="2021-03-26T15:11:02+08:00">2021-03-26</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-07-11 12:47:44" itemprop="dateModified" datetime="2021-07-11T12:47:44+08:00">2021-07-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E6%8A%98%E8%85%BE/" itemprop="url" rel="index"><span itemprop="name">折腾</span></a>
-        </span>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus: </span>
-    
-    <a title="disqus" href="/2021/03/26/SSH-proxy-by-jump-server/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/03/26/SSH-proxy-by-jump-server/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="动机"><a href="#动机" class="headerlink" title="动机"></a>动机</h2><p>接上篇<a href="https://youngforest.github.io/2021/03/18/Ubuntu-vpn-cannot-access-public-resource/">解决台式机Ubuntu VPN访问公网资源</a>的问题后，我尝试了配置跳板机访问杭研院机器。</p>
-<p>在科研工作中，MAC笔记本无法连接OpenVPN，从而访问杭研院机器。我的台式机Ubuntu已经配置好了VPN，可以访问服务器。我现在想通过台式机Ubuntu中转，从而实现MAC“直接”访问杭研院。抽象一下问题为：</p>
-<ul>
-<li>A可以访问B</li>
-<li>A不可以访问C</li>
-<li>B可以访问C</li>
-<li>我现在想A访问C</li>
-</ul>
-<p>由于工作中主要使用SSH，因此，问题简化成A通过SSH直接登陆C。<br>我经过不屑的网上搜索和尝试，总结了2中技术和方法实现我的目的。</p>
-<ul>
-<li>SSH 代理</li>
-<li>SSH 隧道</li>
-</ul>
-<span id="more"></span>
-
-
-<h2 id="SSH-代理"><a href="#SSH-代理" class="headerlink" title="SSH 代理"></a>SSH 代理</h2><p>这种方法最简单，不需要在B上进行任何操作，无缝连接C。</p>
-<p>A上执行，其中<code>rentao@10.134.150.154</code>是B，<code>ldmc@192.168.131.181</code>是C。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/03/26/SSH-proxy-by-jump-server/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>

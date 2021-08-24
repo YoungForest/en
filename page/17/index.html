@@ -134,7 +134,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">216</span>
+          <span class="site-state-item-count">217</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -194,6 +194,139 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/2019/03/10/LeetCode-weekly-contest-127/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="杨森">
+      <meta itemprop="description" content="佛系更新；生活、学习">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YoungForest's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2019/03/10/LeetCode-weekly-contest-127/" class="post-title-link" itemprop="url">LeetCode weekly contest 127</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2019-03-10 10:32:00" itemprop="dateCreated datePublished" datetime="2019-03-10T10:32:00+08:00">2019-03-10</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-07-11 12:47:44" itemprop="dateModified" datetime="2021-07-11T12:47:44+08:00">2021-07-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2019/03/10/LeetCode-weekly-contest-127/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/03/10/LeetCode-weekly-contest-127/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>本周4道题目分数分别为4 4 5 6, 应该不是很难的，加油， Forest！</p>
+<p>因为题目太简单，即使提前15min做完了，排名还是912 / 4712。这次比赛真的是简单，完全比拼的是写码的速度和熟练度。是否可以一次bug-free很重要。因为如果某个corner case错了，再去调试是很花时间的。我1，2题都是错了一次，耽误了很多时间。</p>
+<table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Name</th>
+<th>Score</th>
+<th>Finish Time</th>
+<th>Q1 (4)</th>
+<th>Q2 (4)</th>
+<th>Q3 (5)</th>
+<th>Q4 (6)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>931 / 4059</td>
+<td>YoungForest</td>
+<td>19</td>
+<td>1:24:03</td>
+<td>0:24:49(1)</td>
+<td>0:44:58(1)</td>
+<td>1:05:12</td>
+<td>1:14:03</td>
+</tr>
+</tbody></table>
+<h2 id="1005-Maximize-Sum-Of-Array-After-K-Negations"><a href="#1005-Maximize-Sum-Of-Array-After-K-Negations" class="headerlink" title="1005. Maximize Sum Of Array After K Negations"></a>1005. Maximize Sum Of Array After K Negations</h2><p>常规签到题。</p>
+<p>Intution:<br>有负数，先flip最小的负数;<br>没负数，有0。 flip 0;<br>只有正数，K为奇数，flip最小的正数;<br>…, K为偶数，不flip.</p>
+<p>时间复杂度: O(N log N), 因为排序。<br>空间复杂度: O(1).</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">largestSumAfterKNegations</span><span class="params">(vector&lt;<span class="keyword">int</span>&gt;&amp; A, <span class="keyword">int</span> K)</span> </span>&#123;</span><br><span class="line">        <span class="built_in">sort</span>(A.<span class="built_in">begin</span>(), A.<span class="built_in">end</span>(), less&lt;<span class="keyword">int</span>&gt;());</span><br><span class="line">        <span class="keyword">int</span> i;</span><br><span class="line">        <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; A.<span class="built_in">size</span>() &amp;&amp; K &gt; <span class="number">0</span> &amp;&amp; A[i] &lt; <span class="number">0</span>; ++i) &#123;</span><br><span class="line">            A[i] = -A[i];</span><br><span class="line">            K--;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (K &gt; <span class="number">0</span> &amp;&amp; K % <span class="number">2</span> == <span class="number">1</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (i &gt; <span class="number">0</span> &amp;&amp; A[i<span class="number">-1</span>] &lt; A[i]) A[i<span class="number">-1</span>] = -A[i<span class="number">-1</span>];</span><br><span class="line">            <span class="keyword">else</span> A[i] = -A[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">accumulate</span>(A.<span class="built_in">begin</span>(), A.<span class="built_in">end</span>(), <span class="number">0</span>, plus&lt;<span class="keyword">int</span>&gt;());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>我Wrong Answer了一次，因为flip最小的正数时，没有考虑原来是负数的更小的正数，也就是需要有<code>if (i &gt; 0 &amp;&amp; A[i-1] &lt; A[i]) A[i-1] = -A[i-1];</code>这行代码。</p>
+<p>即使是签到题，在Discuss区果然还是发现了一些牛逼的代码。比如，O(N)的解法。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/03/10/LeetCode-weekly-contest-127/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1228,120 +1361,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2019/01/20/LeetCode-weekly-contest-120/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/2019/01/13/LeetCode-weekly-contest-119/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="杨森">
-      <meta itemprop="description" content="佛系更新；生活、学习">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="YoungForest's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2019/01/13/LeetCode-weekly-contest-119/" class="post-title-link" itemprop="url">LeetCode weekly contest 119</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2019-01-13 10:56:25" itemprop="dateCreated datePublished" datetime="2019-01-13T10:56:25+08:00">2019-01-13</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-07-11 12:47:44" itemprop="dateModified" datetime="2021-07-11T12:47:44+08:00">2021-07-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a>
-        </span>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus: </span>
-    
-    <a title="disqus" href="/2019/01/13/LeetCode-weekly-contest-119/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/01/13/LeetCode-weekly-contest-119/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>这次contest做的比较惨，排名大致是1486 / 3845。出现的问题有：</p>
-<ul>
-<li>第二题，比较简单。由于是easy的题目，直接brute force了，结果TLE一次。之前由于粗心，for循环条件中的变量还写错了一次。导致2次罚时。</li>
-<li>第三题，也不是很难，但最后并没有想到O(n)的解法。只想到了O(n ^ 2)的。想到了要算前缀和，也注意到了divisible这一关键词。但并没有联想到前缀和相等就可以这一关键点。</li>
-<li>第四题，想到了dp。卡在了”找寻后面数组中刚刚大一点的数”这步，即没想到用<strong>TreeMap</strong>解决。归根结底是因为对基础的数据结构不熟悉。</li>
-</ul>
-<h2 id="973-K-Closest-Points-to-Origin"><a href="#973-K-Closest-Points-to-Origin" class="headerlink" title="973. K Closest Points to Origin"></a>973. K Closest Points to Origin</h2><p>直接用C++中的Map即可，用key进行排序。</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt; <span class="built_in">kClosest</span>(vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt;&amp; points, <span class="keyword">int</span> K) &#123;</span><br><span class="line">        map&lt;<span class="keyword">int</span>, vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt;&gt; distance;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> point: points) &#123;</span><br><span class="line">            distance[point[<span class="number">0</span>]*point[<span class="number">0</span>] + point[<span class="number">1</span>]*point[<span class="number">1</span>]].<span class="built_in">push_back</span>(point);</span><br><span class="line">        &#125;</span><br><span class="line">        vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt; results;</span><br><span class="line">        <span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> d: distance) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> point: d.second) &#123;</span><br><span class="line">                results.<span class="built_in">push_back</span>(point);</span><br><span class="line">                i++;</span><br><span class="line">                <span class="keyword">if</span> (i &gt;= K) &#123;</span><br><span class="line">                    <span class="keyword">return</span> results;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> results;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-
-<h2 id="976-Largest-Perimeter-Triangle"><a href="#976-Largest-Perimeter-Triangle" class="headerlink" title="976. Largest Perimeter Triangle"></a>976. Largest Perimeter Triangle</h2><p>只用找最大的3个可以组成三角形的数就可以了。</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">largestPerimeter</span><span class="params">(vector&lt;<span class="keyword">int</span>&gt;&amp; A)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> result = <span class="number">0</span>;</span><br><span class="line">        <span class="built_in">sort</span>(A.<span class="built_in">begin</span>(), A.<span class="built_in">end</span>());</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = A.<span class="built_in">size</span>() - <span class="number">3</span>; i &gt;= <span class="number">0</span>; i--) &#123;</span><br><span class="line">            <span class="keyword">if</span> (A[i] + A[i+<span class="number">1</span>] &gt; A[i+<span class="number">2</span>]) &#123;</span><br><span class="line">                result = A[i] + A[i+<span class="number">1</span>] + A[i+<span class="number">2</span>];</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h2 id="974-Subarray-Sums-Divisible-by-K"><a href="#974-Subarray-Sums-Divisible-by-K" class="headerlink" title="974. Subarray Sums Divisible by K"></a>974. Subarray Sums Divisible by K</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">subarraysDivByK</span><span class="params">(vector&lt;<span class="keyword">int</span>&gt;&amp; A, <span class="keyword">int</span> K)</span> </span>&#123;</span><br><span class="line">        unordered_map&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt; prefix_sum;</span><br><span class="line">        <span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> result = <span class="number">0</span>;</span><br><span class="line">        prefix_sum[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; A.<span class="built_in">size</span>(); i++) &#123;</span><br><span class="line">            sum = (sum + A[i] % K + K) % K;</span><br><span class="line">            result += prefix_sum[sum];</span><br><span class="line">            prefix_sum[sum]++;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2019/01/13/LeetCode-weekly-contest-119/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>

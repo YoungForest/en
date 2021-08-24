@@ -134,7 +134,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">216</span>
+          <span class="site-state-item-count">217</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -194,6 +194,118 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/2019/07/28/kick-start-2019-round-D/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="杨森">
+      <meta itemprop="description" content="佛系更新；生活、学习">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YoungForest's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2019/07/28/kick-start-2019-round-D/" class="post-title-link" itemprop="url">kick start 2019 round D</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2019-07-28 16:19:32" itemprop="dateCreated datePublished" datetime="2019-07-28T16:19:32+08:00">2019-07-28</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-07-11 12:47:44" itemprop="dateModified" datetime="2021-07-11T12:47:44+08:00">2021-07-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/KickStart/" itemprop="url" rel="index"><span itemprop="name">KickStart</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2019/07/28/kick-start-2019-round-D/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/07/28/kick-start-2019-round-D/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>排名: 765 / 1866.</p>
+<h2 id="X-or-What"><a href="#X-or-What" class="headerlink" title="X or What"></a>X or What</h2><p>本题是找规律的题目，考察最xor的熟悉程度。事实上，我曾经很接近于正确解法了。但一头心思钻到 interval 题目用线段树求解的经验上，试图寻找节点记录什么信息。结果越走越偏。</p>
+<p>总结起来规律是这样的:<br>题目中给了xor-even的定义。<br>我们根据xor的性质有：</p>
+<ul>
+<li>odd xor odd -&gt; even</li>
+<li>odd xor even -&gt; odd</li>
+<li>even xor even -&gt; even</li>
+</ul>
+<p>想要最后xor-even，interval中的odd必须是偶数个。一个非常直接的思路就出来了。统计odd的数量，如果是偶数，那么最长的interval就是整个数组的长度。如果是奇数，则去掉头或尾，找最长的。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;set&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N = <span class="number">1e5</span> + <span class="number">5</span>;</span><br><span class="line"><span class="keyword">int</span> n, q;</span><br><span class="line"><span class="keyword">int</span> a[N], v[N];</span><br><span class="line"><span class="keyword">int</span> p[N];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">even</span><span class="params">(<span class="keyword">int</span> i)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">while</span> (i &gt; <span class="number">0</span>) &#123;</span><br><span class="line">    count += i % <span class="number">2</span>;</span><br><span class="line">    i /= <span class="number">2</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> count;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">read_input</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="built_in">scanf</span>(<span class="string">&quot;%d %d&quot;</span>, &amp;n, &amp;q);</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; ++i) &#123;</span><br><span class="line">    <span class="keyword">int</span> x;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;x);</span><br><span class="line">    a[i] = <span class="built_in">even</span>(x) &amp; <span class="number">1</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; q; ++i) &#123;</span><br><span class="line">      <span class="keyword">int</span> x;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d %d&quot;</span>, p+i, &amp;x);</span><br><span class="line">    v[i] = <span class="built_in">even</span>(x) &amp; <span class="number">1</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">solve</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  set&lt;<span class="keyword">int</span>&gt; idx[<span class="number">2</span>];</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; ++i) &#123;</span><br><span class="line">    idx[a[i]].<span class="built_in">insert</span>(i);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; q; ++i) &#123;</span><br><span class="line">    <span class="keyword">if</span> (a[p[i]] != v[i]) &#123;</span><br><span class="line">      idx[a[p[i]]].<span class="built_in">erase</span>(p[i]);</span><br><span class="line">      a[p[i]] = v[i];</span><br><span class="line">      idx[a[p[i]]].<span class="built_in">insert</span>(p[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (i)</span><br><span class="line">      <span class="built_in">printf</span>(<span class="string">&quot; &quot;</span>);</span><br><span class="line">    <span class="keyword">if</span> (idx[<span class="number">1</span>].<span class="built_in">size</span>() % <span class="number">2</span> == <span class="number">0</span>) &#123;</span><br><span class="line">      <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>, n);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">      <span class="keyword">int</span> ans = <span class="built_in">max</span>(*idx[<span class="number">1</span>].<span class="built_in">rbegin</span>(), n-*idx[<span class="number">1</span>].<span class="built_in">begin</span>()<span class="number">-1</span>);</span><br><span class="line">      <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>, ans);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifdef</span> LOCAL</span></span><br><span class="line">  <span class="keyword">time_t</span> starttime = <span class="built_in">clock</span>();</span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line">  <span class="keyword">int</span> tt;</span><br><span class="line">  <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;tt);</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> tc = <span class="number">1</span>; tc &lt;= tt; tc++) &#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Case #%d: &quot;</span>, tc);</span><br><span class="line">    <span class="built_in">read_input</span>();</span><br><span class="line">    <span class="built_in">solve</span>();</span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifdef</span> LOCAL</span></span><br><span class="line">    cerr &lt;&lt; <span class="string">&quot;~ TC#&quot;</span> &lt;&lt; tc &lt;&lt; <span class="string">&quot; done! execution time: &quot;</span> &lt;&lt;</span><br><span class="line">      (<span class="keyword">double</span>)(<span class="built_in">clock</span>()-starttime) / CLOCKS_PER_SEC &lt;&lt; <span class="string">&quot; s&quot;</span> &lt;&lt; endl;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id><a href="#" class="headerlink" title></a></h2>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/07/28/kick-start-2019-round-D/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1241,138 +1353,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2019/07/01/LeetCode-weekly-contest-143/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/2019/06/23/LeetCode-weekly-contest-142/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="杨森">
-      <meta itemprop="description" content="佛系更新；生活、学习">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="YoungForest's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2019/06/23/LeetCode-weekly-contest-142/" class="post-title-link" itemprop="url">LeetCode weekly contest 142</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2019-06-23 23:09:42" itemprop="dateCreated datePublished" datetime="2019-06-23T23:09:42+08:00">2019-06-23</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-07-11 12:47:44" itemprop="dateModified" datetime="2021-07-11T12:47:44+08:00">2021-07-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a>
-        </span>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus: </span>
-    
-    <a title="disqus" href="/2019/06/23/LeetCode-weekly-contest-142/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/06/23/LeetCode-weekly-contest-142/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <table>
-<thead>
-<tr>
-<th>Rank</th>
-<th>Name</th>
-<th>Score</th>
-<th>Finish Time</th>
-<th>Q1 (5)</th>
-<th>Q2 (5)</th>
-<th>Q3 (8)</th>
-<th>Q4 (8)</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>851 / 4504</td>
-<td>YoungForest</td>
-<td>13</td>
-<td>1:39:38</td>
-<td>null</td>
-<td>1:00:12 2</td>
-<td>1:19:38 2</td>
-<td>null</td>
-</tr>
-</tbody></table>
-<p>本次比赛的失误主要在于第二题sort中的cmp函数写错了，没有保证 严格有序。一直segment fault。即 a &lt; b, 必有 b !&lt; a.</p>
-<h2 id="1093-Statistics-from-a-Large-Sample"><a href="#1093-Statistics-from-a-Large-Sample" class="headerlink" title="1093. Statistics from a Large Sample"></a>1093. Statistics from a Large Sample</h2><p>Intution:<br>熟悉C++和统计中的这5个统计值的意义即可。<br>时间复杂度: O(N),<br>空间复杂度: O(1).</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">vector&lt;<span class="keyword">double</span>&gt; <span class="title">sampleStats</span><span class="params">(vector&lt;<span class="keyword">int</span>&gt;&amp; count)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">double</span> minimum = <span class="number">255.0</span>, maximum = <span class="number">0.0</span>, mean = <span class="number">0.0</span>, median = <span class="number">0.0</span>, mode = <span class="number">0.0</span>;</span><br><span class="line">        <span class="keyword">auto</span> minimum_it = <span class="built_in">find_if</span>(count.<span class="built_in">cbegin</span>(), count.<span class="built_in">cend</span>(), [](<span class="keyword">const</span> <span class="keyword">auto</span> &amp; a) -&gt; <span class="keyword">bool</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> a &gt; <span class="number">0</span>;</span><br><span class="line">        &#125;);</span><br><span class="line">        minimum = minimum_it - count.<span class="built_in">cbegin</span>();</span><br><span class="line">        <span class="keyword">auto</span> max_it = <span class="built_in">find_if</span>(count.<span class="built_in">crbegin</span>(), count.<span class="built_in">crend</span>(), [](<span class="keyword">const</span> <span class="keyword">auto</span> &amp; a) -&gt; <span class="keyword">bool</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> a &gt; <span class="number">0</span>;</span><br><span class="line">        &#125;);</span><br><span class="line">        maximum = <span class="keyword">static_cast</span>&lt;<span class="keyword">int</span>&gt;(count.<span class="built_in">size</span>()) - (max_it - count.<span class="built_in">crbegin</span>()) - <span class="number">1</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">int</span> num = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; count.<span class="built_in">size</span>(); ++i) &#123;</span><br><span class="line">            mean += i * count[i];</span><br><span class="line">            num += count[i];</span><br><span class="line">        &#125;</span><br><span class="line">        mean /= num;</span><br><span class="line">        <span class="keyword">int</span> total = num;</span><br><span class="line">        num = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; count.<span class="built_in">size</span>(); ++i) &#123;</span><br><span class="line">            <span class="keyword">if</span> (count[i] == <span class="number">0</span>)</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            num += count[i];</span><br><span class="line">            <span class="keyword">if</span> (num * <span class="number">2</span> &gt; total) &#123;</span><br><span class="line">                <span class="keyword">if</span> (median &gt; <span class="number">0</span>) &#123;</span><br><span class="line">                    median = (median + i) / <span class="number">2</span>;</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    median = i;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (num * <span class="number">2</span> == total) &#123;</span><br><span class="line">                median = i;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">auto</span> mode_it = <span class="built_in">max_element</span>(count.<span class="built_in">cbegin</span>(), count.<span class="built_in">cend</span>());</span><br><span class="line">        mode = mode_it - count.<span class="built_in">cbegin</span>();</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> &#123;minimum, maximum, mean, median, mode&#125;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h2 id="1094-Car-Pooling"><a href="#1094-Car-Pooling" class="headerlink" title="1094. Car Pooling"></a>1094. Car Pooling</h2><p>Intuition:<br>模拟整个上下车的过程。在每个站台判断是否超载。<br>时间复杂度: O(N log N)<br>空间复杂度: O(N)</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">carPooling</span><span class="params">(vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt; &amp;trips, <span class="keyword">int</span> capacity)</span> </span>&#123;</span><br><span class="line">       map&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt; stops;</span><br><span class="line">       <span class="keyword">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; trip : trips) &#123;</span><br><span class="line">           stops[trip[<span class="number">1</span>]] += trip[<span class="number">0</span>];</span><br><span class="line">           stops[trip[<span class="number">2</span>]] -= trip[<span class="number">0</span>];</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">int</span> passengers = <span class="number">0</span>;</span><br><span class="line">       <span class="keyword">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; stop : stops) &#123;</span><br><span class="line">           passengers += stop.second;</span><br><span class="line">           <span class="keyword">if</span> (passengers &gt; capacity)</span><br><span class="line">               <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h2 id="1095-Find-in-Mountain-Array"><a href="#1095-Find-in-Mountain-Array" class="headerlink" title="1095. Find in Mountain Array"></a>1095. Find in Mountain Array</h2><p>本题算是一类新题型：交互式问题。<br>3次 二分搜索搞定。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2019/06/23/LeetCode-weekly-contest-142/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>

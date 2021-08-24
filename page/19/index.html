@@ -134,7 +134,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">216</span>
+          <span class="site-state-item-count">217</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -194,6 +194,116 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/2018/10/23/LeetCode-29-Divide-Two-Integer/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="杨森">
+      <meta itemprop="description" content="佛系更新；生活、学习">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YoungForest's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2018/10/23/LeetCode-29-Divide-Two-Integer/" class="post-title-link" itemprop="url">LeetCode 29 Divide Two Integer</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2018-10-23 16:41:47" itemprop="dateCreated datePublished" datetime="2018-10-23T16:41:47+08:00">2018-10-23</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-07-11 12:47:44" itemprop="dateModified" datetime="2021-07-11T12:47:44+08:00">2021-07-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2018/10/23/LeetCode-29-Divide-Two-Integer/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/10/23/LeetCode-29-Divide-Two-Integer/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>有4周时间没有刷LeetCode了，理由一方面是紧迫感下降，另一方面是行动力不足。<br>最近又有一场面试要准备，小红书 视频组 的算法实习生。<br>一面看 机器学习的知识，防止重蹈 快手 面试的覆辙；另一面回顾自己的代码能力，果然4周不刷题，连代码都写不好了。作为未来的程序员，代码能力不好怎么行呢？还是要重新有规划的开始刷leetcode的。</p>
+<p>Description: <a target="_blank" rel="noopener" href="https://leetcode.com/problems/divide-two-integers/description/">https://leetcode.com/problems/divide-two-integers/description/</a><br>Solution: 无<br>Difficulty: Medium</p>
+<h2 id="brute-approach"><a href="#brute-approach" class="headerlink" title="brute approach"></a>brute approach</h2><p>直接暴力，用减法代替除法。不出所料，果然超时。<br>时间复杂度：O(m)，m为商的绝对值。<br>空间复杂度：O(1), 除常量外，并未申请额外空间。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">divide</span><span class="params">(<span class="keyword">int</span> dividend, <span class="keyword">int</span> divisor)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (dividend == Integer.MIN_VALUE &amp;&amp; divisor == -<span class="number">1</span>) <span class="keyword">return</span> Integer.MAX_VALUE;</span><br><span class="line">        <span class="keyword">if</span> (divisor == <span class="number">1</span>) <span class="keyword">return</span> dividend;</span><br><span class="line">        <span class="keyword">if</span> (dividend == <span class="number">0</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">boolean</span> positive = <span class="keyword">true</span>;</span><br><span class="line">        <span class="keyword">if</span> (Integer.signum(dividend) + Integer.signum(divisor) == <span class="number">0</span>) positive = <span class="keyword">false</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> originalDividend = dividend;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">while</span> (<span class="keyword">true</span>) &#123;</span><br><span class="line">            dividend = positive ? dividend - divisor : dividend + divisor;</span><br><span class="line">            <span class="keyword">if</span> (Integer.signum(dividend) == <span class="number">0</span>) &#123;</span><br><span class="line">                count = positive ? count + <span class="number">1</span> : count - <span class="number">1</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (Integer.signum(dividend) + Integer.signum(originalDividend) == <span class="number">0</span>) <span class="keyword">break</span>;</span><br><span class="line">            count = positive ? count + <span class="number">1</span> : count - <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> count;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="模拟除法笔算"><a href="#模拟除法笔算" class="headerlink" title="模拟除法笔算"></a>模拟除法笔算</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://leetcode.com/problems/divide-two-integers/discuss/179759/Python-7-lines-(beats-99):-How-you-learned-to-divide-when-you-were-7-years-old">很好的解释和python代码</a></li>
+<li><a target="_blank" rel="noopener" href="https://leetcode.com/problems/divide-two-integers/discuss/13417/No-Use-of-Long-Java-Solution">Java Solution, explanation awful though</a></li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">divide</span><span class="params">(<span class="keyword">int</span> dividend, <span class="keyword">int</span> divisor)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">if</span>(dividend==Integer.MIN_VALUE &amp;&amp; divisor==-<span class="number">1</span>) <span class="keyword">return</span> Integer.MAX_VALUE;</span><br><span class="line">        <span class="keyword">if</span>(dividend &gt; <span class="number">0</span> &amp;&amp; divisor &gt; <span class="number">0</span>) <span class="keyword">return</span> divideHelper(-dividend, -divisor);</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(dividend &gt; <span class="number">0</span>) <span class="keyword">return</span> -divideHelper(-dividend,divisor);</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(divisor &gt; <span class="number">0</span>) <span class="keyword">return</span> -divideHelper(dividend,-divisor);</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">return</span> divideHelper(dividend, divisor);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">int</span> <span class="title">divideHelper</span><span class="params">(<span class="keyword">int</span> dividend, <span class="keyword">int</span> divisor)</span></span>&#123;</span><br><span class="line">        <span class="comment">// base case</span></span><br><span class="line">        <span class="keyword">if</span>(divisor &lt; dividend) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        <span class="comment">// get highest digit of divisor</span></span><br><span class="line">        <span class="keyword">int</span> cur = <span class="number">0</span>, res = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span>((divisor &lt;&lt; cur) &gt;= dividend &amp;&amp; divisor &lt;&lt; cur &lt; <span class="number">0</span> &amp;&amp; cur &lt; <span class="number">31</span>) cur++;</span><br><span class="line">        res = dividend - (divisor &lt;&lt; cur-<span class="number">1</span>);</span><br><span class="line">        <span class="keyword">if</span>(res &gt; divisor) <span class="keyword">return</span> <span class="number">1</span> &lt;&lt; cur-<span class="number">1</span>;</span><br><span class="line">        <span class="comment">// 每次调用都只计算出来商里为1的一位</span></span><br><span class="line">        <span class="keyword">return</span> (<span class="number">1</span> &lt;&lt; cur-<span class="number">1</span>)+divide(res, divisor);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2018/10/23/LeetCode-29-Divide-Two-Integer/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1145,129 +1255,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2018/08/14/face-interview/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/2018/08/14/kaggle-titanic-tutorial/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="杨森">
-      <meta itemprop="description" content="佛系更新；生活、学习">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="YoungForest's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2018/08/14/kaggle-titanic-tutorial/" class="post-title-link" itemprop="url">kaggle入门之-titanic</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2018-08-14 11:22:23" itemprop="dateCreated datePublished" datetime="2018-08-14T11:22:23+08:00">2018-08-14</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-07-11 12:47:44" itemprop="dateModified" datetime="2021-07-11T12:47:44+08:00">2021-07-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/kaggle/" itemprop="url" rel="index"><span itemprop="name">kaggle</span></a>
-        </span>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus: </span>
-    
-    <a title="disqus" href="/2018/08/14/kaggle-titanic-tutorial/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/08/14/kaggle-titanic-tutorial/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>为了更快地锻炼自己数据挖掘的能力，我计划最近一个月花一定的时间在kaggle比赛上。目前的计划是把<a target="_blank" rel="noopener" href="https://www.kaggle.com/tags/tutorial">Tutorial</a>上的比赛、Datasets和牛人们的notebook跟完作为入门。之后再选择一个简单的常规比赛参加。<br>至于最后是否像欢哥一样走上数据挖掘竞赛之路，看入门之后的感受。自己是否愿意继续花大量的精力在上面。</p>
-<p>数据挖掘的能力主要分为2部分：</p>
-<ul>
-<li>机器学习</li>
-<li>特征工程</li>
-</ul>
-<p>之前在快手推荐组实习的时候，工作也涉及这些。推荐系统也算是数据挖掘的一个分支，从结果上看，是预测某个item是否会被用户点击。</p>
-<p><a target="_blank" rel="noopener" href="https://www.kaggle.com/c/titanic">Titanic: Machine Learning from Disaster</a>作为大多数人入门kaggle的第一步，确实是对数据挖掘技巧的集中体现。相反，最近在kaggle上比较火的比赛，都是和CV或NLP相关的。领域知识的要求更高，淡化了通用的数据挖掘技能。<br>在kaggle上还有许多<a target="_blank" rel="noopener" href="https://www.kaggle.com/tags/tutorial">其他的教程</a>可供用户学习，我今后会选择其中的一些进行重点学习，争取在开学前入门kaggle。</p>
-<span id="more"></span>
-<p>Titanic训练的技能为：</p>
-<ul>
-<li>二分类(活/死)</li>
-<li>Python/R 基础</li>
-</ul>
-<p><a target="_blank" rel="noopener" href="https://www.kaggle.com/helgejo/an-interactive-data-science-tutorial/notebook">notebook link</a>这是我本次跟的notebook。<br>我把所有的代码都手敲了一遍，拒绝复制粘贴；该完成的Exercises也全部完成；对比赛的一般流程有了初步了解：</p>
-<ul>
-<li>题目理解</li>
-<li>数据理解</li>
-<li>数据预处理</li>
-<li>机器学习建模</li>
-<li>模型评估</li>
-<li>提交结果</li>
-</ul>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2018/08/14/kaggle-titanic-tutorial/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>

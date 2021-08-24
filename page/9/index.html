@@ -134,7 +134,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">216</span>
+          <span class="site-state-item-count">217</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -194,6 +194,138 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/2020/04/19/kick-start-2020-round-B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="杨森">
+      <meta itemprop="description" content="佛系更新；生活、学习">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YoungForest's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2020/04/19/kick-start-2020-round-B/" class="post-title-link" itemprop="url">kick start 2020 round B</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2020-04-19 20:39:28" itemprop="dateCreated datePublished" datetime="2020-04-19T20:39:28+08:00">2020-04-19</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-07-11 12:47:44" itemprop="dateModified" datetime="2021-07-11T12:47:44+08:00">2021-07-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/KickStart/" itemprop="url" rel="index"><span itemprop="name">KickStart</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2020/04/19/kick-start-2020-round-B/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/04/19/kick-start-2020-round-B/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <table>
+<thead>
+<tr>
+<th>ID</th>
+<th>score</th>
+<th>rank</th>
+<th>Bike Tour</th>
+<th>Bus Routes</th>
+<th>Robot Path Coding</th>
+<th>Wandering Robot</th>
+<th>Time</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>YoungForest</td>
+<td>74</td>
+<td>524</td>
+<td>5 + 7</td>
+<td>10 + 13</td>
+<td>11 + 16</td>
+<td>14 + 0</td>
+<td>1:35:18</td>
+</tr>
+</tbody></table>
+<p>去年一共参加了6轮kickstart，成功拿到Google今年的实习邀请。可惜的是，由于疫情的原因，谷歌中国的暑期实习项目全部取消了。今年为了秋招名额，仍需继续参加kickstart。今天的round B轮次虽然在早上7点，但仍然有很多同学参加。遗憾的是，最后一题的时间复杂度过高，大的Test set TLE了。</p>
+<h2 id="Bike-Tour"><a href="#Bike-Tour" class="headerlink" title="Bike Tour"></a>Bike Tour</h2><p>签到题。遍历一遍mountains, 寻找比前后都高的位置即可。</p>
+<p>时间复杂度: O(N),<br>空间复杂度: O(N).</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> T;</span><br><span class="line">    cin &gt;&gt; T;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> iCase = <span class="number">1</span>; iCase &lt;= T; ++iCase) &#123;</span><br><span class="line">        <span class="keyword">int</span> N;</span><br><span class="line">        cin &gt;&gt; N;</span><br><span class="line">        <span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">mountains</span><span class="params">(N)</span></span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; N; ++i) &#123;</span><br><span class="line">            cin &gt;&gt; mountains[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> ans = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; N - <span class="number">1</span>; ++i) &#123;</span><br><span class="line">            <span class="keyword">if</span> (mountains[i] &gt; mountains[i - <span class="number">1</span>] &amp;&amp;</span><br><span class="line">                mountains[i] &gt; mountains[i + <span class="number">1</span>]) &#123;</span><br><span class="line">                ++ans;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;Case #&quot;</span> &lt;&lt; iCase &lt;&lt; <span class="string">&quot;: &quot;</span> &lt;&lt; ans &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Bus-Routes"><a href="#Bus-Routes" class="headerlink" title="Bus Routes"></a>Bus Routes</h2><p>贪心。从后向前，选择每趟公交最晚的那班。</p>
+<p>时间复杂度：O(N), 我这里使用了尾递归的写法，和迭代一样，不需要额外的空间。<br>空间复杂度：O(N).</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;functional&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> ll = <span class="keyword">long</span> <span class="keyword">long</span>;</span><br><span class="line"></span><br><span class="line"><span class="function">vector&lt;ll&gt; <span class="title">schedule</span><span class="params">(<span class="number">1005</span>)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> T;</span><br><span class="line">    cin &gt;&gt; T;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> iCase = <span class="number">1</span>; iCase &lt;= T; ++iCase) &#123;</span><br><span class="line">        <span class="keyword">int</span> N;</span><br><span class="line">        ll D;</span><br><span class="line">        cin &gt;&gt; N &gt;&gt; D;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; N; ++i) &#123;</span><br><span class="line">            cin &gt;&gt; schedule[i];</span><br><span class="line">        &#125;</span><br><span class="line">        function&lt;<span class="built_in">ll</span>(<span class="keyword">int</span>, ll)&gt; f = [&amp;](<span class="keyword">int</span> index, ll d) -&gt; ll &#123;</span><br><span class="line">            <span class="keyword">if</span> (index == <span class="number">0</span>) &#123;</span><br><span class="line">                <span class="built_in"><span class="keyword">return</span></span> (d / schedule[index]) * schedule[index];</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="built_in">f</span>(index - <span class="number">1</span>, (d / schedule[index]) * schedule[index]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;;</span><br><span class="line">        </span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;Case #&quot;</span> &lt;&lt; iCase &lt;&lt; <span class="string">&quot;: &quot;</span> &lt;&lt; <span class="built_in">f</span>(N<span class="number">-1</span>, D) &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/04/19/kick-start-2020-round-B/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1319,132 +1451,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2020/03/22/kick-start-2020-round-A/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/2020/03/20/Mihayo-backend-intern-interview/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="杨森">
-      <meta itemprop="description" content="佛系更新；生活、学习">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="YoungForest's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2020/03/20/Mihayo-backend-intern-interview/" class="post-title-link" itemprop="url">米哈游 服务器开发 暑期实习</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2020-03-20 16:29:48" itemprop="dateCreated datePublished" datetime="2020-03-20T16:29:48+08:00">2020-03-20</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-07-11 12:47:44" itemprop="dateModified" datetime="2021-07-11T12:47:44+08:00">2021-07-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/interview/" itemprop="url" rel="index"><span itemprop="name">interview</span></a>
-        </span>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus: </span>
-    
-    <a title="disqus" href="/2020/03/20/Mihayo-backend-intern-interview/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/03/20/Mihayo-backend-intern-interview/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="一面"><a href="#一面" class="headerlink" title="一面"></a>一面</h1><p>time: 2020-03-20 16:29:48</p>
-<p>上周五参加了在牛客网上的笔试。题目不难，分为计算机基础、算法 和 系统设计。<br>计算机基础靠着本科的认真学习，没啥问题。算法也属于LeetCode medium难度，很快AC了。<br>系统设计倒是难倒我了，并不擅长，也没有准备。需要设计一个 MOBA游戏的匹配机制，包括单人和组队。之前完全没想过，瞎写了一通。<br>昨天收到电话，说我通过了笔试，约了今天下午2:30的电话面试。</p>
-<p>本科有个可爱的大佬舍友最后去米哈游了。我虽然对游戏不感冒，但本着多面试，多总结的态度，也报名了其春招内推。</p>
-<p>面试预计30min, 实际40min。</p>
-<p>自我介绍 + 项目经历 + 计算机基础。</p>
-<p>计算机基础又分为：</p>
-<ul>
-<li>C++</li>
-<li>操作系统</li>
-<li>数据库</li>
-<li>计算机网络</li>
-<li>设计模式</li>
-</ul>
-<p>我不会的有：</p>
-<ul>
-<li>TCP 3次挥手，最后的time_wait的作用</li>
-<li>C++ 父类析构函数为什么必需是虚函数</li>
-<li>MySQL<ul>
-<li>事务 及 ACID</li>
-<li>Block 和 Tag 区别</li>
-<li>BiLog是什么</li>
-<li>timestamp, datetime的区别</li>
-</ul>
-</li>
-<li>说出常用的设计模式，我讲了几个，但面试官好像并不满意</li>
-</ul>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/03/20/Mihayo-backend-intern-interview/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>

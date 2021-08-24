@@ -9444,4 +9444,56 @@ Undefined symbols for architecture x86_64:
         <tag>Competitive Programming</tag>
       </tags>
   </entry>
+  <entry>
+    <title>LeetCode weekly contest 255</title>
+    <url>/2021/08/23/LeetCode-weekly-contest-255/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Name</th>
+<th>Score</th>
+<th>Finish Time</th>
+<th>Q1 (3)</th>
+<th>Q2 (4)</th>
+<th>Q3 (6)</th>
+<th>Q4 (6)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>406 / 11837</td>
+<td>YoungForest</td>
+<td>12</td>
+<td>0:36:07</td>
+<td>0:01:21</td>
+<td>0:09:54</td>
+<td>0:26:07  🐞2</td>
+<td>null</td>
+</tr>
+</tbody></table>
+<p>本周Q4极其难，思考了半个小时果断放弃，陪npy做可乐鸡翅去了。<br>有趣的是，LC国服赛后挂了。取不到成绩，残酷榜默认0分。心疼国服的同学们。<br>虽然之后恢复了，我上面的成绩就是恢复之后，加上国服的同学后的排名。<br>因为今天其实有Google Kickstart比赛，因此参赛人数有所减少。</p>
+<h2 id="1979-Find-Greatest-Common-Divisor-of-Array"><a href="#1979-Find-Greatest-Common-Divisor-of-Array" class="headerlink" title="1979. Find Greatest Common Divisor of Array"></a>1979. Find Greatest Common Divisor of Array</h2><p>签到题。用C++简直作弊，有自带的gcd函数，虽然是C++ 17才支持的，不过LeetCode恰好支持17.</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">findGCD</span><span class="params">(vector&lt;<span class="keyword">int</span>&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">        <span class="built_in">sort</span>(nums.<span class="built_in">begin</span>(), nums.<span class="built_in">end</span>());</span><br><span class="line">        <span class="keyword">const</span> <span class="keyword">int</span> smallest = *nums.<span class="built_in">begin</span>();</span><br><span class="line">        <span class="keyword">const</span> <span class="keyword">int</span> largest = *nums.<span class="built_in">rbegin</span>();</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">gcd</span>(largest, smallest);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>时间复杂度: O(n log n + log max(nums)),<br>空间复杂度: O(1).</p>
+<p>gcd 的时间复杂度: <a href="https://www.quora.com/What-is-the-time-complexity-of-Euclids-GCD-algorithm">link</a>.</p>
+<h2 id="1980-Find-Unique-Binary-String"><a href="#1980-Find-Unique-Binary-String" class="headerlink" title="1980. Find Unique Binary String"></a>1980. Find Unique Binary String</h2><p>由于<code>n</code>的大小很小，因此直接暴力即可。<br>数字转二进制字符串，和 二进制字符串转数字 都是网上现搜的。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">string <span class="title">findDifferentBinaryString</span><span class="params">(vector&lt;string&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// total number: 2 ^ n,</span></span><br><span class="line">        <span class="comment">// 2 ^ 16 = 65536</span></span><br><span class="line">        <span class="keyword">const</span> <span class="keyword">int</span> n = nums.<span class="built_in">size</span>();</span><br><span class="line">        unordered_set&lt;<span class="keyword">int</span>&gt; seen;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; i : nums) &#123;</span><br><span class="line">            seen.<span class="built_in">insert</span>(<span class="built_in">stoi</span>(i, <span class="number">0</span>, <span class="number">2</span>));</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; (<span class="number">1</span> &lt;&lt; n); ++i) &#123;</span><br><span class="line">            <span class="keyword">if</span> (seen.<span class="built_in">find</span>(i) == seen.<span class="built_in">end</span>()) &#123;</span><br><span class="line">                <span class="keyword">return</span> std::bitset&lt;<span class="number">16</span>&gt;(i).<span class="built_in">to_string</span>().<span class="built_in">substr</span>(<span class="number">16</span> - n);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>时间复杂度: O(sum(nums[i].length) + 2 ^ n),<br>空间复杂度: O(n).</p>
+<h2 id="1981-Minimize-the-Difference-Between-Target-and-Chosen-Elements"><a href="#1981-Minimize-the-Difference-Between-Target-and-Chosen-Elements" class="headerlink" title="1981. Minimize the Difference Between Target and Chosen Elements"></a>1981. Minimize the Difference Between Target and Chosen Elements</h2><p>使用DP枚举所有可能的和，然后找最近的。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">minimizeTheDifference</span><span class="params">(vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt;&amp; mat, <span class="keyword">int</span> target)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 1 * m ~ 70 * m = 4900</span></span><br><span class="line">        <span class="comment">// 4900 * n * m = 24,010,000</span></span><br><span class="line">        <span class="keyword">const</span> <span class="keyword">int</span> MAXNUMBER = <span class="number">70</span>;</span><br><span class="line">        <span class="keyword">const</span> <span class="keyword">int</span> m = mat.<span class="built_in">size</span>();</span><br><span class="line">        <span class="function">vector&lt;<span class="keyword">bool</span>&gt; <span class="title">dp</span><span class="params">(MAXNUMBER * m + <span class="number">1</span>, <span class="literal">false</span>)</span></span>;</span><br><span class="line">        dp[<span class="number">0</span>] = <span class="literal">true</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; m; ++i) &#123;</span><br><span class="line">            <span class="function">vector&lt;<span class="keyword">bool</span>&gt; <span class="title">newdp</span><span class="params">(MAXNUMBER * m + <span class="number">1</span>, <span class="literal">false</span>)</span></span>;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = MAXNUMBER * m; j &gt;= <span class="number">0</span>; --j) &#123;</span><br><span class="line">                <span class="keyword">if</span> (dp[j]) &#123;</span><br><span class="line">                    <span class="keyword">for</span> (<span class="keyword">int</span> k : mat[i]) &#123;</span><br><span class="line">                        <span class="keyword">if</span> (j + k &lt;= MAXNUMBER * m) newdp[j + k] = <span class="literal">true</span>;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            dp = <span class="built_in">move</span>(newdp);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> i;</span><br><span class="line">        <span class="keyword">for</span> (i = <span class="number">0</span>; target + i &lt;= MAXNUMBER * m || target - i &gt;= <span class="number">0</span>; ++i) &#123;</span><br><span class="line">            <span class="keyword">if</span> ((target + i &lt;= MAXNUMBER * m &amp;&amp; dp[target + i]) || (target - i &gt;= <span class="number">0</span> &amp;&amp; target - i &lt;= MAXNUMBER * m &amp;&amp; dp[target - i])) <span class="keyword">return</span> i;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> i;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>时间复杂度: O(m * max(mat[i][j]) * m * n) = 24,010,000,<br>空间复杂度: O(max(mat[i][j]) * m).</p>
+<p>WA 一次：因为每行必须选一个数，不能不选。因此dp需要新开一个数组，不能复用原来的。<br>Runtime Error 一次：<code>target</code>有可能大于<code>MAXNUMBER * m</code>，因此必须加判断。</p>
+<h2 id="1982-Find-Array-Given-Subset-Sums"><a href="#1982-Find-Array-Given-Subset-Sums" class="headerlink" title="1982. Find Array Given Subset Sums"></a>1982. Find Array Given Subset Sums</h2><p>全球只有50人做出来。我思索了半个小时，仍然没有头绪。果断放弃帮npy做可乐鸡翅。虽然没有AK，但吃上了可口的鸡。</p>
+<p>赛后果然参考了<a href="https://leetcode-cn.com/problems/find-array-given-subset-sums/solution/cong-zi-ji-de-he-huan-yuan-shu-zu-by-lee-aj8o/">零神的题解</a>, yyds.</p>
+]]></content>
+      <categories>
+        <category>LeetCode</category>
+      </categories>
+      <tags>
+        <tag>Competitive Programming</tag>
+      </tags>
+  </entry>
 </search>

@@ -134,7 +134,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">216</span>
+          <span class="site-state-item-count">217</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -194,6 +194,139 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/2020/10/06/LeetCode-biweekly-contest-36/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="杨森">
+      <meta itemprop="description" content="佛系更新；生活、学习">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YoungForest's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2020/10/06/LeetCode-biweekly-contest-36/" class="post-title-link" itemprop="url">LeetCode biweekly contest 36</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2020-10-06 09:29:23" itemprop="dateCreated datePublished" datetime="2020-10-06T09:29:23+08:00">2020-10-06</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-07-11 12:47:44" itemprop="dateModified" datetime="2021-07-11T12:47:44+08:00">2021-07-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2020/10/06/LeetCode-biweekly-contest-36/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/10/06/LeetCode-biweekly-contest-36/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Name</th>
+<th>Score</th>
+<th>Finish Time</th>
+<th>Q1 (3)</th>
+<th>Q2 (4)</th>
+<th>Q3 (6)</th>
+<th>Q4 (7)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1667 / 8332</td>
+<td>YoungForest</td>
+<td>7</td>
+<td>0:15:37</td>
+<td>0:01:46</td>
+<td>0:15:37</td>
+<td>null</td>
+<td>null</td>
+</tr>
+</tbody></table>
+<p>这次双周赛有跪了，生活真是起起落落落落…三四题其实还是有机会做出来的，但比赛时状态不好，决策有失误。在第3题看了2分钟没思路时转到第四题了，然后第四题想复杂了，实现花了不少时间，最后还是被卡时间TLE了。</p>
+<h2 id="1603-Design-Parking-System"><a href="#1603-Design-Parking-System" class="headerlink" title="1603. Design Parking System"></a>1603. Design Parking System</h2><p>签到题。维护各个类型剩余车位数即可。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ParkingSystem</span> &#123;</span></span><br><span class="line">    array&lt;<span class="keyword">int</span>, 4&gt; cnt;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">ParkingSystem</span>(<span class="keyword">int</span> big, <span class="keyword">int</span> medium, <span class="keyword">int</span> small) &#123;</span><br><span class="line">        cnt[<span class="number">1</span>] = big;</span><br><span class="line">        cnt[<span class="number">2</span>] = medium;</span><br><span class="line">        cnt[<span class="number">3</span>] = small;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">addCar</span><span class="params">(<span class="keyword">int</span> carType)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (cnt[carType] &gt; <span class="number">0</span>) &#123;</span><br><span class="line">            --cnt[carType];</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Your ParkingSystem object will be instantiated and called as such:</span></span><br><span class="line"><span class="comment"> * ParkingSystem* obj = new ParkingSystem(big, medium, small);</span></span><br><span class="line"><span class="comment"> * bool param_1 = obj-&gt;addCar(carType);</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+
+<p>时间复杂度: O(addCar calls),<br>空间复杂度: O(1).</p>
+<h2 id="1604-Alert-Using-Same-Key-Card-Three-or-More-Times-in-a-One-Hour-Period"><a href="#1604-Alert-Using-Same-Key-Card-Three-or-More-Times-in-a-One-Hour-Period" class="headerlink" title="1604. Alert Using Same Key-Card Three or More Times in a One Hour Period"></a>1604. Alert Using Same Key-Card Three or More Times in a One Hour Period</h2><p>先按时间进行排序，然后依次遍历，记录每个人进入的时间，检查最后3次进入是否处于同一个小时。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">vector&lt;string&gt; <span class="title">alertNames</span><span class="params">(vector&lt;string&gt;&amp; keyName, vector&lt;string&gt;&amp; keyTime)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">using</span> pss  = pair&lt;string, string&gt;;</span><br><span class="line">        set&lt;string&gt; ans;</span><br><span class="line">        <span class="keyword">const</span> <span class="keyword">int</span> n = keyName.<span class="built_in">size</span>();</span><br><span class="line">        vector&lt;pss&gt; records;</span><br><span class="line">        records.<span class="built_in">reserve</span>(n);</span><br><span class="line">         <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; ++i) &#123;</span><br><span class="line">             records.<span class="built_in">emplace_back</span>(keyTime[i], keyName[i]);</span><br><span class="line">         &#125;</span><br><span class="line">        <span class="built_in">sort</span>(records.<span class="built_in">begin</span>(), records.<span class="built_in">end</span>());</span><br><span class="line">        <span class="keyword">int</span> hour = <span class="number">0</span>;</span><br><span class="line">        unordered_map&lt;string, vector&lt;string&gt;&gt; enter;</span><br><span class="line">        <span class="keyword">auto</span> convert2int = [&amp;](<span class="keyword">const</span> string&amp; x) -&gt; <span class="keyword">int</span> &#123;</span><br><span class="line">            <span class="keyword">int</span> h = <span class="built_in">stoi</span>(x.<span class="built_in">substr</span>(<span class="number">0</span>, <span class="number">2</span>));</span><br><span class="line">            <span class="keyword">int</span> m = <span class="built_in">stoi</span>(x.<span class="built_in">substr</span>(<span class="number">3</span>));</span><br><span class="line">            <span class="keyword">return</span> h * <span class="number">60</span> + m;</span><br><span class="line">        &#125;;</span><br><span class="line">        <span class="keyword">auto</span> check = [&amp;](<span class="keyword">const</span> string&amp; x) -&gt; <span class="keyword">bool</span> &#123;</span><br><span class="line">            <span class="keyword">if</span> (enter[x].<span class="built_in">size</span>() &lt; <span class="number">3</span>) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">            <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">int</span> a = <span class="built_in">convert2int</span>(enter[x][enter[x].<span class="built_in">size</span>() - <span class="number">1</span>]);</span><br><span class="line">                <span class="keyword">int</span> b = <span class="built_in">convert2int</span>(enter[x][enter[x].<span class="built_in">size</span>() - <span class="number">2</span>]);</span><br><span class="line">                <span class="keyword">int</span> c = <span class="built_in">convert2int</span>(enter[x][enter[x].<span class="built_in">size</span>() - <span class="number">3</span>]);</span><br><span class="line">                <span class="keyword">return</span> a - c &lt;= <span class="number">60</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; ++i) &#123;</span><br><span class="line">            enter[records[i].second].<span class="built_in">push_back</span>(records[i].first);</span><br><span class="line">            <span class="keyword">if</span> (<span class="built_in">check</span>(records[i].second)) &#123;</span><br><span class="line">                ans.<span class="built_in">insert</span>(records[i].second);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> &#123;ans.<span class="built_in">begin</span>(), ans.<span class="built_in">end</span>()&#125;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>时间复杂度: O(N log N * nameLength),<br>空间复杂度: O(N).</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/10/06/LeetCode-biweekly-contest-36/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1295,116 +1428,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2020/05/27/unordered-map-hash-pair-c/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/2020/05/24/LeetCode-weekly-contest-190/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="杨森">
-      <meta itemprop="description" content="佛系更新；生活、学习">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="YoungForest's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2020/05/24/LeetCode-weekly-contest-190/" class="post-title-link" itemprop="url">LeetCode weekly contest 190</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2020-05-24 12:43:24" itemprop="dateCreated datePublished" datetime="2020-05-24T12:43:24+08:00">2020-05-24</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-07-11 12:47:44" itemprop="dateModified" datetime="2021-07-11T12:47:44+08:00">2021-07-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a>
-        </span>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus: </span>
-    
-    <a title="disqus" href="/2020/05/24/LeetCode-weekly-contest-190/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/05/24/LeetCode-weekly-contest-190/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>昨晚老爸帮我掏耳朵，一不小心掏出了血。今天一大早就去地区医院检查，还好并无大碍，只损伤了外耳道，休息一周，自然痊愈就好了。只要不感染，就没问题。开了些阿姆西林吃了。<br>所以鸽了周赛，赛后补题。</p>
-<h2 id="1455-Check-If-a-Word-Occurs-As-a-Prefix-of-Any-Word-in-a-Sentence"><a href="#1455-Check-If-a-Word-Occurs-As-a-Prefix-of-Any-Word-in-a-Sentence" class="headerlink" title="1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence"></a>1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence</h2><p>C++没有自带的切割字符串的方法，不过可以用自己的模版。通过stringstream实现分割，O(N)的复杂度.</p>
-<p>时间复杂度: O(N),<br>空间复杂度: O(N).</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line">    <span class="function">vector&lt;string&gt; <span class="title">splitSentence</span><span class="params">(<span class="keyword">const</span> string&amp; text)</span> </span>&#123;</span><br><span class="line">        string tmp;</span><br><span class="line">        vector&lt;string&gt; stk;</span><br><span class="line">        <span class="function">stringstream <span class="title">ss</span><span class="params">(text)</span></span>;</span><br><span class="line">        <span class="keyword">while</span>(<span class="built_in">getline</span>(ss,tmp,<span class="string">&#x27; &#x27;</span>)) &#123;</span><br><span class="line">            stk.<span class="built_in">push_back</span>(tmp);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> stk;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">isPrefixOfWord</span><span class="params">(string sentence, string searchWord)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">auto</span> words = <span class="built_in">splitSentence</span>(sentence);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; words.<span class="built_in">size</span>(); ++i) &#123;</span><br><span class="line">            <span class="keyword">if</span> (words[i].<span class="built_in">find</span>(searchWord) == <span class="number">0</span>) <span class="keyword">return</span> i + <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h2 id="1456-Maximum-Number-of-Vowels-in-a-Substring-of-Given-Length"><a href="#1456-Maximum-Number-of-Vowels-in-a-Substring-of-Given-Length" class="headerlink" title="1456. Maximum Number of Vowels in a Substring of Given Length"></a>1456. Maximum Number of Vowels in a Substring of Given Length</h2><p>滑动窗口。窗口大小为k，统计窗口内的vowels。</p>
-<p>时间复杂度: O(N),<br>空间复杂度: O(1).</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">maxVowels</span><span class="params">(string s, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line">        unordered_set&lt;<span class="keyword">int</span>&gt; vowels = &#123;</span><br><span class="line">            <span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;e&#x27;</span>, <span class="string">&#x27;i&#x27;</span>, <span class="string">&#x27;o&#x27;</span>, <span class="string">&#x27;u&#x27;</span></span><br><span class="line">        &#125;;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; k; ++i) &#123;</span><br><span class="line">            <span class="keyword">if</span> (vowels.<span class="built_in">find</span>(s[i]) != vowels.<span class="built_in">end</span>()) &#123;</span><br><span class="line">                ++count;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> ans = count;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = k; i &lt; s.<span class="built_in">size</span>(); ++i) &#123;</span><br><span class="line">            <span class="keyword">if</span> (vowels.<span class="built_in">find</span>(s[i]) != vowels.<span class="built_in">end</span>()) &#123;</span><br><span class="line">                ++count;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (vowels.<span class="built_in">find</span>(s[i-k]) != vowels.<span class="built_in">end</span>()) &#123;</span><br><span class="line">                --count;</span><br><span class="line">            &#125;</span><br><span class="line">            ans = <span class="built_in">max</span>(ans, count);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h2 id="1457-Pseudo-Palindromic-Paths-in-a-Binary-Tree"><a href="#1457-Pseudo-Palindromic-Paths-in-a-Binary-Tree" class="headerlink" title="1457. Pseudo-Palindromic Paths in a Binary Tree"></a>1457. Pseudo-Palindromic Paths in a Binary Tree</h2>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/05/24/LeetCode-weekly-contest-190/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>

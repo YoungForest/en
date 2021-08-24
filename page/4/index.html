@@ -134,7 +134,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">216</span>
+          <span class="site-state-item-count">217</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -194,6 +194,124 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/2021/03/26/SSH-proxy-by-jump-server/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="杨森">
+      <meta itemprop="description" content="佛系更新；生活、学习">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YoungForest's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/03/26/SSH-proxy-by-jump-server/" class="post-title-link" itemprop="url">SSH 通过跳板机登陆服务器</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-03-26 15:11:02" itemprop="dateCreated datePublished" datetime="2021-03-26T15:11:02+08:00">2021-03-26</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-07-11 12:47:44" itemprop="dateModified" datetime="2021-07-11T12:47:44+08:00">2021-07-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%8A%98%E8%85%BE/" itemprop="url" rel="index"><span itemprop="name">折腾</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2021/03/26/SSH-proxy-by-jump-server/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/03/26/SSH-proxy-by-jump-server/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="动机"><a href="#动机" class="headerlink" title="动机"></a>动机</h2><p>接上篇<a href="https://youngforest.github.io/2021/03/18/Ubuntu-vpn-cannot-access-public-resource/">解决台式机Ubuntu VPN访问公网资源</a>的问题后，我尝试了配置跳板机访问杭研院机器。</p>
+<p>在科研工作中，MAC笔记本无法连接OpenVPN，从而访问杭研院机器。我的台式机Ubuntu已经配置好了VPN，可以访问服务器。我现在想通过台式机Ubuntu中转，从而实现MAC“直接”访问杭研院。抽象一下问题为：</p>
+<ul>
+<li>A可以访问B</li>
+<li>A不可以访问C</li>
+<li>B可以访问C</li>
+<li>我现在想A访问C</li>
+</ul>
+<p>由于工作中主要使用SSH，因此，问题简化成A通过SSH直接登陆C。<br>我经过不屑的网上搜索和尝试，总结了2中技术和方法实现我的目的。</p>
+<ul>
+<li>SSH 代理</li>
+<li>SSH 隧道</li>
+</ul>
+<span id="more"></span>
+
+
+<h2 id="SSH-代理"><a href="#SSH-代理" class="headerlink" title="SSH 代理"></a>SSH 代理</h2><p>这种方法最简单，不需要在B上进行任何操作，无缝连接C。</p>
+<p>A上执行，其中<code>rentao@10.134.150.154</code>是B，<code>ldmc@192.168.131.181</code>是C。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/03/26/SSH-proxy-by-jump-server/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1306,118 +1424,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2021/03/01/LeetCode-weekly-contest-230/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/2021/02/27/build-qBittorrent/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="杨森">
-      <meta itemprop="description" content="佛系更新；生活、学习">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="YoungForest's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/02/27/build-qBittorrent/" class="post-title-link" itemprop="url">MAC 手动编译 build qBittorrent</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-02-27 17:10:01" itemprop="dateCreated datePublished" datetime="2021-02-27T17:10:01+08:00">2021-02-27</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-07-11 12:47:44" itemprop="dateModified" datetime="2021-07-11T12:47:44+08:00">2021-07-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/tech/" itemprop="url" rel="index"><span itemprop="name">tech</span></a>
-        </span>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus: </span>
-    
-    <a title="disqus" href="/2021/02/27/build-qBittorrent/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/02/27/build-qBittorrent/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p>最近毕业压力比较大，想在北邮人上下载个电影看看，放松下。却发现一直使用的做种下载工具qBittorrent无法打开了。在网上寻找了半天原因和解决方案。</p>
-<p>最终确认是MAC更新的锅，qBittorrent 属于认证不完整的应用：<a target="_blank" rel="noopener" href="https://github.com/qbittorrent/qBittorrent/issues/11570">Issue 11570</a>。<br>解决方案有二：</p>
-<ul>
-<li>禁掉APPLE的安全检查</li>
-<li>自己手动编译一遍应用</li>
-</ul>
-<p>由于某些原因，我无法对MAC做过多的系统更改。只好尝试第二个解决方案。事实证明，手动编译qBittorrent并不简单，一下午就此度过，电影也不用看了。为方便有相同问题的同学参考，我记录我的解决方案于此。因为在我编译构建过程中，网上并没有类似的教程或是参考，而且确实有不少坑。</p>
-<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><p>如果之前没有QT环境，<code>./configure</code>会报找不到<code>qmake</code>的错误。需要配置相应的环境。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">brew install qt</span><br><span class="line"><span class="built_in">echo</span> <span class="string">&#x27;export PATH=&quot;/usr/local/opt/qt/bin:$PATH&quot;&#x27;</span> &gt;&gt; ~/.zshrc</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="string">&quot;/usr/local/opt/qt/bin:<span class="variable">$PATH</span>&quot;</span></span><br><span class="line"><span class="built_in">export</span> LDFLAGS=<span class="string">&quot;-L/usr/local/opt/qt/lib&quot;</span></span><br><span class="line"><span class="built_in">export</span> CPPFLAGS=<span class="string">&quot;-I/usr/local/opt/qt/include&quot;</span></span><br><span class="line"><span class="built_in">export</span> PKG_CONFIG_PATH=<span class="string">&quot;/usr/local/opt/qt/lib/pkgconfig</span></span><br></pre></td></tr></table></figure>
-
-<p>如果之前没有<code>boost</code>环境，会报找不到<code>boostlib</code>的错误：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">checking <span class="keyword">for</span> boostlib &gt;= 1.65 (106500)... configure: We could not detect the boost libraries (version 1.65 or higher). If you have a staged boost library (still not installed) please specify <span class="variable">$BOOST_ROOT</span> <span class="keyword">in</span> your environment and <span class="keyword">do</span> not give a PATH to --with-boost option.  If you are sure you have boost installed, <span class="keyword">then</span> check your version number looking <span class="keyword">in</span> &lt;boost/version.hpp&gt;. See http://randspringer.de/boost <span class="keyword">for</span> more documentation.</span><br><span class="line">configure: error: Could not find Boost</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/02/27/build-qBittorrent/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>

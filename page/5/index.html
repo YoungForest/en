@@ -134,7 +134,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">216</span>
+          <span class="site-state-item-count">217</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -194,6 +194,118 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/2021/02/27/build-qBittorrent/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="杨森">
+      <meta itemprop="description" content="佛系更新；生活、学习">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YoungForest's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/02/27/build-qBittorrent/" class="post-title-link" itemprop="url">MAC 手动编译 build qBittorrent</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-02-27 17:10:01" itemprop="dateCreated datePublished" datetime="2021-02-27T17:10:01+08:00">2021-02-27</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-07-11 12:47:44" itemprop="dateModified" datetime="2021-07-11T12:47:44+08:00">2021-07-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/tech/" itemprop="url" rel="index"><span itemprop="name">tech</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2021/02/27/build-qBittorrent/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/02/27/build-qBittorrent/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p>最近毕业压力比较大，想在北邮人上下载个电影看看，放松下。却发现一直使用的做种下载工具qBittorrent无法打开了。在网上寻找了半天原因和解决方案。</p>
+<p>最终确认是MAC更新的锅，qBittorrent 属于认证不完整的应用：<a target="_blank" rel="noopener" href="https://github.com/qbittorrent/qBittorrent/issues/11570">Issue 11570</a>。<br>解决方案有二：</p>
+<ul>
+<li>禁掉APPLE的安全检查</li>
+<li>自己手动编译一遍应用</li>
+</ul>
+<p>由于某些原因，我无法对MAC做过多的系统更改。只好尝试第二个解决方案。事实证明，手动编译qBittorrent并不简单，一下午就此度过，电影也不用看了。为方便有相同问题的同学参考，我记录我的解决方案于此。因为在我编译构建过程中，网上并没有类似的教程或是参考，而且确实有不少坑。</p>
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><p>如果之前没有QT环境，<code>./configure</code>会报找不到<code>qmake</code>的错误。需要配置相应的环境。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">brew install qt</span><br><span class="line"><span class="built_in">echo</span> <span class="string">&#x27;export PATH=&quot;/usr/local/opt/qt/bin:$PATH&quot;&#x27;</span> &gt;&gt; ~/.zshrc</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="string">&quot;/usr/local/opt/qt/bin:<span class="variable">$PATH</span>&quot;</span></span><br><span class="line"><span class="built_in">export</span> LDFLAGS=<span class="string">&quot;-L/usr/local/opt/qt/lib&quot;</span></span><br><span class="line"><span class="built_in">export</span> CPPFLAGS=<span class="string">&quot;-I/usr/local/opt/qt/include&quot;</span></span><br><span class="line"><span class="built_in">export</span> PKG_CONFIG_PATH=<span class="string">&quot;/usr/local/opt/qt/lib/pkgconfig</span></span><br></pre></td></tr></table></figure>
+
+<p>如果之前没有<code>boost</code>环境，会报找不到<code>boostlib</code>的错误：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">checking <span class="keyword">for</span> boostlib &gt;= 1.65 (106500)... configure: We could not detect the boost libraries (version 1.65 or higher). If you have a staged boost library (still not installed) please specify <span class="variable">$BOOST_ROOT</span> <span class="keyword">in</span> your environment and <span class="keyword">do</span> not give a PATH to --with-boost option.  If you are sure you have boost installed, <span class="keyword">then</span> check your version number looking <span class="keyword">in</span> &lt;boost/version.hpp&gt;. See http://randspringer.de/boost <span class="keyword">for</span> more documentation.</span><br><span class="line">configure: error: Could not find Boost</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/02/27/build-qBittorrent/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1322,139 +1434,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2020/11/22/LeetCode-weekly-contest-216/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/2020/11/15/LeetCode-weekly-contest-215/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="杨森">
-      <meta itemprop="description" content="佛系更新；生活、学习">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="YoungForest's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2020/11/15/LeetCode-weekly-contest-215/" class="post-title-link" itemprop="url">LeetCode weekly contest 215</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2020-11-15 16:59:45" itemprop="dateCreated datePublished" datetime="2020-11-15T16:59:45+08:00">2020-11-15</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-07-11 12:47:44" itemprop="dateModified" datetime="2021-07-11T12:47:44+08:00">2021-07-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a>
-        </span>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus: </span>
-    
-    <a title="disqus" href="/2020/11/15/LeetCode-weekly-contest-215/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/11/15/LeetCode-weekly-contest-215/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <table>
-<thead>
-<tr>
-<th>Rank</th>
-<th>Name</th>
-<th>Score</th>
-<th>Finish Time</th>
-<th>Q1 (3)</th>
-<th>Q2 (4)</th>
-<th>Q3 (5)</th>
-<th>Q4 (6)</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>362 / 9683</td>
-<td>YoungForest</td>
-<td>12</td>
-<td>0:35:02</td>
-<td>0:04:21</td>
-<td>0:13:42</td>
-<td>0:30:02  1</td>
-<td>null</td>
-</tr>
-</tbody></table>
-<h2 id="5601-Design-an-Ordered-Stream"><a href="#5601-Design-an-Ordered-Stream" class="headerlink" title="5601. Design an Ordered Stream"></a>5601. Design an Ordered Stream</h2><p>签到题。按照题目要求，用一个数组和指针实现接口。</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">OrderedStream</span> &#123;</span></span><br><span class="line">    vector&lt;string&gt; data;</span><br><span class="line">    <span class="keyword">int</span> ptr;</span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">OrderedStream</span>(<span class="keyword">int</span> _n) &#123;</span><br><span class="line">        data.<span class="built_in">resize</span>(_n);</span><br><span class="line">        ptr = <span class="number">1</span>;</span><br><span class="line">        n = _n;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function">vector&lt;string&gt; <span class="title">insert</span><span class="params">(<span class="keyword">int</span> id, string value)</span> </span>&#123;</span><br><span class="line">        data[id<span class="number">-1</span>] = <span class="built_in">move</span>(value);</span><br><span class="line">        vector&lt;string&gt; ans;</span><br><span class="line">        <span class="keyword">while</span> (ptr &lt;= n &amp;&amp; !data[ptr<span class="number">-1</span>].<span class="built_in">empty</span>()) &#123;</span><br><span class="line">            ans.<span class="built_in">push_back</span>(data[ptr<span class="number">-1</span>]);</span><br><span class="line">            ++ptr;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Your OrderedStream object will be instantiated and called as such:</span></span><br><span class="line"><span class="comment"> * OrderedStream* obj = new OrderedStream(n);</span></span><br><span class="line"><span class="comment"> * vector&lt;string&gt; param_1 = obj-&gt;insert(id,value);</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
-
-<p>时间复杂度: O(n),<br>空间复杂度: O(n).</p>
-<h2 id="5603-Determine-if-Two-Strings-Are-Close"><a href="#5603-Determine-if-Two-Strings-Are-Close" class="headerlink" title="5603. Determine if Two Strings Are Close"></a>5603. Determine if Two Strings Are Close</h2><p>观察2个字符串接近的操作，发现其充分必要条件为：<br>组成字符相同，字符的个数排列相同。</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line">    <span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">cnt</span><span class="params">(<span class="keyword">const</span> string &amp;a)</span> </span>&#123;</span><br><span class="line">        <span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">ans</span><span class="params">(<span class="number">26</span>, <span class="number">0</span>)</span></span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">char</span> c : a) &#123;</span><br><span class="line">            ++ans[c - <span class="string">&#x27;a&#x27;</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function">string <span class="title">appear</span><span class="params">(<span class="keyword">const</span> vector&lt;<span class="keyword">int</span>&gt;&amp; a)</span> </span>&#123;</span><br><span class="line">        string ans;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">26</span>; ++i) &#123;</span><br><span class="line">            <span class="keyword">if</span> (a[i] != <span class="number">0</span>) ans.<span class="built_in">push_back</span>(<span class="string">&#x27;a&#x27;</span> + i);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">frequency</span><span class="params">(<span class="keyword">const</span> vector&lt;<span class="keyword">int</span>&gt;&amp; a)</span> </span>&#123;</span><br><span class="line">        vector&lt;<span class="keyword">int</span>&gt; ans;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">26</span>; ++i) &#123;</span><br><span class="line">            <span class="keyword">if</span> (a[i] != <span class="number">0</span>) ans.<span class="built_in">push_back</span>(a[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">sort</span>(ans.<span class="built_in">begin</span>(), ans.<span class="built_in">end</span>());</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">closeStrings</span><span class="params">(string word1, string word2)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (word1.<span class="built_in">size</span>() != word2.<span class="built_in">size</span>()) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">auto</span> cnt1 = <span class="built_in">cnt</span>(word1);</span><br><span class="line">        <span class="keyword">auto</span> cnt2 = <span class="built_in">cnt</span>(word2);</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">appear</span>(cnt1) == <span class="built_in">appear</span>(cnt2) &amp;&amp; <span class="built_in">frequency</span>(cnt1) == <span class="built_in">frequency</span>(cnt2);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<p>时间复杂度: O(N),<br>空间复杂度: O(1).</p>
-<h2 id="5602-Minimum-Operations-to-Reduce-X-to-Zero"><a href="#5602-Minimum-Operations-to-Reduce-X-to-Zero" class="headerlink" title="5602. Minimum Operations to Reduce X to Zero"></a>5602. Minimum Operations to Reduce X to Zero</h2>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/11/15/LeetCode-weekly-contest-215/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
