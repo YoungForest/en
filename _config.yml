@@ -5,18 +5,17 @@
 # Site
 title: YoungForest's blog
 subtitle:
-description: 佛系更新；生活、学习
+description: A programmer in Amazon Beijing, China
 author: 杨森
 language: 
-- zh-CN
 - en
 timezone:
 email: yangsen758@foxmail.com
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://youngforest.github.io/
-root: /
+url: https://youngforest.github.io/en/
+root: /en/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
