@@ -134,7 +134,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">217</span>
+          <span class="site-state-item-count">218</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -194,6 +194,139 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/2019/03/17/LeetCode-weekly-contest-128/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="杨森">
+      <meta itemprop="description" content="佛系更新；生活、学习">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YoungForest's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2019/03/17/LeetCode-weekly-contest-128/" class="post-title-link" itemprop="url">LeetCode weekly contest 128</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2019-03-17 15:50:49" itemprop="dateCreated datePublished" datetime="2019-03-17T15:50:49+08:00">2019-03-17</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-07-11 12:47:44" itemprop="dateModified" datetime="2021-07-11T12:47:44+08:00">2021-07-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2019/03/17/LeetCode-weekly-contest-128/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/03/17/LeetCode-weekly-contest-128/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>前3道题比较顺利，30min内解决。最后一道hard题目，思路比较混乱，1个小时愣是没做出来。<br>Contest给我的感觉是，还是拼的熟练度。<br>因为第2、3题之前做过类似的，所以很快就做出来了。第2题甚至只用了2分钟!!!</p>
+<table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Name</th>
+<th>Score</th>
+<th>Finish Time</th>
+<th>Q1 (2)</th>
+<th>Q2 (4)</th>
+<th>Q3 (6)</th>
+<th>Q4 (8)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>348 / 5164</td>
+<td>YoungForest</td>
+<td>19</td>
+<td>1:24:03</td>
+<td>0:11:33(1)</td>
+<td>0:13:42(1)</td>
+<td>0:27:37</td>
+<td>None</td>
+</tr>
+</tbody></table>
+<h2 id="1012-Complement-of-Base-10-Integer"><a href="#1012-Complement-of-Base-10-Integer" class="headerlink" title="1012. Complement of Base 10 Integer"></a>1012. Complement of Base 10 Integer</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">bitwiseComplement</span><span class="params">(<span class="keyword">int</span> N)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (N == <span class="number">0</span>) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">int</span> ret = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">32</span>; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> ((<span class="number">1</span> &lt;&lt; i) &gt; N) <span class="keyword">break</span>;</span><br><span class="line">            ret += ((N &amp; (<span class="number">1</span> &lt;&lt; i)) == <span class="number">0</span>) ? (<span class="number">1</span> &lt;&lt; i) : <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> ret;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>时间复杂度: O(log N)，与数字的长度成正比。<br>空间复杂度: O(1).</p>
+<p>由于没有注意corner case, <code>if (N == 0) return 1;</code>。wrong answer了一次。<br>我的方法是straight forward的，没有任何技巧和trick。因为是签到题嘛，而且时间复杂度足够了。<br>也有一些其他的思路：<br>比如找到最大的<code>X = 1111..11</code>使得<code>X &gt;= N</code>, <code>return X - N</code>或<code>return X^N</code>即可。</p>
+<h2 id="1013-Pairs-of-Songs-With-Total-Durations-Divisible-by-60"><a href="#1013-Pairs-of-Songs-With-Total-Durations-Divisible-by-60" class="headerlink" title="1013. Pairs of Songs With Total Durations Divisible by 60"></a>1013. Pairs of Songs With Total Durations Divisible by 60</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">numPairsDivisibleBy60</span><span class="params">(vector&lt;<span class="keyword">int</span>&gt;&amp; time)</span> </span>&#123;</span><br><span class="line">        <span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">hashmap</span><span class="params">(<span class="number">60</span>, <span class="number">0</span>)</span></span>;</span><br><span class="line">        <span class="keyword">int</span> ret = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">const</span> <span class="keyword">int</span> &amp; t : time) &#123;</span><br><span class="line">            ret += hashmap[(<span class="number">60</span> - t + <span class="number">60000</span>) % <span class="number">60</span>];</span><br><span class="line">            hashmap[t % <span class="number">60</span>]++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ret;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>与著名的<code>two sum</code>思路一样，考察<code>hashmap</code>的使用。<br>为了将所有的值，包括负数，映射到60以内，我使用了<code>(60 - t + 60000) % 60</code>，其实更好的做法是<code>(60 - t % 60) % 60</code>。</p>
+<p>时间复杂度: O(N),<br>空间复杂度: O(N).</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/03/17/LeetCode-weekly-contest-128/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1251,116 +1384,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2019/01/27/LeetCode-weekly-contest-121/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/2019/01/20/LeetCode-weekly-contest-120/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="杨森">
-      <meta itemprop="description" content="佛系更新；生活、学习">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="YoungForest's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2019/01/20/LeetCode-weekly-contest-120/" class="post-title-link" itemprop="url">LeetCode weekly contest 120</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2019-01-20 11:51:13" itemprop="dateCreated datePublished" datetime="2019-01-20T11:51:13+08:00">2019-01-20</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-07-11 12:47:44" itemprop="dateModified" datetime="2021-07-11T12:47:44+08:00">2021-07-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a>
-        </span>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus: </span>
-    
-    <a title="disqus" href="/2019/01/20/LeetCode-weekly-contest-120/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/01/20/LeetCode-weekly-contest-120/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>本周和好友“女声男”同时参加weekly contest。有同学共同竞争还是挺有压力的。因为我练习算法题已经有半年时间了，他还是新手，如若最后还败北了，岂不丢人。不过结果还好，没有丢自己的人。我在离比赛结束还有10min时全部AC，而且所有题目都是一遍过，略胜一筹。不得不说，这次的题比往届简单不少，之前我的水平一直维持在只做出2道题目，ranking 800左右，而本次ranking 为 356 / 3870。从排名上看有所进步。</p>
-<p>下面我分享一下四道题目的思路。</p>
-<h2 id="977-Squares-of-a-Sorted-Array"><a href="#977-Squares-of-a-Sorted-Array" class="headerlink" title="977. Squares of a Sorted Array"></a>977. Squares of a Sorted Array</h2><p>给定一个数组，返回各个元素的平方数组，该数组是排好序的。直接brute force即可。</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">sortedSquares</span><span class="params">(vector&lt;<span class="keyword">int</span>&gt;&amp; A)</span> </span>&#123;</span><br><span class="line">        vector&lt;<span class="keyword">int</span>&gt; square;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">auto</span> a: A) &#123;</span><br><span class="line">            square.<span class="built_in">push_back</span>(a * a);</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="built_in">sort</span>(square.<span class="built_in">begin</span>(), square.<span class="built_in">end</span>());</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> square;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<p>时间复杂度：O(n log n)，因为有个排序。<br>空间复杂度：O(n)，因为要返回一个新的数组，除此之外，不实用额外空间。当然，你也可以使用传进来的数组所占的空间，更trick，但没有多大意义。</p>
-<p>看过Solution后，惊奇地发现竟然还有种O(n)的解法。仔细一看，原来是自己没有注意到数组A本身是排好序的。问题可以转化为合并2个排好序的数组。</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">sortedSquares</span><span class="params">(vector&lt;<span class="keyword">int</span>&gt;&amp; A)</span> </span>&#123;</span><br><span class="line">        vector&lt;<span class="keyword">int</span>&gt; square;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">int</span> j = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (; j &lt; A.<span class="built_in">size</span>() &amp;&amp; A[j] &lt; <span class="number">0</span>; j++) ;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">int</span> i = j - <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span> (i &gt;= <span class="number">0</span> &amp;&amp; j &lt; A.<span class="built_in">size</span>()) &#123;</span><br><span class="line">            <span class="keyword">if</span> (A[i]*A[i] &lt; A[j]*A[j]) &#123;</span><br><span class="line">                square.<span class="built_in">push_back</span>(A[i]*A[i]);</span><br><span class="line">                i--;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span> &#123;</span><br><span class="line">                square.<span class="built_in">push_back</span>(A[j]*A[j]);</span><br><span class="line">                j++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span> (i &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">            square.<span class="built_in">push_back</span>(A[i]*A[i]);</span><br><span class="line">            i--;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">while</span> (j &lt; A.<span class="built_in">size</span>()) &#123;</span><br><span class="line">            square.<span class="built_in">push_back</span>(A[j]*A[j]);</span><br><span class="line">            j++;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> square;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h2 id="978-Longest-Turbulent-Subarray"><a href="#978-Longest-Turbulent-Subarray" class="headerlink" title="978. Longest Turbulent Subarray"></a>978. Longest Turbulent Subarray</h2><p>给定一个数组，返回“升降子数组”的最大长度。所谓“升降子数组”，即 相邻2个元素对大小变化的符号相反，比如[1, 2, 1, 2, 1]。画在坐标图上就是波浪状。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2019/01/20/LeetCode-weekly-contest-120/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>

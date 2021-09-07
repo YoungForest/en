@@ -134,7 +134,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">217</span>
+          <span class="site-state-item-count">218</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -194,6 +194,117 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/2020/05/27/unordered-map-hash-pair-c/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="杨森">
+      <meta itemprop="description" content="佛系更新；生活、学习">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YoungForest's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2020/05/27/unordered-map-hash-pair-c/" class="post-title-link" itemprop="url">pair 作为 unordered_map unordered_set 的键值 C++</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2020-05-27 11:57:01" itemprop="dateCreated datePublished" datetime="2020-05-27T11:57:01+08:00">2020-05-27</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-07-11 12:47:44" itemprop="dateModified" datetime="2021-07-11T12:47:44+08:00">2021-07-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Programming/" itemprop="url" rel="index"><span itemprop="name">Programming</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2020/05/27/unordered-map-hash-pair-c/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/05/27/unordered-map-hash-pair-c/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>今天在做<a target="_blank" rel="noopener" href="https://atcoder.jp/contests/abc168/tasks/abc168_e">一道AtCoder的题目</a>，有个test case一直TLE。研究这个测试用例和其他用例的区别，苦思不得其解。后来把unordered_map换成map就过了。虽然在小数据集上hashmap和treemap区别不大，但数据量大的话，hashmap还是好些。所以最佳实践是，在不需要排序特性时，就用hashmap。<br>而且之前也从来没有遇到过hashmap比treemap效果差这么多的原因。最后花了一上午时间，才定位到是我的 pair 的hash函数实现太糟糕了。因为C++ STL中并没有pair的hash特化，所以如果想把pair当作键用在unordered_map中的话，就需要自己实现hash函数。我直接从网上抄了一个实现, 直接将 <code>std::hash&lt;T&gt;()(pair.first) ^ std::hash&lt;U&gt;()(pair.second)</code>。为了避免误人子弟，我就不贴代码了。正是抄的这个实现害苦我了，hash函数碰撞严重，导致效率低下。令人惊讶的是，这种错误的实现遍布全网，无论是中文的还是英文的。我从犄角旮旯（<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/20590656/error-for-hash-function-of-pair-of-ints">stackoverflow问题</a>的评论区中）里才找到问题所在和正确的实现。所以特意总结此博文，避免更多的同学踩坑。</p>
+<blockquote>
+<p>std::hash<t>()(x.first) ^ std::hash<t>()(x.second); - that’s a spectacularly collision-prone way to hash a pair, as every pair with two identical value hashes to 0, and every pair {a, b} hashes the same as {b, a}. For vaguely demanding use, much better to find a hash_combine function and employ that.</t></t></p>
+</blockquote>
+<p>惊讶的是，一看到这个评论，我就像中电一样。忽然记起，多年前，当我还是一只小白时，读《C++ 标准库（第二版）》时，作者就已经给出了绝佳的解决方案。我匆忙翻出珍藏的《C++ 标准库（第二版）》的unordered_map对应章节，“7.9.2 Creating and Controlling Unordered Container”，把任意结构hash化的代码搬出来，模版如下：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;functional&gt;</span></span></span><br><span class="line"><span class="comment">// from boost (functional/hash):</span></span><br><span class="line"><span class="comment">// see http://www.boost.org/doc/libs/1_35_0/doc/html/hash/combine.html template</span></span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">hash_combine</span><span class="params">(std::<span class="keyword">size_t</span> &amp;seed, <span class="keyword">const</span> T &amp;val)</span> </span>&#123;</span><br><span class="line">    seed ^= std::hash&lt;T&gt;()(val) + <span class="number">0x9e3779b9</span> + (seed &lt;&lt; <span class="number">6</span>) + (seed &gt;&gt; <span class="number">2</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// auxiliary generic functions to create a hash value using a seed</span></span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">hash_val</span><span class="params">(std::<span class="keyword">size_t</span> &amp;seed, <span class="keyword">const</span> T &amp;val)</span> </span>&#123;</span><br><span class="line">    <span class="built_in">hash_combine</span>(seed, val);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Types&gt;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">hash_val</span><span class="params">(std::<span class="keyword">size_t</span> &amp;seed, <span class="keyword">const</span> T &amp;val, <span class="keyword">const</span> Types &amp;... args)</span> </span>&#123;</span><br><span class="line">    <span class="built_in">hash_combine</span>(seed, val);</span><br><span class="line">    <span class="built_in">hash_val</span>(seed, args...);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Types&gt;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> std::<span class="keyword">size_t</span> <span class="title">hash_val</span><span class="params">(<span class="keyword">const</span> Types &amp;... args)</span> </span>&#123;</span><br><span class="line">    std::<span class="keyword">size_t</span> seed = <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">hash_val</span>(seed, args...);</span><br><span class="line">    <span class="keyword">return</span> seed;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">pair_hash</span> &#123;</span></span><br><span class="line">    <span class="keyword">template</span> &lt;<span class="class"><span class="keyword">class</span> <span class="title">T1</span>, <span class="keyword">class</span> <span class="title">T2</span>&gt;</span></span><br><span class="line">    <span class="function">std::<span class="keyword">size_t</span> <span class="title">operator</span><span class="params">()</span><span class="params">(<span class="keyword">const</span> std::pair&lt;T1, T2&gt; &amp;p)</span> <span class="keyword">const</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">hash_val</span>(p.first, p.second);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">using</span> ll = <span class="keyword">long</span> <span class="keyword">long</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    unordered_map&lt;pair&lt;ll, ll&gt;, ll, pair_hash&gt; slopeCount;</span><br><span class="line">    unordered_set&lt;pair&lt;ll, ll&gt;, pair_hash&gt; seen;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>也有Tuple版本的hash实现，我更新回答在了<a target="_blank" rel="noopener" href="https://stackoverflow.com/a/62035742/6393787">StackOverflow</a>。有需要的同学可以自取+点赞。</p>
+<p>修改了hash_pair的实现后，我如愿地AC了。一个hash函数的错误，我花了一上午时间解决。并由此从多年前的学习经验中获益。当时我苦读《C++标准库》时，并没有对这段代码特别注意。由此可见，多读书总是没坏处的。</p>
+<p>平时因为Google搜索很方便，遇到问题总是倾向于简单地 复制粘贴。通常情况下，问题就解决了。这样固然可以更快地完成任务，效果也不错。但这种不求甚解的思想对自己的成长是十分不利的。所以需要遇到问题深入钻研（当然是在时间足够的情况下），多读一些经典的书。很多问题和解决方案，经典的书本都已给出了。读书也更能启发自己思考和成长。本次的pair的 unordered_map实践就是最好的证明。</p>
+
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/05/27/unordered-map-hash-pair-c/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1302,139 +1413,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2020/04/26/LeetCode-weekly-contest-186/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/2020/04/20/LeetCode-weekly-contest-185/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="杨森">
-      <meta itemprop="description" content="佛系更新；生活、学习">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="YoungForest's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2020/04/20/LeetCode-weekly-contest-185/" class="post-title-link" itemprop="url">LeetCode weekly contest 185</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2020-04-20 11:42:21" itemprop="dateCreated datePublished" datetime="2020-04-20T11:42:21+08:00">2020-04-20</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-07-11 12:47:44" itemprop="dateModified" datetime="2021-07-11T12:47:44+08:00">2021-07-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a>
-        </span>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus: </span>
-    
-    <a title="disqus" href="/2020/04/20/LeetCode-weekly-contest-185/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/04/20/LeetCode-weekly-contest-185/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <table>
-<thead>
-<tr>
-<th>Rank</th>
-<th>Name</th>
-<th>Score</th>
-<th>Finish Time</th>
-<th>Q1 (4)</th>
-<th>Q2 (4)</th>
-<th>Q3 (6)</th>
-<th>Q4 (7)</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>703 / 9206</td>
-<td>YoungForest</td>
-<td>12</td>
-<td>0:36:35</td>
-<td>0:10:24</td>
-<td>0:22:03</td>
-<td>0:31:35  1</td>
-<td>null</td>
-</tr>
-</tbody></table>
-<h2 id="1417-Reformat-The-String"><a href="#1417-Reformat-The-String" class="headerlink" title="1417. Reformat The String"></a>1417. Reformat The String</h2><p>分别统计数字和字母的个数。如果相差个数不大于1，则可以reformat。<br>先选多的那类。</p>
-<p>时间复杂度: O(N),<br>空间复杂度: O(N). 可以用双指针的方法，节省存储数字和字母的string的空间。</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line">    <span class="function">string <span class="title">compose</span><span class="params">(<span class="keyword">const</span> string&amp; a, <span class="keyword">const</span> string&amp; b)</span> </span>&#123;</span><br><span class="line">        string ans;</span><br><span class="line">        <span class="keyword">int</span> ai = <span class="number">0</span>, bi = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">if</span> (a.<span class="built_in">size</span>() &gt; b.<span class="built_in">size</span>())</span><br><span class="line">            ans.<span class="built_in">push_back</span>(a[ai++]);</span><br><span class="line">        <span class="keyword">while</span> (ai &lt; a.<span class="built_in">size</span>()) &#123;</span><br><span class="line">            ans.<span class="built_in">push_back</span>(b[bi++]);</span><br><span class="line">            ans.<span class="built_in">push_back</span>(a[ai++]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">string <span class="title">reformat</span><span class="params">(string s)</span> </span>&#123;</span><br><span class="line">        string digit, alpha;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">char</span> c : s) &#123;</span><br><span class="line">            <span class="keyword">if</span> (c &gt;= <span class="string">&#x27;0&#x27;</span> &amp;&amp; c &lt;= <span class="string">&#x27;9&#x27;</span>) &#123;</span><br><span class="line">                digit.<span class="built_in">push_back</span>(c);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                alpha.<span class="built_in">push_back</span>(c);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (digit.<span class="built_in">size</span>() == alpha.<span class="built_in">size</span>() || digit.<span class="built_in">size</span>() + <span class="number">1</span> == alpha.<span class="built_in">size</span>() || alpha.<span class="built_in">size</span>() + <span class="number">1</span> == digit.<span class="built_in">size</span>()) &#123;</span><br><span class="line">            <span class="keyword">if</span> (digit.<span class="built_in">size</span>() &gt;= alpha.<span class="built_in">size</span>()) &#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="built_in">compose</span>(digit, alpha);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="built_in">compose</span>(alpha, digit);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="string">&quot;&quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h2 id="1418-Display-Table-of-Food-Orders-in-a-Restaurant"><a href="#1418-Display-Table-of-Food-Orders-in-a-Restaurant" class="headerlink" title="1418. Display Table of Food Orders in a Restaurant"></a>1418. Display Table of Food Orders in a Restaurant</h2><p>考察数据结构的使用。遍历orders，将其转换成dish-&gt;table的hashmap，同时用set存储table编号。</p>
-<p>时间复杂度: O(orders.length * orders[i].length),<br>空间复杂度: O(tables.length * dishes.length).</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    vector&lt;vector&lt;string&gt;&gt; <span class="built_in">displayTable</span>(vector&lt;vector&lt;string&gt;&gt;&amp; orders) &#123;</span><br><span class="line">        set&lt;<span class="keyword">int</span>&gt; tables;</span><br><span class="line">        map&lt;string, unordered_map&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt;&gt; count;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; p : orders) &#123;</span><br><span class="line">            <span class="keyword">const</span> <span class="keyword">int</span> table_number = <span class="built_in">stoi</span>(p[<span class="number">1</span>]);</span><br><span class="line">            <span class="keyword">const</span> <span class="keyword">auto</span>&amp; dish = p[<span class="number">2</span>];</span><br><span class="line">            ++count[dish][table_number];</span><br><span class="line">            tables.<span class="built_in">insert</span>(table_number);</span><br><span class="line">        &#125;</span><br><span class="line">        vector&lt;vector&lt;string&gt;&gt; ans;</span><br><span class="line">        vector&lt;string&gt; first_row = &#123;<span class="string">&quot;Table&quot;</span>&#125;;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; p : count) &#123;</span><br><span class="line">            first_row.<span class="built_in">push_back</span>(p.first);</span><br><span class="line">        &#125;</span><br><span class="line">        ans.<span class="built_in">push_back</span>(<span class="built_in">move</span>(first_row));</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i : tables) &#123;</span><br><span class="line">            vector&lt;string&gt; row;</span><br><span class="line">            row.<span class="built_in">push_back</span>(<span class="built_in">to_string</span>(i));</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">auto</span>&amp; p : count) &#123;</span><br><span class="line">                row.<span class="built_in">push_back</span>(<span class="built_in">to_string</span>(p.second[i]));</span><br><span class="line">            &#125;</span><br><span class="line">            ans.<span class="built_in">push_back</span>(<span class="built_in">move</span>(row));</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h2 id="1419-Minimum-Number-of-Frogs-Croaking"><a href="#1419-Minimum-Number-of-Frogs-Croaking" class="headerlink" title="1419. Minimum Number of Frogs Croaking"></a>1419. Minimum Number of Frogs Croaking</h2>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/04/20/LeetCode-weekly-contest-185/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>

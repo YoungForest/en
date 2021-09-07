@@ -134,7 +134,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">217</span>
+          <span class="site-state-item-count">218</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -194,6 +194,141 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/2019/07/01/LeetCode-weekly-contest-143/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="杨森">
+      <meta itemprop="description" content="佛系更新；生活、学习">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YoungForest's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2019/07/01/LeetCode-weekly-contest-143/" class="post-title-link" itemprop="url">LeetCode weekly contest 143</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2019-07-01 10:22:51" itemprop="dateCreated datePublished" datetime="2019-07-01T10:22:51+08:00">2019-07-01</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-07-11 12:47:44" itemprop="dateModified" datetime="2021-07-11T12:47:44+08:00">2021-07-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2019/07/01/LeetCode-weekly-contest-143/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/07/01/LeetCode-weekly-contest-143/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Name</th>
+<th>Score</th>
+<th>Finish Time</th>
+<th>Q1 (5)</th>
+<th>Q2 (5)</th>
+<th>Q3 (8)</th>
+<th>Q4 (8)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>396 / 4272</td>
+<td>YoungForest</td>
+<td>14</td>
+<td>1:01:14</td>
+<td>0:11:38</td>
+<td>0:28:38</td>
+<td>0:56:14 1</td>
+<td>null</td>
+</tr>
+</tbody></table>
+<h2 id="1103-Distribute-Candies-to-People"><a href="#1103-Distribute-Candies-to-People" class="headerlink" title="1103. Distribute Candies to People"></a>1103. Distribute Candies to People</h2><p>Brute force. 模拟整个分配过程。</p>
+<p>时间复杂度: <code>O(sqrt(candies.size()))</code>. 因为<code>1 + 2 + ... + n = n * (n + 1) / 2 = candies.size()</code>.<br>空间复杂度: <code>O(num_people)</code>.</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">distributeCandies</span><span class="params">(<span class="keyword">int</span> candies, <span class="keyword">int</span> num_people)</span> </span>&#123;</span><br><span class="line">        <span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">ret</span><span class="params">(num_people, <span class="number">0</span>)</span></span>;</span><br><span class="line">        <span class="keyword">int</span> row = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (candies &gt; <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; ret.<span class="built_in">size</span>() &amp;&amp; candies &gt; <span class="number">0</span>; ++i) &#123;</span><br><span class="line">                ret[i] += <span class="built_in">min</span>(candies, row * num_people + i + <span class="number">1</span>);</span><br><span class="line">                candies -= <span class="built_in">min</span>(candies, row * num_people + i + <span class="number">1</span>);</span><br><span class="line">            &#125;</span><br><span class="line">            ++row;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ret;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="1104-Path-In-Zigzag-Labelled-Binary-Tree"><a href="#1104-Path-In-Zigzag-Labelled-Binary-Tree" class="headerlink" title="1104. Path In Zigzag Labelled Binary Tree"></a>1104. Path In Zigzag Labelled Binary Tree</h2><p>利用2个算法</p>
+<ul>
+<li>如果是顺序编号的话，父节点编号为 子节点编号 / 2 向下取整。</li>
+<li>反序编号，可以转成顺序编号。</li>
+</ul>
+<p>时间复杂度: O(log N),<br>空间复杂度: O(1).</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">getLevel</span><span class="params">(<span class="keyword">int</span> label)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> level = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (label &gt; <span class="number">0</span>) &#123;</span><br><span class="line">            label &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">            ++level;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> level - <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">complete</span><span class="params">(<span class="keyword">int</span> label, <span class="keyword">int</span> level)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> (<span class="number">1</span>&lt;&lt;(level + <span class="number">1</span>)) - <span class="number">1</span> - label + (<span class="number">1</span>&lt;&lt;level);</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">pathInZigZagTree</span><span class="params">(<span class="keyword">int</span> label)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> n = <span class="built_in">getLevel</span>(label);</span><br><span class="line">        <span class="keyword">const</span> <span class="keyword">int</span> level = n + <span class="number">1</span>;</span><br><span class="line">        <span class="comment">// cout &lt;&lt; level &lt;&lt; endl;</span></span><br><span class="line">        <span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">ret</span><span class="params">(level)</span></span>;</span><br><span class="line">        <span class="keyword">int</span> true_label = label;</span><br><span class="line">        <span class="keyword">if</span> (n % <span class="number">2</span> == <span class="number">1</span>) &#123;</span><br><span class="line">            true_label = <span class="built_in">complete</span>(label, n);</span><br><span class="line">        &#125;</span><br><span class="line">        ret[n] = true_label;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = n - <span class="number">1</span>; i &gt;= <span class="number">0</span>; --i) &#123;</span><br><span class="line">            ret[i] = ret[i + <span class="number">1</span>] / <span class="number">2</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// for (int i = 0; i &lt;= n; ++i) &#123;</span></span><br><span class="line">        <span class="comment">//     cout &lt;&lt; ret[i] &lt;&lt; &quot; &quot;;</span></span><br><span class="line">        <span class="comment">// &#125;</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= n; ++i) &#123;</span><br><span class="line">            <span class="keyword">if</span> (i % <span class="number">2</span> == <span class="number">1</span>)</span><br><span class="line">                ret[i] = <span class="built_in">complete</span>(ret[i], i);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ret;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/07/01/LeetCode-weekly-contest-143/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1338,141 +1473,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2019/05/05/Effective-Modern-C/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/2019/05/05/LeetCode-weekly-contest-135/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="杨森">
-      <meta itemprop="description" content="佛系更新；生活、学习">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="YoungForest's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2019/05/05/LeetCode-weekly-contest-135/" class="post-title-link" itemprop="url">LeetCode weekly contest 135</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2019-05-05 12:47:02" itemprop="dateCreated datePublished" datetime="2019-05-05T12:47:02+08:00">2019-05-05</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-07-11 12:47:44" itemprop="dateModified" datetime="2021-07-11T12:47:44+08:00">2021-07-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a>
-        </span>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus: </span>
-    
-    <a title="disqus" href="/2019/05/05/LeetCode-weekly-contest-135/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/05/05/LeetCode-weekly-contest-135/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <table>
-<thead>
-<tr>
-<th>Rank</th>
-<th>Name</th>
-<th>Score</th>
-<th>Finish Time</th>
-<th>Q1 (4)</th>
-<th>Q2 (5)</th>
-<th>Q3 (5)</th>
-<th>Q4 (5)</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>70 / 3635</td>
-<td>YoungForest</td>
-<td>15</td>
-<td>1:34:07</td>
-<td>0:07:28</td>
-<td>0:16:45</td>
-<td>null</td>
-<td>1:29:07  (1)</td>
-</tr>
-</tbody></table>
-<p>本周日是国内的工作日，参加LeetCode weekly contest的人直接少了1千，可见国内参与此比赛的热情。而且国人的实力一般也是排在世界前列的。所以我此次排名为70，首次进入前200，除了争分夺秒在结束前AC掉最后一题的功劳外，还有参赛大佬减少的原因。</p>
-<h2 id="5051-Valid-Boomerang"><a href="#5051-Valid-Boomerang" class="headerlink" title="5051. Valid Boomerang"></a>5051. Valid Boomerang</h2><p>Intuition:<br>分为判断distinct和not in a straight line两部分。<br>3点共线可以用斜率直接判断。<br>时间复杂度: O(1)<br>空间复杂度: O(1)</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">isSame</span><span class="params">(vector&lt;<span class="keyword">int</span>&gt;&amp; x, vector&lt;<span class="keyword">int</span>&gt;&amp; y)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> x[<span class="number">0</span>] == y[<span class="number">0</span>] &amp;&amp; x[<span class="number">1</span>] == y[<span class="number">1</span>];</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">isBoomerang</span><span class="params">(vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt;&amp; points)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> !<span class="built_in">isSame</span>(points[<span class="number">0</span>], points[<span class="number">1</span>]) &amp;&amp; !<span class="built_in">isSame</span>(points[<span class="number">1</span>], points[<span class="number">2</span>]) &amp;&amp; !<span class="built_in">isSame</span>(points[<span class="number">2</span>], points[<span class="number">0</span>]) &amp;&amp; <span class="keyword">static_cast</span>&lt;<span class="keyword">double</span>&gt;(points[<span class="number">2</span>][<span class="number">1</span>] - points[<span class="number">1</span>][<span class="number">1</span>]) / <span class="keyword">static_cast</span>&lt;<span class="keyword">double</span>&gt;(points[<span class="number">2</span>][<span class="number">0</span>] - points[<span class="number">1</span>][<span class="number">0</span>]) != <span class="keyword">static_cast</span>&lt;<span class="keyword">double</span>&gt;(points[<span class="number">1</span>][<span class="number">1</span>] - points[<span class="number">0</span>][<span class="number">1</span>]) / <span class="keyword">static_cast</span>&lt;<span class="keyword">double</span>&gt;(points[<span class="number">1</span>][<span class="number">0</span>] - points[<span class="number">0</span>][<span class="number">0</span>]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<p>discuss内发现的技巧：</p>
-<ol>
-<li>可以直接用面积是否为0同时判断 distinct和贡献，面积的公式用叉乘计算。</li>
-<li>判断斜率时，把除法转换成乘法会更好。此时也不需要提前判断distinct。</li>
-</ol>
-<p>我的解法会有除0的问题，<br>但仍然能通过<code>[[1,2],[1,1],[2,1]]</code>这样的测试用例。<br>仔细想想C++的浮点数除法，根据IEEE 754 标准，结果为+infinite。自然有不相等的结果。</p>
-<h2 id="1038-Binary-Search-Tree-to-Greater-Sum-Tree"><a href="#1038-Binary-Search-Tree-to-Greater-Sum-Tree" class="headerlink" title="1038. Binary Search Tree to Greater Sum Tree"></a>1038. Binary Search Tree to Greater Sum Tree</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for a binary tree node.</span></span><br><span class="line"><span class="comment"> * struct TreeNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     TreeNode *left;</span></span><br><span class="line"><span class="comment"> *     TreeNode *right;</span></span><br><span class="line"><span class="comment"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</span></span><br><span class="line"><span class="comment"> * &#125;;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line">    <span class="keyword">int</span> current = <span class="number">0</span>;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">recurse</span><span class="params">(TreeNode* root)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (!root) <span class="keyword">return</span>;</span><br><span class="line">        <span class="built_in">recurse</span>(root-&gt;right);</span><br><span class="line">        current += root-&gt;val;</span><br><span class="line">        root-&gt;val = current;</span><br><span class="line">        <span class="built_in">recurse</span>(root-&gt;left);</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">TreeNode* <span class="title">bstToGst</span><span class="params">(TreeNode* root)</span> </span>&#123;</span><br><span class="line">        <span class="built_in">recurse</span>(root);</span><br><span class="line">        <span class="keyword">return</span> root;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2019/05/05/LeetCode-weekly-contest-135/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>

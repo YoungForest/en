@@ -134,7 +134,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">217</span>
+          <span class="site-state-item-count">218</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -194,6 +194,139 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/2020/04/20/LeetCode-weekly-contest-185/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="杨森">
+      <meta itemprop="description" content="佛系更新；生活、学习">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YoungForest's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2020/04/20/LeetCode-weekly-contest-185/" class="post-title-link" itemprop="url">LeetCode weekly contest 185</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2020-04-20 11:42:21" itemprop="dateCreated datePublished" datetime="2020-04-20T11:42:21+08:00">2020-04-20</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-07-11 12:47:44" itemprop="dateModified" datetime="2021-07-11T12:47:44+08:00">2021-07-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2020/04/20/LeetCode-weekly-contest-185/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/04/20/LeetCode-weekly-contest-185/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Name</th>
+<th>Score</th>
+<th>Finish Time</th>
+<th>Q1 (4)</th>
+<th>Q2 (4)</th>
+<th>Q3 (6)</th>
+<th>Q4 (7)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>703 / 9206</td>
+<td>YoungForest</td>
+<td>12</td>
+<td>0:36:35</td>
+<td>0:10:24</td>
+<td>0:22:03</td>
+<td>0:31:35  1</td>
+<td>null</td>
+</tr>
+</tbody></table>
+<h2 id="1417-Reformat-The-String"><a href="#1417-Reformat-The-String" class="headerlink" title="1417. Reformat The String"></a>1417. Reformat The String</h2><p>分别统计数字和字母的个数。如果相差个数不大于1，则可以reformat。<br>先选多的那类。</p>
+<p>时间复杂度: O(N),<br>空间复杂度: O(N). 可以用双指针的方法，节省存储数字和字母的string的空间。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line">    <span class="function">string <span class="title">compose</span><span class="params">(<span class="keyword">const</span> string&amp; a, <span class="keyword">const</span> string&amp; b)</span> </span>&#123;</span><br><span class="line">        string ans;</span><br><span class="line">        <span class="keyword">int</span> ai = <span class="number">0</span>, bi = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">if</span> (a.<span class="built_in">size</span>() &gt; b.<span class="built_in">size</span>())</span><br><span class="line">            ans.<span class="built_in">push_back</span>(a[ai++]);</span><br><span class="line">        <span class="keyword">while</span> (ai &lt; a.<span class="built_in">size</span>()) &#123;</span><br><span class="line">            ans.<span class="built_in">push_back</span>(b[bi++]);</span><br><span class="line">            ans.<span class="built_in">push_back</span>(a[ai++]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">string <span class="title">reformat</span><span class="params">(string s)</span> </span>&#123;</span><br><span class="line">        string digit, alpha;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">char</span> c : s) &#123;</span><br><span class="line">            <span class="keyword">if</span> (c &gt;= <span class="string">&#x27;0&#x27;</span> &amp;&amp; c &lt;= <span class="string">&#x27;9&#x27;</span>) &#123;</span><br><span class="line">                digit.<span class="built_in">push_back</span>(c);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                alpha.<span class="built_in">push_back</span>(c);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (digit.<span class="built_in">size</span>() == alpha.<span class="built_in">size</span>() || digit.<span class="built_in">size</span>() + <span class="number">1</span> == alpha.<span class="built_in">size</span>() || alpha.<span class="built_in">size</span>() + <span class="number">1</span> == digit.<span class="built_in">size</span>()) &#123;</span><br><span class="line">            <span class="keyword">if</span> (digit.<span class="built_in">size</span>() &gt;= alpha.<span class="built_in">size</span>()) &#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="built_in">compose</span>(digit, alpha);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="built_in">compose</span>(alpha, digit);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="string">&quot;&quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="1418-Display-Table-of-Food-Orders-in-a-Restaurant"><a href="#1418-Display-Table-of-Food-Orders-in-a-Restaurant" class="headerlink" title="1418. Display Table of Food Orders in a Restaurant"></a>1418. Display Table of Food Orders in a Restaurant</h2><p>考察数据结构的使用。遍历orders，将其转换成dish-&gt;table的hashmap，同时用set存储table编号。</p>
+<p>时间复杂度: O(orders.length * orders[i].length),<br>空间复杂度: O(tables.length * dishes.length).</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    vector&lt;vector&lt;string&gt;&gt; <span class="built_in">displayTable</span>(vector&lt;vector&lt;string&gt;&gt;&amp; orders) &#123;</span><br><span class="line">        set&lt;<span class="keyword">int</span>&gt; tables;</span><br><span class="line">        map&lt;string, unordered_map&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt;&gt; count;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; p : orders) &#123;</span><br><span class="line">            <span class="keyword">const</span> <span class="keyword">int</span> table_number = <span class="built_in">stoi</span>(p[<span class="number">1</span>]);</span><br><span class="line">            <span class="keyword">const</span> <span class="keyword">auto</span>&amp; dish = p[<span class="number">2</span>];</span><br><span class="line">            ++count[dish][table_number];</span><br><span class="line">            tables.<span class="built_in">insert</span>(table_number);</span><br><span class="line">        &#125;</span><br><span class="line">        vector&lt;vector&lt;string&gt;&gt; ans;</span><br><span class="line">        vector&lt;string&gt; first_row = &#123;<span class="string">&quot;Table&quot;</span>&#125;;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; p : count) &#123;</span><br><span class="line">            first_row.<span class="built_in">push_back</span>(p.first);</span><br><span class="line">        &#125;</span><br><span class="line">        ans.<span class="built_in">push_back</span>(<span class="built_in">move</span>(first_row));</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i : tables) &#123;</span><br><span class="line">            vector&lt;string&gt; row;</span><br><span class="line">            row.<span class="built_in">push_back</span>(<span class="built_in">to_string</span>(i));</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">auto</span>&amp; p : count) &#123;</span><br><span class="line">                row.<span class="built_in">push_back</span>(<span class="built_in">to_string</span>(p.second[i]));</span><br><span class="line">            &#125;</span><br><span class="line">            ans.<span class="built_in">push_back</span>(<span class="built_in">move</span>(row));</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="1419-Minimum-Number-of-Frogs-Croaking"><a href="#1419-Minimum-Number-of-Frogs-Croaking" class="headerlink" title="1419. Minimum Number of Frogs Croaking"></a>1419. Minimum Number of Frogs Croaking</h2>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/04/20/LeetCode-weekly-contest-185/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1339,118 +1472,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2020/03/22/LeetCode-weekly-contest-181/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/2020/03/22/kick-start-2020-round-A/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="杨森">
-      <meta itemprop="description" content="佛系更新；生活、学习">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="YoungForest's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2020/03/22/kick-start-2020-round-A/" class="post-title-link" itemprop="url">kick start 2020 round A</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2020-03-22 14:43:50" itemprop="dateCreated datePublished" datetime="2020-03-22T14:43:50+08:00">2020-03-22</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-07-11 12:47:44" itemprop="dateModified" datetime="2021-07-11T12:47:44+08:00">2021-07-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/KickStart/" itemprop="url" rel="index"><span itemprop="name">KickStart</span></a>
-        </span>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus: </span>
-    
-    <a title="disqus" href="/2020/03/22/kick-start-2020-round-A/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/03/22/kick-start-2020-round-A/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>新一年的kick start有了些许变化：</p>
-<ol>
-<li>所有测试结果正确与否立即返回。之前是大的数据集的测试结果赛后才能看到。相当于是降低了难度，减少了参赛者失误的代价。之前发生一点失误的话，大数据集的分数就没了。现在相当于是增加了一次罚时。</li>
-<li>题目从3到变成了4道，时间不变，增加了一道送分题。</li>
-</ol>
-<p>Rank 570. 因为大家都是100分，所以最后比拼的都是时间。因为比赛是12:00~15:00, 所以我中间花了半个小时去吃饭。另外每个题目都不是一遍做对，都通过<code>printf</code>进行调试，花了不少时间。最快的大佬们都是20min就做完了。</p>
-<p>下个月约起来round B呀！4月19号早上7点。</p>
-<p><a target="_blank" rel="noopener" href="https://codingcompetitions.withgoogle.com/kickstart/round/000000000019ffc7">round A 题目地址</a></p>
-<h2 id="Allocation"><a href="#Allocation" class="headerlink" title="Allocation"></a>Allocation</h2><p>刚开始以为是一道简单的背包问题，后来发现是更简单的贪心问题。因为是要求购买房子数目的最大值，而不是价值的最大值，或者说 房子的价值都为1. 所以贪心即可。简而言之，送分的签到题。<br>把房子按照售价从小到大排序，先买便宜的房子。</p>
-<p>时间复杂度: O(N log N),<br>空间复杂度: O(N).</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">A</span><span class="params">(<span class="number">100005</span>)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> T;</span><br><span class="line">    cin &gt;&gt; T;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> iCase = <span class="number">1</span>; iCase &lt;= T; ++iCase) &#123;</span><br><span class="line">        <span class="keyword">int</span> N, B;</span><br><span class="line">        cin &gt;&gt; N &gt;&gt; B;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; N; ++i) &#123;</span><br><span class="line">            cin &gt;&gt; A[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">sort</span>(A.<span class="built_in">begin</span>(), A.<span class="built_in">begin</span>() + N);</span><br><span class="line">        <span class="keyword">int</span> ans = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> index = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (index &lt; N &amp;&amp; B &gt;= A[index]) &#123;</span><br><span class="line">            B -= A[index];</span><br><span class="line">            ++ans;</span><br><span class="line">            ++index;</span><br><span class="line">        &#125;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;Case #&quot;</span> &lt;&lt; iCase &lt;&lt; <span class="string">&quot;: &quot;</span> &lt;&lt; ans &lt;&lt;endl;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>因为贪心的时候忘记检查<code>index &lt; n</code>了，导致一次WA罚时。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/03/22/kick-start-2020-round-A/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>

@@ -134,7 +134,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">217</span>
+          <span class="site-state-item-count">218</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -194,6 +194,139 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/2021/03/28/LeetCode-weekly-contest-234/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="杨森">
+      <meta itemprop="description" content="佛系更新；生活、学习">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YoungForest's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/03/28/LeetCode-weekly-contest-234/" class="post-title-link" itemprop="url">LeetCode weekly contest 234</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-03-28 11:42:25" itemprop="dateCreated datePublished" datetime="2021-03-28T11:42:25+08:00">2021-03-28</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-07-11 12:47:44" itemprop="dateModified" datetime="2021-07-11T12:47:44+08:00">2021-07-11</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2021/03/28/LeetCode-weekly-contest-234/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/03/28/LeetCode-weekly-contest-234/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Name</th>
+<th>Score</th>
+<th>Finish Time</th>
+<th>Q1 (3)</th>
+<th>Q2 (5)</th>
+<th>Q3 (5)</th>
+<th>Q4 (6)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>672 / 12421</td>
+<td>YoungForest</td>
+<td>19</td>
+<td>1:19:08</td>
+<td>0:12:04  2</td>
+<td>0:23:51</td>
+<td>0:29:26</td>
+<td>0:54:08  3</td>
+</tr>
+</tbody></table>
+<p>又要打卡了，已经连续5周残酷打卡了。而且确实自己本次做题没觉得多简单，WA5次，心态爆炸，但是排名却不理想。感觉还是LeetCode越来越卷了。</p>
+<span id="more"></span>
+
+<h2 id="1805-Number-of-Different-Integers-in-a-String"><a href="#1805-Number-of-Different-Integers-in-a-String" class="headerlink" title="1805. Number of Different Integers in a String"></a>1805. Number of Different Integers in a String</h2><p>本题其实用Python做会好很多，实现起来更快。Python对字符串和大整数的优势还是无可比拟的。<br>我还是坚持用C++ 完成，各种字符串不熟悉和不方便的操作。WA了2发。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">numDifferentIntegers</span><span class="params">(string word)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">char</span>&amp; c : word) &#123;</span><br><span class="line">            <span class="keyword">if</span> (!<span class="built_in">isdigit</span>(c)) &#123;</span><br><span class="line">                c = <span class="string">&#x27; &#x27;</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span> (!word.<span class="built_in">empty</span>() &amp;&amp; word.<span class="built_in">back</span>() == <span class="string">&#x27; &#x27;</span>) &#123;</span><br><span class="line">            word.<span class="built_in">pop_back</span>();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (word.<span class="built_in">empty</span>()) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        <span class="function">std::istringstream <span class="title">is</span><span class="params">(word)</span></span>;</span><br><span class="line">        unordered_set&lt;string&gt; ans;</span><br><span class="line">        <span class="keyword">while</span> (is)</span><br><span class="line">        &#123;</span><br><span class="line">            string s;</span><br><span class="line">            is &gt;&gt; s;</span><br><span class="line">            <span class="built_in">reverse</span>(s.<span class="built_in">begin</span>(), s.<span class="built_in">end</span>());</span><br><span class="line">            <span class="keyword">while</span> (s.<span class="built_in">size</span>() &gt; <span class="number">1</span> &amp;&amp; s.<span class="built_in">back</span>() == <span class="string">&#x27;0&#x27;</span>) &#123;</span><br><span class="line">                s.<span class="built_in">pop_back</span>();</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// cout &lt;&lt; &quot;xx : &quot; &lt;&lt; s &lt;&lt; endl;</span></span><br><span class="line">            <span class="keyword">if</span> (s.<span class="built_in">empty</span>()) <span class="keyword">continue</span>;</span><br><span class="line">            ans.<span class="built_in">insert</span>(s);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans.<span class="built_in">size</span>();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>时间复杂度: O(N),<br>空间复杂度: O(N).</p>
+<h2 id="1806-Minimum-Number-of-Operations-to-Reinitialize-a-Permutation"><a href="#1806-Minimum-Number-of-Operations-to-Reinitialize-a-Permutation" class="headerlink" title="1806. Minimum Number of Operations to Reinitialize a Permutation"></a>1806. Minimum Number of Operations to Reinitialize a Permutation</h2><p>本题我是倒着思考的，<br>操作的拟操作是 技术位置到后半段，偶数位置到前半段。<br>而且观察变化的过程，只需要关注一个数，如果他回到原位置，剩下所有的数都会回到原位置。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line">    <span class="comment">// operation: odd to half second, even to half first</span></span><br><span class="line">    <span class="comment">// [0 1 2 3 4 5] 4</span></span><br><span class="line">    <span class="comment">// [0 2 4 1 3 5] 3</span></span><br><span class="line">    <span class="comment">// [0 4 3 2 1 5] 2</span></span><br><span class="line">    <span class="comment">// [0 3 1 4 2 5] 1</span></span><br><span class="line">    <span class="comment">// [0 1 2 3 4 5] 0</span></span><br><span class="line">    </span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">reinitializePermutation</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> ans = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> index1 = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">do</span> &#123;</span><br><span class="line">            <span class="keyword">if</span> (index1 % <span class="number">2</span> == <span class="number">1</span>) &#123;</span><br><span class="line">                index1 = n / <span class="number">2</span> + index1 / <span class="number">2</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                index1 = index1 / <span class="number">2</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            ++ans;</span><br><span class="line">        &#125; <span class="keyword">while</span> (index1 != <span class="number">1</span>);</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/03/28/LeetCode-weekly-contest-234/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1291,139 +1424,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2021/03/07/LeetCode-weekly-contest-231/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/2021/03/01/LeetCode-weekly-contest-230/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="杨森">
-      <meta itemprop="description" content="佛系更新；生活、学习">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="YoungForest's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/03/01/LeetCode-weekly-contest-230/" class="post-title-link" itemprop="url">LeetCode weekly contest 230</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-03-01 09:51:47" itemprop="dateCreated datePublished" datetime="2021-03-01T09:51:47+08:00">2021-03-01</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-07-11 12:47:44" itemprop="dateModified" datetime="2021-07-11T12:47:44+08:00">2021-07-11</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a>
-        </span>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus: </span>
-    
-    <a title="disqus" href="/2021/03/01/LeetCode-weekly-contest-230/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/03/01/LeetCode-weekly-contest-230/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <table>
-<thead>
-<tr>
-<th>Rank</th>
-<th>Name</th>
-<th>Score</th>
-<th>Finish Time</th>
-<th>Q1 (3)</th>
-<th>Q2 (4)</th>
-<th>Q3 (5)</th>
-<th>Q4 (7)</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>314 / 11654</td>
-<td>YoungForest</td>
-<td>12</td>
-<td>0:27:36</td>
-<td>0:04:00</td>
-<td>0:14:38</td>
-<td>0:27:36</td>
-<td>null</td>
-</tr>
-</tbody></table>
-<p>自从秋招结束后，刷题和比赛的热情与日俱减。<br>之前每日三题（国服、美服、残酷），现在每日0题。当然偶尔因为周赛成绩不足以免打卡，也需每日一题。<br>相反，比赛的反馈还是挺强的。长期有rating和排名的增长激励，短期有残酷排名和每次排名的激励，还有额外积分的奖励。另外每周比赛完还可以在残酷群里领红包，给自己加个鸡腿。</p>
-<h2 id="1773-Count-Items-Matching-a-Rule"><a href="#1773-Count-Items-Matching-a-Rule" class="headerlink" title="1773. Count Items Matching a Rule"></a>1773. Count Items Matching a Rule</h2><p>签到题。按照题目描述便利一遍即可。</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">countMatches</span><span class="params">(vector&lt;vector&lt;string&gt;&gt;&amp; items, string ruleKey, string ruleValue)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> index = <span class="number">-1</span>;</span><br><span class="line">        <span class="keyword">if</span> (ruleKey == <span class="string">&quot;type&quot;</span>) &#123;</span><br><span class="line">            index = <span class="number">0</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (ruleKey == <span class="string">&quot;color&quot;</span>) &#123;</span><br><span class="line">            index = <span class="number">1</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            index = <span class="number">2</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> ans = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; v : items) &#123;</span><br><span class="line">            <span class="keyword">if</span> (v[index] == ruleValue) &#123;</span><br><span class="line">                ++ans;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<p>时间复杂度: O(N),<br>空间复杂度: O(1).</p>
-<h2 id="1774-Closest-Dessert-Cost"><a href="#1774-Closest-Dessert-Cost" class="headerlink" title="1774. Closest Dessert Cost"></a>1774. Closest Dessert Cost</h2><p>Brute force 暴力枚举即可。观察题目的数据规模，<code>n</code> 和 <code>m</code>都比较小，指数级的暴力搜索就可以过。<br>可以只用<code>回溯(backtracking)</code>，也可以使用3进制<code>bitmask</code>做枚举。<br>我比赛时采用了回溯。</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line">    <span class="keyword">const</span> <span class="keyword">int</span> INF = <span class="number">0x3f3f3f3f</span>;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">closestCost</span><span class="params">(vector&lt;<span class="keyword">int</span>&gt;&amp; baseCosts, vector&lt;<span class="keyword">int</span>&gt;&amp; toppingCosts, <span class="keyword">int</span> target)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// time: n * (3 ^ m)</span></span><br><span class="line">        <span class="comment">// 10 * 3 ^ 10 59049</span></span><br><span class="line">        <span class="comment">// max: 10^4 + 2 * 10 * 10^4</span></span><br><span class="line">        vector&lt;<span class="keyword">int</span>&gt; candidates;</span><br><span class="line">        <span class="keyword">const</span> <span class="keyword">int</span> m = toppingCosts.<span class="built_in">size</span>();</span><br><span class="line">        function&lt;<span class="built_in"><span class="keyword">void</span></span>(<span class="keyword">const</span> <span class="keyword">int</span>, <span class="keyword">const</span> <span class="keyword">int</span>)&gt; backtracking = [&amp;](<span class="keyword">const</span> <span class="keyword">int</span> i, <span class="keyword">const</span> <span class="keyword">int</span> now) -&gt; <span class="keyword">void</span> &#123;</span><br><span class="line">            <span class="keyword">if</span> (i == m) &#123;</span><br><span class="line">                candidates.<span class="built_in">push_back</span>(now);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt;= <span class="number">2</span>; ++j) &#123;</span><br><span class="line">                    <span class="built_in">backtracking</span>(i + <span class="number">1</span>, now + toppingCosts[i] * j);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> base : baseCosts) &#123;</span><br><span class="line">            <span class="built_in">backtracking</span>(<span class="number">0</span>, base);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> ans = <span class="number">-1</span>, diff = INF;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i : candidates) &#123;</span><br><span class="line">            <span class="keyword">const</span> <span class="keyword">int</span> diffI = <span class="built_in">abs</span>(i - target);</span><br><span class="line">            <span class="keyword">if</span> (diffI &lt; diff) &#123;</span><br><span class="line">                ans = i;</span><br><span class="line">                diff = diffI;</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (diffI == diff &amp;&amp; i &lt; ans) &#123;</span><br><span class="line">                ans = i;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<p>时间复杂度: O(n * 3 ^ m),<br>空间复杂度: O(n * 3 ^ m).</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/03/01/LeetCode-weekly-contest-230/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
