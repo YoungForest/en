@@ -47,7 +47,7 @@ before_script: ## According to your theme and custom configuration, update the s
   - npm install # install the dependencies
 script: 
   - hexo generate # generate static files
-deploy:
+deploy: # reference: https://docs.travis-ci.com/user/deployment/pages/
   provider: pages
   skip_cleanup: true # not clean after build
   token: $GH_TOKEN # the variable you set in last step
