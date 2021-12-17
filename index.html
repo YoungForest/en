@@ -47,6 +47,7 @@
 
 
 
+<script data-ad-client="ca-pub-9046219176772396" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9046219176772396"></script>
 
   <noscript>
     <link rel="stylesheet" href="/en/css/noscript.css">
@@ -91,7 +92,7 @@
         <li class="menu-item menu-item-tags"><a href="/en/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li>
         <li class="menu-item menu-item-categories"><a href="/en/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li>
         <li class="menu-item menu-item-archives"><a href="/en/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
-        <li class="menu-item menu-item-中文"><a href="https://youngforest.github.io/" rel="section"><i class="fa fa-language fa-fw"></i>中文</a></li>
+        <li class="menu-item menu-item-english"><a href="https://youngforest.github.io/en/" rel="section"><i class="fa fa-globe fa-fw"></i>English</a></li>
   </ul>
 </nav>
 
@@ -134,18 +135,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/en/archives/">
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/en/categories/">
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/en/tags/">
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -193,6 +194,566 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/en/2021/10/24/LeetCode-weekly-contest-264/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/en/images/avatar.gif">
+      <meta itemprop="name" content="杨森">
+      <meta itemprop="description" content="A programmer in Amazon Beijing, China">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YoungForest's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/en/2021/10/24/LeetCode-weekly-contest-264/" class="post-title-link" itemprop="url">LeetCode weekly contest 264</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-10-24 17:20:15 / Modified: 18:34:18" itemprop="dateCreated datePublished" datetime="2021-10-24T17:20:15+08:00">2021-10-24</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/en/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/en/2021/10/24/LeetCode-weekly-contest-264/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/10/24/LeetCode-weekly-contest-264/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Name</th>
+<th>Score</th>
+<th>Finish Time</th>
+<th>Q1 (3)</th>
+<th>Q2 (4)</th>
+<th>Q3 (5)</th>
+<th>Q4 (6)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>323 / 12700</td>
+<td>YoungForest</td>
+<td>18</td>
+<td>1:00:46</td>
+<td>0:11:32 🐞1</td>
+<td>0:27:23</td>
+<td>0:42:54 🐞1</td>
+<td>0:50:46</td>
+</tr>
+</tbody></table>
+<p>After 6 weeks of cruel daily check in, I am finally free from solve the daily problem everyday in cruel group. The condition of free is that the contest rank is within top 500 in the world and solving all 4 problems in weekly contest. Congratulations on me.</p>
+<h2 id="2047-Number-of-Valid-Words-in-a-Sentence"><a href="#2047-Number-of-Valid-Words-in-a-Sentence" class="headerlink" title="2047. Number of Valid Words in a Sentence"></a>2047. Number of Valid Words in a Sentence</h2><p>Sign on problem.<br>It is more difficult than usual. The corner case needs to be careful of. For example, ‘-‘ is not a valid word.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">countValidWords</span>(<span class="params">self, sentence: <span class="built_in">str</span></span>) -&gt; <span class="built_in">int</span>:</span></span><br><span class="line">        <span class="function"><span class="keyword">def</span> <span class="title">isPunctuation</span>(<span class="params">c</span>):</span></span><br><span class="line">            <span class="keyword">return</span> c == <span class="string">&#x27;!&#x27;</span> <span class="keyword">or</span> c == <span class="string">&#x27;.&#x27;</span> <span class="keyword">or</span> c == <span class="string">&#x27;,&#x27;</span></span><br><span class="line">        <span class="function"><span class="keyword">def</span> <span class="title">isLower</span>(<span class="params">c</span>):</span></span><br><span class="line">            <span class="keyword">return</span> <span class="built_in">ord</span>(c) &gt;= <span class="built_in">ord</span>(<span class="string">&#x27;a&#x27;</span>) <span class="keyword">and</span> <span class="built_in">ord</span>(c) &lt;= <span class="built_in">ord</span>(<span class="string">&#x27;z&#x27;</span>)</span><br><span class="line">        <span class="function"><span class="keyword">def</span> <span class="title">check</span>(<span class="params">word</span>):</span></span><br><span class="line">            <span class="comment"># It only contains lowercase letters, hyphens, and/or punctuation (no digits).</span></span><br><span class="line">            <span class="comment"># There is at most one hyphen &#x27;-&#x27;. If present, it should be surrounded by lowercase characters (&quot;a-b&quot; is valid, but &quot;-ab&quot; and &quot;ab-&quot; are not valid).</span></span><br><span class="line">            <span class="comment"># There is at most one punctuation mark. If present, it should be at the end of the token.</span></span><br><span class="line">            hyphenCount = <span class="number">0</span></span><br><span class="line">            punctuationCount = <span class="number">0</span></span><br><span class="line">            <span class="keyword">for</span> c <span class="keyword">in</span> word:</span><br><span class="line">                <span class="keyword">if</span> c == <span class="string">&#x27;-&#x27;</span>:</span><br><span class="line">                    hyphenCount += <span class="number">1</span></span><br><span class="line">                <span class="keyword">if</span> c.isdigit():</span><br><span class="line">                    <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">                <span class="keyword">if</span> isPunctuation(c):</span><br><span class="line">                    punctuationCount += <span class="number">1</span></span><br><span class="line">            <span class="keyword">if</span> hyphenCount &gt; <span class="number">1</span> <span class="keyword">or</span> punctuationCount &gt; <span class="number">1</span>: <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">            <span class="keyword">if</span> punctuationCount == <span class="number">1</span> <span class="keyword">and</span> <span class="keyword">not</span> isPunctuation(word[-<span class="number">1</span>]): <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">            <span class="keyword">if</span> hyphenCount == <span class="number">1</span>:</span><br><span class="line">                l = word.split(<span class="string">&#x27;-&#x27;</span>)</span><br><span class="line">                <span class="keyword">if</span> <span class="built_in">len</span>(l) != <span class="number">2</span>: <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">                <span class="keyword">if</span> <span class="keyword">not</span> (<span class="built_in">len</span>(l[<span class="number">0</span>]) &gt;= <span class="number">1</span> <span class="keyword">and</span> isLower(l[<span class="number">0</span>][-<span class="number">1</span>])) <span class="keyword">or</span> <span class="keyword">not</span> (<span class="built_in">len</span>(l[<span class="number">1</span>]) &gt;= <span class="number">1</span> <span class="keyword">and</span> isLower(l[<span class="number">1</span>][<span class="number">0</span>])): <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">        ans = <span class="number">0</span></span><br><span class="line">        words = sentence.split()</span><br><span class="line">        <span class="keyword">for</span> word <span class="keyword">in</span> words:</span><br><span class="line">            <span class="comment"># print (word)</span></span><br><span class="line">            <span class="keyword">if</span> check(word):</span><br><span class="line">                <span class="comment"># print(&#x27;Yes&#x27;)</span></span><br><span class="line">                ans += <span class="number">1</span></span><br><span class="line">        <span class="keyword">return</span> ans</span><br></pre></td></tr></table></figure>
+
+<p>Time complexity: O(N),<br>Space complexity: O(N).</p>
+<p>A easier solution is <code>re</code>, aka regular expression.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">countValidWords</span>(<span class="params">self, sentence: <span class="built_in">str</span></span>) -&gt; <span class="built_in">int</span>:</span></span><br><span class="line">        pattern = re.<span class="built_in">compile</span>(<span class="string">&#x27;(^[a-z]+(-[a-z]+)?)?[,.!]?$&#x27;</span>)</span><br><span class="line">        word_count = <span class="number">0</span></span><br><span class="line">        <span class="keyword">for</span> word <span class="keyword">in</span> sentence.split():</span><br><span class="line">            <span class="keyword">if</span> pattern.match(word):</span><br><span class="line">                word_count = word_count + <span class="number">1</span></span><br><span class="line">                </span><br><span class="line">        <span class="keyword">return</span> word_count</span><br></pre></td></tr></table></figure>
+
+<p>Time complexity: O(N),<br>Space complexity: O(N).</p>
+<h2 id="2048-Next-Greater-Numerically-Balanced-Number"><a href="#2048-Next-Greater-Numerically-Balanced-Number" class="headerlink" title="2048. Next Greater Numerically Balanced Number"></a>2048. Next Greater Numerically Balanced Number</h2>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/en/2021/10/24/LeetCode-weekly-contest-264/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/en/2021/10/09/Travis-CI-Hexo-Automatically-Deploy/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/en/images/avatar.gif">
+      <meta itemprop="name" content="杨森">
+      <meta itemprop="description" content="A programmer in Amazon Beijing, China">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YoungForest's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/en/2021/10/09/Travis-CI-Hexo-Automatically-Deploy/" class="post-title-link" itemprop="url">Travis CI + Hexo Automatically Deploy</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-10-09 11:03:49 / Modified: 12:24:37" itemprop="dateCreated datePublished" datetime="2021-10-09T11:03:49+08:00">2021-10-09</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/en/categories/Tech-Sharing/" itemprop="url" rel="index"><span itemprop="name">Tech Sharing</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/en/2021/10/09/Travis-CI-Hexo-Automatically-Deploy/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/10/09/Travis-CI-Hexo-Automatically-Deploy/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p><a target="_blank" rel="noopener" href="https://hexo.io/docs/">Hexo</a> is a powerful blog engine. It is a good choice for a personal blog. I have used it for 5 years. Recently, I setup <a href="https://youngforest.github.io/en">my English site</a> besides <a href="https://youngforest.github.io/">the original Chinese site</a>. With 2 sites, it is more work to write, git and deploy.<br>Fortunately, there is a better solution for this problem. We could use <a target="_blank" rel="noopener" href="https://travis-ci.com/">Travis CI</a> to automatically deploy the blog. The remain work is writing posts and git commit and push them. The CI would help us to deploy sites automatically.</p>
+<span id="more"></span>
+
+<h2 id="How-to-configure-that"><a href="#How-to-configure-that" class="headerlink" title="How to configure that?"></a>How to configure that?</h2><p><a target="_blank" rel="noopener" href="https://education.travis-ci.com/">Sign up for Travis CI using Github account</a>.</p>
+<p>With <a target="_blank" rel="noopener" href="https://education.github.com/pack/offers">Github education package</a>, you could have the benefit to private builds for free while you’re a student. But it is only an optional choice, you can still use Travis CI without it.</p>
+<p><a target="_blank" rel="noopener" href="https://app.travis-ci.com/account/repositories">Give Travis CI the permission to access your Github repositories</a>.</p>
+<p>In <a target="_blank" rel="noopener" href="https://github.com/settings/tokens">Personal access tokens</a>, generate a token for Travis CI with <code>repo</code> scopes. Copy the token.</p>
+<p>In <a target="_blank" rel="noopener" href="https://app.travis-ci.com/account/repositories">Travis CI repositories page</a>, select your <strong>Hexo</strong> repo and click on <strong>Settings</strong>. In <strong>Environment Variables</strong> section, <strong>Add</strong> a new variable with <strong>NAME</strong> is <code>GH_TOKEN</code>, <strong>VALUE</strong> is the token you copied in the last step.</p>
+<p>Create a file named <code>.travis.yml</code> in your Hexo repo. Refer to following content and change the value as your situation. I added some comments for help.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">os: linux</span><br><span class="line">language: node_js </span><br><span class="line">node_js:</span><br><span class="line">  - 12  # using nodejs LTS v12</span><br><span class="line">branches:</span><br><span class="line">  only:</span><br><span class="line">    - master # only monitor master branch</span><br><span class="line">cache:</span><br><span class="line">  directories:</span><br><span class="line">    - node_modules # cache node_modules to speed up build process</span><br><span class="line">before_script: ## According to your theme and custom configuration, update the script</span><br><span class="line">  - npm install -g hexo-cli # install Hexo in CI environment</span><br><span class="line">  - cd themes </span><br><span class="line">  - git clone https://github.com/next-theme/hexo-theme-next.git next # We do not commit the themes/next folder. Therefore, pull it every time.</span><br><span class="line">  - cd next</span><br><span class="line">  - npm install # install next dependencies</span><br><span class="line">  - cd ../.. # return the root folder</span><br><span class="line">  - npm install # install the dependencies</span><br><span class="line">script: </span><br><span class="line">  - hexo generate # generate static files</span><br><span class="line">deploy: # reference: https://docs.travis-ci.com/user/deployment/pages/</span><br><span class="line">  provider: pages</span><br><span class="line">  skip_cleanup: true # not clean after build</span><br><span class="line">  token: $GH_TOKEN # the variable you set in last step</span><br><span class="line">  keep_history: true</span><br><span class="line">  # fqdn: blog.ne0ng.page # custom domain，delete this field if using username.github.io</span><br><span class="line">  repo: YoungForest/youngforest.github.io # the repo you want to deploy. If this field is not set manually, the default value is current repo. Sometimes, the site repo is the same with the source files but in different branches.</span><br><span class="line">  on:</span><br><span class="line">    branch: master # sources files is in master branch</span><br><span class="line">  local_dir: public </span><br><span class="line">  target_branch: master # the branch of generated files. If using `username.github.io` repo, it has to be master. Otherwise, change it to your github pages branch.</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/en/2021/10/09/Travis-CI-Hexo-Automatically-Deploy/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/en/2021/09/22/LeetCode-biweekly-contest-61/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/en/images/avatar.gif">
+      <meta itemprop="name" content="杨森">
+      <meta itemprop="description" content="A programmer in Amazon Beijing, China">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YoungForest's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/en/2021/09/22/LeetCode-biweekly-contest-61/" class="post-title-link" itemprop="url">LeetCode biweekly contest 61</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-09-22 20:31:32" itemprop="dateCreated datePublished" datetime="2021-09-22T20:31:32+08:00">2021-09-22</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-09-25 21:54:33" itemprop="dateModified" datetime="2021-09-25T21:54:33+08:00">2021-09-25</time>
+      </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/en/2021/09/22/LeetCode-biweekly-contest-61/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/09/22/LeetCode-biweekly-contest-61/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p><a target="_blank" rel="noopener" href="https://leetcode.com/contest/biweekly-contest-61">LeetCode biweekly contest 61</a></p>
+
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/en/2021/09/22/LeetCode-biweekly-contest-61/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/en/2021/09/22/LeetCode-weekly-contest-259/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/en/images/avatar.gif">
+      <meta itemprop="name" content="杨森">
+      <meta itemprop="description" content="A programmer in Amazon Beijing, China">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YoungForest's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/en/2021/09/22/LeetCode-weekly-contest-259/" class="post-title-link" itemprop="url">LeetCode weekly contest 259</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-09-22 20:31:19" itemprop="dateCreated datePublished" datetime="2021-09-22T20:31:19+08:00">2021-09-22</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-09-25 21:55:14" itemprop="dateModified" datetime="2021-09-25T21:55:14+08:00">2021-09-25</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/en/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/en/2021/09/22/LeetCode-weekly-contest-259/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/09/22/LeetCode-weekly-contest-259/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p><a target="_blank" rel="noopener" href="https://leetcode.com/contest/weekly-contest-259/">LeetCode weekly contest 259</a></p>
+<p>This weekend is Chinese mid-autumn festival, which is a tradition day to got together with family. I am a country boy. My family live in another province, Shanxi. It is about 1,000 km far from Beijing, where I studied and work. Because of that, I cannot visit my parents. Fortunately, my girlfriend grow in Beijing. Her parents invite us to their home for lunch and dinner. They prepared much seafood because their daughter loves it. This is my excuse for not attending this contest.<br>I solved those problems after contest and share my intuitions and solutions now.</p>
+<p>So no score board here.</p>
+<h2 id="2011-Final-Value-of-Variable-After-Performing-Operations"><a href="#2011-Final-Value-of-Variable-After-Performing-Operations" class="headerlink" title="2011. Final Value of Variable After Performing Operations"></a>2011. Final Value of Variable After Performing Operations</h2><p>Sign-in question. A trick, which could reduce 4 operations to 2, is that the middle character (operations[i][1]) decides increment or decrement. With this, we could simplify our code.</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">finalValueAfterOperations</span><span class="params">(vector&lt;string&gt;&amp; operations)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> ans = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; s : operations) &#123;</span><br><span class="line">            <span class="keyword">if</span> (s[<span class="number">1</span>] == <span class="string">&#x27;-&#x27;</span>) &#123;</span><br><span class="line">                --ans;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                ++ans;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Time complexity: O(N), where <code>N = operations.size()</code><br>Space complexity: O(1).</p>
+<h2 id="2012-Sum-of-Beauty-in-the-Array"><a href="#2012-Sum-of-Beauty-in-the-Array" class="headerlink" title="2012. Sum of Beauty in the Array"></a>2012. Sum of Beauty in the Array</h2><p>For score is 2, compare <code>nums[i]</code> with the largest number before <code>i</code> and the smallest number after <code>i</code>. We maintain a variable to record and update <code>the largest number</code> and a pre-calculate array to record <code>the smallest number</code>.</p>
+<p>For score is 1, just compare <code>nums[i]</code> with <code>nums[i-1]</code> and <code>nums[i+1]</code>.</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/en/2021/09/22/LeetCode-weekly-contest-259/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/en/2021/09/15/LeetCode-weekly-contest-258/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/en/images/avatar.gif">
+      <meta itemprop="name" content="杨森">
+      <meta itemprop="description" content="A programmer in Amazon Beijing, China">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YoungForest's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/en/2021/09/15/LeetCode-weekly-contest-258/" class="post-title-link" itemprop="url">LeetCode weekly contest 258</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-09-15 14:48:07" itemprop="dateCreated datePublished" datetime="2021-09-15T14:48:07+08:00">2021-09-15</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-09-22 20:36:27" itemprop="dateModified" datetime="2021-09-22T20:36:27+08:00">2021-09-22</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/en/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/en/2021/09/15/LeetCode-weekly-contest-258/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/09/15/LeetCode-weekly-contest-258/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Name</th>
+<th>Score</th>
+<th>Finish Time</th>
+<th>Q1 (3)</th>
+<th>Q2 (4)</th>
+<th>Q3 (5)</th>
+<th>Q4 (6)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>540 / 12179</td>
+<td>YoungForest</td>
+<td>12</td>
+<td>0:19:13</td>
+<td>0:02:46</td>
+<td>0:12:18</td>
+<td>0:19:13</td>
+<td>null</td>
+</tr>
+</tbody></table>
+<p>From this week, I will write my summary posts for the LeetCode weekly and biweekly contests in English. Before this, I have written more than 100 LeetCode contests summary posts in Chinese. For future international interviews and jobs opportunities, I believe writing English LeetCode summary is a good way to improve my expression and algorithm.</p>
+
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/en/2021/09/15/LeetCode-weekly-contest-258/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 

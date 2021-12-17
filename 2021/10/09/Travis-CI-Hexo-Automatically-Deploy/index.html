@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/en/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/en/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/en/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/en/images/logo.svg" color="#222">
+  <meta name="google-site-verification" content="1T-h_WTI8xskfXv9HxKWHfxqfzny6jcGdT5hmIExYqY">
+
+<link rel="stylesheet" href="/en/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"youngforest.github.io","root":"/en/","images":"/en/images","scheme":"Mist","version":"8.7.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/en/js/config.js"></script>
+<meta name="description" content="Hexo is a powerful blog engine. It is a good choice for a personal blog. I have used it for 5 years. Recently, I setup my English site besides the original Chinese site. With 2 sites, it is more work">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Travis CI + Hexo Automatically Deploy">
+<meta property="og:url" content="https://youngforest.github.io/en/2021/10/09/Travis-CI-Hexo-Automatically-Deploy/index.html">
+<meta property="og:site_name" content="YoungForest&#39;s blog">
+<meta property="og:description" content="Hexo is a powerful blog engine. It is a good choice for a personal blog. I have used it for 5 years. Recently, I setup my English site besides the original Chinese site. With 2 sites, it is more work">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-10-09T03:03:49.000Z">
+<meta property="article:modified_time" content="2021-10-09T04:24:37.960Z">
+<meta property="article:author" content="杨森">
+<meta property="article:tag" content="Blog">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://youngforest.github.io/en/2021/10/09/Travis-CI-Hexo-Automatically-Deploy/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://youngforest.github.io/en/2021/10/09/Travis-CI-Hexo-Automatically-Deploy/","path":"2021/10/09/Travis-CI-Hexo-Automatically-Deploy/","title":"Travis CI + Hexo Automatically Deploy"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Travis CI + Hexo Automatically Deploy | YoungForest's blog</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-88350169-1"></script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"UA-88350169-1","only_pageview":false}</script>
+  <script src="/en/js/third-party/analytics/google-analytics.js"></script>
+
+
+
+<script data-ad-client="ca-pub-9046219176772396" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9046219176772396"></script>
+
+  <noscript>
+    <link rel="stylesheet" href="/en/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/en/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">YoungForest's blog</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/en/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li>
+        <li class="menu-item menu-item-about"><a href="/en/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li>
+        <li class="menu-item menu-item-tags"><a href="/en/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li>
+        <li class="menu-item menu-item-categories"><a href="/en/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li>
+        <li class="menu-item menu-item-archives"><a href="/en/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+        <li class="menu-item menu-item-english"><a href="https://youngforest.github.io/en/" rel="section"><i class="fa fa-globe fa-fw"></i>English</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#How-to-configure-that"><span class="nav-number">1.</span> <span class="nav-text">How to configure that?</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">杨森</p>
+  <div class="site-description" itemprop="description">A programmer in Amazon Beijing, China</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/en/archives/">
+          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/en/categories/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/en/tags/">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/YoungForest" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;YoungForest" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:sen.yang96@outlook.com" title="E-Mail → mailto:sen.yang96@outlook.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/u/1111372490" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;u&#x2F;1111372490" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://stackoverflow.com/users/6393787/youngforest" title="StackOverflow → https:&#x2F;&#x2F;stackoverflow.com&#x2F;users&#x2F;6393787&#x2F;youngforest" rel="noopener" target="_blank"><i class="fab fa-stack-overflow fa-fw"></i>StackOverflow</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.linkedin.com/in/%E6%9D%A8-%E6%A3%AE-a20a02137" title="LinkedIn → https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;杨-森-a20a02137" rel="noopener" target="_blank"><i class="fab fa-linkedin fa-fw"></i>LinkedIn</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+  <a href="https://github.com/YoungForest" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/en/2021/10/09/Travis-CI-Hexo-Automatically-Deploy/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/en/images/avatar.gif">
+      <meta itemprop="name" content="杨森">
+      <meta itemprop="description" content="A programmer in Amazon Beijing, China">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YoungForest's blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Travis CI + Hexo Automatically Deploy
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-10-09 11:03:49 / Modified: 12:24:37" itemprop="dateCreated datePublished" datetime="2021-10-09T11:03:49+08:00">2021-10-09</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/en/categories/Tech-Sharing/" itemprop="url" rel="index"><span itemprop="name">Tech Sharing</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/en/2021/10/09/Travis-CI-Hexo-Automatically-Deploy/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/10/09/Travis-CI-Hexo-Automatically-Deploy/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p><a target="_blank" rel="noopener" href="https://hexo.io/docs/">Hexo</a> is a powerful blog engine. It is a good choice for a personal blog. I have used it for 5 years. Recently, I setup <a href="https://youngforest.github.io/en">my English site</a> besides <a href="https://youngforest.github.io/">the original Chinese site</a>. With 2 sites, it is more work to write, git and deploy.<br>Fortunately, there is a better solution for this problem. We could use <a target="_blank" rel="noopener" href="https://travis-ci.com/">Travis CI</a> to automatically deploy the blog. The remain work is writing posts and git commit and push them. The CI would help us to deploy sites automatically.</p>
+<span id="more"></span>
+
+<h2 id="How-to-configure-that"><a href="#How-to-configure-that" class="headerlink" title="How to configure that?"></a>How to configure that?</h2><p><a target="_blank" rel="noopener" href="https://education.travis-ci.com/">Sign up for Travis CI using Github account</a>.</p>
+<p>With <a target="_blank" rel="noopener" href="https://education.github.com/pack/offers">Github education package</a>, you could have the benefit to private builds for free while you’re a student. But it is only an optional choice, you can still use Travis CI without it.</p>
+<p><a target="_blank" rel="noopener" href="https://app.travis-ci.com/account/repositories">Give Travis CI the permission to access your Github repositories</a>.</p>
+<p>In <a target="_blank" rel="noopener" href="https://github.com/settings/tokens">Personal access tokens</a>, generate a token for Travis CI with <code>repo</code> scopes. Copy the token.</p>
+<p>In <a target="_blank" rel="noopener" href="https://app.travis-ci.com/account/repositories">Travis CI repositories page</a>, select your <strong>Hexo</strong> repo and click on <strong>Settings</strong>. In <strong>Environment Variables</strong> section, <strong>Add</strong> a new variable with <strong>NAME</strong> is <code>GH_TOKEN</code>, <strong>VALUE</strong> is the token you copied in the last step.</p>
+<p>Create a file named <code>.travis.yml</code> in your Hexo repo. Refer to following content and change the value as your situation. I added some comments for help.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">os: linux</span><br><span class="line">language: node_js </span><br><span class="line">node_js:</span><br><span class="line">  - 12  # using nodejs LTS v12</span><br><span class="line">branches:</span><br><span class="line">  only:</span><br><span class="line">    - master # only monitor master branch</span><br><span class="line">cache:</span><br><span class="line">  directories:</span><br><span class="line">    - node_modules # cache node_modules to speed up build process</span><br><span class="line">before_script: ## According to your theme and custom configuration, update the script</span><br><span class="line">  - npm install -g hexo-cli # install Hexo in CI environment</span><br><span class="line">  - cd themes </span><br><span class="line">  - git clone https://github.com/next-theme/hexo-theme-next.git next # We do not commit the themes/next folder. Therefore, pull it every time.</span><br><span class="line">  - cd next</span><br><span class="line">  - npm install # install next dependencies</span><br><span class="line">  - cd ../.. # return the root folder</span><br><span class="line">  - npm install # install the dependencies</span><br><span class="line">script: </span><br><span class="line">  - hexo generate # generate static files</span><br><span class="line">deploy: # reference: https://docs.travis-ci.com/user/deployment/pages/</span><br><span class="line">  provider: pages</span><br><span class="line">  skip_cleanup: true # not clean after build</span><br><span class="line">  token: $GH_TOKEN # the variable you set in last step</span><br><span class="line">  keep_history: true</span><br><span class="line">  # fqdn: blog.ne0ng.page # custom domain，delete this field if using username.github.io</span><br><span class="line">  repo: YoungForest/youngforest.github.io # the repo you want to deploy. If this field is not set manually, the default value is current repo. Sometimes, the site repo is the same with the source files but in different branches.</span><br><span class="line">  on:</span><br><span class="line">    branch: master # sources files is in master branch</span><br><span class="line">  local_dir: public </span><br><span class="line">  target_branch: master # the branch of generated files. If using `username.github.io` repo, it has to be master. Otherwise, change it to your github pages branch.</span><br></pre></td></tr></table></figure>
+
+<p>Once you push the <code>.travis.yml</code> file to your repo, you can see the build status in <a target="_blank" rel="noopener" href="https://app.travis-ci.com/">Travis CI</a>. Once it complete, check your site repo and access your blog to see the update.</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="followme">
+  <span>Welcome to my other publishing channels</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="/en/uploads/wechat-qcode.jpg">
+          <span class="icon">
+            <i class="fab fa-weixin"></i>
+          </span>
+
+          <span class="label">WeChat</span>
+        </a>
+      </div>
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="/en/atom.xml">
+          <span class="icon">
+            <i class="fa fa-rss"></i>
+          </span>
+
+          <span class="label">RSS</span>
+        </a>
+      </div>
+  </div>
+</div>
+
+          <div class="post-tags">
+              <a href="/en/tags/Blog/" rel="tag"># Blog</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/en/2021/09/22/LeetCode-biweekly-contest-61/" rel="prev" title="LeetCode biweekly contest 61">
+                  <i class="fa fa-chevron-left"></i> LeetCode biweekly contest 61
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/en/2021/10/24/LeetCode-weekly-contest-264/" rel="next" title="LeetCode weekly contest 264">
+                  LeetCode weekly contest 264 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">杨森</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" rel="noopener" target="_blank">NexT.Mist</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/en/js/comments.js"></script><script src="/en/js/utils.js"></script><script src="/en/js/motion.js"></script><script src="/en/js/schemes/muse.js"></script><script src="/en/js/next-boot.js"></script>
+
+  
+
+
+
+
+  
+
+
+
+
+<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"YoungForest","count":true,"i18n":{"disqus":"disqus"}}</script>
+<script src="/en/js/third-party/comments/disqus.js"></script>
+
+</body>
+</html>
