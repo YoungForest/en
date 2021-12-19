@@ -3,12 +3,21 @@
     <id>https://youngforest.github.io/en</id>
     <title>YoungForest&#39;s blog</title>
     <link href="https://youngforest.github.io/en" />
-    <updated>2021-10-24T09:20:15.000Z</updated>
-    <category term="C++" />
+    <updated>2021-12-18T02:47:17.000Z</updated>
     <category term="Competitive Programming" />
+    <category term="Blog" />
+    <category term="C++" />
     <category term="hash" />
     <category term="unordered_map" />
-    <category term="Blog" />
+    <entry>
+        <id>https://youngforest.github.io/en/2021/12/18/Migrate-from-Travis-CI-to-Github-Action/</id>
+        <title>Migrate from Travis CI to Github Action</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2021/12/18/Migrate-from-Travis-CI-to-Github-Action/"/>
+        <content type="html">&lt;p&gt;Two months ago, I configured Travis CI to automatically deploy my blog in&lt;br&gt;&lt;a href=&#34;https://youngforest.github.io/en/2021/10/09/Travis-CI-Hexo-Automatically-Deploy/&#34;&gt;Travis CI Hexo Automatically Deploy&lt;/a&gt;.&lt;br&gt;However, I found it do not work this month. Unfortunately, Travis do not support free build for public repos now. I have to migrate to Github Action in order to auto CD.&lt;/p&gt;
+&lt;p&gt;I followed &lt;a href=&#34;https://sanonz.github.io/2020/deploy-a-hexo-blog-from-github-actions/&#34;&gt;this post&lt;/a&gt; to do that. Some changes should be applied in &lt;code&gt;deploy.yml&lt;/code&gt; file, especially &lt;strong&gt;theme&lt;/strong&gt;.&lt;br&gt;For example, &lt;a href=&#34;https://github.com/YoungForest/Hexo/blob/master/.github/workflows/deploy.yml&#34;&gt;my Chinese blog &lt;code&gt;deploy.yml&lt;/code&gt;&lt;/a&gt; and &lt;a href=&#34;https://github.com/YoungForest/en/blob/master/.github/workflows/deploy.yml&#34;&gt;my English blog &lt;code&gt;deploy.yml&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+</content>
+        <updated>2021-12-18T02:47:17.000Z</updated>
+    </entry>
     <entry>
         <id>https://youngforest.github.io/en/2021/10/24/LeetCode-weekly-contest-264/</id>
         <title>LeetCode weekly contest 264</title>

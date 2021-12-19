@@ -7,11 +7,11 @@
         <language>en,default</language>
         <pubDate>Sun, 24 Oct 2021 17:20:15 +0800</pubDate>
         <lastBuildDate>Sun, 24 Oct 2021 17:20:15 +0800</lastBuildDate>
-        <category>C++</category>
         <category>Competitive Programming</category>
+        <category>Blog</category>
+        <category>C++</category>
         <category>hash</category>
         <category>unordered_map</category>
-        <category>Blog</category>
         <item>
             <guid isPermalink="true">https://youngforest.github.io/en/2021/10/24/LeetCode-weekly-contest-264/</guid>
             <title>LeetCode weekly contest 264</title>

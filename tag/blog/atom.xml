@@ -4,11 +4,11 @@
     <title>YoungForest&#39;s blog • Posts by &#34;blog&#34; tag</title>
     <link href="https://youngforest.github.io/en" />
     <updated>2021-10-09T03:03:49.000Z</updated>
-    <category term="C++" />
     <category term="Competitive Programming" />
+    <category term="Blog" />
+    <category term="C++" />
     <category term="hash" />
     <category term="unordered_map" />
-    <category term="Blog" />
     <entry>
         <id>https://youngforest.github.io/en/2021/10/09/Travis-CI-Hexo-Automatically-Deploy/</id>
         <title>Travis CI + Hexo Automatically Deploy</title>

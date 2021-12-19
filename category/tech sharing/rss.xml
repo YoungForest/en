@@ -7,11 +7,11 @@
         <language>en,default</language>
         <pubDate>Sat, 09 Oct 2021 11:03:49 +0800</pubDate>
         <lastBuildDate>Sat, 09 Oct 2021 11:03:49 +0800</lastBuildDate>
-        <category>C++</category>
         <category>Competitive Programming</category>
+        <category>Blog</category>
+        <category>C++</category>
         <category>hash</category>
         <category>unordered_map</category>
-        <category>Blog</category>
         <item>
             <guid isPermalink="true">https://youngforest.github.io/en/2021/10/09/Travis-CI-Hexo-Automatically-Deploy/</guid>
             <title>Travis CI + Hexo Automatically Deploy</title>
