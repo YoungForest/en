@@ -11,3 +11,5 @@ However, I found it do not work this month. Unfortunately, Travis do not support
 
 I followed [this post](https://sanonz.github.io/2020/deploy-a-hexo-blog-from-github-actions/) to do that. Some changes should be applied in `deploy.yml` file, especially **theme**.
 For example, [my Chinese blog `deploy.yml`](https://github.com/YoungForest/Hexo/blob/master/.github/workflows/deploy.yml) and [my English blog `deploy.yml`](https://github.com/YoungForest/en/blob/master/.github/workflows/deploy.yml).
+
+Close auto build in [Travis CI Dashboard](https://app.travis-ci.com/): Your repos -> Setting -> General -> uncheck **Build pushed branches** and **Build pushed pull requests**.
