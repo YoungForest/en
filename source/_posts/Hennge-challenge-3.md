@@ -12,6 +12,7 @@ Last Sunday, I submitted my application for the Hennge Back-end(Tokyo, Japan) SD
 ## Challenge details
 
 The Challenge link is 403 after I submitted my solution. So, I share the process from my memory.
+Fortunately, the archive is here: [Google Drive](https://drive.google.com/file/d/1wWorFu889-DdEwuh9IAK2Eaei9rH1mGI/view?usp=sharing).
 
 First, implement a sum of squares of numbers program with Python/Go. You need to implement the input and output process by yourself.
 Second, create a private github gist with the code.
@@ -38,7 +39,9 @@ After struggle with Github two-factor authentication and manual account recovery
 
 I think the hardest part is the authentication POST.
 
-First, I needed to covert the shared secret to TOTP (Time-Based One-Time Password) with RFC 6238. Fortunately, I found a sample Java implementation in [the RFC 6238 document](https://datatracker.ietf.org/doc/html/rfc6238). By the way, because the input in the code is a HEX string. I covert my shared secret `sen.yang96@outlook.comHENNGECHALLENGE003` to HEX string with [a online tool](https://www.convertstring.com/EncodeDecode/HexEncode). The challenge required a 10-digits code. The default in the code is 8-digits. I met this response using 8-digits.
+First, I needed to covert the shared secret to TOTP (Time-Based One-Time Password) with RFC 6238.
+I tried to find a online tool to do that. But unfortunately, the current online tools have a limited options. For example, you can not choose the hash function as `HMAC-SHA-512` instead of default `HMAC-SHA-1`.
+Fortunately, I found a sample Java implementation in [the RFC 6238 document](https://datatracker.ietf.org/doc/html/rfc6238). By the way, because the input in the code is a HEX string. I covert my shared secret `sen.yang96@outlook.comHENNGECHALLENGE003` to HEX string with [a online tool](https://www.convertstring.com/EncodeDecode/HexEncode). The challenge required a 10-digits code. The default in the code is 8-digits. I met this response using 8-digits.
 ```json
 {
      "message": "Access denied: Invalid token, malformed token"
@@ -308,7 +311,7 @@ public class TOTP {
 }
 ```
 
-Second, I should send my post with HTTP Basic Authentication (RFC 2617).
+Second, I should send my post with [HTTP Basic Authentication (RFC 2617)](https://datatracker.ietf.org/doc/html/rfc2617#section-2).
 The use-id is my email and password is the TOTP code. With the help of [this StackOverflow question: basic authorization command for curl](https://stackoverflow.com/questions/20803339/basic-authorization-command-for-curl), there is 2 options to do this.
 
 1. Manually get Base64 encoded string and send it.
