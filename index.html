@@ -234,7 +234,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-03-20 18:20:25" itemprop="dateModified" datetime="2022-03-20T18:20:25+08:00">2022-03-20</time>
+      <time title="Modified: 2022-03-20 18:41:21" itemprop="dateModified" datetime="2022-03-20T18:41:21+08:00">2022-03-20</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -271,14 +271,14 @@
     
     <div class="post-body" itemprop="articleBody">
           <p>Last Sunday, I submitted my application for the Hennge Back-end(Tokyo, Japan) SDE position. After that, my mail box received a Challenge 3 email from Hennge. The challenge is very interesting. When I had enough free time on this Saturday, I finished this challenge finally. I spent about 3 hours on this. The process is here.</p>
-<h2 id="Challenge-details"><a href="#Challenge-details" class="headerlink" title="Challenge details"></a>Challenge details</h2><p>The Challenge link is 403 after I submitted my solution. So, I share the process from my memory.</p>
+<h2 id="Challenge-details"><a href="#Challenge-details" class="headerlink" title="Challenge details"></a>Challenge details</h2><p>The Challenge link is 403 after I submitted my solution. So, I share the process from my memory.<br>Fortunately, the archive is here: <a target="_blank" rel="noopener" href="https://drive.google.com/file/d/1wWorFu889-DdEwuh9IAK2Eaei9rH1mGI/view?usp=sharing">Google Drive</a>.</p>
 <p>First, implement a sum of squares of numbers program with Python/Go. You need to implement the input and output process by yourself.<br>Second, create a private github gist with the code.<br>Last, post the gist link to the Hennge server.</p>
 <p>The code is very simple. I used Python to implement it.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> functools <span class="keyword">import</span> reduce</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">main</span>():</span><br><span class="line">    N = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line">    ans = []</span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(N):</span><br><span class="line">        X = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line">        ans.append(reduce(<span class="keyword">lambda</span> x, y: x + (y * y <span class="keyword">if</span> y &gt; <span class="number">0</span> <span class="keyword">else</span> <span class="number">0</span>), <span class="built_in">map</span>(<span class="built_in">int</span>, <span class="built_in">input</span>().split()), <span class="number">0</span>))</span><br><span class="line">    <span class="built_in">print</span>(*ans, sep=<span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
 
 <p>After struggle with Github two-factor authentication and manual account recovery review, I finally sign in to Github and created <a target="_blank" rel="noopener" href="https://gist.github.com/YoungForest/329c22200e7fad36e6ef984e3afe0325">my gist</a>.</p>
 <p>I think the hardest part is the authentication POST.</p>
-<p>First, I needed to covert the shared secret to TOTP (Time-Based One-Time Password) with RFC 6238. Fortunately, I found a sample Java implementation in <a target="_blank" rel="noopener" href="https://datatracker.ietf.org/doc/html/rfc6238">the RFC 6238 document</a>. By the way, because the input in the code is a HEX string. I covert my shared secret <code>sen.yang96@outlook.comHENNGECHALLENGE003</code> to HEX string with <a target="_blank" rel="noopener" href="https://www.convertstring.com/EncodeDecode/HexEncode">a online tool</a>. The challenge required a 10-digits code. The default in the code is 8-digits. I met this response using 8-digits.</p>
+<p>First, I needed to covert the shared secret to TOTP (Time-Based One-Time Password) with RFC 6238.<br>I tried to find a online tool to do that. But unfortunately, the current online tools have a limited options. For example, you can not choose the hash function as <code>HMAC-SHA-512</code> instead of default <code>HMAC-SHA-1</code>.<br>Fortunately, I found a sample Java implementation in <a target="_blank" rel="noopener" href="https://datatracker.ietf.org/doc/html/rfc6238">the RFC 6238 document</a>. By the way, because the input in the code is a HEX string. I covert my shared secret <code>sen.yang96@outlook.comHENNGECHALLENGE003</code> to HEX string with <a target="_blank" rel="noopener" href="https://www.convertstring.com/EncodeDecode/HexEncode">a online tool</a>. The challenge required a 10-digits code. The default in the code is 8-digits. I met this response using 8-digits.</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">     <span class="attr">&quot;message&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Access denied: Invalid token, malformed token&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
           <!--noindex-->
             <div class="post-button">
@@ -349,7 +349,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-03-20 18:20:25" itemprop="dateModified" datetime="2022-03-20T18:20:25+08:00">2022-03-20</time>
+      <time title="Modified: 2022-03-20 18:41:21" itemprop="dateModified" datetime="2022-03-20T18:41:21+08:00">2022-03-20</time>
     </span>
 
   
@@ -449,7 +449,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-03-20 18:20:25" itemprop="dateModified" datetime="2022-03-20T18:20:25+08:00">2022-03-20</time>
+      <time title="Modified: 2022-03-20 18:41:21" itemprop="dateModified" datetime="2022-03-20T18:41:21+08:00">2022-03-20</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -588,7 +588,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-03-20 18:20:25" itemprop="dateModified" datetime="2022-03-20T18:20:25+08:00">2022-03-20</time>
+      <time title="Modified: 2022-03-20 18:41:21" itemprop="dateModified" datetime="2022-03-20T18:41:21+08:00">2022-03-20</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -695,7 +695,7 @@ Fortunately, there is a better solution for this problem. We could use Tra
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-03-20 18:20:25" itemprop="dateModified" datetime="2022-03-20T18:20:25+08:00">2022-03-20</time>
+      <time title="Modified: 2022-03-20 18:41:21" itemprop="dateModified" datetime="2022-03-20T18:41:21+08:00">2022-03-20</time>
     </span>
 
   
@@ -793,7 +793,7 @@ Fortunately, there is a better solution for this problem. We could use Tra
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-03-20 18:20:25" itemprop="dateModified" datetime="2022-03-20T18:20:25+08:00">2022-03-20</time>
+      <time title="Modified: 2022-03-20 18:41:21" itemprop="dateModified" datetime="2022-03-20T18:41:21+08:00">2022-03-20</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -907,7 +907,7 @@ Fortunately, there is a better solution for this problem. We could use Tra
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-03-20 18:20:25" itemprop="dateModified" datetime="2022-03-20T18:20:25+08:00">2022-03-20</time>
+      <time title="Modified: 2022-03-20 18:41:21" itemprop="dateModified" datetime="2022-03-20T18:41:21+08:00">2022-03-20</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -1038,7 +1038,7 @@ Fortunately, there is a better solution for this problem. We could use Tra
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-03-20 18:20:25" itemprop="dateModified" datetime="2022-03-20T18:20:25+08:00">2022-03-20</time>
+      <time title="Modified: 2022-03-20 18:41:21" itemprop="dateModified" datetime="2022-03-20T18:41:21+08:00">2022-03-20</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
