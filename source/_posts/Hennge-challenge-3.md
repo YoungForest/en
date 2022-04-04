@@ -41,6 +41,7 @@ I think the hardest part is the authentication POST.
 
 First, I needed to covert the shared secret to TOTP (Time-Based One-Time Password) with RFC 6238.
 I tried to find a online tool to do that. But unfortunately, the current online tools have a limited options. For example, you can not choose the hash function as `HMAC-SHA-512` instead of default `HMAC-SHA-1`.
+Therefore, as a result, I wrote a [TOTP Generator Online](https://totp.youngforest.me/) by myself. Hope it could help you.
 Fortunately, I found a sample Java implementation in [the RFC 6238 document](https://datatracker.ietf.org/doc/html/rfc6238). By the way, because the input in the code is a HEX string. I covert my shared secret `sen.yang96@outlook.comHENNGECHALLENGE003` to HEX string with [a online tool](https://www.convertstring.com/EncodeDecode/HexEncode). The challenge required a 10-digits code. The default in the code is 8-digits. I met this response using 8-digits.
 ```json
 {
