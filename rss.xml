@@ -57,6 +57,7 @@
             <guid isPermalink="true">https://youngforest.github.io/en/2021/12/18/Migrate-from-Travis-CI-to-Github-Action/</guid>
             <title>Migrate from Travis CI to Github Action</title>
             <link>https://youngforest.github.io/en/2021/12/18/Migrate-from-Travis-CI-to-Github-Action/</link>
+            <category>Blog</category>
             <pubDate>Sat, 18 Dec 2021 10:47:17 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;Two months ago, I configured Travis CI to automatically deploy my blog in&lt;br&gt;&lt;a href=&#34;https://youngforest.github.io/en/2021/10/09/Travis-CI-Hexo-Automatically-Deploy/&#34;&gt;Travis CI Hexo Automatically Deploy&lt;/a&gt;.&lt;br&gt;However, I found it do not work this month. Unfortunately, Travis do not support free build for public repos now. I have to migrate to Github Action in order to auto CD.&lt;/p&gt;
 &lt;p&gt;I followed &lt;a href=&#34;https://sanonz.github.io/2020/deploy-a-hexo-blog-from-github-actions/&#34;&gt;this post&lt;/a&gt; to do that. Some changes should be applied in &lt;code&gt;deploy.yml&lt;/code&gt; file, especially &lt;strong&gt;theme&lt;/strong&gt;.&lt;br&gt;For example, &lt;a href=&#34;https://github.com/YoungForest/Hexo/blob/master/.github/workflows/deploy.yml&#34;&gt;my Chinese blog &lt;code&gt;deploy.yml&lt;/code&gt;&lt;/a&gt; and &lt;a href=&#34;https://github.com/YoungForest/en/blob/master/.github/workflows/deploy.yml&#34;&gt;my English blog &lt;code&gt;deploy.yml&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;

@@ -58,6 +58,7 @@
 &lt;p&gt;I followed &lt;a href=&#34;https://sanonz.github.io/2020/deploy-a-hexo-blog-from-github-actions/&#34;&gt;this post&lt;/a&gt; to do that. Some changes should be applied in &lt;code&gt;deploy.yml&lt;/code&gt; file, especially &lt;strong&gt;theme&lt;/strong&gt;.&lt;br&gt;For example, &lt;a href=&#34;https://github.com/YoungForest/Hexo/blob/master/.github/workflows/deploy.yml&#34;&gt;my Chinese blog &lt;code&gt;deploy.yml&lt;/code&gt;&lt;/a&gt; and &lt;a href=&#34;https://github.com/YoungForest/en/blob/master/.github/workflows/deploy.yml&#34;&gt;my English blog &lt;code&gt;deploy.yml&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Close auto build in &lt;a href=&#34;https://app.travis-ci.com/&#34;&gt;Travis CI Dashboard&lt;/a&gt;: Your repos -&amp;gt; Setting -&amp;gt; General -&amp;gt; uncheck &lt;strong&gt;Build pushed branches&lt;/strong&gt; and &lt;strong&gt;Build pushed pull requests&lt;/strong&gt;.&lt;/p&gt;
 </content>
+        <category term="Blog" />
         <updated>2021-12-18T02:47:17.000Z</updated>
     </entry>
     <entry>

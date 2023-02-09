@@ -185,6 +185,12 @@
 <p>I followed <a href="https://sanonz.github.io/2020/deploy-a-hexo-blog-from-github-actions/">this post</a> to do that. Some changes should be applied in <code>deploy.yml</code> file, especially <strong>theme</strong>.<br>For example, <a href="https://github.com/YoungForest/Hexo/blob/master/.github/workflows/deploy.yml">my Chinese blog <code>deploy.yml</code></a> and <a href="https://github.com/YoungForest/en/blob/master/.github/workflows/deploy.yml">my English blog <code>deploy.yml</code></a>.</p>
 <p>Close auto build in <a href="https://app.travis-ci.com/">Travis CI Dashboard</a>: Your repos -&gt; Setting -&gt; General -&gt; uncheck <strong>Build pushed branches</strong> and <strong>Build pushed pull requests</strong>.</p>
 ]]></content>
+      <categories>
+        <category>Tech Sharing</category>
+      </categories>
+      <tags>
+        <tag>Blog</tag>
+      </tags>
   </entry>
   <entry>
     <title>Travis CI + Hexo Automatically Deploy</title>
