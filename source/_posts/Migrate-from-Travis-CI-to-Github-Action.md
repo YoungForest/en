@@ -2,7 +2,9 @@
 title: Migrate from Travis CI to Github Action
 date: 2021-12-18 10:47:17
 tags:
+- Blog
 categories:
+- Tech Sharing
 ---
 
 Two months ago, I configured Travis CI to automatically deploy my blog in
