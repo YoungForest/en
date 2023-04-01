@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://youngforest.github.io/en</id>
+    <title>YoungForest&#39;s blog • Posts by &#34;ireland&#34; tag</title>
+    <link href="https://youngforest.github.io/en" />
+    <updated>2023-04-01T03:36:09.000Z</updated>
+    <category term="Hennge" />
+    <category term="Ireland" />
+    <category term="IB" />
+    <category term="Bonds" />
+    <category term="Competitive Programming" />
+    <category term="Blog" />
+    <category term="C++" />
+    <category term="hash" />
+    <category term="unordered_map" />
+    <entry>
+        <id>https://youngforest.github.io/en/2023/04/01/IB-Bonds-Tutorial/</id>
+        <title>IB Bonds Tutorial</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2023/04/01/IB-Bonds-Tutorial/"/>
+        <content type="html">&lt;p&gt;&lt;a href=&#34;https://www.interactivebrokers.com/en/?f=/en/general/education/hdi_bonds.php&#34;&gt;How Do I Trade Bonds?&lt;/a&gt;&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/x4kv7d0j82A&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;IB-Bonds-Tutorial&#34;&gt;&lt;a href=&#34;#IB-Bonds-Tutorial&#34; class=&#34;headerlink&#34; title=&#34;IB Bonds Tutorial&#34;&gt;&lt;/a&gt;IB Bonds Tutorial&lt;/h2&gt;&lt;h3 id=&#34;What-are-Bonds&#34;&gt;&lt;a href=&#34;#What-are-Bonds&#34; class=&#34;headerlink&#34; title=&#34;What are Bonds?&#34;&gt;&lt;/a&gt;What are Bonds?&lt;/h3&gt;&lt;p&gt;Bonds are a type of interest-bearing security usually issued by a government or corporation that obligates the issuer to pay the holder interest (usually at set intervals) and to repay the entire amount of the loan at maturity. Bonds can be grouped in the following categories:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Government Bonds are bonds issued by a national government. Bonds issued by the U.S. Government are called Treasuries. They belong to three categories with different maturities: Treasury bills, Treasury notes and Treasury bonds. Treasuries are considered the safest bond investments since the U.S. government backs them and it is highly unlikely that a situation of default will occur. Treasuries with long maturities have more potential for inflation and credit risk.&lt;/li&gt;
+&lt;li&gt;Municipal Bonds are popular in the United States. They represent debt obligations of a U.S. state or local governments. Municipal bonds are considered riskier investments than Treasuries, but they are exempt from taxing by the federal government and local governments often exempt their own citizens from taxes on its bonds. Municipal bonds often have a lower coupon rate because of the tax break.&lt;/li&gt;
+&lt;li&gt;Corporate Bonds are issued by private corporations. Corporate bonds come in various maturities. They are considered the riskiest of the bonds because there is much more of a credit risk with corporate bonds, but this usually means that the bond holder will be paid a higher interest rate. Corporations with low credit ratings issue bonds that are speculative products called junk bonds. Par value, or face amount, is usually $1,000, but bond prices are quoted as a percentage. For example, a quote of 90 is a bond selling for $900.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Bonds-Characteristics-and-Rating&#34;&gt;&lt;a href=&#34;#Bonds-Characteristics-and-Rating&#34; class=&#34;headerlink&#34; title=&#34;Bonds Characteristics and Rating&#34;&gt;&lt;/a&gt;Bonds Characteristics and Rating&lt;/h3&gt;&lt;p&gt;Par Value. The par value of a bond (also called principal or face amount) is the amount that the issuer agrees to pay the investor when the bond matures. An investor who buys a bond with par value of $1,000 can expect to receive $1,000 when the bond reaches maturity. The par value of a bond can greatly differ from its market price, which is the price an investor pays to purchase the bond. A bond sold for more than its par value is selling “at a premium”, while a bond that is selling for less than its par value is selling “at discount”.&lt;/p&gt;
+&lt;p&gt;Bond Prices. The price of a bond usually is stated as a percentage of its par value. For example a bond with face value of $1,000 and a price of 90 is selling at a discount equal to 90% of its par value (90% * $1,000 = $900).&lt;/p&gt;
+&lt;p&gt;Maturity. The maturity of a bond is the day on which the issuer must pay the principal (face amount) of the bond to the investor. Maturities generally can vary from 10 years to as long as 100 years. Bonds with higher maturities pay higher interest rates all other factors being equal.&lt;/p&gt;
+&lt;p&gt;Coupon Rate. Until it matures the issuer agrees to pay the investor a stated amount of interest called the coupon rate or nominal yield. The amount of the coupon rate is the stated interest rate multiplied by the bond’s par value.&lt;/p&gt;
+&lt;p&gt;Current Yield. It measures the interest that the investor receives from the bond compared to its current market price. It is computed by dividing the annual interest by the current market price. One issue with the current yield is that it does not represent the future price appreciation on a discount bond or the price depreciation on a premium bond when held to maturity.&lt;/p&gt;
+&lt;p&gt;Yield to Maturity. It measures the investor’s total overall return. It is the most commonly quoted type of yield for bonds. It includes the annual interest that an investor receives and also the difference between the price paid by the investor for the bond and the amount received at maturity.&lt;/p&gt;
+&lt;p&gt;Bonds Rating. Standard &amp;amp; Poor’s and Moody’s Investors Service assign credit ratings to governments and corporations which help determine the amount of interest paid. The ratings represent greater default risk as you read down the chart below:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;Quality&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Moody’s&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Standard &amp;amp; Poor’s&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Best Quality&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Aaa&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;AAA&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;High Quality&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Aa&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;AA&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Upper-medium Grade&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;A&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Medium Grade&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Baa&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;BBB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Junk bonds/Speculative/High yield&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Ba, B, Caa, Ca&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;BB, B, CCC, CC&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Default&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;D&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&#34;Risks&#34;&gt;&lt;a href=&#34;#Risks&#34; class=&#34;headerlink&#34; title=&#34;Risks&#34;&gt;&lt;/a&gt;Risks&lt;/h3&gt;&lt;p&gt;Trading bonds may not be suitable for all investors. Although bonds are generally considered conservative investments, there are numerous risks involved in bond trading.&lt;/p&gt;
+&lt;p&gt;Credit risk. When the investor purchases a corporate bond, the investor is lending money to a company. There is always the risk that the issuer will go bankrupt. If this happens, the investor will not receive his investment back. Credit risk is taken into account in the pricing of bonds.&lt;/p&gt;
+&lt;p&gt;Prepayment risk. Prepayment risk involves the scenario where an issuer “calls” a bond. If this happens, his investment will be paid back early. Certain bonds are callable and others are not. This information is detailed in the prospectus. If a bond is callable, the prospectus will detail a “yield-to-call” figure. Corporations may call their bonds when interest rates fall below current bond rates.&lt;/p&gt;
+&lt;p&gt;Conversely, a “put” provision allows a bondholder to redeem a bond at par value before it matures. Investors may do this when interest rates are rising and they can get higher rates elsewhere. The issuer will assign specific dates to take advantage of a put provision. Prepayment risk is taken into account in the pricing of bonds.&lt;/p&gt;
+&lt;p&gt;Inflation risk. Inflation risk is the risk that the rate of the yield to call or maturity of the bond will not provide a positive return over the rate of inflation for the period of the investment. In other words, if the rate of inflation for the period of an investment is 3 percent and the yield to maturity of a bond is 2 percent, the investor will receive more money in interest and principal than the investor invested, but the value of that money returned is actually less than what was originally invested in the bond. As the inflation rate rises, so do interest rates. Although the yield on the bond increases, the price of the actual bond decreases.&lt;/p&gt;
+&lt;p&gt;Interest rate risk. Changes in interest rates during the term of any bond may affect the market value of the bond prior to call or the maturity date. There is generally an inverse relationship in between market interest rates and bond prices. This can be explained as follows. The coupon rate of a bond remains fixed over the life of the bond. As interest rates in the market increase, a buyer of the bond will want to see a yield to maturity that reflects the now higher market rates. Since coupon rates are fixed, the price paid must be less than the par value of the bond to a degree that compensates for the difference between the bond’s coupon rate and the higher market rate. The opposite happens in case of decreasing market interest rates. As interest rates decrease, the prices of existing bonds increase.&lt;/p&gt;
+&lt;h2 id=&#34;Questions&#34;&gt;&lt;a href=&#34;#Questions&#34; class=&#34;headerlink&#34; title=&#34;Questions&#34;&gt;&lt;/a&gt;Questions&lt;/h2&gt;&lt;h3 id=&#34;Which-answer-is-correct-for-question-“Which-of-the-following-is-correct-regarding-Bonds-”&#34;&gt;&lt;a href=&#34;#Which-answer-is-correct-for-question-“Which-of-the-following-is-correct-regarding-Bonds-”&#34; class=&#34;headerlink&#34; title=&#34;Which answer is correct for question “Which of the following is correct regarding Bonds?”&#34;&gt;&lt;/a&gt;Which answer is correct for question “Which of the following is correct regarding Bonds?”&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Bonds are a type of interest-bearing security that obligates the issuer to pay the holder the entire amount of the loan at maturity.&lt;/li&gt;
+&lt;li&gt;Bonds are a type of security that signifies proportionate ownership in the issuing corporation. This entitles the holder to that proportion of the corporation’s assets and earnings.&lt;/li&gt;
+&lt;li&gt;Bonds are a portfolio of securities managed by an investment company in accordance with specified investment objectives.&lt;/li&gt;
+&lt;li&gt;Bonds are financial derivatives that give buyers the right, but not the obligation, to buy or sell an underlying asset at an agreed-upon price and date.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;Which-of-the-following-is-not-correct-regarding-Bonds&#34;&gt;&lt;a href=&#34;#Which-of-the-following-is-not-correct-regarding-Bonds&#34; class=&#34;headerlink&#34; title=&#34;Which of the following is not correct regarding Bonds?&#34;&gt;&lt;/a&gt;Which of the following is not correct regarding Bonds?&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Treasuries are considered the safest bond investments.&lt;/li&gt;
+&lt;li&gt;Municipal bonds are considered riskier investments than Treasuries.&lt;/li&gt;
+&lt;li&gt;Corporate bonds are considered the riskiest of the bonds because of the higher credit risk.&lt;/li&gt;
+&lt;li&gt;Corporate bonds are debt instruments issued by the City of London Corporation.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Answer 1 is correct. As an interest bearing security, a bond obliges the issuer to pay the holder the entire amount of the loan at maturity.&lt;br&gt;Answer 4 is not correct regarding bonds. Corporate bonds are debt instruments issued by corporations, not by the City of London Corporation.&lt;/p&gt;
+&lt;h3 id=&#34;Which-of-the-following-is-not-correct-regarding-Bonds-1&#34;&gt;&lt;a href=&#34;#Which-of-the-following-is-not-correct-regarding-Bonds-1&#34; class=&#34;headerlink&#34; title=&#34;Which of the following is not correct regarding Bonds?&#34;&gt;&lt;/a&gt;Which of the following is not correct regarding Bonds?&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;The face amount is the price an investor pays to purchase the bond.&lt;/li&gt;
+&lt;li&gt;The par value of a bond is the amount that the issuer agrees to pay the investor when the bond matures.&lt;/li&gt;
+&lt;li&gt;A bond sold for more than its par value is selling “at a premium”.&lt;/li&gt;
+&lt;li&gt;A bond that is selling for less than its par value is selling “at discount”.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Answer 1 is not correct regarding bonds. The face amount of a bond is the amount the issuer agrees to pay the investor when the bond matures, not the price the investor pays to purchase the bond.&lt;/p&gt;
+&lt;h3 id=&#34;Which-of-the-following-is-not-correct-regarding-Bonds-2&#34;&gt;&lt;a href=&#34;#Which-of-the-following-is-not-correct-regarding-Bonds-2&#34; class=&#34;headerlink&#34; title=&#34;Which of the following is not correct regarding Bonds?&#34;&gt;&lt;/a&gt;Which of the following is not correct regarding Bonds?&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;The price of a bond usually is stated a percentage of its par value.&lt;/li&gt;
+&lt;li&gt;A bond with face value of $1,000 and a price of 88 is selling for 88% of its par value (88% * $1,000 = $880).&lt;/li&gt;
+&lt;li&gt;A bond with face value of $1,000 and a price of 88 is selling at a premium equal to 12% of its par value (12% * $1,000 = $120).&lt;/li&gt;
+&lt;li&gt;The par value of a bond can differ from its market price.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Answer 3 is not correct regarding bonds. A bond with face value of $1,000 and a price of 88 is selling at a discount equal to 12% of its par value, not at a premium.&lt;/p&gt;
+&lt;h3 id=&#34;Which-of-the-following-is-not-correct-regarding-Bonds-3&#34;&gt;&lt;a href=&#34;#Which-of-the-following-is-not-correct-regarding-Bonds-3&#34; class=&#34;headerlink&#34; title=&#34;Which of the following is not correct regarding Bonds?&#34;&gt;&lt;/a&gt;Which of the following is not correct regarding Bonds?&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;The maturity of a bond is the day on which the issuer must pay the principal (face amount) of the bond to the investor.&lt;/li&gt;
+&lt;li&gt;Maturities generally can vary from 10 years to as long as 100 years.&lt;/li&gt;
+&lt;li&gt;Bonds with higher maturities generally pay higher interest rates all other factors being equal.&lt;/li&gt;
+&lt;li&gt;Bonds with higher maturities generally pay lower interest rates all other factors being the same.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Answer 4 is not correct regarding bonds. Bonds with higher maturities generally pay higher interest rates all other factors being equal.&lt;/p&gt;
+&lt;h3 id=&#34;Which-of-the-following-is-not-correct-regarding-Bonds-Yields&#34;&gt;&lt;a href=&#34;#Which-of-the-following-is-not-correct-regarding-Bonds-Yields&#34; class=&#34;headerlink&#34; title=&#34;Which of the following is not correct regarding Bonds Yields?&#34;&gt;&lt;/a&gt;Which of the following is not correct regarding Bonds Yields?&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;The nominal yield is the stated interest rate paid to the investor multiplied by the bond’s par value.&lt;/li&gt;
+&lt;li&gt;The current yield is computed by dividing the annual interest by the current market price.&lt;/li&gt;
+&lt;li&gt;The yield to maturity takes into account both the interest that an investor receives and the difference between the price paid by the investor for the bond and the amount received at maturity.&lt;/li&gt;
+&lt;li&gt;The yield to maturity does not take into account the interest that an investor receives, but only the difference between the price paid by the investor for the bond and the amount received at maturity.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Answer 4 is not correct regarding bond yields. The yield to maturity takes into account both the interest that an investor receives and the difference between the price paid by the investor for the bond and the amount received at maturity.&lt;/p&gt;
+&lt;h3 id=&#34;Which-of-the-following-is-not-correct-regarding-Bonds-Rating&#34;&gt;&lt;a href=&#34;#Which-of-the-following-is-not-correct-regarding-Bonds-Rating&#34; class=&#34;headerlink&#34; title=&#34;Which of the following is not correct regarding Bonds Rating?&#34;&gt;&lt;/a&gt;Which of the following is not correct regarding Bonds Rating?&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;The bond credit rating represents a bond issuer’s financial strength, or its ability to pay a bond’s principal and interest, in a timely fashion.&lt;/li&gt;
+&lt;li&gt;A junk bond is a bond with rating “BB” or lower according to Standard &amp;amp; Poor’s.&lt;/li&gt;
+&lt;li&gt;Morgan Stanley is one of three major independent credit rating agencies.&lt;/li&gt;
+&lt;li&gt;Junk bonds usually offer a higher yield to compensate for the lower credit rating.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Answer 3 is not correct regarding bonds rating. Morgan Stanley is not one of the three major independent credit rating agencies, which are Standard &amp;amp; Poor’s, Moody’s and Fitch Ratings.&lt;/p&gt;
+&lt;h3 id=&#34;Which-of-the-following-is-not-correct-regarding-Callable-Bonds&#34;&gt;&lt;a href=&#34;#Which-of-the-following-is-not-correct-regarding-Callable-Bonds&#34; class=&#34;headerlink&#34; title=&#34;Which of the following is not correct regarding Callable Bonds?&#34;&gt;&lt;/a&gt;Which of the following is not correct regarding Callable Bonds?&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Prepayment risk involves the scenario where an issuer calls a bond prior to maturity.&lt;/li&gt;
+&lt;li&gt;Issuers usually call their bonds when interest rates fall below current bond rates.&lt;/li&gt;
+&lt;li&gt;Investors usually call their bonds when interest rates rises above current bond rates.&lt;/li&gt;
+&lt;li&gt;Prepayment risk is taken into account in the pricing of bonds.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The answer 3 statement “Investors usually call their bonds when interest rates rises above current bond rates” is not correct for Callable Bonds. Instead, Callable Bonds give issuers the right to call or force the holder to sell the bond back prior to maturity, usually when interest rates fall below the current bond rates. Prepayment risk involves the possibility of a bond being paid back prior to maturity. Prepayment risk is usually taken into account when pricing bonds. Thus, statements 1 and 4 are correct while statement 2 is correct for callable bonds.&lt;/p&gt;
+&lt;h3 id=&#34;Which-of-the-following-is-not-correct-regarding-Interest-Rate-Risk&#34;&gt;&lt;a href=&#34;#Which-of-the-following-is-not-correct-regarding-Interest-Rate-Risk&#34; class=&#34;headerlink&#34; title=&#34;Which of the following is not correct regarding Interest Rate Risk?&#34;&gt;&lt;/a&gt;Which of the following is not correct regarding Interest Rate Risk?&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Changes in interest rates during the term of a bond may affect the market value of the bond prior to call or the maturity date.&lt;/li&gt;
+&lt;li&gt;Interest rate risk takes into account the eventuality that the issuer is not able to pay the coupon interest rate as defined in the prospectus.&lt;/li&gt;
+&lt;li&gt;There is generally an inverse relationship in between market interest rates and current bond prices.&lt;/li&gt;
+&lt;li&gt;As interest rates in the market increase, the market value (price) of existing bonds will tend to decrease.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The statement “Interest rate risk takes into account the eventuality that the issuer is not able to pay the coupon interest rate as defined in the prospectus” is not correct for Interest Rate Risk. The possibility of the issuer not being able to pay the coupon rate is considered under Default Risk instead of Interest Rate Risk. Interest Rate Risk refers to the possibility that changes in interest rates during the term of a bond may affect the market value of the bond prior to call or the maturity date. Generally, there is an inverse relationship between market interest rates and current bond prices, meaning that as interest rates increase, the market value (price) of existing bonds will tend to decrease. Thus, statements 1, 3, and 4 are correct while statement 2 is incorrect. &lt;/p&gt;
+&lt;h3 id=&#34;Which-of-the-following-is-correct-regarding-Inflation-Risk&#34;&gt;&lt;a href=&#34;#Which-of-the-following-is-correct-regarding-Inflation-Risk&#34; class=&#34;headerlink&#34; title=&#34;Which of the following is correct regarding Inflation Risk?&#34;&gt;&lt;/a&gt;Which of the following is correct regarding Inflation Risk?&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Inflation risk is the risk that the rate of the yield to call or maturity of the bond will not provide a positive return over the rate of inflation for the period of the investment.&lt;/li&gt;
+&lt;li&gt;Inflation risk is the risk that the bond issuer is able to pay back to the investor only part of the face value of the bond at maturity.&lt;/li&gt;
+&lt;li&gt;Inflation risk is the risk that the bond issuer is not able to pay to the investor the bond coupons in a timely fashion.&lt;/li&gt;
+&lt;li&gt;As the inflation rate rises, the market price of existing bonds tends to increase.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The correct answer is 1: Inflation risk is the risk that the rate of the yield to call or maturity of the bond will not provide a positive return over the rate of inflation for the period of the investment.&lt;/p&gt;
+&lt;p&gt;Option 2 describes credit risk, which is the risk that the bond issuer may default on payments.&lt;/p&gt;
+&lt;p&gt;Option 3 describes liquidity risk, which is the risk that the investor may not be able to sell the bond easily in the market or receive the coupon payments in a timely manner.&lt;/p&gt;
+&lt;p&gt;Option 4 is incorrect. As the inflation rate rises, the market price of existing bonds tends to decrease, because investors demand a higher yield to compensate for the loss of purchasing power caused by inflation.&lt;/p&gt;
+</content>
+        <category term="Ireland" />
+        <category term="IB" />
+        <category term="Bonds" />
+        <updated>2023-04-01T03:36:09.000Z</updated>
+    </entry>
+</feed>
