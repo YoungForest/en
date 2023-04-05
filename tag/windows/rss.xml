@@ -1,24 +1,29 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://youngforest.github.io/en</id>
-    <title>YoungForest&#39;s blog • Posts by &#34;tech sharing&#34; category</title>
-    <link href="https://youngforest.github.io/en" />
-    <updated>2022-12-17T14:28:25.000Z</updated>
-    <category term="Hennge" />
-    <category term="Ireland" />
-    <category term="IB" />
-    <category term="Bonds" />
-    <category term="Competitive Programming" />
-    <category term="Blog" />
-    <category term="Windows" />
-    <category term="C++" />
-    <category term="hash" />
-    <category term="unordered_map" />
-    <entry>
-        <id>https://youngforest.github.io/en/2022/12/17/Windows-Dev-Improvement/</id>
-        <title>Windows Development Environment improvement tips From a Microsoft Employee</title>
-        <link rel="alternate" href="https://youngforest.github.io/en/2022/12/17/Windows-Dev-Improvement/"/>
-        <content type="html">&lt;h2 id=&#34;Introduction&#34;&gt;&lt;a href=&#34;#Introduction&#34; class=&#34;headerlink&#34; title=&#34;Introduction&#34;&gt;&lt;/a&gt;Introduction&lt;/h2&gt;&lt;p&gt;As a former Mac user, transitioning to Windows 11 was initially challenging for me. I found myself missing the ease of use and convenience of MacOS, and I struggled to adapt to the different development environment. However, with some effort and exploration, I discovered some tools and techniques that have helped me improve my experience as a developer in Windows. I know someone has to use Windows as his dev machine, like Microsoft employees. In this article, I want to share my experience and offer some tips and resources to help you enhance your Windows development environment, specifically with regards to shell improvements.&lt;/p&gt;
+<rss version="2.0">
+    <channel>
+        <title>YoungForest&#39;s blog • Posts by &#34;windows&#34; tag</title>
+        <link>https://youngforest.github.io/en</link>
+        <description>A programmer in Amazon Beijing, China</description>
+        <language>en,default</language>
+        <pubDate>Sat, 17 Dec 2022 22:28:25 +0800</pubDate>
+        <lastBuildDate>Sat, 17 Dec 2022 22:28:25 +0800</lastBuildDate>
+        <category>Hennge</category>
+        <category>Ireland</category>
+        <category>IB</category>
+        <category>Bonds</category>
+        <category>Competitive Programming</category>
+        <category>Blog</category>
+        <category>Windows</category>
+        <category>C++</category>
+        <category>hash</category>
+        <category>unordered_map</category>
+        <item>
+            <guid isPermalink="true">https://youngforest.github.io/en/2022/12/17/Windows-Dev-Improvement/</guid>
+            <title>Windows Development Environment improvement tips From a Microsoft Employee</title>
+            <link>https://youngforest.github.io/en/2022/12/17/Windows-Dev-Improvement/</link>
+            <category>Windows</category>
+            <pubDate>Sat, 17 Dec 2022 22:28:25 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;Introduction&#34;&gt;&lt;a href=&#34;#Introduction&#34; class=&#34;headerlink&#34; title=&#34;Introduction&#34;&gt;&lt;/a&gt;Introduction&lt;/h2&gt;&lt;p&gt;As a former Mac user, transitioning to Windows 11 was initially challenging for me. I found myself missing the ease of use and convenience of MacOS, and I struggled to adapt to the different development environment. However, with some effort and exploration, I discovered some tools and techniques that have helped me improve my experience as a developer in Windows. I know someone has to use Windows as his dev machine, like Microsoft employees. In this article, I want to share my experience and offer some tips and resources to help you enhance your Windows development environment, specifically with regards to shell improvements.&lt;/p&gt;
 &lt;h2 id=&#34;Clink&#34;&gt;&lt;a href=&#34;#Clink&#34; class=&#34;headerlink&#34; title=&#34;Clink&#34;&gt;&lt;/a&gt;Clink&lt;/h2&gt;&lt;p&gt;Clink is a powerful tool that enhances the functionality of the Windows command prompt. It provides several features that can help you be more productive and efficient when working with the command line.&lt;/p&gt;
 &lt;h3 id=&#34;How-to-install-and-set-up-Clink&#34;&gt;&lt;a href=&#34;#How-to-install-and-set-up-Clink&#34; class=&#34;headerlink&#34; title=&#34;How to install and set up Clink&#34;&gt;&lt;/a&gt;How to install and set up Clink&lt;/h3&gt;&lt;h3 id=&#34;How-to-install-and-set-up-Clink-1&#34;&gt;&lt;a href=&#34;#How-to-install-and-set-up-Clink-1&#34; class=&#34;headerlink&#34; title=&#34;How to install and set up Clink&#34;&gt;&lt;/a&gt;How to install and set up Clink&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;Download the Clink installer from the &lt;a href=&#34;https://mridgers.github.io/clink/&#34;&gt;official website&lt;/a&gt;.&lt;/li&gt;
@@ -190,39 +195,7 @@
 &lt;li&gt;&lt;a href=&#34;https://ohmyposh.dev/docs/installation/prompt&#34;&gt;https://ohmyposh.dev/docs/installation/prompt&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://learn.microsoft.com/en-us/windows/package-manager/winget/&#34;&gt;https://learn.microsoft.com/en-us/windows/package-manager/winget/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content>
-        <category term="Windows" />
-        <updated>2022-12-17T14:28:25.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://youngforest.github.io/en/2021/12/18/Migrate-from-Travis-CI-to-Github-Action/</id>
-        <title>Migrate from Travis CI to Github Action</title>
-        <link rel="alternate" href="https://youngforest.github.io/en/2021/12/18/Migrate-from-Travis-CI-to-Github-Action/"/>
-        <content type="html">&lt;p&gt;Two months ago, I configured Travis CI to automatically deploy my blog in&lt;br&gt;&lt;a href=&#34;https://youngforest.github.io/en/2021/10/09/Travis-CI-Hexo-Automatically-Deploy/&#34;&gt;Travis CI Hexo Automatically Deploy&lt;/a&gt;.&lt;br&gt;However, I found it do not work this month. Unfortunately, Travis do not support free build for public repos now. I have to migrate to Github Action in order to auto CD.&lt;/p&gt;
-&lt;p&gt;I followed &lt;a href=&#34;https://sanonz.github.io/2020/deploy-a-hexo-blog-from-github-actions/&#34;&gt;this post&lt;/a&gt; to do that. Some changes should be applied in &lt;code&gt;deploy.yml&lt;/code&gt; file, especially &lt;strong&gt;theme&lt;/strong&gt;.&lt;br&gt;For example, &lt;a href=&#34;https://github.com/YoungForest/Hexo/blob/master/.github/workflows/deploy.yml&#34;&gt;my Chinese blog &lt;code&gt;deploy.yml&lt;/code&gt;&lt;/a&gt; and &lt;a href=&#34;https://github.com/YoungForest/en/blob/master/.github/workflows/deploy.yml&#34;&gt;my English blog &lt;code&gt;deploy.yml&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Close auto build in &lt;a href=&#34;https://app.travis-ci.com/&#34;&gt;Travis CI Dashboard&lt;/a&gt;: Your repos -&amp;gt; Setting -&amp;gt; General -&amp;gt; uncheck &lt;strong&gt;Build pushed branches&lt;/strong&gt; and &lt;strong&gt;Build pushed pull requests&lt;/strong&gt;.&lt;/p&gt;
-</content>
-        <category term="Blog" />
-        <updated>2021-12-18T02:47:17.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://youngforest.github.io/en/2021/10/09/Travis-CI-Hexo-Automatically-Deploy/</id>
-        <title>Travis CI + Hexo Automatically Deploy</title>
-        <link rel="alternate" href="https://youngforest.github.io/en/2021/10/09/Travis-CI-Hexo-Automatically-Deploy/"/>
-        <content type="html">&lt;p&gt;&lt;a href=&#34;https://hexo.io/docs/&#34;&gt;Hexo&lt;/a&gt; is a powerful blog engine. It is a good choice for a personal blog. I have used it for 5 years. Recently, I setup &lt;a href=&#34;https://youngforest.github.io/en&#34;&gt;my English site&lt;/a&gt; besides &lt;a href=&#34;https://youngforest.github.io/&#34;&gt;the original Chinese site&lt;/a&gt;. With 2 sites, it is more work to write, git and deploy.&lt;br&gt;Fortunately, there is a better solution for this problem. We could use &lt;a href=&#34;https://travis-ci.com/&#34;&gt;Travis CI&lt;/a&gt; to automatically deploy the blog. The remain work is writing posts and git commit and push them. The CI would help us to deploy sites automatically.&lt;/p&gt;
-&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-
-&lt;h2 id=&#34;How-to-configure-that&#34;&gt;&lt;a href=&#34;#How-to-configure-that&#34; class=&#34;headerlink&#34; title=&#34;How to configure that?&#34;&gt;&lt;/a&gt;How to configure that?&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://education.travis-ci.com/&#34;&gt;Sign up for Travis CI using Github account&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;With &lt;a href=&#34;https://education.github.com/pack/offers&#34;&gt;Github education package&lt;/a&gt;, you could have the benefit to private builds for free while you’re a student. But it is only an optional choice, you can still use Travis CI without it.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://app.travis-ci.com/account/repositories&#34;&gt;Give Travis CI the permission to access your Github repositories&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;In &lt;a href=&#34;https://github.com/settings/tokens&#34;&gt;Personal access tokens&lt;/a&gt;, generate a token for Travis CI with &lt;code&gt;repo&lt;/code&gt; scopes. Copy the token.&lt;/p&gt;
-&lt;p&gt;In &lt;a href=&#34;https://app.travis-ci.com/account/repositories&#34;&gt;Travis CI repositories page&lt;/a&gt;, select your &lt;strong&gt;Hexo&lt;/strong&gt; repo and click on &lt;strong&gt;Settings&lt;/strong&gt;. In &lt;strong&gt;Environment Variables&lt;/strong&gt; section, &lt;strong&gt;Add&lt;/strong&gt; a new variable with &lt;strong&gt;NAME&lt;/strong&gt; is &lt;code&gt;GH_TOKEN&lt;/code&gt;, &lt;strong&gt;VALUE&lt;/strong&gt; is the token you copied in the last step.&lt;/p&gt;
-&lt;p&gt;Create a file named &lt;code&gt;.travis.yml&lt;/code&gt; in your Hexo repo. Refer to following content and change the value as your situation. I added some comments for help.&lt;/p&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;os: linux&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;language: node_js &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;node_js:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  - 12  # using nodejs LTS v12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;branches:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  only:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    - master # only monitor master branch&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;cache:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  directories:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    - node_modules # cache node_modules to speed up build process&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;before_script: ## According to your theme and custom configuration, update the script&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  - npm install -g hexo-cli # install Hexo in CI environment&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  - cd themes &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  - git clone https://github.com/next-theme/hexo-theme-next.git next # We do not commit the themes/next folder. Therefore, pull it every time.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  - cd next&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  - npm install # install next dependencies&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  - cd ../.. # return the root folder&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  - npm install # install the dependencies&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;script: &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  - hexo generate # generate static files&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deploy: # reference: https://docs.travis-ci.com/user/deployment/pages/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  provider: pages&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  skip_cleanup: true # not clean after build&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  token: $GH_TOKEN # the variable you set in last step&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  keep_history: true&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  # fqdn: blog.ne0ng.page # custom domain，delete this field if using username.github.io&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  repo: YoungForest/youngforest.github.io # the repo you want to deploy. If this field is not set manually, the default value is current repo. Sometimes, the site repo is the same with the source files but in different branches.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  on:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    branch: master # sources files is in master branch&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  local_dir: public &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  target_branch: master # the branch of generated files. If using `username.github.io` repo, it has to be master. Otherwise, change it to your github pages branch.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;Once you push the &lt;code&gt;.travis.yml&lt;/code&gt; file to your repo, you can see the build status in &lt;a href=&#34;https://app.travis-ci.com/&#34;&gt;Travis CI&lt;/a&gt;. Once it complete, check your site repo and access your blog to see the update.&lt;/p&gt;
-</content>
-        <category term="Blog" />
-        <updated>2021-10-09T03:03:49.000Z</updated>
-    </entry>
-</feed>
+ ]]></description>
+        </item>
+    </channel>
+</rss>

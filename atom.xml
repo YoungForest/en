@@ -10,6 +10,7 @@
     <category term="Bonds" />
     <category term="Competitive Programming" />
     <category term="Blog" />
+    <category term="Windows" />
     <category term="C++" />
     <category term="hash" />
     <category term="unordered_map" />
@@ -155,6 +156,186 @@
         <category term="IB" />
         <category term="Bonds" />
         <updated>2023-04-01T03:36:09.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://youngforest.github.io/en/2022/12/17/Windows-Dev-Improvement/</id>
+        <title>Windows Development Environment improvement tips From a Microsoft Employee</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2022/12/17/Windows-Dev-Improvement/"/>
+        <content type="html">&lt;h2 id=&#34;Introduction&#34;&gt;&lt;a href=&#34;#Introduction&#34; class=&#34;headerlink&#34; title=&#34;Introduction&#34;&gt;&lt;/a&gt;Introduction&lt;/h2&gt;&lt;p&gt;As a former Mac user, transitioning to Windows 11 was initially challenging for me. I found myself missing the ease of use and convenience of MacOS, and I struggled to adapt to the different development environment. However, with some effort and exploration, I discovered some tools and techniques that have helped me improve my experience as a developer in Windows. I know someone has to use Windows as his dev machine, like Microsoft employees. In this article, I want to share my experience and offer some tips and resources to help you enhance your Windows development environment, specifically with regards to shell improvements.&lt;/p&gt;
+&lt;h2 id=&#34;Clink&#34;&gt;&lt;a href=&#34;#Clink&#34; class=&#34;headerlink&#34; title=&#34;Clink&#34;&gt;&lt;/a&gt;Clink&lt;/h2&gt;&lt;p&gt;Clink is a powerful tool that enhances the functionality of the Windows command prompt. It provides several features that can help you be more productive and efficient when working with the command line.&lt;/p&gt;
+&lt;h3 id=&#34;How-to-install-and-set-up-Clink&#34;&gt;&lt;a href=&#34;#How-to-install-and-set-up-Clink&#34; class=&#34;headerlink&#34; title=&#34;How to install and set up Clink&#34;&gt;&lt;/a&gt;How to install and set up Clink&lt;/h3&gt;&lt;h3 id=&#34;How-to-install-and-set-up-Clink-1&#34;&gt;&lt;a href=&#34;#How-to-install-and-set-up-Clink-1&#34; class=&#34;headerlink&#34; title=&#34;How to install and set up Clink&#34;&gt;&lt;/a&gt;How to install and set up Clink&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Download the Clink installer from the &lt;a href=&#34;https://mridgers.github.io/clink/&#34;&gt;official website&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Run the installer and follow the on-screen instructions to install Clink on your system.&lt;/li&gt;
+&lt;li&gt;Once the installation is complete, open the Windows command prompt.&lt;/li&gt;
+&lt;li&gt;Type &lt;code&gt;clink install&lt;/code&gt; and press Enter to enable Clink in the command prompt. This will add Clink to your PATH environment variable and configure some default settings.&lt;/li&gt;
+&lt;li&gt;Restart your command prompt to apply the changes.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You can customize Clink further by editing the configuration file &lt;code&gt;clink_inputrc.ini&lt;/code&gt;, which is located in your user profile directory (e.g., &lt;code&gt;C:\Users\username&lt;/code&gt;). The file contains various options that you can adjust to customize the behavior of Clink. For example, you can change the color scheme, add new keyboard shortcuts, and define aliases for commonly used commands.&lt;/p&gt;
+&lt;p&gt;Here’s an example of how to modify the color scheme in &lt;code&gt;clink_inputrc.ini&lt;/code&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open &lt;code&gt;clink_inputrc.ini&lt;/code&gt; in a text editor.&lt;/li&gt;
+&lt;li&gt;Locate the &lt;code&gt;[colors]&lt;/code&gt; section.&lt;/li&gt;
+&lt;li&gt;Change the values of the color codes to your desired values. For example, to change the foreground color of directory listings to yellow, you can set &lt;code&gt;ls+di=33;1&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You can find more information about customizing Clink in &lt;a href=&#34;https://mridgers.github.io/clink/&#34;&gt;the official documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;Examples-of-using-Clink&#34;&gt;&lt;a href=&#34;#Examples-of-using-Clink&#34; class=&#34;headerlink&#34; title=&#34;Examples of using Clink&#34;&gt;&lt;/a&gt;Examples of using Clink&lt;/h3&gt;&lt;p&gt;Clink provides many useful features that can improve your command line experience on Windows. Here are some examples:&lt;/p&gt;
+&lt;h4 id=&#34;1-Tab-completion&#34;&gt;&lt;a href=&#34;#1-Tab-completion&#34; class=&#34;headerlink&#34; title=&#34;1. Tab completion&#34;&gt;&lt;/a&gt;1. Tab completion&lt;/h4&gt;&lt;p&gt;Clink offers tab completion for commands, options, and file paths. To use tab completion, simply type the first few letters of a command or file path, then press the &lt;code&gt;Tab&lt;/code&gt; key to complete it. If there are multiple options or file paths that match your input, you can press &lt;code&gt;Tab&lt;/code&gt; repeatedly to cycle through them.&lt;/p&gt;
+&lt;h4 id=&#34;2-Aliases&#34;&gt;&lt;a href=&#34;#2-Aliases&#34; class=&#34;headerlink&#34; title=&#34;2. Aliases&#34;&gt;&lt;/a&gt;2. Aliases&lt;/h4&gt;&lt;p&gt;You can define aliases for commonly used commands using Clink’s &lt;code&gt;alias&lt;/code&gt; command. For example, if you frequently use &lt;code&gt;dir /w&lt;/code&gt;, you can create an alias called &lt;code&gt;ls&lt;/code&gt; that maps to this command. To create the alias, type the following command:&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;alias ls=dir /w&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+
+&lt;p&gt;Now, whenever you type &lt;code&gt;ls&lt;/code&gt; in the command prompt, it will be replaced with &lt;code&gt;dir /w&lt;/code&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;3-History-navigation&#34;&gt;&lt;a href=&#34;#3-History-navigation&#34; class=&#34;headerlink&#34; title=&#34;3. History navigation&#34;&gt;&lt;/a&gt;3. History navigation&lt;/h4&gt;&lt;p&gt;Clink allows you to navigate your command history using the up and down arrow keys. This is particularly useful if you need to repeat a command that you typed earlier.&lt;/p&gt;
+&lt;h4 id=&#34;4-Customization&#34;&gt;&lt;a href=&#34;#4-Customization&#34; class=&#34;headerlink&#34; title=&#34;4. Customization&#34;&gt;&lt;/a&gt;4. Customization&lt;/h4&gt;&lt;p&gt;As mentioned earlier, you can customize Clink further by editing the configuration file &lt;code&gt;clink_inputrc.ini&lt;/code&gt;. Here are some examples of customization options:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Change the color scheme of the command prompt.&lt;/li&gt;
+&lt;li&gt;Define keyboard shortcuts for frequently used commands.&lt;/li&gt;
+&lt;li&gt;Set default options for certain commands.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can find more information about these and other customization options in the official Clink documentation.&lt;/p&gt;
+&lt;h4 id=&#34;4-Navigating-directories&#34;&gt;&lt;a href=&#34;#4-Navigating-directories&#34; class=&#34;headerlink&#34; title=&#34;4. Navigating directories&#34;&gt;&lt;/a&gt;4. Navigating directories&lt;/h4&gt;&lt;p&gt;Clink provides several shortcuts for navigating directories. Here are some examples:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;cd..&lt;/code&gt;: This takes you up one directory level.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cd\&lt;/code&gt;: This takes you to the root directory.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cd.&lt;/code&gt;: This changes the current directory to the current directory (in other words, it does nothing).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cd~&lt;/code&gt;: This takes you to your home directory.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;5-Copying-and-moving-files&#34;&gt;&lt;a href=&#34;#5-Copying-and-moving-files&#34; class=&#34;headerlink&#34; title=&#34;5. Copying and moving files&#34;&gt;&lt;/a&gt;5. Copying and moving files&lt;/h4&gt;&lt;p&gt;Clink provides aliases for commonly used file management commands. Here are some examples:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;cp&lt;/code&gt;: This is an alias for the &lt;code&gt;copy&lt;/code&gt; command. For example, to copy a file called &lt;code&gt;example.txt&lt;/code&gt; from the current directory to a directory called &lt;code&gt;backup&lt;/code&gt;, you can use the following command: &lt;code&gt;cp example.txt backup&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mv&lt;/code&gt;: This is an alias for the &lt;code&gt;move&lt;/code&gt; command. For example, to move a file called &lt;code&gt;example.txt&lt;/code&gt; from the current directory to a directory called &lt;code&gt;archive&lt;/code&gt;, you can use the following command: &lt;code&gt;mv example.txt archive&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;6-Managing-processes&#34;&gt;&lt;a href=&#34;#6-Managing-processes&#34; class=&#34;headerlink&#34; title=&#34;6. Managing processes&#34;&gt;&lt;/a&gt;6. Managing processes&lt;/h4&gt;&lt;p&gt;Clink provides several commands for managing processes. Here are some examples:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;tasklist&lt;/code&gt;: This displays a list of all running processes, along with their process ID (PID) and other information.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;taskkill&lt;/code&gt;: This terminates a process based on its PID or image name. For example, to terminate a process with the image name &lt;code&gt;notepad.exe&lt;/code&gt;, you can use the following command: &lt;code&gt;taskkill /im notepad.exe&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;By taking advantage of Clink’s features and aliases, you can navigate directories, copy and move files, and manage processes more easily and quickly. &lt;/p&gt;
+&lt;p&gt;Overall, Clink is a powerful tool that can greatly enhance your command line experience on Windows. By using its features and customizing it to your needs, you can work more efficiently and productively.&lt;/p&gt;
+&lt;h3 id=&#34;Powershell&#34;&gt;&lt;a href=&#34;#Powershell&#34; class=&#34;headerlink&#34; title=&#34;Powershell&#34;&gt;&lt;/a&gt;Powershell&lt;/h3&gt;&lt;p&gt;Powershell is a more advanced command-line interface for Windows that provides a wide range of features and capabilities. It can help you perform complex tasks more efficiently and effectively.&lt;/p&gt;
+&lt;h3 id=&#34;How-to-install-and-set-up-Powershell&#34;&gt;&lt;a href=&#34;#How-to-install-and-set-up-Powershell&#34; class=&#34;headerlink&#34; title=&#34;How to install and set up Powershell&#34;&gt;&lt;/a&gt;How to install and set up Powershell&lt;/h3&gt;&lt;p&gt;PowerShell is a powerful command-line interface for Windows that provides a more powerful and flexible environment than the traditional Command Prompt. Here’s how to install and set up PowerShell:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Check your Windows version: PowerShell is included with Windows 7 SP1 and later versions. If you have an earlier version of Windows, you’ll need to install PowerShell Core.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Install PowerShell: If you don’t already have PowerShell installed, you can download it from the Microsoft website. Go to the &lt;a href=&#34;https://github.com/PowerShell/PowerShell/releases&#34;&gt;PowerShell downloads page&lt;/a&gt; and download the version that matches your operating system.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Open PowerShell: Once you have PowerShell installed, you can open it by typing “powershell” into the Start menu or by pressing Windows key + X and selecting “Windows PowerShell” from the menu.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Customize your PowerShell profile: You can customize your PowerShell profile to add aliases, functions, and other customizations. To do this, open PowerShell and type &lt;code&gt;notepad $PROFILE&lt;/code&gt; to open your profile file in Notepad. You can then add your customizations to this file and save it.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Install modules: PowerShell has a large library of modules that can be installed to add additional functionality. To install a module, use the &lt;code&gt;Install-Module&lt;/code&gt; command. For example, to install the Azure PowerShell module, you can use the following command: &lt;code&gt;Install-Module -Name Az -AllowClobber&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;By installing and customizing PowerShell, you can have a more powerful and flexible command-line environment on Windows.&lt;/p&gt;
+&lt;h3 id=&#34;Examples-of-using-Powershell&#34;&gt;&lt;a href=&#34;#Examples-of-using-Powershell&#34; class=&#34;headerlink&#34; title=&#34;Examples of using Powershell&#34;&gt;&lt;/a&gt;Examples of using Powershell&lt;/h3&gt;&lt;h3 id=&#34;Examples-of-how-Powershell-can-help-with-system-management-tasks&#34;&gt;&lt;a href=&#34;#Examples-of-how-Powershell-can-help-with-system-management-tasks&#34; class=&#34;headerlink&#34; title=&#34;Examples of how Powershell can help with system management tasks&#34;&gt;&lt;/a&gt;Examples of how Powershell can help with system management tasks&lt;/h3&gt;&lt;p&gt;PowerShell is a powerful tool for managing Windows systems. Here are a few examples of how PowerShell can help with system management tasks:&lt;/p&gt;
+&lt;h4 id=&#34;Managing-Windows-services&#34;&gt;&lt;a href=&#34;#Managing-Windows-services&#34; class=&#34;headerlink&#34; title=&#34;Managing Windows services&#34;&gt;&lt;/a&gt;Managing Windows services&lt;/h4&gt;&lt;p&gt;Powershell can be used to manage Windows services. For example, to start the Print Spooler service, you can use the following command:&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;Start-Service -Name Spooler&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;To stop the service, you can use the following command:&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;Stop-Service -Name Spooler&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+
+&lt;h4 id=&#34;Configuring-network-settings&#34;&gt;&lt;a href=&#34;#Configuring-network-settings&#34; class=&#34;headerlink&#34; title=&#34;Configuring network settings&#34;&gt;&lt;/a&gt;Configuring network settings&lt;/h4&gt;&lt;p&gt;Powershell can also be used to configure network settings. For example, to set the IP address of a network adapter, you can use the following command:&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;New-NetIPAddress -InterfaceAlias &amp;quot;Ethernet&amp;quot; -IPAddress 192.168.1.100 -PrefixLength 24 -DefaultGateway 192.168.1.1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+
+&lt;p&gt;This command sets the IP address of the “Ethernet” adapter to 192.168.1.100 with a subnet mask of 255.255.255.0 and a default gateway of 192.168.1.1.&lt;/p&gt;
+&lt;h4 id=&#34;Performing-system-maintenance-tasks&#34;&gt;&lt;a href=&#34;#Performing-system-maintenance-tasks&#34; class=&#34;headerlink&#34; title=&#34;Performing system maintenance tasks&#34;&gt;&lt;/a&gt;Performing system maintenance tasks&lt;/h4&gt;&lt;p&gt;Powershell can also be used to perform various system maintenance tasks. For example, to check your system for disk errors, you can use the following command:&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;Get-Volume | Get-Partition | Get-Disk | Repair-Volume -SpotFix&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;This command checks all volumes, partitions, and disks for errors and attempts to fix them.&lt;/p&gt;
+&lt;p&gt;These are just a few examples of how PowerShell can be used to manage and maintain Windows systems. With PowerShell, the possibilities are endless!&lt;/p&gt;
+&lt;h2 id=&#34;Winget&#34;&gt;&lt;a href=&#34;#Winget&#34; class=&#34;headerlink&#34; title=&#34;Winget&#34;&gt;&lt;/a&gt;Winget&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://learn.microsoft.com/en-us/windows/package-manager/winget/&#34;&gt;Winget&lt;/a&gt; is a package manager for Windows that allows you to easily install, manage, and update applications from the command line. It is similar to package managers like Homebrew on MacOS or apt on Ubuntu, and provides a simple and convenient way to manage software on your Windows system. With Winget, you can quickly install and update applications without having to search for and download installation files manually, making it a valuable tool for developers and power users on Windows.&lt;/p&gt;
+&lt;h3 id=&#34;Examples-of-using-Winget&#34;&gt;&lt;a href=&#34;#Examples-of-using-Winget&#34; class=&#34;headerlink&#34; title=&#34;Examples of using Winget&#34;&gt;&lt;/a&gt;Examples of using Winget&lt;/h3&gt;&lt;p&gt;Winget makes it easy to install applications from the command line. Here are a few examples:&lt;/p&gt;
+&lt;h4 id=&#34;Install-an-application&#34;&gt;&lt;a href=&#34;#Install-an-application&#34; class=&#34;headerlink&#34; title=&#34;Install an application&#34;&gt;&lt;/a&gt;Install an application&lt;/h4&gt;&lt;p&gt;To install an application, simply enter the following command:&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;winget install &amp;lt;application&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;For example, to install Visual Studio Code, you would enter:&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;winget install Microsoft.VisualStudioCode&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h4 id=&#34;List-installed-applications&#34;&gt;&lt;a href=&#34;#List-installed-applications&#34; class=&#34;headerlink&#34; title=&#34;List installed applications&#34;&gt;&lt;/a&gt;List installed applications&lt;/h4&gt;&lt;p&gt;To list the applications that are currently installed on your system, you can use the following command:&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;winget list&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h4 id=&#34;Search-for-an-application&#34;&gt;&lt;a href=&#34;#Search-for-an-application&#34; class=&#34;headerlink&#34; title=&#34;Search for an application&#34;&gt;&lt;/a&gt;Search for an application&lt;/h4&gt;&lt;p&gt;To search for an application, you can use the following command:&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;winget search &amp;lt;application&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;For example, to search for Firefox, you would enter:&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;winget search Firefox&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h4 id=&#34;Uninstall-an-application&#34;&gt;&lt;a href=&#34;#Uninstall-an-application&#34; class=&#34;headerlink&#34; title=&#34;Uninstall an application&#34;&gt;&lt;/a&gt;Uninstall an application&lt;/h4&gt;&lt;p&gt;To uninstall an application that was installed using Winget, you can use the following command:&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;winget uninstall &amp;lt;application&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;For example, to uninstall Visual Studio Code, you would enter:&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;winget uninstall Microsoft.VisualStudioCode&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;These are just a few examples of how you can use Winget to install and manage applications on your Windows system. With Winget, you can easily install and update applications from the command line, making it a valuable tool for developers and power users alike.&lt;/p&gt;
+&lt;h3 id=&#34;OhMyPosh&#34;&gt;&lt;a href=&#34;#OhMyPosh&#34; class=&#34;headerlink&#34; title=&#34;OhMyPosh&#34;&gt;&lt;/a&gt;OhMyPosh&lt;/h3&gt;&lt;p&gt;OhMyPosh is a tool that lets you customize your Powershell prompt. It allows you to create custom themes that can make your command-line interface more visually appealing and easier to use.&lt;/p&gt;
+&lt;h4 id=&#34;Installing-OhMyPosh&#34;&gt;&lt;a href=&#34;#Installing-OhMyPosh&#34; class=&#34;headerlink&#34; title=&#34;Installing OhMyPosh&#34;&gt;&lt;/a&gt;Installing OhMyPosh&lt;/h4&gt;&lt;p&gt;Open the Windows Terminal as an administrator.&lt;/p&gt;
+&lt;p&gt;Install OhMyPosh by running the following command:&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;Install-Module oh-my-posh -Scope CurrentUser&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;This command installs OhMyPosh as a PowerShell module in your current user scope.&lt;/p&gt;
+&lt;p&gt;Install the required font by running the following command:&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;Set-ExecutionPolicy Bypass -Scope Process -Force; iwr -useb https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zip -OutFile CascadiaCode.zip; Expand-Archive CascadiaCode.zip -DestinationPath $env:SystemRoot\Fonts&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;This command installs the Cascadia Code Nerd Font, which is required for OhMyPosh to display custom prompt themes.&lt;/p&gt;
+&lt;p&gt;Once the font is installed, you can set up a custom prompt theme by running the following command:&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;Set-PoshPrompt -Theme paradox&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;This command sets the prompt theme to “paradox,” which is a popular OhMyPosh theme. You can choose a different theme by replacing “paradox” with the name of your desired theme.&lt;/p&gt;
+&lt;p&gt;Finally, to make your custom prompt theme persist across PowerShell sessions, add the following line to your PowerShell profile:&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;Import-Module oh-my-posh; Set-PoshPrompt -Theme paradox&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;This command imports the OhMyPosh module and sets the prompt theme to “paradox” every time you start a new PowerShell session.&lt;/p&gt;
+&lt;h3 id=&#34;Using-OhMyPosh&#34;&gt;&lt;a href=&#34;#Using-OhMyPosh&#34; class=&#34;headerlink&#34; title=&#34;Using OhMyPosh&#34;&gt;&lt;/a&gt;Using OhMyPosh&lt;/h3&gt;&lt;p&gt;Once OhMyPosh is installed and set up, you can start using it to customize your PowerShell prompt. Here are a few examples:&lt;/p&gt;
+&lt;h4 id=&#34;List-available-themes&#34;&gt;&lt;a href=&#34;#List-available-themes&#34; class=&#34;headerlink&#34; title=&#34;List available themes&#34;&gt;&lt;/a&gt;List available themes&lt;/h4&gt;&lt;p&gt;To see a list of available prompt themes, run the following command:&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;Get-PoshThemes&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h4 id=&#34;Customize-your-prompt&#34;&gt;&lt;a href=&#34;#Customize-your-prompt&#34; class=&#34;headerlink&#34; title=&#34;Customize your prompt&#34;&gt;&lt;/a&gt;Customize your prompt&lt;/h4&gt;&lt;p&gt;To customize your prompt with OhMyPosh, you can edit the theme file for your chosen prompt. For example, if you’re using the “paradox” theme, you can edit the “paradox.omp.json” file to change the colors and formatting of your prompt.&lt;/p&gt;
+&lt;h4 id=&#34;Create-your-own-theme&#34;&gt;&lt;a href=&#34;#Create-your-own-theme&#34; class=&#34;headerlink&#34; title=&#34;Create your own theme&#34;&gt;&lt;/a&gt;Create your own theme&lt;/h4&gt;&lt;p&gt;If you want to create your own custom prompt theme, you can use the OhMyPosh theme editor. To open the editor, run the following command:&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;Invoke-PoshEditor&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;This command opens a web-based editor where you can create and preview your own custom prompt theme.&lt;/p&gt;
+&lt;p&gt;With OhMyPosh, you can create custom and visually appealing prompt themes for your PowerShell sessions, making your development experience on Windows more enjoyable and efficient.&lt;/p&gt;
+&lt;h2 id=&#34;Autojump&#34;&gt;&lt;a href=&#34;#Autojump&#34; class=&#34;headerlink&#34; title=&#34;Autojump&#34;&gt;&lt;/a&gt;Autojump&lt;/h2&gt;&lt;p&gt;Autojump is a tool that helps you navigate your file system more efficiently. It remembers the directories you visit and lets you quickly jump back to them using a short command.&lt;/p&gt;
+&lt;h3 id=&#34;Installing-Autojump&#34;&gt;&lt;a href=&#34;#Installing-Autojump&#34; class=&#34;headerlink&#34; title=&#34;Installing Autojump&#34;&gt;&lt;/a&gt;Installing Autojump&lt;/h3&gt;&lt;p&gt;Open a PowerShell terminal as an administrator.&lt;/p&gt;
+&lt;p&gt;Install Autojump by running the following command:&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;winget install autojump&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Add the following line to your PowerShell profile to enable Autojump:&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;. (aj --powershell)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;You can find your PowerShell profile by running the following command:&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$PROFILE&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Restart your PowerShell terminal to apply the changes.&lt;/p&gt;
+&lt;h3 id=&#34;Using-Autojump&#34;&gt;&lt;a href=&#34;#Using-Autojump&#34; class=&#34;headerlink&#34; title=&#34;Using Autojump&#34;&gt;&lt;/a&gt;Using Autojump&lt;/h3&gt;&lt;p&gt;Autojump is a command-line tool that allows you to navigate your file system more efficiently and quickly by remembering the directories you’ve visited and providing shortcuts to them.&lt;/p&gt;
+&lt;h4 id=&#34;Jump-to-a-directory&#34;&gt;&lt;a href=&#34;#Jump-to-a-directory&#34; class=&#34;headerlink&#34; title=&#34;Jump to a directory&#34;&gt;&lt;/a&gt;Jump to a directory&lt;/h4&gt;&lt;p&gt;To jump to a directory that you’ve visited before, simply type j followed by a unique part of the directory name. For example:&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;j documents&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;This will jump to the directory that contains the word “documents” in its name.&lt;/p&gt;
+&lt;h4 id=&#34;Add-a-directory&#34;&gt;&lt;a href=&#34;#Add-a-directory&#34; class=&#34;headerlink&#34; title=&#34;Add a directory&#34;&gt;&lt;/a&gt;Add a directory&lt;/h4&gt;&lt;p&gt;If you want to add a directory to Autojump’s list of remembered directories, simply navigate to that directory and type:&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;jo &amp;lt;name&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Where &lt;name&gt; is a unique name that you want to associate with that directory. For example:&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;jo project&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;This will add the current directory to Autojump’s list of remembered directories and associate it with the name “project”.&lt;/p&gt;
+&lt;h4 id=&#34;List-directories&#34;&gt;&lt;a href=&#34;#List-directories&#34; class=&#34;headerlink&#34; title=&#34;List directories&#34;&gt;&lt;/a&gt;List directories&lt;/h4&gt;&lt;p&gt;To see a list of the directories that Autojump remembers, type:&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;j --stat&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;This will display a list of the directories along with the number of times you’ve visited each one.&lt;/p&gt;
+&lt;p&gt;With Autojump, you can navigate your file system more efficiently and quickly, making your development experience on Windows more enjoyable and efficient.&lt;/p&gt;
+&lt;h2 id=&#34;Conclusion&#34;&gt;&lt;a href=&#34;#Conclusion&#34; class=&#34;headerlink&#34; title=&#34;Conclusion&#34;&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;&lt;p&gt;In conclusion, Windows can be a great platform for development if you have the right tools and know how to use them. In this article, we have covered several tools that can help improve your Windows development experience, including Clink, PowerShell, OhMyPosh, Winget, and Autojump.&lt;/p&gt;
+&lt;p&gt;Clink and PowerShell provide a powerful shell experience that is comparable to what you get on other platforms. OhMyPosh allows you to customize your PowerShell prompt and make it more visually appealing. Winget is a package manager that makes it easy to install and manage software on Windows. Autojump provides a quick and efficient way to navigate your file system.&lt;/p&gt;
+&lt;p&gt;By using these tools and tips, you can enhance your development experience on Windows and work more efficiently. With the right setup, Windows can be just as powerful and enjoyable as other platforms for development.&lt;/p&gt;
+&lt;h2 id=&#34;References&#34;&gt;&lt;a href=&#34;#References&#34; class=&#34;headerlink&#34; title=&#34;References&#34;&gt;&lt;/a&gt;References&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://mridgers.github.io/clink/&#34;&gt;https://mridgers.github.io/clink/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/wting/autojump&#34;&gt;https://github.com/wting/autojump&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ohmyposh.dev/docs/installation/prompt&#34;&gt;https://ohmyposh.dev/docs/installation/prompt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://learn.microsoft.com/en-us/windows/package-manager/winget/&#34;&gt;https://learn.microsoft.com/en-us/windows/package-manager/winget/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="Windows" />
+        <updated>2022-12-17T14:28:25.000Z</updated>
     </entry>
     <entry>
         <id>https://youngforest.github.io/en/2022/03/19/Hennge-challenge-3/</id>
