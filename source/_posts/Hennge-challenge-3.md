@@ -19,23 +19,35 @@ Second, create a private github gist with the code.
 Last, post the gist link to the Hennge server.
 
 The code is very simple. I used Python to implement it.
+Don't ignore the instructions in the challenge.
+**Specific rules for Python solution: Do not use any for loop, while loop, or any list / set / dictionary comprehension.**
+
+[What is list/set/dictionary comprehension?](https://pyneng.readthedocs.io/en/latest/book/08_python_basic_examples/x_comprehensions.html)
+It is `[x for x in a_list]` in Python.
+
+We can use `map` and `reduce` in Python to replace the iteration. It is functional programming.
+If you are familiar with some functional programming languages, like Lisp, you could know that there is no loop syntax existing and the recursive function is the same as the iteration.
+
+```python
+
+```python
 
 ```python
 from functools import reduce
 
+def get_non_negative_square_sum_from_input():
+    X = int(input())
+    return reduce(lambda x, y: x + (y * y if y > 0 else 0), map(int, input().split()), 0)
+
 def main():
     N = int(input())
-    ans = []
-    for _ in range(N):
-        X = int(input())
-        ans.append(reduce(lambda x, y: x + (y * y if y > 0 else 0), map(int, input().split()), 0))
-    print(*ans, sep='\n')
+    ans = reduce(lambda x, y: print(get_non_negative_square_sum_from_input()), range(N), [])
 
 if __name__ == "__main__":
     main()
 ```
 
-After struggle with Github two-factor authentication and manual account recovery review, I finally sign in to Github and created [my gist](https://gist.github.com/YoungForest/329c22200e7fad36e6ef984e3afe0325).
+After struggle with Github two-factor authentication and manual account recovery review, I finally sign in to Github and created [my gist](https://gist.github.com/YoungForest/329c22200e7fad36e6ef984e3afe0325), which is secret as required.
 
 I think the hardest part is the authentication POST.
 
@@ -333,3 +345,15 @@ curl -d '{  "github_url": "https://gist.github.com/YoungForest/329c22200e7fad36e
 
 After the congratulations response, I received a link by email to submit my Resume and CV.
 It was my first time to do the challenge in a job application. I had done some homeworks/assignments and OA tests before. This challenge is so different and interesting. Through it, I learned a lot about TOTP and HTTP authentication.
+
+Unfortunately, the final result is not good. I didn't get any interview. I knew a few people who applied **Hennge** too because of this article. No one gets interviews and further progress after this challenge. If you complete the challenge and don't get good response, it's not your fault. Hennge seems just don't hire candidates through the challenge.
+>Thank you for your interest in Back-End Engineer position at HENNGE and for taking the time to complete the test.
+>
+>While we were impressed with your background and experience, the selection process was highly competitive and unfortunately we have decided to move forward with another candidate that better fits our requirements at the moment.
+>
+>Please understand that HENNGE does not provide specific details on the results of the application process.
+>
+>We wish you the best of luck in your future endeavors.
+>
+>Best regards,
+>HENNGE Recruiting Team
