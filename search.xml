@@ -508,13 +508,10 @@
 
 <p>This command opens a web-based editor where you can create and preview your own custom prompt theme.</p>
 <p>With OhMyPosh, you can create custom and visually appealing prompt themes for your PowerShell sessions, making your development experience on Windows more enjoyable and efficient.</p>
-<h2 id="Autojump"><a href="#Autojump" class="headerlink" title="Autojump"></a>Autojump</h2><p>Autojump is a tool that helps you navigate your file system more efficiently. It remembers the directories you visit and lets you quickly jump back to them using a short command.</p>
+<h2 id="Autojump"><a href="#Autojump" class="headerlink" title="Autojump"></a>Autojump</h2><p><a href="https://github.com/wting/autojump">Autojump</a> is a tool that helps you navigate your file system more efficiently. It remembers the directories you visit and lets you quickly jump back to them using a short command.</p>
 <h3 id="Installing-Autojump"><a href="#Installing-Autojump" class="headerlink" title="Installing Autojump"></a>Installing Autojump</h3><p>Open a PowerShell terminal as an administrator.</p>
 <p>Install Autojump by running the following command:</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">winget install autojump</span><br></pre></td></tr></table></figure>
-
-<p>Add the following line to your PowerShell profile to enable Autojump:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">. (aj --powershell)</span><br></pre></td></tr></table></figure>
 
 <p>You can find your PowerShell profile by running the following command:</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$PROFILE</span><br></pre></td></tr></table></figure>
@@ -525,18 +522,12 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">j documents</span><br></pre></td></tr></table></figure>
 
 <p>This will jump to the directory that contains the word “documents” in its name.</p>
-<h4 id="Add-a-directory"><a href="#Add-a-directory" class="headerlink" title="Add a directory"></a>Add a directory</h4><p>If you want to add a directory to Autojump’s list of remembered directories, simply navigate to that directory and type:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">jo &lt;name&gt;</span><br></pre></td></tr></table></figure>
-
-<p>Where <name> is a unique name that you want to associate with that directory. For example:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">jo project</span><br></pre></td></tr></table></figure>
-
-<p>This will add the current directory to Autojump’s list of remembered directories and associate it with the name “project”.</p>
 <h4 id="List-directories"><a href="#List-directories" class="headerlink" title="List directories"></a>List directories</h4><p>To see a list of the directories that Autojump remembers, type:</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">j --stat</span><br></pre></td></tr></table></figure>
 
 <p>This will display a list of the directories along with the number of times you’ve visited each one.</p>
 <p>With Autojump, you can navigate your file system more efficiently and quickly, making your development experience on Windows more enjoyable and efficient.</p>
+<h2 id="Z-lua-a-faster-equivalent-of-autojump"><a href="#Z-lua-a-faster-equivalent-of-autojump" class="headerlink" title="Z.lua, a faster equivalent of autojump"></a>Z.lua, a faster equivalent of autojump</h2><p><a href="https://github.com/skywind3000/z.lua">z.lua</a> is a faster equivalent of autojump. It is written in pure Lua and has no external dependencies. It is also faster than autojump. I use it more on Windows and PowerShell.</p>
 <h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>In conclusion, Windows can be a great platform for development if you have the right tools and know how to use them. In this article, we have covered several tools that can help improve your Windows development experience, including Clink, PowerShell, OhMyPosh, Winget, and Autojump.</p>
 <p>Clink and PowerShell provide a powerful shell experience that is comparable to what you get on other platforms. OhMyPosh allows you to customize your PowerShell prompt and make it more visually appealing. Winget is a package manager that makes it easy to install and manage software on Windows. Autojump provides a quick and efficient way to navigate your file system.</p>
 <p>By using these tools and tips, you can enhance your development experience on Windows and work more efficiently. With the right setup, Windows can be just as powerful and enjoyable as other platforms for development.</p>
