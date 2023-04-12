@@ -279,7 +279,7 @@ This command opens a web-based editor where you can create and preview your own 
 With OhMyPosh, you can create custom and visually appealing prompt themes for your PowerShell sessions, making your development experience on Windows more enjoyable and efficient.
 
 ## Autojump
-Autojump is a tool that helps you navigate your file system more efficiently. It remembers the directories you visit and lets you quickly jump back to them using a short command.
+[Autojump](https://github.com/wting/autojump) is a tool that helps you navigate your file system more efficiently. It remembers the directories you visit and lets you quickly jump back to them using a short command.
 
 ### Installing Autojump
 Open a PowerShell terminal as an administrator.
@@ -288,12 +288,6 @@ Install Autojump by running the following command:
 
 ```
 winget install autojump
-```
-
-Add the following line to your PowerShell profile to enable Autojump:
-
-```
-. (aj --powershell)
 ```
 
 You can find your PowerShell profile by running the following command:
@@ -316,22 +310,6 @@ j documents
 
 This will jump to the directory that contains the word "documents" in its name.
 
-#### Add a directory
-
-If you want to add a directory to Autojump's list of remembered directories, simply navigate to that directory and type:
-
-```
-jo <name>
-```
-
-Where <name> is a unique name that you want to associate with that directory. For example:
-
-```
-jo project
-```
-
-This will add the current directory to Autojump's list of remembered directories and associate it with the name "project".
-
 #### List directories
 To see a list of the directories that Autojump remembers, type:
 
@@ -342,6 +320,10 @@ j --stat
 This will display a list of the directories along with the number of times you've visited each one.
 
 With Autojump, you can navigate your file system more efficiently and quickly, making your development experience on Windows more enjoyable and efficient.
+
+## Z.lua, a faster equivalent of autojump
+
+[z.lua](https://github.com/skywind3000/z.lua) is a faster equivalent of autojump. It is written in pure Lua and has no external dependencies. It is also faster than autojump. I use it more on Windows and PowerShell.
 
 ## Conclusion
 
