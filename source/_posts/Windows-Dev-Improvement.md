@@ -218,65 +218,7 @@ These are just a few examples of how you can use Winget to install and manage ap
 
 OhMyPosh is a tool that lets you customize your Powershell prompt. It allows you to create custom themes that can make your command-line interface more visually appealing and easier to use.
 
-#### Installing OhMyPosh
-Open the Windows Terminal as an administrator.
-
-Install OhMyPosh by running the following command:
-
-```
-Install-Module oh-my-posh -Scope CurrentUser
-```
-
-This command installs OhMyPosh as a PowerShell module in your current user scope.
-
-Install the required font by running the following command:
-
-```
-Set-ExecutionPolicy Bypass -Scope Process -Force; iwr -useb https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zip -OutFile CascadiaCode.zip; Expand-Archive CascadiaCode.zip -DestinationPath $env:SystemRoot\Fonts
-```
-
-This command installs the Cascadia Code Nerd Font, which is required for OhMyPosh to display custom prompt themes.
-
-Once the font is installed, you can set up a custom prompt theme by running the following command:
-
-```
-Set-PoshPrompt -Theme paradox
-```
-
-This command sets the prompt theme to "paradox," which is a popular OhMyPosh theme. You can choose a different theme by replacing "paradox" with the name of your desired theme.
-
-Finally, to make your custom prompt theme persist across PowerShell sessions, add the following line to your PowerShell profile:
-
-```
-Import-Module oh-my-posh; Set-PoshPrompt -Theme paradox
-```
-
-This command imports the OhMyPosh module and sets the prompt theme to "paradox" every time you start a new PowerShell session.
-
-### Using OhMyPosh
-
-Once OhMyPosh is installed and set up, you can start using it to customize your PowerShell prompt. Here are a few examples:
-
-#### List available themes
-To see a list of available prompt themes, run the following command:
-
-```
-Get-PoshThemes
-```
-
-#### Customize your prompt
-To customize your prompt with OhMyPosh, you can edit the theme file for your chosen prompt. For example, if you're using the "paradox" theme, you can edit the "paradox.omp.json" file to change the colors and formatting of your prompt.
-
-#### Create your own theme
-If you want to create your own custom prompt theme, you can use the OhMyPosh theme editor. To open the editor, run the following command:
-
-```
-Invoke-PoshEditor
-```
-
-This command opens a web-based editor where you can create and preview your own custom prompt theme.
-
-With OhMyPosh, you can create custom and visually appealing prompt themes for your PowerShell sessions, making your development experience on Windows more enjoyable and efficient.
+[Install instructions](https://ohmyposh.dev/docs/installation/windows)
 
 ## Autojump
 [Autojump](https://github.com/wting/autojump) is a tool that helps you navigate your file system more efficiently. It remembers the directories you visit and lets you quickly jump back to them using a short command.
