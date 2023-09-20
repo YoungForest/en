@@ -1,0 +1,20 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "YoungForest's blog • All posts by \"schengen\" tag",
+    "description": "A programmer in Amazon Beijing, China",
+    "home_page_url": "https://youngforest.github.io/en",
+    "items": [
+        {
+            "id": "https://youngforest.github.io/en/2023/09/20/Ireland-France-visa-monitor/",
+            "url": "https://youngforest.github.io/en/2023/09/20/Ireland-France-visa-monitor/",
+            "title": "Ireland France visa monitor",
+            "date_published": "2023-09-20T06:13:01.000Z",
+            "content_html": "<p>It is a painful process to book an France visa appointment. A tool was implemented to notify you when a new slot is released. As a 9 years of expereinced software engineer, I finally beat the scalpers and got my France visa appointment by the script. A software engineer never bows to scalpers.</p>\n<p>Currently, only Dublin Ireland appointments are supported. Please read the instructions docs to learn how to use it: <a href=\"https://docs.google.com/document/d/1uHJCxINt9Sb0f1HHybCFhxkmpzxRURilsxqD6OQLpQ4/edit?usp=sharing\">Google Docs</a></p>\n",
+            "tags": [
+                "France visa",
+                "Schengen",
+                "Side Project"
+            ]
+        }
+    ]
+}

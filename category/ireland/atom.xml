@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://youngforest.github.io/en</id>
+    <title>YoungForest&#39;s blog • Posts by &#34;ireland&#34; category</title>
+    <link href="https://youngforest.github.io/en" />
+    <updated>2023-09-20T06:13:01.000Z</updated>
+    <category term="Hennge" />
+    <category term="Ireland" />
+    <category term="IB" />
+    <category term="Bonds" />
+    <category term="France visa" />
+    <category term="Schengen" />
+    <category term="Side Project" />
+    <category term="Competitive Programming" />
+    <category term="Blog" />
+    <category term="Windows" />
+    <category term="C++" />
+    <category term="hash" />
+    <category term="unordered_map" />
+    <entry>
+        <id>https://youngforest.github.io/en/2023/09/20/Ireland-France-visa-monitor/</id>
+        <title>Ireland France visa monitor</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2023/09/20/Ireland-France-visa-monitor/"/>
+        <content type="html">&lt;p&gt;It is a painful process to book an France visa appointment. A tool was implemented to notify you when a new slot is released. As a 9 years of expereinced software engineer, I finally beat the scalpers and got my France visa appointment by the script. A software engineer never bows to scalpers.&lt;/p&gt;
+&lt;p&gt;Currently, only Dublin Ireland appointments are supported. Please read the instructions docs to learn how to use it: &lt;a href=&#34;https://docs.google.com/document/d/1uHJCxINt9Sb0f1HHybCFhxkmpzxRURilsxqD6OQLpQ4/edit?usp=sharing&#34;&gt;Google Docs&lt;/a&gt;&lt;/p&gt;
+</content>
+        <category term="France visa" />
+        <category term="Schengen" />
+        <category term="Side Project" />
+        <updated>2023-09-20T06:13:01.000Z</updated>
+    </entry>
+</feed>
