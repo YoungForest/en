@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://youngforest.github.io/en</id>
+    <title>YoungForest&#39;s blog • Posts by &#34;life&#34; tag</title>
+    <link href="https://youngforest.github.io/en" />
+    <updated>2024-01-12T03:58:52.000Z</updated>
+    <category term="Dublin" />
+    <category term="Life" />
+    <category term="Hennge" />
+    <category term="France visa" />
+    <category term="Schengen" />
+    <category term="Side Project" />
+    <category term="Ireland" />
+    <category term="IB" />
+    <category term="Bonds" />
+    <category term="Competitive Programming" />
+    <category term="Blog" />
+    <category term="C++" />
+    <category term="hash" />
+    <category term="unordered_map" />
+    <category term="Windows" />
+    <entry>
+        <id>https://youngforest.github.io/en/2024/01/12/Actions-After-Address-Change-in-Ireland/</id>
+        <title>Actions After Address Change in Ireland</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2024/01/12/Actions-After-Address-Change-in-Ireland/"/>
+        <content type="html">&lt;p&gt;As an new immigrant in Ireland, it is very common that you move every year. It is painful to move. It makes the situation worse because many things in Ireland are related to your address. This post summary the actions you need to take after you move to a new address. It would prevent you from missing any important mail, which could be posted to your previous address if you forget to change your information somewhere.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Bank accounts.&lt;/li&gt;
+&lt;li&gt;Broker accounts.&lt;/li&gt;
+&lt;li&gt;Pension accounts.&lt;/li&gt;
+&lt;li&gt;Medical insurance.&lt;/li&gt;
+&lt;li&gt;Revenue.&lt;/li&gt;
+&lt;li&gt;Car registration.&lt;/li&gt;
+&lt;li&gt;Your employer’s portal.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;For some accounts which are related to your job, like pension, Company stocks, you need to contact your HR to change your address.&lt;/p&gt;
+</content>
+        <category term="Dublin" />
+        <category term="Life" />
+        <updated>2024-01-12T03:58:52.000Z</updated>
+    </entry>
+</feed>

@@ -4,19 +4,21 @@
     <title>YoungForest&#39;s blog • Posts by &#34;programming&#34; category</title>
     <link href="https://youngforest.github.io/en" />
     <updated>2020-05-27T04:29:34.000Z</updated>
+    <category term="Dublin" />
+    <category term="Life" />
     <category term="Hennge" />
-    <category term="Ireland" />
-    <category term="IB" />
-    <category term="Bonds" />
     <category term="France visa" />
     <category term="Schengen" />
     <category term="Side Project" />
+    <category term="Ireland" />
+    <category term="IB" />
+    <category term="Bonds" />
     <category term="Competitive Programming" />
     <category term="Blog" />
-    <category term="Windows" />
     <category term="C++" />
     <category term="hash" />
     <category term="unordered_map" />
+    <category term="Windows" />
     <entry>
         <id>https://youngforest.github.io/en/2020/05/27/best-implement-to-use-pair-as-key-to-std-unordered-map-in-C/</id>
         <title>Best implement to use pair as key to std::unordered_map in C++</title>
