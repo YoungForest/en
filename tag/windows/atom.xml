@@ -7,18 +7,18 @@
     <category term="Dublin" />
     <category term="Life" />
     <category term="Hennge" />
-    <category term="France visa" />
-    <category term="Schengen" />
-    <category term="Side Project" />
     <category term="Ireland" />
     <category term="IB" />
     <category term="Bonds" />
+    <category term="France visa" />
+    <category term="Schengen" />
+    <category term="Side Project" />
     <category term="Competitive Programming" />
     <category term="Blog" />
+    <category term="Windows" />
     <category term="C++" />
     <category term="hash" />
     <category term="unordered_map" />
-    <category term="Windows" />
     <entry>
         <id>https://youngforest.github.io/en/2022/12/17/Windows-Dev-Improvement/</id>
         <title>Windows Development Environment improvement tips From a Microsoft Employee</title>
