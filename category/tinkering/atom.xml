@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://youngforest.github.io/en</id>
+    <title>YoungForest&#39;s blog • Posts by &#34;tinkering&#34; category</title>
+    <link href="https://youngforest.github.io/en" />
+    <updated>2017-03-26T10:46:41.000Z</updated>
+    <category term="life" />
+    <category term="Year-End Review" />
+    <category term="Reading" />
+    <category term="The Three-Body Problem" />
+    <category term="Dublin" />
+    <category term="Life" />
+    <category term="Alibaba" />
+    <category term="intern" />
+    <category term="Beijing" />
+    <category term="Hukou" />
+    <category term="Are Your Lights On?" />
+    <category term="bank" />
+    <category term="money" />
+    <category term="Europe" />
+    <category term="Guns, Germs, and Steel" />
+    <category term="Hennge" />
+    <category term="Ireland" />
+    <category term="IB" />
+    <category term="Bonds" />
+    <category term="France visa" />
+    <category term="Schengen" />
+    <category term="Side Project" />
+    <category term="Competitive Programming" />
+    <category term="Blog" />
+    <category term="Reality Is Not What It Seems" />
+    <category term="Why Nations Fail" />
+    <category term="Windows" />
+    <category term="The Times" />
+    <category term="XiaoLin Says" />
+    <category term="C++" />
+    <category term="hash" />
+    <category term="unordered_map" />
+    <category term="travel" />
+    <category term="Travelogue" />
+    <category term="codeforces" />
+    <category term="contest" />
+    <category term="vim" />
+    <category term="WeRide" />
+    <category term="Kuaishou" />
+    <category term="Internship" />
+    <category term="RIP" />
+    <category term="sensetime" />
+    <entry>
+        <id>https://youngforest.github.io/en/2017/03/26/gvim-configuration-for-windows/</id>
+        <title>gVim configuration for Windows</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2017/03/26/gvim-configuration-for-windows/"/>
+        <content type="html">&lt;p&gt;Recently, because I was preparing for the GRE, I spent all day memorizing words, practicing listening, and writing. I felt quite annoyed and had not tinkered with anything for a long time. So I took some time to download and configure gVim on my laptop, which also counted as a break.&lt;/p&gt;
+&lt;h1 id=&#34;Download&#34;&gt;&lt;a href=&#34;#Download&#34; class=&#34;headerlink&#34; title=&#34;Download&#34;&gt;&lt;/a&gt;&lt;a href=&#34;http://www.vim.org/download.php#pc&#34;&gt;Download&lt;/a&gt;&lt;/h1&gt;&lt;h1 id=&#34;Configuration-Files&#34;&gt;&lt;a href=&#34;#Configuration-Files&#34; class=&#34;headerlink&#34; title=&#34;Configuration Files&#34;&gt;&lt;/a&gt;Configuration Files&lt;/h1&gt;&lt;p&gt;Unlike Linux, the gVim configuration files on Windows are &lt;code&gt;$HOME/_vimrc&lt;/code&gt; for the personal configuration file and &lt;code&gt;$VIMROOT/_vimrc&lt;/code&gt; for the system configuration file. By default, &lt;code&gt;$VIMROOT&lt;/code&gt; is &lt;code&gt;C:\Program Files (x86)\Vim&lt;/code&gt;. Besides these, there can also be a &lt;code&gt;_gvimrc&lt;/code&gt; file, which is only read when opened in GUI mode, not in the terminal. This is helpful when applying different configurations to the two modes, especially when using different themes. The same theme can look very different in GUI and terminal mode. This avoids complicated configuration such as &lt;code&gt;if(has&amp;#39;gui_running&amp;#39;)&lt;/code&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;vimrc-Configuration&#34;&gt;&lt;a href=&#34;#vimrc-Configuration&#34; class=&#34;headerlink&#34; title=&#34;.vimrc Configuration&#34;&gt;&lt;/a&gt;&lt;code&gt;.vimrc&lt;/code&gt; Configuration&lt;/h1&gt;&lt;h2 id=&#34;Open-Configuration-Files&#34;&gt;&lt;a href=&#34;#Open-Configuration-Files&#34; class=&#34;headerlink&#34; title=&#34;Open Configuration Files&#34;&gt;&lt;/a&gt;Open Configuration Files&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;:e $MYVIMRC&lt;/code&gt;: open the user configuration file. If it does not exist, refer to &lt;code&gt;help vimrc&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:e $MYGVIMRC&lt;/code&gt;: open the GUI user configuration.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The configuration file locations recommended in &lt;code&gt;help vimrc&lt;/code&gt; are &lt;code&gt;$HOME/vimfiles/vimrc&lt;/code&gt; on Windows or &lt;code&gt;~/.vim/vimrc&lt;/code&gt; on Unix-like systems. This is more portable than &lt;code&gt;$HOME/_vimrc&lt;/code&gt; and &lt;code&gt;~/.vim&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;Personalization&#34;&gt;&lt;a href=&#34;#Personalization&#34; class=&#34;headerlink&#34; title=&#34;Personalization&#34;&gt;&lt;/a&gt;Personalization&lt;/h2&gt;&lt;p&gt;$MYGVIMRC&lt;/p&gt;
+&lt;figure class=&#34;highlight vim&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;set&lt;/span&gt; clipboard=unnamed   &lt;span class=&#34;comment&#34;&gt;&amp;quot; 与Windows公用clipboard, 默认情况下, y, p只使用vim的clipboard, 不是很方便&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;set&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;colorscheme&lt;/span&gt; monokai &lt;span class=&#34;comment&#34;&gt;&amp;quot; 一个我比较喜欢的主题, 不过在terminal下很难看, 所以放在gvimrc中&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;set&lt;/span&gt; guifont=Consola&lt;span class=&#34;variable&#34;&gt;s:h18&lt;/span&gt;:cANSI:qDRAFT   &lt;span class=&#34;comment&#34;&gt;&amp;quot;换个字体, 默认字体忍不了&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;$MYVIMRC&lt;/p&gt;
+&lt;figure class=&#34;highlight vim&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;set&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;number&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;set&lt;/span&gt; nobackup    &lt;span class=&#34;comment&#34;&gt;&amp;quot;不产生~文件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;set&lt;/span&gt; noswapfile  &lt;span class=&#34;comment&#34;&gt;&amp;quot;不产生.swp文件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;set&lt;/span&gt; noundofile  &lt;span class=&#34;comment&#34;&gt;&amp;quot;不产生.un文件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;set&lt;/span&gt; encoding=utf-&lt;span class=&#34;number&#34;&gt;8&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;&amp;quot;默认为cp936, 改为与系统兼容的utf-8&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;set&lt;/span&gt; fileformat=dos  &lt;span class=&#34;comment&#34;&gt;&amp;quot;换行符以\r\n为准&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;set&lt;/span&gt; fileencoding=utf-&lt;span class=&#34;number&#34;&gt;8&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;&amp;quot;与系统兼容&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;syntax&lt;/span&gt; enable&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;Markdown-Support&#34;&gt;&lt;a href=&#34;#Markdown-Support&#34; class=&#34;headerlink&#34; title=&#34;Markdown Support&#34;&gt;&lt;/a&gt;Markdown Support&lt;/h2&gt;&lt;p&gt;Vim plugins can satisfy almost any need you have. However, here I do not use a Vim plugin; instead, I use a Chrome extension to satisfy my needs. The reason is that the configuration is simpler, and other editors can also use it in the future.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/volca/markdown-preview&#34;&gt;Plugin installation and usage instructions&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bind a shortcut.&lt;/strong&gt; Add this to &lt;code&gt;vimrc&lt;/code&gt;:&lt;/p&gt;
+&lt;figure class=&#34;highlight vim&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;&amp;quot; Open markdown files with Chrome.&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;autocmd&lt;/span&gt; BufEnter *.md &lt;span class=&#34;keyword&#34;&gt;exe&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;noremap &amp;lt;F5&amp;gt; :!start C:\Program Files (x86)\Google\Chrome\Application\chrome.exe %:p&amp;lt;CR&amp;gt;&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Press &lt;code&gt;F5&lt;/code&gt; when using it.&lt;/p&gt;
+&lt;h1 id=&#34;Afterword&#34;&gt;&lt;a href=&#34;#Afterword&#34; class=&#34;headerlink&#34; title=&#34;Afterword&#34;&gt;&lt;/a&gt;Afterword&lt;/h1&gt;&lt;p&gt;This post was completed with &lt;code&gt;gvim for MS-WINDOWS&lt;/code&gt;.&lt;/p&gt;
+</content>
+        <category term="vim" />
+        <updated>2017-03-26T10:46:41.000Z</updated>
+    </entry>
+</feed>

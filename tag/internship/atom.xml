@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://youngforest.github.io/en</id>
+    <title>YoungForest&#39;s blog • Posts by &#34;internship&#34; tag</title>
+    <link href="https://youngforest.github.io/en" />
+    <updated>2018-04-30T15:33:10.000Z</updated>
+    <category term="life" />
+    <category term="Year-End Review" />
+    <category term="Reading" />
+    <category term="The Three-Body Problem" />
+    <category term="Dublin" />
+    <category term="Life" />
+    <category term="Alibaba" />
+    <category term="intern" />
+    <category term="Beijing" />
+    <category term="Hukou" />
+    <category term="Are Your Lights On?" />
+    <category term="bank" />
+    <category term="money" />
+    <category term="Europe" />
+    <category term="Guns, Germs, and Steel" />
+    <category term="Hennge" />
+    <category term="Ireland" />
+    <category term="IB" />
+    <category term="Bonds" />
+    <category term="France visa" />
+    <category term="Schengen" />
+    <category term="Side Project" />
+    <category term="Competitive Programming" />
+    <category term="Blog" />
+    <category term="Reality Is Not What It Seems" />
+    <category term="Why Nations Fail" />
+    <category term="Windows" />
+    <category term="The Times" />
+    <category term="XiaoLin Says" />
+    <category term="C++" />
+    <category term="hash" />
+    <category term="unordered_map" />
+    <category term="travel" />
+    <category term="Travelogue" />
+    <category term="codeforces" />
+    <category term="contest" />
+    <category term="vim" />
+    <category term="WeRide" />
+    <category term="Kuaishou" />
+    <category term="Internship" />
+    <category term="RIP" />
+    <category term="sensetime" />
+    <entry>
+        <id>https://youngforest.github.io/en/2018/04/30/kuaishou-intern-interview/</id>
+        <title>Kuaishou Intern Interview</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2018/04/30/kuaishou-intern-interview/"/>
+        <content type="html">&lt;p&gt;Thanks to senior schoolmate @lxc for the referral and interview advice, I was fortunate enough to attend the interview for an algorithm intern role in Kuaishou’s recommendation group, and I eventually passed the interview and received the offer.&lt;br&gt;Although intern interviews may be relatively simple, I think this still has reference value.&lt;br&gt;Doing internships can be considered one route toward eventually finding a good job and joining a dream company. It cannot really be called a shortcut; the two internships I did were both quite tiring. Kuaishou was my second internship.&lt;br&gt;Now that the internship has finally stabilized, and there is still some time before the deadline for my graduation thesis, I happen to have time to summarize my interview and internship.&lt;br&gt;I hope this can guide my future search for other internships or full-time jobs :)&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+
+&lt;h1 id=&#34;Interview&#34;&gt;&lt;a href=&#34;#Interview&#34; class=&#34;headerlink&#34; title=&#34;Interview&#34;&gt;&lt;/a&gt;Interview&lt;/h1&gt;&lt;p&gt;I went through two rounds of interviews in total, taking nearly two hours.&lt;br&gt;Overall, I felt that my preparation was not sufficient, and many areas still needed improvement.&lt;/p&gt;
+&lt;h2 id=&#34;First-Round&#34;&gt;&lt;a href=&#34;#First-Round&#34; class=&#34;headerlink&#34; title=&#34;First Round&#34;&gt;&lt;/a&gt;First Round&lt;/h2&gt;&lt;p&gt;The interviewer was a friendly, slightly chubby engineer. He was very kind and took the interview seriously.&lt;br&gt;After I started the internship, I often ran into him during meetings and meals, which felt very familiar. We were not in the same team, but we were in the same larger group.&lt;/p&gt;
+&lt;p&gt;Interview content:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Given an array, find the contiguous subsequence with the maximum sum and return the sum;&lt;/li&gt;
+&lt;li&gt;Reverse a sentence: for example, today is wednesday! =&amp;gt; wednesday is today!&lt;/li&gt;
+&lt;li&gt;SQL-related: differences between left join, right join, and inner join; whether I knew partition;&lt;/li&gt;
+&lt;li&gt;Machine learning-related: definitions of precision and recall.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;Second-Round&#34;&gt;&lt;a href=&#34;#Second-Round&#34; class=&#34;headerlink&#34; title=&#34;Second Round&#34;&gt;&lt;/a&gt;Second Round&lt;/h2&gt;&lt;p&gt;The interviewer was a serious engineer. My impression was that he reacted very quickly, possibly someone at the leader level.&lt;br&gt;Unfortunately, after joining I never saw him in the larger group.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;When memory is extremely small, find the position of number &lt;code&gt;m&lt;/code&gt; among a large number of values.&lt;/li&gt;
+&lt;li&gt;When &lt;code&gt;a = b&lt;/code&gt;, where might &lt;code&gt;b&lt;/code&gt; be obtained from? Register, cache, memory, external storage.&lt;/li&gt;
+&lt;li&gt;Given a sorted array cyclically shifted left by an unknown &lt;code&gt;k&lt;/code&gt;, find the position of number &lt;code&gt;m&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;There are &lt;code&gt;n&lt;/code&gt; stairs, and you can walk 1 step or 2 steps… He first asked whether I had done this problem before. I said yes, so he did not ask me to do it again.&lt;/li&gt;
+&lt;li&gt;Given a binary tree where each node stores a number, find the lowest common ancestor of two numbers.&lt;/li&gt;
+&lt;li&gt;Differences between multi-process and multi-threading;&lt;/li&gt;
+&lt;li&gt;Use of inter-process communication in Java and C++;&lt;/li&gt;
+&lt;li&gt;Use of socket libraries for network communication in Java and C++. (I did not answer these two well.)&lt;/li&gt;
+&lt;li&gt;My level of understanding of machine learning, and whether I had studied loss functions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;Interview-Preparation&#34;&gt;&lt;a href=&#34;#Interview-Preparation&#34; class=&#34;headerlink&#34; title=&#34;Interview Preparation&#34;&gt;&lt;/a&gt;Interview Preparation&lt;/h2&gt;&lt;p&gt;After this interview, I became clearer about what to prepare for interviews:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Data structures and algorithms are the foundation, and must be reviewed and practiced carefully.&lt;/li&gt;
+&lt;li&gt;SQL, machine learning, and Hadoop are bonus skills.&lt;/li&gt;
+&lt;li&gt;Handwritten code and short-answer questions are the main content of interviews.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In fact, I answered the SQL, machine learning, and multi-threading questions very poorly. Only the algorithm problems were answered passably; I did write them all out, although there were some mistakes in the middle and they may have taken a long time, especially the first handwritten problem, where I had not yet entered the right state and spent extra time.&lt;/p&gt;
+&lt;p&gt;Based on my senior schoolmate’s advice, I think the following preparation path and resources are relatively efficient, and I am still preparing:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Data structures and algorithms: COS226 + &lt;em&gt;Algorithms, 4th Edition&lt;/em&gt;, &lt;em&gt;Elements of Programming Interviews&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;SQL: &lt;em&gt;Sams Teach Yourself SQL in 10 Minutes&lt;/em&gt;, &lt;a href=&#34;http://www.runoob.com/sql/sql-constraints.html&#34;&gt;runoob&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Multi-threading: &lt;em&gt;Java Concurrency in Practice&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Machine learning: Zhou Zhihua’s &lt;em&gt;Machine Learning&lt;/em&gt;, also known as the “Watermelon Book”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;Onboarding&#34;&gt;&lt;a href=&#34;#Onboarding&#34; class=&#34;headerlink&#34; title=&#34;Onboarding&#34;&gt;&lt;/a&gt;Onboarding&lt;/h1&gt;&lt;p&gt;Earlier, because of my graduation thesis, I hesitated over whether to accept the internship offer.&lt;!--and keeping my grandma company--&gt;&lt;br&gt;After consulting my senior schoolmate and weighing the pros and cons, I finally accepted the offer and joined on April 19.&lt;!--persuaded by my grandma--&gt;&lt;br&gt;The offer package was: 300 per day, lunch, afternoon tea, and dinner covered, with fruit, milk, and ice cream available freely.&lt;br&gt;In reality:&lt;br&gt;300 per day before tax. Interns are taxed as service income, and the portion above 800 is taxed by the state at 20%.&lt;br&gt;Lunch and dinner are still great, especially the lunch buffet; I overeat every time.&lt;br&gt;Afternoon tea is simple: a kraft paper bag with drinks, fruit, and snacks. It differs from what I imagined, but is still quite satisfying; I often leave some and take it back to eat.&lt;/p&gt;
+&lt;p&gt;From the little details at work, I can feel that&lt;br&gt;Kuaishou is a company with strong technology and many excellent people. It is now expanding rapidly; almost every week someone joins our group (is that why I was admitted?).&lt;br&gt;The two mentors guiding me are also very nice. I have learned and grown a lot from work.&lt;/p&gt;
+&lt;!--
+Work content includes:
+- using pyplot for data visualization
+- using hive sql for data preprocessing
+--&gt;
+</content>
+        <category term="Kuaishou" />
+        <category term="Internship" />
+        <updated>2018-04-30T15:33:10.000Z</updated>
+    </entry>
+</feed>
