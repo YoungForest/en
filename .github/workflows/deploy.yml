@@ -8,6 +8,9 @@ on:
     branches:
       - master
 
+permissions:
+  contents: write
+
 env:
   GIT_USER: YoungForest
   GIT_EMAIL: sen.yang96@outlook.com
@@ -50,17 +53,15 @@ jobs:
           node-version: ${{ matrix.node_version }}
 
       - name: Configuration environment
-        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
-        env:
-          HEXO_DEPLOY_PRI: ${{ secrets.HEXO_DEPLOY_PRI }}
         run: |
           sudo timedatectl set-timezone "Asia/Shanghai"
-          mkdir -p ~/.ssh/
-          echo "$HEXO_DEPLOY_PRI" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan github.com >> ~/.ssh/known_hosts
-          git config --global user.name $GIT_USER
-          git config --global user.email $GIT_EMAIL
+          git config --global user.name "$GIT_USER"
+          git config --global user.email "$GIT_EMAIL"
+
+      - name: Configure deploy authentication
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        run: |
+          git config --global url."https://x-access-token:${{ github.token }}@github.com/".insteadOf "git@github.com:"
 
       - name: Install dependencies
         run: |
