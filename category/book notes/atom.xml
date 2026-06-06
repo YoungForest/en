@@ -8,42 +8,51 @@
     <category term="Year-End Review" />
     <category term="Reading" />
     <category term="The Three-Body Problem" />
+    <category term="A Matter of Degrees" />
     <category term="Dublin" />
     <category term="Life" />
     <category term="Alibaba" />
     <category term="intern" />
     <category term="Beijing" />
     <category term="Hukou" />
+    <category term="Antifragile" />
     <category term="Business Cycles" />
     <category term="Economics" />
+    <category term="Deep Simplicity" />
+    <category term="Are Your Lights On?" />
     <category term="bank" />
     <category term="money" />
     <category term="Europe" />
-    <category term="Are Your Lights On?" />
     <category term="Genome" />
     <category term="Guns, Germs, and Steel" />
     <category term="Hennge" />
-    <category term="Ireland" />
-    <category term="IB" />
-    <category term="Bonds" />
     <category term="France visa" />
     <category term="Schengen" />
     <category term="Side Project" />
+    <category term="Ireland" />
+    <category term="IB" />
+    <category term="Bonds" />
     <category term="Competitive Programming" />
     <category term="A Little History of the World" />
+    <category term="Liu Shen Lei Lei Reads Tang Poetry" />
     <category term="Blog" />
+    <category term="Poor Charlie&#39;s Almanack" />
     <category term="Reality Is Not What It Seems" />
+    <category term="Shi Nan Zhi Tu" />
+    <category term="Ma Boyong" />
+    <category term="Tai Bai Jin Xing You Dian Fan" />
     <category term="Skin in the Game" />
     <category term="Nassim Nicholas Taleb" />
+    <category term="The Almanack of Naval Ravikant" />
     <category term="The Bitcoin Standard" />
     <category term="The Collapse of the Heavenly Dynasty" />
     <category term="The Hungry Golden Age" />
     <category term="The Glory and the Dream" />
     <category term="The Worlds I See" />
     <category term="Why Nations Fail" />
+    <category term="Windows" />
     <category term="The Times" />
     <category term="XiaoLin Says" />
-    <category term="Windows" />
     <category term="C++" />
     <category term="hash" />
     <category term="unordered_map" />
@@ -327,6 +336,171 @@
         <category term="Reading" />
         <category term="The Glory and the Dream" />
         <updated>2025-05-18T11:17:53.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://youngforest.github.io/en/2024/10/20/Shi-Nan-Zhi-Tu/</id>
+        <title>Shi Nan Zhi Tu by Ma Boyong</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2024/10/20/Shi-Nan-Zhi-Tu/"/>
+        <content type="html">&lt;p&gt;Weekly book 24: &lt;strong&gt;Shi Nan Zhi Tu&lt;/strong&gt; by &lt;a href=&#34;https://book.douban.com/search/%E9%A9%AC%E4%BC%AF%E5%BA%B8&#34;&gt;Ma Boyong&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The author seems to be using the Han dynasty’s Nanyue issue to map onto the Taiwan issue. Ma Boyong is still as good as ever at taking a few scattered words from historical records and imagining a complete suspense story out of them. His earlier &lt;em&gt;The Longest Day in Chang’an&lt;/em&gt; and &lt;em&gt;The Lychees of Chang’an&lt;/em&gt; are both like this.&lt;/p&gt;
+&lt;p&gt;It is a very good full-length novel, especially in its descriptions of food, which feel sincere and mouth-watering. The ending is just too tragic: “Gaozhe’s” whole family dies. The old case is ultimately never solved or cleared, although both readers and the male protagonist know the truth. The punishment, delayed by more than 20 years, comes far too late. If the male protagonist had arrived a few years later, the murderer would have ended his life peacefully. But he still abused power for so many years and harmed many people.&lt;/p&gt;
+&lt;p&gt;“When a fox dies, its head turns toward its native hill.” Transporting jujube saplings across ten thousand miles, guarding a lonely palace alone. These feelings of Zhao Tuo, as someone who left his hometown more than ten years ago and is now even drifting overseas as an immigrant, really resonate with me. I almost cried. But like Zhao Tuo, I also know that I cannot go back. The hometown in memory has already gone far away. Even if I force myself back to ease homesickness, it will not help, and may instead bring greater pain. Because the real hometown is completely different from the one you imagine. Homesick people always beautify these things: remembering the food and forgetting the beatings, forgetting the pain once the scar has healed. &lt;strong&gt;The past was not as beautiful as imagined, the present is not as bad as imagined, and the future is far better than imagined.&lt;/strong&gt;&lt;/p&gt;
+</content>
+        <category term="Reading" />
+        <category term="Shi Nan Zhi Tu" />
+        <category term="Ma Boyong" />
+        <updated>2024-10-20T11:05:48.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://youngforest.github.io/en/2024/09/15/Chaos-Complexity-and-the-Emergence-of-Life/</id>
+        <title>Deep Simplicity: Chaos, Complexity and the Emergence of Life</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2024/09/15/Chaos-Complexity-and-the-Emergence-of-Life/"/>
+        <content type="html">&lt;p&gt;Weekly book 22: &lt;a href=&#34;https://book.douban.com/subject/3370214/&#34;&gt;&lt;strong&gt;Deep Simplicity: Chaos, Complexity and the Emergence of Life&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A book recommended by &lt;em&gt;Poor Charlie’s Almanack&lt;/em&gt;. It understands the universe, life, and society from the perspective of chaos, which is a very interesting angle. Through chaos, a mathematical concept, the book strings together many things in the universe. Although we have a lot of physics knowledge and seem to understand the world quite well, enough to predict history and the future as Laplace believed, facts and theory prove that this is impossible. The best and only solution for computing the universe is the universe itself. It is impossible to create a machine or life inside the universe that can compute and predict the universe. This is a mathematical limitation. If, as many sages have said, mathematics is the language of God, then it seems this language also has innate limits and is not omniscient or omnipotent. Of course, mathematics has always been progressing, but judging from current proofs, many equations do not have analytical solutions. Iterative solutions are destined to encounter the butterfly effect. It is slightly worse than &lt;em&gt;A Matter of Degrees&lt;/em&gt;. Although I think I have some mathematical and scientific background, the mathematics and arguments in this book still left me somewhat confused.&lt;/p&gt;
+&lt;p&gt;Interestingly, the previous book mentioned a solution similar to &lt;em&gt;The Wandering Earth&lt;/em&gt;. This book begins with the three-body problem. The three-body problem is unsolvable, not because physics is wrong, but because mathematics is at fault, and mathematics has already proved that it is unsolvable. Therefore, if the Salvationists in &lt;em&gt;Remembrance of Earth’s Past&lt;/em&gt; had read this work, they would have given up the idea of saving the “Lord.” Of course, in &lt;em&gt;The Three-Body Problem&lt;/em&gt;, the Salvationists eventually proved this point as well, and failed in the struggle against the Adventists. One can say their strategy was impossible from the root and doomed to fail.&lt;/p&gt;
+</content>
+        <category term="Reading" />
+        <category term="Deep Simplicity" />
+        <updated>2024-09-15T10:54:17.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://youngforest.github.io/en/2024/09/02/A-Matter-of-Degrees/</id>
+        <title>A Matter of Degrees: What Temperature Reveals about the Past and Future of Our Species, Planet, and Universe</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2024/09/02/A-Matter-of-Degrees/"/>
+        <content type="html">&lt;p&gt;&lt;em&gt;A Matter of Degrees: What Temperature Reveals about the Past and Future of Our Species, Planet, and Universe&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://book.douban.com/subject/27016304/&#34;&gt;Douban link&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Excellent. It is a book recommended in &lt;em&gt;Poor Charlie’s Almanack&lt;/em&gt;, and I came to it from that book. Munger emphasized the importance of multidisciplinary knowledge, and perhaps that is why he recommended this book. Indeed, this book gathers the achievements of many disciplines and explains them deeply yet accessibly. It is an excellent popular science book. Although much of the knowledge and history was already familiar to me, by using the physical variable of “temperature,” it connects medicine, biology (including evolution), physics (light, heat, quantum mechanics), geology, and chemistry. When different disciplines integrate with one another and historical developments interweave, one cannot help marveling at the greatness of science and human civilization. As the book says, from the Big Bang, to the birth of the solar system, to the birth of Earth, then to life, and finally to humans who think about all these things that indirectly and directly created us. Reading it made me clap my hands in delight many times. I could not put it down and finished it in three days. Being born human, I am lucky and proud, especially living in the 21st century, standing on the shoulders of so many giants, enjoying their discoveries and creations, and living a comfortable and happy life.&lt;/p&gt;
+&lt;p&gt;The most interesting part is in the chapter “The Birth of the Sun.” The author mentions that because of the process of core fusion, the Sun’s core temperature keeps rising. Heavier nuclei require higher temperatures to overcome electromagnetic repulsion and produce fusion. Today’s Sun emits more than 30% more energy than it did five billion years ago, and it will become brighter and brighter in the future. This is not good news for Earth. In another billion years, perhaps Earth will follow Venus’s path and become a severely greenhouse-effected, overheated planet. Life may go extinct on Earth. But scientists have already proposed a solution: if humans can continue to exist, they can harness asteroids and use the gravitational slingshot effect, which is actually a common technique for accelerating solar-system probes. Each time an asteroid passes Earth, it nudges Earth outward a little, then returns beyond Jupiter to replenish energy. Humans then use rockets to change its orbit and bring it back to Earth again. The cycle is once every six thousand years. The rocket power required is actually not very large, because the time span is long and therefore the momentum produced is large. After several billion years, Earth would move to today’s Martian orbit. Earth could maintain a suitable temperature and extend life by several billion years. This is truly a scientific version of &lt;em&gt;The Wandering Earth&lt;/em&gt;, much more feasible than Liu Cixin’s planetary nuclear-fusion engine plan. Of course, Liu’s background requires leaving much faster. Gravitational slingshots are feasible and energy-saving, but they require much more time. Of course, the setting in &lt;em&gt;The Wandering Earth&lt;/em&gt; is that the Sun will undergo a destructive helium flash within several thousand years, which is not scientific. Still, five billion years later, the Sun will become a red giant and engulf Earth and Mars. After that, life will need to migrate to Jupiter and farther orbits (this time we cannot take Earth with us), or even to other star systems.&lt;/p&gt;
+&lt;p&gt;Once upon a time, I also had the so-called ideal of becoming a “scientist.” In middle and high school, I was very interested in physics. I almost applied to Nanjing University’s physics department or astrophysics department. As a child I liked reading &lt;em&gt;One Hundred Thousand Whys&lt;/em&gt; and &lt;em&gt;Animal World&lt;/em&gt;, and also subscribed to a science magazine (I forgot the name, but I really liked it). The story that impressed me most was about the launch of New Horizons, which would visit Pluto more than ten years later. At the time, Pluto was still one of the nine planets. After I grew up, it really arrived, flew past Pluto, sent back probe data, and began leaving the solar system. But Pluto had long been kicked out of the planet ranks, and now there are only eight planets. In high school I also read Michio Kaku’s &lt;em&gt;Parallel Worlds&lt;/em&gt;, Hawking’s &lt;em&gt;A Brief History of Time&lt;/em&gt; and &lt;em&gt;The Universe in a Nutshell&lt;/em&gt;. Even the People’s Education Press physics textbooks told stories of physics and scientists vividly and made one yearn for them. In university I also read George Gamow’s &lt;em&gt;One Two Three… Infinity&lt;/em&gt;. After coming to Ireland, I read &lt;em&gt;Does God Play Dice?&lt;/em&gt; and &lt;em&gt;Reality Is Not What It Seems&lt;/em&gt;. If you like these books, &lt;em&gt;A Matter of Degrees&lt;/em&gt; will definitely suit your taste too.&lt;/p&gt;
+&lt;p&gt;Thinking back, as a child I was full of curiosity and idealism, but under the discipline of reality and society, I have become very realistic today. In particular, under China’s education system, children’s diversity, curiosity, questioning, and courage are deprived. Even if one finally enters a good university, studies a popular major, takes a respectable job, and earns decent money, it is still somewhat self-pitying and self-loving. Alas, a harmed Zhong Yong. Some classmates, even if they studied physics in university, mostly switched to programming under social pressure. I have a high-school classmate who studied all the way to a PhD in high-energy physics and last year spent two years in joint training in Paris. I visited him and toured his lab then. But he also switched. Studying physics is indeed poor, and employment options are narrow. The academic content one actually does day to day is reading papers, writing code, analyzing experimental data, and doing simulations. Reading popular science books or stories is more exciting. People inside the field mostly have to do a lot of boring work. Physics and mathematics also depend heavily on talent. How many famous scientists achieved success young and proved themselves before 25. I myself am already too old. But as an outsider, paying attention to major scientific progress is still very exciting and joyful. Many times I recall the first time I read these scientific stories and knowledge when young.&lt;/p&gt;
+&lt;p&gt;Chapter 3, “Reading Earth,” is also very valuable for reference. I have always liked watching a Bilibili creator called Fangstaff, who talks about biological evolution. Many geological and life-evolution events in the book connect with Fangstaff’s content. That feeling is truly magical. The book mentions and analyzes the “greenhouse effect,” but in a more rational and objective way, and is more calm and tolerant toward carbon dioxide emissions. It is not like the earlier extreme views of white-left activists. Of course, the white-left has cooled down now too. The climate topic is no longer as hot as it was decades ago.&lt;/p&gt;
+</content>
+        <category term="Reading" />
+        <category term="A Matter of Degrees" />
+        <updated>2024-09-02T06:51:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://youngforest.github.io/en/2024/08/24/Antifragile-Things-That-Gain-from-Disorder/</id>
+        <title>Antifragile: Things That Gain from Disorder</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2024/08/24/Antifragile-Things-That-Gain-from-Disorder/"/>
+        <content type="html">&lt;p&gt;A feast of conservatism, liberalism, and optimism.&lt;/p&gt;
+&lt;p&gt;Nassim Taleb is a writer recommended by both Naval and Li Zong. Perhaps they would call him a philosopher.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Antifragile&lt;/em&gt; feels more like a success book. It tells people to embrace pressure and bad things in order to gain restorative growth. It is actually like the passive skill of Saiyans in &lt;em&gt;Dragon Ball&lt;/em&gt;: every time they recover from near death, their combat power multiplies. Vegeta used this skill to grind combat power, but in the end he was still killed by Frieza.&lt;/p&gt;
+&lt;p&gt;My two years in Ireland have been truly lying flat and comfortable. One should not enter Europe too young. People can become useless from comfort. Although life is happy, there is no restorative growth.&lt;/p&gt;
+&lt;p&gt;It also reminds me of the education I received in middle school, those famous quotes learned for Gaokao essays. Thinking about my previous habit of showing off references and using allusions, I really was young and full of sharpness.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Mencius said: When Heaven is about to confer a great responsibility on a person, it must first distress his mind, toil his muscles and bones, starve his body, deprive him, and confound his actions, so as to stir his heart, toughen his nature, and increase what he cannot do. If, within a state, there are no legalist families and remonstrating ministers, and outside it no hostile states or foreign troubles, the state will usually perish. One is born in hardship and dies in ease.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Sima Qian also said in the “Postface of the Grand Historian” and “Letter in Reply to Ren An”:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;King Wen was imprisoned and then developed the &lt;em&gt;Book of Changes&lt;/em&gt;; Confucius was in distress and then composed the &lt;em&gt;Spring and Autumn Annals&lt;/em&gt;; Qu Yuan was banished and then wrote &lt;em&gt;Li Sao&lt;/em&gt;; Zuo Qiu lost his sight and then produced &lt;em&gt;Guoyu&lt;/em&gt;; Sunzi had his feet cut off and then set forth &lt;em&gt;The Art of War&lt;/em&gt;; Buwei was exiled to Shu and then &lt;em&gt;Lushi Chunqiu&lt;/em&gt; was passed down; Han Fei was imprisoned in Qin and then wrote &lt;em&gt;The Difficulties of Persuasion&lt;/em&gt; and &lt;em&gt;Solitary Indignation&lt;/em&gt;; the three hundred poems of the &lt;em&gt;Book of Songs&lt;/em&gt; were mostly works produced when sages and worthies were stirred by indignation.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Looking back at my own growth experience, is it not also like this? I found that my antifragility is actually quite strong. Last year, 2023, from every angle, was the low point of my life in recent years. But slowly, I began to bottom out and rebound. The growth I gained this year truly exceeded any previous stage. The current me seems to have reached a new height again.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Large companies and governments do not seem to understand the counterforce of information. In fact, information has the ability to control those who try to control it. When you hear a company or a heavily indebted government say it wants to “restore confidence,” you should know that it is fragile and doomed to fail. Information is ruthless: the more press conferences they hold to “reassure” investors, the more they scare investors away, causing a death spiral or a bank run.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Antifragility arises under conditions. The frequency of stressors matters greatly: humans perform better under acute stimuli than under chronic stimuli, especially when a long recovery period follows acute stimulus, turning these stressors into channels of information transmission. … This is more beneficial than a mild but continuous stressor, which is mostly the sort of thing that makes you feel oppressed in life, including mortgages, tax issues, guilt from delayed tax filing, exam pressure, chores, email replies, forms, daily commuting, and so on. In other words, this is the stress brought by civilization.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I am a J-type person and like certainty. It seems uncertainty also has great benefits. Sometimes one must actively accept uncertainty and embrace change. But afterward, one must give oneself time to recover and grow.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you are still alive, deep inside you will like a certain degree of randomness and chaos.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Mediocristan vs. Extremistan.&lt;/p&gt;
+&lt;p&gt;Mediocristan: there are many fluctuations and uncertainties in normal times, but in the long run it is more stable.&lt;/p&gt;
+&lt;p&gt;Extremistan: things seem relatively stable in normal times, but in the long run they are unstable.&lt;/p&gt;
+&lt;p&gt;Freelancer vs. employee.&lt;/p&gt;
+&lt;p&gt;Taxi driver vs. bank white-collar worker.&lt;/p&gt;
+&lt;p&gt;City-state system vs. centralization.&lt;/p&gt;
+&lt;p&gt;After discussing why antifragility matters, the book talks about some strategies for building antifragility: asymmetry (the barbell strategy), completely cutting off ruinous events, waiting for good events to happen naturally, and optionality.&lt;/p&gt;
+&lt;p&gt;Anti-modernization, revering the lifestyle of ancient people.&lt;/p&gt;
+&lt;p&gt;Reflecting on technology and opposing excessive rationality.&lt;/p&gt;
+&lt;p&gt;Using via negativa, subtraction, to improve antifragility rather than addition. The difference between “no evidence that” and “evidence that not.”&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In politics, a good system is one that helps society eliminate bad people. It does not need to consider what should be done or who is in power, because the harm caused by one bad person may be greater than the collective efforts of a group of good people.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Companies are keen on making strategic plans. They spend money trying to figure out where exactly they should go. However, there is no evidence that strategic planning works; there is plenty of evidence negating it.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Is that not also true of countries? Especially big-government market economies.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In the dark age of medicine, doctors once relied heavily on naive rationalist ideas, such as the need to balance bodily humors. Diseases were believed to come from certain imbalances, and a series of treatments derived from these ideas were believed necessary to restore bodily balance.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;For example, the notorious practice of bloodletting. Yet even in the 21st century, traditional Chinese medicine remains clamorous. Looking back at history, there is actually no so-called opposition between Chinese and Western medicine; there is opposition between modern medicine and traditional medicine. The West also had many therapies and ideas similar to traditional Chinese medicine before, but they were eliminated by history. When I explained Chinese medicine to a foreigner, I said “traditional doctor” and then described the therapies. He said, “You mean witch doctor?”&lt;/p&gt;
+&lt;p&gt;The author cites widely, which made me, someone educated in the East since childhood, realize that the West also has a long history and cultural inheritance. Taleb is Lebanese, from an Eastern Orthodox region. From Sumerian civilization, to Greek and Roman civilization, to the Middle Ages, which were actually not that dark, to the Renaissance and the modern civilization of the scientific and industrial revolutions, it is all a continuous lineage. The Sumerian civilization of Mesopotamia was the earliest human civilization, creating a brilliant civilization as early as 4500 BCE. The wheel and many inventions associated with the Yellow Emperor (2600 BCE) were actually transmitted step by step from the eastern Mediterranean. Even the Xia dynasty (of course disputed, because historical records and archaeological discoveries do not align; I lean toward believing it existed, and archaeological discoveries may catch up later. Since the Xia was also a so-called tribal alliance and had no writing, archaeology is harder. I also somewhat agree that the Erlitou culture is the Xia dynasty) was around 2000 BCE. Modern nationalism was born only with the French Revolution, a little more than 200 years ago. Chinese nationalism was slowly established after the Opium War and completed after the War of Resistance Against Japan. So there is no need to let nationalism obstruct civilizational identity. The facts and excavation of Sanxingdui were probably obstructed by this.&lt;/p&gt;
+</content>
+        <category term="Reading" />
+        <category term="Antifragile" />
+        <updated>2024-08-24T02:31:57.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://youngforest.github.io/en/2024/08/21/Tai-bai-jin-xing-you-dian-fan/</id>
+        <title>Tai Bai Jin Xing You Dian Fan by Ma Boyong</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2024/08/21/Tai-bai-jin-xing-you-dian-fan/"/>
+        <content type="html">&lt;p&gt;Ma Boyong’s new work. Excellent, recommended. In the afterword he says it is a leisure piece, and it indeed reads smoothly and recreationally. I finished it in two days and could not put it down. Personally, I think its quality is second only to the long novel &lt;em&gt;Mystery of Antiques&lt;/em&gt;, and better than &lt;em&gt;The Longest Day in Chang’an&lt;/em&gt;, &lt;em&gt;The Longest Day in Chang’an: Fifteen Days in Two Capitals&lt;/em&gt;, &lt;em&gt;The Lychees of Chang’an&lt;/em&gt;, &lt;em&gt;I Read Too Little, Do Not Lie to Me&lt;/em&gt;, and &lt;em&gt;The Ming Dynasty Under the Microscope&lt;/em&gt;. I have read quite a few of Prince Ma’s books. He counts as my favorite contemporary Chinese writer. Among writers whose books I can read this many of, abroad there is also Keigo Higashino, and domestically there is Jin Yong.&lt;/p&gt;
+&lt;p&gt;It deconstructs one of the four great classical novels, &lt;em&gt;Journey to the West&lt;/em&gt;. With insight into human nature and officialdom, the story it writes is actually more convincing than the original and more in line with modern narrative. Miscarriages of justice, factional struggles, and checks and balances of power are all brought out vividly. I heard a theory very early on, probably on early Zhihu, that the reason Sun Wukong caused havoc in Heaven was that Heaven deliberately made it happen. By taking advantage of the incident, various departments could shift blame onto the Great Sage Equal to Heaven, especially the underworld’s Register of Life and Death, which probably already had many loopholes, so they used the opportunity to destroy evidence. &lt;em&gt;Tai Bai&lt;/em&gt; happens to expand this view, using the performance of the journey to fetch scriptures to reveal the truth behind the Havoc in Heaven 500 years earlier. It expands the idea into a 100,000-character novella. The writing is humorous and makes one laugh, but thinking carefully is terrifying. It contains no small amount of exposing reality and satirizing the present through the past, while also being full of Ma Boyong’s usual compassion, suspense, and reversals.&lt;/p&gt;
+</content>
+        <category term="Reading" />
+        <category term="Tai Bai Jin Xing You Dian Fan" />
+        <updated>2024-08-21T12:37:52.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://youngforest.github.io/en/2024/08/07/Poor-Charlie-Almanack/</id>
+        <title>Poor Charlie&#39;s Almanack: The Essential Wit and Wisdom of Charles T. Munger</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2024/08/07/Poor-Charlie-Almanack/"/>
+        <content type="html">&lt;p&gt;Weekly book 18: &lt;em&gt;Poor Charlie’s Almanack: The Essential Wit and Wisdom of Charles T. Munger&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Charlie Munger passed away at the end of last year at age 99. I am ashamed that I only now read &lt;em&gt;Poor Charlie’s Almanack&lt;/em&gt;, which gathers the essence of his thinking. It can be considered the product of 80 years of his intellectual wisdom, since the third edition of the original book was completed in 2008. Recently I have read too many success books, and I am truly full of expectation and confidence about the future and myself.&lt;/p&gt;
+&lt;p&gt;Read biographies and study those successful lives, as well as those lives that left regrets or met failure.&lt;/p&gt;
+&lt;p&gt;None of Munger’s successful friends disliked reading.&lt;/p&gt;
+&lt;p&gt;“Rapidly destroy what should not be done, then launch a skilled, multidisciplinary attack on what should be done, and then, when the right opportunity arrives - only when the right opportunity arrives - act decisively.” This is very similar to the thinking in &lt;em&gt;The Art of War&lt;/em&gt;. &lt;em&gt;The Art of War&lt;/em&gt; truly deserves to be a three-thousand-year classic, a summary of human wisdom.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The best way to simplify a problem is usually to first solve the big questions whose answers are obvious.&lt;/li&gt;
+&lt;li&gt;Galileo said that only mathematics can reveal the true face of science, because mathematics seems to be the language of God.&lt;/li&gt;
+&lt;li&gt;It is not enough to think about problems only in the forward direction; you must also think in reverse.&lt;/li&gt;
+&lt;li&gt;The best and most practical wisdom is basic academic command. Premise: think in a multidisciplinary way.&lt;/li&gt;
+&lt;li&gt;The lollapalooza effect usually appears only under the combined action of several factors.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Einstein: my achievements depend on four factors. First is self-criticism, and only then curiosity, concentration, and perseverance.&lt;/p&gt;
+&lt;p&gt;I just want to know where I will die in the future, so I will never go there.&lt;/p&gt;
+&lt;p&gt;The later part contains many speeches. Some of the content is similar, and in fact there is an inheritance relationship. Talk 11 is the longest and also the most comprehensive.&lt;/p&gt;
+</content>
+        <category term="Reading" />
+        <category term="Poor Charlie&#39;s Almanack" />
+        <updated>2024-08-07T14:35:33.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://youngforest.github.io/en/2024/07/27/The-Almanack-of-Naval-Ravikant/</id>
+        <title>The Almanack of Naval Ravikant: A Guide to Wealth and Happiness</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2024/07/27/The-Almanack-of-Naval-Ravikant/"/>
+        <content type="html">&lt;p&gt;&lt;a href=&#34;https://book.douban.com/subject/35876121/&#34;&gt;Douban link&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The first half is about wealth, suitable for reading before age 35 to change one’s current situation. Much of the wisdom is also widely recognized and easy to accept around the world. The second half is about happiness, suitable for reading after 35 to accept the current situation. But that part is more subjective and differs from person to person. It belongs to greater wisdom and is more rare. Finally, &lt;em&gt;Die with Zero&lt;/em&gt; (also a book).&lt;/p&gt;
+&lt;p&gt;It connects with many books I have read before. It really is an almanack. Much wisdom is explained clearly in just a few words. For example, &lt;em&gt;Atomic Habits&lt;/em&gt; discusses how to build good habits, discard bad habits, and the importance of habits; &lt;em&gt;The Psychology of Money&lt;/em&gt; discusses the definition of wealth and how to obtain wealth; and books such as evolutionary psychology and &lt;em&gt;The Evolution of Desire&lt;/em&gt; discuss human psychology and gender psychology. Of course, those books are much more detailed and more actionable, belonging to the “technique” part. &lt;em&gt;The Almanack of Naval Ravikant&lt;/em&gt; is a collection, a summary of the wisdom Naval, as a smart person and a person who has read many books, accumulated over decades. He explains it to everyone using the Feynman Technique, which he advocates. Different people, with different life experiences and reading histories, will feel completely different things. I truly wish I had encountered it earlier.&lt;/p&gt;
+&lt;p&gt;One definition of a painful moment is: when you see that the true appearance of a thing is not what you originally wanted it to be, you feel pain.&lt;/p&gt;
+&lt;p&gt;The longing for a beautiful reality blinds one’s perception of the real world. So-called pain is being unable to continue ignoring facts.&lt;/p&gt;
+&lt;p&gt;The most important thing in science is falsifiability.&lt;/p&gt;
+&lt;p&gt;Naval recommends reading originals and classics. But I do not quite agree. Many originals are hundreds or even thousands of years old. The barrier to reading them is high, they are not easy to understand, and some content can be outdated or limited. For example, although &lt;em&gt;The Art of War&lt;/em&gt; has only a little over 5,000 characters, reading it directly is still hard. I chose to read Hua Shan’s explanatory version. Maybe I am just too weak.&lt;/p&gt;
+&lt;p&gt;“If I could live 1,000 times, then in 999 of them I would live a successful life.” Naval’s success does not depend on luck, but on his cognition. It is like what Zhang Guoli’s character says in Feng Xiaogang’s &lt;em&gt;Back to 1942&lt;/em&gt;: “Give him another ten years and he can become a landlord again.” Of course, the broader environment is also very important. I certainly believe Zhang Guoli’s character knows how to start again from nothing and will succeed. But the historical process of land reform, socialist transformation, and people’s communes soon arrived. The days when poor people, like in &lt;em&gt;White Deer Plain&lt;/em&gt;, tightened their belts, stayed flexible, stored grain in good years, bought land in bad years, and grew into landlords were gone forever. What awaited him was only a great change unseen in thousands of years.&lt;/p&gt;
+&lt;p&gt;Wisdom is the thinking ability to know the long-term consequences of personal actions.&lt;/p&gt;
+</content>
+        <category term="Reading" />
+        <category term="The Almanack of Naval Ravikant" />
+        <updated>2024-07-27T12:35:07.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://youngforest.github.io/en/2024/07/25/Liu-Shen-Lei-Lei-Du-Tang-Shi/</id>
+        <title>Liu Shen Lei Lei Reads Tang Poetry</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2024/07/25/Liu-Shen-Lei-Lei-Du-Tang-Shi/"/>
+        <content type="html">&lt;p&gt;It has the feeling of Dangnian Mingyue’s &lt;em&gt;Those Things in the Ming Dynasty&lt;/em&gt;. I do not know whether it is intentional imitation or unintentional resemblance.&lt;/p&gt;
+&lt;p&gt;It often interacts with Jin Yong’s novels, especially with the same compassion for the world.&lt;/p&gt;
+&lt;p&gt;Yue Lingshan: “Self-pity, self-sorrow, and self-resentment; no regret for true feeling, no regret for foolish devotion.”&lt;/p&gt;
+&lt;p&gt;It is normal for intellectuals to satirize the present through the past and express their views indirectly in writing. Lei Lei specifically wrote an essay called “Bai Juyi, Who Put Down His Chopsticks and Cursed His Mother,” expressing dissatisfaction with today’s environment of speech control, and yearning for and remembering the openness and tolerance of the Tang dynasty.&lt;/p&gt;
+&lt;p&gt;This year I read too many realist books and gained a lot of knowledge and wisdom. But this book is the most romantic of them, and it is very moving.&lt;/p&gt;
+&lt;p&gt;The four routines of Tang poetry: pastoral poetry has homebody men; frontier poetry has many angry young men; poems on antiquity are too painful; farewell poems are full of bromance.&lt;/p&gt;
+&lt;p&gt;“We often equate praise with loyalty and criticism with hostility. This is truly an enormous misunderstanding. Luo Yin tells us: that equation has never existed.” This is so similar to today’s social reality.&lt;/p&gt;
+</content>
+        <category term="Reading" />
+        <category term="Liu Shen Lei Lei Reads Tang Poetry" />
+        <updated>2024-07-25T14:25:35.000Z</updated>
     </entry>
     <entry>
         <id>https://youngforest.github.io/en/2024/01/08/Guns-Germs-and-Steel/</id>
