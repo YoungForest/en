@@ -1,5 +1,5 @@
 ---
-title: The Times: Countries, Society, and Individuals Under Cyclical Fluctuations
+title: "The Times: Countries, Society, and Individuals Under Cyclical Fluctuations"
 date: 2024-06-04 23:11:35
 tags:
 - Reading

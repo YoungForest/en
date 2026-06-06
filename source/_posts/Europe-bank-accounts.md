@@ -1,5 +1,5 @@
 ---
-title: Studying in Europe: A Chat About Banks and Money
+title: "Studying in Europe: A Chat About Banks and Money"
 date: 2019-12-07 12:22:12
 tags:
 - bank

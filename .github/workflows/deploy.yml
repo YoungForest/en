@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - master
+  pull_request:
+    branches:
+      - master
 
 env:
   GIT_USER: YoungForest
@@ -20,34 +23,36 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node_version: [12.x]
+        node_version: [20.x]
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Checkout theme repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           repository: ${{ env.THEME_REPO }}
           ref: ${{ env.THEME_BRANCH }}
           path: themes/next
 
       - name: Checkout deploy repo
-        uses: actions/checkout@v2
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        uses: actions/checkout@v4
         with:
           repository: ${{ env.DEPLOY_REPO }}
           ref: ${{ env.DEPLOY_BRANCH }}
           path: .deploy_git
 
       - name: Use Node.js ${{ matrix.node_version }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node_version }}
 
       - name: Configuration environment
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         env:
-          HEXO_DEPLOY_PRI: ${{secrets.HEXO_DEPLOY_PRI}}
+          HEXO_DEPLOY_PRI: ${{ secrets.HEXO_DEPLOY_PRI }}
         run: |
           sudo timedatectl set-timezone "Asia/Shanghai"
           mkdir -p ~/.ssh/
@@ -61,6 +66,11 @@ jobs:
         run: |
           npm install
 
+      - name: Build hexo
+        run: |
+          npm run build
+
       - name: Deploy hexo
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         run: |
           npm run deploy
