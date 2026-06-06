@@ -9,18 +9,20 @@
         <lastBuildDate>Thu, 01 Jan 2026 21:15:01 +0800</lastBuildDate>
         <category>life</category>
         <category>Year-End Review</category>
-        <category>Dublin</category>
-        <category>Life</category>
         <category>Reading</category>
         <category>The Three-Body Problem</category>
+        <category>Dublin</category>
+        <category>Life</category>
         <category>Alibaba</category>
         <category>intern</category>
         <category>Beijing</category>
         <category>Hukou</category>
-        <category>Are Your Lights On?</category>
+        <category>Business Cycles</category>
+        <category>Economics</category>
         <category>bank</category>
         <category>money</category>
         <category>Europe</category>
+        <category>Are Your Lights On?</category>
         <category>Genome</category>
         <category>Guns, Germs, and Steel</category>
         <category>Hennge</category>
@@ -36,26 +38,27 @@
         <category>Reality Is Not What It Seems</category>
         <category>Skin in the Game</category>
         <category>Nassim Nicholas Taleb</category>
-        <category>The Collapse of the Heavenly Dynasty</category>
         <category>The Bitcoin Standard</category>
+        <category>The Collapse of the Heavenly Dynasty</category>
         <category>The Hungry Golden Age</category>
+        <category>The Glory and the Dream</category>
         <category>The Worlds I See</category>
         <category>Why Nations Fail</category>
-        <category>Windows</category>
         <category>The Times</category>
         <category>XiaoLin Says</category>
+        <category>Windows</category>
         <category>C++</category>
         <category>hash</category>
         <category>unordered_map</category>
-        <category>travel</category>
-        <category>Travelogue</category>
         <category>codeforces</category>
         <category>contest</category>
+        <category>travel</category>
+        <category>Travelogue</category>
         <category>vim</category>
         <category>WeRide</category>
+        <category>RIP</category>
         <category>Kuaishou</category>
         <category>Internship</category>
-        <category>RIP</category>
         <category>sensetime</category>
         <item>
             <guid isPermalink="true">https://youngforest.github.io/en/2026/01/01/Genome-The-autobiography-of-a-species-in-23-chapters/</guid>
@@ -257,6 +260,75 @@
 &lt;blockquote&gt;
 &lt;p&gt;The rise of robber barons and trusts in the late nineteenth and early twentieth centuries fully illustrates one fact: markets themselves do not guarantee inclusive institutions.&lt;/p&gt;
 &lt;/blockquote&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://youngforest.github.io/en/2025/05/26/Business-cycles-history-theory-and-investment-reality/</guid>
+            <title>Business Cycles: History, Theory and Investment Reality</title>
+            <link>https://youngforest.github.io/en/2025/05/26/Business-cycles-history-theory-and-investment-reality/</link>
+            <category>Reading</category>
+            <category>Business Cycles</category>
+            <category>Economics</category>
+            <pubDate>Mon, 26 May 2025 22:15:29 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;The first 30% is especially interesting. Because it is ancient, full of stories and legend, and has relatively few figures, the economics is also easy for modern people to understand. After entering the post-Keynesian era, it becomes much harder. There are many figures, many schools, and many disagreements.&lt;/p&gt;
+&lt;p&gt;The most important core fact about the free market is that a transaction simply cannot happen unless both sides benefit.&lt;/p&gt;
+&lt;p&gt;Microeconomics is a science. Macroeconomics feels more like sociology. It is like the book I read before, &lt;a href=&#34;https://book.douban.com/subject/3370214/&#34;&gt;&lt;em&gt;Deep Simplicity: Chaos, Complexity and the Emergence of Life&lt;/em&gt;&lt;/a&gt;. Tiny changes in a system can bring incalculable effects.&lt;/p&gt;
+&lt;p&gt;It is much easier to predict economic activity by studying the stock market than to predict the stock market by studying the economy.&lt;/p&gt;
+&lt;p&gt;Manias and crashes used to be associated with universal irrationality or mob psychology.&lt;/p&gt;
+&lt;p&gt;Sixteen psychological biases:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Representativeness effect: we tend to believe that the trends we observe will continue.&lt;/li&gt;
+&lt;li&gt;False consensus effect: we tend to overestimate how many people agree with what we see.&lt;/li&gt;
+&lt;li&gt;Regret theory: we try to avoid actions that would confirm that we have already made a mistake.&lt;/li&gt;
+&lt;li&gt;Anchoring / framing: our decisions are influenced by information that vaguely hints at the correct answer.&lt;/li&gt;
+&lt;li&gt;Assimilation error: we misinterpret incoming information, believing it agrees with what we are doing.&lt;/li&gt;
+&lt;li&gt;Selective acceptance: we accept only information that seems to agree with our actions and attitudes.&lt;/li&gt;
+&lt;li&gt;Mental compartmentalization: we divide phenomena into different compartments and try to optimize each compartment separately rather than the whole.&lt;/li&gt;
+&lt;li&gt;Selective perception: we distort information so that it agrees with our actions and attitudes.&lt;/li&gt;
+&lt;li&gt;Overconfidence behavior: we overestimate our ability to make correct decisions.&lt;/li&gt;
+&lt;li&gt;Hindsight bias: we overestimate how likely we were to predict the outcomes of a series of past events.&lt;/li&gt;
+&lt;li&gt;Confirmation bias: our conclusions are improperly tilted toward what we want to believe.&lt;/li&gt;
+&lt;li&gt;Adaptive attitudes: we often hold the same attitudes as people we know well.&lt;/li&gt;
+&lt;li&gt;Social comparison: when facing a topic we find difficult to understand, we use other people’s behavior as a source of information.&lt;/li&gt;
+&lt;li&gt;Cognitive dissonance: we try to avoid or distort evidence showing that our assumptions are wrong, and we also avoid emphasizing actions that create such dissonance.&lt;/li&gt;
+&lt;li&gt;Ego-defensive function: we adjust our attitudes so that they appear to agree with the decisions we have made.&lt;/li&gt;
+&lt;li&gt;Prospect theory: we have an irrational tendency to prefer gambling on losses rather than gambling on gains, which means we hold losing positions longer than winning positions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Paul Volcker: people think inflation is a cruel tax, perhaps the cruelest tax, because it delivers unexpected blows to many sectors and harms people on fixed incomes the most.&lt;/p&gt;
+&lt;p&gt;Friedman: inflation is always and everywhere a monetary phenomenon. To control inflation, one only needs to control the money supply.&lt;/p&gt;
+&lt;p&gt;Schumpeter, 1939: cycles are not something like tonsils that can be removed separately. They are like the heartbeat, at the core of the organism.&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://youngforest.github.io/en/2025/05/18/The-Glory-and-the-Dream/</guid>
+            <title>The Glory and the Dream: A Narrative History of America, 1932-1972</title>
+            <link>https://youngforest.github.io/en/2025/05/18/The-Glory-and-the-Dream/</link>
+            <category>Reading</category>
+            <category>The Glory and the Dream</category>
+            <pubDate>Sun, 18 May 2025 19:17:53 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;&lt;a href=&#34;https://book.douban.com/subject/26314954/&#34;&gt;&lt;em&gt;The Glory and the Dream: A Narrative History of America, 1932-1972&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Recommended by &lt;em&gt;Luoji Siwei&lt;/em&gt;. The author’s left-wing tendency is quite serious: he beautifies the Democratic Party and demonizes the Republican Party. The writing is so beautiful that it is almost excessive. It reminds me of the Grand Historian, and I cannot help wondering whether it is also “half hearsay and half imagination.” Just kidding. I had just reached Roosevelt’s election in 1932. American history has gone through many challenges far greater than today’s. Roosevelt was also a person who changed America, moving it from liberalism toward statism, from isolationism toward globalism. It was also the moment in America’s 250-year history when it came closest to the risk of dictatorship. This is what happens in a crisis. Liberal democracy is hard-won and should be cherished. Today, on the news and across the internet, people are always worrying about America’s severe division, deglobalization, and the rise of the right. All I can say is: too young. Take history as a mirror. America is trustworthy.&lt;/p&gt;
+&lt;p&gt;The whole book is a chronological account. For foreigners, many parts are passed over briefly and still feel quite unfamiliar. This is especially true of the history of entertainment and mass life. Those stars, films, and novels: I know none of them. It is a very long book, four thick volumes, the longest book I have finished this year. Another long book I am reading is &lt;em&gt;Les Miserables&lt;/em&gt;, which I have not finished yet.&lt;/p&gt;
+&lt;p&gt;The writing is decent. Many historical scenes feel as if the author were watching from the side. The vividness is almost unbelievable. In this regard it is similar to Sima Qian. Of course, now there is an enormous amount of historical material; it is just that the author exaggerates a little.&lt;/p&gt;
+&lt;p&gt;The author leans heavily Democratic. Although it is understandable that intellectuals are left-wing, in a chronological history this feels a bit too forceful. The “Spring and Autumn brushwork” becomes hard to keep reading.&lt;/p&gt;
+&lt;p&gt;After finishing it, I became even more spiritually American. Look at all these ideologies, wars, party struggles, technological progress, and the enormous changes in media and mass life throughout history. Every decade is a major change. Then one will not be overly joyful or sorrowful about Trump, trade wars, local wars (Russia-Ukraine, Israel-Palestine, India-Pakistan), or temporary ups and downs in US stocks. These are small scenes. Compared with the past, today’s world is truly much better, especially for an IT practitioner. One flaw of intellectuals is that they always indulge in nostalgia and lament the present.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The government never participates in any productive activity. In essence it is parasitic, while economic development mainly depends on entrepreneurs who are willing to take capital risks for profit.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Extremists can always attract a few people. In 1861, only a minority in the American North were abolitionists; in 1776, only a minority of colonists truly yearned for territorial independence. The best barometer of a social group’s mood is the sympathy it receives, not the number of participants.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;America is great not because of what the government has done for the people, but because of what the people have done for themselves.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;As the afterword says, the true founding spirit of America is freedom.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If freedom is to have substantive meaning, its tolerance must be broader, and it must include protection for those condemned by thousands. Anyone can cheer for Eisenhower, MacArthur, John Glenn, and Neil Armstrong; but it takes some breadth of mind to tolerate the Weather Underground members who hated Lyndon Johnson, the John Birch Society members who opposed John F. Kennedy, and the Liberty League members who made trouble for Roosevelt.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;America’s divisions and historical disgraces are many: … but those were always exceptions. If one were to list examples showing its spirit of tolerance, the list would be several times longer, enough to be regarded as an honor roll of the nation’s freedom fighters.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Last year’s election broke many left-wing intellectuals. They cried that American democracy was finished and developed “political depression.” But I instead think this is a sign that the American spirit remains strong. As Voltaire said, “I disapprove of what you say, but I will defend to the death your right to say it.” The Republican president and both chambers of Congress all won majorities. The Democratic Party can no longer blame the voters; otherwise it may lose the midterms too. Technological progress once again had a huge impact on the election: social media, podcasts, and the like. Just as radio once affected newspapers, television affected radio, and the internet affected television. Although everyone says America has never been so divided, looking across history, America has often been divided; unity is the minority state. The ending of the book, 1962-1972, is likewise dominated by division. Reading history makes one wise: take the present lightly and be optimistic about the future.&lt;/p&gt;
  ]]></description>
         </item>
         <item>
