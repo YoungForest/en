@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>YoungForest&#39;s blog • Posts by &#34;year-end summary&#34; tag</title>
+        <link>https://youngforest.github.io/en</link>
+        <description>A programmer in Amazon Beijing, China</description>
+        <language>en,default</language>
+        <pubDate>Wed, 25 Nov 2020 20:28:16 +0800</pubDate>
+        <lastBuildDate>Wed, 25 Nov 2020 20:28:16 +0800</lastBuildDate>
+        <category>life</category>
+        <category>Year-End Review</category>
+        <category>year-end summary</category>
+        <category>Reading</category>
+        <category>The Three-Body Problem</category>
+        <category>A Global History</category>
+        <category>A Matter of Degrees</category>
+        <category>Dublin</category>
+        <category>Life</category>
+        <category>Alibaba</category>
+        <category>intern</category>
+        <category>Antifragile</category>
+        <category>Are Your Lights On?</category>
+        <category>Deep Simplicity</category>
+        <category>Beijing</category>
+        <category>Hukou</category>
+        <category>Business Cycles</category>
+        <category>Economics</category>
+        <category>codeforces</category>
+        <category>contest</category>
+        <category>Elon Musk</category>
+        <category>bank</category>
+        <category>money</category>
+        <category>Europe</category>
+        <category>Tech</category>
+        <category>Genome</category>
+        <category>Hexo</category>
+        <category>Hou Hei Xue</category>
+        <category>Guns, Germs, and Steel</category>
+        <category>Ireland</category>
+        <category>IB</category>
+        <category>Bonds</category>
+        <category>France visa</category>
+        <category>Schengen</category>
+        <category>Side Project</category>
+        <category>Hennge</category>
+        <category>Competitive Programming</category>
+        <category>Just Keep Buying</category>
+        <category>A Little History of the World</category>
+        <category>Liu Shen Lei Lei Reads Jin Yong</category>
+        <category>Liu Shen Lei Lei Reads Tang Poetry</category>
+        <category>Blog</category>
+        <category>Travel</category>
+        <category>Keyboard</category>
+        <category>Poor Charlie&#39;s Almanack</category>
+        <category>Programming Pearls</category>
+        <category>Reality Is Not What It Seems</category>
+        <category>Money</category>
+        <category>Investment</category>
+        <category>QDII</category>
+        <category>Arbitrage</category>
+        <category>Off-Exchange to On-Exchange</category>
+        <category>tech</category>
+        <category>Shi Nan Zhi Tu</category>
+        <category>Ma Boyong</category>
+        <category>Tai Bai Jin Xing You Dian Fan</category>
+        <category>Skin in the Game</category>
+        <category>Nassim Nicholas Taleb</category>
+        <category>The Collapse of the Heavenly Dynasty</category>
+        <category>The Bitcoin Standard</category>
+        <category>The Almanack of Naval Ravikant</category>
+        <category>The Art of War</category>
+        <category>The Hungry Golden Age</category>
+        <category>The Glory and the Dream</category>
+        <category>The Worlds I See</category>
+        <category>The Gains and Losses of Economic Changes in the Past Dynasties</category>
+        <category>Linux</category>
+        <category>Why Nations Fail</category>
+        <category>Windows</category>
+        <category>The Times</category>
+        <category>XiaoLin Says</category>
+        <category>travel</category>
+        <category>Tinkering</category>
+        <category>C++</category>
+        <category>hash</category>
+        <category>unordered_map</category>
+        <category>Amazon</category>
+        <category>Microsoft</category>
+        <category>China</category>
+        <category>Travelogue</category>
+        <category>vim</category>
+        <category>investing</category>
+        <category>WeRide</category>
+        <category>Life and Death Are Wearing Me Out</category>
+        <category>Kuaishou</category>
+        <category>Internship</category>
+        <category>RIP</category>
+        <category>sensetime</category>
+        <item>
+            <guid isPermalink="true">https://youngforest.github.io/en/2020/11/25/2020-summary-and-2021-resolutions/</guid>
+            <title>2020 Year-End Summary and 2021 New Year Outlook</title>
+            <link>https://youngforest.github.io/en/2020/11/25/2020-summary-and-2021-resolutions/</link>
+            <category>life</category>
+            <category>year-end summary</category>
+            <pubDate>Wed, 25 Nov 2020 20:28:16 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;Reposted from &lt;a href=&#34;https://youngforest.github.io/2020/11/25/2020-summary-and-2021-resolutions/&#34;&gt;my blog&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This year-end summary is a bit early; December has not even arrived yet. But since I just submitted the plagiarism check for my master’s thesis today, even though there are still many things to do, I have no mood to work at all. I might as well use this restless mood to write a first draft of my year-end summary. I do not know whether the mood will affect it.&lt;/p&gt;
+&lt;p&gt;From the very beginning, 2020 was destined to be an extraordinary year. Before, I had only foreseen that because I was going to graduate, it would be extraordinary for me. I did not expect a pandemic sweeping the world to make it a challenging year for everyone.&lt;/p&gt;
+&lt;h2 id=&#34;2020-Work-Review&#34;&gt;&lt;a href=&#34;#2020-Work-Review&#34; class=&#34;headerlink&#34; title=&#34;2020 Work Review&#34;&gt;&lt;/a&gt;2020 Work Review&lt;/h2&gt;&lt;p&gt;First, I will compare against &lt;a href=&#34;https://youngforest.github.io/2020/02/20/2019-summary-and-2020-resolutions/&#34;&gt;the outlook I wrote last year&lt;/a&gt; and review how much I completed.&lt;/p&gt;
+&lt;p&gt;Daily problem solving was completed as hoped. Especially after joining the &lt;a href=&#34;https://wisdompeak.github.io/lc-score-board/&#34;&gt;Cruel check-in group&lt;/a&gt;, solving problems could even earn red packets, which made me very happy. In the group I also got to know a bunch of strong people. Everyone there is talented, and they speak so nicely. Over two and a half years of graduate school, I solved 1k+ problems, participated in nearly 100 LeetCode weekly contests, once entered the global top 500, kept my rating stable at 2200+, kept my rating rank stable in the top 1000, solved all 4 problems in more than half of weekly contests, guaranteed 3 problems, often ranked top 500, reached top 100 at best, and won gifts 3 times on the Chinese server. Although the gifts were not valuable, I was very happy. My highest rank in the Cruel group was 11th, stable top 40, and sometimes stable top 20. These achievements still make me a little proud. Others may not value them much, but I enjoyed them myself, gained a sense of achievement, and built positive feedback for problem solving.&lt;br&gt;But afterward I will not invest more time in problem solving. I have now passed the peak of grinding LeetCode, there is temporarily no pressure to find a job, and my problem-solving level has reached a certain height, so the marginal benefit is not as large as before. The plan afterward is to do one or two problems a day to keep my feel, try to participate in weekly contests on weekends, and continue being a sickle in the Cruel group. More time will be invested in other skills, such as work skills, system design, spoken English, and so on.&lt;/p&gt;
+&lt;p&gt;Joining a big foreign company was also completed as hoped. Although because of the pandemic, my first choice, Google, completely canceled this year’s summer internship program, even though I had already passed the first interview. Even the autumn recruitment afterward disappeared directly. But as hoped, I went to my second choice, Amazon, for a 6-month remote internship. Although it was not the backend role I initially applied for, but an iOS client role, fortunately Amazon SDEs are all full-stack, and the work also involved quite a bit of backend. My internship experience over these months has also been pretty good. There will also be many opportunities to switch teams and transfer afterward.&lt;br&gt;If nothing unexpected happens, I should still convert to full-time and stay.&lt;/p&gt;
+&lt;p&gt;This year’s job search was mainly divided into two parts: spring internship interviews and autumn recruitment.&lt;br&gt;Because my goal was clear and my preparation was sufficient, with 4 internships, 1k LeetCode problems, and a CS background, even though I stayed at home for half a year during the pandemic and many companies reduced hiring, especially foreign companies, I still got quite a few good offers. In the end, after comprehensive consideration, also due to my long-standing plan, I chose to intern and stay at a big foreign company like Amazon, giving up domestic Internet companies and high-paying unicorns. Overall, both the process and results of job hunting and interviewing were smooth and satisfying.&lt;/p&gt;
+&lt;p&gt;I am also very satisfied with research and graduation work. Although in the first half of the year I spent a lot of effort writing a small paper and submitting it to 3M, only to be rejected badly, the experiments and experience from finishing that small paper helped me write my master’s thesis on time. I just submitted it for plagiarism checking today. If nothing unexpected happens, I should graduate on time without delaying graduation. The most recent year was also the year when I invested the most in research during my graduate career. Although there were no real results, I did try my best. I am really not cut out for academia. It is more practical to be a software development engineer.&lt;/p&gt;
+&lt;p&gt;December update. The expectation of graduating on time still ran into an accident. Because I was on exchange outside the university in the second half of last year, I discussed with my advisor and planned to open my thesis proposal after the next semester started. However, when the next semester arrived, the proposal was not opened for half a year. I was speechless. My advisor dragged it out until August before opening the proposal for me. By the December defense, it had been less than 6 months, which did not meet the school’s regulations, so I could not participate in the defense. I could only change to the second defense batch next June.&lt;br&gt;This brought a series of impacts, the biggest being that I can only officially join the company in July.&lt;br&gt;I originally thought I was about to escape the sea of bitterness, but unexpectedly I have to stay another half year. The college blocks you at the very last step. If they had told me earlier that I could not defend on time, I would not have rushed so hard for the December defense. The college leaders do not care about students’ lives or the reality of the pandemic; they only care about their own official hats. I was almost ready to jump from the college building. My advisor also pleaded with the college leaders, but it still did not work.&lt;/p&gt;
+&lt;p&gt;Exercise, as in previous years, made no progress. I still look thin with clothes on and have no muscle with clothes off. My wisdom teeth also could not be handled because of the pandemic, schoolwork, and internship being too busy.&lt;/p&gt;
+&lt;p&gt;Overall, although this year was full of black swans and bumps, and although it did not perfectly meet expectations, I am still very satisfied overall. Give myself a thumbs-up. Keep going!&lt;/p&gt;
+&lt;h2 id=&#34;Longing-for-a-Good-Life-in-2021&#34;&gt;&lt;a href=&#34;#Longing-for-a-Good-Life-in-2021&#34; class=&#34;headerlink&#34; title=&#34;Longing for a Good Life in 2021&#34;&gt;&lt;/a&gt;Longing for a Good Life in 2021&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Graduate smoothly.&lt;/li&gt;
+&lt;li&gt;Invest spare time into needed skills, mainly including work skills, system design, spoken English, and so on.&lt;/li&gt;
+&lt;li&gt;Take the internship and work seriously, and pass the probation period safely. Prepare for promotion to L5 afterward.&lt;/li&gt;
+&lt;li&gt;Solve wisdom tooth and other dental problems.&lt;/li&gt;
+&lt;li&gt;Keep solving problems every day as a hobby and habit.&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
