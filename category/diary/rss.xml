@@ -12,13 +12,13 @@
         <category>Reading</category>
         <category>The Three-Body Problem</category>
         <category>A Global History</category>
+        <category>A Matter of Degrees</category>
         <category>Dublin</category>
         <category>Life</category>
-        <category>A Matter of Degrees</category>
         <category>Alibaba</category>
         <category>intern</category>
-        <category>Antifragile</category>
         <category>Are Your Lights On?</category>
+        <category>Antifragile</category>
         <category>Beijing</category>
         <category>Hukou</category>
         <category>Business Cycles</category>
@@ -49,8 +49,8 @@
         <category>Blog</category>
         <category>Travel</category>
         <category>Keyboard</category>
-        <category>Poor Charlie&#39;s Almanack</category>
         <category>Programming Pearls</category>
+        <category>Poor Charlie&#39;s Almanack</category>
         <category>Money</category>
         <category>Investment</category>
         <category>QDII</category>
@@ -65,14 +65,15 @@
         <category>Tai Bai Jin Xing You Dian Fan</category>
         <category>The Almanack of Naval Ravikant</category>
         <category>The Art of War</category>
-        <category>The Bitcoin Standard</category>
         <category>The Collapse of the Heavenly Dynasty</category>
+        <category>The Bitcoin Standard</category>
         <category>The Hungry Golden Age</category>
         <category>The Glory and the Dream</category>
-        <category>The Worlds I See</category>
         <category>The Gains and Losses of Economic Changes in the Past Dynasties</category>
-        <category>Why Nations Fail</category>
+        <category>The Worlds I See</category>
         <category>Windows</category>
+        <category>Why Nations Fail</category>
+        <category>travel</category>
         <category>The Times</category>
         <category>XiaoLin Says</category>
         <category>C++</category>
@@ -81,15 +82,14 @@
         <category>Amazon</category>
         <category>Microsoft</category>
         <category>China</category>
-        <category>travel</category>
         <category>Travelogue</category>
         <category>vim</category>
         <category>WeRide</category>
         <category>Kuaishou</category>
         <category>Internship</category>
         <category>Life and Death Are Wearing Me Out</category>
-        <category>sensetime</category>
         <category>RIP</category>
+        <category>sensetime</category>
         <item>
             <guid isPermalink="true">https://youngforest.github.io/en/2025/12/27/2025-summary-and-2026-resolutions/</guid>
             <title>2025 Year-End Review and 2026 New Year Outlook</title>
@@ -749,6 +749,77 @@
 &lt;li&gt;Read more books, including technical books and interest-driven books such as history, investment, and novels.&lt;/li&gt;
 &lt;li&gt;Produce more output, including spoken expression, blog posts, videos, etc.&lt;/li&gt;
 &lt;/ul&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://youngforest.github.io/en/2021/07/03/my-3-years-master/</guid>
+            <title>Three-Year Master&#39;s Program Review</title>
+            <link>https://youngforest.github.io/en/2021/07/03/my-3-years-master/</link>
+            <category>life</category>
+            <pubDate>Sat, 03 Jul 2021 10:41:38 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;When I graduated from college, I wrote a four-year review: &lt;a href=&#34;https://youngforest.github.io/2018/10/03/my-4-years-college/&#34;&gt;Four-Year College Review&lt;/a&gt;. Now, in the blink of an eye, three years have passed. I have graduated from graduate school and am about to enter the workplace.&lt;/p&gt;
+&lt;p&gt;Although I went through half a year of delayed graduation, in the end I still graduated successfully without any real danger. Last week I completed my graduation trip to Wuhan, and over the weekend I returned to Beijing to move and prepare for onboarding. With bright expectations for the future, I feel full of ambition.&lt;/p&gt;
+&lt;h2 id=&#34;Three-Years-of-Graduate-School&#34;&gt;&lt;a href=&#34;#Three-Years-of-Graduate-School&#34; class=&#34;headerlink&#34; title=&#34;Three Years of Graduate School&#34;&gt;&lt;/a&gt;Three Years of Graduate School&lt;/h2&gt;&lt;p&gt;Three years ago, because my undergraduate grades were excellent, I eventually took the seemingly glamorous path of guaranteed graduate-school admission.&lt;/p&gt;
+&lt;p&gt;Although I went through many twists, turns, and anxieties, I do not regret that choice.&lt;/p&gt;
+&lt;p&gt;For a small-town exam machine like me, this result and development path were indeed more stable, lower-risk, and relatively rewarding.&lt;/p&gt;
+&lt;p&gt;Looking back on these three years of graduate school, there were many things I failed to accomplish.&lt;/p&gt;
+&lt;p&gt;In the first semester of my first year, my advisor sent me to WeRide for an internship. The work was fairly hard and went fairly smoothly, but it ended unhappily. In fact, I did not want to go from the beginning, but I was pressured by Boss Niu’s authority. See &lt;a href=&#34;https://www.douban.com/note/694767558/&#34;&gt;my rant&lt;/a&gt;. In the short term I earned a salary of 3k per month; in the long term I wasted time.&lt;/p&gt;
+&lt;p&gt;In the second semester of my first year, I switched to a project with the China Institute of Water Resources. Because of client-side wrangling and insufficient technical reserves, it eventually became a deep pit and ended without resolution.&lt;/p&gt;
+&lt;p&gt;During my first year, besides doing work for Boss Niu, I also had to take classes and finish all credits required for graduation. Because my time and energy were scattered and the importance of grades had decreased, my grades were not as good as in college. But no one cared about those grades anyway.&lt;/p&gt;
+&lt;p&gt;From the second semester of my second year through my third year, I was writing the small paper and the thesis. The small paper was revised dozens of times, submitted three times, rejected twice, and withdrawn once because my advisor disliked the conference level. All attempts ended in failure. The thesis was repeatedly belittled by my advisor, scaring me into thinking I could not graduate. Yet during the defense, after comparing with other students, I found that my work was actually pretty good.&lt;/p&gt;
+&lt;p&gt;I also accomplished some things I had wanted to do.&lt;/p&gt;
+&lt;p&gt;In the first semester of my second year, I went to Belgium as an exchange student, experienced studying abroad, and traveled through almost all of Europe. In hindsight, this was truly lucky, because the next year the global COVID-19 pandemic broke out. Travel became an impossible activity, especially international travel.&lt;/p&gt;
+&lt;p&gt;During the exchange, I met my girlfriend, got to know her, and eventually fell in love. That also counts as a wonderful fate.&lt;/p&gt;
+&lt;p&gt;During the summer after my second year, I passed Amazon’s remote internship and then smoothly received an Amazon offer. This slightly made up for the regret of being unable to go to Google because of the sudden pandemic.&lt;/p&gt;
+&lt;h2 id=&#34;Looking-Toward-the-Future&#34;&gt;&lt;a href=&#34;#Looking-Toward-the-Future&#34; class=&#34;headerlink&#34; title=&#34;Looking Toward the Future&#34;&gt;&lt;/a&gt;Looking Toward the Future&lt;/h2&gt;&lt;p&gt;I am about to enter the workplace and become a glorious worker.&lt;/p&gt;
+&lt;p&gt;A few pieces of career-planning advice for myself:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Be a reliable person.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;After starting work, I can no longer be as free and undisciplined as I was while studying. Many times I merely dealt with Teacher Niu perfunctorily and did not actually listen to him. Yet this indeed brought more benefits than harm. First, I do not love research. Reading papers and writing papers feel to me like visiting a grave. Second, the extra time I gained by slacking was not wasted; I used it to do things I liked, such as solving algorithm problems and learning C++. These things also helped me better achieve my own goal: finding a good job. Listening to Teacher Niu would have benefited him more and me less. Third, we had no paper requirement for graduation. Although under Teacher Niu’s intimidation I tried submitting the small paper three times, it was rejected twice, and once my teacher thought the conference was not good enough and withdrew it. In the end, I barely managed to get a patent. During the graduation defense, I finally discovered that many other students’ graduation projects were much worse than mine, roughly equivalent to my undergraduate level. All the earlier daily worries about being unable to graduate were Boss Niu scaring us and us scaring ourselves; we almost scared ourselves to death. In reality, the graduation requirements were not as high as imagined. This is understandable too. Although there are many excellent students in BUAA School 6 and our lab is also very competitive, our level is still above average overall. In the final year of graduate school, after my knowledge and experience became more mature, I finally realized that I might have been PUA’d. Only by making students panic and feel that they are not good enough can Teacher Niu better hold on to his power.&lt;/p&gt;
+&lt;p&gt;However, after work, the situation is completely different. After all, you are paid to do work, and your manager, as your boss, will not indulge you like parents or teachers. Reliability is what I consider the most important quality at work. It lets your manager feel comfortable assigning tasks to you, and makes colleagues more comfortable collaborating with you. It is very beneficial for career growth and development.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Learn to save money and invest.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I start work next week, but I found that I had almost spent all my savings before onboarding and had to ask my father for money. The biggest expense was renting, followed by the graduation trip, and then buying daily necessities, including furniture, seasonings, and cookware. Many of these costs exceeded my expectations. When I realized the danger, my credit card already had 33k in debt. Although I had previously saved 40k, because I underestimated expenses, 12k was placed in wealth-management products and could not be withdrawn immediately. So before the credit-card bill comes out on the 10th next month, there will probably be a 6k gap, and I can only ask Dad for money. He did not even have my bank card number. I have not directly asked for money for many years and have been living on my own, saving through internships and school subsidies. I had expected that graduation would require quite a bit of money, so I saved 40k, but I did not expect to be this short of money. Adult life is truly hard.&lt;/p&gt;
+&lt;p&gt;I previously tried buying funds, but basically lost money and became a leek. But because of that I also grew a lot, and it counts as getting started with investing and personal finance.&lt;/p&gt;
+&lt;p&gt;Because I plan to develop in Europe or North America afterward and do not want to keep grinding in China, when I first go there I will definitely still need to spend a large amount of money for turnover.&lt;/p&gt;
+&lt;p&gt;Buying a house, buying a car, marrying a wife, and raising children in the future all require money, so I need to start preparing early.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Focus on career development.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;After 19 years of schooling, I am now formally joining the ranks of workers. By comparison, the time spent working may be even longer, likely 40 years. Therefore, I need to plan properly, have a good start, keep accumulating, and generate compounding effects.&lt;/p&gt;
+&lt;p&gt;My current career plan is: keep working as an SDE, reach SDE3 or above, work at big tech companies, and live in Europe or the United States.&lt;/p&gt;
+&lt;p&gt;Based on my career plan, there are mainly three things to do now: 1. Improve my SDE qualities, for both work and interviews; 2. Spoken English; 3. Exercise and build physical health.&lt;/p&gt;
+&lt;h2 id=&#34;Time-Is-a-Butcher’s-Knife&#34;&gt;&lt;a href=&#34;#Time-Is-a-Butcher’s-Knife&#34; class=&#34;headerlink&#34; title=&#34;Time Is a Butcher’s Knife&#34;&gt;&lt;/a&gt;Time Is a Butcher’s Knife&lt;/h2&gt;&lt;p&gt;Finally, I attach two photos of myself before and after graduate school, once again sighing that time is a butcher’s knife. Three years have passed. The photos are me at 22 and 25, respectively.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/%E9%9D%92%E5%B2%9B%E6%B5%B7%E8%BE%B9.jpg&#34; alt=&#34;Undergraduate graduation trip at the seaside in Qingdao&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/%E7%89%9B%E8%80%81%E5%B8%88%E5%92%8C%E6%9D%A8%E6%A3%AE.jpeg&#34; alt=&#34;Master&amp;#39;s graduation photo with my advisor&#34;&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://youngforest.github.io/en/2021/07/02/Wuhan-trip/</guid>
+            <title>Wuhan Travelogue and Master&#39;s Graduation Trip</title>
+            <link>https://youngforest.github.io/en/2021/07/02/Wuhan-trip/</link>
+            <category>travel</category>
+            <pubDate>Fri, 02 Jul 2021 19:26:23 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;I finally graduated, and the graduation trip that had been planned for a long time was officially put on the agenda. Because we had to wait for my girlfriend to finish her exam, and I also had to come back before onboarding, preferably with a few days left to rest and buy furniture, my girlfriend and I only had one week to travel. We went to three places in total: Linfen, Shanxi -&amp;gt; Wuhan, Hubei -&amp;gt; Suizhou, Hubei.&lt;/p&gt;
+&lt;p&gt;The purpose was roughly to meet my parents and visit my girlfriend’s grandmother, whom she had not seen for ten years.&lt;/p&gt;
+&lt;h1 id=&#34;6-24-Day-0&#34;&gt;&lt;a href=&#34;#6-24-Day-0&#34; class=&#34;headerlink&#34; title=&#34;6/24 Day 0&#34;&gt;&lt;/a&gt;6/24 Day 0&lt;/h1&gt;&lt;p&gt;On this day I received my graduation certificate, packed up my dorm room, checked out of the dorm, and saw my roommates off. In the evening I waited for my girlfriend to finish her exam, then went to Shilibao to view apartments. After that I returned to school to pick up our travel luggage and went to a hotel near the train station. By the time we finished washing up, it was already past 1 a.m. We were intimate for a long time before sleeping. After all, it had already been two and a half months since the last time we booked a room, which was when we went out for my girlfriend’s birthday.&lt;/p&gt;
+&lt;h1 id=&#34;6-25-Day-1&#34;&gt;&lt;a href=&#34;#6-25-Day-1&#34; class=&#34;headerlink&#34; title=&#34;6/25 Day 1&#34;&gt;&lt;/a&gt;6/25 Day 1&lt;/h1&gt;&lt;p&gt;We slept until 11 a.m. at noon. We took a taxi to Beijing West Railway Station. Although it was very close, we still got on the train only ten minutes before departure.&lt;/p&gt;
+&lt;p&gt;We took D2003 and arrived at Xiangfen West Station. Dad and my uncle came to pick us up. We went together to the oil-noodle restaurant on Fengqing Street for a meal, and Mom and my sister also came.&lt;/p&gt;
+&lt;h1 id=&#34;6-26-Day-2&#34;&gt;&lt;a href=&#34;#6-26-Day-2&#34; class=&#34;headerlink&#34; title=&#34;6/26 Day 2&#34;&gt;&lt;/a&gt;6/26 Day 2&lt;/h1&gt;&lt;p&gt;The next morning we ate at home, then two cars took my girlfriend to Longshuyu. We climbed the mountain, walked across the glass bridge, and went down the stone slide.&lt;/p&gt;
+&lt;p&gt;At noon we went back to the village to pick up Grandma, then returned to the city and ate a feast at the Weicun hand-pulled noodle restaurant.&lt;/p&gt;
+&lt;p&gt;In the afternoon we rested at home for two hours, then drove my girlfriend to the city mall to hang out. We ate malaban in the food court.&lt;/p&gt;
+&lt;h1 id=&#34;6-27-Day-3&#34;&gt;&lt;a href=&#34;#6-27-Day-3&#34; class=&#34;headerlink&#34; title=&#34;6/27 Day 3&#34;&gt;&lt;/a&gt;6/27 Day 3&lt;/h1&gt;&lt;p&gt;In the morning we cooked and ate at home. I originally planned to make braised noodles, but because I bought the wrong kind of beans, we ended up making hand-pulled tomato-and-egg noodles.&lt;/p&gt;
+&lt;p&gt;After eating, we rested briefly, and Dad drove us to the airport.&lt;/p&gt;
+&lt;p&gt;We took a flight and arrived at Wuhan Tianhe Airport in the evening, then took the metro to Hankou Station and stayed at a nearby hotel.&lt;/p&gt;
+&lt;p&gt;At night we went to Wansongyuan and ate pan-fried buns, beef noodles, and chouganzi.&lt;/p&gt;
+&lt;p&gt;We walked around Zhongshan Park and the nearby mall. But because the mall was closing at 9:30, we only took some photos on the first floor.&lt;/p&gt;
+&lt;p&gt;Right after arriving in Wuhan, we tasted the power of the River City. There was a heavy rain in the morning, and although there was no rain after we arrived at night, it was extremely humid and hot. On top of that, Wuhan’s food is spicy. After walking just a few steps, my whole body was soaked. It really almost killed me.&lt;/p&gt;
+&lt;h1 id=&#34;6-28-Day-4&#34;&gt;&lt;a href=&#34;#6-28-Day-4&#34; class=&#34;headerlink&#34; title=&#34;6/28 Day 4&#34;&gt;&lt;/a&gt;6/28 Day 4&lt;/h1&gt;&lt;p&gt;At noon we ate hot dry noodles beside the train station. They were pretty good. Then we took the high-speed train to Suizhou South. My girlfriend’s aunt and uncle picked us up. Afterward we went to the village to sit at her grandparents’ home and had dinner there. At night, her uncle picked us up and took us back to a hotel in the city. We ate xiaolongbao and fruit yogurt because we had not eaten enough at dinner. Rural meals were still hard to handle, but out of politeness and hunger I ate some.&lt;/p&gt;
+&lt;h1 id=&#34;6-29-Day-5&#34;&gt;&lt;a href=&#34;#6-29-Day-5&#34; class=&#34;headerlink&#34; title=&#34;6/29 Day 5&#34;&gt;&lt;/a&gt;6/29 Day 5&lt;/h1&gt;&lt;p&gt;In the morning we got up early, ate Xiangyang beef-offal noodles, and drank rice wine. Then we went to her grandparents’ home and sat there for the whole morning, saying goodbye to them.&lt;/p&gt;
+&lt;p&gt;At noon we returned to the city and ate crawfish. Her aunt treated us. It was so satisfying.&lt;/p&gt;
+&lt;p&gt;In the afternoon we took the high-speed train back to Wuhan and stayed at the original hotel again.&lt;/p&gt;
+&lt;p&gt;When leaving the station, we ran into the internet-famous “Teacher Luo Xiang”, took a photo together, and posted it on Moments.&lt;/p&gt;
+&lt;p&gt;At night we went to the “Hubu Alley” snack street and ate&lt;/p&gt;
+&lt;p&gt;We walked across the famous Wuhan Yangtze River Bridge. I did not expect that after crossing the bridge and reaching Hanyang, the area was all major roads. It was also nearly midnight, with no buses and no shared bikes. We took a taxi back to Hankou Station. Everyone should try not to walk to strange places. Fortunately there were many taxis, otherwise it would have been truly desperate.&lt;/p&gt;
+&lt;h1 id=&#34;6-30-Day-6&#34;&gt;&lt;a href=&#34;#6-30-Day-6&#34; class=&#34;headerlink&#34; title=&#34;6/30 Day 6&#34;&gt;&lt;/a&gt;6/30 Day 6&lt;/h1&gt;&lt;p&gt;Jianghan Avenue&lt;/p&gt;
+&lt;h1 id=&#34;7-1-Day-7&#34;&gt;&lt;a href=&#34;#7-1-Day-7&#34; class=&#34;headerlink&#34; title=&#34;7/1 Day 7&#34;&gt;&lt;/a&gt;7/1 Day 7&lt;/h1&gt;&lt;p&gt;We took G520 back to Beijing early in the morning. I went back to school to move, and at night went to IKEA to buy furniture, spending another 2400 yuan.&lt;/p&gt;
+&lt;p&gt;Travel really costs money. Moving does too.&lt;/p&gt;
  ]]></description>
         </item>
         <item>
