@@ -3,23 +3,24 @@
     <id>https://youngforest.github.io/en</id>
     <title>YoungForest&#39;s blog • Posts by &#34;europe&#34; tag</title>
     <link href="https://youngforest.github.io/en" />
-    <updated>2019-12-07T04:22:12.000Z</updated>
+    <updated>2023-10-18T11:56:40.000Z</updated>
     <category term="life" />
     <category term="Year-End Review" />
     <category term="Reading" />
-    <category term="The Three-Body Problem" />
     <category term="A Matter of Degrees" />
+    <category term="The Three-Body Problem" />
     <category term="Dublin" />
     <category term="Life" />
     <category term="Alibaba" />
     <category term="intern" />
     <category term="Antifragile" />
-    <category term="Beijing" />
-    <category term="Hukou" />
+    <category term="Are Your Lights On?" />
     <category term="Business Cycles" />
     <category term="Economics" />
     <category term="Deep Simplicity" />
-    <category term="Are Your Lights On?" />
+    <category term="Beijing" />
+    <category term="Hukou" />
+    <category term="Elon Musk" />
     <category term="bank" />
     <category term="money" />
     <category term="Europe" />
@@ -30,16 +31,22 @@
     <category term="Ireland" />
     <category term="IB" />
     <category term="Bonds" />
-    <category term="Just Keep Buying" />
     <category term="France visa" />
     <category term="Schengen" />
     <category term="Side Project" />
+    <category term="Just Keep Buying" />
     <category term="Competitive Programming" />
     <category term="A Little History of the World" />
     <category term="Liu Shen Lei Lei Reads Jin Yong" />
     <category term="Liu Shen Lei Lei Reads Tang Poetry" />
     <category term="Blog" />
     <category term="Poor Charlie&#39;s Almanack" />
+    <category term="Programming Pearls" />
+    <category term="Money" />
+    <category term="Investment" />
+    <category term="QDII" />
+    <category term="Arbitrage" />
+    <category term="Off-Exchange to On-Exchange" />
     <category term="Reality Is Not What It Seems" />
     <category term="Shi Nan Zhi Tu" />
     <category term="Ma Boyong" />
@@ -49,10 +56,11 @@
     <category term="The Almanack of Naval Ravikant" />
     <category term="The Art of War" />
     <category term="The Bitcoin Standard" />
-    <category term="The Collapse of the Heavenly Dynasty" />
     <category term="The Hungry Golden Age" />
+    <category term="The Collapse of the Heavenly Dynasty" />
     <category term="The Glory and the Dream" />
     <category term="The Worlds I See" />
+    <category term="The Gains and Losses of Economic Changes in the Past Dynasties" />
     <category term="Why Nations Fail" />
     <category term="Windows" />
     <category term="The Times" />
@@ -62,14 +70,33 @@
     <category term="unordered_map" />
     <category term="codeforces" />
     <category term="contest" />
+    <category term="Amazon" />
+    <category term="Microsoft" />
+    <category term="China" />
+    <category term="vim" />
     <category term="travel" />
     <category term="Travelogue" />
-    <category term="vim" />
     <category term="WeRide" />
+    <category term="Life and Death Are Wearing Me Out" />
     <category term="Kuaishou" />
     <category term="Internship" />
     <category term="RIP" />
     <category term="sensetime" />
+    <entry>
+        <id>https://youngforest.github.io/en/2023/10/18/foreign-companies-comparision-between-China-Europe/</id>
+        <title>Comparing Foreign Companies in China and Europe</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2023/10/18/foreign-companies-comparision-between-China-Europe/"/>
+        <content type="html">&lt;p&gt;I have been fortunate enough to work at foreign companies both in China and in Europe. Both companies were American multinationals, and therefore foreign companies in both China and Ireland. Both also belong to the internet industry. My overall feeling can be summarized in one sentence: it all depends on comparison with peers.&lt;/p&gt;
+&lt;p&gt;The characteristics of foreign companies in China are Work Life Balance, no overtime, good benefits, good package, and very humane treatment. Colleagues are also very strong, basically graduates of top schools. Of course, in recent years the salary level of China’s internet industry has also caught up and in some cases even surpassed them, such as emerging companies ByteDance and Pinduoduo. I stayed at this foreign company for two years. Because I joined after the pandemic, it was basically work from home, even remote onboarding. The biggest feeling of humane treatment came from the 2021 Beijing hukou amnesty. At that time, the policy had half-year and three-year quotas, to be decided through negotiation between company and employee. That is, after you paid social security for half a year or three years, the hukou process could begin. It was said to be negotiation, but employees were in a weak position and did not have many choices. Foreign companies basically let employees choose for themselves, and of course employees all chose half a year. At that time, mainstream domestic internet companies basically gave three years. Some went even further and added a service period to five years, requiring an agreement that if you left early you had to repay money proportionally. When everyone generally had five days of annual leave, foreign companies gave 12 days. Housing fund contributions were also paid at the maximum 12%. China’s labor law actually sets quite high standards. For example, layoff compensation is N+1, much higher than Europe’s standard of N/2. In the first half of 2023, American big tech companies had large-scale layoffs, and my former company was no exception. The China office was also affected, but compensation was N+6. Still quite nice.&lt;/p&gt;
+&lt;p&gt;At foreign companies in Europe, advantages such as Work Life Balance and no overtime disappear. Because local European companies have even more Work Life Balance and even less overtime. American-company culture is actually at a disadvantage in this respect. However, the advantages of good benefits and good packages still exist. After all, American companies are basically multinationals making money from all over the world and therefore have much more money. Also, American programmers are paid very well, so even if European salaries are only half of US salaries, they are still above the local market level. Foreign companies in Europe have strong internationalization and diversity. Colleagues come from different countries, and even locals do not necessarily have much advantage. By contrast, in foreign companies in China, Chinese people are the overwhelming majority and foreigners are a tiny minority. Local European companies are still mostly local people, except for companies founded by foreigners. But the overall level of colleagues at foreign companies in Europe is much lower than at foreign companies in China. I think the main reason is that the ecological niche of foreign companies in Europe’s job market is not as advantageous or attractive as foreign companies in China’s job market. Many outstanding talents are also directly attracted to the United States and will not stay in Europe for long.&lt;/p&gt;
+&lt;p&gt;Common points between working at foreign companies in China and Europe: both have to meet with the US. In China it is in the morning; in Europe it is in the evening. Neither is very convenient. Important projects and groups are still all in the US, while China and European offices are relatively marginal. There is also a lot of cooperation among the three regions. For example, for On Call, if a group developed relatively early, it may configure teams in the US, Ireland/UK, and China/India, with three time zones each responsible for its own period. Each time zone only needs to cover eight hours, thereby building an all-weather service model with someone working 24 hours a day. Groups that developed later may only have teams in two time zones, each covering 12 hours. The worst is one time zone covering 24 hours. Nighttime alerts really take an engineer’s life.&lt;/p&gt;
+</content>
+        <category term="Europe" />
+        <category term="Amazon" />
+        <category term="Microsoft" />
+        <category term="China" />
+        <updated>2023-10-18T11:56:40.000Z</updated>
+    </entry>
     <entry>
         <id>https://youngforest.github.io/en/2019/12/07/Europe-bank-accounts/</id>
         <title>Studying in Europe: A Chat About Banks and Money</title>

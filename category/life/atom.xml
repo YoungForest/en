@@ -3,23 +3,24 @@
     <id>https://youngforest.github.io/en</id>
     <title>YoungForest&#39;s blog • Posts by &#34;life&#34; category</title>
     <link href="https://youngforest.github.io/en" />
-    <updated>2023-05-15T11:55:06.000Z</updated>
+    <updated>2024-01-25T07:28:10.000Z</updated>
     <category term="life" />
     <category term="Year-End Review" />
     <category term="Reading" />
-    <category term="The Three-Body Problem" />
     <category term="A Matter of Degrees" />
+    <category term="The Three-Body Problem" />
     <category term="Dublin" />
     <category term="Life" />
     <category term="Alibaba" />
     <category term="intern" />
     <category term="Antifragile" />
-    <category term="Beijing" />
-    <category term="Hukou" />
+    <category term="Are Your Lights On?" />
     <category term="Business Cycles" />
     <category term="Economics" />
     <category term="Deep Simplicity" />
-    <category term="Are Your Lights On?" />
+    <category term="Beijing" />
+    <category term="Hukou" />
+    <category term="Elon Musk" />
     <category term="bank" />
     <category term="money" />
     <category term="Europe" />
@@ -30,16 +31,22 @@
     <category term="Ireland" />
     <category term="IB" />
     <category term="Bonds" />
-    <category term="Just Keep Buying" />
     <category term="France visa" />
     <category term="Schengen" />
     <category term="Side Project" />
+    <category term="Just Keep Buying" />
     <category term="Competitive Programming" />
     <category term="A Little History of the World" />
     <category term="Liu Shen Lei Lei Reads Jin Yong" />
     <category term="Liu Shen Lei Lei Reads Tang Poetry" />
     <category term="Blog" />
     <category term="Poor Charlie&#39;s Almanack" />
+    <category term="Programming Pearls" />
+    <category term="Money" />
+    <category term="Investment" />
+    <category term="QDII" />
+    <category term="Arbitrage" />
+    <category term="Off-Exchange to On-Exchange" />
     <category term="Reality Is Not What It Seems" />
     <category term="Shi Nan Zhi Tu" />
     <category term="Ma Boyong" />
@@ -49,10 +56,11 @@
     <category term="The Almanack of Naval Ravikant" />
     <category term="The Art of War" />
     <category term="The Bitcoin Standard" />
-    <category term="The Collapse of the Heavenly Dynasty" />
     <category term="The Hungry Golden Age" />
+    <category term="The Collapse of the Heavenly Dynasty" />
     <category term="The Glory and the Dream" />
     <category term="The Worlds I See" />
+    <category term="The Gains and Losses of Economic Changes in the Past Dynasties" />
     <category term="Why Nations Fail" />
     <category term="Windows" />
     <category term="The Times" />
@@ -62,14 +70,59 @@
     <category term="unordered_map" />
     <category term="codeforces" />
     <category term="contest" />
+    <category term="Amazon" />
+    <category term="Microsoft" />
+    <category term="China" />
+    <category term="vim" />
     <category term="travel" />
     <category term="Travelogue" />
-    <category term="vim" />
     <category term="WeRide" />
+    <category term="Life and Death Are Wearing Me Out" />
     <category term="Kuaishou" />
     <category term="Internship" />
     <category term="RIP" />
     <category term="sensetime" />
+    <entry>
+        <id>https://youngforest.github.io/en/2024/01/25/QDII-off-exchange-to-on-exchange-arbitrage/</id>
+        <title>A Step-by-Step Guide to QDII Off-Exchange to On-Exchange Arbitrage</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2024/01/25/QDII-off-exchange-to-on-exchange-arbitrage/"/>
+        <content type="html">&lt;p&gt;Recently everyone seems to have heard about the high premium of on-exchange QDII funds. Premium means that the market price of an on-exchange fund is higher than the NAV of the off-exchange fund. Crazy examples include &lt;a href=&#34;https://xueqiu.com/S/SH513850&#34;&gt;US 50 ETF (SH513850)&lt;/a&gt;, which once reached a 30+ point premium, and &lt;a href=&#34;https://xueqiu.com/S/SH513520&#34;&gt;Nikkei ETF (SH513520)&lt;/a&gt;, which reached 20+ points. Ordinary ones also had two points. Fund companies and brokers all issued statements warning about the risk of excessive premiums. High premiums attract arbitrage capital, which then smooths out the premium. Arbitrage here means subscribing to the fund off-exchange, transferring it on-exchange, and then selling it. If the fund neither rises nor falls, one can at least earn the premium. Under normal circumstances, because of the market’s own adjustment mechanism, normal funds with large scale and high trading volume, such as many &lt;a href=&#34;https://xueqiu.com/S/SH510300&#34;&gt;CSI 300 ETFs (SH510300)&lt;/a&gt;, have almost no premium. But QDII funds, because of foreign-exchange limits and other constraints, often have purchase limits, small scale, and low trading volume. Arbitrage capital cannot freely and infinitely operate, so premiums form very easily.&lt;/p&gt;
+&lt;p&gt;In previous years I happened to buy some off-exchange QDII funds (&lt;a href=&#34;https://xueqiu.com/S/SH513500&#34;&gt;S&amp;amp;P 500 ETF SH513500&lt;/a&gt;, &lt;a href=&#34;https://xueqiu.com/S/SH513100&#34;&gt;Nasdaq 100 SH513100&lt;/a&gt;, and &lt;a href=&#34;https://xueqiu.com/S/SH513050&#34;&gt;China Internet ETF&lt;/a&gt;). Previously I bought and sold them directly off-exchange and never thought about transferring them on-exchange for trading. Although the arbitrage threshold is not that high, it is still not low for beginners, and the operation is much harder than ordinary fund purchases. The recent high premiums aroused my great interest, and I searched quite a lot of information and tutorials online. It was not as easy as imagined, and there were not as many resources as imagined. Therefore I summarize it here for future reference. I use my off-exchange “E Fund e-Wallet” and on-exchange “Huatai Securities ZhangLe Fortune” as examples. Other off-exchange fund platforms and on-exchange brokers are broadly similar. I previously sold so many QDII funds directly off-exchange. What a loss.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Query the fund TA account. On the “E Fund e-Wallet” homepage, go to “Me” -&amp;gt; “Account Settings” -&amp;gt; the third item from the bottom, “Fund Account.” Shenzhen accounts are 12 digits starting with 98, and Shanghai accounts are 12 digits starting with 99.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Establish the connection between the off-exchange and on-exchange accounts. In “ZhangLe Fortune,” tap the bottom “Account” button, then at the bottom choose “More Functions,” and search for “On/Off-Exchange Correspondence Maintenance.” Processing time is trading days Beijing time 9:15-15:45. Connect your own account.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Ask the securities branch for the exchange seat number: six digits for Shenzhen and five digits for Shanghai. In the broker app you can get the contact information of your branch and account manager. My account manager added me on WeChat when I opened the account, so I asked directly on WeChat. The reply was quick.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Transfer custody on the fund account. You must log in to the official website; the mobile app does not work. Click “Details - Transfer Custody” after the fund shares you hold. The number of shares must be an integer. It takes two working days to arrive in the broker account. “ZhangLe Fortune” also has a “Fund Off-Exchange to On-Exchange” service, available on trading days Beijing time 9:30-15:00, but it could not find my fund shares. My understanding is that only funds bought off-exchange through the broker account can be transferred there. Funds bought through the fund company or third parties such as Alipay, banks, Danjuan, or Xueqiu cannot be transferred there; they must be transferred out from the corresponding platform.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;After arriving on-exchange, the shares can be sold directly on the secondary stock market. Compared with selling off-exchange, this earns the premium.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+        <category term="Money" />
+        <category term="Investment" />
+        <category term="QDII" />
+        <category term="Arbitrage" />
+        <category term="Off-Exchange to On-Exchange" />
+        <updated>2024-01-25T07:28:10.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://youngforest.github.io/en/2023/10/18/foreign-companies-comparision-between-China-Europe/</id>
+        <title>Comparing Foreign Companies in China and Europe</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2023/10/18/foreign-companies-comparision-between-China-Europe/"/>
+        <content type="html">&lt;p&gt;I have been fortunate enough to work at foreign companies both in China and in Europe. Both companies were American multinationals, and therefore foreign companies in both China and Ireland. Both also belong to the internet industry. My overall feeling can be summarized in one sentence: it all depends on comparison with peers.&lt;/p&gt;
+&lt;p&gt;The characteristics of foreign companies in China are Work Life Balance, no overtime, good benefits, good package, and very humane treatment. Colleagues are also very strong, basically graduates of top schools. Of course, in recent years the salary level of China’s internet industry has also caught up and in some cases even surpassed them, such as emerging companies ByteDance and Pinduoduo. I stayed at this foreign company for two years. Because I joined after the pandemic, it was basically work from home, even remote onboarding. The biggest feeling of humane treatment came from the 2021 Beijing hukou amnesty. At that time, the policy had half-year and three-year quotas, to be decided through negotiation between company and employee. That is, after you paid social security for half a year or three years, the hukou process could begin. It was said to be negotiation, but employees were in a weak position and did not have many choices. Foreign companies basically let employees choose for themselves, and of course employees all chose half a year. At that time, mainstream domestic internet companies basically gave three years. Some went even further and added a service period to five years, requiring an agreement that if you left early you had to repay money proportionally. When everyone generally had five days of annual leave, foreign companies gave 12 days. Housing fund contributions were also paid at the maximum 12%. China’s labor law actually sets quite high standards. For example, layoff compensation is N+1, much higher than Europe’s standard of N/2. In the first half of 2023, American big tech companies had large-scale layoffs, and my former company was no exception. The China office was also affected, but compensation was N+6. Still quite nice.&lt;/p&gt;
+&lt;p&gt;At foreign companies in Europe, advantages such as Work Life Balance and no overtime disappear. Because local European companies have even more Work Life Balance and even less overtime. American-company culture is actually at a disadvantage in this respect. However, the advantages of good benefits and good packages still exist. After all, American companies are basically multinationals making money from all over the world and therefore have much more money. Also, American programmers are paid very well, so even if European salaries are only half of US salaries, they are still above the local market level. Foreign companies in Europe have strong internationalization and diversity. Colleagues come from different countries, and even locals do not necessarily have much advantage. By contrast, in foreign companies in China, Chinese people are the overwhelming majority and foreigners are a tiny minority. Local European companies are still mostly local people, except for companies founded by foreigners. But the overall level of colleagues at foreign companies in Europe is much lower than at foreign companies in China. I think the main reason is that the ecological niche of foreign companies in Europe’s job market is not as advantageous or attractive as foreign companies in China’s job market. Many outstanding talents are also directly attracted to the United States and will not stay in Europe for long.&lt;/p&gt;
+&lt;p&gt;Common points between working at foreign companies in China and Europe: both have to meet with the US. In China it is in the morning; in Europe it is in the evening. Neither is very convenient. Important projects and groups are still all in the US, while China and European offices are relatively marginal. There is also a lot of cooperation among the three regions. For example, for On Call, if a group developed relatively early, it may configure teams in the US, Ireland/UK, and China/India, with three time zones each responsible for its own period. Each time zone only needs to cover eight hours, thereby building an all-weather service model with someone working 24 hours a day. Groups that developed later may only have teams in two time zones, each covering 12 hours. The worst is one time zone covering 24 hours. Nighttime alerts really take an engineer’s life.&lt;/p&gt;
+</content>
+        <category term="Europe" />
+        <category term="Amazon" />
+        <category term="Microsoft" />
+        <category term="China" />
+        <updated>2023-10-18T11:56:40.000Z</updated>
+    </entry>
     <entry>
         <id>https://youngforest.github.io/en/2023/05/15/rip-hao/</id>
         <title>In Deep Mourning for Haoel</title>
