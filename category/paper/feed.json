@@ -1,0 +1,16 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "YoungForest's blog • All posts by \"paper\" category",
+    "description": "A programmer in Amazon Beijing, China",
+    "home_page_url": "https://youngforest.github.io/en",
+    "items": [
+        {
+            "id": "https://youngforest.github.io/en/2021/05/06/Mendeley-GB-T-7714-2005/",
+            "url": "https://youngforest.github.io/en/2021/05/06/Mendeley-GB-T-7714-2005/",
+            "title": "Summary and Solutions for Thesis Writing Issues",
+            "date_published": "2021-05-05T16:10:43.000Z",
+            "content_html": "<h2 id=\"Mendeley-GB-T-7714-2005\"><a href=\"#Mendeley-GB-T-7714-2005\" class=\"headerlink\" title=\"Mendeley GB/T 7714-2005\"></a>Mendeley GB/T 7714-2005</h2><ul>\n<li>For English references, author names were shown in all caps</li>\n<li>For English references with more than three authors, the Chinese “等” was used for omission instead of “et al.”</li>\n</ul>\n<p><a href=\"https://blog.csdn.net/yitian_z/article/details/104050142\">Solution</a></p>\n<p>I configured my own reference format and am sharing it here. Its features include:</p>\n<ul>\n<li>Remove <code>//</code> from references, especially the extra separator after conference names</li>\n</ul>\n<h2 id=\"Citing-CNKI-References\"><a href=\"#Citing-CNKI-References\" class=\"headerlink\" title=\"Citing CNKI References\"></a>Citing CNKI References</h2><p>CNKI does not provide a Bib reference format supported by Mendeley, so I wrote a website that can convert references online: <a href=\"https://cnki2bib.youngforest.me/products\">Entrance 1</a> <a href=\"https://youngforest.me/products\">Entrance 2</a></p>\n",
+            "tags": []
+        }
+    ]
+}
