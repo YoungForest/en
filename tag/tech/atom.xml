@@ -18,20 +18,20 @@
     <category term="Are Your Lights On?" />
     <category term="Beijing" />
     <category term="Hukou" />
-    <category term="Deep Simplicity" />
     <category term="Business Cycles" />
     <category term="Economics" />
-    <category term="Elon Musk" />
+    <category term="Deep Simplicity" />
     <category term="codeforces" />
     <category term="contest" />
+    <category term="Elon Musk" />
+    <category term="Tech" />
     <category term="bank" />
     <category term="money" />
     <category term="Europe" />
-    <category term="Tech" />
     <category term="Genome" />
     <category term="Guns, Germs, and Steel" />
-    <category term="Hennge" />
     <category term="Hou Hei Xue" />
+    <category term="Hennge" />
     <category term="Ireland" />
     <category term="IB" />
     <category term="Bonds" />
@@ -54,25 +54,26 @@
     <category term="Arbitrage" />
     <category term="Off-Exchange to On-Exchange" />
     <category term="Reality Is Not What It Seems" />
+    <category term="tech" />
     <category term="Shi Nan Zhi Tu" />
     <category term="Ma Boyong" />
+    <category term="Hexo" />
     <category term="Skin in the Game" />
     <category term="Nassim Nicholas Taleb" />
-    <category term="Hexo" />
     <category term="Tai Bai Jin Xing You Dian Fan" />
     <category term="The Almanack of Naval Ravikant" />
-    <category term="The Bitcoin Standard" />
     <category term="The Art of War" />
+    <category term="The Bitcoin Standard" />
     <category term="The Collapse of the Heavenly Dynasty" />
-    <category term="The Glory and the Dream" />
     <category term="The Hungry Golden Age" />
+    <category term="The Glory and the Dream" />
     <category term="The Worlds I See" />
     <category term="The Gains and Losses of Economic Changes in the Past Dynasties" />
     <category term="Why Nations Fail" />
     <category term="Windows" />
-    <category term="travel" />
     <category term="The Times" />
     <category term="XiaoLin Says" />
+    <category term="travel" />
     <category term="C++" />
     <category term="hash" />
     <category term="unordered_map" />
@@ -81,6 +82,7 @@
     <category term="China" />
     <category term="Travelogue" />
     <category term="vim" />
+    <category term="investing" />
     <category term="WeRide" />
     <category term="Kuaishou" />
     <category term="Internship" />
@@ -193,5 +195,42 @@
         <category term="life" />
         <category term="Tech" />
         <updated>2022-12-09T08:42:27.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://youngforest.github.io/en/2021/03/26/SSH-proxy-by-jump-server/</id>
+        <title>Logging in to a Server Through an SSH Jump Host</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2021/03/26/SSH-proxy-by-jump-server/"/>
+        <content type="html">&lt;h2 id=&#34;Motivation&#34;&gt;&lt;a href=&#34;#Motivation&#34; class=&#34;headerlink&#34; title=&#34;Motivation&#34;&gt;&lt;/a&gt;Motivation&lt;/h2&gt;&lt;p&gt;Following the problem in the previous post, &lt;a href=&#34;https://youngforest.github.io/2021/03/18/Ubuntu-vpn-cannot-access-public-resource/&#34;&gt;Fixing Ubuntu Desktop VPN Access to Public Internet Resources&lt;/a&gt;, I tried configuring a jump host to access machines at the Hangzhou Research Institute.&lt;/p&gt;
+&lt;p&gt;In my research work, my MacBook could not connect to OpenVPN and therefore could not access the Hangzhou Research Institute machines. My Ubuntu desktop already had the VPN configured and could access the servers. I now wanted to route through the Ubuntu desktop so the Mac could “directly” access the Hangzhou Research Institute. Abstracting the problem:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A can access B&lt;/li&gt;
+&lt;li&gt;A cannot access C&lt;/li&gt;
+&lt;li&gt;B can access C&lt;/li&gt;
+&lt;li&gt;I now want A to access C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Since I mainly use SSH at work, the problem becomes: A logs in to C directly through SSH.&lt;br&gt;After persistent online searching and experiments, I summarized two techniques and methods that can achieve my goal.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SSH proxy&lt;/li&gt;
+&lt;li&gt;SSH tunnel&lt;/li&gt;
+&lt;/ul&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+
+
+&lt;h2 id=&#34;SSH-Proxy&#34;&gt;&lt;a href=&#34;#SSH-Proxy&#34; class=&#34;headerlink&#34; title=&#34;SSH Proxy&#34;&gt;&lt;/a&gt;SSH Proxy&lt;/h2&gt;&lt;p&gt;This method is the simplest. It does not require doing anything on B and connects to C seamlessly.&lt;/p&gt;
+&lt;p&gt;Run this on A, where &lt;code&gt;rentao@10.134.150.154&lt;/code&gt; is B, and &lt;code&gt;ldmc@192.168.131.181&lt;/code&gt; is C.&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;ssh -o &lt;span class=&#34;string&#34;&gt;&amp;quot;ProxyJump rentao@10.134.150.154&amp;quot;&lt;/span&gt; ldmc@192.168.131.181&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Reference: &lt;a href=&#34;https://www.xiebruce.top/650.html&#34;&gt;Traversing a Jump Host&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;SSH-Tunnel&#34;&gt;&lt;a href=&#34;#SSH-Tunnel&#34; class=&#34;headerlink&#34; title=&#34;SSH Tunnel&#34;&gt;&lt;/a&gt;SSH Tunnel&lt;/h2&gt;&lt;p&gt;Run this on B:&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;ssh -f -N -L 0.0.0.0:9906:192.168.131.181:22 ldmc@192.168.131.181&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Run this on A:&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;ssh -p 9906 ldmc@10.134.150.154&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Although this method looks more cumbersome and requires coordination between A and B, it is actually more flexible than the first approach. Through an SSH tunnel, B can expose more services from C, not necessarily only SSH login. For example, exposing a TensorBoard HTTP service for observing training data is also something I often need.&lt;/p&gt;
+&lt;p&gt;Reference: &lt;a href=&#34;https://www.zsythink.net/archives/2450&#34;&gt;SSH Port Forwarding: SSH Tunnel&lt;/a&gt;&lt;/p&gt;
+</content>
+        <category term="tech" />
+        <updated>2021-03-26T07:11:02.000Z</updated>
     </entry>
 </feed>
