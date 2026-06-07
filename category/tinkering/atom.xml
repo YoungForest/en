@@ -18,20 +18,20 @@
     <category term="Are Your Lights On?" />
     <category term="Beijing" />
     <category term="Hukou" />
-    <category term="Business Cycles" />
-    <category term="Economics" />
     <category term="Deep Simplicity" />
     <category term="codeforces" />
     <category term="contest" />
+    <category term="Business Cycles" />
+    <category term="Economics" />
     <category term="Elon Musk" />
-    <category term="Tech" />
     <category term="bank" />
     <category term="money" />
     <category term="Europe" />
     <category term="Genome" />
     <category term="Guns, Germs, and Steel" />
-    <category term="Hou Hei Xue" />
+    <category term="Tech" />
     <category term="Hennge" />
+    <category term="Hou Hei Xue" />
     <category term="Ireland" />
     <category term="IB" />
     <category term="Bonds" />
@@ -55,9 +55,9 @@
     <category term="Off-Exchange to On-Exchange" />
     <category term="Reality Is Not What It Seems" />
     <category term="tech" />
+    <category term="Hexo" />
     <category term="Shi Nan Zhi Tu" />
     <category term="Ma Boyong" />
-    <category term="Hexo" />
     <category term="Skin in the Game" />
     <category term="Nassim Nicholas Taleb" />
     <category term="Tai Bai Jin Xing You Dian Fan" />
@@ -67,21 +67,23 @@
     <category term="The Collapse of the Heavenly Dynasty" />
     <category term="The Hungry Golden Age" />
     <category term="The Glory and the Dream" />
-    <category term="The Worlds I See" />
     <category term="The Gains and Losses of Economic Changes in the Past Dynasties" />
+    <category term="The Worlds I See" />
+    <category term="Linux" />
     <category term="Why Nations Fail" />
     <category term="Windows" />
+    <category term="travel" />
     <category term="The Times" />
     <category term="XiaoLin Says" />
-    <category term="travel" />
     <category term="C++" />
     <category term="hash" />
     <category term="unordered_map" />
+    <category term="Tinkering" />
     <category term="Amazon" />
     <category term="Microsoft" />
     <category term="China" />
-    <category term="Travelogue" />
     <category term="vim" />
+    <category term="Travelogue" />
     <category term="investing" />
     <category term="WeRide" />
     <category term="Kuaishou" />
@@ -211,6 +213,26 @@
 </content>
         <category term="tech" />
         <updated>2021-03-26T07:11:02.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://youngforest.github.io/en/2021/03/18/Ubuntu-vpn-cannot-access-public-resource/</id>
+        <title>Ubuntu OpenVPN Cannot Access Public Internet Resources</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2021/03/18/Ubuntu-vpn-cannot-access-public-resource/"/>
+        <content type="html">&lt;p&gt;Because of research needs, I needed to connect to the Hangzhou Research Institute VPN before I could use GPUs for neural network training tasks.&lt;br&gt;However, after configuring OpenVPN on Ubuntu 18.04, I found a difficult problem: after connecting to the VPN, I could not access the public Internet, such as Baidu and similar websites. These were not sites outside the Great Firewall, but the “external network” relative to the local intranet. After disconnecting the VPN, I could access the public Internet, but could not access Hangzhou Research Institute resources. Since in daily work both the public Internet and the Hangzhou Research Institute intranet are basically indispensable, I spent two days investigating and fixing this problem. Also, other classmates using the VPN did not have similar issues, so I believed this was a problem specific to &lt;code&gt;Ubuntu&lt;/code&gt;. The fix itself was simple, but the process of locating the problem was very bumpy.&lt;/p&gt;
+&lt;h2 id=&#34;Symptoms&#34;&gt;&lt;a href=&#34;#Symptoms&#34; class=&#34;headerlink&#34; title=&#34;Symptoms&#34;&gt;&lt;/a&gt;Symptoms&lt;/h2&gt;&lt;p&gt;After connecting to the VPN, I could ping Baidu’s IP address, but the browser could not open Baidu, and I also could not directly ping &lt;code&gt;baidu.com&lt;/code&gt;. The browser could only open Hangzhou Research Institute and BUAA internal websites.&lt;br&gt;My initial judgment was that it was a DNS server issue, but after investigation I found the DNS configuration had no problem.&lt;br&gt;My guess was that when accessing external resources, the expected DNS resolution had no way to complete.&lt;/p&gt;
+&lt;p&gt;After searching online for quite a while, I finally found the real problem, which was the local VPN configuration, and the solution.&lt;/p&gt;
+&lt;h2 id=&#34;Solution&#34;&gt;&lt;a href=&#34;#Solution&#34; class=&#34;headerlink&#34; title=&#34;Solution&#34;&gt;&lt;/a&gt;Solution&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://askubuntu.com/a/713066/558370&#34;&gt;The most similar problem and solution I found online&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Since I was on Ubuntu 18.04, it was not quite the same.&lt;br&gt;Here is my full solution for reference.&lt;/p&gt;
+&lt;p&gt;Open the VPN configuration.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/vpn1.png&#34; alt=&#34;Step 1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/vpn2.png&#34; alt=&#34;Step 2&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Check “Use this connection only for resources on its network”.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/vpn2.png&#34; alt=&#34;Step 2&#34;&gt;&lt;/p&gt;
+&lt;p&gt;After applying, reconnect the VPN and the problem should be solved.&lt;/p&gt;
+&lt;h2 id=&#34;Postscript&#34;&gt;&lt;a href=&#34;#Postscript&#34; class=&#34;headerlink&#34; title=&#34;Postscript&#34;&gt;&lt;/a&gt;Postscript&lt;/h2&gt;&lt;p&gt;Next, I will try setting up a jump host on Ubuntu. This way, my Mac may be able to connect to Hangzhou Research Institute machines through that jump host. (It has already succeeded. The next post is updated &lt;a href=&#34;https://youngforest.github.io/2021/03/26/SSH-proxy-by-jump-server/&#34;&gt;here&lt;/a&gt;.)&lt;/p&gt;
+</content>
+        <category term="Linux" />
+        <updated>2021-03-18T03:20:13.000Z</updated>
     </entry>
     <entry>
         <id>https://youngforest.github.io/en/2017/03/26/gvim-configuration-for-windows/</id>
