@@ -3,23 +3,23 @@
     <id>https://youngforest.github.io/en</id>
     <title>YoungForest&#39;s blog • Posts by &#34;tinkering&#34; category</title>
     <link href="https://youngforest.github.io/en" />
-    <updated>2017-03-26T10:46:41.000Z</updated>
+    <updated>2021-10-13T04:39:31.000Z</updated>
     <category term="life" />
     <category term="Year-End Review" />
     <category term="Reading" />
     <category term="The Three-Body Problem" />
     <category term="A Global History" />
-    <category term="A Matter of Degrees" />
     <category term="Dublin" />
     <category term="Life" />
+    <category term="A Matter of Degrees" />
     <category term="Alibaba" />
     <category term="intern" />
     <category term="Antifragile" />
     <category term="Are Your Lights On?" />
-    <category term="Business Cycles" />
-    <category term="Economics" />
     <category term="Beijing" />
     <category term="Hukou" />
+    <category term="Business Cycles" />
+    <category term="Economics" />
     <category term="Deep Simplicity" />
     <category term="codeforces" />
     <category term="contest" />
@@ -28,8 +28,8 @@
     <category term="money" />
     <category term="Europe" />
     <category term="Tech" />
-    <category term="Guns, Germs, and Steel" />
     <category term="Genome" />
+    <category term="Guns, Germs, and Steel" />
     <category term="Hennge" />
     <category term="Hou Hei Xue" />
     <category term="Ireland" />
@@ -45,6 +45,7 @@
     <category term="Liu Shen Lei Lei Reads Tang Poetry" />
     <category term="Blog" />
     <category term="Travel" />
+    <category term="Keyboard" />
     <category term="Poor Charlie&#39;s Almanack" />
     <category term="Programming Pearls" />
     <category term="Money" />
@@ -53,11 +54,12 @@
     <category term="Arbitrage" />
     <category term="Off-Exchange to On-Exchange" />
     <category term="Reality Is Not What It Seems" />
+    <category term="Hexo" />
     <category term="Shi Nan Zhi Tu" />
     <category term="Ma Boyong" />
-    <category term="Tai Bai Jin Xing You Dian Fan" />
     <category term="Skin in the Game" />
     <category term="Nassim Nicholas Taleb" />
+    <category term="Tai Bai Jin Xing You Dian Fan" />
     <category term="The Almanack of Naval Ravikant" />
     <category term="The Art of War" />
     <category term="The Bitcoin Standard" />
@@ -67,24 +69,80 @@
     <category term="The Worlds I See" />
     <category term="The Gains and Losses of Economic Changes in the Past Dynasties" />
     <category term="Why Nations Fail" />
+    <category term="Windows" />
     <category term="The Times" />
     <category term="XiaoLin Says" />
-    <category term="Windows" />
     <category term="C++" />
     <category term="hash" />
     <category term="unordered_map" />
     <category term="Amazon" />
     <category term="Microsoft" />
     <category term="China" />
-    <category term="vim" />
     <category term="travel" />
     <category term="Travelogue" />
+    <category term="vim" />
     <category term="WeRide" />
     <category term="Kuaishou" />
     <category term="Internship" />
     <category term="Life and Death Are Wearing Me Out" />
     <category term="sensetime" />
     <category term="RIP" />
+    <entry>
+        <id>https://youngforest.github.io/en/2021/10/13/Niz-plum-option-key-not-work/</id>
+        <title>Niz Plum Option Key Does Not Respond in Bluetooth Mode</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2021/10/13/Niz-plum-option-key-not-work/"/>
+        <content type="html">&lt;p&gt;Recently, when using my beloved Niz Plum 66 keyboard, I ran into a strange bug.&lt;/p&gt;
+&lt;p&gt;In Bluetooth mode, the left Option key stopped working. Since my Hammerspoon setup and many other app shortcuts use it heavily, I could occasionally use the right Option key as a temporary substitute, but that was never a real solution. My work efficiency dropped a lot.&lt;/p&gt;
+&lt;p&gt;I am not sure how this bug was introduced. It was probably around the time my Mac started connecting to two external monitors.&lt;/p&gt;
+&lt;p&gt;The strange thing is that wired mode had no problem. I also tried disconnecting and reconnecting Bluetooth, but that did not fix it. Switching to another Bluetooth channel did not help either.&lt;/p&gt;
+&lt;p&gt;I searched a lot online, but could not find a similar issue or solution. In the end, I managed to fix it through my own trial and error, so I am recording it here in case I run into it again in the future.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://yunxii.cn/2019/08/12/plum%E9%9D%99%E7%94%B5%E5%AE%B9%E9%94%AE%E7%9B%9866%E9%94%AE%E8%AF%B4%E6%98%8E%E4%B9%A6/&#34;&gt;Reference manual&lt;/a&gt;.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Restore factory settings: hold the four keys at the four corners of the keyboard at the same time for five seconds.&lt;/li&gt;
+&lt;li&gt;Turn on the keyboard and connect it to the Mac.&lt;/li&gt;
+&lt;li&gt;Reconfigure keyboard settings, such as mine below:&lt;ul&gt;
+&lt;li&gt;Fn + Command switches from the default Windows layout back to Mac&lt;/li&gt;
+&lt;li&gt;Fn + ] reduces key latency&lt;/li&gt;
+&lt;li&gt;Fn + Right Shift turns the right Shift into &lt;code&gt;shift&lt;/code&gt; instead of the default Up&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;The left Option key has been successfully fixed.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Please enjoy your own keyboard!&lt;/p&gt;
+</content>
+        <category term="Keyboard" />
+        <updated>2021-10-13T04:39:31.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://youngforest.github.io/en/2021/09/07/Setup-English-blog/</id>
+        <title>Creating Chinese and English Blogs with Hexo</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2021/09/07/Setup-English-blog/"/>
+        <content type="html">&lt;p&gt;Since joining Amazon, I have had more exposure to English and foreign colleagues. The need to practice using English has grown stronger. Also, to connect more with the international world, I decided to create my own English blog.&lt;/p&gt;
+&lt;h2 id=&#34;Steps&#34;&gt;&lt;a href=&#34;#Steps&#34; class=&#34;headerlink&#34; title=&#34;Steps&#34;&gt;&lt;/a&gt;Steps&lt;/h2&gt;&lt;p&gt;Use the Chinese blog as a template and create an English blog.&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;cp&lt;/span&gt; -r Hexo HexoEn&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+
+&lt;p&gt;Delete the unused Chinese posts and resources from &lt;code&gt;HexoEn&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Create a new repo on GitHub: “en”.&lt;/p&gt;
+&lt;p&gt;Modify the &lt;code&gt;HexoEn&lt;/code&gt; &lt;code&gt;_config.yml&lt;/code&gt; configuration file. Note that the deployment branch is &lt;code&gt;gh-pages&lt;/code&gt;, GitHub’s default Pages branch. If yours is different, you need to go to the repo’s &lt;code&gt;Setting-&amp;gt;Pages&lt;/code&gt; and configure your custom branch:&lt;/p&gt;
+&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;language:&lt;/span&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;bullet&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;en&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;deploy:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;type:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;git&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;repo:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;git@github.com:YoungForest/en.git&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;branch:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;gh-pages&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;theme_config:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;menu:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;home:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa-home&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;about:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/about/&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa-user&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;tags:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/tags/&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa-tags&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;categories:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/categories/&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa-th&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;archives:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/archives/&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa-archive&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;string&#34;&gt;中文:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;https://youngforest.github.io&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa-language&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# Icons can be searched on this site: https://fontawesome.com/v4.7/icons/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;The Chinese Hexo &lt;code&gt;_config.yml&lt;/code&gt; configuration file:&lt;/p&gt;
+&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;language:&lt;/span&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;bullet&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;zh-CN&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;bullet&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;en&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;theme_config:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;menu:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;home:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa-home&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;about:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/about/&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa-user&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;tags:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/tags/&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa-tags&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;categories:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/categories/&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa-th&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;archives:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/archives/&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa-archive&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;English:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;https://youngforest.github.io/en/&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa-globe&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;This way, the Chinese and English blogs can link to each other from the menu.&lt;/p&gt;
+&lt;p&gt;Deploy the blog and see how it looks.&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;hexo generate -d&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Push &lt;code&gt;HexoEn&lt;/code&gt; to the remote as well for backup and synchronization. Note that this uses the same repo as &lt;code&gt;deploy&lt;/code&gt;, but a different branch.&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git remote remove origin&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git remote add origin git@github.com:YoungForest/en.git&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git push -u origin master&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;Final-Result&#34;&gt;&lt;a href=&#34;#Final-Result&#34; class=&#34;headerlink&#34; title=&#34;Final Result&#34;&gt;&lt;/a&gt;Final Result&lt;/h2&gt;&lt;p&gt;Chinese blog: &lt;a href=&#34;https://youngforest.github.io/&#34;&gt;https://youngforest.github.io&lt;/a&gt;&lt;br&gt;English blog: &lt;a href=&#34;https://youngforest.github.io/en/&#34;&gt;https://youngforest.github.io/en/&lt;/a&gt;&lt;/p&gt;
+</content>
+        <category term="Hexo" />
+        <updated>2021-09-07T09:50:49.000Z</updated>
+    </entry>
     <entry>
         <id>https://youngforest.github.io/en/2017/03/26/gvim-configuration-for-windows/</id>
         <title>gVim configuration for Windows</title>

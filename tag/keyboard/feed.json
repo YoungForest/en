@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "YoungForest's blog • All posts by \"keyboard\" tag",
+    "description": "A programmer in Amazon Beijing, China",
+    "home_page_url": "https://youngforest.github.io/en",
+    "items": [
+        {
+            "id": "https://youngforest.github.io/en/2021/10/13/Niz-plum-option-key-not-work/",
+            "url": "https://youngforest.github.io/en/2021/10/13/Niz-plum-option-key-not-work/",
+            "title": "Niz Plum Option Key Does Not Respond in Bluetooth Mode",
+            "date_published": "2021-10-13T04:39:31.000Z",
+            "content_html": "<p>Recently, when using my beloved Niz Plum 66 keyboard, I ran into a strange bug.</p>\n<p>In Bluetooth mode, the left Option key stopped working. Since my Hammerspoon setup and many other app shortcuts use it heavily, I could occasionally use the right Option key as a temporary substitute, but that was never a real solution. My work efficiency dropped a lot.</p>\n<p>I am not sure how this bug was introduced. It was probably around the time my Mac started connecting to two external monitors.</p>\n<p>The strange thing is that wired mode had no problem. I also tried disconnecting and reconnecting Bluetooth, but that did not fix it. Switching to another Bluetooth channel did not help either.</p>\n<p>I searched a lot online, but could not find a similar issue or solution. In the end, I managed to fix it through my own trial and error, so I am recording it here in case I run into it again in the future.</p>\n<p><a href=\"http://yunxii.cn/2019/08/12/plum%E9%9D%99%E7%94%B5%E5%AE%B9%E9%94%AE%E7%9B%9866%E9%94%AE%E8%AF%B4%E6%98%8E%E4%B9%A6/\">Reference manual</a>.</p>\n<ol>\n<li>Restore factory settings: hold the four keys at the four corners of the keyboard at the same time for five seconds.</li>\n<li>Turn on the keyboard and connect it to the Mac.</li>\n<li>Reconfigure keyboard settings, such as mine below:<ul>\n<li>Fn + Command switches from the default Windows layout back to Mac</li>\n<li>Fn + ] reduces key latency</li>\n<li>Fn + Right Shift turns the right Shift into <code>shift</code> instead of the default Up</li>\n</ul>\n</li>\n<li>The left Option key has been successfully fixed.</li>\n</ol>\n<p>Please enjoy your own keyboard!</p>\n",
+            "tags": [
+                "Keyboard"
+            ]
+        }
+    ]
+}

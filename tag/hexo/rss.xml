@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>YoungForest&#39;s blog • Posts by &#34;hexo&#34; tag</title>
+        <link>https://youngforest.github.io/en</link>
+        <description>A programmer in Amazon Beijing, China</description>
+        <language>en,default</language>
+        <pubDate>Tue, 07 Sep 2021 17:50:49 +0800</pubDate>
+        <lastBuildDate>Tue, 07 Sep 2021 17:50:49 +0800</lastBuildDate>
+        <category>life</category>
+        <category>Year-End Review</category>
+        <category>Reading</category>
+        <category>The Three-Body Problem</category>
+        <category>A Global History</category>
+        <category>Dublin</category>
+        <category>Life</category>
+        <category>A Matter of Degrees</category>
+        <category>Alibaba</category>
+        <category>intern</category>
+        <category>Antifragile</category>
+        <category>Are Your Lights On?</category>
+        <category>Beijing</category>
+        <category>Hukou</category>
+        <category>Business Cycles</category>
+        <category>Economics</category>
+        <category>Deep Simplicity</category>
+        <category>codeforces</category>
+        <category>contest</category>
+        <category>Elon Musk</category>
+        <category>bank</category>
+        <category>money</category>
+        <category>Europe</category>
+        <category>Tech</category>
+        <category>Genome</category>
+        <category>Guns, Germs, and Steel</category>
+        <category>Hennge</category>
+        <category>Hou Hei Xue</category>
+        <category>Ireland</category>
+        <category>IB</category>
+        <category>Bonds</category>
+        <category>France visa</category>
+        <category>Schengen</category>
+        <category>Side Project</category>
+        <category>Just Keep Buying</category>
+        <category>Competitive Programming</category>
+        <category>A Little History of the World</category>
+        <category>Liu Shen Lei Lei Reads Jin Yong</category>
+        <category>Liu Shen Lei Lei Reads Tang Poetry</category>
+        <category>Blog</category>
+        <category>Travel</category>
+        <category>Keyboard</category>
+        <category>Poor Charlie&#39;s Almanack</category>
+        <category>Programming Pearls</category>
+        <category>Money</category>
+        <category>Investment</category>
+        <category>QDII</category>
+        <category>Arbitrage</category>
+        <category>Off-Exchange to On-Exchange</category>
+        <category>Reality Is Not What It Seems</category>
+        <category>Hexo</category>
+        <category>Shi Nan Zhi Tu</category>
+        <category>Ma Boyong</category>
+        <category>Skin in the Game</category>
+        <category>Nassim Nicholas Taleb</category>
+        <category>Tai Bai Jin Xing You Dian Fan</category>
+        <category>The Almanack of Naval Ravikant</category>
+        <category>The Art of War</category>
+        <category>The Bitcoin Standard</category>
+        <category>The Collapse of the Heavenly Dynasty</category>
+        <category>The Hungry Golden Age</category>
+        <category>The Glory and the Dream</category>
+        <category>The Worlds I See</category>
+        <category>The Gains and Losses of Economic Changes in the Past Dynasties</category>
+        <category>Why Nations Fail</category>
+        <category>Windows</category>
+        <category>The Times</category>
+        <category>XiaoLin Says</category>
+        <category>C++</category>
+        <category>hash</category>
+        <category>unordered_map</category>
+        <category>Amazon</category>
+        <category>Microsoft</category>
+        <category>China</category>
+        <category>travel</category>
+        <category>Travelogue</category>
+        <category>vim</category>
+        <category>WeRide</category>
+        <category>Kuaishou</category>
+        <category>Internship</category>
+        <category>Life and Death Are Wearing Me Out</category>
+        <category>sensetime</category>
+        <category>RIP</category>
+        <item>
+            <guid isPermalink="true">https://youngforest.github.io/en/2021/09/07/Setup-English-blog/</guid>
+            <title>Creating Chinese and English Blogs with Hexo</title>
+            <link>https://youngforest.github.io/en/2021/09/07/Setup-English-blog/</link>
+            <category>Hexo</category>
+            <pubDate>Tue, 07 Sep 2021 17:50:49 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;Since joining Amazon, I have had more exposure to English and foreign colleagues. The need to practice using English has grown stronger. Also, to connect more with the international world, I decided to create my own English blog.&lt;/p&gt;
+&lt;h2 id=&#34;Steps&#34;&gt;&lt;a href=&#34;#Steps&#34; class=&#34;headerlink&#34; title=&#34;Steps&#34;&gt;&lt;/a&gt;Steps&lt;/h2&gt;&lt;p&gt;Use the Chinese blog as a template and create an English blog.&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;cp&lt;/span&gt; -r Hexo HexoEn&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+
+&lt;p&gt;Delete the unused Chinese posts and resources from &lt;code&gt;HexoEn&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Create a new repo on GitHub: “en”.&lt;/p&gt;
+&lt;p&gt;Modify the &lt;code&gt;HexoEn&lt;/code&gt; &lt;code&gt;_config.yml&lt;/code&gt; configuration file. Note that the deployment branch is &lt;code&gt;gh-pages&lt;/code&gt;, GitHub’s default Pages branch. If yours is different, you need to go to the repo’s &lt;code&gt;Setting-&amp;gt;Pages&lt;/code&gt; and configure your custom branch:&lt;/p&gt;
+&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;language:&lt;/span&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;bullet&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;en&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;deploy:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;type:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;git&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;repo:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;git@github.com:YoungForest/en.git&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;branch:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;gh-pages&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;theme_config:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;menu:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;home:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa-home&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;about:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/about/&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa-user&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;tags:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/tags/&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa-tags&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;categories:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/categories/&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa-th&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;archives:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/archives/&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa-archive&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;string&#34;&gt;中文:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;https://youngforest.github.io&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa-language&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# Icons can be searched on this site: https://fontawesome.com/v4.7/icons/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;The Chinese Hexo &lt;code&gt;_config.yml&lt;/code&gt; configuration file:&lt;/p&gt;
+&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;language:&lt;/span&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;bullet&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;zh-CN&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;bullet&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;en&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;theme_config:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;menu:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;home:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa-home&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;about:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/about/&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa-user&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;tags:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/tags/&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa-tags&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;categories:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/categories/&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa-th&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;archives:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/archives/&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa-archive&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;English:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;https://youngforest.github.io/en/&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;fa-globe&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;This way, the Chinese and English blogs can link to each other from the menu.&lt;/p&gt;
+&lt;p&gt;Deploy the blog and see how it looks.&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;hexo generate -d&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Push &lt;code&gt;HexoEn&lt;/code&gt; to the remote as well for backup and synchronization. Note that this uses the same repo as &lt;code&gt;deploy&lt;/code&gt;, but a different branch.&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git remote remove origin&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git remote add origin git@github.com:YoungForest/en.git&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git push -u origin master&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;Final-Result&#34;&gt;&lt;a href=&#34;#Final-Result&#34; class=&#34;headerlink&#34; title=&#34;Final Result&#34;&gt;&lt;/a&gt;Final Result&lt;/h2&gt;&lt;p&gt;Chinese blog: &lt;a href=&#34;https://youngforest.github.io/&#34;&gt;https://youngforest.github.io&lt;/a&gt;&lt;br&gt;English blog: &lt;a href=&#34;https://youngforest.github.io/en/&#34;&gt;https://youngforest.github.io/en/&lt;/a&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
