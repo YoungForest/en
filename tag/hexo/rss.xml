@@ -19,20 +19,21 @@
         <category>intern</category>
         <category>Antifragile</category>
         <category>Are Your Lights On?</category>
+        <category>Business Cycles</category>
+        <category>Economics</category>
         <category>Beijing</category>
         <category>Hukou</category>
         <category>Deep Simplicity</category>
         <category>codeforces</category>
         <category>contest</category>
-        <category>Business Cycles</category>
-        <category>Economics</category>
         <category>Elon Musk</category>
         <category>bank</category>
         <category>money</category>
         <category>Europe</category>
         <category>Genome</category>
-        <category>Guns, Germs, and Steel</category>
         <category>Tech</category>
+        <category>Guns, Germs, and Steel</category>
+        <category>Hexo</category>
         <category>Hennge</category>
         <category>Hou Hei Xue</category>
         <category>Ireland</category>
@@ -43,13 +44,13 @@
         <category>Side Project</category>
         <category>Just Keep Buying</category>
         <category>Competitive Programming</category>
+        <category>Liu Shen Lei Lei Reads Tang Poetry</category>
         <category>A Little History of the World</category>
         <category>Liu Shen Lei Lei Reads Jin Yong</category>
-        <category>Liu Shen Lei Lei Reads Tang Poetry</category>
-        <category>Blog</category>
         <category>Travel</category>
-        <category>Keyboard</category>
         <category>Poor Charlie&#39;s Almanack</category>
+        <category>Blog</category>
+        <category>Keyboard</category>
         <category>Programming Pearls</category>
         <category>Money</category>
         <category>Investment</category>
@@ -58,20 +59,19 @@
         <category>Off-Exchange to On-Exchange</category>
         <category>Reality Is Not What It Seems</category>
         <category>tech</category>
-        <category>Hexo</category>
         <category>Shi Nan Zhi Tu</category>
         <category>Ma Boyong</category>
+        <category>Tai Bai Jin Xing You Dian Fan</category>
         <category>Skin in the Game</category>
         <category>Nassim Nicholas Taleb</category>
-        <category>Tai Bai Jin Xing You Dian Fan</category>
-        <category>The Almanack of Naval Ravikant</category>
         <category>The Art of War</category>
+        <category>The Almanack of Naval Ravikant</category>
         <category>The Bitcoin Standard</category>
         <category>The Collapse of the Heavenly Dynasty</category>
         <category>The Hungry Golden Age</category>
         <category>The Glory and the Dream</category>
-        <category>The Gains and Losses of Economic Changes in the Past Dynasties</category>
         <category>The Worlds I See</category>
+        <category>The Gains and Losses of Economic Changes in the Past Dynasties</category>
         <category>Linux</category>
         <category>Why Nations Fail</category>
         <category>Windows</category>
@@ -86,8 +86,8 @@
         <category>Microsoft</category>
         <category>China</category>
         <category>vim</category>
-        <category>Travelogue</category>
         <category>investing</category>
+        <category>Travelogue</category>
         <category>WeRide</category>
         <category>Kuaishou</category>
         <category>Internship</category>
@@ -122,6 +122,32 @@
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git remote remove origin&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git remote add origin git@github.com:YoungForest/en.git&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git push -u origin master&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 
 &lt;h2 id=&#34;Final-Result&#34;&gt;&lt;a href=&#34;#Final-Result&#34; class=&#34;headerlink&#34; title=&#34;Final Result&#34;&gt;&lt;/a&gt;Final Result&lt;/h2&gt;&lt;p&gt;Chinese blog: &lt;a href=&#34;https://youngforest.github.io/&#34;&gt;https://youngforest.github.io&lt;/a&gt;&lt;br&gt;English blog: &lt;a href=&#34;https://youngforest.github.io/en/&#34;&gt;https://youngforest.github.io/en/&lt;/a&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://youngforest.github.io/en/2021/02/25/Google-AdSense-for-hexo-next/</guid>
+            <title>Configuring Google AdSense in Hexo NexT</title>
+            <link>https://youngforest.github.io/en/2021/02/25/Google-AdSense-for-hexo-next/</link>
+            <category>Hexo</category>
+            <pubDate>Thu, 25 Feb 2021 11:17:14 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;Motivation&#34;&gt;&lt;a href=&#34;#Motivation&#34; class=&#34;headerlink&#34; title=&#34;Motivation&#34;&gt;&lt;/a&gt;Motivation&lt;/h2&gt;&lt;p&gt;Recently, after watching some videos by “Banfo Xianren”, I became more interested in money. Besides taking out part of my savings to invest in A-shares, I also started thinking about how to increase passive income. I have always had the habit of writing a blog. I have been writing for more than five years and have accumulated over a hundred articles. Although daily page views are only in the dozens, even a small fly still has meat. Referring to some experiences from experts, I tried making money by placing ads.&lt;br&gt;Website ad revenue is generally connected through an ad network. In short, you only rent ad slots to the ad network. They place user-targeted ads there and pay you based on traffic.&lt;br&gt;For international audiences, the main option is Google AdSense. There are also some domestic options, such as Baidu.&lt;br&gt;Because my main job is as a programmer, and blog content is not limited by national borders, I chose Google AdSense as the ad provider. Google AdSense is very simple to configure.&lt;/p&gt;
+&lt;h2 id=&#34;Specific-Steps&#34;&gt;&lt;a href=&#34;#Specific-Steps&#34; class=&#34;headerlink&#34; title=&#34;Specific Steps&#34;&gt;&lt;/a&gt;Specific Steps&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://www.google.com/adsense/&#34;&gt;Register a new AdSense account&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Get the ad script for your website from Google AdSense. It looks similar to this:&lt;/p&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;script&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;data-ad-client&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;ca-pub-9*******6&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;async&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;src&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Option 1:&lt;/p&gt;
+&lt;p&gt;Paste the ad script at the end of &lt;code&gt;./themes/next/layout/_partials/head/head-unique.swig&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Then verify it. Usually it will pass after a few days, and you will receive an email notification.&lt;/p&gt;
+&lt;p&gt;After approval, you need to configure it in AdSense. Basically, turning on &lt;strong&gt;Auto ads&lt;/strong&gt; is enough.&lt;/p&gt;
+&lt;p&gt;Option 2:&lt;/p&gt;
+&lt;p&gt;Create a &lt;code&gt;_config.next.yml&lt;/code&gt; file under the blog root directory, with the following contents:&lt;/p&gt;
+&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;custom_file_path:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;head:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;source/_data/head.swig&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Create &lt;code&gt;source/_data/head.swig&lt;/code&gt; with the following contents:&lt;/p&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;script&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;data-ad-client&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;ca-pub-9046219176772396&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;async&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;src&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9046219176772396&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;The advantage of Option 2 is that it does not intrude into &lt;code&gt;next&lt;/code&gt;, making it convenient to do CD with GitHub Actions.&lt;/p&gt;
+&lt;h3 id=&#34;Setting-up-ads-txt&#34;&gt;&lt;a href=&#34;#Setting-up-ads-txt&#34; class=&#34;headerlink&#34; title=&#34;Setting up ads.txt&#34;&gt;&lt;/a&gt;Setting up ads.txt&lt;/h3&gt;&lt;p&gt;Place this file under &lt;code&gt;./source/&lt;/code&gt;, at the same level as &lt;code&gt;_posts/&lt;/code&gt;.&lt;br&gt;After deploying with &lt;code&gt;hexo d -g&lt;/code&gt;, the corresponding file will be automatically deployed to &lt;code&gt;/public/&lt;/code&gt;, meaning your blog site.&lt;br&gt;Other files that need to be generated and placed in the blog root directory can be handled similarly.&lt;/p&gt;
  ]]></description>
         </item>
     </channel>
