@@ -7,16 +7,17 @@
     <category term="life" />
     <category term="Year-End Review" />
     <category term="year-end summary" />
+    <category term="Intern" />
     <category term="Reading" />
-    <category term="A Global History" />
     <category term="The Three-Body Problem" />
-    <category term="A Matter of Degrees" />
+    <category term="A Global History" />
     <category term="Dublin" />
     <category term="Life" />
+    <category term="A Matter of Degrees" />
     <category term="Alibaba" />
     <category term="intern" />
-    <category term="Are Your Lights On?" />
     <category term="Antifragile" />
+    <category term="Are Your Lights On?" />
     <category term="Beijing" />
     <category term="Hukou" />
     <category term="Business Cycles" />
@@ -34,8 +35,8 @@
     <category term="Genome" />
     <category term="Hexo" />
     <category term="Guns, Germs, and Steel" />
-    <category term="Hou Hei Xue" />
     <category term="Hennge" />
+    <category term="Hou Hei Xue" />
     <category term="Ireland" />
     <category term="IB" />
     <category term="Bonds" />
@@ -44,14 +45,14 @@
     <category term="Side Project" />
     <category term="Just Keep Buying" />
     <category term="Competitive Programming" />
-    <category term="Liu Shen Lei Lei Reads Jin Yong" />
     <category term="A Little History of the World" />
+    <category term="Liu Shen Lei Lei Reads Jin Yong" />
     <category term="Liu Shen Lei Lei Reads Tang Poetry" />
+    <category term="Blog" />
     <category term="Travel" />
     <category term="Keyboard" />
-    <category term="Blog" />
-    <category term="Programming Pearls" />
     <category term="Poor Charlie&#39;s Almanack" />
+    <category term="Programming Pearls" />
     <category term="Money" />
     <category term="Investment" />
     <category term="QDII" />
@@ -70,18 +71,18 @@
     <category term="The Collapse of the Heavenly Dynasty" />
     <category term="The Hungry Golden Age" />
     <category term="The Glory and the Dream" />
+    <category term="The Gains and Losses of Economic Changes in the Past Dynasties" />
     <category term="The Worlds I See" />
     <category term="Linux" />
-    <category term="The Gains and Losses of Economic Changes in the Past Dynasties" />
     <category term="Why Nations Fail" />
     <category term="Windows" />
     <category term="travel" />
     <category term="The Times" />
     <category term="XiaoLin Says" />
-    <category term="Tinkering" />
     <category term="C++" />
     <category term="hash" />
     <category term="unordered_map" />
+    <category term="Tinkering" />
     <category term="Amazon" />
     <category term="Microsoft" />
     <category term="China" />
@@ -94,6 +95,8 @@
     <category term="Life and Death Are Wearing Me Out" />
     <category term="RIP" />
     <category term="sensetime" />
+    <category term="vscode" />
+    <category term="gcc" />
     <entry>
         <id>https://youngforest.github.io/en/2024/02/05/Programming-Pearls/</id>
         <title>Programming Pearls</title>
