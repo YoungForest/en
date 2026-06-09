@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 5.4.2">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/en/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/en/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/en/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/en/images/logo.svg" color="#222">
+  <meta name="google-site-verification" content="1T-h_WTI8xskfXv9HxKWHfxqfzny6jcGdT5hmIExYqY">
+
+<link rel="stylesheet" href="/en/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"youngforest.github.io","root":"/en/","images":"/en/images","scheme":"Mist","darkmode":false,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/en/js/config.js" defer></script>
+
+    <meta name="description" content="RankNameScoreFinish TimeQ1 (3)Q2 (4)Q3 (5)Q4 (7)765 &#x2F; 13283YoungForest120:27:190:02:160:12:530:27:19nullThis week’s last problem was honestly quite difficult and involved probability, combinatorics, a">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LeetCode Weekly Contest 191">
+<meta property="og:url" content="https://youngforest.github.io/en/2020/05/31/LeetCode-weekly-contest-191/index.html">
+<meta property="og:site_name" content="YoungForest&#39;s blog">
+<meta property="og:description" content="RankNameScoreFinish TimeQ1 (3)Q2 (4)Q3 (5)Q4 (7)765 &#x2F; 13283YoungForest120:27:190:02:160:12:530:27:19nullThis week’s last problem was honestly quite difficult and involved probability, combinatorics, a">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-05-31T09:40:09.000Z">
+<meta property="article:modified_time" content="2026-06-09T01:25:48.095Z">
+<meta property="article:author" content="YoungForest">
+<meta property="article:tag" content="Competitive Programming">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://youngforest.github.io/en/2020/05/31/LeetCode-weekly-contest-191/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://youngforest.github.io/en/2020/05/31/LeetCode-weekly-contest-191/","path":"2020/05/31/LeetCode-weekly-contest-191/","title":"LeetCode Weekly Contest 191"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>LeetCode Weekly Contest 191 | YoungForest's blog</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-88350169-1"></script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"UA-88350169-1","only_pageview":false,"measure_protocol_api_secret":null}</script>
+  <script src="/en/js/third-party/analytics/google-analytics.js" defer></script>
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/en/js/utils.js" defer></script><script src="/en/js/motion.js" defer></script><script src="/en/js/sidebar.js" defer></script><script src="/en/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+<script data-ad-client="ca-pub-9046219176772396" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9046219176772396"></script>
+
+  <noscript>
+    <link rel="stylesheet" href="/en/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/en/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">YoungForest's blog</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/en/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/en/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/en/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li><li class="menu-item menu-item-categories"><a href="/en/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li><li class="menu-item menu-item-archives"><a href="/en/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li><li class="menu-item menu-item-中文"><a href="https://youngforest.github.io/" rel="section"><i class="fa fa-language fa-fw"></i>中文</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1464-Maximum-Product-of-Two-Elements-in-an-Array"><span class="nav-number">1.</span> <span class="nav-text">1464. Maximum Product of Two Elements in an Array</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1465-Maximum-Area-of-a-Piece-of-Cake-After-Horizontal-and-Vertical-Cuts"><span class="nav-number">2.</span> <span class="nav-text">1465. Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1466-Reorder-Routes-to-Make-All-Paths-Lead-to-the-City-Zero"><span class="nav-number">3.</span> <span class="nav-text">1466. Reorder Routes to Make All Paths Lead to the City Zero</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1467-Probability-of-a-Two-Boxes-Having-The-Same-Number-of-Distinct-Balls"><span class="nav-number">4.</span> <span class="nav-text">1467. Probability of a Two Boxes Having The Same Number of Distinct Balls</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">YoungForest</p>
+  <div class="site-description" itemprop="description">A programmer in Amazon Beijing, China</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/en/archives/">
+          <span class="site-state-item-count">159</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/en/categories/">
+        <span class="site-state-item-count">15</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/en/tags/">
+        <span class="site-state-item-count">90</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/YoungForest" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;YoungForest" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:sen.yang96@outlook.com" title="E-Mail → mailto:sen.yang96@outlook.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/u/1111372490" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;u&#x2F;1111372490" rel="noopener me" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/youngforest" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;youngforest" rel="noopener me" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://stackoverflow.com/users/6393787/youngforest" title="StackOverflow → https:&#x2F;&#x2F;stackoverflow.com&#x2F;users&#x2F;6393787&#x2F;youngforest" rel="noopener me" target="_blank"><i class="fab fa-stack-overflow fa-fw"></i>StackOverflow</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.linkedin.com/in/sen-yang-a20a02137/" title="LinkedIn → https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;sen-yang-a20a02137&#x2F;" rel="noopener me" target="_blank"><i class="fab fa-linkedin fa-fw"></i>LinkedIn</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/en/atom.xml" title="RSS → &#x2F;atom.xml" rel="noopener me"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="sidebar-inner sidebar-blogroll">
+      <div class="links-of-blogroll animated">
+        <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+          Links
+        </div>
+        <ul class="links-of-blogroll-list">
+            <li class="links-of-blogroll-item">
+              <a href="https://www.kenshinji.me/" title="https:&#x2F;&#x2F;www.kenshinji.me" rel="noopener" target="_blank">Fred</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://jacklandrin.github.io/" title="https:&#x2F;&#x2F;jacklandrin.github.io" rel="noopener" target="_blank">LiuBo</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://xiaozhou.net/" title="https:&#x2F;&#x2F;xiaozhou.net" rel="noopener" target="_blank">Timothy</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://nicelylit.net/" title="https:&#x2F;&#x2F;nicelylit.net&#x2F;" rel="noopener" target="_blank">Jeremy's World</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://fenghe.us/" title="https:&#x2F;&#x2F;fenghe.us&#x2F;" rel="noopener" target="_blank">Pool's</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://chenhe.me/" title="https:&#x2F;&#x2F;chenhe.me&#x2F;" rel="noopener" target="_blank">晨鹤部落格/Chenhe's blog</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://dreamerlzl.xyz/" title="https:&#x2F;&#x2F;dreamerlzl.xyz&#x2F;" rel="noopener" target="_blank">dreamerlzl</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/en/2020/05/31/LeetCode-weekly-contest-191/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/en/images/avatar.gif">
+      <meta itemprop="name" content="YoungForest">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YoungForest's blog">
+      <meta itemprop="description" content="A programmer in Amazon Beijing, China">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="LeetCode Weekly Contest 191 | YoungForest's blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          LeetCode Weekly Contest 191
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2020-05-31 17:40:09" itemprop="dateCreated datePublished" datetime="2020-05-31T17:40:09+08:00">2020-05-31</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2026-06-09 09:25:48" itemprop="dateModified" datetime="2026-06-09T09:25:48+08:00">2026-06-09</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/en/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/en/2020/05/31/LeetCode-weekly-contest-191/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/05/31/LeetCode-weekly-contest-191/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Name</th>
+<th>Score</th>
+<th>Finish Time</th>
+<th>Q1 (3)</th>
+<th>Q2 (4)</th>
+<th>Q3 (5)</th>
+<th>Q4 (7)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>765 / 13283</td>
+<td>YoungForest</td>
+<td>12</td>
+<td>0:27:19</td>
+<td>0:02:16</td>
+<td>0:12:53</td>
+<td>0:27:19</td>
+<td>null</td>
+</tr>
+</tbody></table>
+<p>This week’s last problem was honestly quite difficult and involved probability, combinatorics, and related knowledge. It happened to hit a blind spot in my knowledge, so I did not solve it. Students who are strong in math should have a much easier time with it.</p>
+<h2 id="1464-Maximum-Product-of-Two-Elements-in-an-Array"><a href="#1464-Maximum-Product-of-Two-Elements-in-an-Array" class="headerlink" title="1464. Maximum Product of Two Elements in an Array"></a>1464. Maximum Product of Two Elements in an Array</h2><p>A warm-up problem. Since <code>nums.size()</code> is relatively small, brute force is enough.</p>
+<p>Time complexity: O(N^2),<br>space complexity: O(1).</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="type">const</span> <span class="type">int</span> INF = <span class="number">0x3f3f3f3f</span>;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">maxProduct</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> ans = -INF;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; nums.<span class="built_in">size</span>(); ++i) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> j = i<span class="number">+1</span>; j &lt; nums.<span class="built_in">size</span>(); ++j) &#123;</span><br><span class="line">                ans = <span class="built_in">max</span>(ans, (nums[i] - <span class="number">1</span>) * (nums[j] - <span class="number">1</span>));</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="1465-Maximum-Area-of-a-Piece-of-Cake-After-Horizontal-and-Vertical-Cuts"><a href="#1465-Maximum-Area-of-a-Piece-of-Cake-After-Horizontal-and-Vertical-Cuts" class="headerlink" title="1465. Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts"></a>1465. Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts</h2><p>Find the maximum horizontal gap and the maximum vertical gap separately, then multiply them. Note that the boundaries should also be treated as cuts.<br>It is better to use <code>long long</code> as the data type, because there can be <code>int32</code> overflow issues.</p>
+<p>Time complexity: O(horizontalCuts.size() * log + verticalCuts.size() * log),<br>space complexity: O(1).</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">using</span> ll = <span class="type">long</span> <span class="type">long</span>;</span><br><span class="line">    <span class="type">const</span> ll MOD = <span class="number">1e9</span> + <span class="number">7</span>;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">maxArea</span><span class="params">(<span class="type">int</span> h, <span class="type">int</span> w, vector&lt;<span class="type">int</span>&gt;&amp; horizontalCuts, vector&lt;<span class="type">int</span>&gt;&amp; verticalCuts)</span> </span>&#123;</span><br><span class="line">        horizontalCuts.<span class="built_in">insert</span>(horizontalCuts.<span class="built_in">begin</span>(), <span class="number">0</span>);</span><br><span class="line">        horizontalCuts.<span class="built_in">push_back</span>(h);</span><br><span class="line">        verticalCuts.<span class="built_in">insert</span>(verticalCuts.<span class="built_in">begin</span>(), <span class="number">0</span>);</span><br><span class="line">        verticalCuts.<span class="built_in">push_back</span>(w);</span><br><span class="line">        <span class="built_in">sort</span> (<span class="built_in">begin</span>(horizontalCuts), <span class="built_in">end</span>(horizontalCuts));</span><br><span class="line">        <span class="built_in">sort</span> (<span class="built_in">begin</span>(verticalCuts), <span class="built_in">end</span>(verticalCuts));</span><br><span class="line">        <span class="type">int</span> maxH = <span class="number">0</span>, maxW = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt; horizontalCuts.<span class="built_in">size</span>(); ++i) &#123;</span><br><span class="line">            maxH = <span class="built_in">max</span>(maxH, horizontalCuts[i] - horizontalCuts[i<span class="number">-1</span>]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">1</span>; j &lt; verticalCuts.<span class="built_in">size</span>(); ++j) &#123;</span><br><span class="line">            maxW = <span class="built_in">max</span>(maxW, verticalCuts[j] - verticalCuts[j<span class="number">-1</span>]);</span><br><span class="line">        &#125;</span><br><span class="line">        ll mxh = maxH;</span><br><span class="line">        ll mxw = maxW;</span><br><span class="line">        <span class="keyword">return</span> (mxh * mxw) % MOD;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="1466-Reorder-Routes-to-Make-All-Paths-Lead-to-the-City-Zero"><a href="#1466-Reorder-Routes-to-Make-All-Paths-Lead-to-the-City-Zero" class="headerlink" title="1466. Reorder Routes to Make All Paths Lead to the City Zero"></a>1466. Reorder Routes to Make All Paths Lead to the City Zero</h2><p>Because the underlying undirected graph is a tree, each node has exactly one path to 0. So just run DFS from 0 and adjust the edges that are in the reverse direction.</p>
+<p>Time complexity: O(N),<br>space complexity: O(N) -&gt; by recording the parent node, <code>seen</code> can be avoided and the space can be reduced to O(1).</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">minReorder</span><span class="params">(<span class="type">int</span> n, vector&lt;vector&lt;<span class="type">int</span>&gt;&gt;&amp; connections)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> ans = <span class="number">0</span>;</span><br><span class="line">        unordered_map&lt;<span class="type">int</span>, vector&lt;<span class="type">int</span>&gt;&gt; in, out;</span><br><span class="line">        <span class="function">vector&lt;<span class="type">bool</span>&gt; <span class="title">seen</span><span class="params">(n, <span class="literal">false</span>)</span></span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">const</span> <span class="keyword">auto</span>&amp; v : connections) &#123;</span><br><span class="line">            in[v[<span class="number">1</span>]].<span class="built_in">push_back</span>(v[<span class="number">0</span>]);</span><br><span class="line">            out[v[<span class="number">0</span>]].<span class="built_in">push_back</span>(v[<span class="number">1</span>]);</span><br><span class="line">        &#125;</span><br><span class="line">        function&lt;<span class="type">void</span>(<span class="type">int</span>)&gt; dfs = [&amp;](<span class="type">int</span> root) -&gt; <span class="type">void</span> &#123;</span><br><span class="line">            <span class="keyword">if</span> (seen[root]) <span class="keyword">return</span>;</span><br><span class="line">            seen[root] = <span class="literal">true</span>;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> neighbor : in[root]) &#123;</span><br><span class="line">                <span class="built_in">dfs</span>(neighbor);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> neighbor : out[root]) &#123;</span><br><span class="line">                <span class="keyword">if</span> (!seen[neighbor]) &#123;</span><br><span class="line">                    ++ans;</span><br><span class="line">                    <span class="built_in">dfs</span>(neighbor);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;;</span><br><span class="line">        <span class="built_in">dfs</span>(<span class="number">0</span>);</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="1467-Probability-of-a-Two-Boxes-Having-The-Same-Number-of-Distinct-Balls"><a href="#1467-Probability-of-a-Two-Boxes-Having-The-Same-Number-of-Distinct-Balls" class="headerlink" title="1467. Probability of a Two Boxes Having The Same Number of Distinct Balls"></a>1467. Probability of a Two Boxes Having The Same Number of Distinct Balls</h2><p>A probability problem. Since the constraints are small, backtracking can be used to enumerate the number of balls of each color in the two boxes. At the endpoint, we need to judge the number of legal permutations, meaning the two boxes must contain the same number of balls. Then, if the number of distinct colors is also the same, we record it.<br>This requires some combinatorics knowledge. Suppose there are <code>x</code> balls and the count of each color is <code>A_i</code>.<br>Then the number of permutations is:</p>
+<p>$$ x! / \prod_i A_i! $$</p>
+<p>Time complexity: O(balls[i]^balls.size() * balls.size() * sum_balls) = O(6 ^ 8 * 8 * 48) = O(644972544).<br>Space complexity: O(balls.size()).</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">getProbability</span>(<span class="params">self, balls: <span class="type">List</span>[<span class="built_in">int</span>]</span>) -&gt; <span class="built_in">float</span>:</span><br><span class="line">        <span class="variable language_">self</span>.<span class="built_in">all</span> = <span class="number">0</span></span><br><span class="line">        <span class="variable language_">self</span>.good = <span class="number">0</span></span><br><span class="line">        <span class="variable language_">self</span>.firstHalf = defaultdict(<span class="built_in">int</span>)</span><br><span class="line">        <span class="variable language_">self</span>.secondHalf = defaultdict(<span class="built_in">int</span>)</span><br><span class="line">        <span class="keyword">def</span> <span class="title function_">validKeys</span>(<span class="params">m</span>):</span><br><span class="line">            ans = <span class="number">0</span></span><br><span class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> m:</span><br><span class="line">                <span class="keyword">if</span> m[i] &gt; <span class="number">0</span>: ans += <span class="number">1</span></span><br><span class="line">            <span class="keyword">return</span> ans</span><br><span class="line">        <span class="keyword">def</span> <span class="title function_">permutationUnder</span>(<span class="params">count</span>):</span><br><span class="line">            under = <span class="number">1</span></span><br><span class="line">            <span class="keyword">for</span> k <span class="keyword">in</span> count.values():</span><br><span class="line">                under *= math.factorial(k)</span><br><span class="line">            <span class="keyword">return</span> under</span><br><span class="line">        <span class="keyword">def</span> <span class="title function_">dfs</span>(<span class="params">i</span>):</span><br><span class="line">            <span class="keyword">if</span> i == <span class="built_in">len</span>(balls):</span><br><span class="line">                s1 = <span class="built_in">sum</span>(<span class="variable language_">self</span>.firstHalf.values())</span><br><span class="line">                s2 = <span class="built_in">sum</span>(<span class="variable language_">self</span>.secondHalf.values())</span><br><span class="line">                <span class="keyword">if</span> s1 != s2: <span class="keyword">return</span></span><br><span class="line">                add = math.factorial(s1) * math.factorial(s2) / (permutationUnder(<span class="variable language_">self</span>.firstHalf) * permutationUnder(<span class="variable language_">self</span>.secondHalf))</span><br><span class="line">                <span class="variable language_">self</span>.<span class="built_in">all</span> += add</span><br><span class="line">                <span class="keyword">if</span> validKeys(<span class="variable language_">self</span>.firstHalf) == validKeys(<span class="variable language_">self</span>.secondHalf): <span class="variable language_">self</span>.good += add</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">for</span> x <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>, balls[i] + <span class="number">1</span>):</span><br><span class="line">                    <span class="variable language_">self</span>.firstHalf[i] = x</span><br><span class="line">                    <span class="variable language_">self</span>.secondHalf[i] = balls[i] - x</span><br><span class="line">                    dfs(i+<span class="number">1</span>)</span><br><span class="line">        dfs(<span class="number">0</span>)</span><br><span class="line">        <span class="keyword">return</span> <span class="variable language_">self</span>.good / <span class="variable language_">self</span>.<span class="built_in">all</span></span><br></pre></td></tr></table></figure>
+
+
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="followme">
+  <span>Welcome to my other publishing channels</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+          <span class="social-link">
+            <span class="icon">
+              <i class="fab fa-weixin"></i>
+            </span>
+
+            <span class="label">WeChat</span>
+          </span>
+
+          <img class="social-item-img" src="/en/uploads/wechat-qcode.jpg">
+      </div>
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="/en/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+      </div>
+  </div>
+</div>
+
+          <div class="post-tags">
+              <a href="/en/tags/Competitive-Programming/" rel="tag"># Competitive Programming</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/en/2020/05/27/best-implement-to-use-pair-as-key-to-std-unordered-map-in-C/" rel="prev" title="Best implement to use pair as key to std::unordered_map in C++">
+                  <i class="fa fa-angle-left"></i> Best implement to use pair as key to std::unordered_map in C++
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/en/2020/05/31/LeetCode-biweekly-contest-27/" rel="next" title="LeetCode biweekly contest 27">
+                  LeetCode biweekly contest 27 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">YoungForest</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" rel="noopener" target="_blank">NexT.Mist</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+  <a href="https://github.com/YoungForest" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"YoungForest","count":true,"i18n":{"disqus":"disqus"}}</script>
+<script src="/en/js/third-party/comments/disqus.js" defer></script>
+
+</body>
+</html>
