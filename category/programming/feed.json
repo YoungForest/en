@@ -80,6 +80,14 @@
             "tags": [
                 "Algorithm"
             ]
+        },
+        {
+            "id": "https://youngforest.github.io/en/2019/07/16/gitbook/",
+            "url": "https://youngforest.github.io/en/2019/07/16/gitbook/",
+            "title": "Writing a Book with GitBook",
+            "date_published": "2019-07-16T07:34:35.000Z",
+            "content_html": "<p>Unlike a blog, a book is relatively more complete and more systematic. Blogs, by comparison, are much more scattered. However, excellent blog series are often adapted into books.<br>If you want to share larger-scale, systematic knowledge, writing a small book is a good choice.<br>This article introduces a tool called <code>GitBook</code>, which lets you write a book in Markdown, put it on GitHub, and generate web and PDF versions of the book. Compared with traditional LaTeX, it is simpler and more convenient. It suits contemporary programmers.</p>\n<p>The references for this article mainly come from the <a href=\"https://github.com/GitbookIO/gitbook/blob/master/docs/setup.md\">official website</a>. By comparison, this article is more focused and can help you quickly initialize, write, and publish a book.</p>\n<p>Install gitbook command line tool:</p>\n<figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">npm install gitbook-cli -g</span><br></pre></td></tr></table></figure>\n\n<p>Create a book:</p>\n<figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">gitbook init ./directory</span><br></pre></td></tr></table></figure>\n\n<p>Preview and serve your book:</p>\n<figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">gitbook serve</span><br></pre></td></tr></table></figure>\n\n<p>Or build the static website:</p>\n<figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">gitbook build</span><br></pre></td></tr></table></figure>\n\n<p>Debug for better error message with stack trace:</p>\n<figure class=\"highlight cpp\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">gitbook build ./ --log=debug --debug</span><br></pre></td></tr></table></figure>\n",
+            "tags": []
         }
     ]
 }

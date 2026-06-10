@@ -20,27 +20,27 @@
     <category term="travel" />
     <category term="Travel Notes" />
     <category term="Antifragile" />
+    <category term="Are Your Lights On?" />
     <category term="Beijing" />
     <category term="Hukou" />
-    <category term="Are Your Lights On?" />
-    <category term="ByteDance" />
-    <category term="interview" />
     <category term="Business Cycles" />
     <category term="Economics" />
+    <category term="ByteDance" />
     <category term="New Graduate" />
+    <category term="interview" />
     <category term="Deep Simplicity" />
-    <category term="C++" />
     <category term="codeforces" />
     <category term="contest" />
+    <category term="C++" />
     <category term="Elon Musk" />
     <category term="bank" />
     <category term="money" />
     <category term="Europe" />
     <category term="Tech" />
     <category term="Genome" />
+    <category term="Hexo" />
     <category term="Guns, Germs, and Steel" />
     <category term="Hennge" />
-    <category term="Hexo" />
     <category term="Ireland" />
     <category term="IB" />
     <category term="Bonds" />
@@ -51,8 +51,8 @@
     <category term="Just Keep Buying" />
     <category term="Competitive Programming" />
     <category term="Algorithm" />
-    <category term="A Little History of the World" />
     <category term="Liu Shen Lei Lei Reads Jin Yong" />
+    <category term="A Little History of the World" />
     <category term="Liu Shen Lei Lei Reads Tang Poetry" />
     <category term="Blog" />
     <category term="miHoYo" />
@@ -65,27 +65,27 @@
     <category term="QDII" />
     <category term="Arbitrage" />
     <category term="Off-Exchange to On-Exchange" />
-    <category term="Reality Is Not What It Seems" />
     <category term="tech" />
+    <category term="Reality Is Not What It Seems" />
     <category term="Shi Nan Zhi Tu" />
     <category term="Ma Boyong" />
-    <category term="Tai Bai Jin Xing You Dian Fan" />
     <category term="Skin in the Game" />
     <category term="Nassim Nicholas Taleb" />
+    <category term="Tai Bai Jin Xing You Dian Fan" />
     <category term="Tencent" />
     <category term="The Almanack of Naval Ravikant" />
     <category term="The Art of War" />
-    <category term="The Bitcoin Standard" />
     <category term="The Collapse of the Heavenly Dynasty" />
+    <category term="The Bitcoin Standard" />
     <category term="The Hungry Golden Age" />
-    <category term="The Worlds I See" />
     <category term="The Glory and the Dream" />
     <category term="The Gains and Losses of Economic Changes in the Past Dynasties" />
+    <category term="The Worlds I See" />
     <category term="Linux" />
     <category term="Why Nations Fail" />
-    <category term="Windows" />
     <category term="The Times" />
     <category term="XiaoLin Says" />
+    <category term="Windows" />
     <category term="hash" />
     <category term="unordered_map" />
     <category term="Tinkering" />
@@ -101,9 +101,9 @@
     <category term="Life and Death Are Wearing Me Out" />
     <category term="Mac" />
     <category term="RIP" />
+    <category term="sensetime" />
     <category term="vscode" />
     <category term="gcc" />
-    <category term="sensetime" />
     <entry>
         <id>https://youngforest.github.io/en/2023/07/01/Codeforces-Educational-Codeforces-Round-151/</id>
         <title>Codeforces Educational Codeforces Round 151</title>
@@ -247,5 +247,28 @@
 </content>
         <category term="Algorithm" />
         <updated>2019-12-14T14:07:31.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://youngforest.github.io/en/2019/07/16/gitbook/</id>
+        <title>Writing a Book with GitBook</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2019/07/16/gitbook/"/>
+        <content type="html">&lt;p&gt;Unlike a blog, a book is relatively more complete and more systematic. Blogs, by comparison, are much more scattered. However, excellent blog series are often adapted into books.&lt;br&gt;If you want to share larger-scale, systematic knowledge, writing a small book is a good choice.&lt;br&gt;This article introduces a tool called &lt;code&gt;GitBook&lt;/code&gt;, which lets you write a book in Markdown, put it on GitHub, and generate web and PDF versions of the book. Compared with traditional LaTeX, it is simpler and more convenient. It suits contemporary programmers.&lt;/p&gt;
+&lt;p&gt;The references for this article mainly come from the &lt;a href=&#34;https://github.com/GitbookIO/gitbook/blob/master/docs/setup.md&#34;&gt;official website&lt;/a&gt;. By comparison, this article is more focused and can help you quickly initialize, write, and publish a book.&lt;/p&gt;
+&lt;p&gt;Install gitbook command line tool:&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;npm install gitbook-cli -g&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Create a book:&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;gitbook init ./directory&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Preview and serve your book:&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;gitbook serve&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Or build the static website:&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;gitbook build&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Debug for better error message with stack trace:&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;gitbook build ./ --log=debug --debug&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+</content>
+        <updated>2019-07-16T07:34:35.000Z</updated>
     </entry>
 </feed>
