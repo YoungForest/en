@@ -1,0 +1,42 @@
+---
+title: 2019 ByteDance Summer Camp
+date: 2019-09-06 19:25:56
+tags:
+- ByteDance
+- interview
+categories:
+- Diary
+---
+
+Overall, the experience was very happy and I gained a lot.
+
+I was very lucky to attend this year's Byte Camp. I think this one-week event was the most meaningful activity I attended this year. This year's summer camp was divided into three tracks: Engineering, Algorithm, and Product. I participated in the Engineering track.
+
+Selection for the Engineering and Algorithm tracks was completed through a written test and interview. The written test questions were also the same, completed online through the Nowcoder platform. There were two opportunities for the written test; if you participated in both, the higher score was used. The written test was divided into basic questions (Operating Systems, Computer Organization, Computer Networks) and programming questions. There were four programming questions, with increasing difficulty. I participated in the first session and ACed the first three. The difficulty was roughly equivalent to LeetCode Medium. The difficulty of the last problem directly jumped to ICPC World Finals level, requiring knowledge of min-cost flow. I had never done ACM, and it was my first time hearing about min-cost flow, so I could not solve it. Because my written test was okay, I did not attend the interview and directly got camp admission. However, according to classmates who attended the interview, the interview was also quite easy and low in difficulty.
+
+Then came the official summer camp activities. Although the event only lasted one week, the schedule was extremely packed, basically 9-10-6. The opening ceremony was hosted by Teacher Hang Li, the head of AI Lab. Previously I had only heard his name online and in books for a long time; this time I actually got to meet him in person, and even had the chance to take a photo together. Students studying machine learning should all have heard of him. His book Statistical Learning Methods is also one of the few entry-level choices for algorithm job preparation. Each of us also received a signed copy of Statistical Learning Methods from him. Students in the Engineering track may not have been that excited about it, haha.
+
+![Group photo](/images/ByteDance-camp-jiti.jpg)
+
+The following schedule was mainly divided into two days of lectures and three days of projects. The course schedule and projects can all be seen on the [official website](https://bytecamp.toutiao.com/course). There were as many as seven classes each day. The classes were also full of substantial content. Each topic was taught by senior engineers inside ByteDance responsible for the relevant technology, covering everything from infrastructure architecture to frontend and backend - basically all areas that Engineering students might be interested in or work on.
+On the Algorithm side, in addition to inviting internal experts from the company, they also invited external guests such as Yoshua Bengio and Oren Etzioni. Because these two people are truly impressive (I only learned this later, after all I do not do algorithms), we Engineering students were also required to attend their sessions. The course content was average, relatively introductory and shallow (maybe to take care of us Engineering kids?), and there was not much substantive content.
+
+The project I chose was "Service Governance: High-Performance Communication Middleware Based on Shared Memory". To be honest, I was not very familiar with shared memory or inter-process communication, but when choosing topics, this was the only one I could understand. The other topics were even more confusing, so I chose the project that looked relatively reliable: "middleware". Later it proved that projects like this were actually less likely to win awards than projects like mini-games, and were also harder to complete. The specific details of the project cannot be disclosed. I completed it together with an expert from Shanghai Jiao Tong University. In three days, we completed design, implementation, testing, performance testing, PPT, and presentation. Other groups had four to five people, but because two teammates in our group left the camp early, we only had two people. The code from those three days was not the hardest code I wrote, but it was probably the happiest code I wrote this year. We wrote code all day, then returned to the hotel at 10 p.m. and continued grinding until one or two in the morning. Having a five-star hotel to stay in was also why, even though my school is in Beijing, I still stayed in the hotel with everyone. A standard room cost more than 900 yuan per night and was very comfortable. The two of us even open-sourced the project: [Yellow-Pay/MakeTheAmericanGreatAgain](https://github.com/Yellow-Pay/MakeTheAmericanGreatAgain). You can find many `shm-ipc` libraries on GitHub. Our purpose was more to use git for collaborative work.
+
+![Second day of working on the project](/images/Bytedance-camp.jpg)
+
+![Me and my teammate Huang Fuqian](/images/us.jpg)
+
+The summer camp had just ended last Friday afternoon. After I returned to school and officially started working, I realized ByteDance's headquarters at Zhonghang Plaza was so close to the school. I had originally planned to take the subway back, but when I walked to Zhichunli, I found the school was only half a stop away, so I walked directly back to the dorm. I hope I will have more opportunities to interact with ByteDance in the future. With such a short distance, sneaking out for an internship must be very convenient.
+
+To summarize what I gained this week, ordered by importance:
+1. I met many friends, including quite a few strong people.
+2. I gained a relatively deep understanding of ByteDance's company atmosphere and technology stack.
+3. Although it was tiring, I was happy throughout the entire event.
+
+Finally, thanks to Sister Manlian and the other staff and volunteers who worked hard for this summer camp.
+
+There are a few things about the summer camp that I want to complain about, and I hope they can be improved next year:
+1. The food at the opening banquet was not very good: either too salty or too sweet.
+2. There was no place to rest at noon. Although we sat on 6k-yuan chairs, the backrests had nowhere to place the neck or head, so every day I could only lean against the wall and make do with a nap. My waist still hurts because of it.
+
