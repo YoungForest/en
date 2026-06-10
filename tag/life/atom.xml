@@ -13,10 +13,10 @@
     <category term="The Three-Body Problem" />
     <category term="A Global History" />
     <category term="A Matter of Degrees" />
-    <category term="Dublin" />
-    <category term="Life" />
     <category term="Alibaba" />
     <category term="intern" />
+    <category term="Dublin" />
+    <category term="Life" />
     <category term="travel" />
     <category term="Travel Notes" />
     <category term="Antifragile" />
@@ -26,8 +26,8 @@
     <category term="Business Cycles" />
     <category term="Economics" />
     <category term="ByteDance" />
-    <category term="New Graduate" />
     <category term="interview" />
+    <category term="New Graduate" />
     <category term="Deep Simplicity" />
     <category term="codeforces" />
     <category term="contest" />
@@ -37,8 +37,8 @@
     <category term="money" />
     <category term="Europe" />
     <category term="Tech" />
-    <category term="Genome" />
     <category term="Hexo" />
+    <category term="Genome" />
     <category term="Guns, Germs, and Steel" />
     <category term="Hennge" />
     <category term="Ireland" />
@@ -51,9 +51,9 @@
     <category term="Just Keep Buying" />
     <category term="Competitive Programming" />
     <category term="Algorithm" />
-    <category term="Liu Shen Lei Lei Reads Jin Yong" />
     <category term="A Little History of the World" />
     <category term="Liu Shen Lei Lei Reads Tang Poetry" />
+    <category term="Liu Shen Lei Lei Reads Jin Yong" />
     <category term="Blog" />
     <category term="miHoYo" />
     <category term="Travel" />
@@ -65,22 +65,22 @@
     <category term="QDII" />
     <category term="Arbitrage" />
     <category term="Off-Exchange to On-Exchange" />
-    <category term="tech" />
     <category term="Reality Is Not What It Seems" />
+    <category term="tech" />
     <category term="Shi Nan Zhi Tu" />
     <category term="Ma Boyong" />
     <category term="Skin in the Game" />
     <category term="Nassim Nicholas Taleb" />
     <category term="Tai Bai Jin Xing You Dian Fan" />
-    <category term="Tencent" />
     <category term="The Almanack of Naval Ravikant" />
+    <category term="Tencent" />
     <category term="The Art of War" />
-    <category term="The Collapse of the Heavenly Dynasty" />
     <category term="The Bitcoin Standard" />
     <category term="The Hungry Golden Age" />
     <category term="The Glory and the Dream" />
-    <category term="The Gains and Losses of Economic Changes in the Past Dynasties" />
+    <category term="The Collapse of the Heavenly Dynasty" />
     <category term="The Worlds I See" />
+    <category term="The Gains and Losses of Economic Changes in the Past Dynasties" />
     <category term="Linux" />
     <category term="Why Nations Fail" />
     <category term="The Times" />
@@ -92,13 +92,13 @@
     <category term="Amazon" />
     <category term="Microsoft" />
     <category term="China" />
-    <category term="Travelogue" />
     <category term="vim" />
+    <category term="Travelogue" />
     <category term="investing" />
     <category term="WeRide" />
+    <category term="Life and Death Are Wearing Me Out" />
     <category term="Kuaishou" />
     <category term="Internship" />
-    <category term="Life and Death Are Wearing Me Out" />
     <category term="Mac" />
     <category term="RIP" />
     <category term="sensetime" />
@@ -957,6 +957,29 @@
         <category term="life" />
         <category term="Year-End Summary" />
         <updated>2020-02-20T08:50:42.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://youngforest.github.io/en/2019/07/15/Happy-birthday-2019/</id>
+        <title>Happy birthday 2019</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2019/07/15/Happy-birthday-2019/"/>
+        <content type="html">&lt;p&gt;This year I still spent my 23rd birthday at school. In the afternoon, I went out with my roommates to watch the movie &lt;em&gt;The Lion King&lt;/em&gt;. In the evening, we went to Chengnan Jiushi and ate “Beijing cuisine.” I suppose that counts as celebrating my birthday. Happy birthday to me.&lt;br&gt;Since I left home at 18 and came alone to the capital to study, birthdays have no longer been as lively and warm as they were at home. Drifting away from home, even though classmates or friends still wish you happy birthday, and closer friends may accompany me to celebrate, the warmth of family is gone. People come and go, and those around you can basically only accompany you for a period of time. At moments like this, I always miss childhood.&lt;/p&gt;
+&lt;p&gt;Beijing has been especially hot recently, and I cannot help feeling irritable. I keep drifting through life most of the time, then occasionally become full of ambition. I often think about so-called meaning of life, the value of effort, and my own goals.&lt;br&gt;I can say that I do not have grand ambitions. I read quite a few books from a young age, especially history books. I understood early that I had no connection with princes, generals, and ministers; I am only an ordinary person. What I want now is not much: a place to stand in a big city, and a warm home. This thought is probably also the goal of countless Beipiao people. It is also the motivation behind my hard study.&lt;br&gt;Recently I have been watching a very popular web drama, &lt;em&gt;The Longest Day in Chang’an&lt;/em&gt;. One line in it resonates with me strongly: some people are born Chang’an people, while some people never become Chang’an people even until death. The lives of countless lower-class people in Chang’an in the drama are exactly an allegory for the lives of Beipiao people.&lt;/p&gt;
+&lt;p&gt;Time passes like a white colt flashing past a crack. In a hurry, half of 2019 has already passed. Looking back at the New Year wishes I wrote half a year ago, some easier ones have already been achieved, while the difficult ones can only be postponed to the second half of the year, or even to next year.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A healthy body and good living habits. I have done far from enough on this point. Because of oversleeping, fear of heat, laziness, and other reasons, I did not keep running or exercising. I need to criticize myself.&lt;/li&gt;
+&lt;li&gt;An internship at a top-tier big tech company. I interned at ST for one semester, which does not count as a big tech company. This goal has to be postponed to next year.&lt;/li&gt;
+&lt;li&gt;An exchange experience. Expected to happen next semester.&lt;/li&gt;
+&lt;li&gt;Advanced study in computer systems and algorithms. The initial LeetCode target has been exceeded, and I also went through CTCI, an algorithms-related book. This part deserves recognition. In fact, I put in quite a lot of work here. In addition, my familiarity with C++ is basically complete; I can confidently say on my resume or in interviews that C++ is my main language. For the remaining CSAPP, SICP, and design patterns, there has not been much progress, but something is still better than nothing.&lt;/li&gt;
+&lt;li&gt;Real interview experience. I participated in the ByteDance Ads interview, the ByteDance summer camp written test, and a Google phone interview. These interview experiences are genuinely stimulating and made me understand my weaknesses deeply. For example, in algorithms I am still far from the Kick Start standard.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I think there are two things I need to keep firmly in mind:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Time is money!&lt;/li&gt;
+&lt;li&gt;Health is the capital of revolution!&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="life" />
+        <updated>2019-07-15T14:42:14.000Z</updated>
     </entry>
     <entry>
         <id>https://youngforest.github.io/en/2017/02/22/2017-resolutions/</id>
