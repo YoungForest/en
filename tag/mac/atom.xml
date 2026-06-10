@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://youngforest.github.io/en</id>
+    <title>YoungForest&#39;s blog • Posts by &#34;mac&#34; tag</title>
+    <link href="https://youngforest.github.io/en" />
+    <updated>2019-11-11T02:10:44.000Z</updated>
+    <category term="life" />
+    <category term="Year-End Review" />
+    <category term="Year-End Summary" />
+    <category term="year-end summary" />
+    <category term="Intern" />
+    <category term="Reading" />
+    <category term="The Three-Body Problem" />
+    <category term="A Global History" />
+    <category term="Dublin" />
+    <category term="Life" />
+    <category term="A Matter of Degrees" />
+    <category term="Alibaba" />
+    <category term="intern" />
+    <category term="travel" />
+    <category term="Travel Notes" />
+    <category term="Antifragile" />
+    <category term="Are Your Lights On?" />
+    <category term="Beijing" />
+    <category term="Hukou" />
+    <category term="Business Cycles" />
+    <category term="Economics" />
+    <category term="ByteDance" />
+    <category term="New Graduate" />
+    <category term="Deep Simplicity" />
+    <category term="codeforces" />
+    <category term="contest" />
+    <category term="C++" />
+    <category term="Elon Musk" />
+    <category term="bank" />
+    <category term="money" />
+    <category term="Europe" />
+    <category term="Genome" />
+    <category term="Tech" />
+    <category term="Hexo" />
+    <category term="Guns, Germs, and Steel" />
+    <category term="Hennge" />
+    <category term="Hou Hei Xue" />
+    <category term="Ireland" />
+    <category term="IB" />
+    <category term="Bonds" />
+    <category term="France visa" />
+    <category term="Schengen" />
+    <category term="Side Project" />
+    <category term="Just Keep Buying" />
+    <category term="Competitive Programming" />
+    <category term="A Little History of the World" />
+    <category term="Liu Shen Lei Lei Reads Jin Yong" />
+    <category term="Liu Shen Lei Lei Reads Tang Poetry" />
+    <category term="Blog" />
+    <category term="miHoYo" />
+    <category term="Keyboard" />
+    <category term="Travel" />
+    <category term="Poor Charlie&#39;s Almanack" />
+    <category term="Programming Pearls" />
+    <category term="tech" />
+    <category term="Money" />
+    <category term="Investment" />
+    <category term="QDII" />
+    <category term="Arbitrage" />
+    <category term="Off-Exchange to On-Exchange" />
+    <category term="Reality Is Not What It Seems" />
+    <category term="Shi Nan Zhi Tu" />
+    <category term="Ma Boyong" />
+    <category term="Skin in the Game" />
+    <category term="Nassim Nicholas Taleb" />
+    <category term="Tai Bai Jin Xing You Dian Fan" />
+    <category term="Tencent" />
+    <category term="The Almanack of Naval Ravikant" />
+    <category term="The Art of War" />
+    <category term="The Bitcoin Standard" />
+    <category term="The Collapse of the Heavenly Dynasty" />
+    <category term="The Hungry Golden Age" />
+    <category term="The Glory and the Dream" />
+    <category term="The Worlds I See" />
+    <category term="The Gains and Losses of Economic Changes in the Past Dynasties" />
+    <category term="Linux" />
+    <category term="Why Nations Fail" />
+    <category term="Windows" />
+    <category term="The Times" />
+    <category term="XiaoLin Says" />
+    <category term="Tinkering" />
+    <category term="hash" />
+    <category term="unordered_map" />
+    <category term="Algorithm" />
+    <category term="Amazon" />
+    <category term="Microsoft" />
+    <category term="China" />
+    <category term="vim" />
+    <category term="Travelogue" />
+    <category term="investing" />
+    <category term="WeRide" />
+    <category term="Kuaishou" />
+    <category term="Internship" />
+    <category term="Life and Death Are Wearing Me Out" />
+    <category term="Mac" />
+    <category term="RIP" />
+    <category term="sensetime" />
+    <category term="vscode" />
+    <category term="gcc" />
+    <entry>
+        <id>https://youngforest.github.io/en/2019/11/11/mac-write-ntfs-solution/</id>
+        <title>Solution for Writing to NTFS on Mac OS</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2019/11/11/mac-write-ntfs-solution/"/>
+        <content type="html">&lt;p&gt;Using macOS does have some inconvenient parts, such as writing to NTFS hard drives or USB drives. By default, Mac only supports reading NTFS. But as long as you have the courage to tinker, the solution is still very simple.&lt;/p&gt;
+&lt;h2 id=&#34;Most-Recommended-Method&#34;&gt;&lt;a href=&#34;#Most-Recommended-Method&#34; class=&#34;headerlink&#34; title=&#34;Most Recommended Method&#34;&gt;&lt;/a&gt;Most Recommended Method&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://mounty.app/&#34;&gt;Mounty for NTFS&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Pros: free and lightweight.&lt;br&gt;Cons: not hacky. It is basically just a wrapper around command-line operations. Some classmates may prefer the command-line way.&lt;/p&gt;
+&lt;h2 id=&#34;Most-Hacky-Method&#34;&gt;&lt;a href=&#34;#Most-Hacky-Method&#34; class=&#34;headerlink&#34; title=&#34;Most Hacky Method&#34;&gt;&lt;/a&gt;Most Hacky Method&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;sudo&lt;/span&gt; umount &lt;span class=&#34;string&#34;&gt;&amp;quot;/Volumes/Seagate Expansion Drive&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;sudo&lt;/span&gt; mount -t ntfs -o rw,auto,nobrowse /dev/disk3s1 ~/ntfs-volume&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Reference: &lt;a href=&#34;https://mounty.app/&#34;&gt;mounty&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;After struggling for a while, I still chose the recommended method of installing a third-party app. The command line is indeed easy to forget or mistype, and every time I have to Google it again. That does not match the elegance and convenience I want from using macOS.&lt;/p&gt;
+</content>
+        <category term="Mac" />
+        <updated>2019-11-11T02:10:44.000Z</updated>
+    </entry>
+</feed>
