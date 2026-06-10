@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://youngforest.github.io/en</id>
+    <title>YoungForest&#39;s blog • Posts by &#34;mihoyo&#34; tag</title>
+    <link href="https://youngforest.github.io/en" />
+    <updated>2020-03-20T08:29:48.000Z</updated>
+    <category term="life" />
+    <category term="Year-End Review" />
+    <category term="year-end summary" />
+    <category term="Intern" />
+    <category term="Reading" />
+    <category term="The Three-Body Problem" />
+    <category term="A Global History" />
+    <category term="Dublin" />
+    <category term="Life" />
+    <category term="A Matter of Degrees" />
+    <category term="Alibaba" />
+    <category term="intern" />
+    <category term="Antifragile" />
+    <category term="Are Your Lights On?" />
+    <category term="Business Cycles" />
+    <category term="Economics" />
+    <category term="Beijing" />
+    <category term="Hukou" />
+    <category term="ByteDance" />
+    <category term="New Graduate" />
+    <category term="Deep Simplicity" />
+    <category term="codeforces" />
+    <category term="contest" />
+    <category term="Elon Musk" />
+    <category term="bank" />
+    <category term="money" />
+    <category term="Europe" />
+    <category term="Tech" />
+    <category term="Genome" />
+    <category term="Hexo" />
+    <category term="Hennge" />
+    <category term="Guns, Germs, and Steel" />
+    <category term="Hou Hei Xue" />
+    <category term="France visa" />
+    <category term="Schengen" />
+    <category term="Side Project" />
+    <category term="Ireland" />
+    <category term="IB" />
+    <category term="Bonds" />
+    <category term="Just Keep Buying" />
+    <category term="Competitive Programming" />
+    <category term="Liu Shen Lei Lei Reads Jin Yong" />
+    <category term="A Little History of the World" />
+    <category term="Blog" />
+    <category term="Liu Shen Lei Lei Reads Tang Poetry" />
+    <category term="miHoYo" />
+    <category term="Travel" />
+    <category term="Keyboard" />
+    <category term="Poor Charlie&#39;s Almanack" />
+    <category term="Programming Pearls" />
+    <category term="Money" />
+    <category term="Investment" />
+    <category term="QDII" />
+    <category term="Arbitrage" />
+    <category term="Off-Exchange to On-Exchange" />
+    <category term="Reality Is Not What It Seems" />
+    <category term="tech" />
+    <category term="Shi Nan Zhi Tu" />
+    <category term="Ma Boyong" />
+    <category term="Skin in the Game" />
+    <category term="Nassim Nicholas Taleb" />
+    <category term="Tai Bai Jin Xing You Dian Fan" />
+    <category term="Tencent" />
+    <category term="The Art of War" />
+    <category term="The Almanack of Naval Ravikant" />
+    <category term="The Bitcoin Standard" />
+    <category term="The Hungry Golden Age" />
+    <category term="The Collapse of the Heavenly Dynasty" />
+    <category term="The Glory and the Dream" />
+    <category term="The Worlds I See" />
+    <category term="The Gains and Losses of Economic Changes in the Past Dynasties" />
+    <category term="Linux" />
+    <category term="Why Nations Fail" />
+    <category term="Windows" />
+    <category term="travel" />
+    <category term="The Times" />
+    <category term="XiaoLin Says" />
+    <category term="C++" />
+    <category term="hash" />
+    <category term="unordered_map" />
+    <category term="Tinkering" />
+    <category term="Amazon" />
+    <category term="Microsoft" />
+    <category term="China" />
+    <category term="Travelogue" />
+    <category term="vim" />
+    <category term="investing" />
+    <category term="WeRide" />
+    <category term="Kuaishou" />
+    <category term="Internship" />
+    <category term="Life and Death Are Wearing Me Out" />
+    <category term="RIP" />
+    <category term="sensetime" />
+    <category term="vscode" />
+    <category term="gcc" />
+    <entry>
+        <id>https://youngforest.github.io/en/2020/03/20/Mihayo-backend-intern-interview/</id>
+        <title>miHoYo Server Development Summer Internship</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2020/03/20/Mihayo-backend-intern-interview/"/>
+        <content type="html">&lt;h1 id=&#34;First-Round&#34;&gt;&lt;a href=&#34;#First-Round&#34; class=&#34;headerlink&#34; title=&#34;First Round&#34;&gt;&lt;/a&gt;First Round&lt;/h1&gt;&lt;p&gt;time: 2020-03-20 16:29:48&lt;/p&gt;
+&lt;p&gt;Last Friday I took the written test on Nowcoder. The questions were not hard and were divided into computer science fundamentals, algorithms, and system design.&lt;br&gt;For computer science fundamentals, thanks to serious undergraduate study, there was no problem. The algorithm part was also around LeetCode Medium difficulty and I got AC quickly.&lt;br&gt;System design, however, stumped me. I am not good at it and had not prepared for it. The task was to design a MOBA game’s matchmaking mechanism, including solo and team queue. I had never thought about it before and just wrote something randomly.&lt;br&gt;Yesterday I received a call saying I had passed the written test, and they scheduled a phone interview for 2:30 this afternoon.&lt;/p&gt;
+&lt;p&gt;I had a lovely expert roommate in undergraduate who eventually went to miHoYo. Although I am not particularly into games, with the attitude of doing more interviews and summarizing more, I also signed up for its spring referral recruiting.&lt;/p&gt;
+&lt;p&gt;The interview was expected to take 30 minutes, but actually took 40 minutes.&lt;/p&gt;
+&lt;p&gt;Self-introduction + project experience + computer science fundamentals.&lt;/p&gt;
+&lt;p&gt;Computer science fundamentals were further divided into:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;C++&lt;/li&gt;
+&lt;li&gt;Operating System&lt;/li&gt;
+&lt;li&gt;Database&lt;/li&gt;
+&lt;li&gt;Computer Network&lt;/li&gt;
+&lt;li&gt;Design Patterns&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Things I did not know:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TCP three-way termination, and the role of the final &lt;code&gt;TIME_WAIT&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;why a C++ base class destructor must be virtual&lt;/li&gt;
+&lt;li&gt;MySQL&lt;ul&gt;
+&lt;li&gt;transactions and ACID&lt;/li&gt;
+&lt;li&gt;difference between Block and Tag&lt;/li&gt;
+&lt;li&gt;what BiLog is&lt;/li&gt;
+&lt;li&gt;difference between &lt;code&gt;timestamp&lt;/code&gt; and &lt;code&gt;datetime&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;name common design patterns. I mentioned a few, but the interviewer did not seem satisfied&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There was no live coding section, which was a little disappointing.&lt;/p&gt;
+&lt;h1 id=&#34;Second-Round&#34;&gt;&lt;a href=&#34;#Second-Round&#34; class=&#34;headerlink&#34; title=&#34;Second Round&#34;&gt;&lt;/a&gt;Second Round&lt;/h1&gt;&lt;p&gt;time: 2020-04-03 12:54:20&lt;/p&gt;
+&lt;p&gt;Previous &lt;a href=&#34;https://www.nowcoder.com/discuss/387235&#34;&gt;first-round post&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Two full weeks passed between the first and second rounds. In between, HR called and hoped I could go to Shanghai for an onsite second round. I could only honestly say that the school currently did not allow cross-province movement. Your company is really bold. In the end, it still went according to plan as a video interview.&lt;/p&gt;
+&lt;p&gt;The whole interview lasted 50 minutes. It was not very difficult, but because it was a game company, many questions and projects were things I had not encountered or thought about before.&lt;/p&gt;
+&lt;h2 id=&#34;Algorithm&#34;&gt;&lt;a href=&#34;#Algorithm&#34; class=&#34;headerlink&#34; title=&#34;Algorithm&#34;&gt;&lt;/a&gt;Algorithm&lt;/h2&gt;&lt;p&gt;Merge two sorted linked lists.&lt;/p&gt;
+&lt;h2 id=&#34;Project&#34;&gt;&lt;a href=&#34;#Project&#34; class=&#34;headerlink&#34; title=&#34;Project&#34;&gt;&lt;/a&gt;Project&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Projects under Linux. I told him most of mine were all on Linux.&lt;/li&gt;
+&lt;li&gt;A game I made in senior year (software engineering assignment), &lt;a href=&#34;https://github.com/xxr5566833/Game&#34;&gt;GitHub&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;memory leak diagnosis&lt;/li&gt;
+&lt;li&gt;protobuf&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;Computer-Science-Fundamentals&#34;&gt;&lt;a href=&#34;#Computer-Science-Fundamentals&#34; class=&#34;headerlink&#34; title=&#34;Computer Science Fundamentals&#34;&gt;&lt;/a&gt;Computer Science Fundamentals&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;How to diagnose network problems?&lt;/li&gt;
+&lt;li&gt;Consistent hashing, adding buckets and removing buckets.&lt;/li&gt;
+&lt;li&gt;Singleton pattern, templated singleton, and singleton under multithreading. This was implemented locally in the IDE while sharing the screen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;Third-Round&#34;&gt;&lt;a href=&#34;#Third-Round&#34; class=&#34;headerlink&#34; title=&#34;Third Round&#34;&gt;&lt;/a&gt;Third Round&lt;/h1&gt;&lt;p&gt;time: 2020-04-08 12:58:36&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.nowcoder.com/discuss/387235&#34;&gt;First round&lt;/a&gt;&lt;br&gt;&lt;a href=&#34;https://www.nowcoder.com/discuss/399642&#34;&gt;Second round&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;Language-Fundamentals&#34;&gt;&lt;a href=&#34;#Language-Fundamentals&#34; class=&#34;headerlink&#34; title=&#34;Language Fundamentals&#34;&gt;&lt;/a&gt;Language Fundamentals&lt;/h2&gt;&lt;p&gt;Implement the constructor and destructor of smart pointer &lt;code&gt;shared_ptr&lt;/code&gt;.&lt;br&gt;Question: why must &lt;code&gt;count&lt;/code&gt; use a pointer?&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;47&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;typename&lt;/span&gt;&amp;lt;T&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title class_&#34;&gt;shared_ptr&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    T* data = &lt;span class=&#34;literal&#34;&gt;nullptr&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;type&#34;&gt;uint32_t&lt;/span&gt;* count = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;built_in&#34;&gt;shared_ptr&lt;/span&gt;(&lt;span class=&#34;type&#34;&gt;const&lt;/span&gt; shared_ptr&amp;amp; a) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        data = a-&amp;gt;data;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        count = a-&amp;gt;count;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        ++(*count);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;built_in&#34;&gt;shared_ptr&lt;/span&gt;(T* t) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        data = t;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (t) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            count = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;built_in&#34;&gt;uint32_t&lt;/span&gt;();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            count = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    shared_ptr &lt;span class=&#34;keyword&#34;&gt;operator&lt;/span&gt; = (&lt;span class=&#34;type&#34;&gt;const&lt;/span&gt; shared_ptr&amp;amp; a) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (a == &lt;span class=&#34;keyword&#34;&gt;this&lt;/span&gt;) ;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;else&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (&lt;span class=&#34;keyword&#34;&gt;this&lt;/span&gt; != &lt;span class=&#34;literal&#34;&gt;nullptr&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                --(*count);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (*count == &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    &lt;span class=&#34;keyword&#34;&gt;delete&lt;/span&gt; data;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    &lt;span class=&#34;keyword&#34;&gt;delete&lt;/span&gt; count;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            data = a-&amp;gt;data;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            count = a-&amp;gt;count;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            ++(*count);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    ~&lt;span class=&#34;built_in&#34;&gt;shared_ptr&lt;/span&gt;() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (data) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (*count &amp;gt; &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                --(*count);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;#125; &lt;span class=&#34;keyword&#34;&gt;else&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &lt;span class=&#34;keyword&#34;&gt;delete&lt;/span&gt; data;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &lt;span class=&#34;keyword&#34;&gt;delete&lt;/span&gt; count;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;typename&lt;/span&gt;&amp;lt;T&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;shared_ptr&amp;lt;T&amp;gt; &lt;span class=&#34;title&#34;&gt;make_shared&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;built_in&#34;&gt;ret&lt;/span&gt;(&lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;built_in&#34;&gt;T&lt;/span&gt;());&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;Algorithm-1&#34;&gt;&lt;a href=&#34;#Algorithm-1&#34; class=&#34;headerlink&#34; title=&#34;Algorithm&#34;&gt;&lt;/a&gt;Algorithm&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;Coins with denominations 1, 7, and 10.&lt;br&gt;Given an &lt;code&gt;n&lt;/code&gt;, use the minimum number of coins to make this value.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;At first I wanted to use greedy, but the interviewer quickly gave a counterexample.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;15&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Then I gave a DP solution with O(N). The interviewer then hinted: if &lt;code&gt;N&lt;/code&gt; is very large, what optimization idea is there? This led to first taking modulo the least common multiple, then doing DP on the remainder, giving an O(1) solution.&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;dp&lt;/span&gt;(n) = &lt;span class=&#34;built_in&#34;&gt;min&lt;/span&gt;(&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;built_in&#34;&gt;dp&lt;/span&gt;(n - &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;) + &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;built_in&#34;&gt;dp&lt;/span&gt;(n - &lt;span class=&#34;number&#34;&gt;7&lt;/span&gt;) + &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;built_in&#34;&gt;dp&lt;/span&gt;(n - &lt;span class=&#34;number&#34;&gt;10&lt;/span&gt;) + &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;); &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; n &amp;gt;= &lt;span class=&#34;number&#34;&gt;10&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt; * &lt;span class=&#34;number&#34;&gt;7&lt;/span&gt; * &lt;span class=&#34;number&#34;&gt;10&lt;/span&gt; = &lt;span class=&#34;number&#34;&gt;70&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;O&lt;/span&gt; (&lt;span class=&#34;number&#34;&gt;7&lt;/span&gt; + &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;) = &lt;span class=&#34;built_in&#34;&gt;O&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;Data-Structure-Design&#34;&gt;&lt;a href=&#34;#Data-Structure-Design&#34; class=&#34;headerlink&#34; title=&#34;Data Structure Design&#34;&gt;&lt;/a&gt;Data Structure Design&lt;/h2&gt;&lt;p&gt;Design a million-level leaderboard that supports insertion, lookup score by &lt;code&gt;uid&lt;/code&gt;, lookup rank by &lt;code&gt;uid&lt;/code&gt;, and lookup &lt;code&gt;uid&lt;/code&gt; by rank.&lt;br&gt;Follow-up: when scores are the same, sort by time of entering the leaderboard.&lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;order statisc tree&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;getSize&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(TreeNode* node)&lt;/span&gt; &lt;/span&gt;&amp;#123;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;set&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;multiset&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;order_statisc_tree&amp;lt;pair&amp;lt;分数, 时间&amp;gt;，uid&amp;gt;：按名次查uid log N&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;hashmap&amp;lt;uid, pair&amp;lt;分数,时间&amp;gt;&amp;gt;: 按uid查分数 &lt;span class=&#34;built_in&#34;&gt;O&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;按uid查排名 &lt;span class=&#34;built_in&#34;&gt;O&lt;/span&gt;(log N)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;insert: &lt;span class=&#34;built_in&#34;&gt;O&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt; + log N)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;Computer-Science-Fundamentals-1&#34;&gt;&lt;a href=&#34;#Computer-Science-Fundamentals-1&#34; class=&#34;headerlink&#34; title=&#34;Computer Science Fundamentals&#34;&gt;&lt;/a&gt;Computer Science Fundamentals&lt;/h2&gt;&lt;p&gt;Familiar with Linux?&lt;br&gt;Troubleshoot an online process whose CPU usage is 100%.&lt;/p&gt;
+&lt;h2 id=&#34;Others&#34;&gt;&lt;a href=&#34;#Others&#34; class=&#34;headerlink&#34; title=&#34;Others&#34;&gt;&lt;/a&gt;Others&lt;/h2&gt;&lt;p&gt;What is special about game companies?&lt;br&gt;Have you played our company’s games? (No.) Then what games do you usually play?&lt;/p&gt;
+&lt;p&gt;At the end, the interviewer asked whether I could start the internship early before graduation. I said no, because I could not go to Shanghai.&lt;/p&gt;
+&lt;p&gt;Question: your company’s internal grouping for server development. Shared backend infrastructure across different products.&lt;/p&gt;
+</content>
+        <category term="Intern" />
+        <category term="miHoYo" />
+        <updated>2020-03-20T08:29:48.000Z</updated>
+    </entry>
+</feed>
