@@ -12,11 +12,11 @@
     <category term="Reading" />
     <category term="The Three-Body Problem" />
     <category term="A Global History" />
-    <category term="A Matter of Degrees" />
-    <category term="Alibaba" />
-    <category term="intern" />
     <category term="Dublin" />
     <category term="Life" />
+    <category term="Alibaba" />
+    <category term="intern" />
+    <category term="A Matter of Degrees" />
     <category term="travel" />
     <category term="Travel Notes" />
     <category term="Antifragile" />
@@ -32,32 +32,34 @@
     <category term="codeforces" />
     <category term="contest" />
     <category term="C++" />
+    <category term="C++11" />
     <category term="Elon Musk" />
     <category term="bank" />
     <category term="money" />
     <category term="Europe" />
+    <category term="Genome" />
     <category term="Tech" />
     <category term="Hexo" />
-    <category term="Genome" />
     <category term="Guns, Germs, and Steel" />
     <category term="Hennge" />
+    <category term="Hou Hei Xue" />
     <category term="Ireland" />
     <category term="IB" />
     <category term="Bonds" />
-    <category term="Hou Hei Xue" />
     <category term="France visa" />
     <category term="Schengen" />
     <category term="Side Project" />
     <category term="Just Keep Buying" />
     <category term="Competitive Programming" />
     <category term="Algorithm" />
+    <category term="LeetCode" />
     <category term="A Little History of the World" />
-    <category term="Liu Shen Lei Lei Reads Tang Poetry" />
     <category term="Liu Shen Lei Lei Reads Jin Yong" />
+    <category term="Liu Shen Lei Lei Reads Tang Poetry" />
     <category term="Blog" />
     <category term="miHoYo" />
-    <category term="Travel" />
     <category term="Keyboard" />
+    <category term="Travel" />
     <category term="Poor Charlie&#39;s Almanack" />
     <category term="Programming Pearls" />
     <category term="Money" />
@@ -72,33 +74,33 @@
     <category term="Skin in the Game" />
     <category term="Nassim Nicholas Taleb" />
     <category term="Tai Bai Jin Xing You Dian Fan" />
-    <category term="The Almanack of Naval Ravikant" />
     <category term="Tencent" />
+    <category term="The Almanack of Naval Ravikant" />
     <category term="The Art of War" />
     <category term="The Bitcoin Standard" />
-    <category term="The Hungry Golden Age" />
-    <category term="The Glory and the Dream" />
     <category term="The Collapse of the Heavenly Dynasty" />
+    <category term="The Glory and the Dream" />
+    <category term="The Hungry Golden Age" />
     <category term="The Worlds I See" />
     <category term="The Gains and Losses of Economic Changes in the Past Dynasties" />
     <category term="Linux" />
     <category term="Why Nations Fail" />
+    <category term="Windows" />
     <category term="The Times" />
     <category term="XiaoLin Says" />
-    <category term="Windows" />
     <category term="hash" />
     <category term="unordered_map" />
     <category term="Tinkering" />
     <category term="Amazon" />
     <category term="Microsoft" />
     <category term="China" />
-    <category term="vim" />
     <category term="Travelogue" />
+    <category term="vim" />
     <category term="investing" />
     <category term="WeRide" />
-    <category term="Life and Death Are Wearing Me Out" />
     <category term="Kuaishou" />
     <category term="Internship" />
+    <category term="Life and Death Are Wearing Me Out" />
     <category term="Mac" />
     <category term="RIP" />
     <category term="sensetime" />
@@ -167,5 +169,15 @@
         <category term="Reading" />
         <category term="Are Your Lights On?" />
         <updated>2024-01-17T15:50:01.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://youngforest.github.io/en/2019/05/05/Effective-Modern-C/</id>
+        <title>Effective Modern C++</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2019/05/05/Effective-Modern-C/"/>
+        <content type="html">&lt;p&gt;&lt;a href=&#34;https://book.douban.com/review/10131903/&#34;&gt;My book review&lt;/a&gt;&lt;/p&gt;
+</content>
+        <category term="C++" />
+        <category term="C++11" />
+        <updated>2019-05-05T12:27:23.000Z</updated>
     </entry>
 </feed>

@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://youngforest.github.io/en</id>
+    <title>YoungForest&#39;s blog • Posts by &#34;leetcode&#34; tag</title>
+    <link href="https://youngforest.github.io/en" />
+    <updated>2019-04-06T09:08:06.000Z</updated>
+    <category term="life" />
+    <category term="Year-End Review" />
+    <category term="Year-End Summary" />
+    <category term="year-end summary" />
+    <category term="Intern" />
+    <category term="Reading" />
+    <category term="The Three-Body Problem" />
+    <category term="A Global History" />
+    <category term="Dublin" />
+    <category term="Life" />
+    <category term="Alibaba" />
+    <category term="intern" />
+    <category term="A Matter of Degrees" />
+    <category term="travel" />
+    <category term="Travel Notes" />
+    <category term="Antifragile" />
+    <category term="Are Your Lights On?" />
+    <category term="Beijing" />
+    <category term="Hukou" />
+    <category term="Business Cycles" />
+    <category term="Economics" />
+    <category term="ByteDance" />
+    <category term="interview" />
+    <category term="New Graduate" />
+    <category term="Deep Simplicity" />
+    <category term="codeforces" />
+    <category term="contest" />
+    <category term="C++" />
+    <category term="C++11" />
+    <category term="Elon Musk" />
+    <category term="bank" />
+    <category term="money" />
+    <category term="Europe" />
+    <category term="Genome" />
+    <category term="Tech" />
+    <category term="Hexo" />
+    <category term="Guns, Germs, and Steel" />
+    <category term="Hennge" />
+    <category term="Hou Hei Xue" />
+    <category term="Ireland" />
+    <category term="IB" />
+    <category term="Bonds" />
+    <category term="France visa" />
+    <category term="Schengen" />
+    <category term="Side Project" />
+    <category term="Just Keep Buying" />
+    <category term="Competitive Programming" />
+    <category term="Algorithm" />
+    <category term="LeetCode" />
+    <category term="A Little History of the World" />
+    <category term="Liu Shen Lei Lei Reads Jin Yong" />
+    <category term="Liu Shen Lei Lei Reads Tang Poetry" />
+    <category term="Blog" />
+    <category term="miHoYo" />
+    <category term="Keyboard" />
+    <category term="Travel" />
+    <category term="Poor Charlie&#39;s Almanack" />
+    <category term="Programming Pearls" />
+    <category term="Money" />
+    <category term="Investment" />
+    <category term="QDII" />
+    <category term="Arbitrage" />
+    <category term="Off-Exchange to On-Exchange" />
+    <category term="Reality Is Not What It Seems" />
+    <category term="tech" />
+    <category term="Shi Nan Zhi Tu" />
+    <category term="Ma Boyong" />
+    <category term="Skin in the Game" />
+    <category term="Nassim Nicholas Taleb" />
+    <category term="Tai Bai Jin Xing You Dian Fan" />
+    <category term="Tencent" />
+    <category term="The Almanack of Naval Ravikant" />
+    <category term="The Art of War" />
+    <category term="The Bitcoin Standard" />
+    <category term="The Collapse of the Heavenly Dynasty" />
+    <category term="The Glory and the Dream" />
+    <category term="The Hungry Golden Age" />
+    <category term="The Worlds I See" />
+    <category term="The Gains and Losses of Economic Changes in the Past Dynasties" />
+    <category term="Linux" />
+    <category term="Why Nations Fail" />
+    <category term="Windows" />
+    <category term="The Times" />
+    <category term="XiaoLin Says" />
+    <category term="hash" />
+    <category term="unordered_map" />
+    <category term="Tinkering" />
+    <category term="Amazon" />
+    <category term="Microsoft" />
+    <category term="China" />
+    <category term="Travelogue" />
+    <category term="vim" />
+    <category term="investing" />
+    <category term="WeRide" />
+    <category term="Kuaishou" />
+    <category term="Internship" />
+    <category term="Life and Death Are Wearing Me Out" />
+    <category term="Mac" />
+    <category term="RIP" />
+    <category term="sensetime" />
+    <category term="vscode" />
+    <category term="gcc" />
+    <entry>
+        <id>https://youngforest.github.io/en/2019/04/06/LeetCode-258-Add-Digits/</id>
+        <title>LeetCode 258 Add Digits</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2019/04/06/LeetCode-258-Add-Digits/"/>
+        <content type="html">&lt;p&gt;While grinding problems today, I encountered an interesting one: given a number, repeatedly add the digits until the sum is less than 10. &lt;a href=&#34;https://leetcode.com/problems/add-digits/description/&#34;&gt;Link&lt;/a&gt;.&lt;br&gt;The problem itself is not hard; recursion or iteration can both solve it. But solving it in O(1) complexity is the real point.&lt;/p&gt;
+&lt;p&gt;The answer is simple: 1 + (num - 1) % 9.&lt;br&gt;If you are interested, you can read the proof and extension here: &lt;a href=&#34;https://en.wikipedia.org/wiki/Digital_root#Congruence_formula&#34;&gt;Wikipedia&lt;/a&gt;.&lt;/p&gt;
+</content>
+        <category term="LeetCode" />
+        <updated>2019-04-06T09:08:06.000Z</updated>
+    </entry>
+</feed>

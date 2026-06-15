@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "YoungForest's blog • All posts by \"leetcode\" tag",
+    "description": "A programmer in Amazon Beijing, China",
+    "home_page_url": "https://youngforest.github.io/en",
+    "items": [
+        {
+            "id": "https://youngforest.github.io/en/2019/04/06/LeetCode-258-Add-Digits/",
+            "url": "https://youngforest.github.io/en/2019/04/06/LeetCode-258-Add-Digits/",
+            "title": "LeetCode 258 Add Digits",
+            "date_published": "2019-04-06T09:08:06.000Z",
+            "content_html": "<p>While grinding problems today, I encountered an interesting one: given a number, repeatedly add the digits until the sum is less than 10. <a href=\"https://leetcode.com/problems/add-digits/description/\">Link</a>.<br>The problem itself is not hard; recursion or iteration can both solve it. But solving it in O(1) complexity is the real point.</p>\n<p>The answer is simple: 1 + (num - 1) % 9.<br>If you are interested, you can read the proof and extension here: <a href=\"https://en.wikipedia.org/wiki/Digital_root#Congruence_formula\">Wikipedia</a>.</p>\n",
+            "tags": [
+                "LeetCode"
+            ]
+        }
+    ]
+}
