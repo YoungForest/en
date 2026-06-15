@@ -5,22 +5,22 @@
     <link href="https://youngforest.github.io/en" />
     <updated>2023-07-01T08:33:20.000Z</updated>
     <category term="life" />
-    <category term="Year-End Review" />
     <category term="Year-End Summary" />
+    <category term="Year-End Review" />
     <category term="year-end summary" />
     <category term="Intern" />
     <category term="Reading" />
     <category term="The Three-Body Problem" />
     <category term="A Global History" />
-    <category term="A Matter of Degrees" />
     <category term="Dublin" />
     <category term="Life" />
     <category term="Alibaba" />
     <category term="intern" />
+    <category term="A Matter of Degrees" />
     <category term="travel" />
     <category term="Travel Notes" />
-    <category term="Antifragile" />
     <category term="Are Your Lights On?" />
+    <category term="Antifragile" />
     <category term="Beijing" />
     <category term="Hukou" />
     <category term="Business Cycles" />
@@ -28,21 +28,21 @@
     <category term="ByteDance" />
     <category term="interview" />
     <category term="New Graduate" />
-    <category term="Deep Simplicity" />
     <category term="codeforces" />
     <category term="contest" />
+    <category term="Deep Simplicity" />
     <category term="C++" />
     <category term="C++11" />
     <category term="Elon Musk" />
     <category term="bank" />
     <category term="money" />
     <category term="Europe" />
-    <category term="Tech" />
     <category term="Genome" />
     <category term="Hexo" />
+    <category term="Tech" />
     <category term="Guns, Germs, and Steel" />
-    <category term="Hennge" />
     <category term="Hou Hei Xue" />
+    <category term="Hennge" />
     <category term="Ireland" />
     <category term="IB" />
     <category term="Bonds" />
@@ -58,9 +58,9 @@
     <category term="Liu Shen Lei Lei Reads Tang Poetry" />
     <category term="Blog" />
     <category term="miHoYo" />
+    <category term="Keyboard" />
     <category term="Travel" />
     <category term="Poor Charlie&#39;s Almanack" />
-    <category term="Keyboard" />
     <category term="Programming Pearls" />
     <category term="Money" />
     <category term="Investment" />
@@ -74,12 +74,12 @@
     <category term="Skin in the Game" />
     <category term="Nassim Nicholas Taleb" />
     <category term="Tai Bai Jin Xing You Dian Fan" />
-    <category term="Tencent" />
     <category term="The Almanack of Naval Ravikant" />
-    <category term="The Art of War" />
+    <category term="Tencent" />
     <category term="The Bitcoin Standard" />
-    <category term="The Collapse of the Heavenly Dynasty" />
     <category term="The Hungry Golden Age" />
+    <category term="The Art of War" />
+    <category term="The Collapse of the Heavenly Dynasty" />
     <category term="The Glory and the Dream" />
     <category term="The Worlds I See" />
     <category term="The Gains and Losses of Economic Changes in the Past Dynasties" />
@@ -102,10 +102,10 @@
     <category term="Internship" />
     <category term="Life and Death Are Wearing Me Out" />
     <category term="Mac" />
-    <category term="RIP" />
     <category term="sensetime" />
     <category term="vscode" />
     <category term="gcc" />
+    <category term="RIP" />
     <entry>
         <id>https://youngforest.github.io/en/2023/07/01/Codeforces-Educational-Codeforces-Round-151/</id>
         <title>Codeforces Educational Codeforces Round 151</title>
@@ -383,5 +383,83 @@
 </content>
         <category term="LeetCode" />
         <updated>2019-02-17T09:33:33.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://youngforest.github.io/en/2019/02/11/recursion/</id>
+        <title>Recursion</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2019/02/11/recursion/"/>
+        <content type="html">&lt;p&gt;This article is based on LeetCode’s tutorial &lt;a href=&#34;https://leetcode.com/explore/learn/card/recursion-i/&#34;&gt;Introduction to Algorithms - Recursion I&lt;/a&gt;. Its purpose is to help me become more familiar with the important programming concept of “recursion”. If it can also help others, that would be even better.&lt;/p&gt;
+&lt;p&gt;The structure of this article is exactly the same as LeetCode’s tutorial. It is divided into six parts: Introduction, Principles of Recursion, Recurrence Relation, Memoization, Complexity Analysis, and Conclusion.&lt;/p&gt;
+&lt;h2 id=&#34;Introduction&#34;&gt;&lt;a href=&#34;#Introduction&#34; class=&#34;headerlink&#34; title=&#34;Introduction&#34;&gt;&lt;/a&gt;Introduction&lt;/h2&gt;&lt;p&gt;The goal of this card is to answer the following questions:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;What is recursion? How does recursion work?&lt;/li&gt;
+&lt;li&gt;How do we solve a problem recursively?&lt;/li&gt;
+&lt;li&gt;How do we analyze the time complexity and space complexity of a recursive algorithm?&lt;/li&gt;
+&lt;li&gt;How can we apply recursion in a better way?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;Principles-of-Recursion&#34;&gt;&lt;a href=&#34;#Principles-of-Recursion&#34; class=&#34;headerlink&#34; title=&#34;Principles of Recursion&#34;&gt;&lt;/a&gt;Principles of Recursion&lt;/h2&gt;&lt;p&gt;Every time a recursive function calls itself, it transforms the given problem into a subproblem. The recursive process continues until the subproblem can be solved directly without further recursion.&lt;/p&gt;
+&lt;p&gt;Necessary properties for avoiding infinite recursion in a recursive function:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;termination conditions (&lt;strong&gt;base cases&lt;/strong&gt;)&lt;/li&gt;
+&lt;li&gt;a set of rules (&lt;strong&gt;recurrence relation&lt;/strong&gt;) that can reduce all other cases to base cases.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;A recursive function can call itself from multiple places.&lt;/p&gt;
+&lt;h3 id=&#34;Example-Reverse-a-String&#34;&gt;&lt;a href=&#34;#Example-Reverse-a-String&#34; class=&#34;headerlink&#34; title=&#34;Example: Reverse a String&#34;&gt;&lt;/a&gt;Example: Reverse a String&lt;/h3&gt;&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;type&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;printReverse&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;type&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;type&#34;&gt;char&lt;/span&gt; *str)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (!*str) &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt;;  &lt;span class=&#34;comment&#34;&gt;// base case&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;built_in&#34;&gt;printReverse&lt;/span&gt;(str + &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;built_in&#34;&gt;putchar&lt;/span&gt;(*str);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&#34;Recursive-Function&#34;&gt;&lt;a href=&#34;#Recursive-Function&#34; class=&#34;headerlink&#34; title=&#34;Recursive Function&#34;&gt;&lt;/a&gt;Recursive Function&lt;/h3&gt;&lt;p&gt;If a problem has a recursive solution, we can implement it by following these steps.&lt;/p&gt;
+&lt;p&gt;We define the problem as something that can be implemented by function &lt;code&gt;F(x)&lt;/code&gt;, where &lt;code&gt;X&lt;/code&gt; is the input to the function and also represents the scope of the problem.&lt;/p&gt;
+&lt;p&gt;Inside function &lt;code&gt;F(X)&lt;/code&gt;, we implement the following steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Split the problem into smaller scopes, $x_1 \belong X, x_2 \belong X, …, x_n \belong X$.&lt;/li&gt;
+&lt;li&gt;Recursively call &lt;code&gt;F(x_1), F(x_2), ..., F(x_n)&lt;/code&gt; to solve the subproblems of &lt;code&gt;X&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Finally, process the solutions of the subproblems and combine them into the solution corresponding to &lt;code&gt;X&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;Recurrence-Relation&#34;&gt;&lt;a href=&#34;#Recurrence-Relation&#34; class=&#34;headerlink&#34; title=&#34;Recurrence Relation&#34;&gt;&lt;/a&gt;Recurrence Relation&lt;/h2&gt;&lt;p&gt;Definition: the relationship between the solution of a problem and the solutions of its subproblems.&lt;/p&gt;
+&lt;h3 id=&#34;Example-Pascal’s-Triangle&#34;&gt;&lt;a href=&#34;#Example-Pascal’s-Triangle&#34; class=&#34;headerlink&#34; title=&#34;Example: Pascal’s Triangle&#34;&gt;&lt;/a&gt;Example: Pascal’s Triangle&lt;/h3&gt;&lt;p&gt;Definition: Pascal’s Triangle is a triangular arrangement of numbers. In Pascal’s Triangle, the leftmost and rightmost numbers of each row are always 1. For the remaining numbers, each number is the sum of the two numbers directly above it in the previous row.&lt;/p&gt;
+&lt;p&gt;Expressed mathematically, the recurrence relation is:&lt;br&gt;$f(i, j) = f(i-1, j-1) + f(i-1, j),$&lt;/p&gt;
+&lt;p&gt;and the base cases are:&lt;br&gt;$f(i, j) = 1, if j = 1 or j = i$.&lt;/p&gt;
+&lt;p&gt;Here, $f(i, j)$ represents the &lt;code&gt;j&lt;/code&gt;-th number in row &lt;code&gt;i&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;Memoization&#34;&gt;&lt;a href=&#34;#Memoization&#34; class=&#34;headerlink&#34; title=&#34;Memoization&#34;&gt;&lt;/a&gt;Memoization&lt;/h2&gt;&lt;h3 id=&#34;Repeated-Computation-During-Recursion&#34;&gt;&lt;a href=&#34;#Repeated-Computation-During-Recursion&#34; class=&#34;headerlink&#34; title=&#34;Repeated Computation During Recursion&#34;&gt;&lt;/a&gt;Repeated Computation During Recursion&lt;/h3&gt;&lt;p&gt;Recursive solutions are often very &lt;strong&gt;intuitive&lt;/strong&gt; and &lt;strong&gt;easy to code&lt;/strong&gt;. But most of the time, repeated computation during recursion causes performance loss.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Memoization&lt;/strong&gt;&lt;br&gt;is a general technique for avoiding repeated computation.&lt;br&gt;Yes, this word is not misspelled. It is not Memorization.&lt;/p&gt;
+&lt;p&gt;Definition: to avoid repeated computation, we can store intermediate subproblem results in a cache, so that when they are needed again later, they do not need to be recomputed.&lt;/p&gt;
+&lt;p&gt;Memoization can be implemented with a hashmap. Especially in OOP, decorators can be used to implement generic memoization.&lt;/p&gt;
+&lt;h3 id=&#34;Example-Fibonacci-Number&#34;&gt;&lt;a href=&#34;#Example-Fibonacci-Number&#34; class=&#34;headerlink&#34; title=&#34;Example: Fibonacci Number&#34;&gt;&lt;/a&gt;Example: Fibonacci Number&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;https://leetcode.com/articles/climbing-stairs/&#34;&gt;Multiple solutions to Fibonacci numbers&lt;/a&gt;, including the &lt;strong&gt;Binet’s Formula&lt;/strong&gt; method and a formula-based method with O(log n) time complexity, are quite impressive.&lt;/p&gt;
+&lt;h2 id=&#34;Complexity-Analysis&#34;&gt;&lt;a href=&#34;#Complexity-Analysis&#34; class=&#34;headerlink&#34; title=&#34;Complexity Analysis&#34;&gt;&lt;/a&gt;Complexity Analysis&lt;/h2&gt;&lt;p&gt;The complexity of a recursive algorithm is sometimes not obvious and has to be analyzed through certain patterns.&lt;/p&gt;
+&lt;p&gt;Tail recursion is a special technique that can reduce recursion stack usage and optimize space complexity to be the same as an iterative algorithm.&lt;/p&gt;
+&lt;h3 id=&#34;Time-Complexity&#34;&gt;&lt;a href=&#34;#Time-Complexity&#34; class=&#34;headerlink&#34; title=&#34;Time Complexity&#34;&gt;&lt;/a&gt;Time Complexity&lt;/h3&gt;&lt;p&gt;The time complexity of a recursive algorithm is:&lt;br&gt;O(T) = R * O(s),&lt;br&gt;where R is the number of recursive calls, and O(s) is the computational complexity produced by each recursive call.&lt;br&gt;Generally speaking, R is harder to calculate, while O(s) is analyzed in the same way as the time complexity of a non-recursive algorithm.&lt;/p&gt;
+&lt;p&gt;With the execution tree technique, we can better analyze the number of recursive calls.&lt;br&gt;An execution tree is a tree that shows the flow of recursive calls in a concrete case. Each node represents one call, and the value on the node represents the parameter at the time of the call.&lt;br&gt;The number of nodes in this tree is R.&lt;/p&gt;
+&lt;p&gt;Special attention is needed for how the execution tree changes when memoization is used.&lt;/p&gt;
+&lt;h3 id=&#34;Space-Complexity&#34;&gt;&lt;a href=&#34;#Space-Complexity&#34; class=&#34;headerlink&#34; title=&#34;Space Complexity&#34;&gt;&lt;/a&gt;Space Complexity&lt;/h3&gt;&lt;p&gt;The space usage of a recursive algorithm is mainly divided into two parts:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;recursion related&lt;/li&gt;
+&lt;li&gt;non-recursion related&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;recursion-related&#34;&gt;&lt;a href=&#34;#recursion-related&#34; class=&#34;headerlink&#34; title=&#34;recursion related&#34;&gt;&lt;/a&gt;recursion related&lt;/h4&gt;&lt;p&gt;As we know from studying compilers, each function call pushes the following onto the stack:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;the function return address&lt;/li&gt;
+&lt;li&gt;function parameters&lt;/li&gt;
+&lt;li&gt;local variables of the function&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The depth of the function call stack in a recursive algorithm goes from the initial case to the base case.&lt;/p&gt;
+&lt;h4 id=&#34;non-recursion-related&#34;&gt;&lt;a href=&#34;#non-recursion-related&#34; class=&#34;headerlink&#34; title=&#34;non-recursion related&#34;&gt;&lt;/a&gt;non-recursion related&lt;/h4&gt;&lt;p&gt;The space used by global variables is mainly allocated on the heap. For example, memoization needs a hashmap.&lt;/p&gt;
+&lt;h3 id=&#34;Tail-Recursion&#34;&gt;&lt;a href=&#34;#Tail-Recursion&#34; class=&#34;headerlink&#34; title=&#34;Tail Recursion&#34;&gt;&lt;/a&gt;Tail Recursion&lt;/h3&gt;&lt;p&gt;Tail recursion is a form of recursion where the recursive call is the final instruction of the recursive function, and there is only one recursive call in the function.&lt;/p&gt;
+&lt;p&gt;A good example of tail recursion. Note that &lt;code&gt;non_tail_recursion&lt;/code&gt; still performs computation after the final recursive call.&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title class_&#34;&gt;Main&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;private&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;title function_&#34;&gt;helper_non_tail_recursion&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; start, &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; [] ls)&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (start &amp;gt;= ls.length) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;// not a tail recursion because it does some computation after the recursive call returned.&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; ls[start] + helper_non_tail_recursion(start+&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;, ls);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;title function_&#34;&gt;sum_non_tail_recursion&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; [] ls)&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (ls == &lt;span class=&#34;literal&#34;&gt;null&lt;/span&gt; || ls.length == &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; helper_non_tail_recursion(&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;, ls);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;comment&#34;&gt;//---------------------------------------------&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;private&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;title function_&#34;&gt;helper_tail_recursion&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; start, &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; [] ls, &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; acc)&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (start &amp;gt;= ls.length) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; acc;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;// this is a tail recursion because the final instruction is the recursive call.&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; helper_tail_recursion(start+&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;, ls, acc+ls[start]);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;title function_&#34;&gt;sum_tail_recursion&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; [] ls)&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (ls == &lt;span class=&#34;literal&#34;&gt;null&lt;/span&gt; || ls.length == &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; helper_tail_recursion(&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;, ls, &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;The principle behind eliminating the recursion stack for tail recursion:&lt;br&gt;the compiler knows that after returning from the callee, the function will immediately return again, so it does not need the data saved in the function call stack. Only one stack frame is needed, and all levels share that stack frame, so the return process can skip the entire recursion stack.&lt;/p&gt;
+&lt;p&gt;Not all language compilers support tail call optimization. For example, C and C++ support it, while Python and Java do not.&lt;/p&gt;
+&lt;p&gt;Tail recursion is usually not that easy to implement. It requires the recursive call to appear only as the final instruction. If multiple functions need to be called, or if the return value needs further computation, then it cannot be tail recursion.&lt;/p&gt;
+&lt;p&gt;Careful readers may notice the similarity between tail recursion and iteration (loops). In fact, some functional programming languages do not even support loops; they only have recursion, yet can fully implement iteration. Since we usually use loops more often and tail recursion less often, if you need to write tail recursion, usually because an interview asks for it, you can first write the loop version. Then try to turn the updates of local variables into parameters of the tail-recursive function. This often leads to elegant tail-recursive code, though for most people its readability is not high.&lt;/p&gt;
+&lt;h2 id=&#34;Conclusion&#34;&gt;&lt;a href=&#34;#Conclusion&#34; class=&#34;headerlink&#34; title=&#34;Conclusion&#34;&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;&lt;p&gt;The pattern for solving recursion problems:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Define the recursive function&lt;/li&gt;
+&lt;li&gt;Write down the recurrence relation and base case&lt;/li&gt;
+&lt;li&gt;Use memoization to eliminate repeated computation if it exists&lt;/li&gt;
+&lt;li&gt;If possible, implement the recursive algorithm with tail recursion to reduce space complexity&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+        <category term="Algorithm" />
+        <category term="LeetCode" />
+        <updated>2019-02-11T04:58:52.000Z</updated>
     </entry>
 </feed>

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 5.4.2">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/en/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/en/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/en/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/en/images/logo.svg" color="#222">
+  <meta name="google-site-verification" content="1T-h_WTI8xskfXv9HxKWHfxqfzny6jcGdT5hmIExYqY">
+
+<link rel="stylesheet" href="/en/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"youngforest.github.io","root":"/en/","images":"/en/images","scheme":"Mist","darkmode":false,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/en/js/config.js" defer></script>
+
+    <meta name="description" content="This article is based on LeetCode’s tutorial Introduction to Algorithms - Recursion I. Its purpose is to help me become more familiar with the important programming concept of “recursion”. If it can a">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Recursion">
+<meta property="og:url" content="https://youngforest.github.io/en/2019/02/11/recursion/index.html">
+<meta property="og:site_name" content="YoungForest&#39;s blog">
+<meta property="og:description" content="This article is based on LeetCode’s tutorial Introduction to Algorithms - Recursion I. Its purpose is to help me become more familiar with the important programming concept of “recursion”. If it can a">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2019-02-11T04:58:52.000Z">
+<meta property="article:modified_time" content="2026-06-15T16:30:04.324Z">
+<meta property="article:author" content="YoungForest">
+<meta property="article:tag" content="Algorithm">
+<meta property="article:tag" content="LeetCode">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://youngforest.github.io/en/2019/02/11/recursion/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://youngforest.github.io/en/2019/02/11/recursion/","path":"2019/02/11/recursion/","title":"Recursion"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Recursion | YoungForest's blog</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-88350169-1"></script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"UA-88350169-1","only_pageview":false,"measure_protocol_api_secret":null}</script>
+  <script src="/en/js/third-party/analytics/google-analytics.js" defer></script>
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/en/js/utils.js" defer></script><script src="/en/js/motion.js" defer></script><script src="/en/js/sidebar.js" defer></script><script src="/en/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+<script data-ad-client="ca-pub-9046219176772396" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9046219176772396"></script>
+
+  <noscript>
+    <link rel="stylesheet" href="/en/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/en/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">YoungForest's blog</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/en/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/en/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/en/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li><li class="menu-item menu-item-categories"><a href="/en/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li><li class="menu-item menu-item-archives"><a href="/en/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li><li class="menu-item menu-item-中文"><a href="https://youngforest.github.io/" rel="section"><i class="fa fa-language fa-fw"></i>中文</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Introduction"><span class="nav-number">1.</span> <span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Principles-of-Recursion"><span class="nav-number">2.</span> <span class="nav-text">Principles of Recursion</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Example-Reverse-a-String"><span class="nav-number">2.1.</span> <span class="nav-text">Example: Reverse a String</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Recursive-Function"><span class="nav-number">2.2.</span> <span class="nav-text">Recursive Function</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Recurrence-Relation"><span class="nav-number">3.</span> <span class="nav-text">Recurrence Relation</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Example-Pascal%E2%80%99s-Triangle"><span class="nav-number">3.1.</span> <span class="nav-text">Example: Pascal’s Triangle</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Memoization"><span class="nav-number">4.</span> <span class="nav-text">Memoization</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Repeated-Computation-During-Recursion"><span class="nav-number">4.1.</span> <span class="nav-text">Repeated Computation During Recursion</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Example-Fibonacci-Number"><span class="nav-number">4.2.</span> <span class="nav-text">Example: Fibonacci Number</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Complexity-Analysis"><span class="nav-number">5.</span> <span class="nav-text">Complexity Analysis</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Time-Complexity"><span class="nav-number">5.1.</span> <span class="nav-text">Time Complexity</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Space-Complexity"><span class="nav-number">5.2.</span> <span class="nav-text">Space Complexity</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#recursion-related"><span class="nav-number">5.2.1.</span> <span class="nav-text">recursion related</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#non-recursion-related"><span class="nav-number">5.2.2.</span> <span class="nav-text">non-recursion related</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tail-Recursion"><span class="nav-number">5.3.</span> <span class="nav-text">Tail Recursion</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Conclusion"><span class="nav-number">6.</span> <span class="nav-text">Conclusion</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">YoungForest</p>
+  <div class="site-description" itemprop="description">A programmer in Amazon Beijing, China</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/en/archives/">
+          <span class="site-state-item-count">247</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/en/categories/">
+        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/en/tags/">
+        <span class="site-state-item-count">102</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/YoungForest" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;YoungForest" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:sen.yang96@outlook.com" title="E-Mail → mailto:sen.yang96@outlook.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/u/1111372490" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;u&#x2F;1111372490" rel="noopener me" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/youngforest" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;youngforest" rel="noopener me" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://stackoverflow.com/users/6393787/youngforest" title="StackOverflow → https:&#x2F;&#x2F;stackoverflow.com&#x2F;users&#x2F;6393787&#x2F;youngforest" rel="noopener me" target="_blank"><i class="fab fa-stack-overflow fa-fw"></i>StackOverflow</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.linkedin.com/in/sen-yang-a20a02137/" title="LinkedIn → https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;sen-yang-a20a02137&#x2F;" rel="noopener me" target="_blank"><i class="fab fa-linkedin fa-fw"></i>LinkedIn</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/en/atom.xml" title="RSS → &#x2F;atom.xml" rel="noopener me"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="sidebar-inner sidebar-blogroll">
+      <div class="links-of-blogroll animated">
+        <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+          Links
+        </div>
+        <ul class="links-of-blogroll-list">
+            <li class="links-of-blogroll-item">
+              <a href="https://www.kenshinji.me/" title="https:&#x2F;&#x2F;www.kenshinji.me" rel="noopener" target="_blank">Fred</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://jacklandrin.github.io/" title="https:&#x2F;&#x2F;jacklandrin.github.io" rel="noopener" target="_blank">LiuBo</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://xiaozhou.net/" title="https:&#x2F;&#x2F;xiaozhou.net" rel="noopener" target="_blank">Timothy</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://nicelylit.net/" title="https:&#x2F;&#x2F;nicelylit.net&#x2F;" rel="noopener" target="_blank">Jeremy's World</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://fenghe.us/" title="https:&#x2F;&#x2F;fenghe.us&#x2F;" rel="noopener" target="_blank">Pool's</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://chenhe.me/" title="https:&#x2F;&#x2F;chenhe.me&#x2F;" rel="noopener" target="_blank">晨鹤部落格/Chenhe's blog</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://dreamerlzl.xyz/" title="https:&#x2F;&#x2F;dreamerlzl.xyz&#x2F;" rel="noopener" target="_blank">dreamerlzl</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/en/2019/02/11/recursion/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/en/images/avatar.gif">
+      <meta itemprop="name" content="YoungForest">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YoungForest's blog">
+      <meta itemprop="description" content="A programmer in Amazon Beijing, China">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Recursion | YoungForest's blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Recursion
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2019-02-11 12:58:52" itemprop="dateCreated datePublished" datetime="2019-02-11T12:58:52+08:00">2019-02-11</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2026-06-16 00:30:04" itemprop="dateModified" datetime="2026-06-16T00:30:04+08:00">2026-06-16</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/en/categories/Programming/" itemprop="url" rel="index"><span itemprop="name">Programming</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/en/2019/02/11/recursion/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/02/11/recursion/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>This article is based on LeetCode’s tutorial <a target="_blank" rel="noopener" href="https://leetcode.com/explore/learn/card/recursion-i/">Introduction to Algorithms - Recursion I</a>. Its purpose is to help me become more familiar with the important programming concept of “recursion”. If it can also help others, that would be even better.</p>
+<p>The structure of this article is exactly the same as LeetCode’s tutorial. It is divided into six parts: Introduction, Principles of Recursion, Recurrence Relation, Memoization, Complexity Analysis, and Conclusion.</p>
+<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>The goal of this card is to answer the following questions:</p>
+<ol>
+<li>What is recursion? How does recursion work?</li>
+<li>How do we solve a problem recursively?</li>
+<li>How do we analyze the time complexity and space complexity of a recursive algorithm?</li>
+<li>How can we apply recursion in a better way?</li>
+</ol>
+<h2 id="Principles-of-Recursion"><a href="#Principles-of-Recursion" class="headerlink" title="Principles of Recursion"></a>Principles of Recursion</h2><p>Every time a recursive function calls itself, it transforms the given problem into a subproblem. The recursive process continues until the subproblem can be solved directly without further recursion.</p>
+<p>Necessary properties for avoiding infinite recursion in a recursive function:</p>
+<ol>
+<li>termination conditions (<strong>base cases</strong>)</li>
+<li>a set of rules (<strong>recurrence relation</strong>) that can reduce all other cases to base cases.</li>
+</ol>
+<p>A recursive function can call itself from multiple places.</p>
+<h3 id="Example-Reverse-a-String"><a href="#Example-Reverse-a-String" class="headerlink" title="Example: Reverse a String"></a>Example: Reverse a String</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">printReverse</span><span class="params">(<span class="type">const</span> <span class="type">char</span> *str)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (!*str) <span class="keyword">return</span>;  <span class="comment">// base case</span></span><br><span class="line">    <span class="built_in">printReverse</span>(str + <span class="number">1</span>);</span><br><span class="line">    <span class="built_in">putchar</span>(*str);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Recursive-Function"><a href="#Recursive-Function" class="headerlink" title="Recursive Function"></a>Recursive Function</h3><p>If a problem has a recursive solution, we can implement it by following these steps.</p>
+<p>We define the problem as something that can be implemented by function <code>F(x)</code>, where <code>X</code> is the input to the function and also represents the scope of the problem.</p>
+<p>Inside function <code>F(X)</code>, we implement the following steps:</p>
+<ol>
+<li>Split the problem into smaller scopes, $x_1 \belong X, x_2 \belong X, …, x_n \belong X$.</li>
+<li>Recursively call <code>F(x_1), F(x_2), ..., F(x_n)</code> to solve the subproblems of <code>X</code>.</li>
+<li>Finally, process the solutions of the subproblems and combine them into the solution corresponding to <code>X</code>.</li>
+</ol>
+<h2 id="Recurrence-Relation"><a href="#Recurrence-Relation" class="headerlink" title="Recurrence Relation"></a>Recurrence Relation</h2><p>Definition: the relationship between the solution of a problem and the solutions of its subproblems.</p>
+<h3 id="Example-Pascal’s-Triangle"><a href="#Example-Pascal’s-Triangle" class="headerlink" title="Example: Pascal’s Triangle"></a>Example: Pascal’s Triangle</h3><p>Definition: Pascal’s Triangle is a triangular arrangement of numbers. In Pascal’s Triangle, the leftmost and rightmost numbers of each row are always 1. For the remaining numbers, each number is the sum of the two numbers directly above it in the previous row.</p>
+<p>Expressed mathematically, the recurrence relation is:<br>$f(i, j) = f(i-1, j-1) + f(i-1, j),$</p>
+<p>and the base cases are:<br>$f(i, j) = 1, if j = 1 or j = i$.</p>
+<p>Here, $f(i, j)$ represents the <code>j</code>-th number in row <code>i</code>.</p>
+<h2 id="Memoization"><a href="#Memoization" class="headerlink" title="Memoization"></a>Memoization</h2><h3 id="Repeated-Computation-During-Recursion"><a href="#Repeated-Computation-During-Recursion" class="headerlink" title="Repeated Computation During Recursion"></a>Repeated Computation During Recursion</h3><p>Recursive solutions are often very <strong>intuitive</strong> and <strong>easy to code</strong>. But most of the time, repeated computation during recursion causes performance loss.</p>
+<p><strong>Memoization</strong><br>is a general technique for avoiding repeated computation.<br>Yes, this word is not misspelled. It is not Memorization.</p>
+<p>Definition: to avoid repeated computation, we can store intermediate subproblem results in a cache, so that when they are needed again later, they do not need to be recomputed.</p>
+<p>Memoization can be implemented with a hashmap. Especially in OOP, decorators can be used to implement generic memoization.</p>
+<h3 id="Example-Fibonacci-Number"><a href="#Example-Fibonacci-Number" class="headerlink" title="Example: Fibonacci Number"></a>Example: Fibonacci Number</h3><p><a target="_blank" rel="noopener" href="https://leetcode.com/articles/climbing-stairs/">Multiple solutions to Fibonacci numbers</a>, including the <strong>Binet’s Formula</strong> method and a formula-based method with O(log n) time complexity, are quite impressive.</p>
+<h2 id="Complexity-Analysis"><a href="#Complexity-Analysis" class="headerlink" title="Complexity Analysis"></a>Complexity Analysis</h2><p>The complexity of a recursive algorithm is sometimes not obvious and has to be analyzed through certain patterns.</p>
+<p>Tail recursion is a special technique that can reduce recursion stack usage and optimize space complexity to be the same as an iterative algorithm.</p>
+<h3 id="Time-Complexity"><a href="#Time-Complexity" class="headerlink" title="Time Complexity"></a>Time Complexity</h3><p>The time complexity of a recursive algorithm is:<br>O(T) = R * O(s),<br>where R is the number of recursive calls, and O(s) is the computational complexity produced by each recursive call.<br>Generally speaking, R is harder to calculate, while O(s) is analyzed in the same way as the time complexity of a non-recursive algorithm.</p>
+<p>With the execution tree technique, we can better analyze the number of recursive calls.<br>An execution tree is a tree that shows the flow of recursive calls in a concrete case. Each node represents one call, and the value on the node represents the parameter at the time of the call.<br>The number of nodes in this tree is R.</p>
+<p>Special attention is needed for how the execution tree changes when memoization is used.</p>
+<h3 id="Space-Complexity"><a href="#Space-Complexity" class="headerlink" title="Space Complexity"></a>Space Complexity</h3><p>The space usage of a recursive algorithm is mainly divided into two parts:</p>
+<ol>
+<li>recursion related</li>
+<li>non-recursion related</li>
+</ol>
+<h4 id="recursion-related"><a href="#recursion-related" class="headerlink" title="recursion related"></a>recursion related</h4><p>As we know from studying compilers, each function call pushes the following onto the stack:</p>
+<ol>
+<li>the function return address</li>
+<li>function parameters</li>
+<li>local variables of the function</li>
+</ol>
+<p>The depth of the function call stack in a recursive algorithm goes from the initial case to the base case.</p>
+<h4 id="non-recursion-related"><a href="#non-recursion-related" class="headerlink" title="non-recursion related"></a>non-recursion related</h4><p>The space used by global variables is mainly allocated on the heap. For example, memoization needs a hashmap.</p>
+<h3 id="Tail-Recursion"><a href="#Tail-Recursion" class="headerlink" title="Tail Recursion"></a>Tail Recursion</h3><p>Tail recursion is a form of recursion where the recursive call is the final instruction of the recursive function, and there is only one recursive call in the function.</p>
+<p>A good example of tail recursion. Note that <code>non_tail_recursion</code> still performs computation after the final recursive call.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">    </span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">helper_non_tail_recursion</span><span class="params">(<span class="type">int</span> start, <span class="type">int</span> [] ls)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (start &gt;= ls.length) &#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// not a tail recursion because it does some computation after the recursive call returned.</span></span><br><span class="line">    <span class="keyword">return</span> ls[start] + helper_non_tail_recursion(start+<span class="number">1</span>, ls);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">sum_non_tail_recursion</span><span class="params">(<span class="type">int</span> [] ls)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (ls == <span class="literal">null</span> || ls.length == <span class="number">0</span>) &#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> helper_non_tail_recursion(<span class="number">0</span>, ls);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">//---------------------------------------------</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">helper_tail_recursion</span><span class="params">(<span class="type">int</span> start, <span class="type">int</span> [] ls, <span class="type">int</span> acc)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (start &gt;= ls.length) &#123;</span><br><span class="line">      <span class="keyword">return</span> acc;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// this is a tail recursion because the final instruction is the recursive call.</span></span><br><span class="line">    <span class="keyword">return</span> helper_tail_recursion(start+<span class="number">1</span>, ls, acc+ls[start]);</span><br><span class="line">  &#125;</span><br><span class="line">    </span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">sum_tail_recursion</span><span class="params">(<span class="type">int</span> [] ls)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (ls == <span class="literal">null</span> || ls.length == <span class="number">0</span>) &#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> helper_tail_recursion(<span class="number">0</span>, ls, <span class="number">0</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>The principle behind eliminating the recursion stack for tail recursion:<br>the compiler knows that after returning from the callee, the function will immediately return again, so it does not need the data saved in the function call stack. Only one stack frame is needed, and all levels share that stack frame, so the return process can skip the entire recursion stack.</p>
+<p>Not all language compilers support tail call optimization. For example, C and C++ support it, while Python and Java do not.</p>
+<p>Tail recursion is usually not that easy to implement. It requires the recursive call to appear only as the final instruction. If multiple functions need to be called, or if the return value needs further computation, then it cannot be tail recursion.</p>
+<p>Careful readers may notice the similarity between tail recursion and iteration (loops). In fact, some functional programming languages do not even support loops; they only have recursion, yet can fully implement iteration. Since we usually use loops more often and tail recursion less often, if you need to write tail recursion, usually because an interview asks for it, you can first write the loop version. Then try to turn the updates of local variables into parameters of the tail-recursive function. This often leads to elegant tail-recursive code, though for most people its readability is not high.</p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>The pattern for solving recursion problems:</p>
+<ol>
+<li>Define the recursive function</li>
+<li>Write down the recurrence relation and base case</li>
+<li>Use memoization to eliminate repeated computation if it exists</li>
+<li>If possible, implement the recursive algorithm with tail recursion to reduce space complexity</li>
+</ol>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="followme">
+  <span>Welcome to my other publishing channels</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+          <span class="social-link">
+            <span class="icon">
+              <i class="fab fa-weixin"></i>
+            </span>
+
+            <span class="label">WeChat</span>
+          </span>
+
+          <img class="social-item-img" src="/en/uploads/wechat-qcode.jpg">
+      </div>
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="/en/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+      </div>
+  </div>
+</div>
+
+          <div class="post-tags">
+              <a href="/en/tags/Algorithm/" rel="tag"># Algorithm</a>
+              <a href="/en/tags/LeetCode/" rel="tag"># LeetCode</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/en/2019/02/10/LeetCode-weekly-contest-123/" rel="prev" title="LeetCode weekly contest 123">
+                  <i class="fa fa-angle-left"></i> LeetCode weekly contest 123
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/en/2019/02/17/LeetCode-weekly-contest-124/" rel="next" title="LeetCode weekly contest 124">
+                  LeetCode weekly contest 124 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">YoungForest</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" rel="noopener" target="_blank">NexT.Mist</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+  <a href="https://github.com/YoungForest" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"YoungForest","count":true,"i18n":{"disqus":"disqus"}}</script>
+<script src="/en/js/third-party/comments/disqus.js" defer></script>
+
+</body>
+</html>
