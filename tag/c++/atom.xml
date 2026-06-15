@@ -12,11 +12,11 @@
     <category term="Reading" />
     <category term="The Three-Body Problem" />
     <category term="A Global History" />
+    <category term="A Matter of Degrees" />
     <category term="Dublin" />
     <category term="Life" />
     <category term="Alibaba" />
     <category term="intern" />
-    <category term="A Matter of Degrees" />
     <category term="travel" />
     <category term="Travel Notes" />
     <category term="Antifragile" />
@@ -37,8 +37,8 @@
     <category term="bank" />
     <category term="money" />
     <category term="Europe" />
-    <category term="Genome" />
     <category term="Tech" />
+    <category term="Genome" />
     <category term="Hexo" />
     <category term="Guns, Germs, and Steel" />
     <category term="Hennge" />
@@ -58,9 +58,9 @@
     <category term="Liu Shen Lei Lei Reads Tang Poetry" />
     <category term="Blog" />
     <category term="miHoYo" />
-    <category term="Keyboard" />
     <category term="Travel" />
     <category term="Poor Charlie&#39;s Almanack" />
+    <category term="Keyboard" />
     <category term="Programming Pearls" />
     <category term="Money" />
     <category term="Investment" />
@@ -79,8 +79,8 @@
     <category term="The Art of War" />
     <category term="The Bitcoin Standard" />
     <category term="The Collapse of the Heavenly Dynasty" />
-    <category term="The Glory and the Dream" />
     <category term="The Hungry Golden Age" />
+    <category term="The Glory and the Dream" />
     <category term="The Worlds I See" />
     <category term="The Gains and Losses of Economic Changes in the Past Dynasties" />
     <category term="Linux" />
@@ -160,5 +160,23 @@
         <category term="C++" />
         <category term="C++11" />
         <updated>2019-05-05T12:27:23.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://youngforest.github.io/en/2019/03/17/pkg-config/</id>
+        <title>pkg-config</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2019/03/17/pkg-config/"/>
+        <content type="html">&lt;p&gt;Recently I have been learning how to use &lt;a href=&#34;https://github.com/google/googletest&#34;&gt;google-test&lt;/a&gt; and reading its source code. When I ran &lt;code&gt;make install&lt;/code&gt;, I noticed that besides installing header files into &lt;code&gt;/usr/local/&lt;/code&gt; and a shared library into &lt;code&gt;/usr/lib/&lt;/code&gt;, it also installed two &lt;code&gt;.pc&lt;/code&gt; files into &lt;code&gt;/usr/local/lib/pkgconfig/&lt;/code&gt;. So what exactly is &lt;code&gt;pkg-config&lt;/code&gt;?&lt;/p&gt;
+&lt;p&gt;From this &lt;a href=&#34;https://people.freedesktop.org/~dbn/pkg-config-guide.html&#34;&gt;guide&lt;/a&gt;, we can find all the useful basic information about &lt;code&gt;pkg-config&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;Overview&#34;&gt;&lt;a href=&#34;#Overview&#34; class=&#34;headerlink&#34; title=&#34;Overview&#34;&gt;&lt;/a&gt;Overview&lt;/h2&gt;&lt;p&gt;Modern computer systems use many layers of components to provide APIs to users. A major challenge is how to integrate these different layers properly. The &lt;code&gt;pkg-config&lt;/code&gt; tool collects metadata for libraries installed on the system, and users can conveniently inspect that metadata. For example, one of the pc files installed by google-test, &lt;code&gt;gtest.pc&lt;/code&gt;, contains:&lt;/p&gt;
+&lt;p&gt;It includes all the information needed to use the gtest library, such as the header installation path, the shared library location, and the compiler options needed at compile time. In other words, to use gtest, reading this metadata is enough.&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;prefix=$&amp;#123;pcfiledir&amp;#125;/../..&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;libdir=$&amp;#123;prefix&amp;#125;/lib&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;includedir=$&amp;#123;prefix&amp;#125;/include&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Name: gtest&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Description: GoogleTest (without main() function)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Version: 1.9.0&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;URL: https://github.com/google/googletest&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Libs: -L$&amp;#123;libdir&amp;#125; -lgtest &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Cflags: -I$&amp;#123;includedir&amp;#125; -DGTEST_HAS_PTHREAD=1 &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Without a metadata system like &lt;code&gt;pkg-config&lt;/code&gt; on a computer system, locating and obtaining the details of services provided by the system would be difficult.&lt;br&gt;For a developer, installing &lt;code&gt;pkg-config&lt;/code&gt; metadata along with your package can greatly simplify how users consume your API.&lt;/p&gt;
+&lt;p&gt;The main use of &lt;code&gt;pkg-config&lt;/code&gt; is to provide the necessary details when a program is compiled and linked against a library. This metadata is stored in &lt;code&gt;pkg-config&lt;/code&gt; files. These files use the &lt;code&gt;.pc&lt;/code&gt; suffix and are placed in specific paths known by the &lt;code&gt;pkg-config&lt;/code&gt; tool.&lt;br&gt;A &lt;code&gt;.pc&lt;/code&gt; file contains two kinds of information: metadata keywords and freeform variables.&lt;br&gt;The former starts with a keyword followed by a colon and value, such as “Name: gtest”.&lt;br&gt;The latter connects a variable name and value with &lt;code&gt;=&lt;/code&gt;, such as “prefix=…”.&lt;br&gt;Keywords are defined and exported by &lt;code&gt;pkg-config&lt;/code&gt;.&lt;br&gt;Variables are optional, but they can be used to represent information not covered by &lt;code&gt;pkg-config&lt;/code&gt;, or be referenced by keywords to make keyword definitions more flexible.&lt;/p&gt;
+&lt;p&gt;Ideally, one pc file should correspond to one library file. The filename, except for the suffix, should also be the same.&lt;/p&gt;
+&lt;p&gt;The most important metadata fields are &lt;code&gt;Requires&lt;/code&gt;, &lt;code&gt;Requires.private&lt;/code&gt;, &lt;code&gt;Cflags&lt;/code&gt;, &lt;code&gt;Libs&lt;/code&gt;, and &lt;code&gt;Libs.private&lt;/code&gt;. External projects can use them to compile and link against this library. Prefer using the private fields to avoid exposing unnecessary libraries to users. If the user does not directly use symbols from the required library, they should not link against that library directly.&lt;/p&gt;
+</content>
+        <category term="C++" />
+        <updated>2019-03-17T11:52:38.000Z</updated>
     </entry>
 </feed>

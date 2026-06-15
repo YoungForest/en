@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 5.4.2">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/en/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/en/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/en/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/en/images/logo.svg" color="#222">
+  <meta name="google-site-verification" content="1T-h_WTI8xskfXv9HxKWHfxqfzny6jcGdT5hmIExYqY">
+
+<link rel="stylesheet" href="/en/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"youngforest.github.io","root":"/en/","images":"/en/images","scheme":"Mist","darkmode":false,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/en/js/config.js" defer></script>
+
+    <meta name="description" content="Today let’s study two important data structures together: queue and stack. This article is based on LeetCode’s Explore tutorial, Introduction to Data Structure - Queue &amp; Stack.  Introduction The most">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Queue and Stack">
+<meta property="og:url" content="https://youngforest.github.io/en/2019/02/17/Queue-and-Stack/index.html">
+<meta property="og:site_name" content="YoungForest&#39;s blog">
+<meta property="og:description" content="Today let’s study two important data structures together: queue and stack. This article is based on LeetCode’s Explore tutorial, Introduction to Data Structure - Queue &amp; Stack.  Introduction The most">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2019-02-17T09:33:33.000Z">
+<meta property="article:modified_time" content="2026-06-15T05:19:17.460Z">
+<meta property="article:author" content="YoungForest">
+<meta property="article:tag" content="LeetCode">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://youngforest.github.io/en/2019/02/17/Queue-and-Stack/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://youngforest.github.io/en/2019/02/17/Queue-and-Stack/","path":"2019/02/17/Queue-and-Stack/","title":"Queue and Stack"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Queue and Stack | YoungForest's blog</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-88350169-1"></script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"UA-88350169-1","only_pageview":false,"measure_protocol_api_secret":null}</script>
+  <script src="/en/js/third-party/analytics/google-analytics.js" defer></script>
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/en/js/utils.js" defer></script><script src="/en/js/motion.js" defer></script><script src="/en/js/sidebar.js" defer></script><script src="/en/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+<script data-ad-client="ca-pub-9046219176772396" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9046219176772396"></script>
+
+  <noscript>
+    <link rel="stylesheet" href="/en/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/en/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">YoungForest's blog</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/en/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/en/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/en/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li><li class="menu-item menu-item-categories"><a href="/en/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li><li class="menu-item menu-item-archives"><a href="/en/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li><li class="menu-item menu-item-中文"><a href="https://youngforest.github.io/" rel="section"><i class="fa fa-language fa-fw"></i>中文</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Introduction"><span class="nav-number">1.</span> <span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Queue-First-in-first-out-Data-Structure"><span class="nav-number">2.</span> <span class="nav-text">Queue: First-in-first-out Data Structure</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Definition"><span class="nav-number">2.1.</span> <span class="nav-text">Definition</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Implementation"><span class="nav-number">2.2.</span> <span class="nav-text">Implementation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Circular-Queue"><span class="nav-number">2.3.</span> <span class="nav-text">Circular Queue</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Applications-of-Queue"><span class="nav-number">2.4.</span> <span class="nav-text">Applications of Queue</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#template-1"><span class="nav-number">2.4.1.</span> <span class="nav-text">template 1</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#template-2"><span class="nav-number">2.4.2.</span> <span class="nav-text">template 2</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#template-2-1"><span class="nav-number">2.4.3.</span> <span class="nav-text">template 2</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Stack"><span class="nav-number">3.</span> <span class="nav-text">Stack</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Applications-of-Monotonic-Stack"><span class="nav-number">3.1.</span> <span class="nav-text">Applications of Monotonic Stack</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#stack-and-DFS"><span class="nav-number">3.2.</span> <span class="nav-text">stack and DFS</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#DFS-template-1-recursive-version"><span class="nav-number">3.2.1.</span> <span class="nav-text">DFS template 1, recursive version</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#DFS-template-2-iterative-version"><span class="nav-number">3.2.2.</span> <span class="nav-text">DFS template 2, iterative version</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Implement-Queue-using-Stacks"><span class="nav-number">3.3.</span> <span class="nav-text">Implement Queue using Stacks</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Implement-Stack-using-Queues"><span class="nav-number">3.4.</span> <span class="nav-text">Implement Stack using Queues</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Summary"><span class="nav-number">4.</span> <span class="nav-text">Summary</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">YoungForest</p>
+  <div class="site-description" itemprop="description">A programmer in Amazon Beijing, China</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/en/archives/">
+          <span class="site-state-item-count">239</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/en/categories/">
+        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/en/tags/">
+        <span class="site-state-item-count">102</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/YoungForest" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;YoungForest" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:sen.yang96@outlook.com" title="E-Mail → mailto:sen.yang96@outlook.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/u/1111372490" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;u&#x2F;1111372490" rel="noopener me" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/youngforest" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;youngforest" rel="noopener me" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://stackoverflow.com/users/6393787/youngforest" title="StackOverflow → https:&#x2F;&#x2F;stackoverflow.com&#x2F;users&#x2F;6393787&#x2F;youngforest" rel="noopener me" target="_blank"><i class="fab fa-stack-overflow fa-fw"></i>StackOverflow</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.linkedin.com/in/sen-yang-a20a02137/" title="LinkedIn → https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;sen-yang-a20a02137&#x2F;" rel="noopener me" target="_blank"><i class="fab fa-linkedin fa-fw"></i>LinkedIn</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/en/atom.xml" title="RSS → &#x2F;atom.xml" rel="noopener me"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="sidebar-inner sidebar-blogroll">
+      <div class="links-of-blogroll animated">
+        <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+          Links
+        </div>
+        <ul class="links-of-blogroll-list">
+            <li class="links-of-blogroll-item">
+              <a href="https://www.kenshinji.me/" title="https:&#x2F;&#x2F;www.kenshinji.me" rel="noopener" target="_blank">Fred</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://jacklandrin.github.io/" title="https:&#x2F;&#x2F;jacklandrin.github.io" rel="noopener" target="_blank">LiuBo</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://xiaozhou.net/" title="https:&#x2F;&#x2F;xiaozhou.net" rel="noopener" target="_blank">Timothy</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://nicelylit.net/" title="https:&#x2F;&#x2F;nicelylit.net&#x2F;" rel="noopener" target="_blank">Jeremy's World</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://fenghe.us/" title="https:&#x2F;&#x2F;fenghe.us&#x2F;" rel="noopener" target="_blank">Pool's</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://chenhe.me/" title="https:&#x2F;&#x2F;chenhe.me&#x2F;" rel="noopener" target="_blank">晨鹤部落格/Chenhe's blog</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://dreamerlzl.xyz/" title="https:&#x2F;&#x2F;dreamerlzl.xyz&#x2F;" rel="noopener" target="_blank">dreamerlzl</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/en/2019/02/17/Queue-and-Stack/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/en/images/avatar.gif">
+      <meta itemprop="name" content="YoungForest">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YoungForest's blog">
+      <meta itemprop="description" content="A programmer in Amazon Beijing, China">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Queue and Stack | YoungForest's blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Queue and Stack
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2019-02-17 17:33:33" itemprop="dateCreated datePublished" datetime="2019-02-17T17:33:33+08:00">2019-02-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2026-06-15 13:19:17" itemprop="dateModified" datetime="2026-06-15T13:19:17+08:00">2026-06-15</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/en/categories/Programming/" itemprop="url" rel="index"><span itemprop="name">Programming</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/en/2019/02/17/Queue-and-Stack/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/02/17/Queue-and-Stack/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>Today let’s study two important data structures together: queue and stack.<br>This article is based on LeetCode’s Explore tutorial, <a target="_blank" rel="noopener" href="https://leetcode.com/explore/featured/card/queue-stack/">Introduction to Data Structure - Queue &amp; Stack</a>.</p>
+<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>The most commonly used collection is the array, and its most commonly used data-access operation is random access, usually called subscript access in C++.<br>But sometimes we want to restrict the order in which data is processed. The most common restrictions are First in first out and Last in first out. They correspond to two data structures: Queue and Stack.</p>
+<p>We will study queue and stack from three angles: definition, implementation, and the built-in operations of each data structure.<br>Learning goals:</p>
+<ol>
+<li>Understand the principles of FIFO and LIFO data-processing order;</li>
+<li>Manually implement the data structures;</li>
+<li>Become familiar with the built-in Queue and Stack in the language;</li>
+<li>Solve basic Queue-related problems, especially BFS;</li>
+<li>Solve basic Stack-related problems;</li>
+<li>Understand how the system stack helps you solve DFS and other recursive problems.</li>
+</ol>
+<h2 id="Queue-First-in-first-out-Data-Structure"><a href="#Queue-First-in-first-out-Data-Structure" class="headerlink" title="Queue: First-in-first-out Data Structure"></a>Queue: First-in-first-out Data Structure</h2><h3 id="Definition"><a href="#Definition" class="headerlink" title="Definition"></a>Definition</h3><p>The most common metaphor for First in first out is waiting in line, that is, a queue. The person who enters the queue earliest is served earliest.<br>So a queue has only two modify methods:</p>
+<ul>
+<li>enqueue</li>
+<li>dequeue</li>
+</ul>
+<h3 id="Implementation"><a href="#Implementation" class="headerlink" title="Implementation"></a>Implementation</h3><p>Queue is not a primitive data structure. We can implement it using a built-in array. In C++, <code>queue</code> is a container adapter, not a real container; internally, it is actually a <code>deque</code>.</p>
+<p>Implementation example:</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">MyQueue</span> &#123;</span><br><span class="line">    <span class="keyword">private</span>:</span><br><span class="line">        <span class="comment">// store elements</span></span><br><span class="line">        vector&lt;<span class="type">int</span>&gt; data;       </span><br><span class="line">        <span class="comment">// a pointer to indicate the start position</span></span><br><span class="line">        <span class="type">int</span> p_start;            </span><br><span class="line">    <span class="keyword">public</span>:</span><br><span class="line">        <span class="built_in">MyQueue</span>() &#123;p_start = <span class="number">0</span>;&#125;</span><br><span class="line">        <span class="comment">/** Insert an element into the queue. Return true if the operation is successful. */</span></span><br><span class="line">        <span class="function"><span class="type">bool</span> <span class="title">enQueue</span><span class="params">(<span class="type">int</span> x)</span> </span>&#123;</span><br><span class="line">            data.<span class="built_in">push_back</span>(x);</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">/** Delete an element from the queue. Return true if the operation is successful. */</span></span><br><span class="line">        <span class="function"><span class="type">bool</span> <span class="title">deQueue</span><span class="params">()</span> </span>&#123;</span><br><span class="line">            <span class="keyword">if</span> (<span class="built_in">isEmpty</span>()) &#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            p_start++;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125;;</span><br><span class="line">        <span class="comment">/** Get the front item from the queue. */</span></span><br><span class="line">        <span class="function"><span class="type">int</span> <span class="title">Front</span><span class="params">()</span> </span>&#123;</span><br><span class="line">            <span class="keyword">return</span> data[p_start];</span><br><span class="line">        &#125;;</span><br><span class="line">        <span class="comment">/** Checks whether the queue is empty or not. */</span></span><br><span class="line">        <span class="function"><span class="type">bool</span> <span class="title">isEmpty</span><span class="params">()</span>  </span>&#123;</span><br><span class="line">            <span class="keyword">return</span> p_start &gt;= data.<span class="built_in">size</span>();</span><br><span class="line">        &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    MyQueue q;</span><br><span class="line">    q.<span class="built_in">enQueue</span>(<span class="number">5</span>);</span><br><span class="line">    q.<span class="built_in">enQueue</span>(<span class="number">3</span>);</span><br><span class="line">    <span class="keyword">if</span> (!q.<span class="built_in">isEmpty</span>()) &#123;</span><br><span class="line">        cout &lt;&lt; q.<span class="built_in">Front</span>() &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line">    q.<span class="built_in">deQueue</span>();</span><br><span class="line">    <span class="keyword">if</span> (!q.<span class="built_in">isEmpty</span>()) &#123;</span><br><span class="line">        cout &lt;&lt; q.<span class="built_in">Front</span>() &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line">    q.<span class="built_in">deQueue</span>();</span><br><span class="line">    <span class="keyword">if</span> (!q.<span class="built_in">isEmpty</span>()) &#123;</span><br><span class="line">        cout &lt;&lt; q.<span class="built_in">Front</span>() &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Circular-Queue"><a href="#Circular-Queue" class="headerlink" title="Circular Queue"></a>Circular Queue</h3><p>In the previous implementation, the memory before <code>p_start</code> is wasted. To make full use of it, we can internally reuse the array in a circular way.</p>
+<p>Circular Queue is also called a “Ring Buffer”.</p>
+<p>Ring Buffer implementation:</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MyCircularQueue</span> &#123;</span><br><span class="line">    vector&lt;<span class="type">int</span>&gt; data;</span><br><span class="line">    <span class="type">int</span> head;</span><br><span class="line">    <span class="type">int</span> size;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="comment">/** Initialize your data structure here. Set the size of the queue to be k. */</span></span><br><span class="line">    <span class="built_in">MyCircularQueue</span>(<span class="type">int</span> k) &#123;</span><br><span class="line">        data.<span class="built_in">insert</span>(data.<span class="built_in">begin</span>(), k, <span class="number">0</span>);</span><br><span class="line">        head = <span class="number">0</span>;</span><br><span class="line">        size = <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/** Insert an element into the circular queue. Return true if the operation is successful. */</span></span><br><span class="line">    <span class="function"><span class="type">bool</span> <span class="title">enQueue</span><span class="params">(<span class="type">int</span> value)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="built_in">isFull</span>())</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        </span><br><span class="line">        data[(head + size) % data.<span class="built_in">size</span>()] = value;</span><br><span class="line">        size++;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/** Delete an element from the circular queue. Return true if the operation is successful. */</span></span><br><span class="line">    <span class="function"><span class="type">bool</span> <span class="title">deQueue</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="built_in">isEmpty</span>())</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        </span><br><span class="line">        head = (head + <span class="number">1</span>) % data.<span class="built_in">size</span>();</span><br><span class="line">        size--;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/** Get the front item from the queue. */</span></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">Front</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="built_in">isEmpty</span>()) <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">        <span class="keyword">return</span> data[head];</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/** Get the last item from the queue. */</span></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">Rear</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="built_in">isEmpty</span>()) <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">        <span class="keyword">return</span> data[(head + size - <span class="number">1</span>) % data.<span class="built_in">size</span>()];</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/** Checks whether the circular queue is empty or not. */</span></span><br><span class="line">    <span class="function"><span class="type">bool</span> <span class="title">isEmpty</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> size == <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/** Checks whether the circular queue is full or not. */</span></span><br><span class="line">    <span class="function"><span class="type">bool</span> <span class="title">isFull</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> size == data.<span class="built_in">size</span>();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Your MyCircularQueue object will be instantiated and called as such:</span></span><br><span class="line"><span class="comment"> * MyCircularQueue* obj = new MyCircularQueue(k);</span></span><br><span class="line"><span class="comment"> * bool param_1 = obj-&gt;enQueue(value);</span></span><br><span class="line"><span class="comment"> * bool param_2 = obj-&gt;deQueue();</span></span><br><span class="line"><span class="comment"> * int param_3 = obj-&gt;Front();</span></span><br><span class="line"><span class="comment"> * int param_4 = obj-&gt;Rear();</span></span><br><span class="line"><span class="comment"> * bool param_5 = obj-&gt;isEmpty();</span></span><br><span class="line"><span class="comment"> * bool param_6 = obj-&gt;isFull();</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Applications-of-Queue"><a href="#Applications-of-Queue" class="headerlink" title="Applications of Queue"></a>Applications of Queue</h3><p>The most typical application is BFS.<br>BFS (Breadth-first Search) is generally used to find the shortest distance from a root node to a target node.</p>
+<p>Scenarios where BFS is used:</p>
+<ul>
+<li>do traversal</li>
+<li>find the shortest path</li>
+</ul>
+<p>Common data structures in these scenarios:</p>
+<ul>
+<li>graph</li>
+<li>tree</li>
+</ul>
+<p>In concrete applications, nodes in BFS may be <strong>real nodes</strong> or <strong>states</strong>, and edges may be <strong>real edges</strong> or <strong>state transitions</strong>.</p>
+<p>The BFS template must be memorized to improve speed and the chance of being bug-free in interviews and problem solving.</p>
+<h4 id="template-1"><a href="#template-1" class="headerlink" title="template 1"></a>template 1</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Return the length of the shortest path between root and target node.</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">BFS</span><span class="params">(Node root, Node target)</span> &#123;</span><br><span class="line">    Queue&lt;Node&gt; queue;  <span class="comment">// store all nodes which are waiting to be processed</span></span><br><span class="line">    <span class="type">int</span> <span class="variable">step</span> <span class="operator">=</span> <span class="number">0</span>;       <span class="comment">// number of steps neeeded from root to current node</span></span><br><span class="line">    <span class="comment">// initialize</span></span><br><span class="line">    add root to queue;</span><br><span class="line">    <span class="comment">// BFS</span></span><br><span class="line">    <span class="keyword">while</span> (queue is not empty) &#123;</span><br><span class="line">        step = step + <span class="number">1</span>;</span><br><span class="line">        <span class="comment">// iterate the nodes which are already in the queue</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">size</span> <span class="operator">=</span> queue.size();</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; size; ++i) &#123;</span><br><span class="line">            <span class="type">Node</span> <span class="variable">cur</span> <span class="operator">=</span> the first node in queue;</span><br><span class="line">            <span class="keyword">return</span> step <span class="keyword">if</span> cur is target;</span><br><span class="line">            <span class="keyword">for</span> (Node next : the neighbors of cur) &#123;</span><br><span class="line">                add next to queue;</span><br><span class="line">            &#125;</span><br><span class="line">            remove the first node from queue;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> -<span class="number">1</span>;          <span class="comment">// there is no path from root to target</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="template-2"><a href="#template-2" class="headerlink" title="template 2"></a>template 2</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Return the length of the shortest path between root and target node.</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">BFS</span><span class="params">(Node root, Node target)</span> &#123;</span><br><span class="line">    Queue&lt;Node&gt; queue;  <span class="comment">// store all nodes which are waiting to be processed</span></span><br><span class="line">    Set&lt;Node&gt; visited;  <span class="comment">// store all the nodes that we&#x27;ve visited</span></span><br><span class="line">    <span class="type">int</span> <span class="variable">step</span> <span class="operator">=</span> <span class="number">0</span>;       <span class="comment">// number of steps neeeded from root to current node</span></span><br><span class="line">    <span class="comment">// initialize</span></span><br><span class="line">    add root to queue;</span><br><span class="line">    add root to visited;</span><br><span class="line">    <span class="comment">// BFS</span></span><br><span class="line">    <span class="keyword">while</span> (queue is not empty) &#123;</span><br><span class="line">        step = step + <span class="number">1</span>;</span><br><span class="line">        <span class="comment">// iterate the nodes which are already in the queue</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">size</span> <span class="operator">=</span> queue.size();</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; size; ++i) &#123;</span><br><span class="line">            <span class="type">Node</span> <span class="variable">cur</span> <span class="operator">=</span> the first node in queue;</span><br><span class="line">            <span class="keyword">return</span> step <span class="keyword">if</span> cur is target;</span><br><span class="line">            <span class="keyword">for</span> (Node next : the neighbors of cur) &#123;</span><br><span class="line">                <span class="keyword">if</span> (next is not in used) &#123;</span><br><span class="line">                    add next to queue;</span><br><span class="line">                    add next to visited;</span><br><span class="line">                &#125;</span><br><span class="line">                remove the first node from queue;   </span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> -<span class="number">1</span>;          <span class="comment">// there is no path from root to target</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol>
+<li>In each round, the nodes in the queue are waiting to be processed.</li>
+<li>Each time the outer <code>while</code> loop runs, we move one step farther from <code>root</code>, so <code>step++</code>.</li>
+</ol>
+<h4 id="template-2-1"><a href="#template-2-1" class="headerlink" title="template 2"></a>template 2</h4><p>In a graph, it is important to ensure that each node is not visited multiple times. Otherwise, BFS can fall into an infinite loop. At this point, we add a <code>hashset</code> to mark whether a node has already been visited.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Return the length of the shortest path between root and target node.</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">BFS</span><span class="params">(Node root, Node target)</span> &#123;</span><br><span class="line">    Queue&lt;Node&gt; queue;  <span class="comment">// store all nodes which are waiting to be processed</span></span><br><span class="line">    Set&lt;Node&gt; visited;  <span class="comment">// store all the nodes that we&#x27;ve visited</span></span><br><span class="line">    <span class="type">int</span> <span class="variable">step</span> <span class="operator">=</span> <span class="number">0</span>;       <span class="comment">// number of steps neeeded from root to current node</span></span><br><span class="line">    <span class="comment">// initialize</span></span><br><span class="line">    add root to queue;</span><br><span class="line">    add root to visited;</span><br><span class="line">    <span class="comment">// BFS</span></span><br><span class="line">    <span class="keyword">while</span> (queue is not empty) &#123;</span><br><span class="line">        step = step + <span class="number">1</span>;</span><br><span class="line">        <span class="comment">// iterate the nodes which are already in the queue</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">size</span> <span class="operator">=</span> queue.size();</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; size; ++i) &#123;</span><br><span class="line">            <span class="type">Node</span> <span class="variable">cur</span> <span class="operator">=</span> the first node in queue;</span><br><span class="line">            <span class="keyword">return</span> step <span class="keyword">if</span> cur is target;</span><br><span class="line">            <span class="keyword">for</span> (Node next : the neighbors of cur) &#123;</span><br><span class="line">                <span class="keyword">if</span> (next is not in used) &#123;</span><br><span class="line">                    add next to queue;</span><br><span class="line">                    add next to visited;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            remove the first node from queue;   </span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> -<span class="number">1</span>;          <span class="comment">// there is no path from root to target</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>When can we skip <code>visited</code>?</p>
+<ol>
+<li>You are sure there will be no repeated visits, for example when traversing a tree.</li>
+<li>You intentionally want to add a node to the queue multiple times.</li>
+</ol>
+<h2 id="Stack"><a href="#Stack" class="headerlink" title="Stack"></a>Stack</h2><p>When I mention stack, I think of Jay Chou’s <em>Qilixiang</em>. In my head, one line becomes: my stack overflowed like rainwater.</p>
+<p>In a LIFO data structure, the most recently added element is processed first. In a stack, the operation for adding an element is called <code>push</code>, and the operation for removing an element is called <code>pop</code>. Although C++ queue operations use the same names, in most languages, <code>push</code> and <code>pop</code> are stack-specific.</p>
+<p>Like queue, most languages provide a built-in stack library. You do not need to reinvent the wheel; you only need to know the common stack operations, including <code>push</code>, <code>pop</code>, and <code>top</code> (getting the top element of the stack).</p>
+<h3 id="Applications-of-Monotonic-Stack"><a href="#Applications-of-Monotonic-Stack" class="headerlink" title="Applications of Monotonic Stack"></a>Applications of Monotonic Stack</h3><p><a target="_blank" rel="noopener" href="https://leetcode.com/explore/featured/card/queue-stack/230/usage-stack/1363/">https://leetcode.com/explore/featured/card/queue-stack/230/usage-stack/1363/</a></p>
+<p>Intuition: maintain a monotonically decreasing stack. Traverse array <code>T</code>; when placing an element into the stack, pop all elements in the stack that are smaller than it and compute the corresponding interval.</p>
+<p>Time complexity: O(n),<br>space complexity: O(n).</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">dailyTemperatures</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; T)</span> </span>&#123;</span><br><span class="line">        <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">result</span><span class="params">(T.size(), <span class="number">0</span>)</span></span>;</span><br><span class="line">        stack&lt;pair&lt;<span class="type">int</span>, <span class="type">int</span>&gt;&gt; s; <span class="comment">// temperature, day</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; T.<span class="built_in">size</span>(); ++i) &#123;</span><br><span class="line">            <span class="keyword">while</span> (!s.<span class="built_in">empty</span>() &amp;&amp; s.<span class="built_in">top</span>().first &lt; T[i]) &#123;</span><br><span class="line">                pair&lt;<span class="type">int</span>, <span class="type">int</span>&gt; current = s.<span class="built_in">top</span>();</span><br><span class="line">                result[current.second] = i - current.second;</span><br><span class="line">                s.<span class="built_in">pop</span>();</span><br><span class="line">            &#125;</span><br><span class="line">            s.<span class="built_in">push</span>(&#123;T[i], i&#125;);</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h3 id="stack-and-DFS"><a href="#stack-and-DFS" class="headerlink" title="stack and DFS"></a>stack and DFS</h3><p>DFS is one of the important applications of stack. It can be used to find a path from a root node to a target node, though not necessarily the shortest path. DFS is a backtracking algorithm. It only backtracks after reaching the deepest node, then tries other paths.</p>
+<h4 id="DFS-template-1-recursive-version"><a href="#DFS-template-1-recursive-version" class="headerlink" title="DFS template 1, recursive version"></a>DFS template 1, recursive version</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * Return true if there is a path from cur to target.</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="type">boolean</span> <span class="title function_">DFS</span><span class="params">(Node cur, Node target, Set&lt;Node&gt; visited)</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span> <span class="keyword">if</span> cur is target;</span><br><span class="line">    <span class="keyword">for</span> (next : each neighbor of cur) &#123;</span><br><span class="line">        <span class="keyword">if</span> (next is not in visited) &#123;</span><br><span class="line">            add next to visted;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span> <span class="keyword">if</span> <span class="title function_">DFS</span><span class="params">(next, target, visited)</span> == <span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="DFS-template-2-iterative-version"><a href="#DFS-template-2-iterative-version" class="headerlink" title="DFS template 2, iterative version"></a>DFS template 2, iterative version</h4><p>The advantage of the recursive version is that it is easier to implement. The disadvantage is that if the recursion depth is too large, it can cause stack overflow.<br>At that point, you may want to use BFS or implement DFS with an explicit stack.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * Return true if there is a path from cur to target.</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="type">boolean</span> <span class="title function_">DFS</span><span class="params">(<span class="type">int</span> root, <span class="type">int</span> target)</span> &#123;</span><br><span class="line">    Set&lt;Node&gt; visited;</span><br><span class="line">    Stack&lt;Node&gt; stack;</span><br><span class="line">    add root to stack;</span><br><span class="line">    <span class="keyword">while</span> (s is not empty) &#123;</span><br><span class="line">        <span class="type">Node</span> <span class="variable">cur</span> <span class="operator">=</span> the top element in stack;</span><br><span class="line">        remove the cur from the stack;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span> <span class="keyword">if</span> cur is target;</span><br><span class="line">        <span class="keyword">for</span> (Node next : the neighbors of cur) &#123;</span><br><span class="line">            <span class="keyword">if</span> (next is not in visited) &#123;</span><br><span class="line">                add next to visited;</span><br><span class="line">                add next to stack;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>The implementation logic is the same as the recursive solution. We simply use a <code>while</code> loop and an explicit <code>stack</code> to mimic the system stack.</p>
+<h3 id="Implement-Queue-using-Stacks"><a href="#Implement-Queue-using-Stacks" class="headerlink" title="Implement Queue using Stacks"></a><a target="_blank" rel="noopener" href="https://leetcode.com/explore/featured/card/queue-stack/239/conclusion/1386/">Implement Queue using Stacks</a></h3><p>Implement a queue using stacks.<br>I remember seeing the same problem in <em>Cracking the Coding Interview</em>. It feels like a classic problem. It requires the interviewee to be very familiar with both queue and stack.</p>
+<p>Intuition: queue is FIFO and stack is LIFO, so we can implement one queue with two stacks. Define the operation of pouring one stack into another stack as <strong>reversing</strong>. Through <strong>reversing</strong>, we can turn LIFO into FIFO, and we only need to perform the reversing operation when we need to <code>dequeue</code>.</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MyQueue</span> &#123;</span><br><span class="line">    stack&lt;<span class="type">int</span>&gt; a, b;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="comment">/** Initialize your data structure here. */</span></span><br><span class="line">    <span class="built_in">MyQueue</span>() &#123;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/** Push element x to the back of queue. */</span></span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">push</span><span class="params">(<span class="type">int</span> x)</span> </span>&#123;</span><br><span class="line">        a.<span class="built_in">push</span>(x);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/** Removes the element from in front of queue and returns that element. */</span></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">pop</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (b.<span class="built_in">empty</span>()) &#123;</span><br><span class="line">            <span class="keyword">while</span> (!a.<span class="built_in">empty</span>()) &#123;</span><br><span class="line">                b.<span class="built_in">push</span>(a.<span class="built_in">top</span>());</span><br><span class="line">                a.<span class="built_in">pop</span>();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">int</span> ret = b.<span class="built_in">top</span>();</span><br><span class="line">        b.<span class="built_in">pop</span>();</span><br><span class="line">        <span class="keyword">return</span> ret;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/** Get the front element. */</span></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">peek</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (b.<span class="built_in">empty</span>()) &#123;</span><br><span class="line">            <span class="keyword">while</span> (!a.<span class="built_in">empty</span>()) &#123;</span><br><span class="line">                b.<span class="built_in">push</span>(a.<span class="built_in">top</span>());</span><br><span class="line">                a.<span class="built_in">pop</span>();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> b.<span class="built_in">top</span>();</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/** Returns whether the queue is empty. */</span></span><br><span class="line">    <span class="function"><span class="type">bool</span> <span class="title">empty</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> a.<span class="built_in">empty</span>() &amp;&amp; b.<span class="built_in">empty</span>();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Your MyQueue object will be instantiated and called as such:</span></span><br><span class="line"><span class="comment"> * MyQueue obj = new MyQueue();</span></span><br><span class="line"><span class="comment"> * obj.push(x);</span></span><br><span class="line"><span class="comment"> * int param_2 = obj.pop();</span></span><br><span class="line"><span class="comment"> * int param_3 = obj.peek();</span></span><br><span class="line"><span class="comment"> * bool param_4 = obj.empty();</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Implement-Stack-using-Queues"><a href="#Implement-Stack-using-Queues" class="headerlink" title="Implement Stack using Queues"></a><a target="_blank" rel="noopener" href="https://leetcode.com/explore/featured/card/queue-stack/239/conclusion/1387/">Implement Stack using Queues</a></h3><p>So how do we use FIFO to implement LIFO? The solution may not be that obvious, but it is very simple. Every time we <code>push</code>, re-enqueue the existing elements in the queue once, which puts the most recently enqueued element at the first position.</p>
+<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p>DFS and BFS are simple in idea but not easy to implement, especially if you want to implement them bug-free and quickly.<br>Because they test a wide range of programming fundamentals, interviewers especially like asking these kinds of problems. You must memorize several templates fluently.</p>
+<p>Queue and stack are even more fundamental data structures. They appear everywhere in computer science. Although they are often not tested directly, many algorithms rely on them. Being able to handwrite stack and queue, and to use built-in stack and queue fluently, is foundational for every qualified programmer.</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="followme">
+  <span>Welcome to my other publishing channels</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+          <span class="social-link">
+            <span class="icon">
+              <i class="fab fa-weixin"></i>
+            </span>
+
+            <span class="label">WeChat</span>
+          </span>
+
+          <img class="social-item-img" src="/en/uploads/wechat-qcode.jpg">
+      </div>
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="/en/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+      </div>
+  </div>
+</div>
+
+          <div class="post-tags">
+              <a href="/en/tags/LeetCode/" rel="tag"># LeetCode</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/en/2018/12/30/LeetCode-weekly-contest-117/" rel="prev" title="LeetCode weekly contest 117">
+                  <i class="fa fa-angle-left"></i> LeetCode weekly contest 117
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/en/2019/02/24/LeetCode-weekly-contest-125/" rel="next" title="LeetCode weekly contest 125">
+                  LeetCode weekly contest 125 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">YoungForest</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" rel="noopener" target="_blank">NexT.Mist</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+  <a href="https://github.com/YoungForest" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"YoungForest","count":true,"i18n":{"disqus":"disqus"}}</script>
+<script src="/en/js/third-party/comments/disqus.js" defer></script>
+
+</body>
+</html>
