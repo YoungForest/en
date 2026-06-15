@@ -8,18 +8,19 @@
         <pubDate>Fri, 09 Dec 2022 16:42:27 +0800</pubDate>
         <lastBuildDate>Fri, 09 Dec 2022 16:42:27 +0800</lastBuildDate>
         <category>life</category>
-        <category>Year-End Summary</category>
         <category>Year-End Review</category>
+        <category>Life</category>
+        <category>Year-end Summary</category>
+        <category>Year-End Summary</category>
         <category>year-end summary</category>
         <category>Intern</category>
         <category>Reading</category>
         <category>The Three-Body Problem</category>
         <category>A Global History</category>
+        <category>A Matter of Degrees</category>
         <category>Dublin</category>
-        <category>Life</category>
         <category>Alibaba</category>
         <category>intern</category>
-        <category>A Matter of Degrees</category>
         <category>travel</category>
         <category>Travel Notes</category>
         <category>Are Your Lights On?</category>
@@ -31,21 +32,22 @@
         <category>ByteDance</category>
         <category>interview</category>
         <category>New Graduate</category>
+        <category>Deep Simplicity</category>
         <category>codeforces</category>
         <category>contest</category>
-        <category>Deep Simplicity</category>
+        <category>WeRide</category>
         <category>C++</category>
         <category>C++11</category>
         <category>Elon Musk</category>
         <category>bank</category>
         <category>money</category>
         <category>Europe</category>
+        <category>Tech</category>
         <category>Genome</category>
         <category>Hexo</category>
-        <category>Tech</category>
         <category>Guns, Germs, and Steel</category>
-        <category>Hou Hei Xue</category>
         <category>Hennge</category>
+        <category>Hou Hei Xue</category>
         <category>Ireland</category>
         <category>IB</category>
         <category>Bonds</category>
@@ -61,8 +63,8 @@
         <category>Liu Shen Lei Lei Reads Tang Poetry</category>
         <category>Blog</category>
         <category>miHoYo</category>
-        <category>Keyboard</category>
         <category>Travel</category>
+        <category>Keyboard</category>
         <category>Poor Charlie&#39;s Almanack</category>
         <category>Programming Pearls</category>
         <category>Money</category>
@@ -77,12 +79,12 @@
         <category>Skin in the Game</category>
         <category>Nassim Nicholas Taleb</category>
         <category>Tai Bai Jin Xing You Dian Fan</category>
-        <category>The Almanack of Naval Ravikant</category>
         <category>Tencent</category>
-        <category>The Bitcoin Standard</category>
-        <category>The Hungry Golden Age</category>
         <category>The Art of War</category>
+        <category>The Almanack of Naval Ravikant</category>
+        <category>The Bitcoin Standard</category>
         <category>The Collapse of the Heavenly Dynasty</category>
+        <category>The Hungry Golden Age</category>
         <category>The Glory and the Dream</category>
         <category>The Worlds I See</category>
         <category>The Gains and Losses of Economic Changes in the Past Dynasties</category>
@@ -100,15 +102,14 @@
         <category>Travelogue</category>
         <category>vim</category>
         <category>investing</category>
-        <category>WeRide</category>
         <category>Kuaishou</category>
         <category>Internship</category>
         <category>Life and Death Are Wearing Me Out</category>
         <category>Mac</category>
+        <category>RIP</category>
         <category>sensetime</category>
         <category>vscode</category>
         <category>gcc</category>
-        <category>RIP</category>
         <item>
             <guid isPermalink="true">https://youngforest.github.io/en/2022/12/09/Find-a-Europe-SDE-job-from-China/</guid>
             <title>From Beijing to Dublin: A Programmer&#39;s Journey to Europe</title>
@@ -251,6 +252,23 @@
 
 &lt;p&gt;Although this method looks more cumbersome and requires coordination between A and B, it is actually more flexible than the first approach. Through an SSH tunnel, B can expose more services from C, not necessarily only SSH login. For example, exposing a TensorBoard HTTP service for observing training data is also something I often need.&lt;/p&gt;
 &lt;p&gt;Reference: &lt;a href=&#34;https://www.zsythink.net/archives/2450&#34;&gt;SSH Port Forwarding: SSH Tunnel&lt;/a&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://youngforest.github.io/en/2018/11/05/baidu-cloud-download-speed-hack/</guid>
+            <title>Bypassing Baidu Cloud Download Speed Limits</title>
+            <link>https://youngforest.github.io/en/2018/11/05/baidu-cloud-download-speed-hack/</link>
+            <category>Tech</category>
+            <pubDate>Mon, 05 Nov 2018 16:44:00 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;Recently, because of English study needs, I often download large files from Baidu Cloud. As everyone knows, Baidu Cloud limits download speed. Without their membership, the download speed is only a few dozen KB/s. I really could not tolerate it, so I searched for speed-limit bypass tools and got the download speed up to 15 MB/s, haha. Sharing it here with everyone.&lt;br&gt;One thing to note: Baidu Cloud also updates its speed-limit mechanism to prevent abuse, so it is not surprising if the method in this article stops working. You can still search online for other updated methods. Trust the power of programmers.&lt;br&gt;As of November 5, 2018, this method is workable.&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/gxvv/ex-baiduyunpan&#34;&gt;Get Baidu Cloud raw links&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;After running the script, Baidu Cloud’s download interface will look like this.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/ex-baiduyun.jpg&#34; alt=&#34;Ex-Baidu Cloud script result&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Why click the compressed-link option? Because I found that using “copy link” does not obtain the download address of the file itself; downloading the compressed package is also faster.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/proxyee-down-org/proxyee-down&#34;&gt;HTTP multi-threaded download tool&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/proxyee-down.png&#34; alt=&#34;Download tool result&#34;&gt;&lt;/p&gt;
  ]]></description>
         </item>
     </channel>

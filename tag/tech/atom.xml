@@ -5,18 +5,19 @@
     <link href="https://youngforest.github.io/en" />
     <updated>2022-12-09T08:42:27.000Z</updated>
     <category term="life" />
-    <category term="Year-End Summary" />
     <category term="Year-End Review" />
+    <category term="Life" />
+    <category term="Year-end Summary" />
+    <category term="Year-End Summary" />
     <category term="year-end summary" />
     <category term="Intern" />
     <category term="Reading" />
     <category term="The Three-Body Problem" />
     <category term="A Global History" />
+    <category term="A Matter of Degrees" />
     <category term="Dublin" />
-    <category term="Life" />
     <category term="Alibaba" />
     <category term="intern" />
-    <category term="A Matter of Degrees" />
     <category term="travel" />
     <category term="Travel Notes" />
     <category term="Are Your Lights On?" />
@@ -28,21 +29,22 @@
     <category term="ByteDance" />
     <category term="interview" />
     <category term="New Graduate" />
+    <category term="Deep Simplicity" />
     <category term="codeforces" />
     <category term="contest" />
-    <category term="Deep Simplicity" />
+    <category term="WeRide" />
     <category term="C++" />
     <category term="C++11" />
     <category term="Elon Musk" />
     <category term="bank" />
     <category term="money" />
     <category term="Europe" />
+    <category term="Tech" />
     <category term="Genome" />
     <category term="Hexo" />
-    <category term="Tech" />
     <category term="Guns, Germs, and Steel" />
-    <category term="Hou Hei Xue" />
     <category term="Hennge" />
+    <category term="Hou Hei Xue" />
     <category term="Ireland" />
     <category term="IB" />
     <category term="Bonds" />
@@ -58,8 +60,8 @@
     <category term="Liu Shen Lei Lei Reads Tang Poetry" />
     <category term="Blog" />
     <category term="miHoYo" />
-    <category term="Keyboard" />
     <category term="Travel" />
+    <category term="Keyboard" />
     <category term="Poor Charlie&#39;s Almanack" />
     <category term="Programming Pearls" />
     <category term="Money" />
@@ -74,12 +76,12 @@
     <category term="Skin in the Game" />
     <category term="Nassim Nicholas Taleb" />
     <category term="Tai Bai Jin Xing You Dian Fan" />
-    <category term="The Almanack of Naval Ravikant" />
     <category term="Tencent" />
-    <category term="The Bitcoin Standard" />
-    <category term="The Hungry Golden Age" />
     <category term="The Art of War" />
+    <category term="The Almanack of Naval Ravikant" />
+    <category term="The Bitcoin Standard" />
     <category term="The Collapse of the Heavenly Dynasty" />
+    <category term="The Hungry Golden Age" />
     <category term="The Glory and the Dream" />
     <category term="The Worlds I See" />
     <category term="The Gains and Losses of Economic Changes in the Past Dynasties" />
@@ -97,15 +99,14 @@
     <category term="Travelogue" />
     <category term="vim" />
     <category term="investing" />
-    <category term="WeRide" />
     <category term="Kuaishou" />
     <category term="Internship" />
     <category term="Life and Death Are Wearing Me Out" />
     <category term="Mac" />
+    <category term="RIP" />
     <category term="sensetime" />
     <category term="vscode" />
     <category term="gcc" />
-    <category term="RIP" />
     <entry>
         <id>https://youngforest.github.io/en/2022/12/09/Find-a-Europe-SDE-job-from-China/</id>
         <title>From Beijing to Dublin: A Programmer&#39;s Journey to Europe</title>
@@ -249,5 +250,22 @@
 </content>
         <category term="tech" />
         <updated>2021-03-26T07:11:02.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://youngforest.github.io/en/2018/11/05/baidu-cloud-download-speed-hack/</id>
+        <title>Bypassing Baidu Cloud Download Speed Limits</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2018/11/05/baidu-cloud-download-speed-hack/"/>
+        <content type="html">&lt;p&gt;Recently, because of English study needs, I often download large files from Baidu Cloud. As everyone knows, Baidu Cloud limits download speed. Without their membership, the download speed is only a few dozen KB/s. I really could not tolerate it, so I searched for speed-limit bypass tools and got the download speed up to 15 MB/s, haha. Sharing it here with everyone.&lt;br&gt;One thing to note: Baidu Cloud also updates its speed-limit mechanism to prevent abuse, so it is not surprising if the method in this article stops working. You can still search online for other updated methods. Trust the power of programmers.&lt;br&gt;As of November 5, 2018, this method is workable.&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/gxvv/ex-baiduyunpan&#34;&gt;Get Baidu Cloud raw links&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;After running the script, Baidu Cloud’s download interface will look like this.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/ex-baiduyun.jpg&#34; alt=&#34;Ex-Baidu Cloud script result&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Why click the compressed-link option? Because I found that using “copy link” does not obtain the download address of the file itself; downloading the compressed package is also faster.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/proxyee-down-org/proxyee-down&#34;&gt;HTTP multi-threaded download tool&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/proxyee-down.png&#34; alt=&#34;Download tool result&#34;&gt;&lt;/p&gt;
+</content>
+        <category term="Tech" />
+        <updated>2018-11-05T08:44:00.000Z</updated>
     </entry>
 </feed>
