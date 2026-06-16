@@ -15,11 +15,13 @@
     <category term="The Three-Body Problem" />
     <category term="A Global History" />
     <category term="A Matter of Degrees" />
+    <category term="Kuaishou" />
+    <category term="Tech" />
     <category term="Dublin" />
-    <category term="Alibaba" />
-    <category term="intern" />
     <category term="travel" />
     <category term="Travel Notes" />
+    <category term="Alibaba" />
+    <category term="intern" />
     <category term="Antifragile" />
     <category term="Are Your Lights On?" />
     <category term="Beijing" />
@@ -32,14 +34,13 @@
     <category term="Deep Simplicity" />
     <category term="codeforces" />
     <category term="contest" />
-    <category term="C++" />
     <category term="WeRide" />
+    <category term="C++" />
     <category term="C++11" />
     <category term="Elon Musk" />
     <category term="bank" />
     <category term="money" />
     <category term="Europe" />
-    <category term="Tech" />
     <category term="Genome" />
     <category term="Hexo" />
     <category term="Guns, Germs, and Steel" />
@@ -59,9 +60,9 @@
     <category term="Liu Shen Lei Lei Reads Jin Yong" />
     <category term="Liu Shen Lei Lei Reads Tang Poetry" />
     <category term="Blog" />
-    <category term="miHoYo" />
     <category term="Travel" />
     <category term="Keyboard" />
+    <category term="miHoYo" />
     <category term="Poor Charlie&#39;s Almanack" />
     <category term="Programming Pearls" />
     <category term="Money" />
@@ -69,15 +70,15 @@
     <category term="QDII" />
     <category term="Arbitrage" />
     <category term="Off-Exchange to On-Exchange" />
-    <category term="tech" />
     <category term="Reality Is Not What It Seems" />
+    <category term="tech" />
     <category term="Shi Nan Zhi Tu" />
     <category term="Ma Boyong" />
     <category term="Skin in the Game" />
     <category term="Nassim Nicholas Taleb" />
     <category term="Tai Bai Jin Xing You Dian Fan" />
-    <category term="Tencent" />
     <category term="The Almanack of Naval Ravikant" />
+    <category term="Tencent" />
     <category term="The Art of War" />
     <category term="The Bitcoin Standard" />
     <category term="The Collapse of the Heavenly Dynasty" />
@@ -97,15 +98,18 @@
     <category term="Amazon" />
     <category term="Microsoft" />
     <category term="China" />
-    <category term="Travelogue" />
     <category term="vim" />
     <category term="investing" />
-    <category term="Kuaishou" />
+    <category term="Travelogue" />
     <category term="Internship" />
-    <category term="Mac" />
+    <category term="TeX" />
     <category term="Life and Death Are Wearing Me Out" />
+    <category term="Mac" />
+    <category term="Ubuntu" />
+    <category term="Owncloud" />
     <category term="RIP" />
     <category term="sensetime" />
+    <category term="Git" />
     <category term="vscode" />
     <category term="gcc" />
     <entry>
@@ -276,6 +280,26 @@
 </content>
         <category term="Hexo" />
         <updated>2021-02-25T03:17:14.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://youngforest.github.io/en/2018/05/08/ssh-login-remote-server-without-password/</id>
+        <title>SSH Passwordless Login to a Server</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2018/05/08/ssh-login-remote-server-without-password/"/>
+        <content type="html">&lt;p&gt;The following commands are only for Unix-like systems.&lt;br&gt;Windows does not need this solution. Many PuTTY-like tools on Windows can choose “remember password” to implement passwordless login.&lt;br&gt;I did not find a similar password-remembering solution on Mac, but using a key is actually a more secure method.&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+
+&lt;h2 id=&#34;Step-1-Generate-an-RSA-Key-Pair&#34;&gt;&lt;a href=&#34;#Step-1-Generate-an-RSA-Key-Pair&#34; class=&#34;headerlink&#34; title=&#34;Step 1: Generate an RSA Key Pair&#34;&gt;&lt;/a&gt;Step 1: Generate an RSA Key Pair&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;ssh-keygen -t rsa&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;Step-2-Upload-the-RSA-Public-Key-to-the-Server&#34;&gt;&lt;a href=&#34;#Step-2-Upload-the-RSA-Public-Key-to-the-Server&#34; class=&#34;headerlink&#34; title=&#34;Step 2: Upload the RSA Public Key to the Server&#34;&gt;&lt;/a&gt;Step 2: Upload the RSA Public Key to the Server&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;cat&lt;/span&gt; id_rsa.pub | ssh -p 26757 root@138.128.193.150 &lt;span class=&#34;string&#34;&gt;&amp;#x27;cat &amp;gt;&amp;gt; .ssh/authorized_keys&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;Step-3-Change-Permissions&#34;&gt;&lt;a href=&#34;#Step-3-Change-Permissions&#34; class=&#34;headerlink&#34; title=&#34;Step 3: Change Permissions&#34;&gt;&lt;/a&gt;Step 3: Change Permissions&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;ssh -p 26757 root@138.128.193.150 &lt;span class=&#34;string&#34;&gt;&amp;quot;chmod 700 .ssh; chmod 640 .ssh/authorized_keys&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;Step-4-Success&#34;&gt;&lt;a href=&#34;#Step-4-Success&#34; class=&#34;headerlink&#34; title=&#34;Step 4: Success!&#34;&gt;&lt;/a&gt;Step 4: Success!&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;ssh -p 26757 root@138.128.193.150&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;reference:&lt;br&gt;&lt;a href=&#34;https://www.tecmint.com/ssh-passwordless-login-using-ssh-keygen-in-5-easy-steps/&#34;&gt;ssh-passwordless-login-using-ssh-keygen-in-5-easy-steps&lt;/a&gt;&lt;/p&gt;
+</content>
+        <category term="Tech" />
+        <updated>2018-05-08T10:47:09.000Z</updated>
     </entry>
     <entry>
         <id>https://youngforest.github.io/en/2017/03/26/gvim-configuration-for-windows/</id>

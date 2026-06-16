@@ -3,7 +3,7 @@
     <id>https://youngforest.github.io/en</id>
     <title>YoungForest&#39;s blog • Posts by &#34;kuaishou&#34; tag</title>
     <link href="https://youngforest.github.io/en" />
-    <updated>2018-04-30T15:33:10.000Z</updated>
+    <updated>2018-05-07T15:30:25.000Z</updated>
     <category term="life" />
     <category term="Year-End Review" />
     <category term="Life" />
@@ -15,11 +15,13 @@
     <category term="The Three-Body Problem" />
     <category term="A Global History" />
     <category term="A Matter of Degrees" />
+    <category term="Kuaishou" />
+    <category term="Tech" />
     <category term="Dublin" />
-    <category term="Alibaba" />
-    <category term="intern" />
     <category term="travel" />
     <category term="Travel Notes" />
+    <category term="Alibaba" />
+    <category term="intern" />
     <category term="Antifragile" />
     <category term="Are Your Lights On?" />
     <category term="Beijing" />
@@ -32,14 +34,13 @@
     <category term="Deep Simplicity" />
     <category term="codeforces" />
     <category term="contest" />
-    <category term="C++" />
     <category term="WeRide" />
+    <category term="C++" />
     <category term="C++11" />
     <category term="Elon Musk" />
     <category term="bank" />
     <category term="money" />
     <category term="Europe" />
-    <category term="Tech" />
     <category term="Genome" />
     <category term="Hexo" />
     <category term="Guns, Germs, and Steel" />
@@ -59,9 +60,9 @@
     <category term="Liu Shen Lei Lei Reads Jin Yong" />
     <category term="Liu Shen Lei Lei Reads Tang Poetry" />
     <category term="Blog" />
-    <category term="miHoYo" />
     <category term="Travel" />
     <category term="Keyboard" />
+    <category term="miHoYo" />
     <category term="Poor Charlie&#39;s Almanack" />
     <category term="Programming Pearls" />
     <category term="Money" />
@@ -69,15 +70,15 @@
     <category term="QDII" />
     <category term="Arbitrage" />
     <category term="Off-Exchange to On-Exchange" />
-    <category term="tech" />
     <category term="Reality Is Not What It Seems" />
+    <category term="tech" />
     <category term="Shi Nan Zhi Tu" />
     <category term="Ma Boyong" />
     <category term="Skin in the Game" />
     <category term="Nassim Nicholas Taleb" />
     <category term="Tai Bai Jin Xing You Dian Fan" />
-    <category term="Tencent" />
     <category term="The Almanack of Naval Ravikant" />
+    <category term="Tencent" />
     <category term="The Art of War" />
     <category term="The Bitcoin Standard" />
     <category term="The Collapse of the Heavenly Dynasty" />
@@ -97,17 +98,51 @@
     <category term="Amazon" />
     <category term="Microsoft" />
     <category term="China" />
-    <category term="Travelogue" />
     <category term="vim" />
     <category term="investing" />
-    <category term="Kuaishou" />
+    <category term="Travelogue" />
     <category term="Internship" />
-    <category term="Mac" />
+    <category term="TeX" />
     <category term="Life and Death Are Wearing Me Out" />
+    <category term="Mac" />
+    <category term="Ubuntu" />
+    <category term="Owncloud" />
     <category term="RIP" />
     <category term="sensetime" />
+    <category term="Git" />
     <category term="vscode" />
     <category term="gcc" />
+    <entry>
+        <id>https://youngforest.github.io/en/2018/05/07/Advanced-SQL-practice/</id>
+        <title>Advanced SQL Practice</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2018/05/07/Advanced-SQL-practice/"/>
+        <content type="html">&lt;p&gt;This week at the company I wrote many long and functionally complex SQL statements. I deeply felt that my database and SQL knowledge was still only superficial and completely unable to meet engineering requirements.&lt;br&gt;The second mentor responsible for guiding me is also quite proficient in SQL and gave me a lot of guidance and suggestions.&lt;br&gt;Without comparison, there is no hurt. Seeing how weak I was and how strong my senior schoolmate was made me feel ashamed and then determined, so I developed the idea and action plan of advancing my SQL skills.&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;The two tutorials recommended to me, thanks to my Kuaishou senior schoolmate and second mentor:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Sams Teach Yourself SQL in 10 Minutes&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.runoob.com/sql/sql-constraints.html&#34;&gt;Runoob&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Among them, I systematically read &lt;em&gt;Sams Teach Yourself SQL in 10 Minutes&lt;/em&gt; once, while I only roughly skimmed the Runoob tutorial.&lt;br&gt;I think reading one tutorial is enough.&lt;br&gt;The advantage of Runoob is that you can test and practice on the online database provided by the website, which is somewhat similar to the &lt;a href=&#34;https://www.w3schools.com/sql/&#34;&gt;w3school tutorial&lt;/a&gt;.&lt;br&gt;The advantage of &lt;em&gt;Sams Teach Yourself SQL in 10 Minutes&lt;/em&gt; is that it contains more material. The author also teaches some experience in writing SQL and touches on portability and differences across different databases.&lt;/p&gt;
+&lt;p&gt;There are &lt;a href=&#34;https://leetcode.com/problemset/database/&#34;&gt;42 Database interview problems on LeetCode&lt;/a&gt;. I must practice them when I have time.&lt;/p&gt;
+&lt;h1 id=&#34;Problems-Encountered-in-Practice&#34;&gt;&lt;a href=&#34;#Problems-Encountered-in-Practice&#34; class=&#34;headerlink&#34; title=&#34;Problems Encountered in Practice&#34;&gt;&lt;/a&gt;Problems Encountered in Practice&lt;/h1&gt;&lt;p&gt;Because my role is algorithm engineer in the recommendation team, there is a large amount of data mining work.&lt;br&gt;Also, what I write is not pure SQL, but &lt;a href=&#34;https://cwiki.apache.org/confluence/display/Hive/Home&#34;&gt;Hive&lt;/a&gt;-SQL.&lt;br&gt;Hive has many limitations and challenges. For example, you cannot nest a &lt;code&gt;select&lt;/code&gt; clause inside &lt;code&gt;select&lt;/code&gt;; &lt;code&gt;select 2 * (select 3);&lt;/code&gt; is not allowed. The solution I finally found was to use aggregate functions or computable relationships between columns for the needed calculations, which really tests flexible use of &lt;code&gt;union&lt;/code&gt; or &lt;code&gt;join&lt;/code&gt;. The data volume is especially large, and each query is time-consuming. I learned to use small queries to verify ideas, validate layer by layer from the inside outward, and run queries and calculations in &lt;code&gt;jupyter notebook&lt;/code&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;Answering-Interview-Questions&#34;&gt;&lt;a href=&#34;#Answering-Interview-Questions&#34; class=&#34;headerlink&#34; title=&#34;Answering Interview Questions&#34;&gt;&lt;/a&gt;Answering Interview Questions&lt;/h1&gt;&lt;p&gt;The interviewer in the first round asked me at the time: Do you know SQL?&lt;/p&gt;
+&lt;p&gt;Me: Yes, and I also previously had an internship at a database company.&lt;/p&gt;
+&lt;p&gt;Interviewer: Then tell me the differences between &lt;code&gt;left join&lt;/code&gt;, &lt;code&gt;right join&lt;/code&gt;, and &lt;code&gt;inner join&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Me: I do not know…&lt;/p&gt;
+&lt;p&gt;Interviewer: Then do you know &lt;code&gt;partition&lt;/code&gt;?&lt;/p&gt;
+&lt;p&gt;Me: I do not know that either.&lt;/p&gt;
+&lt;p&gt;Interviewer: Is your SQL knowledge limited to the Database Principles and Course Project classes you took?&lt;/p&gt;
+&lt;p&gt;Me: Yes. And because I had not used it for a while, I had also become a bit rusty.&lt;/p&gt;
+&lt;p&gt;Then the interviewer stopped asking SQL-related questions.&lt;/p&gt;
+&lt;p&gt;After a week of work and systematic relearning of SQL, I can now answer these two questions.&lt;/p&gt;
+&lt;h3 id=&#34;Differences-Between-left-join-right-join-and-inner-join&#34;&gt;&lt;a href=&#34;#Differences-Between-left-join-right-join-and-inner-join&#34; class=&#34;headerlink&#34; title=&#34;Differences Between left join, right join, and inner join&#34;&gt;&lt;/a&gt;Differences Between &lt;code&gt;left join&lt;/code&gt;, &lt;code&gt;right join&lt;/code&gt;, and &lt;code&gt;inner join&lt;/code&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;inner join&lt;/code&gt; is an inner join. Non-matching items do not appear in the joined result. &lt;code&gt;left join&lt;/code&gt; is a left outer join. If an item on the left side has no matching item in the right table, one record still exists in the joined result, and the columns from the right table are all &lt;code&gt;NULL&lt;/code&gt;. &lt;code&gt;right join&lt;/code&gt; is similar. In fact, &lt;code&gt;left join&lt;/code&gt; and &lt;code&gt;right join&lt;/code&gt; can be interchanged; the two joined tables just need to swap left and right positions.&lt;/p&gt;
+&lt;h3 id=&#34;The-Concept-of-partition&#34;&gt;&lt;a href=&#34;#The-Concept-of-partition&#34; class=&#34;headerlink&#34; title=&#34;The Concept of partition&#34;&gt;&lt;/a&gt;The Concept of &lt;code&gt;partition&lt;/code&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;partition&lt;/code&gt; divides a table into different partitions to speed up queries.&lt;br&gt;The limitation is that during &lt;code&gt;select&lt;/code&gt;, the partitioned column must be written in &lt;code&gt;where&lt;/code&gt; as a filter.&lt;/p&gt;
+</content>
+        <category term="Kuaishou" />
+        <category term="Tech" />
+        <updated>2018-05-07T15:30:25.000Z</updated>
+    </entry>
     <entry>
         <id>https://youngforest.github.io/en/2018/04/30/kuaishou-intern-interview/</id>
         <title>Kuaishou Intern Interview</title>

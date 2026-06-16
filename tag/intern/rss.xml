@@ -18,11 +18,13 @@
         <category>The Three-Body Problem</category>
         <category>A Global History</category>
         <category>A Matter of Degrees</category>
+        <category>Kuaishou</category>
+        <category>Tech</category>
         <category>Dublin</category>
-        <category>Alibaba</category>
-        <category>intern</category>
         <category>travel</category>
         <category>Travel Notes</category>
+        <category>Alibaba</category>
+        <category>intern</category>
         <category>Antifragile</category>
         <category>Are Your Lights On?</category>
         <category>Beijing</category>
@@ -35,14 +37,13 @@
         <category>Deep Simplicity</category>
         <category>codeforces</category>
         <category>contest</category>
-        <category>C++</category>
         <category>WeRide</category>
+        <category>C++</category>
         <category>C++11</category>
         <category>Elon Musk</category>
         <category>bank</category>
         <category>money</category>
         <category>Europe</category>
-        <category>Tech</category>
         <category>Genome</category>
         <category>Hexo</category>
         <category>Guns, Germs, and Steel</category>
@@ -62,9 +63,9 @@
         <category>Liu Shen Lei Lei Reads Jin Yong</category>
         <category>Liu Shen Lei Lei Reads Tang Poetry</category>
         <category>Blog</category>
-        <category>miHoYo</category>
         <category>Travel</category>
         <category>Keyboard</category>
+        <category>miHoYo</category>
         <category>Poor Charlie&#39;s Almanack</category>
         <category>Programming Pearls</category>
         <category>Money</category>
@@ -72,15 +73,15 @@
         <category>QDII</category>
         <category>Arbitrage</category>
         <category>Off-Exchange to On-Exchange</category>
-        <category>tech</category>
         <category>Reality Is Not What It Seems</category>
+        <category>tech</category>
         <category>Shi Nan Zhi Tu</category>
         <category>Ma Boyong</category>
         <category>Skin in the Game</category>
         <category>Nassim Nicholas Taleb</category>
         <category>Tai Bai Jin Xing You Dian Fan</category>
-        <category>Tencent</category>
         <category>The Almanack of Naval Ravikant</category>
+        <category>Tencent</category>
         <category>The Art of War</category>
         <category>The Bitcoin Standard</category>
         <category>The Collapse of the Heavenly Dynasty</category>
@@ -100,15 +101,18 @@
         <category>Amazon</category>
         <category>Microsoft</category>
         <category>China</category>
-        <category>Travelogue</category>
         <category>vim</category>
         <category>investing</category>
-        <category>Kuaishou</category>
+        <category>Travelogue</category>
         <category>Internship</category>
-        <category>Mac</category>
+        <category>TeX</category>
         <category>Life and Death Are Wearing Me Out</category>
+        <category>Mac</category>
+        <category>Ubuntu</category>
+        <category>Owncloud</category>
         <category>RIP</category>
         <category>sensetime</category>
+        <category>Git</category>
         <category>vscode</category>
         <category>gcc</category>
         <item>
@@ -595,6 +599,61 @@
 &lt;p&gt;When the formal interview started, he only asked two questions: implementing a queue that maintains the minimum value, and implementing a stack that maintains the minimum value.&lt;/p&gt;
 &lt;p&gt;There was supposed to be a second round afterward, but later they could not find an interviewer, so it fizzled out.&lt;/p&gt;
 &lt;p&gt;I did not have much hope for the result of this interview. After all, the process was rather perfunctory and not very pleasant. Sure enough, Face++ never contacted me afterward.&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://youngforest.github.io/en/2018/06/01/suzhou-microsoft-interview/</guid>
+            <title>Microsoft Suzhou Interview</title>
+            <link>https://youngforest.github.io/en/2018/06/01/suzhou-microsoft-interview/</link>
+            <category>Intern</category>
+            <category>Microsoft</category>
+            <pubDate>Fri, 01 Jun 2018 22:54:08 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;Thanks to a referral from senior schoolmate @lxc, I had the opportunity to go to Microsoft Suzhou and interview for a summer internship in the O365 department. Although I failed in the end, I learned a lot from this failure.&lt;br&gt;I am summarizing it here to prepare for future internship and job hunting.&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+
+&lt;h1 id=&#34;Interview-Process&#34;&gt;&lt;a href=&#34;#Interview-Process&#34; class=&#34;headerlink&#34; title=&#34;Interview Process&#34;&gt;&lt;/a&gt;Interview Process&lt;/h1&gt;&lt;h2 id=&#34;First-Round&#34;&gt;&lt;a href=&#34;#First-Round&#34; class=&#34;headerlink&#34; title=&#34;First Round&#34;&gt;&lt;/a&gt;First Round&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;tail recursion, Fibonacci, which I did not know&lt;/li&gt;
+&lt;li&gt;merge two lists&lt;/li&gt;
+&lt;li&gt;determine Makefile compilation order&lt;/li&gt;
+&lt;li&gt;implementation method and safety issues of &lt;code&gt;memcpy&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Optimizing-Recursive-Fibonacci-with-Tail-Recursion&#34;&gt;&lt;a href=&#34;#Optimizing-Recursive-Fibonacci-with-Tail-Recursion&#34; class=&#34;headerlink&#34; title=&#34;Optimizing Recursive Fibonacci with Tail Recursion&#34;&gt;&lt;/a&gt;Optimizing Recursive Fibonacci with Tail Recursion&lt;/h3&gt;&lt;p&gt;Everyone should be familiar with the Fibonacci sequence, a classic recursive sequence mentioned in high school math textbooks.&lt;br&gt;Its mathematical definition is:&lt;/p&gt;
+&lt;p&gt;$$&lt;br&gt;f_n = \begin{cases}&lt;br&gt;f_{n-1} + f_{n-2} &amp;amp; \quad \text{if } n &amp;gt; 2 \&lt;br&gt;1 &amp;amp; \quad \text{if } n = 0, 1&lt;br&gt;\end{cases}&lt;br&gt;$$&lt;/p&gt;
+&lt;p&gt;According to the mathematical recurrence, it is easy to write a recursive Fibonacci implementation:&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;title function_&#34;&gt;fibonacci&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;n&lt;/span&gt;):&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; n == &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;elif&lt;/span&gt; n == &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;else&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; fibonacci(n-&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;) + fibonacci(n-&lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;According to how function calls work, each call needs to recursively call the function twice. When the argument is &lt;code&gt;n&lt;/code&gt;, the number of stack frames needed is O(2^n).&lt;br&gt;Tail recursion can be used to optimize this problem.&lt;br&gt;Tail recursion is a recursive form of &lt;a href=&#34;https://en.wikipedia.org/wiki/Tail_call&#34;&gt;tail call&lt;/a&gt;.&lt;br&gt;My understanding of tail recursion is:&lt;br&gt;it is a way to implement loops in functional programming by using function calls.&lt;br&gt;So first, here is an iterative Fibonacci implementation with O(1) memory usage.&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;title function_&#34;&gt;fibonacci&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;n&lt;/span&gt;):&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; n == &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    f_n_sub_1 = &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    f_n_sub_2 = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    i = n&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;while&lt;/span&gt; i &amp;gt; &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        f_n_sub_1, f_n_sub_2 = f_n_sub_1 + f_n_sub_2, f_n_sub_1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        i -= &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; f_n_sub_1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;From the iterative implementation, we can see that the whole loop needs two variables, &lt;code&gt;f_n_sub_1&lt;/code&gt; and &lt;code&gt;f_n_sub_2&lt;/code&gt;, to record intermediate results,&lt;br&gt;and one loop variable, &lt;code&gt;i&lt;/code&gt;, to control the number of iterations, which is also the loop termination condition.&lt;br&gt;Using these variables as function arguments gives the tail-recursive Fibonacci implementation.&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;title function_&#34;&gt;fibonacci&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;n&lt;/span&gt;):&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;title function_&#34;&gt;func&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;n, ret1, ret2&lt;/span&gt;):&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; n == &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; ret1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;else&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; func(n - &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;, ret2, ret1 + ret2)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; func(n, &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&#34;Implementation-Method-and-Safety-Issues-of-memcpy&#34;&gt;&lt;a href=&#34;#Implementation-Method-and-Safety-Issues-of-memcpy&#34; class=&#34;headerlink&#34; title=&#34;Implementation Method and Safety Issues of memcpy&#34;&gt;&lt;/a&gt;Implementation Method and Safety Issues of &lt;code&gt;memcpy&lt;/code&gt;&lt;/h3&gt;&lt;p&gt;It also copies byte by byte. It is not, as I had assumed, copying whole blocks at a time, which would be faster.&lt;br&gt;Recalling knowledge from Computer Organization:&lt;br&gt;the CPU and Memory are connected by a bus, and each time, one clock cycle, only one word of data can be read or written.&lt;/p&gt;
+&lt;p&gt;Safety: very unsafe.&lt;br&gt;Recalling knowledge from Operating Systems: a process’s memory space is mapped to physical memory.&lt;br&gt;Directly copying and pasting byte by byte from low addresses to high addresses can easily overwrite data pointed to by other pointers, destroying that data, or even overwrite the data itself.&lt;/p&gt;
+&lt;p&gt;For example, if &lt;code&gt;memcpy&lt;/code&gt; copies a 200-byte pointer at address 100 to address 200, it will first overwrite part of its own data, addresses 200-300, and then later copies will all be wrong. This was the interviewer’s explanation, but I later found that this point is not necessarily true. Afterward I checked some standard library implementations of &lt;code&gt;memcpy&lt;/code&gt;; in this situation, they may copy from back to front to avoid overwriting the data to be copied.&lt;br&gt;&lt;a href=&#34;https://github.com/gcc-mirror/gcc/blob/master/libgcc/memcpy.c&#34;&gt;GCC without protection&lt;/a&gt;&lt;br&gt;&lt;a href=&#34;https://blog.csdn.net/laoyang360/article/details/8020409&#34;&gt;Implementation with protection&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;Interviewer’s-Advice&#34;&gt;&lt;a href=&#34;#Interviewer’s-Advice&#34; class=&#34;headerlink&#34; title=&#34;Interviewer’s Advice&#34;&gt;&lt;/a&gt;Interviewer’s Advice&lt;/h3&gt;&lt;p&gt;When writing code during an interview, in Notepad, on paper, or on a whiteboard,&lt;br&gt;the ease or convenience is:&lt;br&gt;whiteboard &amp;gt; paper &amp;gt; Notepad.&lt;/p&gt;
+&lt;p&gt;After being told the interview question, first think clearly about the initial conditions and concrete requirements. If something is unclear, be sure to ask the interviewer. Do not start writing immediately.&lt;br&gt;Otherwise, if you later discover ambiguity and ask again, it is already late.&lt;/p&gt;
+&lt;h3 id=&#34;Other-Takeaways&#34;&gt;&lt;a href=&#34;#Other-Takeaways&#34; class=&#34;headerlink&#34; title=&#34;Other Takeaways&#34;&gt;&lt;/a&gt;Other Takeaways&lt;/h3&gt;&lt;p&gt;When I have time, I must properly read SICP. Tail recursion in functional programming is discussed there.&lt;br&gt;The interviewer had probably read it too.&lt;/p&gt;
+&lt;h2 id=&#34;Second-Round&#34;&gt;&lt;a href=&#34;#Second-Round&#34; class=&#34;headerlink&#34; title=&#34;Second Round&#34;&gt;&lt;/a&gt;Second Round&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;find the maximum depth of a tree&lt;/li&gt;
+&lt;li&gt;maximum-sum chain&lt;/li&gt;
+&lt;li&gt;maximum-sum chain that can turn&lt;/li&gt;
+&lt;li&gt;rearrange an array to maximize weighted value, which I did not know&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Other-Takeaways-1&#34;&gt;&lt;a href=&#34;#Other-Takeaways-1&#34; class=&#34;headerlink&#34; title=&#34;Other Takeaways&#34;&gt;&lt;/a&gt;Other Takeaways&lt;/h3&gt;&lt;p&gt;ACM contestants have a natural advantage in interviews.&lt;br&gt;This interviewer may have done ACM as an undergraduate, because he said the “array weight” problem was one he had designed himself while in school.&lt;/p&gt;
+&lt;p&gt;p.s. The interviewer said he had not graduated long ago either.&lt;/p&gt;
+&lt;h2 id=&#34;Third-Round&#34;&gt;&lt;a href=&#34;#Third-Round&#34; class=&#34;headerlink&#34; title=&#34;Third Round&#34;&gt;&lt;/a&gt;Third Round&lt;/h2&gt;&lt;p&gt;After going to Suzhou for the interview on Tuesday, I received the result on Friday, and they scheduled a video interview for the following Tuesday.&lt;br&gt;To be honest, I was a little nervous before the video interview. Also, because something happened at school, I only learned in the morning that there would be a video interview that afternoon.&lt;br&gt;In the rush, I did not nap or rest well. I was especially sleepy before the interview.&lt;br&gt;Fortunately, when the real interview started, adrenaline rose and I was no longer sleepy.&lt;/p&gt;
+&lt;p&gt;The third-round interviewer was also very nice.&lt;br&gt;Hearing that I was familiar with SQL, he gave me an SQL problem.&lt;/p&gt;
+&lt;p&gt;It was similar to an academic affairs management system. There were three tables: students, with student ID and name; courses, with course ID and course name; and enrollments, with student ID, course ID, and grade.&lt;br&gt;Query each student’s math grade and Chinese grade, with the result as name, math grade, Chinese grade.&lt;br&gt;At first, we assumed every student had selected both math and Chinese. Later, this assumption was removed, testing outer join.&lt;/p&gt;
+&lt;h2 id=&#34;The-Second-Problem&#34;&gt;&lt;a href=&#34;#The-Second-Problem&#34; class=&#34;headerlink&#34; title=&#34;The Second Problem&#34;&gt;&lt;/a&gt;The Second Problem&lt;/h2&gt;&lt;p&gt;The second problem tested one &lt;a href=&#34;https://en.wikipedia.org/wiki/IEEE_754#Rounding_rules&#34;&gt;IEEE rounding implementation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;First, the interviewer listed some numbers and asked me to observe the pattern.&lt;br&gt;Under his guidance, I guessed it: round down at four, round up at six, and when it is five, look at the next digit.&lt;br&gt;Then I implemented this &lt;code&gt;ieee_round&lt;/code&gt; in C.&lt;/p&gt;
+&lt;h2 id=&#34;Result&#34;&gt;&lt;a href=&#34;#Result&#34; class=&#34;headerlink&#34; title=&#34;Result&#34;&gt;&lt;/a&gt;Result&lt;/h2&gt;&lt;p&gt;No Hire.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Unfortunately, the Lead interviewer finally gave a No Hire. He thinks your coding ability is not solid. Your advantage is strong thinking ability; your weaknesses are that you are not good at presenting your thinking or asking questions, and you cannot obtain new solutions from mistakes. You need to strengthen this in the future.&lt;/p&gt;
+&lt;p&gt;I hope you keep working hard during graduate school, and you are welcome to join Microsoft Suzhou again.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The Lead interviewer’s judgment was quite accurate, and the advice was sharp and to the point. I will keep working hard and reach Microsoft’s requirements as soon as possible.&lt;/p&gt;
+&lt;p&gt;Besides that, the train ticket reimbursement that had been promised at the beginning was not given in the end, so I also lost 1200 RMB financially.&lt;/p&gt;
  ]]></description>
         </item>
     </channel>

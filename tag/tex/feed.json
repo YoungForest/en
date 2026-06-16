@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "YoungForest's blog • All posts by \"tex\" tag",
+    "description": "A programmer in Amazon Beijing, China",
+    "home_page_url": "https://youngforest.github.io/en",
+    "items": [
+        {
+            "id": "https://youngforest.github.io/en/2018/03/27/latex-problems/",
+            "url": "https://youngforest.github.io/en/2018/03/27/latex-problems/",
+            "title": "Problems Encountered While Using LaTeX",
+            "date_published": "2018-03-27T11:27:55.000Z",
+            "content_html": "<p>I used LaTeX to write my graduation thesis and encountered many problems. I summarize them here.</p>\n<h2 id=\"PDF-Cannot-Display-Correctly\"><a href=\"#PDF-Cannot-Display-Correctly\" class=\"headerlink\" title=\"PDF Cannot Display Correctly\"></a>PDF Cannot Display Correctly</h2><h3 id=\"Problem-Description\"><a href=\"#Problem-Description\" class=\"headerlink\" title=\"Problem Description\"></a>Problem Description</h3><p>A document successfully compiled with XeLaTeX could not correctly display PDF images; it showed a blank area instead.</p>\n<h3 id=\"Cause\"><a href=\"#Cause\" class=\"headerlink\" title=\"Cause\"></a><a href=\"http://tieba.baidu.com/p/4191389769?traceid=\">Cause</a></h3><p>The PDF file version was the problem. Its version was 1.7, while XeLaTeX compiles as 1.5 by default.</p>\n<h3 id=\"Solution\"><a href=\"#Solution\" class=\"headerlink\" title=\"Solution\"></a>Solution</h3><p>For <code>xelatex %.tex</code>, add <code>--output-driver=&quot;xdvipdfmx -V7&quot;</code>. That is, modify <code>msmake.bat</code>:</p>\n<figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">xelatex %mythesis%</span><br><span class=\"line\"><span class=\"comment\"># =&gt;</span></span><br><span class=\"line\">xelatex --output-driver=<span class=\"string\">&quot;xdvipdfmx -V7&quot;</span> %mythesis%</span><br></pre></td></tr></table></figure>\n",
+            "tags": [
+                "TeX"
+            ]
+        }
+    ]
+}

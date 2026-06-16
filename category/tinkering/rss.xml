@@ -18,11 +18,13 @@
         <category>The Three-Body Problem</category>
         <category>A Global History</category>
         <category>A Matter of Degrees</category>
+        <category>Kuaishou</category>
+        <category>Tech</category>
         <category>Dublin</category>
-        <category>Alibaba</category>
-        <category>intern</category>
         <category>travel</category>
         <category>Travel Notes</category>
+        <category>Alibaba</category>
+        <category>intern</category>
         <category>Antifragile</category>
         <category>Are Your Lights On?</category>
         <category>Beijing</category>
@@ -35,14 +37,13 @@
         <category>Deep Simplicity</category>
         <category>codeforces</category>
         <category>contest</category>
-        <category>C++</category>
         <category>WeRide</category>
+        <category>C++</category>
         <category>C++11</category>
         <category>Elon Musk</category>
         <category>bank</category>
         <category>money</category>
         <category>Europe</category>
-        <category>Tech</category>
         <category>Genome</category>
         <category>Hexo</category>
         <category>Guns, Germs, and Steel</category>
@@ -62,9 +63,9 @@
         <category>Liu Shen Lei Lei Reads Jin Yong</category>
         <category>Liu Shen Lei Lei Reads Tang Poetry</category>
         <category>Blog</category>
-        <category>miHoYo</category>
         <category>Travel</category>
         <category>Keyboard</category>
+        <category>miHoYo</category>
         <category>Poor Charlie&#39;s Almanack</category>
         <category>Programming Pearls</category>
         <category>Money</category>
@@ -72,15 +73,15 @@
         <category>QDII</category>
         <category>Arbitrage</category>
         <category>Off-Exchange to On-Exchange</category>
-        <category>tech</category>
         <category>Reality Is Not What It Seems</category>
+        <category>tech</category>
         <category>Shi Nan Zhi Tu</category>
         <category>Ma Boyong</category>
         <category>Skin in the Game</category>
         <category>Nassim Nicholas Taleb</category>
         <category>Tai Bai Jin Xing You Dian Fan</category>
-        <category>Tencent</category>
         <category>The Almanack of Naval Ravikant</category>
+        <category>Tencent</category>
         <category>The Art of War</category>
         <category>The Bitcoin Standard</category>
         <category>The Collapse of the Heavenly Dynasty</category>
@@ -100,15 +101,18 @@
         <category>Amazon</category>
         <category>Microsoft</category>
         <category>China</category>
-        <category>Travelogue</category>
         <category>vim</category>
         <category>investing</category>
-        <category>Kuaishou</category>
+        <category>Travelogue</category>
         <category>Internship</category>
-        <category>Mac</category>
+        <category>TeX</category>
         <category>Life and Death Are Wearing Me Out</category>
+        <category>Mac</category>
+        <category>Ubuntu</category>
+        <category>Owncloud</category>
         <category>RIP</category>
         <category>sensetime</category>
+        <category>Git</category>
         <category>vscode</category>
         <category>gcc</category>
         <item>
@@ -278,6 +282,26 @@
 
 &lt;p&gt;The advantage of Option 2 is that it does not intrude into &lt;code&gt;next&lt;/code&gt;, making it convenient to do CD with GitHub Actions.&lt;/p&gt;
 &lt;h3 id=&#34;Setting-up-ads-txt&#34;&gt;&lt;a href=&#34;#Setting-up-ads-txt&#34; class=&#34;headerlink&#34; title=&#34;Setting up ads.txt&#34;&gt;&lt;/a&gt;Setting up ads.txt&lt;/h3&gt;&lt;p&gt;Place this file under &lt;code&gt;./source/&lt;/code&gt;, at the same level as &lt;code&gt;_posts/&lt;/code&gt;.&lt;br&gt;After deploying with &lt;code&gt;hexo d -g&lt;/code&gt;, the corresponding file will be automatically deployed to &lt;code&gt;/public/&lt;/code&gt;, meaning your blog site.&lt;br&gt;Other files that need to be generated and placed in the blog root directory can be handled similarly.&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://youngforest.github.io/en/2018/05/08/ssh-login-remote-server-without-password/</guid>
+            <title>SSH Passwordless Login to a Server</title>
+            <link>https://youngforest.github.io/en/2018/05/08/ssh-login-remote-server-without-password/</link>
+            <category>Tech</category>
+            <pubDate>Tue, 08 May 2018 18:47:09 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;The following commands are only for Unix-like systems.&lt;br&gt;Windows does not need this solution. Many PuTTY-like tools on Windows can choose “remember password” to implement passwordless login.&lt;br&gt;I did not find a similar password-remembering solution on Mac, but using a key is actually a more secure method.&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+
+&lt;h2 id=&#34;Step-1-Generate-an-RSA-Key-Pair&#34;&gt;&lt;a href=&#34;#Step-1-Generate-an-RSA-Key-Pair&#34; class=&#34;headerlink&#34; title=&#34;Step 1: Generate an RSA Key Pair&#34;&gt;&lt;/a&gt;Step 1: Generate an RSA Key Pair&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;ssh-keygen -t rsa&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;Step-2-Upload-the-RSA-Public-Key-to-the-Server&#34;&gt;&lt;a href=&#34;#Step-2-Upload-the-RSA-Public-Key-to-the-Server&#34; class=&#34;headerlink&#34; title=&#34;Step 2: Upload the RSA Public Key to the Server&#34;&gt;&lt;/a&gt;Step 2: Upload the RSA Public Key to the Server&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;cat&lt;/span&gt; id_rsa.pub | ssh -p 26757 root@138.128.193.150 &lt;span class=&#34;string&#34;&gt;&amp;#x27;cat &amp;gt;&amp;gt; .ssh/authorized_keys&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;Step-3-Change-Permissions&#34;&gt;&lt;a href=&#34;#Step-3-Change-Permissions&#34; class=&#34;headerlink&#34; title=&#34;Step 3: Change Permissions&#34;&gt;&lt;/a&gt;Step 3: Change Permissions&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;ssh -p 26757 root@138.128.193.150 &lt;span class=&#34;string&#34;&gt;&amp;quot;chmod 700 .ssh; chmod 640 .ssh/authorized_keys&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;Step-4-Success&#34;&gt;&lt;a href=&#34;#Step-4-Success&#34; class=&#34;headerlink&#34; title=&#34;Step 4: Success!&#34;&gt;&lt;/a&gt;Step 4: Success!&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;ssh -p 26757 root@138.128.193.150&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;reference:&lt;br&gt;&lt;a href=&#34;https://www.tecmint.com/ssh-passwordless-login-using-ssh-keygen-in-5-easy-steps/&#34;&gt;ssh-passwordless-login-using-ssh-keygen-in-5-easy-steps&lt;/a&gt;&lt;/p&gt;
  ]]></description>
         </item>
         <item>

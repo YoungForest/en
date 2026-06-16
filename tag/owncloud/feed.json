@@ -1,0 +1,19 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "YoungForest's blog • All posts by \"owncloud\" tag",
+    "description": "A programmer in Amazon Beijing, China",
+    "home_page_url": "https://youngforest.github.io/en",
+    "items": [
+        {
+            "id": "https://youngforest.github.io/en/2017/08/20/owncloud-setup-on-server/",
+            "url": "https://youngforest.github.io/en/2017/08/20/owncloud-setup-on-server/",
+            "title": "owncloud setup on server",
+            "date_published": "2017-08-20T14:42:32.000Z",
+            "content_html": "<h2 id=\"Introduction\"><a href=\"#Introduction\" class=\"headerlink\" title=\"Introduction\"></a>Introduction</h2><p><a href=\"https://owncloud.org/\">ownCloud</a> is a private cloud solution that can replace Baidu Cloud. It provides both enterprise and personal editions, and individuals can use a server to build the personal edition of ownCloud. The official website provides multiple server-side solutions. Compiling it yourself can get the latest version of ownCloud; ownCloud also provides <a href=\"https://download.owncloud.org/download/repositories/stable/owncloud/\">binary installation packages</a> for major distribution repositories, which are more convenient and faster, and more suitable for personal use.</p>\n<span id=\"more\"></span>\n<h2 id=\"Server-Environment\"><a href=\"#Server-Environment\" class=\"headerlink\" title=\"Server Environment\"></a>Server Environment</h2><p>A Tencent Cloud virtual machine. The operating system version is Ubuntu 14.04.5 LTS (GNU/Linux 3.13.0-105-generic x86_64).</p>\n<h2 id=\"Setup-Process\"><a href=\"#Setup-Process\" class=\"headerlink\" title=\"Setup Process\"></a>Setup Process</h2><h3 id=\"Install-ownCloud\"><a href=\"#Install-ownCloud\" class=\"headerlink\" title=\"Install ownCloud\"></a>Install ownCloud</h3><p><a href=\"https://download.owncloud.org/download/repositories/stable/owncloud/\">Install ownCloud through the apt repository</a>. Many dependency packages will also be installed, such as <code>apache2</code>, the PHP environment, and so on.</p>\n<h3 id=\"Start-the-Apache-Service\"><a href=\"#Start-the-Apache-Service\" class=\"headerlink\" title=\"Start the Apache Service\"></a>Start the Apache Service</h3><figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">service httpd start</span><br></pre></td></tr></table></figure>\n\n<h3 id=\"Manage-and-Configure-ownCloud\"><a href=\"#Manage-and-Configure-ownCloud\" class=\"headerlink\" title=\"Manage and Configure ownCloud\"></a>Manage and Configure ownCloud</h3><p>Enter <code>ip/owncloud</code> or <code>domain/owncloud</code> in the browser address bar, then set the administrator account and password.</p>\n<h4 id=\"Configure-MySQL\"><a href=\"#Configure-MySQL\" class=\"headerlink\" title=\"Configure MySQL\"></a>Configure MySQL</h4><p><a href=\"http://www.cnblogs.com/mr-wid/archive/2013/05/09/3068229.html\">Reference</a></p>\n<figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">mysql --user=root --password</span><br></pre></td></tr></table></figure>\n\n<h2 id=\"Client-install\"><a href=\"#Client-install\" class=\"headerlink\" title=\"Client install\"></a>Client install</h2><h3 id=\"windows\"><a href=\"#windows\" class=\"headerlink\" title=\"windows\"></a>windows</h3><h3 id=\"Android\"><a href=\"#Android\" class=\"headerlink\" title=\"Android\"></a>Android</h3><h3 id=\"Linux\"><a href=\"#Linux\" class=\"headerlink\" title=\"Linux\"></a>Linux</h3>",
+            "tags": [
+                "Ubuntu",
+                "Owncloud"
+            ]
+        }
+    ]
+}
