@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "YoungForest's blog • All posts by \"atom\" tag",
+    "description": "A programmer in Amazon Beijing, China",
+    "home_page_url": "https://youngforest.github.io/en",
+    "items": [
+        {
+            "id": "https://youngforest.github.io/en/2017/04/08/atom-explore/",
+            "url": "https://youngforest.github.io/en/2017/04/08/atom-explore/",
+            "title": "A Brief First Taste of Atom",
+            "date_published": "2017-04-08T14:20:36.000Z",
+            "content_html": "<h2 id=\"Configure-Proxy\"><a href=\"#Configure-Proxy\" class=\"headerlink\" title=\"Configure Proxy\"></a>Configure Proxy</h2><p>My requirement was to insert LaTeX formulas into Markdown documents. Atom’s default <code>markdown-preview</code> package could not satisfy this requirement. After searching, I found that the community package <code>markdown-preview-plus</code> could satisfy it.</p>\n<h3 id=\"Atom-Package-Management\"><a href=\"#Atom-Package-Management\" class=\"headerlink\" title=\"Atom Package Management\"></a><a href=\"http://flight-manual.atom.io/using-atom/sections/atom-packages/#atom-packages\">Atom Package Management</a></h3><p>Following the official tutorial, the installation failed:</p>\n<blockquote>\n<p>Installing “<a href=\"mailto:&#109;&#x61;&#114;&#107;&#100;&#111;&#x77;&#110;&#45;&#112;&#114;&#x65;&#x76;&#x69;&#x65;&#119;&#45;&#112;&#x6c;&#x75;&#x73;&#64;&#50;&#46;&#52;&#x2e;&#x39;\">&#109;&#x61;&#114;&#107;&#100;&#111;&#x77;&#110;&#45;&#112;&#114;&#x65;&#x76;&#x69;&#x65;&#119;&#45;&#112;&#x6c;&#x75;&#x73;&#64;&#50;&#46;&#52;&#x2e;&#x39;</a>” failed.</p>\n</blockquote>\n<p>In the log, I found this request:</p>\n<blockquote>\n<p>GET <a href=\"https://atom.io/download/electron/v1.3.13/iojs-v1.3.13.tar.gz\">https://atom.io/download/electron/v1.3.13/iojs-v1.3.13.tar.gz</a></p>\n</blockquote>\n<p>I then tested this URL in the browser. It did not respond, so I guessed it was blocked. Fortunately, the Atom documentation considered the need to use a proxy and provided a guide.</p>\n<p><a href=\"http://flight-manual.atom.io/getting-started/sections/installing-atom/#using-a-proxy\">Configure a proxy for apm</a></p>\n<p>Finally, basic proxy setup skills. No explanation needed.</p>\n<h3 id=\"Concrete-Commands\"><a href=\"#Concrete-Commands\" class=\"headerlink\" title=\"Concrete Commands\"></a>Concrete Commands</h3><figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br><span class=\"line\">4</span><br><span class=\"line\">5</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">sean@sean-OptiPlex-790:~$ apm config <span class=\"built_in\">set</span> https-proxy http://localhost:8123</span><br><span class=\"line\">sean@sean-OptiPlex-790:~$ apm config get https-proxy</span><br><span class=\"line\">http://localhost:8123/</span><br><span class=\"line\">sean@sean-OptiPlex-790:~$ apm install markdown-preview-plus</span><br><span class=\"line\">Installing markdown-preview-plus to /home/sean/.atom/packages ✓</span><br></pre></td></tr></table></figure>\n",
+            "tags": [
+                "Atom"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "YoungForest's blog • All posts by \"sublime\" tag",
+    "description": "A programmer in Amazon Beijing, China",
+    "home_page_url": "https://youngforest.github.io/en",
+    "items": [
+        {
+            "id": "https://youngforest.github.io/en/2017/01/18/sublime-personlize/",
+            "url": "https://youngforest.github.io/en/2017/01/18/sublime-personlize/",
+            "title": "Personalizing Sublime",
+            "date_published": "2017-01-18T07:27:15.000Z",
+            "content_html": "<p><strong>[Abstract]</strong> <a href=\"https://www.sublimetext.com/\">Sublime Text 3</a> is a powerful editor. I officially started using it in the second semester of sophomore year. After half a year of continuous exploration, I configured Sublime into a personalized editor that satisfies most of my daily coding needs.</p>\n<h3 id=\"Configure-Different-Settings-for-Different-Languages\"><a href=\"#Configure-Different-Settings-for-Different-Languages\" class=\"headerlink\" title=\"Configure Different Settings for Different Languages\"></a>Configure Different Settings for Different Languages</h3><p>First, open any file in that language. Go to <code>Sublime Text 3 -&gt; Preferences -&gt; Settings - Syntax Specific</code> to enter that language’s settings file, then modify and save the settings file.</p>\n<p><a href=\"http://mlo.io/blog/2012/08/23/language-specific-indents-sublime.html\">Reference: setting different indentation for different languages</a></p>\n<h3 id=\"Color-Scheme\"><a href=\"#Color-Scheme\" class=\"headerlink\" title=\"Color Scheme\"></a>Color Scheme</h3><p>The default theme of Sublime Text 3 is <code>Monokai(dark)</code>. I think it is quite easy on the eyes, but the disadvantage is that its Markdown support is especially poor. Another theme I like, <code>Solarized(dark)</code>, has the same problem. The default <code>Solarized</code> experience is far from what it feels like in Vim. So I installed the <code>Solarized Color Scheme</code> theme through <code>Package Contorl</code>. Compared with Vim below, it is still quite pleasant to look at.</p>\n<p><img src=\"../assets/sublime-solarized-optimized.PNG\" alt=\"Solarized optimized for sublime\"></p>\n<p><img src=\"../assets/vim-solarized.PNG\" alt=\"Solarized for vim\"></p>\n",
+            "tags": [
+                "Sublime"
+            ]
+        }
+    ]
+}

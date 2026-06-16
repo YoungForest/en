@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://youngforest.github.io/en</id>
+    <title>YoungForest&#39;s blog • Posts by &#34;atom&#34; tag</title>
+    <link href="https://youngforest.github.io/en" />
+    <updated>2017-04-08T14:20:36.000Z</updated>
+    <category term="life" />
+    <category term="Year-End Review" />
+    <category term="Life" />
+    <category term="Year-end Summary" />
+    <category term="Year-End Summary" />
+    <category term="year-end summary" />
+    <category term="Intern" />
+    <category term="Reading" />
+    <category term="The Three-Body Problem" />
+    <category term="A Global History" />
+    <category term="A Matter of Degrees" />
+    <category term="Kuaishou" />
+    <category term="Tech" />
+    <category term="Dublin" />
+    <category term="Alibaba" />
+    <category term="intern" />
+    <category term="travel" />
+    <category term="Travel Notes" />
+    <category term="Antifragile" />
+    <category term="Are Your Lights On?" />
+    <category term="Beijing" />
+    <category term="Hukou" />
+    <category term="Business Cycles" />
+    <category term="Economics" />
+    <category term="ByteDance" />
+    <category term="interview" />
+    <category term="New Graduate" />
+    <category term="Deep Simplicity" />
+    <category term="codeforces" />
+    <category term="contest" />
+    <category term="WeRide" />
+    <category term="C++" />
+    <category term="Database" />
+    <category term="Django" />
+    <category term="C++11" />
+    <category term="Elon Musk" />
+    <category term="bank" />
+    <category term="money" />
+    <category term="Europe" />
+    <category term="Genome" />
+    <category term="Hexo" />
+    <category term="Guns, Germs, and Steel" />
+    <category term="Hennge" />
+    <category term="Hou Hei Xue" />
+    <category term="Ireland" />
+    <category term="IB" />
+    <category term="Bonds" />
+    <category term="France visa" />
+    <category term="Schengen" />
+    <category term="Side Project" />
+    <category term="Just Keep Buying" />
+    <category term="Competitive Programming" />
+    <category term="Algorithm" />
+    <category term="LeetCode" />
+    <category term="A Little History of the World" />
+    <category term="Liu Shen Lei Lei Reads Tang Poetry" />
+    <category term="Liu Shen Lei Lei Reads Jin Yong" />
+    <category term="Blog" />
+    <category term="miHoYo" />
+    <category term="Travel" />
+    <category term="Keyboard" />
+    <category term="Poor Charlie&#39;s Almanack" />
+    <category term="Programming Pearls" />
+    <category term="Money" />
+    <category term="Investment" />
+    <category term="QDII" />
+    <category term="Arbitrage" />
+    <category term="Off-Exchange to On-Exchange" />
+    <category term="Reality Is Not What It Seems" />
+    <category term="tech" />
+    <category term="Shi Nan Zhi Tu" />
+    <category term="Ma Boyong" />
+    <category term="Skin in the Game" />
+    <category term="Nassim Nicholas Taleb" />
+    <category term="Tai Bai Jin Xing You Dian Fan" />
+    <category term="The Almanack of Naval Ravikant" />
+    <category term="Tencent" />
+    <category term="The Art of War" />
+    <category term="The Collapse of the Heavenly Dynasty" />
+    <category term="The Bitcoin Standard" />
+    <category term="The Hungry Golden Age" />
+    <category term="The Glory and the Dream" />
+    <category term="The Worlds I See" />
+    <category term="The Gains and Losses of Economic Changes in the Past Dynasties" />
+    <category term="Linux" />
+    <category term="Why Nations Fail" />
+    <category term="Windows" />
+    <category term="The Times" />
+    <category term="XiaoLin Says" />
+    <category term="Atom" />
+    <category term="hash" />
+    <category term="unordered_map" />
+    <category term="Tinkering" />
+    <category term="Megvii" />
+    <category term="Amazon" />
+    <category term="Microsoft" />
+    <category term="China" />
+    <category term="Travelogue" />
+    <category term="vim" />
+    <category term="investing" />
+    <category term="Internship" />
+    <category term="TeX" />
+    <category term="Life and Death Are Wearing Me Out" />
+    <category term="Mac" />
+    <category term="Ubuntu" />
+    <category term="Owncloud" />
+    <category term="Benchmark" />
+    <category term="RIP" />
+    <category term="sensetime" />
+    <category term="Sublime" />
+    <category term="vscode" />
+    <category term="gcc" />
+    <category term="Git" />
+    <entry>
+        <id>https://youngforest.github.io/en/2017/04/08/atom-explore/</id>
+        <title>A Brief First Taste of Atom</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2017/04/08/atom-explore/"/>
+        <content type="html">&lt;h2 id=&#34;Configure-Proxy&#34;&gt;&lt;a href=&#34;#Configure-Proxy&#34; class=&#34;headerlink&#34; title=&#34;Configure Proxy&#34;&gt;&lt;/a&gt;Configure Proxy&lt;/h2&gt;&lt;p&gt;My requirement was to insert LaTeX formulas into Markdown documents. Atom’s default &lt;code&gt;markdown-preview&lt;/code&gt; package could not satisfy this requirement. After searching, I found that the community package &lt;code&gt;markdown-preview-plus&lt;/code&gt; could satisfy it.&lt;/p&gt;
+&lt;h3 id=&#34;Atom-Package-Management&#34;&gt;&lt;a href=&#34;#Atom-Package-Management&#34; class=&#34;headerlink&#34; title=&#34;Atom Package Management&#34;&gt;&lt;/a&gt;&lt;a href=&#34;http://flight-manual.atom.io/using-atom/sections/atom-packages/#atom-packages&#34;&gt;Atom Package Management&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Following the official tutorial, the installation failed:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Installing “&lt;a href=&#34;mailto:&amp;#109;&amp;#x61;&amp;#114;&amp;#107;&amp;#100;&amp;#111;&amp;#x77;&amp;#110;&amp;#45;&amp;#112;&amp;#114;&amp;#x65;&amp;#x76;&amp;#x69;&amp;#x65;&amp;#119;&amp;#45;&amp;#112;&amp;#x6c;&amp;#x75;&amp;#x73;&amp;#64;&amp;#50;&amp;#46;&amp;#52;&amp;#x2e;&amp;#x39;&#34;&gt;&amp;#109;&amp;#x61;&amp;#114;&amp;#107;&amp;#100;&amp;#111;&amp;#x77;&amp;#110;&amp;#45;&amp;#112;&amp;#114;&amp;#x65;&amp;#x76;&amp;#x69;&amp;#x65;&amp;#119;&amp;#45;&amp;#112;&amp;#x6c;&amp;#x75;&amp;#x73;&amp;#64;&amp;#50;&amp;#46;&amp;#52;&amp;#x2e;&amp;#x39;&lt;/a&gt;” failed.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In the log, I found this request:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;GET &lt;a href=&#34;https://atom.io/download/electron/v1.3.13/iojs-v1.3.13.tar.gz&#34;&gt;https://atom.io/download/electron/v1.3.13/iojs-v1.3.13.tar.gz&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I then tested this URL in the browser. It did not respond, so I guessed it was blocked. Fortunately, the Atom documentation considered the need to use a proxy and provided a guide.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://flight-manual.atom.io/getting-started/sections/installing-atom/#using-a-proxy&#34;&gt;Configure a proxy for apm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Finally, basic proxy setup skills. No explanation needed.&lt;/p&gt;
+&lt;h3 id=&#34;Concrete-Commands&#34;&gt;&lt;a href=&#34;#Concrete-Commands&#34; class=&#34;headerlink&#34; title=&#34;Concrete Commands&#34;&gt;&lt;/a&gt;Concrete Commands&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sean@sean-OptiPlex-790:~$ apm config &lt;span class=&#34;built_in&#34;&gt;set&lt;/span&gt; https-proxy http://localhost:8123&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sean@sean-OptiPlex-790:~$ apm config get https-proxy&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;http://localhost:8123/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sean@sean-OptiPlex-790:~$ apm install markdown-preview-plus&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Installing markdown-preview-plus to /home/sean/.atom/packages ✓&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+</content>
+        <category term="Atom" />
+        <updated>2017-04-08T14:20:36.000Z</updated>
+    </entry>
+</feed>

@@ -18,10 +18,10 @@
     <category term="Kuaishou" />
     <category term="Tech" />
     <category term="Dublin" />
-    <category term="travel" />
-    <category term="Travel Notes" />
     <category term="Alibaba" />
     <category term="intern" />
+    <category term="travel" />
+    <category term="Travel Notes" />
     <category term="Antifragile" />
     <category term="Are Your Lights On?" />
     <category term="Beijing" />
@@ -36,6 +36,8 @@
     <category term="contest" />
     <category term="WeRide" />
     <category term="C++" />
+    <category term="Database" />
+    <category term="Django" />
     <category term="C++11" />
     <category term="Elon Musk" />
     <category term="bank" />
@@ -57,12 +59,12 @@
     <category term="Algorithm" />
     <category term="LeetCode" />
     <category term="A Little History of the World" />
-    <category term="Liu Shen Lei Lei Reads Jin Yong" />
     <category term="Liu Shen Lei Lei Reads Tang Poetry" />
+    <category term="Liu Shen Lei Lei Reads Jin Yong" />
     <category term="Blog" />
+    <category term="miHoYo" />
     <category term="Travel" />
     <category term="Keyboard" />
-    <category term="miHoYo" />
     <category term="Poor Charlie&#39;s Almanack" />
     <category term="Programming Pearls" />
     <category term="Money" />
@@ -80,8 +82,8 @@
     <category term="The Almanack of Naval Ravikant" />
     <category term="Tencent" />
     <category term="The Art of War" />
-    <category term="The Bitcoin Standard" />
     <category term="The Collapse of the Heavenly Dynasty" />
+    <category term="The Bitcoin Standard" />
     <category term="The Hungry Golden Age" />
     <category term="The Glory and the Dream" />
     <category term="The Worlds I See" />
@@ -91,6 +93,7 @@
     <category term="Windows" />
     <category term="The Times" />
     <category term="XiaoLin Says" />
+    <category term="Atom" />
     <category term="hash" />
     <category term="unordered_map" />
     <category term="Tinkering" />
@@ -98,20 +101,22 @@
     <category term="Amazon" />
     <category term="Microsoft" />
     <category term="China" />
+    <category term="Travelogue" />
     <category term="vim" />
     <category term="investing" />
-    <category term="Travelogue" />
     <category term="Internship" />
     <category term="TeX" />
     <category term="Life and Death Are Wearing Me Out" />
     <category term="Mac" />
     <category term="Ubuntu" />
     <category term="Owncloud" />
+    <category term="Benchmark" />
     <category term="RIP" />
     <category term="sensetime" />
-    <category term="Git" />
+    <category term="Sublime" />
     <category term="vscode" />
     <category term="gcc" />
+    <category term="Git" />
     <entry>
         <id>https://youngforest.github.io/en/2025/12/27/2025-summary-and-2026-resolutions/</id>
         <title>2025 Year-End Review and 2026 New Year Outlook</title>
@@ -1068,5 +1073,45 @@ I love studying, and studying loves me.
         <category term="life" />
         <category term="Year-End Review" />
         <updated>2017-02-22T04:36:31.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://youngforest.github.io/en/2016/11/09/gogogo/</id>
+        <title>Reflection on the First Semester of Junior Year</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2016/11/09/gogogo/"/>
+        <content type="html">&lt;p&gt;Recently, I experienced two things that made me feel the need to reflect on myself over the past few years.&lt;/p&gt;
+&lt;p&gt;The first was that last night’s compiler test 1 did not pass. More specifically, the correct program did not produce the correct result. The compiler test reminded me of the Computer Organization test two years ago, and then I thought a lot.&lt;/p&gt;
+&lt;p&gt;The second was this morning’s quiz in compiler class. I completely could not do the second problem, and even if I wanted to copy someone else’s answer, there was nobody to copy from. The people around me were unreliable, and the reliable people were not around me. This made me realize again that only I myself am truly dependable. If I cannot rely on myself, then there is nobody I can truly rely on.&lt;/p&gt;
+&lt;h2 id=&#34;The-Past&#34;&gt;&lt;a href=&#34;#The-Past&#34; class=&#34;headerlink&#34; title=&#34;The Past&#34;&gt;&lt;/a&gt;The Past&lt;/h2&gt;&lt;p&gt;In freshman year, I complained that there were too many math classes. Everyone posted their timetables on Qzone and said things like, “I enrolled in the Computer Science department, not the Math department.” Looking back now, I was really too naive. In fact, now I like math classes the most, not CS classes. The reason is that at the time, the only major course was C language, and the Introduction to Computer Science Python course was indeed important for studying computing, but compared with current major courses, those were really too easy. For poor GPA, freshman year is the most important, because those math and English courses we disliked carried many credits. A senior student told me that your grades are basically determined in freshman year. Looking back now, that is indeed true, and I only feel more anger at my own incompetence.&lt;/p&gt;
+&lt;p&gt;In the first semester of sophomore year, I complained that Computer Organization was too hard and that Department 6 was no place for humans. Staying up late became routine; during exam season, two courses even required all-nighters, and I experienced chest tightness and heart pain. In the second semester of sophomore year, I complained that the OO system was inhumane, and I was lazy in OS labs and did not apply for excellence.&lt;/p&gt;
+&lt;p&gt;By junior year, when it was time to consider my future path, I discovered that others had set goals as soon as they entered college and had worked toward them for four years. Now they were about to harvest the fruit. But I discovered that many things were already far too late. For GPA, with the foundation from the first two years, it was already very hard to improve. For language exam scores, with my barely-passed CET-6 level and lazy habits, it was hard to entrust fate completely to that. For job hunting, entering top companies, and making big money, I had no competition experience and was terrible at algorithms, so much so that I shamefully apologized to excellent senior students. I feel like I really have become an Adou who cannot be helped.&lt;/p&gt;
+&lt;h2 id=&#34;Paths-Forward&#34;&gt;&lt;a href=&#34;#Paths-Forward&#34; class=&#34;headerlink&#34; title=&#34;Paths Forward&#34;&gt;&lt;/a&gt;Paths Forward&lt;/h2&gt;&lt;h4 id=&#34;Graduate-Recommendation&#34;&gt;&lt;a href=&#34;#Graduate-Recommendation&#34; class=&#34;headerlink&#34; title=&#34;Graduate Recommendation&#34;&gt;&lt;/a&gt;Graduate Recommendation&lt;/h4&gt;&lt;p&gt;This is the most likely path and also the easiest path I am currently facing. But looking at my poor GPA, I am now powerless to turn the tide and can only be at others’ mercy. External recommendation is absolutely impossible, and I do not even dare guarantee staying at my own school, since there are still many extra-point items behind me.&lt;/p&gt;
+&lt;h4 id=&#34;Work&#34;&gt;&lt;a href=&#34;#Work&#34; class=&#34;headerlink&#34; title=&#34;Work&#34;&gt;&lt;/a&gt;Work&lt;/h4&gt;&lt;p&gt;Just like my roommate &lt;code&gt;zjy&lt;/code&gt; said, I know nothing, so what company would want me? My situation is similar to his. Although I have studied professional knowledge seriously for two and a half years, both the depth and suitability are far from market demand. &lt;code&gt;tls&lt;/code&gt; naturally does not need to worry. With rich ACM experience here, whether studying abroad or entering an international top company, he is certainly on the path to the peak of life.&lt;/p&gt;
+&lt;h4 id=&#34;Study-Abroad&#34;&gt;&lt;a href=&#34;#Study-Abroad&#34; class=&#34;headerlink&#34; title=&#34;Study Abroad&#34;&gt;&lt;/a&gt;Study Abroad&lt;/h4&gt;&lt;p&gt;Speaking of this, since spending two weeks in the UK in summer 2016, I unexpectedly developed the idea and courage to study abroad. I did not expect that half a year would pass and my sharp spirit would already disappear, but the belief remains. Although I do not have the courage to fight with my back to the river, I still have the stubbornness not to submit to fate.&lt;/p&gt;
+&lt;h4 id=&#34;Entrepreneurship&#34;&gt;&lt;a href=&#34;#Entrepreneurship&#34; class=&#34;headerlink&#34; title=&#34;Entrepreneurship&#34;&gt;&lt;/a&gt;Entrepreneurship&lt;/h4&gt;&lt;p&gt;This option is left to others. I never even dare think about it. I have no capital, no network, no powerful father, no quality, and no courage.&lt;/p&gt;
+&lt;h2 id=&#34;The-Future&#34;&gt;&lt;a href=&#34;#The-Future&#34; class=&#34;headerlink&#34; title=&#34;The Future&#34;&gt;&lt;/a&gt;The Future&lt;/h2&gt;&lt;p&gt;New year, new semester. This year will at least determine the development of the next two years, and may even determine the fate of my whole life.&lt;/p&gt;
+&lt;p&gt;Keep going!&lt;/p&gt;
+</content>
+        <category term="Life" />
+        <updated>2016-11-09T04:39:13.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://youngforest.github.io/en/2013/06/07/My-dream-when-3rd-years-in-high-school/</id>
+        <title>My Dream -- Written in 2013 Before Senior Year of High School</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2013/06/07/My-dream-when-3rd-years-in-high-school/"/>
+        <content type="html">&lt;p&gt;June 7, 2013 was the last day of the Gaokao for the senior students one grade above me in high school.&lt;br&gt;From that day on, I was the one closest to the Gaokao, although I would not officially enter senior year until September.&lt;br&gt;At the time, I was studying at Xiangfen High School in Shanxi Province. I was not yet 17, and I wrote this “My Dream” to state my ambition and encourage myself. Now ten years have passed. In June 2023, while organizing files on my hard drive, I was pleasantly surprised to discover this “document.” Looking back, I did not realize my Tsinghua dream back then. After being beaten by society, my ideals, including my literary talent, are far from as excellent as they were then. But the words from that year still move me. I thank my former self.&lt;br&gt;I was once a young man.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Main Text Begins&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;At fifteen, Confucius set his heart upon learning, thus establishing the life ideal he would pursue for the next several decades without wavering. Although I am not a sage, only an ordinary middle school student, I also have my own life ideal: that the world changes because of me. When later generations hear my name, they will raise their thumbs and offer sincere praise, just as I do now when I hear the names of great people like Einstein.&lt;/p&gt;
+&lt;p&gt;I thirst for truth like a bleating lamb thirsts for milk, never forgetting exploration for even a moment. The stories of great people deeply attract me: Archimedes’ bathtub, the apple that hit Newton’s head, the kettle lid seen by Watt. These all left a deep impression on me. Who knows on which day, and which person, will again pick up a more beautiful shell by the sea? Before quantitative accumulation reaches qualitative change, who knows that a great person is the one who will change the world? Nobody is a prophet, but that does not matter. A true warrior will not shrink back because the road is winding and dangerous, the dream is distant, or passersby mock and sneer. Of course, neither will I.&lt;/p&gt;
+&lt;p&gt;Whether in high school or college, these are places where people accumulate quantitative change. Without quantitative change, there is no qualitative change. To achieve qualitative change, the suffering of quantitative change must be endured.&lt;/p&gt;
+&lt;p&gt;All of China knows senior year is hard, the Gaokao is difficult, and getting into Tsinghua is even harder. But as one of China’s first-class universities, Tsinghua attracts countless examinees so strongly that top students from all over the country take Tsinghua as their dream school. No matter how bitter or tiring it is, they are willing, and I am no exception. As a university, Tsinghua not only teaches and educates people, but also provides us with a platform: a platform for full communication and development. I hope Tsinghua will not only teach me knowledge, the foundation for changing the world, but also let me compete with experts, communicate with masters, and improve my qualities and abilities.&lt;/p&gt;
+&lt;p&gt;In today’s society, knowledge is power and knowledge is wealth. Facing the technological blockade of aircraft-carrier powers, China’s aircraft carrier path started from zero. Without knowledge, how could the scrap iron brought back from Ukraine become the “Liaoning”; without knowledge, how could the J-15 carrier-based fighter successfully complete its maiden flight within one year? I thirst for knowledge and long to receive the most cutting-edge knowledge at Tsinghua. I hope that one day, with my own knowledge, I can make the world look at me with new eyes.&lt;/p&gt;
+&lt;p&gt;Knowledge alone is not enough; one also needs ability and qualities. These abilities and qualities include the spirit of relentlessly pursuing inspiration and belief, being good at observation, continuous learning, teamwork awareness, resource-sharing awareness, innovation ability, courage to question, and so on. Every advance in the history of science is closely related to these. Newton’s “giant effect” is known even to women and children: “If I have seen further, it is by standing on the shoulders of giants.” This is the advantage of resource sharing. Faraday firmly believed in Kantian philosophy and believed that all things had inner unity. Since electricity can produce magnetism, the magnetic effect of electric current, then magnetism should also produce electricity. So he began a large number of experiments. One failure, two failures, three failures… The shadow of failure hung over him, but he did not give up. After ten years of arduous and outstanding effort, he succeeded and discovered the law of electromagnetic induction. Many scientists at the time initially had the same idea as he did, but they did not pursue it persistently and thus missed the chance to change society. I believe that in Tsinghua Garden, I can learn these excellent qualities and pave the road for pursuing my dream in the future.&lt;/p&gt;
+&lt;p&gt;I am always working hard for this distant yet real ideal. As a high school student, conquering the Gaokao has become the nearest and most reachable step. Only by charging into Tsinghua can I climb higher. Step by step, I keep my feet on the ground; under stars and moon, I never complain of fatigue. I know deeply that in senior year, only blood and sweat will not deceive me. I silently cultivate with sweat and fertilize barren soil with hardship. Following my own plan, I seize every minute and second, enrich myself, and fight for the Gaokao, for Tsinghua, and for my dream.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/Beijing/THU-2013.JPG&#34; alt=&#34;August 2013, attending Tsinghua University&amp;#39;s summer camp. Selfie at the Second School Gate&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/Beijing/THU-2013-dorm.JPG&#34; alt=&#34;August 2013, attending Tsinghua University&amp;#39;s summer camp. Dormitory&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/Beijing/THU-2013-xiaojie.JPG&#34; alt=&#34;August 2013, attending Tsinghua University&amp;#39;s summer camp. With roommate Xiaojie&#34;&gt;&lt;/p&gt;
+</content>
+        <category term="Life" />
+        <updated>2013-06-07T02:29:10.000Z</updated>
     </entry>
 </feed>

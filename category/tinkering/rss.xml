@@ -21,10 +21,10 @@
         <category>Kuaishou</category>
         <category>Tech</category>
         <category>Dublin</category>
-        <category>travel</category>
-        <category>Travel Notes</category>
         <category>Alibaba</category>
         <category>intern</category>
+        <category>travel</category>
+        <category>Travel Notes</category>
         <category>Antifragile</category>
         <category>Are Your Lights On?</category>
         <category>Beijing</category>
@@ -39,6 +39,8 @@
         <category>contest</category>
         <category>WeRide</category>
         <category>C++</category>
+        <category>Database</category>
+        <category>Django</category>
         <category>C++11</category>
         <category>Elon Musk</category>
         <category>bank</category>
@@ -60,12 +62,12 @@
         <category>Algorithm</category>
         <category>LeetCode</category>
         <category>A Little History of the World</category>
-        <category>Liu Shen Lei Lei Reads Jin Yong</category>
         <category>Liu Shen Lei Lei Reads Tang Poetry</category>
+        <category>Liu Shen Lei Lei Reads Jin Yong</category>
         <category>Blog</category>
+        <category>miHoYo</category>
         <category>Travel</category>
         <category>Keyboard</category>
-        <category>miHoYo</category>
         <category>Poor Charlie&#39;s Almanack</category>
         <category>Programming Pearls</category>
         <category>Money</category>
@@ -83,8 +85,8 @@
         <category>The Almanack of Naval Ravikant</category>
         <category>Tencent</category>
         <category>The Art of War</category>
-        <category>The Bitcoin Standard</category>
         <category>The Collapse of the Heavenly Dynasty</category>
+        <category>The Bitcoin Standard</category>
         <category>The Hungry Golden Age</category>
         <category>The Glory and the Dream</category>
         <category>The Worlds I See</category>
@@ -94,6 +96,7 @@
         <category>Windows</category>
         <category>The Times</category>
         <category>XiaoLin Says</category>
+        <category>Atom</category>
         <category>hash</category>
         <category>unordered_map</category>
         <category>Tinkering</category>
@@ -101,20 +104,22 @@
         <category>Amazon</category>
         <category>Microsoft</category>
         <category>China</category>
+        <category>Travelogue</category>
         <category>vim</category>
         <category>investing</category>
-        <category>Travelogue</category>
         <category>Internship</category>
         <category>TeX</category>
         <category>Life and Death Are Wearing Me Out</category>
         <category>Mac</category>
         <category>Ubuntu</category>
         <category>Owncloud</category>
+        <category>Benchmark</category>
         <category>RIP</category>
         <category>sensetime</category>
-        <category>Git</category>
+        <category>Sublime</category>
         <category>vscode</category>
         <category>gcc</category>
+        <category>Git</category>
         <item>
             <guid isPermalink="true">https://youngforest.github.io/en/2021/10/13/Niz-plum-option-key-not-work/</guid>
             <title>Niz Plum Option Key Does Not Respond in Bluetooth Mode</title>
@@ -305,6 +310,37 @@
  ]]></description>
         </item>
         <item>
+            <guid isPermalink="true">https://youngforest.github.io/en/2017/08/12/optimize-cortana-in-searching-local-files-and-folders/</guid>
+            <title>Optimize Cortana in Searching Local Files and Folders</title>
+            <link>https://youngforest.github.io/en/2017/08/12/optimize-cortana-in-searching-local-files-and-folders/</link>
+            <category>Windows</category>
+            <pubDate>Sat, 12 Aug 2017 23:50:49 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;Problem-Description&#34;&gt;&lt;a href=&#34;#Problem-Description&#34; class=&#34;headerlink&#34; title=&#34;Problem Description&#34;&gt;&lt;/a&gt;Problem Description&lt;/h2&gt;&lt;p&gt;When I used Cortana, the personal assistant of Windows 10, I found it confusing that the search function sometimes worked badly and sometimes worked well. To improve my productivity, I googled this problem and found a good solution.&lt;/p&gt;
+&lt;h2 id=&#34;Reference&#34;&gt;&lt;a href=&#34;#Reference&#34; class=&#34;headerlink&#34; title=&#34;Reference&#34;&gt;&lt;/a&gt;Reference&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://www.windowscentral.com/how-add-new-cortana-search-file-locations-windows-10&#34;&gt;https://www.windowscentral.com/how-add-new-cortana-search-file-locations-windows-10&lt;/a&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://youngforest.github.io/en/2017/04/08/atom-explore/</guid>
+            <title>A Brief First Taste of Atom</title>
+            <link>https://youngforest.github.io/en/2017/04/08/atom-explore/</link>
+            <category>Atom</category>
+            <pubDate>Sat, 08 Apr 2017 22:20:36 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;Configure-Proxy&#34;&gt;&lt;a href=&#34;#Configure-Proxy&#34; class=&#34;headerlink&#34; title=&#34;Configure Proxy&#34;&gt;&lt;/a&gt;Configure Proxy&lt;/h2&gt;&lt;p&gt;My requirement was to insert LaTeX formulas into Markdown documents. Atom’s default &lt;code&gt;markdown-preview&lt;/code&gt; package could not satisfy this requirement. After searching, I found that the community package &lt;code&gt;markdown-preview-plus&lt;/code&gt; could satisfy it.&lt;/p&gt;
+&lt;h3 id=&#34;Atom-Package-Management&#34;&gt;&lt;a href=&#34;#Atom-Package-Management&#34; class=&#34;headerlink&#34; title=&#34;Atom Package Management&#34;&gt;&lt;/a&gt;&lt;a href=&#34;http://flight-manual.atom.io/using-atom/sections/atom-packages/#atom-packages&#34;&gt;Atom Package Management&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Following the official tutorial, the installation failed:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Installing “&lt;a href=&#34;mailto:&amp;#109;&amp;#x61;&amp;#114;&amp;#107;&amp;#100;&amp;#111;&amp;#x77;&amp;#110;&amp;#45;&amp;#112;&amp;#114;&amp;#x65;&amp;#x76;&amp;#x69;&amp;#x65;&amp;#119;&amp;#45;&amp;#112;&amp;#x6c;&amp;#x75;&amp;#x73;&amp;#64;&amp;#50;&amp;#46;&amp;#52;&amp;#x2e;&amp;#x39;&#34;&gt;&amp;#109;&amp;#x61;&amp;#114;&amp;#107;&amp;#100;&amp;#111;&amp;#x77;&amp;#110;&amp;#45;&amp;#112;&amp;#114;&amp;#x65;&amp;#x76;&amp;#x69;&amp;#x65;&amp;#119;&amp;#45;&amp;#112;&amp;#x6c;&amp;#x75;&amp;#x73;&amp;#64;&amp;#50;&amp;#46;&amp;#52;&amp;#x2e;&amp;#x39;&lt;/a&gt;” failed.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In the log, I found this request:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;GET &lt;a href=&#34;https://atom.io/download/electron/v1.3.13/iojs-v1.3.13.tar.gz&#34;&gt;https://atom.io/download/electron/v1.3.13/iojs-v1.3.13.tar.gz&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I then tested this URL in the browser. It did not respond, so I guessed it was blocked. Fortunately, the Atom documentation considered the need to use a proxy and provided a guide.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://flight-manual.atom.io/getting-started/sections/installing-atom/#using-a-proxy&#34;&gt;Configure a proxy for apm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Finally, basic proxy setup skills. No explanation needed.&lt;/p&gt;
+&lt;h3 id=&#34;Concrete-Commands&#34;&gt;&lt;a href=&#34;#Concrete-Commands&#34; class=&#34;headerlink&#34; title=&#34;Concrete Commands&#34;&gt;&lt;/a&gt;Concrete Commands&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sean@sean-OptiPlex-790:~$ apm config &lt;span class=&#34;built_in&#34;&gt;set&lt;/span&gt; https-proxy http://localhost:8123&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sean@sean-OptiPlex-790:~$ apm config get https-proxy&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;http://localhost:8123/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sean@sean-OptiPlex-790:~$ apm install markdown-preview-plus&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Installing markdown-preview-plus to /home/sean/.atom/packages ✓&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+ ]]></description>
+        </item>
+        <item>
             <guid isPermalink="true">https://youngforest.github.io/en/2017/03/26/gvim-configuration-for-windows/</guid>
             <title>gVim configuration for Windows</title>
             <link>https://youngforest.github.io/en/2017/03/26/gvim-configuration-for-windows/</link>
@@ -330,6 +366,134 @@
 
 &lt;p&gt;Press &lt;code&gt;F5&lt;/code&gt; when using it.&lt;/p&gt;
 &lt;h1 id=&#34;Afterword&#34;&gt;&lt;a href=&#34;#Afterword&#34; class=&#34;headerlink&#34; title=&#34;Afterword&#34;&gt;&lt;/a&gt;Afterword&lt;/h1&gt;&lt;p&gt;This post was completed with &lt;code&gt;gvim for MS-WINDOWS&lt;/code&gt;.&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://youngforest.github.io/en/2017/01/18/sublime-personlize/</guid>
+            <title>Personalizing Sublime</title>
+            <link>https://youngforest.github.io/en/2017/01/18/sublime-personlize/</link>
+            <category>Sublime</category>
+            <pubDate>Wed, 18 Jan 2017 15:27:15 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;&lt;strong&gt;[Abstract]&lt;/strong&gt; &lt;a href=&#34;https://www.sublimetext.com/&#34;&gt;Sublime Text 3&lt;/a&gt; is a powerful editor. I officially started using it in the second semester of sophomore year. After half a year of continuous exploration, I configured Sublime into a personalized editor that satisfies most of my daily coding needs.&lt;/p&gt;
+&lt;h3 id=&#34;Configure-Different-Settings-for-Different-Languages&#34;&gt;&lt;a href=&#34;#Configure-Different-Settings-for-Different-Languages&#34; class=&#34;headerlink&#34; title=&#34;Configure Different Settings for Different Languages&#34;&gt;&lt;/a&gt;Configure Different Settings for Different Languages&lt;/h3&gt;&lt;p&gt;First, open any file in that language. Go to &lt;code&gt;Sublime Text 3 -&amp;gt; Preferences -&amp;gt; Settings - Syntax Specific&lt;/code&gt; to enter that language’s settings file, then modify and save the settings file.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://mlo.io/blog/2012/08/23/language-specific-indents-sublime.html&#34;&gt;Reference: setting different indentation for different languages&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;Color-Scheme&#34;&gt;&lt;a href=&#34;#Color-Scheme&#34; class=&#34;headerlink&#34; title=&#34;Color Scheme&#34;&gt;&lt;/a&gt;Color Scheme&lt;/h3&gt;&lt;p&gt;The default theme of Sublime Text 3 is &lt;code&gt;Monokai(dark)&lt;/code&gt;. I think it is quite easy on the eyes, but the disadvantage is that its Markdown support is especially poor. Another theme I like, &lt;code&gt;Solarized(dark)&lt;/code&gt;, has the same problem. The default &lt;code&gt;Solarized&lt;/code&gt; experience is far from what it feels like in Vim. So I installed the &lt;code&gt;Solarized Color Scheme&lt;/code&gt; theme through &lt;code&gt;Package Contorl&lt;/code&gt;. Compared with Vim below, it is still quite pleasant to look at.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../assets/sublime-solarized-optimized.PNG&#34; alt=&#34;Solarized optimized for sublime&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../assets/vim-solarized.PNG&#34; alt=&#34;Solarized for vim&#34;&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://youngforest.github.io/en/2016/11/22/move-posts-from-cnblogs-to-Hexo/</guid>
+            <title>Migrating Posts from CNBlogs to Hexo</title>
+            <link>https://youngforest.github.io/en/2016/11/22/move-posts-from-cnblogs-to-Hexo/</link>
+            <category>Hexo</category>
+            <pubDate>Tue, 22 Nov 2016 01:42:23 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;Regarding how to migrate posts from other blogs to &lt;code&gt;Hexo&lt;/code&gt;, the &lt;a href=&#34;https://hexo.io/docs/migration.html&#34;&gt;official documentation&lt;/a&gt; provides some guidance. I also followed the official documentation to try migrating my previous posts from CNBlogs to the new blog. I encountered some problems during this process, so here are the solutions.&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;h2 id=&#34;Migration-Plugin-Not-Installed&#34;&gt;&lt;a href=&#34;#Migration-Plugin-Not-Installed&#34; class=&#34;headerlink&#34; title=&#34;Migration Plugin Not Installed&#34;&gt;&lt;/a&gt;Migration Plugin Not Installed&lt;/h2&gt;&lt;p&gt;CNBlogs needs RSS migration. Following the documentation, I installed the related plugin with &lt;code&gt;$ npm install hexo-migrator-rss --save&lt;/code&gt;, but when running the migration command &lt;code&gt;$ hexo migrate rss &amp;lt;source&amp;gt;&lt;/code&gt;, the following error was reported:&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;undefined migrator plugin is not installed.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Installed migrator plugins:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;For more &lt;span class=&#34;built_in&#34;&gt;help&lt;/span&gt;, you can check the online docs: http://hexo.io/&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;I found the answer on &lt;a href=&#34;http://stackoverflow.com/questions/34025076/when-running-hexo-migrate-rss-it-prompt-undefined-migrator-plugin-is-not-insta&#34;&gt;Stack Overflow&lt;/a&gt;. It turns out that the plugin installation command &lt;code&gt;$ npm install hexo-migrator-rss --save&lt;/code&gt; needs to be run under the blog directory. This shows I was still unfamiliar with Node.js, because Node.js package management installs locally by default, under the current folder.&lt;/p&gt;
+&lt;p&gt;After reinstalling the &lt;code&gt;hexo-migrator-rss&lt;/code&gt; plugin under the blog directory, the problem was solved.&lt;/p&gt;
+&lt;h2 id=&#34;Migrated-Posts-Only-Have-Summaries-and-Hyperlinks&#34;&gt;&lt;a href=&#34;#Migrated-Posts-Only-Have-Summaries-and-Hyperlinks&#34; class=&#34;headerlink&#34; title=&#34;Migrated Posts Only Have Summaries and Hyperlinks&#34;&gt;&lt;/a&gt;Migrated Posts Only Have Summaries and Hyperlinks&lt;/h2&gt;&lt;p&gt;After the migration succeeded, I excitedly checked the migration result immediately. It turned out that the migrated posts only had summaries and hyperlinks to the original CNBlogs posts, just like the image below. This was clearly not what I wanted.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cloud.githubusercontent.com/assets/13612111/20493077/5f16663e-b052-11e6-9a0f-256d35ca6110.png&#34; alt=&#34;Incomplete migration&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This happened because the RSS exported by CNBlogs is exactly like that. Through observation, I found that the RSS link is only an &lt;code&gt;xml&lt;/code&gt; file containing article information. In other words, if we can obtain an &lt;code&gt;xml&lt;/code&gt; file with full article information, it should work. It happens that CNBlogs’ backup function can provide such a file. Replacing the RSS link with the backup file link and running the migration command again can migrate the complete articles into Hexo. Below is the effect of complete migration.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cloud.githubusercontent.com/assets/13612111/20493198/cc799b42-b052-11e6-9a0d-28f2e3f8e207.png&#34; alt=&#34;Complete migration&#34;&gt;&lt;/p&gt;
+&lt;p&gt;However, this migration still lost information such as tags, so it was not completely satisfactory.&lt;/p&gt;
+&lt;h2 id=&#34;Strange-Formatting-Problems&#34;&gt;&lt;a href=&#34;#Strange-Formatting-Problems&#34; class=&#34;headerlink&#34; title=&#34;Strange Formatting Problems&#34;&gt;&lt;/a&gt;Strange Formatting Problems&lt;/h2&gt;&lt;p&gt;After successful migration, I found that the formatting of two posts became very strange. The main text was normal, but quoted sections and inserted code were laid out messily. Another post, however, was perfect. By observing the content of the migrated &lt;code&gt;xml&lt;/code&gt; file, I found that the content of those two posts was in HTML format, while the other post was in &lt;code&gt;Markdown&lt;/code&gt; format. Only then did I remember that the first two essays were written with the &lt;code&gt;TinyMCE editor&lt;/code&gt; recommended by CNBlogs, and only later did I switch to &lt;code&gt;Markdown&lt;/code&gt;. So of course Hexo could not support them perfectly.&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://youngforest.github.io/en/2016/11/02/terminal-proxy-configuration/</guid>
+            <title>Implementing a Terminal Proxy</title>
+            <link>https://youngforest.github.io/en/2016/11/02/terminal-proxy-configuration/</link>
+            <category>Linux</category>
+            <pubDate>Wed, 02 Nov 2016 23:30:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;Problem&#34;&gt;&lt;a href=&#34;#Problem&#34; class=&#34;headerlink&#34; title=&#34;Problem&#34;&gt;&lt;/a&gt;Problem&lt;/h2&gt;&lt;p&gt;As a Linuxer, being proficient with the terminal is an essential skill. But in the terminal, downloading and installing things can sometimes be very slow, which is frustrating. I naturally wondered whether I could add a proxy to improve the speed. I had been using Shadowsocks before, and the browser used SwitchyProxy, which achieved basic proxy-based internet access. So, is there a similar tool in the terminal? The answer is yes. Through targeted searching, I successfully solved the proxy problem in the terminal. I summarize it here and hope it can help everyone.&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;h2 id=&#34;Tools-Needed&#34;&gt;&lt;a href=&#34;#Tools-Needed&#34; class=&#34;headerlink&#34; title=&#34;Tools Needed&#34;&gt;&lt;/a&gt;Tools Needed&lt;/h2&gt;&lt;p&gt;Shadowsocks, Polipo&lt;/p&gt;
+&lt;h3 id=&#34;Shadowsocks&#34;&gt;&lt;a href=&#34;#Shadowsocks&#34; class=&#34;headerlink&#34; title=&#34;Shadowsocks&#34;&gt;&lt;/a&gt;Shadowsocks&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;https://shadowsocks.org/en/download/clients.html&#34;&gt;Download and Install Client&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;Install-Command-line-Client&#34;&gt;&lt;a href=&#34;#Install-Command-line-Client&#34; class=&#34;headerlink&#34; title=&#34;Install Command-line Client&#34;&gt;&lt;/a&gt;Install Command-line Client&lt;/h4&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;pip install shadowsocks&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;apt-get install shadowsocks-libev&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;cpan Net::Shadowsocks&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;For Shadowsocks configuration, you can refer to &lt;a href=&#34;http://bblove.me/2015/03/09/use-ss/&#34;&gt;this article&lt;/a&gt;. I configured it a long time ago, so I will not recall it here, since I have mostly forgotten it.&lt;/p&gt;
+&lt;p&gt;Let us start directly from Polipo.&lt;/p&gt;
+&lt;h3 id=&#34;Polipo&#34;&gt;&lt;a href=&#34;#Polipo&#34; class=&#34;headerlink&#34; title=&#34;Polipo&#34;&gt;&lt;/a&gt;Polipo&lt;/h3&gt;&lt;p&gt;Polipo has multiple installation methods. You can install it directly with Python’s package manager &lt;code&gt;pip&lt;/code&gt;, or use the package manager of each operating system. I recommend the latter because I personally think it is easier to manage. Here I use Ubuntu as an example.&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;apt-cache search polipo&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;adzapper - proxy advertisement zapper add-on&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;polipo - lightweight, caching web proxy&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;polipo-dbg - debug package for polipo&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;The second package is the one for beginners like us. Install it:&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt-get install polipo&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;After installation, it starts automatically by default.&lt;br&gt;We first need to modify its configuration file, &lt;code&gt;/etc/polipo/config&lt;/code&gt;:&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;logSyslog = true&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;logFile = /var/log/polipo/polipo.log&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;logLevel = 4 # 没有这句话的话`sudo polipo -v`会出现无法查看log文件的情况&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;socksParentProxy = &amp;quot;localhost:1080&amp;quot; # 这里假设shadowsocks的local port为1080&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;socksProxyType = socks5 # 是不是和SwitchyProxy的设置很像?&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;For specific configuration options, refer to the file &lt;code&gt;/usr/share/doc/polipo/examples/config.sample&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;After configuration, we need to restart the Polipo service. Every time the configuration file is modified, the service must be restarted to load it.&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo service polipo stop;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo service polipo start;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;Or directly:&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo service polipo restart;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;You can use:&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo polipo -v&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;to view the specific configuration items, and you can see that our previous changes have taken effect.&lt;/p&gt;
+&lt;h2 id=&#34;Testing&#34;&gt;&lt;a href=&#34;#Testing&#34; class=&#34;headerlink&#34; title=&#34;Testing&#34;&gt;&lt;/a&gt;Testing&lt;/h2&gt;&lt;p&gt;After configuration is complete, how do you know whether you can already access the internet through the proxy?&lt;br&gt;You can use the following commands:&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;~$ curl -i http://ip.cn&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;当前 IP：60.xxx.xxx.x 来自：中国北京北京 xxx/电信&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;~$ http_proxy=http://localhost:8123 curl -i http://ip.cn # polipo的默认端口为8123,如有需要可以自行改动&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;当前 IP：xxx.xxx.xxx.xx0 来自：美国加利福尼亚州洛杉矶&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;This counts as success.&lt;/p&gt;
+&lt;p&gt;Recently I discovered that the website &lt;code&gt;ip.cn&lt;/code&gt; no longer works and returns a 500 error. Replacing it with &lt;code&gt;ipinfo.io/ip&lt;/code&gt; works; this is another website that returns your public IP.&lt;br&gt;There are also other websites that provide similar IP-returning services:&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;curl ifconfig.me&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;curl icanhazip.com&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;curl ipecho.net/plain&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;curl ifconfig.co&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Ways to obtain your public IP from the browser:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.google.com/search?q=what%20is%20my%20IP%20address&#34;&gt;Google&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://duckduckgo.com/?q=ip&#34;&gt;DuckDuckGo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.wolframalpha.com/input/?i=what+is+my+ip+address&#34;&gt;Wolframalpha&lt;/a&gt;, recommended&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;Going-Further&#34;&gt;&lt;a href=&#34;#Going-Further&#34; class=&#34;headerlink&#34; title=&#34;Going Further&#34;&gt;&lt;/a&gt;Going Further&lt;/h2&gt;&lt;p&gt;Typing such a long command, &lt;code&gt;http_proxy=http://localhost:8123&lt;/code&gt;, every time is really not what we want. For convenience, you can type &lt;code&gt;export http_proxy=http://localhost:8123&lt;/code&gt; in the terminal, meaning it takes effect for all commands in that terminal. Or go one step further and add &lt;code&gt;export http_proxy=http://localhost:8123&lt;/code&gt; to &lt;code&gt;.bashrc&lt;/code&gt;, so it runs automatically every time the terminal starts. If you do not want every command to go through the proxy, you can do as I did and add &lt;code&gt;alias hp=&amp;quot;http_proxy=http://localhost:8123&amp;quot;&lt;/code&gt; to &lt;code&gt;.bashrc&lt;/code&gt;. Then every time you need a proxy, just add &lt;code&gt;hp &lt;/code&gt; before the command.&lt;/p&gt;
+&lt;h2 id=&#34;Configure-Proxy-for-Git&#34;&gt;&lt;a href=&#34;#Configure-Proxy-for-Git&#34; class=&#34;headerlink&#34; title=&#34;Configure Proxy for Git&#34;&gt;&lt;/a&gt;Configure Proxy for Git&lt;/h2&gt;&lt;p&gt;The speed of &lt;code&gt;git clone&lt;/code&gt; is quite moving, only a few dozen KB/s. Configuring a proxy for Git is also very simple.&lt;/p&gt;
+&lt;p&gt;Add the following setting to the http items of .gitconfig files.&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;[http]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;proxy = &amp;lt;address of the proxy server&amp;gt;:&amp;lt;port of the proxy server&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;You can also configure it using the following config command:&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git config --global http.proxy &amp;lt;address of the proxy server&amp;gt;:&amp;lt;port of the proxy server&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://gist.github.com/chuyik/02d0d37a49edc162546441092efae6a1&#34;&gt;Connect to GitHub via SSH&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Enjoy proxy-based internet access in the terminal.&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://youngforest.github.io/en/2016/11/02/Hexo-github-building-personal-blog/</guid>
+            <title>Building a Personal Blog with Hexo + GitHub</title>
+            <link>https://youngforest.github.io/en/2016/11/02/Hexo-github-building-personal-blog/</link>
+            <category>Hexo</category>
+            <pubDate>Wed, 02 Nov 2016 22:32:55 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;Motivation-Placed-First&#34;&gt;&lt;a href=&#34;#Motivation-Placed-First&#34; class=&#34;headerlink&#34; title=&#34;Motivation, Placed First&#34;&gt;&lt;/a&gt;Motivation, Placed First&lt;/h2&gt;&lt;p&gt;I used to have a blog on CNBlogs, but I did not maintain it often. Even now, counting everything, it only had three essays and one follower. The main reason was that I did not have the habit of writing. In high school, I kept a diary for a while and wrote more than half a notebook in total. It was all motivational, self-deceiving, content written for myself.&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+
+&lt;p&gt;First, I used to feel that there was nothing to write about, but now I think there is actually quite a lot. I have tinkered with many things over the past two years. But to be honest, after finishing the tinkering, I forget things very quickly. The next time I do it myself or help someone else handle the same problem, I basically have to start over. After writing things down, whether for my own future needs or for friends to reference, it is extremely useful.&lt;/p&gt;
+&lt;p&gt;Second, after being strongly recommended by experts, I learned that frequently writing blogs, summarizing one’s work and study, and communicating with experts online are basic skills for studying Computer Science. Writing things down not only systematically records my learning process for future review or for later people to reference, but also urges me to persist. Why not?&lt;/p&gt;
+&lt;p&gt;Finally, while recently working on the compiler course project, I saw &lt;a href=&#34;http://jcf94.com/2016/02/21/2016-02-21-pl0/&#34;&gt;this blog post&lt;/a&gt;. While learning compiler knowledge, I felt that the blog design was very beautiful and the blogger was also very nice. After learning that it was built with &lt;code&gt;Hexo&lt;/code&gt;, I had the idea of building my own blog, and now I finally have time to implement it.&lt;/p&gt;
+&lt;h2 id=&#34;Introduction-to-Hexo&#34;&gt;&lt;a href=&#34;#Introduction-to-Hexo&#34; class=&#34;headerlink&#34; title=&#34;Introduction to Hexo&#34;&gt;&lt;/a&gt;Introduction to &lt;code&gt;Hexo&lt;/code&gt;&lt;/h2&gt;&lt;p&gt;There are many frameworks specifically used to build blogs, such as WordPress, Jekyll, Octopress, Joomla, and so on. I have not used any of these, so I will not comment on them. In fact, this is my first experience building a blog, and in a way it was fate that I encountered Hexo.&lt;/p&gt;
+&lt;p&gt;Here I will talk about Hexo’s advantages based on my own experience:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Complete documentation.&lt;/li&gt;
+&lt;li&gt;Good Chinese support, including all aspects of the documentation. In fact, the developer is Chinese.&lt;/li&gt;
+&lt;li&gt;Rich themes, important for someone who cares about appearance.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;Setup-Process&#34;&gt;&lt;a href=&#34;#Setup-Process&#34; class=&#34;headerlink&#34; title=&#34;Setup Process&#34;&gt;&lt;/a&gt;Setup Process&lt;/h2&gt;&lt;h3 id=&#34;Local-Hexo-Installation-and-Configuration&#34;&gt;&lt;a href=&#34;#Local-Hexo-Installation-and-Configuration&#34; class=&#34;headerlink&#34; title=&#34;Local Hexo Installation and Configuration&#34;&gt;&lt;/a&gt;Local Hexo Installation and Configuration&lt;/h3&gt;&lt;p&gt;For how to build it, I recommend the official &lt;a href=&#34;https://hexo.io/zh-cn/docs/&#34;&gt;documentation&lt;/a&gt;. The documentation already explains things in detail. If you encounter problems, you can also ask directly in the discussion area at the bottom of the documentation. It seems many people encounter strange problems. I usually rely on Google when I encounter problems; in fact, many times Google leads me to the discussion area or the &lt;a href=&#34;https://hexo.io/zh-cn/docs/troubleshooting.html&#34;&gt;Troubleshoot&lt;/a&gt; section in the documentation.&lt;/p&gt;
+&lt;p&gt;The environment I used to install Hexo was Ubuntu 14.04. When installing Hexo with &lt;code&gt;$ npm install -g hexo-cli&lt;/code&gt;, I encountered this problem:&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sh: 1: node: not found&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npm WARN This failure might be due to the use of legacy binary &amp;quot;node&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npm WARN For further explanations, please read&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/usr/share/doc/nodejs/README.Debian&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Through searching, I quickly found the &lt;a href=&#34;http://stackoverflow.com/questions/21168141/cannot-install-packages-using-node-package-manager-in-ubuntu&#34;&gt;solution&lt;/a&gt;. You only need &lt;code&gt;sudo apt-get install nodejs-legacy&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The reason for this problem is that the Debian community found that the command for the Node.js interpreter is &lt;code&gt;node&lt;/code&gt;. However, this command conflicts in namespace with other packages, such as &lt;code&gt;ax25-node&lt;/code&gt; in the &lt;code&gt;node&lt;/code&gt; package. Therefore, they decided to change the Node.js interpreter command to &lt;code&gt;nodejs&lt;/code&gt;; when people need to use the Node.js interpreter, they should use the &lt;code&gt;nodejs&lt;/code&gt; command instead of &lt;code&gt;node&lt;/code&gt;. But this creates a backward compatibility problem, because previous Node.js scripts still use the &lt;code&gt;node&lt;/code&gt; command, and other Linux distributions have also always used &lt;code&gt;node&lt;/code&gt;. So they came up with a compatibility method: create a symbolic link from &lt;code&gt;/usr/bin/node&lt;/code&gt; to &lt;code&gt;/usr/bin/nodejs&lt;/code&gt;. This work is handled by the &lt;code&gt;node-legacy&lt;/code&gt; package, and users are not recommended to link it manually themselves. They also specified that the &lt;code&gt;nodejs&lt;/code&gt; source package should also provide a &lt;code&gt;node-legacy&lt;/code&gt; executable package. This “perfectly” solves the compatibility problem.&lt;/p&gt;
+&lt;p&gt;From this, it seems Debian-based distributions will all encounter this problem.&lt;/p&gt;
+&lt;h3 id=&#34;Publishing-to-GitHub&#34;&gt;&lt;a href=&#34;#Publishing-to-GitHub&#34; class=&#34;headerlink&#34; title=&#34;Publishing to GitHub&#34;&gt;&lt;/a&gt;Publishing to GitHub&lt;/h3&gt;&lt;p&gt;Create a new repository on GitHub named &lt;code&gt;&amp;#123;your name&amp;#125;.github.io&lt;/code&gt;; for example, mine is &lt;code&gt;youngforest.github.io&lt;/code&gt;. In fact, with this naming format, GitHub will configure your &lt;code&gt;[GitHub Pages](https://pages.github.com/)&lt;/code&gt; by default and publish it to &lt;code&gt;https://&amp;#123;your name&amp;#125;.github.io/&lt;/code&gt;; mine is &lt;code&gt;https://youngforest.github.io/&lt;/code&gt;.&lt;br&gt;Of course, if you do not name it this way, you can also configure &lt;code&gt;GitHub Page&lt;/code&gt; publication in the repository settings yourself.&lt;/p&gt;
+&lt;p&gt;In the local blog directory, run &lt;code&gt;hexo generate&lt;/code&gt;, and the static pages of your blog will be generated under &lt;code&gt;public/&lt;/code&gt;. Under this folder, push all files to the repository you created on GitHub.&lt;/p&gt;
+&lt;p&gt;As for how to push a local folder to a newly created repository, GitHub should tell you when you create the empty repository.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cloud.githubusercontent.com/assets/13612111/20461580/713552e6-af3d-11e6-8078-a8c570e594af.png&#34; alt=&#34;initial a repository in github&#34;&gt;&lt;/p&gt;
+&lt;p&gt;If you want to complete GitHub deployment with one command, you can refer to the &lt;a href=&#34;https://hexo.io/zh-cn/docs/deployment.html&#34;&gt;related documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;When I ran &lt;code&gt;hexo deploy&lt;/code&gt;, I encountered this error: &lt;code&gt;ERROR Deployer not found: git&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;After searching for a long time, I found the solution in a &lt;a href=&#34;https://github.com/hexojs/hexo/issues/1040&#34;&gt;Hexo issue&lt;/a&gt;. Just run the following commands in Bash.&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;npm install hexo-generator-index --save&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npm install hexo-generator-archive --save&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npm install hexo-generator-category --save&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npm install hexo-generator-tag --save&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npm install hexo-server --save&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npm install hexo-deployer-git --save&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npm install hexo-renderer-marked@0.2 --save&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npm install hexo-renderer-stylus@0.2 --save&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npm install hexo-generator-feed@1 --save&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npm install hexo-generator-sitemap@1 --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;When you visit your &lt;code&gt;GitHub Pages&lt;/code&gt; in the browser, you will see the deployed blog.&lt;br&gt;You can see my deployed blog &lt;a href=&#34;https://youngforest.github.io/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
  ]]></description>
         </item>
     </channel>

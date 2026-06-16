@@ -18,10 +18,10 @@
     <category term="Kuaishou" />
     <category term="Tech" />
     <category term="Dublin" />
-    <category term="travel" />
-    <category term="Travel Notes" />
     <category term="Alibaba" />
     <category term="intern" />
+    <category term="travel" />
+    <category term="Travel Notes" />
     <category term="Antifragile" />
     <category term="Are Your Lights On?" />
     <category term="Beijing" />
@@ -36,6 +36,8 @@
     <category term="contest" />
     <category term="WeRide" />
     <category term="C++" />
+    <category term="Database" />
+    <category term="Django" />
     <category term="C++11" />
     <category term="Elon Musk" />
     <category term="bank" />
@@ -57,12 +59,12 @@
     <category term="Algorithm" />
     <category term="LeetCode" />
     <category term="A Little History of the World" />
-    <category term="Liu Shen Lei Lei Reads Jin Yong" />
     <category term="Liu Shen Lei Lei Reads Tang Poetry" />
+    <category term="Liu Shen Lei Lei Reads Jin Yong" />
     <category term="Blog" />
+    <category term="miHoYo" />
     <category term="Travel" />
     <category term="Keyboard" />
-    <category term="miHoYo" />
     <category term="Poor Charlie&#39;s Almanack" />
     <category term="Programming Pearls" />
     <category term="Money" />
@@ -80,8 +82,8 @@
     <category term="The Almanack of Naval Ravikant" />
     <category term="Tencent" />
     <category term="The Art of War" />
-    <category term="The Bitcoin Standard" />
     <category term="The Collapse of the Heavenly Dynasty" />
+    <category term="The Bitcoin Standard" />
     <category term="The Hungry Golden Age" />
     <category term="The Glory and the Dream" />
     <category term="The Worlds I See" />
@@ -91,6 +93,7 @@
     <category term="Windows" />
     <category term="The Times" />
     <category term="XiaoLin Says" />
+    <category term="Atom" />
     <category term="hash" />
     <category term="unordered_map" />
     <category term="Tinkering" />
@@ -98,20 +101,22 @@
     <category term="Amazon" />
     <category term="Microsoft" />
     <category term="China" />
+    <category term="Travelogue" />
     <category term="vim" />
     <category term="investing" />
-    <category term="Travelogue" />
     <category term="Internship" />
     <category term="TeX" />
     <category term="Life and Death Are Wearing Me Out" />
     <category term="Mac" />
     <category term="Ubuntu" />
     <category term="Owncloud" />
+    <category term="Benchmark" />
     <category term="RIP" />
     <category term="sensetime" />
-    <category term="Git" />
+    <category term="Sublime" />
     <category term="vscode" />
     <category term="gcc" />
+    <category term="Git" />
     <entry>
         <id>https://youngforest.github.io/en/2021/09/07/Setup-English-blog/</id>
         <title>Creating Chinese and English Blogs with Hexo</title>
@@ -167,5 +172,64 @@
 </content>
         <category term="Hexo" />
         <updated>2021-02-25T03:17:14.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://youngforest.github.io/en/2016/11/22/move-posts-from-cnblogs-to-Hexo/</id>
+        <title>Migrating Posts from CNBlogs to Hexo</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2016/11/22/move-posts-from-cnblogs-to-Hexo/"/>
+        <content type="html">&lt;p&gt;Regarding how to migrate posts from other blogs to &lt;code&gt;Hexo&lt;/code&gt;, the &lt;a href=&#34;https://hexo.io/docs/migration.html&#34;&gt;official documentation&lt;/a&gt; provides some guidance. I also followed the official documentation to try migrating my previous posts from CNBlogs to the new blog. I encountered some problems during this process, so here are the solutions.&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;h2 id=&#34;Migration-Plugin-Not-Installed&#34;&gt;&lt;a href=&#34;#Migration-Plugin-Not-Installed&#34; class=&#34;headerlink&#34; title=&#34;Migration Plugin Not Installed&#34;&gt;&lt;/a&gt;Migration Plugin Not Installed&lt;/h2&gt;&lt;p&gt;CNBlogs needs RSS migration. Following the documentation, I installed the related plugin with &lt;code&gt;$ npm install hexo-migrator-rss --save&lt;/code&gt;, but when running the migration command &lt;code&gt;$ hexo migrate rss &amp;lt;source&amp;gt;&lt;/code&gt;, the following error was reported:&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;undefined migrator plugin is not installed.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Installed migrator plugins:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;For more &lt;span class=&#34;built_in&#34;&gt;help&lt;/span&gt;, you can check the online docs: http://hexo.io/&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;I found the answer on &lt;a href=&#34;http://stackoverflow.com/questions/34025076/when-running-hexo-migrate-rss-it-prompt-undefined-migrator-plugin-is-not-insta&#34;&gt;Stack Overflow&lt;/a&gt;. It turns out that the plugin installation command &lt;code&gt;$ npm install hexo-migrator-rss --save&lt;/code&gt; needs to be run under the blog directory. This shows I was still unfamiliar with Node.js, because Node.js package management installs locally by default, under the current folder.&lt;/p&gt;
+&lt;p&gt;After reinstalling the &lt;code&gt;hexo-migrator-rss&lt;/code&gt; plugin under the blog directory, the problem was solved.&lt;/p&gt;
+&lt;h2 id=&#34;Migrated-Posts-Only-Have-Summaries-and-Hyperlinks&#34;&gt;&lt;a href=&#34;#Migrated-Posts-Only-Have-Summaries-and-Hyperlinks&#34; class=&#34;headerlink&#34; title=&#34;Migrated Posts Only Have Summaries and Hyperlinks&#34;&gt;&lt;/a&gt;Migrated Posts Only Have Summaries and Hyperlinks&lt;/h2&gt;&lt;p&gt;After the migration succeeded, I excitedly checked the migration result immediately. It turned out that the migrated posts only had summaries and hyperlinks to the original CNBlogs posts, just like the image below. This was clearly not what I wanted.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cloud.githubusercontent.com/assets/13612111/20493077/5f16663e-b052-11e6-9a0f-256d35ca6110.png&#34; alt=&#34;Incomplete migration&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This happened because the RSS exported by CNBlogs is exactly like that. Through observation, I found that the RSS link is only an &lt;code&gt;xml&lt;/code&gt; file containing article information. In other words, if we can obtain an &lt;code&gt;xml&lt;/code&gt; file with full article information, it should work. It happens that CNBlogs’ backup function can provide such a file. Replacing the RSS link with the backup file link and running the migration command again can migrate the complete articles into Hexo. Below is the effect of complete migration.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cloud.githubusercontent.com/assets/13612111/20493198/cc799b42-b052-11e6-9a0d-28f2e3f8e207.png&#34; alt=&#34;Complete migration&#34;&gt;&lt;/p&gt;
+&lt;p&gt;However, this migration still lost information such as tags, so it was not completely satisfactory.&lt;/p&gt;
+&lt;h2 id=&#34;Strange-Formatting-Problems&#34;&gt;&lt;a href=&#34;#Strange-Formatting-Problems&#34; class=&#34;headerlink&#34; title=&#34;Strange Formatting Problems&#34;&gt;&lt;/a&gt;Strange Formatting Problems&lt;/h2&gt;&lt;p&gt;After successful migration, I found that the formatting of two posts became very strange. The main text was normal, but quoted sections and inserted code were laid out messily. Another post, however, was perfect. By observing the content of the migrated &lt;code&gt;xml&lt;/code&gt; file, I found that the content of those two posts was in HTML format, while the other post was in &lt;code&gt;Markdown&lt;/code&gt; format. Only then did I remember that the first two essays were written with the &lt;code&gt;TinyMCE editor&lt;/code&gt; recommended by CNBlogs, and only later did I switch to &lt;code&gt;Markdown&lt;/code&gt;. So of course Hexo could not support them perfectly.&lt;/p&gt;
+</content>
+        <category term="Hexo" />
+        <updated>2016-11-21T17:42:23.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://youngforest.github.io/en/2016/11/02/Hexo-github-building-personal-blog/</id>
+        <title>Building a Personal Blog with Hexo + GitHub</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2016/11/02/Hexo-github-building-personal-blog/"/>
+        <content type="html">&lt;h2 id=&#34;Motivation-Placed-First&#34;&gt;&lt;a href=&#34;#Motivation-Placed-First&#34; class=&#34;headerlink&#34; title=&#34;Motivation, Placed First&#34;&gt;&lt;/a&gt;Motivation, Placed First&lt;/h2&gt;&lt;p&gt;I used to have a blog on CNBlogs, but I did not maintain it often. Even now, counting everything, it only had three essays and one follower. The main reason was that I did not have the habit of writing. In high school, I kept a diary for a while and wrote more than half a notebook in total. It was all motivational, self-deceiving, content written for myself.&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+
+&lt;p&gt;First, I used to feel that there was nothing to write about, but now I think there is actually quite a lot. I have tinkered with many things over the past two years. But to be honest, after finishing the tinkering, I forget things very quickly. The next time I do it myself or help someone else handle the same problem, I basically have to start over. After writing things down, whether for my own future needs or for friends to reference, it is extremely useful.&lt;/p&gt;
+&lt;p&gt;Second, after being strongly recommended by experts, I learned that frequently writing blogs, summarizing one’s work and study, and communicating with experts online are basic skills for studying Computer Science. Writing things down not only systematically records my learning process for future review or for later people to reference, but also urges me to persist. Why not?&lt;/p&gt;
+&lt;p&gt;Finally, while recently working on the compiler course project, I saw &lt;a href=&#34;http://jcf94.com/2016/02/21/2016-02-21-pl0/&#34;&gt;this blog post&lt;/a&gt;. While learning compiler knowledge, I felt that the blog design was very beautiful and the blogger was also very nice. After learning that it was built with &lt;code&gt;Hexo&lt;/code&gt;, I had the idea of building my own blog, and now I finally have time to implement it.&lt;/p&gt;
+&lt;h2 id=&#34;Introduction-to-Hexo&#34;&gt;&lt;a href=&#34;#Introduction-to-Hexo&#34; class=&#34;headerlink&#34; title=&#34;Introduction to Hexo&#34;&gt;&lt;/a&gt;Introduction to &lt;code&gt;Hexo&lt;/code&gt;&lt;/h2&gt;&lt;p&gt;There are many frameworks specifically used to build blogs, such as WordPress, Jekyll, Octopress, Joomla, and so on. I have not used any of these, so I will not comment on them. In fact, this is my first experience building a blog, and in a way it was fate that I encountered Hexo.&lt;/p&gt;
+&lt;p&gt;Here I will talk about Hexo’s advantages based on my own experience:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Complete documentation.&lt;/li&gt;
+&lt;li&gt;Good Chinese support, including all aspects of the documentation. In fact, the developer is Chinese.&lt;/li&gt;
+&lt;li&gt;Rich themes, important for someone who cares about appearance.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;Setup-Process&#34;&gt;&lt;a href=&#34;#Setup-Process&#34; class=&#34;headerlink&#34; title=&#34;Setup Process&#34;&gt;&lt;/a&gt;Setup Process&lt;/h2&gt;&lt;h3 id=&#34;Local-Hexo-Installation-and-Configuration&#34;&gt;&lt;a href=&#34;#Local-Hexo-Installation-and-Configuration&#34; class=&#34;headerlink&#34; title=&#34;Local Hexo Installation and Configuration&#34;&gt;&lt;/a&gt;Local Hexo Installation and Configuration&lt;/h3&gt;&lt;p&gt;For how to build it, I recommend the official &lt;a href=&#34;https://hexo.io/zh-cn/docs/&#34;&gt;documentation&lt;/a&gt;. The documentation already explains things in detail. If you encounter problems, you can also ask directly in the discussion area at the bottom of the documentation. It seems many people encounter strange problems. I usually rely on Google when I encounter problems; in fact, many times Google leads me to the discussion area or the &lt;a href=&#34;https://hexo.io/zh-cn/docs/troubleshooting.html&#34;&gt;Troubleshoot&lt;/a&gt; section in the documentation.&lt;/p&gt;
+&lt;p&gt;The environment I used to install Hexo was Ubuntu 14.04. When installing Hexo with &lt;code&gt;$ npm install -g hexo-cli&lt;/code&gt;, I encountered this problem:&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sh: 1: node: not found&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npm WARN This failure might be due to the use of legacy binary &amp;quot;node&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npm WARN For further explanations, please read&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/usr/share/doc/nodejs/README.Debian&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Through searching, I quickly found the &lt;a href=&#34;http://stackoverflow.com/questions/21168141/cannot-install-packages-using-node-package-manager-in-ubuntu&#34;&gt;solution&lt;/a&gt;. You only need &lt;code&gt;sudo apt-get install nodejs-legacy&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The reason for this problem is that the Debian community found that the command for the Node.js interpreter is &lt;code&gt;node&lt;/code&gt;. However, this command conflicts in namespace with other packages, such as &lt;code&gt;ax25-node&lt;/code&gt; in the &lt;code&gt;node&lt;/code&gt; package. Therefore, they decided to change the Node.js interpreter command to &lt;code&gt;nodejs&lt;/code&gt;; when people need to use the Node.js interpreter, they should use the &lt;code&gt;nodejs&lt;/code&gt; command instead of &lt;code&gt;node&lt;/code&gt;. But this creates a backward compatibility problem, because previous Node.js scripts still use the &lt;code&gt;node&lt;/code&gt; command, and other Linux distributions have also always used &lt;code&gt;node&lt;/code&gt;. So they came up with a compatibility method: create a symbolic link from &lt;code&gt;/usr/bin/node&lt;/code&gt; to &lt;code&gt;/usr/bin/nodejs&lt;/code&gt;. This work is handled by the &lt;code&gt;node-legacy&lt;/code&gt; package, and users are not recommended to link it manually themselves. They also specified that the &lt;code&gt;nodejs&lt;/code&gt; source package should also provide a &lt;code&gt;node-legacy&lt;/code&gt; executable package. This “perfectly” solves the compatibility problem.&lt;/p&gt;
+&lt;p&gt;From this, it seems Debian-based distributions will all encounter this problem.&lt;/p&gt;
+&lt;h3 id=&#34;Publishing-to-GitHub&#34;&gt;&lt;a href=&#34;#Publishing-to-GitHub&#34; class=&#34;headerlink&#34; title=&#34;Publishing to GitHub&#34;&gt;&lt;/a&gt;Publishing to GitHub&lt;/h3&gt;&lt;p&gt;Create a new repository on GitHub named &lt;code&gt;&amp;#123;your name&amp;#125;.github.io&lt;/code&gt;; for example, mine is &lt;code&gt;youngforest.github.io&lt;/code&gt;. In fact, with this naming format, GitHub will configure your &lt;code&gt;[GitHub Pages](https://pages.github.com/)&lt;/code&gt; by default and publish it to &lt;code&gt;https://&amp;#123;your name&amp;#125;.github.io/&lt;/code&gt;; mine is &lt;code&gt;https://youngforest.github.io/&lt;/code&gt;.&lt;br&gt;Of course, if you do not name it this way, you can also configure &lt;code&gt;GitHub Page&lt;/code&gt; publication in the repository settings yourself.&lt;/p&gt;
+&lt;p&gt;In the local blog directory, run &lt;code&gt;hexo generate&lt;/code&gt;, and the static pages of your blog will be generated under &lt;code&gt;public/&lt;/code&gt;. Under this folder, push all files to the repository you created on GitHub.&lt;/p&gt;
+&lt;p&gt;As for how to push a local folder to a newly created repository, GitHub should tell you when you create the empty repository.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cloud.githubusercontent.com/assets/13612111/20461580/713552e6-af3d-11e6-8078-a8c570e594af.png&#34; alt=&#34;initial a repository in github&#34;&gt;&lt;/p&gt;
+&lt;p&gt;If you want to complete GitHub deployment with one command, you can refer to the &lt;a href=&#34;https://hexo.io/zh-cn/docs/deployment.html&#34;&gt;related documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;When I ran &lt;code&gt;hexo deploy&lt;/code&gt;, I encountered this error: &lt;code&gt;ERROR Deployer not found: git&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;After searching for a long time, I found the solution in a &lt;a href=&#34;https://github.com/hexojs/hexo/issues/1040&#34;&gt;Hexo issue&lt;/a&gt;. Just run the following commands in Bash.&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;npm install hexo-generator-index --save&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npm install hexo-generator-archive --save&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npm install hexo-generator-category --save&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npm install hexo-generator-tag --save&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npm install hexo-server --save&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npm install hexo-deployer-git --save&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npm install hexo-renderer-marked@0.2 --save&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npm install hexo-renderer-stylus@0.2 --save&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npm install hexo-generator-feed@1 --save&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npm install hexo-generator-sitemap@1 --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;When you visit your &lt;code&gt;GitHub Pages&lt;/code&gt; in the browser, you will see the deployed blog.&lt;br&gt;You can see my deployed blog &lt;a href=&#34;https://youngforest.github.io/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</content>
+        <category term="Hexo" />
+        <updated>2016-11-02T14:32:55.000Z</updated>
     </entry>
 </feed>

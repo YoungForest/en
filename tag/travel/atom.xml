@@ -18,10 +18,10 @@
     <category term="Kuaishou" />
     <category term="Tech" />
     <category term="Dublin" />
-    <category term="travel" />
-    <category term="Travel Notes" />
     <category term="Alibaba" />
     <category term="intern" />
+    <category term="travel" />
+    <category term="Travel Notes" />
     <category term="Antifragile" />
     <category term="Are Your Lights On?" />
     <category term="Beijing" />
@@ -36,6 +36,8 @@
     <category term="contest" />
     <category term="WeRide" />
     <category term="C++" />
+    <category term="Database" />
+    <category term="Django" />
     <category term="C++11" />
     <category term="Elon Musk" />
     <category term="bank" />
@@ -57,12 +59,12 @@
     <category term="Algorithm" />
     <category term="LeetCode" />
     <category term="A Little History of the World" />
-    <category term="Liu Shen Lei Lei Reads Jin Yong" />
     <category term="Liu Shen Lei Lei Reads Tang Poetry" />
+    <category term="Liu Shen Lei Lei Reads Jin Yong" />
     <category term="Blog" />
+    <category term="miHoYo" />
     <category term="Travel" />
     <category term="Keyboard" />
-    <category term="miHoYo" />
     <category term="Poor Charlie&#39;s Almanack" />
     <category term="Programming Pearls" />
     <category term="Money" />
@@ -80,8 +82,8 @@
     <category term="The Almanack of Naval Ravikant" />
     <category term="Tencent" />
     <category term="The Art of War" />
-    <category term="The Bitcoin Standard" />
     <category term="The Collapse of the Heavenly Dynasty" />
+    <category term="The Bitcoin Standard" />
     <category term="The Hungry Golden Age" />
     <category term="The Glory and the Dream" />
     <category term="The Worlds I See" />
@@ -91,6 +93,7 @@
     <category term="Windows" />
     <category term="The Times" />
     <category term="XiaoLin Says" />
+    <category term="Atom" />
     <category term="hash" />
     <category term="unordered_map" />
     <category term="Tinkering" />
@@ -98,20 +101,22 @@
     <category term="Amazon" />
     <category term="Microsoft" />
     <category term="China" />
+    <category term="Travelogue" />
     <category term="vim" />
     <category term="investing" />
-    <category term="Travelogue" />
     <category term="Internship" />
     <category term="TeX" />
     <category term="Life and Death Are Wearing Me Out" />
     <category term="Mac" />
     <category term="Ubuntu" />
     <category term="Owncloud" />
+    <category term="Benchmark" />
     <category term="RIP" />
     <category term="sensetime" />
-    <category term="Git" />
+    <category term="Sublime" />
     <category term="vscode" />
     <category term="gcc" />
+    <category term="Git" />
     <entry>
         <id>https://youngforest.github.io/en/2022/12/15/Netherlands-Visa-from-Ireland/</id>
         <title>Applying for a Netherlands Short-Stay Schengen Visa in Ireland</title>
@@ -367,5 +372,26 @@
 </content>
         <category term="Travel" />
         <updated>2018-09-14T13:07:24.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://youngforest.github.io/en/2016/08/25/my-britain-trip/</id>
+        <title>Thoughts and Observations from a Study Trip to Britain</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2016/08/25/my-britain-trip/"/>
+        <content type="html">&lt;p&gt;This summer, I was fortunate to participate in the UK exchange camp jointly organized by Beihang’s Advanced Engineering School and the Cambridge Eastern Education and Development Society. The exchange camp lasted two weeks, with rich content and diverse formats. It gave me a deep understanding of British humanities and culture, as well as the situation of Chinese students studying abroad, and successfully fulfilled my pre-trip goals. Next, I will organize the whole trip and share it with everyone, hoping it will be helpful.&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+
+&lt;p&gt;This was my first opportunity to go abroad, and it can also be considered a landmark event in my life. I was very excited and had been looking forward to this exchange for half a semester. Before going to Britain, the Brexit referendum succeeded by a narrow margin of several million votes. Prime Minister Cameron resigned, the pound fell 10%, and we invisibly saved some money. After several months of pre-trip preparation, we finally set foot in this country eight thousand kilometers from home and began a two-week study trip. The so-called study trip included both an intense journey around Britain, from south to north and then from north to south, visiting many natural and cultural landscapes, and five full days of study life in Cambridge, one night lodging at Durham University, visits and tours at the University of Edinburgh, exchange and study at the University of Manchester, and two days of experience at the University of London. The 14-day exchange camp, from Heathrow Airport to Heathrow Airport, could be said to have brainwashed the whole person. There were many reasons for this brainwashing, and I will describe them below from several aspects.&lt;/p&gt;
+&lt;p&gt;Regarding studying abroad, there were 19 students in this team, including 3 PhD students, 3 graduate students, and 13 undergraduates. Most people came with the intention of studying abroad later. Although everyone’s ambitions differed and not all study-abroad goals were in Britain, coming here allowed us to visit and experience many famous British universities and understand the study-abroad policies and international student situations here. At each university, we basically had students from that university serving as mentors, guiding us to better understand the university. Some of these people were Chinese international students, one was from Beihang, and some were from other countries, such as the Mexican student Julie at Cambridge. Especially during the five days at the University of Cambridge, in the mornings the Cambridge Eastern Education and Development Society invited several excellent Cambridge professors to teach us various professional and cultural courses. Although the class experience may not have been exactly the same as real Cambridge classes, it was enough for us to experience what classes at a world-class university like Cambridge are like. They also invited the head of Cambridge admissions to introduce the study-abroad situation at Cambridge and carefully answer our various questions. In the afternoons, we generally had visits, exchanges, and cultural experiences, such as punting, visiting famous colleges like Trinity College, St John’s College, and King’s College, and visiting the language center. One evening, we also watched students from King’s College perform one of Shakespeare’s four great comedies, &lt;em&gt;As You Like It&lt;/em&gt;. Although I could not understand the content of the play, the experience of freezing on the grass for two hours still left a deep impression. What impressed me especially was visiting the Cavendish Laboratory. The Cavendish Laboratory can be called the most famous laboratory in the history of physics and has always been a sacred place for physics people. I previously had a misunderstanding, thinking that the Cavendish Laboratory was built to commemorate the Cavendish who measured the gravitational constant, so it was named “Cavendish Laboratory.” Only after coming here did I learn that the Cavendish Laboratory was funded and built by William Cavendish, a chancellor of the University of Cambridge, so it was named after the donor’s surname. It is worth mentioning that William Cavendish was a close relative of Henry Cavendish, who measured the gravitational constant, and both belonged to the distinguished Cavendish family. This physics laboratory, built in 1874, has produced nearly 30 Nobel Prize winners and many major scientific achievements that influenced human progress, including the discovery of the electron, the neutron, the structure of the atomic nucleus, and the DNA double helix, making a decisive contribution to human scientific development. With reverence, we took a group photo outside the new Cavendish Laboratory to commemorate the exchange activity here and the intellectual baptism we received. Although this exchange activity was relatively short, it benefited me greatly, strengthened my belief in studying abroad, and allowed me to make many like-minded friends, making me feel less alone on the road ahead.&lt;/p&gt;
+&lt;p&gt;British food is famously bad worldwide. How bad is it? On the street you can find all kinds of cuisines: Chinese, Indian, Thai, Mexican, Italian, French… but not British restaurants. The only somewhat distinctive fish and chips are simply not even as good as KFC’s fried chicken and fries. No wonder Chinese students studying in Britain all learn to cook for themselves. Eating outside is expensive, and you cannot get anything good. Only after personally experiencing two weeks of British food did we deeply agree with this. The almost daily full English breakfast left a deep impression on every one of us. At first, everyone found it novel and thought it tasted fine, had many varieties, and was quite nutritious. But after a few days, it became hard to bear. It turns out that the meaning of full English breakfast is that all of England eats it every day. Now, after returning to China and eating steamed buns with soy milk, fried dough sticks, and tofu pudding, I feel indescribably happy.&lt;/p&gt;
+&lt;p&gt;Culturally, I was also greatly shocked.&lt;/p&gt;
+&lt;p&gt;During our time in Britain, it happened to be the Rio Olympics, and it was clear that British people were quite enthusiastic about the Olympics. When we were visiting a manor, we met a British man. Seeing that I had a Chinese face, he asked where I was from. I said China. He happily said China was performing very well in the Olympics, then listed strong Chinese events such as diving, gymnastics, table tennis, and weightlifting, praising them nonstop. At that time China was still second on the gold medal table. During our second week in Britain, Britain’s number of gold medals surpassed China’s and remained ahead until the Olympics ended. During the three nights staying at Travelodge, my nightly entertainment was watching TV to see what British television was talking about. BBC One played Olympic programming all day long. BBC is equivalent to CCTV in China, showing the media’s degree of attention to the Olympics. In British pubs, the Olympics and football are eternal themes. However, British media and the public mainly focus on strong British events like cycling and rowing, paying less attention to others. This is very similar to China, where we also pay more attention to our own traditional strong events.&lt;/p&gt;
+&lt;p&gt;British gentleman culture. As an old capitalist country, Britain was once the empire on which the sun never set and held global hegemony for a century. Although it no longer has its former glory, it is still a powerful capitalist country, second only to the United States, Japan, and Germany. As everyone knows, the British bourgeois revolution was an incomplete and compromising revolution. It not only retained the royal family, but also retained a large part of the aristocracy. These new aristocrats now form a unique gentry culture. British people say “Thank you” under all circumstances. This thank you no longer only means thank you; it is more a kind of culture. Many times it left us at a loss, so we could only follow along and say “Thank you.” British people like queuing. We felt this deeply during the trip, the so-called “queue culture.” They like queuing, and often queue unconsciously. Sometimes it felt quite funny.&lt;/p&gt;
+&lt;p&gt;The British climate. The impression we got from textbooks since childhood is that Britain is always raining. After coming here, I learned that this is not exactly true, or at least inaccurate. According to international students, the British sky is more often “grey,” more like cloudy. Sunny days are in the minority. When it is sunny, British people all come out, sit on the grass to sunbathe, and then do nothing for the whole day. We called this “decadent capitalism.” British people never carry umbrellas because they often do not need them. British rain is generally not heavy and does not last long. Carrying an umbrella is awkward, so it is better not to carry one.&lt;/p&gt;
+&lt;p&gt;Scotland. England, Scotland, Britain, Great Britain, the United Kingdom… most Chinese people may not be very clear about who is who, while the centuries of love and hatred between Scotland and England are often joked about by Chinese people. Part of our itinerary this time was completed in Scotland. In Scotland, you absolutely cannot see Britain’s Union Jack; it is replaced by Scotland’s own flag. Scotland even has the Bank of Scotland issuing its own banknotes, basically saying, “I just will not spend your money.” Some time ago Scotland was also pushing for independence and held an independence referendum. Prime Minister Cameron cried and begged Scotland not to leave, but in the end the vote result was to stay in the UK. In this Brexit referendum, most of Scotland chose to remain in the EU. The reason was: whatever England supports, we oppose; whatever England opposes, we support. Scotland, together with London, became part of the Remain camp. Unfortunately, there are relatively few Scottish people, so they did not affect the overall situation. After Brexit, rumors emerged again that Scotland planned to leave the UK first and then join the EU. Culturally, Scotland is also quite different from England. Although Scotland does not have its own language and speaks English, its accent is truly distinctive. Scotland has its own culture: kilts, bagpipes, Scottish poets… J. K. Rowling, the author of &lt;em&gt;Harry Potter&lt;/em&gt;, known to Chinese people, completed it in the Elephant House cafe in Edinburgh, Scotland. In the World Cup and European Championship, Scotland and England also each have their own football teams. In short, coming to Scotland really showed us a different Britain.&lt;/p&gt;
+&lt;p&gt;The two-week experience of living in Britain has now ended. Although I still had not adjusted from jet lag, I hurried to write this summary. When the exchange in Britain ended, everyone was reluctant to part. We went from polite strangers to close conversations with each other. But after all, everyone is at Beihang, so there will be many opportunities to meet again in the future. The lovely people in Britain, however, may be hard to meet again. The huge and cute fat driver, the petite Julie, the mentors in Edinburgh and Oxford, as well as Teacher Kong and Teacher Gao; we shared a wonderful memory together, and I will always remember you.&lt;/p&gt;
+&lt;h1 id=&#34;Afterword&#34;&gt;&lt;a href=&#34;#Afterword&#34; class=&#34;headerlink&#34; title=&#34;Afterword&#34;&gt;&lt;/a&gt;Afterword&lt;/h1&gt;&lt;p&gt;&lt;img src=&#34;/images/britain.jpg&#34; alt=&#34;A photo with &amp;quot;Sherlock&amp;quot; at 221B Baker Street&#34;&gt;&lt;br&gt;A photo with “Sherlock” at 221B Baker Street. Because there are many Chinese tourists, he can speak Chinese. After getting permission for the photo, I said “Thank you,” and he politely replied, “It was nothing.”&lt;/p&gt;
+</content>
+        <category term="Travel" />
+        <updated>2016-08-25T06:48:19.000Z</updated>
     </entry>
 </feed>

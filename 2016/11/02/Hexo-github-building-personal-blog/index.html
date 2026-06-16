@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 5.4.2">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/en/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/en/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/en/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/en/images/logo.svg" color="#222">
+  <meta name="google-site-verification" content="1T-h_WTI8xskfXv9HxKWHfxqfzny6jcGdT5hmIExYqY">
+
+<link rel="stylesheet" href="/en/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"youngforest.github.io","root":"/en/","images":"/en/images","scheme":"Mist","darkmode":false,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/en/js/config.js" defer></script>
+
+    <meta name="description" content="Motivation, Placed First I used to have a blog on CNBlogs, but I did not maintain it often. Even now, counting everything, it only had three essays and one follower. The main reason was that I did not">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Building a Personal Blog with Hexo + GitHub">
+<meta property="og:url" content="https://youngforest.github.io/en/2016/11/02/Hexo-github-building-personal-blog/index.html">
+<meta property="og:site_name" content="YoungForest&#39;s blog">
+<meta property="og:description" content="Motivation, Placed First I used to have a blog on CNBlogs, but I did not maintain it often. Even now, counting everything, it only had three essays and one follower. The main reason was that I did not">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cloud.githubusercontent.com/assets/13612111/20461580/713552e6-af3d-11e6-8078-a8c570e594af.png">
+<meta property="article:published_time" content="2016-11-02T14:32:55.000Z">
+<meta property="article:modified_time" content="2026-06-16T04:15:46.378Z">
+<meta property="article:author" content="YoungForest">
+<meta property="article:tag" content="Hexo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cloud.githubusercontent.com/assets/13612111/20461580/713552e6-af3d-11e6-8078-a8c570e594af.png">
+
+
+<link rel="canonical" href="https://youngforest.github.io/en/2016/11/02/Hexo-github-building-personal-blog/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://youngforest.github.io/en/2016/11/02/Hexo-github-building-personal-blog/","path":"2016/11/02/Hexo-github-building-personal-blog/","title":"Building a Personal Blog with Hexo + GitHub"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Building a Personal Blog with Hexo + GitHub | YoungForest's blog</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-88350169-1"></script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"UA-88350169-1","only_pageview":false,"measure_protocol_api_secret":null}</script>
+  <script src="/en/js/third-party/analytics/google-analytics.js" defer></script>
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/en/js/utils.js" defer></script><script src="/en/js/motion.js" defer></script><script src="/en/js/sidebar.js" defer></script><script src="/en/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+<script data-ad-client="ca-pub-9046219176772396" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9046219176772396"></script>
+
+  <noscript>
+    <link rel="stylesheet" href="/en/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/en/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">YoungForest's blog</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/en/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/en/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/en/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li><li class="menu-item menu-item-categories"><a href="/en/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li><li class="menu-item menu-item-archives"><a href="/en/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li><li class="menu-item menu-item-中文"><a href="https://youngforest.github.io/" rel="section"><i class="fa fa-language fa-fw"></i>中文</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Motivation-Placed-First"><span class="nav-number">1.</span> <span class="nav-text">Motivation, Placed First</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Introduction-to-Hexo"><span class="nav-number">2.</span> <span class="nav-text">Introduction to Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Setup-Process"><span class="nav-number">3.</span> <span class="nav-text">Setup Process</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Local-Hexo-Installation-and-Configuration"><span class="nav-number">3.1.</span> <span class="nav-text">Local Hexo Installation and Configuration</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Publishing-to-GitHub"><span class="nav-number">3.2.</span> <span class="nav-text">Publishing to GitHub</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">YoungForest</p>
+  <div class="site-description" itemprop="description">A programmer in Amazon Beijing, China</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/en/archives/">
+          <span class="site-state-item-count">286</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/en/categories/">
+        <span class="site-state-item-count">19</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/en/tags/">
+        <span class="site-state-item-count">113</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/YoungForest" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;YoungForest" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:sen.yang96@outlook.com" title="E-Mail → mailto:sen.yang96@outlook.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/u/1111372490" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;u&#x2F;1111372490" rel="noopener me" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/youngforest" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;youngforest" rel="noopener me" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://stackoverflow.com/users/6393787/youngforest" title="StackOverflow → https:&#x2F;&#x2F;stackoverflow.com&#x2F;users&#x2F;6393787&#x2F;youngforest" rel="noopener me" target="_blank"><i class="fab fa-stack-overflow fa-fw"></i>StackOverflow</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.linkedin.com/in/sen-yang-a20a02137/" title="LinkedIn → https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;sen-yang-a20a02137&#x2F;" rel="noopener me" target="_blank"><i class="fab fa-linkedin fa-fw"></i>LinkedIn</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/en/atom.xml" title="RSS → &#x2F;atom.xml" rel="noopener me"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="sidebar-inner sidebar-blogroll">
+      <div class="links-of-blogroll animated">
+        <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+          Links
+        </div>
+        <ul class="links-of-blogroll-list">
+            <li class="links-of-blogroll-item">
+              <a href="https://www.kenshinji.me/" title="https:&#x2F;&#x2F;www.kenshinji.me" rel="noopener" target="_blank">Fred</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://jacklandrin.github.io/" title="https:&#x2F;&#x2F;jacklandrin.github.io" rel="noopener" target="_blank">LiuBo</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://xiaozhou.net/" title="https:&#x2F;&#x2F;xiaozhou.net" rel="noopener" target="_blank">Timothy</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://nicelylit.net/" title="https:&#x2F;&#x2F;nicelylit.net&#x2F;" rel="noopener" target="_blank">Jeremy's World</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://fenghe.us/" title="https:&#x2F;&#x2F;fenghe.us&#x2F;" rel="noopener" target="_blank">Pool's</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://chenhe.me/" title="https:&#x2F;&#x2F;chenhe.me&#x2F;" rel="noopener" target="_blank">晨鹤部落格/Chenhe's blog</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://dreamerlzl.xyz/" title="https:&#x2F;&#x2F;dreamerlzl.xyz&#x2F;" rel="noopener" target="_blank">dreamerlzl</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://youngforest.github.io/en/2016/11/02/Hexo-github-building-personal-blog/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/en/images/avatar.gif">
+      <meta itemprop="name" content="YoungForest">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YoungForest's blog">
+      <meta itemprop="description" content="A programmer in Amazon Beijing, China">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Building a Personal Blog with Hexo + GitHub | YoungForest's blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Building a Personal Blog with Hexo + GitHub
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2016-11-02 22:32:55" itemprop="dateCreated datePublished" datetime="2016-11-02T22:32:55+08:00">2016-11-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2026-06-16 12:15:46" itemprop="dateModified" datetime="2026-06-16T12:15:46+08:00">2026-06-16</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/en/categories/Tinkering/" itemprop="url" rel="index"><span itemprop="name">Tinkering</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/en/2016/11/02/Hexo-github-building-personal-blog/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/11/02/Hexo-github-building-personal-blog/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h2 id="Motivation-Placed-First"><a href="#Motivation-Placed-First" class="headerlink" title="Motivation, Placed First"></a>Motivation, Placed First</h2><p>I used to have a blog on CNBlogs, but I did not maintain it often. Even now, counting everything, it only had three essays and one follower. The main reason was that I did not have the habit of writing. In high school, I kept a diary for a while and wrote more than half a notebook in total. It was all motivational, self-deceiving, content written for myself.</p>
+<span id="more"></span>
+
+<p>First, I used to feel that there was nothing to write about, but now I think there is actually quite a lot. I have tinkered with many things over the past two years. But to be honest, after finishing the tinkering, I forget things very quickly. The next time I do it myself or help someone else handle the same problem, I basically have to start over. After writing things down, whether for my own future needs or for friends to reference, it is extremely useful.</p>
+<p>Second, after being strongly recommended by experts, I learned that frequently writing blogs, summarizing one’s work and study, and communicating with experts online are basic skills for studying Computer Science. Writing things down not only systematically records my learning process for future review or for later people to reference, but also urges me to persist. Why not?</p>
+<p>Finally, while recently working on the compiler course project, I saw <a target="_blank" rel="noopener" href="http://jcf94.com/2016/02/21/2016-02-21-pl0/">this blog post</a>. While learning compiler knowledge, I felt that the blog design was very beautiful and the blogger was also very nice. After learning that it was built with <code>Hexo</code>, I had the idea of building my own blog, and now I finally have time to implement it.</p>
+<h2 id="Introduction-to-Hexo"><a href="#Introduction-to-Hexo" class="headerlink" title="Introduction to Hexo"></a>Introduction to <code>Hexo</code></h2><p>There are many frameworks specifically used to build blogs, such as WordPress, Jekyll, Octopress, Joomla, and so on. I have not used any of these, so I will not comment on them. In fact, this is my first experience building a blog, and in a way it was fate that I encountered Hexo.</p>
+<p>Here I will talk about Hexo’s advantages based on my own experience:</p>
+<ol>
+<li>Complete documentation.</li>
+<li>Good Chinese support, including all aspects of the documentation. In fact, the developer is Chinese.</li>
+<li>Rich themes, important for someone who cares about appearance.</li>
+</ol>
+<h2 id="Setup-Process"><a href="#Setup-Process" class="headerlink" title="Setup Process"></a>Setup Process</h2><h3 id="Local-Hexo-Installation-and-Configuration"><a href="#Local-Hexo-Installation-and-Configuration" class="headerlink" title="Local Hexo Installation and Configuration"></a>Local Hexo Installation and Configuration</h3><p>For how to build it, I recommend the official <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">documentation</a>. The documentation already explains things in detail. If you encounter problems, you can also ask directly in the discussion area at the bottom of the documentation. It seems many people encounter strange problems. I usually rely on Google when I encounter problems; in fact, many times Google leads me to the discussion area or the <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/troubleshooting.html">Troubleshoot</a> section in the documentation.</p>
+<p>The environment I used to install Hexo was Ubuntu 14.04. When installing Hexo with <code>$ npm install -g hexo-cli</code>, I encountered this problem:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sh: 1: node: not found</span><br><span class="line">npm WARN This failure might be due to the use of legacy binary &quot;node&quot;</span><br><span class="line">npm WARN For further explanations, please read</span><br><span class="line">/usr/share/doc/nodejs/README.Debian</span><br></pre></td></tr></table></figure>
+
+<p>Through searching, I quickly found the <a target="_blank" rel="noopener" href="http://stackoverflow.com/questions/21168141/cannot-install-packages-using-node-package-manager-in-ubuntu">solution</a>. You only need <code>sudo apt-get install nodejs-legacy</code>.</p>
+<p>The reason for this problem is that the Debian community found that the command for the Node.js interpreter is <code>node</code>. However, this command conflicts in namespace with other packages, such as <code>ax25-node</code> in the <code>node</code> package. Therefore, they decided to change the Node.js interpreter command to <code>nodejs</code>; when people need to use the Node.js interpreter, they should use the <code>nodejs</code> command instead of <code>node</code>. But this creates a backward compatibility problem, because previous Node.js scripts still use the <code>node</code> command, and other Linux distributions have also always used <code>node</code>. So they came up with a compatibility method: create a symbolic link from <code>/usr/bin/node</code> to <code>/usr/bin/nodejs</code>. This work is handled by the <code>node-legacy</code> package, and users are not recommended to link it manually themselves. They also specified that the <code>nodejs</code> source package should also provide a <code>node-legacy</code> executable package. This “perfectly” solves the compatibility problem.</p>
+<p>From this, it seems Debian-based distributions will all encounter this problem.</p>
+<h3 id="Publishing-to-GitHub"><a href="#Publishing-to-GitHub" class="headerlink" title="Publishing to GitHub"></a>Publishing to GitHub</h3><p>Create a new repository on GitHub named <code>&#123;your name&#125;.github.io</code>; for example, mine is <code>youngforest.github.io</code>. In fact, with this naming format, GitHub will configure your <code>[GitHub Pages](https://pages.github.com/)</code> by default and publish it to <code>https://&#123;your name&#125;.github.io/</code>; mine is <code>https://youngforest.github.io/</code>.<br>Of course, if you do not name it this way, you can also configure <code>GitHub Page</code> publication in the repository settings yourself.</p>
+<p>In the local blog directory, run <code>hexo generate</code>, and the static pages of your blog will be generated under <code>public/</code>. Under this folder, push all files to the repository you created on GitHub.</p>
+<p>As for how to push a local folder to a newly created repository, GitHub should tell you when you create the empty repository.</p>
+<p><img src="https://cloud.githubusercontent.com/assets/13612111/20461580/713552e6-af3d-11e6-8078-a8c570e594af.png" alt="initial a repository in github"></p>
+<p>If you want to complete GitHub deployment with one command, you can refer to the <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/deployment.html">related documentation</a>.</p>
+<p>When I ran <code>hexo deploy</code>, I encountered this error: <code>ERROR Deployer not found: git</code>.</p>
+<p>After searching for a long time, I found the solution in a <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues/1040">Hexo issue</a>. Just run the following commands in Bash.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-index --save</span><br><span class="line">npm install hexo-generator-archive --save</span><br><span class="line">npm install hexo-generator-category --save</span><br><span class="line">npm install hexo-generator-tag --save</span><br><span class="line">npm install hexo-server --save</span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">npm install hexo-renderer-marked@0.2 --save</span><br><span class="line">npm install hexo-renderer-stylus@0.2 --save</span><br><span class="line">npm install hexo-generator-feed@1 --save</span><br><span class="line">npm install hexo-generator-sitemap@1 --save</span><br></pre></td></tr></table></figure>
+
+<p>When you visit your <code>GitHub Pages</code> in the browser, you will see the deployed blog.<br>You can see my deployed blog <a href="https://youngforest.github.io/">here</a>.</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="followme">
+  <span>Welcome to my other publishing channels</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+          <span class="social-link">
+            <span class="icon">
+              <i class="fab fa-weixin"></i>
+            </span>
+
+            <span class="label">WeChat</span>
+          </span>
+
+          <img class="social-item-img" src="/en/uploads/wechat-qcode.jpg">
+      </div>
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="/en/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+      </div>
+  </div>
+</div>
+
+          <div class="post-tags">
+              <a href="/en/tags/Hexo/" rel="tag"># Hexo</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/en/2016/10/11/slipt-string-by-C/" rel="prev" title="Splitting Strings in C - YoungForest">
+                  <i class="fa fa-angle-left"></i> Splitting Strings in C - YoungForest
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/en/2016/11/02/terminal-proxy-configuration/" rel="next" title="Implementing a Terminal Proxy">
+                  Implementing a Terminal Proxy <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">YoungForest</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" rel="noopener" target="_blank">NexT.Mist</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+  <a href="https://github.com/YoungForest" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"YoungForest","count":true,"i18n":{"disqus":"disqus"}}</script>
+<script src="/en/js/third-party/comments/disqus.js" defer></script>
+
+</body>
+</html>

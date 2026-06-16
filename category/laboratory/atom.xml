@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://youngforest.github.io/en</id>
+    <title>YoungForest&#39;s blog • Posts by &#34;laboratory&#34; category</title>
+    <link href="https://youngforest.github.io/en" />
+    <updated>2017-01-14T04:39:23.000Z</updated>
+    <category term="life" />
+    <category term="Year-End Review" />
+    <category term="Life" />
+    <category term="Year-end Summary" />
+    <category term="Year-End Summary" />
+    <category term="year-end summary" />
+    <category term="Intern" />
+    <category term="Reading" />
+    <category term="The Three-Body Problem" />
+    <category term="A Global History" />
+    <category term="A Matter of Degrees" />
+    <category term="Kuaishou" />
+    <category term="Tech" />
+    <category term="Dublin" />
+    <category term="Alibaba" />
+    <category term="intern" />
+    <category term="travel" />
+    <category term="Travel Notes" />
+    <category term="Antifragile" />
+    <category term="Are Your Lights On?" />
+    <category term="Beijing" />
+    <category term="Hukou" />
+    <category term="Business Cycles" />
+    <category term="Economics" />
+    <category term="ByteDance" />
+    <category term="interview" />
+    <category term="New Graduate" />
+    <category term="Deep Simplicity" />
+    <category term="codeforces" />
+    <category term="contest" />
+    <category term="WeRide" />
+    <category term="C++" />
+    <category term="Database" />
+    <category term="Django" />
+    <category term="C++11" />
+    <category term="Elon Musk" />
+    <category term="bank" />
+    <category term="money" />
+    <category term="Europe" />
+    <category term="Genome" />
+    <category term="Hexo" />
+    <category term="Guns, Germs, and Steel" />
+    <category term="Hennge" />
+    <category term="Hou Hei Xue" />
+    <category term="Ireland" />
+    <category term="IB" />
+    <category term="Bonds" />
+    <category term="France visa" />
+    <category term="Schengen" />
+    <category term="Side Project" />
+    <category term="Just Keep Buying" />
+    <category term="Competitive Programming" />
+    <category term="Algorithm" />
+    <category term="LeetCode" />
+    <category term="A Little History of the World" />
+    <category term="Liu Shen Lei Lei Reads Tang Poetry" />
+    <category term="Liu Shen Lei Lei Reads Jin Yong" />
+    <category term="Blog" />
+    <category term="miHoYo" />
+    <category term="Travel" />
+    <category term="Keyboard" />
+    <category term="Poor Charlie&#39;s Almanack" />
+    <category term="Programming Pearls" />
+    <category term="Money" />
+    <category term="Investment" />
+    <category term="QDII" />
+    <category term="Arbitrage" />
+    <category term="Off-Exchange to On-Exchange" />
+    <category term="Reality Is Not What It Seems" />
+    <category term="tech" />
+    <category term="Shi Nan Zhi Tu" />
+    <category term="Ma Boyong" />
+    <category term="Skin in the Game" />
+    <category term="Nassim Nicholas Taleb" />
+    <category term="Tai Bai Jin Xing You Dian Fan" />
+    <category term="The Almanack of Naval Ravikant" />
+    <category term="Tencent" />
+    <category term="The Art of War" />
+    <category term="The Collapse of the Heavenly Dynasty" />
+    <category term="The Bitcoin Standard" />
+    <category term="The Hungry Golden Age" />
+    <category term="The Glory and the Dream" />
+    <category term="The Worlds I See" />
+    <category term="The Gains and Losses of Economic Changes in the Past Dynasties" />
+    <category term="Linux" />
+    <category term="Why Nations Fail" />
+    <category term="Windows" />
+    <category term="The Times" />
+    <category term="XiaoLin Says" />
+    <category term="Atom" />
+    <category term="hash" />
+    <category term="unordered_map" />
+    <category term="Tinkering" />
+    <category term="Megvii" />
+    <category term="Amazon" />
+    <category term="Microsoft" />
+    <category term="China" />
+    <category term="Travelogue" />
+    <category term="vim" />
+    <category term="investing" />
+    <category term="Internship" />
+    <category term="TeX" />
+    <category term="Life and Death Are Wearing Me Out" />
+    <category term="Mac" />
+    <category term="Ubuntu" />
+    <category term="Owncloud" />
+    <category term="Benchmark" />
+    <category term="RIP" />
+    <category term="sensetime" />
+    <category term="Sublime" />
+    <category term="vscode" />
+    <category term="gcc" />
+    <category term="Git" />
+    <entry>
+        <id>https://youngforest.github.io/en/2017/01/14/pressure-test-to-CPU-memory-disk-network-IO/</id>
+        <title>Stress Testing CPU, Memory, Disk Read/Write, and Network</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2017/01/14/pressure-test-to-CPU-memory-disk-network-IO/"/>
+        <content type="html">&lt;p&gt;Recently, a senior schoolmate in the lab had a requirement: write four small programs to stress test memory, CPU, disk, and network respectively. The test programs needed adjustable pressure levels, such as high, medium, and low. No more words; roll up the sleeves and get to work. The requirement was simple, but implementation was not. I learned while writing the programs and barely completed the task.&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;h2 id=&#34;Test-Environment&#34;&gt;&lt;a href=&#34;#Test-Environment&#34; class=&#34;headerlink&#34; title=&#34;Test Environment&#34;&gt;&lt;/a&gt;Test Environment&lt;/h2&gt;&lt;p&gt;Ubuntu 14.04&lt;/p&gt;
+&lt;h2 id=&#34;CPU&#34;&gt;&lt;a href=&#34;#CPU&#34; class=&#34;headerlink&#34; title=&#34;CPU&#34;&gt;&lt;/a&gt;CPU&lt;/h2&gt;&lt;p&gt;Inspired by the first chapter of &lt;em&gt;The Beauty of Programming&lt;/em&gt;, “Make the CPU Usage Curve Follow Your Commands,” I quickly completed the CPU stress testing program.&lt;/p&gt;
+&lt;h4 id=&#34;Basic-Idea&#34;&gt;&lt;a href=&#34;#Basic-Idea&#34; class=&#34;headerlink&#34; title=&#34;Basic Idea&#34;&gt;&lt;/a&gt;Basic Idea&lt;/h4&gt;&lt;p&gt;Determine a small period. I set the period to 100, and this value can be changed by changing the value of &lt;code&gt;PIECE&lt;/code&gt;; the period is &lt;code&gt;100 * PIECE&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Within each period, &lt;code&gt;stress&lt;/code&gt; percent of the time is spent in an infinite loop, and the remaining &lt;code&gt;(100-stress)&lt;/code&gt; percent of the time calls &lt;code&gt;usleep&lt;/code&gt;, note the difference between &lt;code&gt;sleep&lt;/code&gt; and &lt;code&gt;usleep&lt;/code&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;Program-Source-Code&#34;&gt;&lt;a href=&#34;#Program-Source-Code&#34; class=&#34;headerlink&#34; title=&#34;Program Source Code&#34;&gt;&lt;/a&gt;Program Source Code&lt;/h4&gt;&lt;script src=&#34;https://gist.github.com/YoungForest/04080ae9ad932aa1fd7211c05e93b197.js&#34;&gt;&lt;/script&gt;
+
+&lt;h4 id=&#34;Usage&#34;&gt;&lt;a href=&#34;#Usage&#34; class=&#34;headerlink&#34; title=&#34;Usage&#34;&gt;&lt;/a&gt;Usage&lt;/h4&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ 程序名 stress    &lt;span class=&#34;comment&#34;&gt;# 其中 0&amp;lt;=stress&amp;lt;=100&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$ &lt;span class=&#34;comment&#34;&gt;# 例子&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$ gcc cpu_benchmark.c -o cpu_benchmark.out&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$ cpu_benchmark.out 50&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;Disk-Read-Write&#34;&gt;&lt;a href=&#34;#Disk-Read-Write&#34; class=&#34;headerlink&#34; title=&#34;Disk Read/Write&#34;&gt;&lt;/a&gt;Disk Read/Write&lt;/h2&gt;&lt;p&gt;For disk stress testing, I implemented read and write operations with two separate programs.&lt;/p&gt;
+&lt;h3 id=&#34;Disk-Read-Operation&#34;&gt;&lt;a href=&#34;#Disk-Read-Operation&#34; class=&#34;headerlink&#34; title=&#34;Disk Read Operation&#34;&gt;&lt;/a&gt;Disk Read Operation&lt;/h3&gt;&lt;h4 id=&#34;Basic-Idea-1&#34;&gt;&lt;a href=&#34;#Basic-Idea-1&#34; class=&#34;headerlink&#34; title=&#34;Basic Idea&#34;&gt;&lt;/a&gt;Basic Idea&lt;/h4&gt;&lt;p&gt;Similar to the CPU stress test, within one period, 1s, first read a specific amount of data, &lt;code&gt;speed&lt;/code&gt;, from disk, then sleep for the remaining time in the period.&lt;/p&gt;
+&lt;h4 id=&#34;Program-Source-Code-1&#34;&gt;&lt;a href=&#34;#Program-Source-Code-1&#34; class=&#34;headerlink&#34; title=&#34;Program Source Code&#34;&gt;&lt;/a&gt;Program Source Code&lt;/h4&gt;&lt;script src=&#34;https://gist.github.com/YoungForest/9faaa24df53b3e78d27c18155ee26384.js&#34;&gt;&lt;/script&gt;
+
+&lt;h4 id=&#34;Usage-1&#34;&gt;&lt;a href=&#34;#Usage-1&#34; class=&#34;headerlink&#34; title=&#34;Usage&#34;&gt;&lt;/a&gt;Usage&lt;/h4&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ python3 disk_read.py 硬盘名 level    &lt;span class=&#34;comment&#34;&gt;# 其中level可以是0, 1, 2, 3&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$ &lt;span class=&#34;comment&#34;&gt;# 例子&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$ python3 disk_read.py /dev/vda 2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&#34;Disk-Write-Operation&#34;&gt;&lt;a href=&#34;#Disk-Write-Operation&#34; class=&#34;headerlink&#34; title=&#34;Disk Write Operation&#34;&gt;&lt;/a&gt;Disk Write Operation&lt;/h3&gt;&lt;h4 id=&#34;Basic-Idea-2&#34;&gt;&lt;a href=&#34;#Basic-Idea-2&#34; class=&#34;headerlink&#34; title=&#34;Basic Idea&#34;&gt;&lt;/a&gt;Basic Idea&lt;/h4&gt;&lt;p&gt;The stress test for disk write operations is similar to read operations. Within one period, 1s, write a specific amount of data to a file, then delete it, and sleep for the remaining time in the period.&lt;/p&gt;
+&lt;p&gt;To write data into the file, I used the command&lt;br&gt;&lt;code&gt;dd if=/dev/zero of=/path/to/targetfile bs=1024k count=speed conv=fdatasync &amp;gt; /dev/null 2&amp;gt; /dev/null&lt;/code&gt;.&lt;br&gt;This command reads data from &lt;code&gt;/dev/zero&lt;/code&gt;, which is actually invalid data and is often used as a data source for initializing files, and writes it to &lt;code&gt;/path/to/targetfile&lt;/code&gt;. To avoid the error output and standard output produced by &lt;code&gt;dd&lt;/code&gt; affecting the readability of this program, I used redirection. &lt;code&gt;/dev/null&lt;/code&gt; is a black-hole device; any data can be input into it without bad effects.&lt;/p&gt;
+&lt;h4 id=&#34;Program-Source-Code-2&#34;&gt;&lt;a href=&#34;#Program-Source-Code-2&#34; class=&#34;headerlink&#34; title=&#34;Program Source Code&#34;&gt;&lt;/a&gt;Program Source Code&lt;/h4&gt;&lt;script src=&#34;https://gist.github.com/YoungForest/0b3fdfbe15821b32991d9d48a9122290.js&#34;&gt;&lt;/script&gt;
+
+&lt;h4 id=&#34;Usage-2&#34;&gt;&lt;a href=&#34;#Usage-2&#34; class=&#34;headerlink&#34; title=&#34;Usage&#34;&gt;&lt;/a&gt;Usage&lt;/h4&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ python3 disk_write.py 硬盘名 level    &lt;span class=&#34;comment&#34;&gt;# 其中level可以是0, 1, 2, 3&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$ &lt;span class=&#34;comment&#34;&gt;# 例子&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$ python3 disk_write.py /dev/vda 2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;Memory&#34;&gt;&lt;a href=&#34;#Memory&#34; class=&#34;headerlink&#34; title=&#34;Memory&#34;&gt;&lt;/a&gt;Memory&lt;/h2&gt;&lt;h4 id=&#34;Basic-Idea-3&#34;&gt;&lt;a href=&#34;#Basic-Idea-3&#34; class=&#34;headerlink&#34; title=&#34;Basic Idea&#34;&gt;&lt;/a&gt;Basic Idea&lt;/h4&gt;&lt;p&gt;For memory testing, my senior schoolmate introduced me to the program &lt;a href=&#34;https://linux.die.net/man/8/memtester&#34;&gt;&lt;code&gt;memtester&lt;/code&gt;&lt;/a&gt;. Specific installation and usage:&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ &lt;span class=&#34;comment&#34;&gt;# 安装&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$ &lt;span class=&#34;built_in&#34;&gt;sudo&lt;/span&gt; apt-get install memtester&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$ &lt;span class=&#34;comment&#34;&gt;# 从PHYSADDR处分配MEMORY大小的内存, 测试ITERATIONS次.&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$ &lt;span class=&#34;built_in&#34;&gt;sudo&lt;/span&gt; memtester [-p PHYSADDR] &amp;lt;MEMORY&amp;gt; [ITERATIONS]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;In general, there is no need to specify &lt;code&gt;PHYSADDR&lt;/code&gt;, because it may destroy memory occupied by other processes, which has some risk.&lt;/p&gt;
+&lt;p&gt;Using the &lt;code&gt;memtester&lt;/code&gt; program, I did some simple processing and completed the requirement.&lt;/p&gt;
+&lt;h4 id=&#34;Program-Source-Code-3&#34;&gt;&lt;a href=&#34;#Program-Source-Code-3&#34; class=&#34;headerlink&#34; title=&#34;Program Source Code&#34;&gt;&lt;/a&gt;Program Source Code&lt;/h4&gt;&lt;script src=&#34;https://gist.github.com/YoungForest/73875763467c9cd1eeccad3496a18398.js&#34;&gt;&lt;/script&gt;
+
+&lt;h4 id=&#34;Usage-3&#34;&gt;&lt;a href=&#34;#Usage-3&#34; class=&#34;headerlink&#34; title=&#34;Usage&#34;&gt;&lt;/a&gt;Usage&lt;/h4&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ python3 memory_benchmark.py &amp;lt;MEMORY&amp;gt; [ITERATIONS]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$ &lt;span class=&#34;comment&#34;&gt;# 例子&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$ python3 memory_benchmark.py 3m 10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$ python3 memory_benchmark.py 2m &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;Network&#34;&gt;&lt;a href=&#34;#Network&#34; class=&#34;headerlink&#34; title=&#34;Network&#34;&gt;&lt;/a&gt;Network&lt;/h2&gt;&lt;p&gt;The senior schoolmate’s requirement was for public network stress testing. I looked through a lot of materials; most tools measured network speed, rather than allowing a specified upload or download rate for testing. Fortunately, after searching for several days, I finally found a tool, &lt;code&gt;iperf&lt;/code&gt;, that could barely complete the task.&lt;/p&gt;
+&lt;h4 id=&#34;Basic-Idea-4&#34;&gt;&lt;a href=&#34;#Basic-Idea-4&#34; class=&#34;headerlink&#34; title=&#34;Basic Idea&#34;&gt;&lt;/a&gt;Basic Idea&lt;/h4&gt;&lt;p&gt;One machine acts as the server, and another machine acts as the client. The client sends packets to the server, the server receives them, and the connection uses UDP. That is to say, if there is no server, the client can still stress test network upload; but without a client, the server cannot stress test network download. In simple terms, the server, download, is passive, while the client, upload, is active. You can still send packets wildly even if nobody receives them, but if nobody sends packets, no matter what, you cannot receive packets.&lt;/p&gt;
+&lt;h4 id=&#34;Installation&#34;&gt;&lt;a href=&#34;#Installation&#34; class=&#34;headerlink&#34; title=&#34;Installation&#34;&gt;&lt;/a&gt;Installation&lt;/h4&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ &lt;span class=&#34;built_in&#34;&gt;sudo&lt;/span&gt; apt-get install iperf&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h4 id=&#34;Usage-4&#34;&gt;&lt;a href=&#34;#Usage-4&#34; class=&#34;headerlink&#34; title=&#34;Usage&#34;&gt;&lt;/a&gt;Usage&lt;/h4&gt;&lt;h5 id=&#34;Server&#34;&gt;&lt;a href=&#34;#Server&#34; class=&#34;headerlink&#34; title=&#34;Server&#34;&gt;&lt;/a&gt;Server&lt;/h5&gt;&lt;p&gt;Start the server:&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ iperf -s&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h5 id=&#34;Client&#34;&gt;&lt;a href=&#34;#Client&#34; class=&#34;headerlink&#34; title=&#34;Client&#34;&gt;&lt;/a&gt;Client&lt;/h5&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ iperf -c 服务器ip -b 压力值&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$ &lt;span class=&#34;comment&#34;&gt;# 比如:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$ iperf -c 123.206.61.77 -b 11m&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h4 id=&#34;References&#34;&gt;&lt;a href=&#34;#References&#34; class=&#34;headerlink&#34; title=&#34;References&#34;&gt;&lt;/a&gt;References&lt;/h4&gt;&lt;p&gt;&lt;a href=&#34;http://www.binarytides.com/linux-commands-monitor-network/&#34;&gt;How to monitor network on Linux&lt;/a&gt;&lt;br&gt;&lt;a href=&#34;https://www.linux.com/learn/five-funny-little-linux-network-testers-and-monitors&#34;&gt;Linux network testing and monitoring&lt;/a&gt;&lt;br&gt;&lt;a href=&#34;http://tuxtweaks.com/2014/11/linux-network-speed-test/?utm_source=tuicool&amp;utm_medium=referral&#34;&gt;[Linux] Test network speed in a LAN&lt;/a&gt;&lt;/p&gt;
+</content>
+        <category term="Benchmark" />
+        <updated>2017-01-14T04:39:23.000Z</updated>
+    </entry>
+</feed>

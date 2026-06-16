@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://youngforest.github.io/en</id>
+    <title>YoungForest&#39;s blog • Posts by &#34;django&#34; tag</title>
+    <link href="https://youngforest.github.io/en" />
+    <updated>2017-01-23T11:18:20.000Z</updated>
+    <category term="life" />
+    <category term="Year-End Review" />
+    <category term="Life" />
+    <category term="Year-end Summary" />
+    <category term="Year-End Summary" />
+    <category term="year-end summary" />
+    <category term="Intern" />
+    <category term="Reading" />
+    <category term="The Three-Body Problem" />
+    <category term="A Global History" />
+    <category term="A Matter of Degrees" />
+    <category term="Kuaishou" />
+    <category term="Tech" />
+    <category term="Dublin" />
+    <category term="Alibaba" />
+    <category term="intern" />
+    <category term="travel" />
+    <category term="Travel Notes" />
+    <category term="Antifragile" />
+    <category term="Are Your Lights On?" />
+    <category term="Beijing" />
+    <category term="Hukou" />
+    <category term="Business Cycles" />
+    <category term="Economics" />
+    <category term="ByteDance" />
+    <category term="interview" />
+    <category term="New Graduate" />
+    <category term="Deep Simplicity" />
+    <category term="codeforces" />
+    <category term="contest" />
+    <category term="WeRide" />
+    <category term="C++" />
+    <category term="Database" />
+    <category term="Django" />
+    <category term="C++11" />
+    <category term="Elon Musk" />
+    <category term="bank" />
+    <category term="money" />
+    <category term="Europe" />
+    <category term="Genome" />
+    <category term="Hexo" />
+    <category term="Guns, Germs, and Steel" />
+    <category term="Hennge" />
+    <category term="Hou Hei Xue" />
+    <category term="Ireland" />
+    <category term="IB" />
+    <category term="Bonds" />
+    <category term="France visa" />
+    <category term="Schengen" />
+    <category term="Side Project" />
+    <category term="Just Keep Buying" />
+    <category term="Competitive Programming" />
+    <category term="Algorithm" />
+    <category term="LeetCode" />
+    <category term="A Little History of the World" />
+    <category term="Liu Shen Lei Lei Reads Tang Poetry" />
+    <category term="Liu Shen Lei Lei Reads Jin Yong" />
+    <category term="Blog" />
+    <category term="miHoYo" />
+    <category term="Travel" />
+    <category term="Keyboard" />
+    <category term="Poor Charlie&#39;s Almanack" />
+    <category term="Programming Pearls" />
+    <category term="Money" />
+    <category term="Investment" />
+    <category term="QDII" />
+    <category term="Arbitrage" />
+    <category term="Off-Exchange to On-Exchange" />
+    <category term="Reality Is Not What It Seems" />
+    <category term="tech" />
+    <category term="Shi Nan Zhi Tu" />
+    <category term="Ma Boyong" />
+    <category term="Skin in the Game" />
+    <category term="Nassim Nicholas Taleb" />
+    <category term="Tai Bai Jin Xing You Dian Fan" />
+    <category term="The Almanack of Naval Ravikant" />
+    <category term="Tencent" />
+    <category term="The Art of War" />
+    <category term="The Collapse of the Heavenly Dynasty" />
+    <category term="The Bitcoin Standard" />
+    <category term="The Hungry Golden Age" />
+    <category term="The Glory and the Dream" />
+    <category term="The Worlds I See" />
+    <category term="The Gains and Losses of Economic Changes in the Past Dynasties" />
+    <category term="Linux" />
+    <category term="Why Nations Fail" />
+    <category term="Windows" />
+    <category term="The Times" />
+    <category term="XiaoLin Says" />
+    <category term="Atom" />
+    <category term="hash" />
+    <category term="unordered_map" />
+    <category term="Tinkering" />
+    <category term="Megvii" />
+    <category term="Amazon" />
+    <category term="Microsoft" />
+    <category term="China" />
+    <category term="Travelogue" />
+    <category term="vim" />
+    <category term="investing" />
+    <category term="Internship" />
+    <category term="TeX" />
+    <category term="Life and Death Are Wearing Me Out" />
+    <category term="Mac" />
+    <category term="Ubuntu" />
+    <category term="Owncloud" />
+    <category term="Benchmark" />
+    <category term="RIP" />
+    <category term="sensetime" />
+    <category term="Sublime" />
+    <category term="vscode" />
+    <category term="gcc" />
+    <category term="Git" />
+    <entry>
+        <id>https://youngforest.github.io/en/2017/01/23/Django-note/</id>
+        <title>Django Usage Summary</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2017/01/23/Django-note/"/>
+        <content type="html">&lt;p&gt;&lt;strong&gt;[Abstract]&lt;/strong&gt; &lt;a href=&#34;https://www.djangoproject.com/&#34;&gt;Django&lt;/a&gt; is a high-level Python web framework that can help us quickly develop and design a clean, programmatic application. Although Django is relatively bulky, since experts nowadays all use &lt;a href=&#34;http://flask.pocoo.org/&#34;&gt;Flask&lt;/a&gt; maybe, and is more suitable for large web applications, my database course project was a small project. Still, Django’s reputation was too strong, and I had previously had a little contact with it in the lab, so my teammate and I decisively chose Django. With Django’s help, implementing our course project was as easy as chopping vegetables.&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;The database course project grades came out recently. I only got Good, and did not get Excellent as I had hoped. But the experience of finishing the database project in two days really taught me a lot: using the Django framework, the concepts of frontend and backend, pair-programming cooperation… What I most want to share is the use of the Django framework. Thanks to this framework, we could focus on backend and database design and implementation, while also easily building a presentable frontend. It achieved twice the result with half the effort and saved us from being killed by procrastination.&lt;/p&gt;
+&lt;h4 id=&#34;Time-Allocation&#34;&gt;&lt;a href=&#34;#Time-Allocation&#34; class=&#34;headerlink&#34; title=&#34;Time Allocation:&#34;&gt;&lt;/a&gt;Time Allocation:&lt;/h4&gt;&lt;p&gt;Finishing the database project took two days, and one of those days I was writing code while watching &lt;em&gt;Lurk&lt;/em&gt;. Before that, I had been learning Django. Most of the documentation was even completed after the defense.&lt;/p&gt;
+&lt;h4 id=&#34;Personnel-Allocation&#34;&gt;&lt;a href=&#34;#Personnel-Allocation&#34; class=&#34;headerlink&#34; title=&#34;Personnel Allocation:&#34;&gt;&lt;/a&gt;Personnel Allocation:&lt;/h4&gt;&lt;p&gt;The original plan was to lean on &lt;code&gt;tls&lt;/code&gt;, with all frontend and backend completed by &lt;code&gt;tls&lt;/code&gt;, while I helped write documentation. Later, however, since &lt;code&gt;tls&lt;/code&gt; was often conserving energy and kept learning Django, there were still no visible results in the final few hours. I panicked. Based on my previous practice, I patched and improved things, barely implemented the expected functions, and completed the course project. In the end, the documentation was urgently completed by the two of us together, and &lt;code&gt;tls&lt;/code&gt; helped implement two new features in the last hour.&lt;/p&gt;
+&lt;h2 id=&#34;Django-Usage-Summary&#34;&gt;&lt;a href=&#34;#Django-Usage-Summary&#34; class=&#34;headerlink&#34; title=&#34;Django Usage Summary&#34;&gt;&lt;/a&gt;Django Usage Summary&lt;/h2&gt;&lt;p&gt;The &lt;a href=&#34;https://docs.djangoproject.com/en/1.10/&#34;&gt;official documentation&lt;/a&gt; is complete and friendly. All needed functionality can be found there. The disadvantage is that it is too large and hard to search; it is also in English. The official documentation updates too quickly, and Chinese translations cannot keep up. I had barely passed CET-6, so this was quite a headache. Still, I prefer reading the official English documentation because it feels more helpful.&lt;/p&gt;
+&lt;h4 id=&#34;Practice&#34;&gt;&lt;a href=&#34;#Practice&#34; class=&#34;headerlink&#34; title=&#34;Practice&#34;&gt;&lt;/a&gt;Practice&lt;/h4&gt;&lt;p&gt;I followed andrew-liu’s tutorial on &lt;a href=&#34;https://andrew-liu.gitbooks.io/django-blog/content/&#34;&gt;building a blog with Django&lt;/a&gt; to become familiar with step-by-step commands and operations. This tutorial is very suitable for beginners to learn Django’s basic commands and file structure. But one obvious bad consequence was that, in the end, our course project, &lt;code&gt;Electric Vehicle Charging Station Management System&lt;/code&gt;, looked almost like a blog.&lt;/p&gt;
+&lt;h2 id=&#34;Summary&#34;&gt;&lt;a href=&#34;#Summary&#34; class=&#34;headerlink&#34; title=&#34;Summary&#34;&gt;&lt;/a&gt;Summary&lt;/h2&gt;&lt;p&gt;This post has relatively little practical content, mainly because my skill is still shallow and I do not have more to share. If I need to use Django again next time, I will definitely come back and add more.&lt;/p&gt;
+</content>
+        <category term="Database" />
+        <category term="Django" />
+        <updated>2017-01-23T11:18:20.000Z</updated>
+    </entry>
+</feed>
