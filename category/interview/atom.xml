@@ -20,8 +20,8 @@
     <category term="intern" />
     <category term="travel" />
     <category term="Travel Notes" />
-    <category term="Are Your Lights On?" />
     <category term="Antifragile" />
+    <category term="Are Your Lights On?" />
     <category term="Beijing" />
     <category term="Hukou" />
     <category term="Business Cycles" />
@@ -32,8 +32,8 @@
     <category term="Deep Simplicity" />
     <category term="codeforces" />
     <category term="contest" />
-    <category term="WeRide" />
     <category term="C++" />
+    <category term="WeRide" />
     <category term="C++11" />
     <category term="Elon Musk" />
     <category term="bank" />
@@ -69,16 +69,16 @@
     <category term="QDII" />
     <category term="Arbitrage" />
     <category term="Off-Exchange to On-Exchange" />
-    <category term="Reality Is Not What It Seems" />
     <category term="tech" />
+    <category term="Reality Is Not What It Seems" />
     <category term="Shi Nan Zhi Tu" />
     <category term="Ma Boyong" />
     <category term="Skin in the Game" />
     <category term="Nassim Nicholas Taleb" />
     <category term="Tai Bai Jin Xing You Dian Fan" />
     <category term="Tencent" />
-    <category term="The Art of War" />
     <category term="The Almanack of Naval Ravikant" />
+    <category term="The Art of War" />
     <category term="The Bitcoin Standard" />
     <category term="The Collapse of the Heavenly Dynasty" />
     <category term="The Hungry Golden Age" />
@@ -93,6 +93,7 @@
     <category term="hash" />
     <category term="unordered_map" />
     <category term="Tinkering" />
+    <category term="Megvii" />
     <category term="Amazon" />
     <category term="Microsoft" />
     <category term="China" />
@@ -101,8 +102,8 @@
     <category term="investing" />
     <category term="Kuaishou" />
     <category term="Internship" />
-    <category term="Life and Death Are Wearing Me Out" />
     <category term="Mac" />
+    <category term="Life and Death Are Wearing Me Out" />
     <category term="RIP" />
     <category term="sensetime" />
     <category term="vscode" />
@@ -660,6 +661,19 @@
         <category term="intern" />
         <category term="WeRide" />
         <updated>2018-09-28T03:22:23.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://youngforest.github.io/en/2018/08/14/face-interview/</id>
+        <title>Face++ Interview</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2018/08/14/face-interview/"/>
+        <content type="html">&lt;p&gt;A Tsinghua graduate was the interviewer. At the beginning, he asked me about my future work intentions. I answered “algorithm engineer,” but in fact I was interviewing for a development role, so the senior person lectured me a bit. He asked whether I had applied to the wrong group and whether I still had not found the direction I was interested in. Then he asked what I was doing in my current internship at Kuaishou. I talked about some of it, and then got criticized again. He said this feature engineering work would all be replaced by deep learning later.&lt;/p&gt;
+&lt;p&gt;When the formal interview started, he only asked two questions: implementing a queue that maintains the minimum value, and implementing a stack that maintains the minimum value.&lt;/p&gt;
+&lt;p&gt;There was supposed to be a second round afterward, but later they could not find an interviewer, so it fizzled out.&lt;/p&gt;
+&lt;p&gt;I did not have much hope for the result of this interview. After all, the process was rather perfunctory and not very pleasant. Sure enough, Face++ never contacted me afterward.&lt;/p&gt;
+</content>
+        <category term="Intern" />
+        <category term="Megvii" />
+        <updated>2018-08-14T03:23:52.000Z</updated>
     </entry>
     <entry>
         <id>https://youngforest.github.io/en/2018/04/30/kuaishou-intern-interview/</id>

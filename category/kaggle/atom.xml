@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://youngforest.github.io/en</id>
+    <title>YoungForest&#39;s blog • Posts by &#34;kaggle&#34; category</title>
+    <link href="https://youngforest.github.io/en" />
+    <updated>2018-08-14T03:22:23.000Z</updated>
+    <category term="life" />
+    <category term="Year-End Review" />
+    <category term="Life" />
+    <category term="Year-end Summary" />
+    <category term="Year-End Summary" />
+    <category term="year-end summary" />
+    <category term="Intern" />
+    <category term="Reading" />
+    <category term="The Three-Body Problem" />
+    <category term="A Global History" />
+    <category term="A Matter of Degrees" />
+    <category term="Dublin" />
+    <category term="Alibaba" />
+    <category term="intern" />
+    <category term="travel" />
+    <category term="Travel Notes" />
+    <category term="Antifragile" />
+    <category term="Are Your Lights On?" />
+    <category term="Beijing" />
+    <category term="Hukou" />
+    <category term="Business Cycles" />
+    <category term="Economics" />
+    <category term="ByteDance" />
+    <category term="interview" />
+    <category term="New Graduate" />
+    <category term="Deep Simplicity" />
+    <category term="codeforces" />
+    <category term="contest" />
+    <category term="C++" />
+    <category term="WeRide" />
+    <category term="C++11" />
+    <category term="Elon Musk" />
+    <category term="bank" />
+    <category term="money" />
+    <category term="Europe" />
+    <category term="Tech" />
+    <category term="Genome" />
+    <category term="Hexo" />
+    <category term="Guns, Germs, and Steel" />
+    <category term="Hennge" />
+    <category term="Hou Hei Xue" />
+    <category term="Ireland" />
+    <category term="IB" />
+    <category term="Bonds" />
+    <category term="France visa" />
+    <category term="Schengen" />
+    <category term="Side Project" />
+    <category term="Just Keep Buying" />
+    <category term="Competitive Programming" />
+    <category term="Algorithm" />
+    <category term="LeetCode" />
+    <category term="A Little History of the World" />
+    <category term="Liu Shen Lei Lei Reads Jin Yong" />
+    <category term="Liu Shen Lei Lei Reads Tang Poetry" />
+    <category term="Blog" />
+    <category term="miHoYo" />
+    <category term="Travel" />
+    <category term="Keyboard" />
+    <category term="Poor Charlie&#39;s Almanack" />
+    <category term="Programming Pearls" />
+    <category term="Money" />
+    <category term="Investment" />
+    <category term="QDII" />
+    <category term="Arbitrage" />
+    <category term="Off-Exchange to On-Exchange" />
+    <category term="tech" />
+    <category term="Reality Is Not What It Seems" />
+    <category term="Shi Nan Zhi Tu" />
+    <category term="Ma Boyong" />
+    <category term="Skin in the Game" />
+    <category term="Nassim Nicholas Taleb" />
+    <category term="Tai Bai Jin Xing You Dian Fan" />
+    <category term="Tencent" />
+    <category term="The Almanack of Naval Ravikant" />
+    <category term="The Art of War" />
+    <category term="The Bitcoin Standard" />
+    <category term="The Collapse of the Heavenly Dynasty" />
+    <category term="The Hungry Golden Age" />
+    <category term="The Glory and the Dream" />
+    <category term="The Worlds I See" />
+    <category term="The Gains and Losses of Economic Changes in the Past Dynasties" />
+    <category term="Linux" />
+    <category term="Why Nations Fail" />
+    <category term="Windows" />
+    <category term="The Times" />
+    <category term="XiaoLin Says" />
+    <category term="hash" />
+    <category term="unordered_map" />
+    <category term="Tinkering" />
+    <category term="Megvii" />
+    <category term="Amazon" />
+    <category term="Microsoft" />
+    <category term="China" />
+    <category term="Travelogue" />
+    <category term="vim" />
+    <category term="investing" />
+    <category term="Kuaishou" />
+    <category term="Internship" />
+    <category term="Mac" />
+    <category term="Life and Death Are Wearing Me Out" />
+    <category term="RIP" />
+    <category term="sensetime" />
+    <category term="vscode" />
+    <category term="gcc" />
+    <entry>
+        <id>https://youngforest.github.io/en/2018/08/14/kaggle-titanic-tutorial/</id>
+        <title>Getting Started with Kaggle: Titanic</title>
+        <link rel="alternate" href="https://youngforest.github.io/en/2018/08/14/kaggle-titanic-tutorial/"/>
+        <content type="html">&lt;p&gt;To train my data mining ability more quickly, I plan to spend some time on Kaggle competitions over the next month. The current plan is to follow the competitions, Datasets, and expert notebooks under &lt;a href=&#34;https://www.kaggle.com/tags/tutorial&#34;&gt;Tutorial&lt;/a&gt; as an introduction. After that, I will choose a simple regular competition to participate in.&lt;br&gt;As for whether I will eventually follow Brother Huan onto the path of data mining competitions, that depends on how I feel after getting started and whether I am willing to continue spending a lot of energy on it.&lt;/p&gt;
+&lt;p&gt;Data mining ability is mainly divided into two parts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;machine learning&lt;/li&gt;
+&lt;li&gt;feature engineering&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When I previously interned in the recommendation team at Kuaishou, the work also involved these topics. Recommendation systems can also be considered a branch of data mining. In terms of output, they predict whether a user will click a certain item.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.kaggle.com/c/titanic&#34;&gt;Titanic: Machine Learning from Disaster&lt;/a&gt;, as most people’s first step into Kaggle, really is a concentrated showcase of data mining skills. By contrast, the competitions that have recently been popular on Kaggle are mostly related to CV or NLP. They require more domain knowledge and dilute the importance of general data mining skills.&lt;br&gt;There are also many &lt;a href=&#34;https://www.kaggle.com/tags/tutorial&#34;&gt;other tutorials&lt;/a&gt; on Kaggle for users to study. In the future I will choose some of them for focused learning and try to get started with Kaggle before the semester begins.&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;The Titanic training skills are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;binary classification, alive or dead&lt;/li&gt;
+&lt;li&gt;basic Python/R&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.kaggle.com/helgejo/an-interactive-data-science-tutorial/notebook&#34;&gt;notebook link&lt;/a&gt; This is the notebook I followed this time.&lt;br&gt;I manually typed all the code and refused to copy and paste; I also completed all the Exercises that needed to be done. I gained an initial understanding of the general competition workflow:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;problem understanding&lt;/li&gt;
+&lt;li&gt;data understanding&lt;/li&gt;
+&lt;li&gt;data preprocessing&lt;/li&gt;
+&lt;li&gt;machine learning modeling&lt;/li&gt;
+&lt;li&gt;model evaluation&lt;/li&gt;
+&lt;li&gt;submitting results&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;Problem-Understanding&#34;&gt;&lt;a href=&#34;#Problem-Understanding&#34; class=&#34;headerlink&#34; title=&#34;Problem Understanding&#34;&gt;&lt;/a&gt;Problem Understanding&lt;/h2&gt;&lt;p&gt;In the problem description, Kaggle usually provides the dataset background, the goal of each challenge, and the required skills.&lt;br&gt;You can also judge what domain knowledge is needed. For example, in Titanic, knowledge of Western names in the early twentieth century, aristocratic titles, and ships is extremely helpful.&lt;/p&gt;
+&lt;p&gt;After reading the problem description, you can form basic guesses: what factors have the greatest impact on survival?&lt;br&gt;I would think of age and gender. Hasn’t the media always said that when a ship sinks, women and children go first?&lt;br&gt;Later, we use data analysis to verify whether the guesses are reasonable.&lt;/p&gt;
+&lt;h2 id=&#34;Data-Understanding&#34;&gt;&lt;a href=&#34;#Data-Understanding&#34; class=&#34;headerlink&#34; title=&#34;Data Understanding&#34;&gt;&lt;/a&gt;Data Understanding&lt;/h2&gt;&lt;p&gt;With Python and its visualization tools, we can quickly get an initial understanding of the data.&lt;/p&gt;
+&lt;p&gt;For example, &lt;code&gt;titanic&lt;/code&gt; stores all raw data as a &lt;code&gt;pd.DataFrame&lt;/code&gt;. &lt;code&gt;titanic.head()&lt;/code&gt; can display the first five rows, and &lt;code&gt;titanic.describe()&lt;/code&gt; displays statistics for all features, including maximum, minimum, missing counts, mean, variance, and so on.&lt;br&gt;After gaining an intuitive understanding of all raw features, you can know which features are categorical, which are continuous, and which need preprocessing.&lt;/p&gt;
+&lt;p&gt;With a heat map, you can intuitively see correlations between different features.&lt;br&gt;For continuous values, draw their distribution charts with &lt;code&gt;plot_distribution()&lt;/code&gt;; for categorical values, draw box plots with &lt;code&gt;plot_categories&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;With these skills, you can develop a clear sense of &lt;strong&gt;which features to select for modeling&lt;/strong&gt; and &lt;strong&gt;how to perform data preprocessing&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;Data-Preprocessing&#34;&gt;&lt;a href=&#34;#Data-Preprocessing&#34; class=&#34;headerlink&#34; title=&#34;Data Preprocessing&#34;&gt;&lt;/a&gt;Data Preprocessing&lt;/h2&gt;&lt;p&gt;For categorical variables, they need to be converted into numeric types before further modeling.&lt;br&gt;Binary categorical variables can simply be mapped to (0, 1).&lt;br&gt;Multi-class categorical variables need one-hot encoding with &lt;code&gt;pd.get_dummies()&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Fill missing values&lt;/strong&gt;. Because real-world data collection is uncertain, some rows have missing values in certain columns. At this point there are two choices: drop the entire row, or fill missing values with meaningful values.&lt;br&gt;When data is precious, because the dataset is small or there are too many missing values, filling is generally used. For categorical values, you can fill “Unknown”; for continuous values, you generally fill the mean.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Feature engineering&lt;/strong&gt;. This is the skill that separates contestants of different levels. It requires domain knowledge and enough sensitivity to the data. However, because of deep learning this year, feature engineering has shown a trend of being abandoned. Differences between contestants mainly come from parameter tuning. In Titanic, if you understand the West in the early twentieth century well enough, you can do some feature engineering. For example, extract “Title” from names to identify whether someone is nobility, commoner, or staff. If you are familiar enough with ships, you can extract cabin class from cabins and ticket class from ticket numbers.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Assemble the final dataset&lt;/strong&gt;. After preprocessing, the dataset needs feature selection and assembly into a form suitable for modeling. It is usually a &lt;code&gt;pd.DataFrame&lt;/code&gt;, and it also needs to be split into Train, Valid, and Test sets.&lt;/p&gt;
+&lt;h2 id=&#34;Modeling-and-Model-Evaluation&#34;&gt;&lt;a href=&#34;#Modeling-and-Model-Evaluation&#34; class=&#34;headerlink&#34; title=&#34;Modeling and Model Evaluation&#34;&gt;&lt;/a&gt;Modeling and Model Evaluation&lt;/h2&gt;&lt;p&gt;This is also where a lot of work lies. Common machine learning models need to be tried one by one, and each model’s parameters need to be adjusted and tried again. Then the validation set is used for evaluation, and the best model is selected.&lt;br&gt;Often, you also need to return to data preprocessing, select different features, perform different feature engineering, then come back for modeling and evaluation.&lt;/p&gt;
+&lt;p&gt;This part is the tedious experimental part, because it requires a lot of attempts and choices. Of course, you can write automation scripts to speed up this work.&lt;/p&gt;
+&lt;h2 id=&#34;Submission&#34;&gt;&lt;a href=&#34;#Submission&#34; class=&#34;headerlink&#34; title=&#34;Submission&#34;&gt;&lt;/a&gt;Submission&lt;/h2&gt;&lt;p&gt;Submission is relatively simple. The main thing is to pay attention to the submission method and format. Competitions usually provide a submission template to help participants understand the required format.&lt;/p&gt;
+&lt;p&gt;My first submission received a score of 0 because the predicted values had not been converted from floating-point numbers to integers. After fixing that issue, I got a score of 0.77033 and ranked 6242/9939.&lt;br&gt;This submission counted as one experience of the whole workflow.&lt;br&gt;I will continue feature engineering and parameter tuning later to obtain a higher score.&lt;br&gt;The impressive thing is that many people have full scores. I previously heard there might be a bug leaking prediction information into features; I do not know whether that was the reason.&lt;/p&gt;
+&lt;h2 id=&#34;Afterword&#34;&gt;&lt;a href=&#34;#Afterword&#34; class=&#34;headerlink&#34; title=&#34;Afterword&#34;&gt;&lt;/a&gt;Afterword&lt;/h2&gt;&lt;p&gt;According to senior schoolmates looking for jobs this year and information online, competition for algorithm engineer roles is extremely intense this year. A large reason is the high salaries of algorithm roles and the sweet returns last year’s graduates received. Everyone has been switching from development roles to algorithm roles. Many data mining competitions have also become very popular as a result, and Kaggle is the hottest competition platform among them. I also plan to ride the wave for one month and see whether I have the talent and ability to do algorithms.&lt;/p&gt;
+&lt;p&gt;On Kaggle, the first people I followed were Brother Huan, &lt;code&gt;mgchbot&lt;/code&gt;, and my senior schoolmate, &lt;code&gt;sparkingarthur&lt;/code&gt;. Looking at their profiles, they really are impressive people. Brother Huan in particular is worthy of being a double KDD Cup champion. My senior schoolmate is also strong, though he is usually very modest in front of me, perhaps because someone like Brother Huan is always around. Their Kaggle rankings are 100 and 1000 respectively, among more than 80,000 users at the time. Since I have not finished any competition yet, my ranking is Unranked. Learn from excellent people, especially with the temptation of a 400k+ hukou value.&lt;/p&gt;
+</content>
+        <updated>2018-08-14T03:22:23.000Z</updated>
+    </entry>
+</feed>
