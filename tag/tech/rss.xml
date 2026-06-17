@@ -62,8 +62,8 @@
         <category>Algorithm</category>
         <category>LeetCode</category>
         <category>A Little History of the World</category>
-        <category>Liu Shen Lei Lei Reads Tang Poetry</category>
         <category>Liu Shen Lei Lei Reads Jin Yong</category>
+        <category>Liu Shen Lei Lei Reads Tang Poetry</category>
         <category>Blog</category>
         <category>miHoYo</category>
         <category>Travel</category>
@@ -82,11 +82,11 @@
         <category>Skin in the Game</category>
         <category>Nassim Nicholas Taleb</category>
         <category>Tai Bai Jin Xing You Dian Fan</category>
-        <category>The Almanack of Naval Ravikant</category>
         <category>Tencent</category>
+        <category>The Almanack of Naval Ravikant</category>
         <category>The Art of War</category>
-        <category>The Collapse of the Heavenly Dynasty</category>
         <category>The Bitcoin Standard</category>
+        <category>The Collapse of the Heavenly Dynasty</category>
         <category>The Hungry Golden Age</category>
         <category>The Glory and the Dream</category>
         <category>The Worlds I See</category>
@@ -127,7 +127,7 @@
             <category>life</category>
             <category>Tech</category>
             <pubDate>Fri, 09 Dec 2022 16:42:27 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;Reposted from &lt;a href=&#34;https://youngforest.github.io/2022/12/09/Find-a-Europe-SDE-job-from-China/&#34;&gt;my blog&lt;/a&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;Reposted from &lt;a href=&#34;https://youngforest.github.io/en/2022/12/09/Find-a-Europe-SDE-job-from-China/&#34;&gt;my blog&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;This year, according to plan, I applied from China to programmer positions in Europe. Although I happened to encounter a macroeconomic downturn, with companies freezing hiring or even laying off people one after another, I was lucky enough to still receive two offers and successfully onboard in November, completing the physical move. Although there were many bumps along the way, looking back, everything can be considered smooth. On the road of “running,” I received help from many experienced group friends. Therefore I wrote this blog post to summarize my experience and lessons, for the convenience of those who come later.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/images/%E6%B6%A6%E4%BA%86.png&#34; alt=&#34;Ran away&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;Background&#34;&gt;&lt;a href=&#34;#Background&#34; class=&#34;headerlink&#34; title=&#34;Background&#34;&gt;&lt;/a&gt;Background&lt;/h2&gt;&lt;p&gt;First, for friends who are not familiar with me, I will briefly introduce my background.&lt;/p&gt;
@@ -215,7 +215,7 @@
 &lt;p&gt;The climate cannot be called harsh, but it is definitely not very pleasant. In this respect, Northwestern Europe is largely similar: a temperate oceanic climate. Temperature is okay: summer is not very hot, below 30 degrees, and winter is not very cold, above -10 degrees. But each year has half a year of rainy season, concentrated in winter. Wind plus rain is truly physical damage plus magic damage. Because the latitude is high, winter daylight is short, and with rainy-season cloudy days, the sun is rarely seen, easily making people depressed. I recommend supplementing vitamin D through supplements or food. I grew up in northern China until now, and really cannot handle it. However, according to friends from the south (Hangzhou), the climate here is actually better than southern China.&lt;/p&gt;
 &lt;p&gt;It is rather village-like, also called “Irish village.” Besides the poor infrastructure mentioned earlier, malls and entertainment also do not look like those of a big city. But this is fine for me; I actually like it. As a typical “small-town exam taker,” I grew up in a small county. Although I later entered a big city through Gaokao, I spent the first two years in Shahe, a town in Beijing’s Changping suburbs, which was very desolate. Later I moved to Xueyuan Road near the North Fourth Ring, finally a city. But Haidian was still much older and more broken-down than Chaoyang. After working, I stayed in Chaoyang for one year, finally tasting some big-city glitter, but I was not used to it. So coming to the Dublin suburbs in Ireland this time is acceptable to me. It feels much better than the county where I grew up.&lt;/p&gt;
 &lt;p&gt;High taxes. Ireland is a high-tax, high-welfare country, valuing fairness more than efficiency. Salaries are already much lower than in the US, and with various taxes up to 52%, take-home pay is actually similar to China or even less. Add high rent and high prices, and the money saved is inevitably less.&lt;/p&gt;
-&lt;p&gt;Abnormal rent. I previously shared in my &lt;a href=&#34;https://youngforest.github.io/2022/12/25/2022-summary-and-2023-resolutions/#%E7%94%9F%E6%B4%BB&#34;&gt;year-end review&lt;/a&gt; that Dublin’s rent is catching up with Europe’s first-tier cities, while the infrastructure and services enjoyed are third-tier.&lt;/p&gt;
+&lt;p&gt;Abnormal rent. I previously shared in my &lt;a href=&#34;https://youngforest.github.io/en/2022/12/25/2022-summary-and-2023-resolutions/#%E7%94%9F%E6%B4%BB&#34;&gt;year-end review&lt;/a&gt; that Dublin’s rent is catching up with Europe’s first-tier cities, while the infrastructure and services enjoyed are third-tier.&lt;/p&gt;
 &lt;h2 id=&#34;FAQ&#34;&gt;&lt;a href=&#34;#FAQ&#34; class=&#34;headerlink&#34; title=&#34;FAQ&#34;&gt;&lt;/a&gt;FAQ&lt;/h2&gt;&lt;p&gt;Friends who want to move abroad often ask me some questions, so I organize them here.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Q: When you interviewed for overseas positions while employed, was the time too tight to prepare at all? Was it hard to take leave?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;A: I was okay. Because I was already working at a foreign company in China, work pressure was low, taking leave was very convenient, and I was also long-term work from home. In addition, for European interviews, I prioritized evening interviews. The worst case was afternoon interviews, which required leave. As for preparation, because I had long practiced LeetCode, I basically did not need much extra time there. I did spend quite a lot of time practicing English, system design, and Behavior questions. If your current work pressure is high, it will indeed be hard to withstand. I suggest taking it slowly. If you truly want to move abroad, do not give up the goal; prepare long term. The macro environment is also bad now, with layoffs and hiring cuts everywhere. Also, using interviews as practice and casting a wide net is important. You do not need to wait until you are fully prepared before applying.&lt;/p&gt;
@@ -233,7 +233,7 @@
             <link>https://youngforest.github.io/en/2021/03/26/SSH-proxy-by-jump-server/</link>
             <category>tech</category>
             <pubDate>Fri, 26 Mar 2021 15:11:02 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;Motivation&#34;&gt;&lt;a href=&#34;#Motivation&#34; class=&#34;headerlink&#34; title=&#34;Motivation&#34;&gt;&lt;/a&gt;Motivation&lt;/h2&gt;&lt;p&gt;Following the problem in the previous post, &lt;a href=&#34;https://youngforest.github.io/2021/03/18/Ubuntu-vpn-cannot-access-public-resource/&#34;&gt;Fixing Ubuntu Desktop VPN Access to Public Internet Resources&lt;/a&gt;, I tried configuring a jump host to access machines at the Hangzhou Research Institute.&lt;/p&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;Motivation&#34;&gt;&lt;a href=&#34;#Motivation&#34; class=&#34;headerlink&#34; title=&#34;Motivation&#34;&gt;&lt;/a&gt;Motivation&lt;/h2&gt;&lt;p&gt;Following the problem in the previous post, &lt;a href=&#34;https://youngforest.github.io/en/2021/03/18/Ubuntu-vpn-cannot-access-public-resource/&#34;&gt;Fixing Ubuntu Desktop VPN Access to Public Internet Resources&lt;/a&gt;, I tried configuring a jump host to access machines at the Hangzhou Research Institute.&lt;/p&gt;
 &lt;p&gt;In my research work, my MacBook could not connect to OpenVPN and therefore could not access the Hangzhou Research Institute machines. My Ubuntu desktop already had the VPN configured and could access the servers. I now wanted to route through the Ubuntu desktop so the Mac could “directly” access the Hangzhou Research Institute. Abstracting the problem:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;A can access B&lt;/li&gt;

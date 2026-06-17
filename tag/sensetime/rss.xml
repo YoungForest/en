@@ -62,8 +62,8 @@
         <category>Algorithm</category>
         <category>LeetCode</category>
         <category>A Little History of the World</category>
-        <category>Liu Shen Lei Lei Reads Tang Poetry</category>
         <category>Liu Shen Lei Lei Reads Jin Yong</category>
+        <category>Liu Shen Lei Lei Reads Tang Poetry</category>
         <category>Blog</category>
         <category>miHoYo</category>
         <category>Travel</category>
@@ -82,11 +82,11 @@
         <category>Skin in the Game</category>
         <category>Nassim Nicholas Taleb</category>
         <category>Tai Bai Jin Xing You Dian Fan</category>
-        <category>The Almanack of Naval Ravikant</category>
         <category>Tencent</category>
+        <category>The Almanack of Naval Ravikant</category>
         <category>The Art of War</category>
-        <category>The Collapse of the Heavenly Dynasty</category>
         <category>The Bitcoin Standard</category>
+        <category>The Collapse of the Heavenly Dynasty</category>
         <category>The Hungry Golden Age</category>
         <category>The Glory and the Dream</category>
         <category>The Worlds I See</category>
@@ -163,7 +163,7 @@
 &lt;p&gt;Given &lt;code&gt;n &amp;lt;= 20, a_i &amp;lt; 100, integer s&lt;/code&gt;, solve how many assignments of positive and negative signs make the equation hold:&lt;/p&gt;
 &lt;p&gt;$$ \sum_i^{n} \pm a_i = s $$&lt;/p&gt;
 &lt;p&gt;After I gave the solution, the interviewer asked: when constructing the table, what should we do if &lt;code&gt;s&lt;/code&gt; is negative?&lt;/p&gt;
-&lt;h2 id=&#34;Afterword-Reflections&#34;&gt;&lt;a href=&#34;#Afterword-Reflections&#34; class=&#34;headerlink&#34; title=&#34;Afterword | Reflections&#34;&gt;&lt;/a&gt;Afterword | Reflections&lt;/h2&gt;&lt;p&gt;Having a clear career plan and skill direction is very important. When chatting with senior classmates normally, I can say that I do not know what I want to do or what I am most interested in. But saying this in an interview is definitely GG. It is best to have a relatively clear understanding of yourself, know your interests and career plan, and of course it is even better if these match the requirements of the position. If they do not match, the probability of GG is high, and you might even be criticized. See my Face++ interview experience from May, which can be found on my blog: &lt;a href=&#34;https://youngforest.github.io/2018/08/14/face-interview/&#34;&gt;https://youngforest.github.io/2018/08/14/face-interview/&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;Afterword-Reflections&#34;&gt;&lt;a href=&#34;#Afterword-Reflections&#34; class=&#34;headerlink&#34; title=&#34;Afterword | Reflections&#34;&gt;&lt;/a&gt;Afterword | Reflections&lt;/h2&gt;&lt;p&gt;Having a clear career plan and skill direction is very important. When chatting with senior classmates normally, I can say that I do not know what I want to do or what I am most interested in. But saying this in an interview is definitely GG. It is best to have a relatively clear understanding of yourself, know your interests and career plan, and of course it is even better if these match the requirements of the position. If they do not match, the probability of GG is high, and you might even be criticized. See my Face++ interview experience from May, which can be found on my blog: &lt;a href=&#34;https://youngforest.github.io/en/2018/08/14/face-interview/&#34;&gt;https://youngforest.github.io/en/2018/08/14/face-interview/&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Algorithm positions are extremely hot this year, to the point that supply exceeds demand. Algorithm positions are also upstream in the programmer hierarchy of contempt, and the salary is somewhat higher than development positions.&lt;/p&gt;
 &lt;p&gt;But combining my own experience and feelings, I found that I am still more interested in writing code: writing more elegant and higher-performance code, satisfying users’ needs, and creating impact. That makes me happy and satisfied. Although being a programmer is hard, I am happy. There is no need to chase careers that others consider good. The hierarchy of contempt is roughly: researcher &amp;gt; algorithm engineer &amp;gt; development engineer &amp;gt; others.&lt;/p&gt;
 &lt;p&gt;In the future, I will also plan my career along the development direction and learn the necessary skills.&lt;/p&gt;

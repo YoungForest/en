@@ -62,8 +62,8 @@
         <category>Algorithm</category>
         <category>LeetCode</category>
         <category>A Little History of the World</category>
-        <category>Liu Shen Lei Lei Reads Tang Poetry</category>
         <category>Liu Shen Lei Lei Reads Jin Yong</category>
+        <category>Liu Shen Lei Lei Reads Tang Poetry</category>
         <category>Blog</category>
         <category>miHoYo</category>
         <category>Travel</category>
@@ -82,11 +82,11 @@
         <category>Skin in the Game</category>
         <category>Nassim Nicholas Taleb</category>
         <category>Tai Bai Jin Xing You Dian Fan</category>
-        <category>The Almanack of Naval Ravikant</category>
         <category>Tencent</category>
+        <category>The Almanack of Naval Ravikant</category>
         <category>The Art of War</category>
-        <category>The Collapse of the Heavenly Dynasty</category>
         <category>The Bitcoin Standard</category>
+        <category>The Collapse of the Heavenly Dynasty</category>
         <category>The Hungry Golden Age</category>
         <category>The Glory and the Dream</category>
         <category>The Worlds I See</category>
@@ -212,7 +212,7 @@
             <link>https://youngforest.github.io/en/2021/03/26/SSH-proxy-by-jump-server/</link>
             <category>tech</category>
             <pubDate>Fri, 26 Mar 2021 15:11:02 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;Motivation&#34;&gt;&lt;a href=&#34;#Motivation&#34; class=&#34;headerlink&#34; title=&#34;Motivation&#34;&gt;&lt;/a&gt;Motivation&lt;/h2&gt;&lt;p&gt;Following the problem in the previous post, &lt;a href=&#34;https://youngforest.github.io/2021/03/18/Ubuntu-vpn-cannot-access-public-resource/&#34;&gt;Fixing Ubuntu Desktop VPN Access to Public Internet Resources&lt;/a&gt;, I tried configuring a jump host to access machines at the Hangzhou Research Institute.&lt;/p&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;Motivation&#34;&gt;&lt;a href=&#34;#Motivation&#34; class=&#34;headerlink&#34; title=&#34;Motivation&#34;&gt;&lt;/a&gt;Motivation&lt;/h2&gt;&lt;p&gt;Following the problem in the previous post, &lt;a href=&#34;https://youngforest.github.io/en/2021/03/18/Ubuntu-vpn-cannot-access-public-resource/&#34;&gt;Fixing Ubuntu Desktop VPN Access to Public Internet Resources&lt;/a&gt;, I tried configuring a jump host to access machines at the Hangzhou Research Institute.&lt;/p&gt;
 &lt;p&gt;In my research work, my MacBook could not connect to OpenVPN and therefore could not access the Hangzhou Research Institute machines. My Ubuntu desktop already had the VPN configured and could access the servers. I now wanted to route through the Ubuntu desktop so the Mac could “directly” access the Hangzhou Research Institute. Abstracting the problem:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;A can access B&lt;/li&gt;
@@ -260,7 +260,7 @@
 &lt;p&gt;Check “Use this connection only for resources on its network”.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/images/vpn2.png&#34; alt=&#34;Step 2&#34;&gt;&lt;/p&gt;
 &lt;p&gt;After applying, reconnect the VPN and the problem should be solved.&lt;/p&gt;
-&lt;h2 id=&#34;Postscript&#34;&gt;&lt;a href=&#34;#Postscript&#34; class=&#34;headerlink&#34; title=&#34;Postscript&#34;&gt;&lt;/a&gt;Postscript&lt;/h2&gt;&lt;p&gt;Next, I will try setting up a jump host on Ubuntu. This way, my Mac may be able to connect to Hangzhou Research Institute machines through that jump host. (It has already succeeded. The next post is updated &lt;a href=&#34;https://youngforest.github.io/2021/03/26/SSH-proxy-by-jump-server/&#34;&gt;here&lt;/a&gt;.)&lt;/p&gt;
+&lt;h2 id=&#34;Postscript&#34;&gt;&lt;a href=&#34;#Postscript&#34; class=&#34;headerlink&#34; title=&#34;Postscript&#34;&gt;&lt;/a&gt;Postscript&lt;/h2&gt;&lt;p&gt;Next, I will try setting up a jump host on Ubuntu. This way, my Mac may be able to connect to Hangzhou Research Institute machines through that jump host. (It has already succeeded. The next post is updated &lt;a href=&#34;https://youngforest.github.io/en/2021/03/26/SSH-proxy-by-jump-server/&#34;&gt;here&lt;/a&gt;.)&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -328,7 +328,7 @@
             <description><![CDATA[ &lt;h2 id=&#34;Configure-Proxy&#34;&gt;&lt;a href=&#34;#Configure-Proxy&#34; class=&#34;headerlink&#34; title=&#34;Configure Proxy&#34;&gt;&lt;/a&gt;Configure Proxy&lt;/h2&gt;&lt;p&gt;My requirement was to insert LaTeX formulas into Markdown documents. Atom’s default &lt;code&gt;markdown-preview&lt;/code&gt; package could not satisfy this requirement. After searching, I found that the community package &lt;code&gt;markdown-preview-plus&lt;/code&gt; could satisfy it.&lt;/p&gt;
 &lt;h3 id=&#34;Atom-Package-Management&#34;&gt;&lt;a href=&#34;#Atom-Package-Management&#34; class=&#34;headerlink&#34; title=&#34;Atom Package Management&#34;&gt;&lt;/a&gt;&lt;a href=&#34;http://flight-manual.atom.io/using-atom/sections/atom-packages/#atom-packages&#34;&gt;Atom Package Management&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Following the official tutorial, the installation failed:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Installing “&lt;a href=&#34;mailto:&amp;#109;&amp;#x61;&amp;#114;&amp;#107;&amp;#100;&amp;#111;&amp;#x77;&amp;#110;&amp;#45;&amp;#112;&amp;#114;&amp;#x65;&amp;#x76;&amp;#x69;&amp;#x65;&amp;#119;&amp;#45;&amp;#112;&amp;#x6c;&amp;#x75;&amp;#x73;&amp;#64;&amp;#50;&amp;#46;&amp;#52;&amp;#x2e;&amp;#x39;&#34;&gt;&amp;#109;&amp;#x61;&amp;#114;&amp;#107;&amp;#100;&amp;#111;&amp;#x77;&amp;#110;&amp;#45;&amp;#112;&amp;#114;&amp;#x65;&amp;#x76;&amp;#x69;&amp;#x65;&amp;#119;&amp;#45;&amp;#112;&amp;#x6c;&amp;#x75;&amp;#x73;&amp;#64;&amp;#50;&amp;#46;&amp;#52;&amp;#x2e;&amp;#x39;&lt;/a&gt;” failed.&lt;/p&gt;
+&lt;p&gt;Installing “&lt;a href=&#34;mailto:&amp;#109;&amp;#97;&amp;#x72;&amp;#107;&amp;#x64;&amp;#111;&amp;#x77;&amp;#x6e;&amp;#45;&amp;#112;&amp;#x72;&amp;#101;&amp;#118;&amp;#105;&amp;#101;&amp;#119;&amp;#x2d;&amp;#112;&amp;#x6c;&amp;#x75;&amp;#x73;&amp;#64;&amp;#50;&amp;#46;&amp;#52;&amp;#46;&amp;#x39;&#34;&gt;&amp;#109;&amp;#97;&amp;#x72;&amp;#107;&amp;#x64;&amp;#111;&amp;#x77;&amp;#x6e;&amp;#45;&amp;#112;&amp;#x72;&amp;#101;&amp;#118;&amp;#105;&amp;#101;&amp;#119;&amp;#x2d;&amp;#112;&amp;#x6c;&amp;#x75;&amp;#x73;&amp;#64;&amp;#50;&amp;#46;&amp;#52;&amp;#46;&amp;#x39;&lt;/a&gt;” failed.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;In the log, I found this request:&lt;/p&gt;
 &lt;blockquote&gt;

@@ -59,8 +59,8 @@
     <category term="Algorithm" />
     <category term="LeetCode" />
     <category term="A Little History of the World" />
-    <category term="Liu Shen Lei Lei Reads Tang Poetry" />
     <category term="Liu Shen Lei Lei Reads Jin Yong" />
+    <category term="Liu Shen Lei Lei Reads Tang Poetry" />
     <category term="Blog" />
     <category term="miHoYo" />
     <category term="Travel" />
@@ -79,11 +79,11 @@
     <category term="Skin in the Game" />
     <category term="Nassim Nicholas Taleb" />
     <category term="Tai Bai Jin Xing You Dian Fan" />
-    <category term="The Almanack of Naval Ravikant" />
     <category term="Tencent" />
+    <category term="The Almanack of Naval Ravikant" />
     <category term="The Art of War" />
-    <category term="The Collapse of the Heavenly Dynasty" />
     <category term="The Bitcoin Standard" />
+    <category term="The Collapse of the Heavenly Dynasty" />
     <category term="The Hungry Golden Age" />
     <category term="The Glory and the Dream" />
     <category term="The Worlds I See" />
@@ -204,7 +204,7 @@
         <link rel="alternate" href="https://youngforest.github.io/en/2020/04/30/2021-summer-intern-interview-summary/"/>
         <content type="html">&lt;p&gt;Nearly two months have passed since I posted my first summer internship interview experience on Nowcoder. In between, I successively participated in recruiting processes at eight companies. All roles were backend/server development roles, based in Beijing.&lt;/p&gt;
 &lt;h2 id=&#34;Failed&#34;&gt;&lt;a href=&#34;#Failed&#34; class=&#34;headerlink&#34; title=&#34;Failed&#34;&gt;&lt;/a&gt;Failed&lt;/h2&gt;&lt;h3 id=&#34;ByteDance&#34;&gt;&lt;a href=&#34;#ByteDance&#34; class=&#34;headerlink&#34; title=&#34;ByteDance&#34;&gt;&lt;/a&gt;ByteDance&lt;/h3&gt;&lt;p&gt;I failed in the &lt;a href=&#34;https://www.nowcoder.com/discuss/371946&#34;&gt;first round&lt;/a&gt;. ByteDance is still a company I feel quite connected to and also really like. Last year, I interviewed once for a summer internship in the Ads system and went through a brutal four rounds, all the way to the lead, Lizhe. In the end, I did not go because the internship timing did not work. Last summer, I also joined ByteDance’s summer camp. Since this was my first interview in a long time, I was not prepared enough and did not perform very well. I failed to solve the algorithm problem, Edit Distance, so I was rejected in the first round.&lt;/p&gt;
-&lt;h3 id=&#34;Microsoft&#34;&gt;&lt;a href=&#34;#Microsoft&#34; class=&#34;headerlink&#34; title=&#34;Microsoft&#34;&gt;&lt;/a&gt;Microsoft&lt;/h3&gt;&lt;p&gt;I found a senior schoolmate who had previously worked at Microsoft, and through him contacted another colleague currently working at Microsoft for a referral. In 2018, I once interviewed with &lt;a href=&#34;https://youngforest.github.io/2018/06/01/suzhou-microsoft-interview/&#34;&gt;Microsoft Suzhou&lt;/a&gt;. Back then my level was limited, and I unfortunately failed. This year I was full of ambition and wanted to avenge that defeat. Unexpectedly, I capsized again. But I did learn a very important lesson: do not brag about having participated in contests.&lt;/p&gt;
+&lt;h3 id=&#34;Microsoft&#34;&gt;&lt;a href=&#34;#Microsoft&#34; class=&#34;headerlink&#34; title=&#34;Microsoft&#34;&gt;&lt;/a&gt;Microsoft&lt;/h3&gt;&lt;p&gt;I found a senior schoolmate who had previously worked at Microsoft, and through him contacted another colleague currently working at Microsoft for a referral. In 2018, I once interviewed with &lt;a href=&#34;https://youngforest.github.io/en/2018/06/01/suzhou-microsoft-interview/&#34;&gt;Microsoft Suzhou&lt;/a&gt;. Back then my level was limited, and I unfortunately failed. This year I was full of ambition and wanted to avenge that defeat. Unexpectedly, I capsized again. But I did learn a very important lesson: do not brag about having participated in contests.&lt;/p&gt;
 &lt;p&gt;In the first round, the interviewer asked me whether I had participated in any contests. At that time, I stupidly answered that I had done some LeetCode, Kick Start, Codeforces, and AtCoder. In reality, only LeetCode weekly contests were something I participated in often. I joined Kick Start’s monthly rounds if the time worked. The total number of contests I had done on the other platforms was only a few. Because of this, the interviewer misunderstood my level and thought I was at a Codeforces level; in reality, my Codeforces rating was not even 1500. He only asked me system design questions and did not ask me to handwrite code. Even though I had solved 900 problems on LeetCode, I had no chance to show it.&lt;/p&gt;
 &lt;p&gt;The second-round interviewer started with two very difficult algorithm problems. They felt like problems prepared for ACM contestants. It was all because I bragged in the first round, and then got arranged into this second round.&lt;/p&gt;
 &lt;ul&gt;
@@ -639,7 +639,7 @@
 &lt;p&gt;Given &lt;code&gt;n &amp;lt;= 20, a_i &amp;lt; 100, integer s&lt;/code&gt;, solve how many assignments of positive and negative signs make the equation hold:&lt;/p&gt;
 &lt;p&gt;$$ \sum_i^{n} \pm a_i = s $$&lt;/p&gt;
 &lt;p&gt;After I gave the solution, the interviewer asked: when constructing the table, what should we do if &lt;code&gt;s&lt;/code&gt; is negative?&lt;/p&gt;
-&lt;h2 id=&#34;Afterword-Reflections&#34;&gt;&lt;a href=&#34;#Afterword-Reflections&#34; class=&#34;headerlink&#34; title=&#34;Afterword | Reflections&#34;&gt;&lt;/a&gt;Afterword | Reflections&lt;/h2&gt;&lt;p&gt;Having a clear career plan and skill direction is very important. When chatting with senior classmates normally, I can say that I do not know what I want to do or what I am most interested in. But saying this in an interview is definitely GG. It is best to have a relatively clear understanding of yourself, know your interests and career plan, and of course it is even better if these match the requirements of the position. If they do not match, the probability of GG is high, and you might even be criticized. See my Face++ interview experience from May, which can be found on my blog: &lt;a href=&#34;https://youngforest.github.io/2018/08/14/face-interview/&#34;&gt;https://youngforest.github.io/2018/08/14/face-interview/&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;Afterword-Reflections&#34;&gt;&lt;a href=&#34;#Afterword-Reflections&#34; class=&#34;headerlink&#34; title=&#34;Afterword | Reflections&#34;&gt;&lt;/a&gt;Afterword | Reflections&lt;/h2&gt;&lt;p&gt;Having a clear career plan and skill direction is very important. When chatting with senior classmates normally, I can say that I do not know what I want to do or what I am most interested in. But saying this in an interview is definitely GG. It is best to have a relatively clear understanding of yourself, know your interests and career plan, and of course it is even better if these match the requirements of the position. If they do not match, the probability of GG is high, and you might even be criticized. See my Face++ interview experience from May, which can be found on my blog: &lt;a href=&#34;https://youngforest.github.io/en/2018/08/14/face-interview/&#34;&gt;https://youngforest.github.io/en/2018/08/14/face-interview/&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Algorithm positions are extremely hot this year, to the point that supply exceeds demand. Algorithm positions are also upstream in the programmer hierarchy of contempt, and the salary is somewhat higher than development positions.&lt;/p&gt;
 &lt;p&gt;But combining my own experience and feelings, I found that I am still more interested in writing code: writing more elegant and higher-performance code, satisfying users’ needs, and creating impact. That makes me happy and satisfied. Although being a programmer is hard, I am happy. There is no need to chase careers that others consider good. The hierarchy of contempt is roughly: researcher &amp;gt; algorithm engineer &amp;gt; development engineer &amp;gt; others.&lt;/p&gt;
 &lt;p&gt;In the future, I will also plan my career along the development direction and learn the necessary skills.&lt;/p&gt;

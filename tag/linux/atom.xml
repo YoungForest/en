@@ -59,8 +59,8 @@
     <category term="Algorithm" />
     <category term="LeetCode" />
     <category term="A Little History of the World" />
-    <category term="Liu Shen Lei Lei Reads Tang Poetry" />
     <category term="Liu Shen Lei Lei Reads Jin Yong" />
+    <category term="Liu Shen Lei Lei Reads Tang Poetry" />
     <category term="Blog" />
     <category term="miHoYo" />
     <category term="Travel" />
@@ -79,11 +79,11 @@
     <category term="Skin in the Game" />
     <category term="Nassim Nicholas Taleb" />
     <category term="Tai Bai Jin Xing You Dian Fan" />
-    <category term="The Almanack of Naval Ravikant" />
     <category term="Tencent" />
+    <category term="The Almanack of Naval Ravikant" />
     <category term="The Art of War" />
-    <category term="The Collapse of the Heavenly Dynasty" />
     <category term="The Bitcoin Standard" />
+    <category term="The Collapse of the Heavenly Dynasty" />
     <category term="The Hungry Golden Age" />
     <category term="The Glory and the Dream" />
     <category term="The Worlds I See" />
@@ -132,7 +132,7 @@
 &lt;p&gt;Check “Use this connection only for resources on its network”.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/images/vpn2.png&#34; alt=&#34;Step 2&#34;&gt;&lt;/p&gt;
 &lt;p&gt;After applying, reconnect the VPN and the problem should be solved.&lt;/p&gt;
-&lt;h2 id=&#34;Postscript&#34;&gt;&lt;a href=&#34;#Postscript&#34; class=&#34;headerlink&#34; title=&#34;Postscript&#34;&gt;&lt;/a&gt;Postscript&lt;/h2&gt;&lt;p&gt;Next, I will try setting up a jump host on Ubuntu. This way, my Mac may be able to connect to Hangzhou Research Institute machines through that jump host. (It has already succeeded. The next post is updated &lt;a href=&#34;https://youngforest.github.io/2021/03/26/SSH-proxy-by-jump-server/&#34;&gt;here&lt;/a&gt;.)&lt;/p&gt;
+&lt;h2 id=&#34;Postscript&#34;&gt;&lt;a href=&#34;#Postscript&#34; class=&#34;headerlink&#34; title=&#34;Postscript&#34;&gt;&lt;/a&gt;Postscript&lt;/h2&gt;&lt;p&gt;Next, I will try setting up a jump host on Ubuntu. This way, my Mac may be able to connect to Hangzhou Research Institute machines through that jump host. (It has already succeeded. The next post is updated &lt;a href=&#34;https://youngforest.github.io/en/2021/03/26/SSH-proxy-by-jump-server/&#34;&gt;here&lt;/a&gt;.)&lt;/p&gt;
 </content>
         <category term="Linux" />
         <updated>2021-03-18T03:20:13.000Z</updated>

@@ -59,8 +59,8 @@
     <category term="Algorithm" />
     <category term="LeetCode" />
     <category term="A Little History of the World" />
-    <category term="Liu Shen Lei Lei Reads Tang Poetry" />
     <category term="Liu Shen Lei Lei Reads Jin Yong" />
+    <category term="Liu Shen Lei Lei Reads Tang Poetry" />
     <category term="Blog" />
     <category term="miHoYo" />
     <category term="Travel" />
@@ -79,11 +79,11 @@
     <category term="Skin in the Game" />
     <category term="Nassim Nicholas Taleb" />
     <category term="Tai Bai Jin Xing You Dian Fan" />
-    <category term="The Almanack of Naval Ravikant" />
     <category term="Tencent" />
+    <category term="The Almanack of Naval Ravikant" />
     <category term="The Art of War" />
-    <category term="The Collapse of the Heavenly Dynasty" />
     <category term="The Bitcoin Standard" />
+    <category term="The Collapse of the Heavenly Dynasty" />
     <category term="The Hungry Golden Age" />
     <category term="The Glory and the Dream" />
     <category term="The Worlds I See" />
@@ -124,7 +124,7 @@
         <content type="html">&lt;h2 id=&#34;Configure-Proxy&#34;&gt;&lt;a href=&#34;#Configure-Proxy&#34; class=&#34;headerlink&#34; title=&#34;Configure Proxy&#34;&gt;&lt;/a&gt;Configure Proxy&lt;/h2&gt;&lt;p&gt;My requirement was to insert LaTeX formulas into Markdown documents. Atom’s default &lt;code&gt;markdown-preview&lt;/code&gt; package could not satisfy this requirement. After searching, I found that the community package &lt;code&gt;markdown-preview-plus&lt;/code&gt; could satisfy it.&lt;/p&gt;
 &lt;h3 id=&#34;Atom-Package-Management&#34;&gt;&lt;a href=&#34;#Atom-Package-Management&#34; class=&#34;headerlink&#34; title=&#34;Atom Package Management&#34;&gt;&lt;/a&gt;&lt;a href=&#34;http://flight-manual.atom.io/using-atom/sections/atom-packages/#atom-packages&#34;&gt;Atom Package Management&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Following the official tutorial, the installation failed:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Installing “&lt;a href=&#34;mailto:&amp;#109;&amp;#x61;&amp;#114;&amp;#107;&amp;#100;&amp;#111;&amp;#x77;&amp;#110;&amp;#45;&amp;#112;&amp;#114;&amp;#x65;&amp;#x76;&amp;#x69;&amp;#x65;&amp;#119;&amp;#45;&amp;#112;&amp;#x6c;&amp;#x75;&amp;#x73;&amp;#64;&amp;#50;&amp;#46;&amp;#52;&amp;#x2e;&amp;#x39;&#34;&gt;&amp;#109;&amp;#x61;&amp;#114;&amp;#107;&amp;#100;&amp;#111;&amp;#x77;&amp;#110;&amp;#45;&amp;#112;&amp;#114;&amp;#x65;&amp;#x76;&amp;#x69;&amp;#x65;&amp;#119;&amp;#45;&amp;#112;&amp;#x6c;&amp;#x75;&amp;#x73;&amp;#64;&amp;#50;&amp;#46;&amp;#52;&amp;#x2e;&amp;#x39;&lt;/a&gt;” failed.&lt;/p&gt;
+&lt;p&gt;Installing “&lt;a href=&#34;mailto:&amp;#109;&amp;#97;&amp;#x72;&amp;#107;&amp;#x64;&amp;#111;&amp;#x77;&amp;#x6e;&amp;#45;&amp;#112;&amp;#x72;&amp;#101;&amp;#118;&amp;#105;&amp;#101;&amp;#119;&amp;#x2d;&amp;#112;&amp;#x6c;&amp;#x75;&amp;#x73;&amp;#64;&amp;#50;&amp;#46;&amp;#52;&amp;#46;&amp;#x39;&#34;&gt;&amp;#109;&amp;#97;&amp;#x72;&amp;#107;&amp;#x64;&amp;#111;&amp;#x77;&amp;#x6e;&amp;#45;&amp;#112;&amp;#x72;&amp;#101;&amp;#118;&amp;#105;&amp;#101;&amp;#119;&amp;#x2d;&amp;#112;&amp;#x6c;&amp;#x75;&amp;#x73;&amp;#64;&amp;#50;&amp;#46;&amp;#52;&amp;#46;&amp;#x39;&lt;/a&gt;” failed.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;In the log, I found this request:&lt;/p&gt;
 &lt;blockquote&gt;
