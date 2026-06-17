@@ -9,7 +9,7 @@ categories:
 
 ## Motivation
 
-Following the problem in the previous post, [Fixing Ubuntu Desktop VPN Access to Public Internet Resources](https://youngforest.github.io/2021/03/18/Ubuntu-vpn-cannot-access-public-resource/), I tried configuring a jump host to access machines at the Hangzhou Research Institute.
+Following the problem in the previous post, [Fixing Ubuntu Desktop VPN Access to Public Internet Resources](https://youngforest.github.io/en/2021/03/18/Ubuntu-vpn-cannot-access-public-resource/), I tried configuring a jump host to access machines at the Hangzhou Research Institute.
 
 In my research work, my MacBook could not connect to OpenVPN and therefore could not access the Hangzhou Research Institute machines. My Ubuntu desktop already had the VPN configured and could access the servers. I now wanted to route through the Ubuntu desktop so the Mac could "directly" access the Hangzhou Research Institute. Abstracting the problem:
 

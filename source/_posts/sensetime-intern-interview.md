@@ -86,7 +86,7 @@ After I gave the solution, the interviewer asked: when constructing the table, w
 
 ## Afterword | Reflections
 
-Having a clear career plan and skill direction is very important. When chatting with senior classmates normally, I can say that I do not know what I want to do or what I am most interested in. But saying this in an interview is definitely GG. It is best to have a relatively clear understanding of yourself, know your interests and career plan, and of course it is even better if these match the requirements of the position. If they do not match, the probability of GG is high, and you might even be criticized. See my Face++ interview experience from May, which can be found on my blog: https://youngforest.github.io/2018/08/14/face-interview/.
+Having a clear career plan and skill direction is very important. When chatting with senior classmates normally, I can say that I do not know what I want to do or what I am most interested in. But saying this in an interview is definitely GG. It is best to have a relatively clear understanding of yourself, know your interests and career plan, and of course it is even better if these match the requirements of the position. If they do not match, the probability of GG is high, and you might even be criticized. See my Face++ interview experience from May, which can be found on my blog: https://youngforest.github.io/en/2018/08/14/face-interview/.
 
 Algorithm positions are extremely hot this year, to the point that supply exceeds demand. Algorithm positions are also upstream in the programmer hierarchy of contempt, and the salary is somewhat higher than development positions.
 

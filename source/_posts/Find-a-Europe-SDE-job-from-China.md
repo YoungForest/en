@@ -8,7 +8,7 @@ categories:
   - Diary
 ---
 
-Reposted from [my blog](https://youngforest.github.io/2022/12/09/Find-a-Europe-SDE-job-from-China/)
+Reposted from [my blog](https://youngforest.github.io/en/2022/12/09/Find-a-Europe-SDE-job-from-China/)
 
 This year, according to plan, I applied from China to programmer positions in Europe. Although I happened to encounter a macroeconomic downturn, with companies freezing hiring or even laying off people one after another, I was lucky enough to still receive two offers and successfully onboard in November, completing the physical move. Although there were many bumps along the way, looking back, everything can be considered smooth. On the road of "running," I received help from many experienced group friends. Therefore I wrote this blog post to summarize my experience and lessons, for the convenience of those who come later.
 
@@ -172,7 +172,7 @@ It is rather village-like, also called "Irish village." Besides the poor infrast
 
 High taxes. Ireland is a high-tax, high-welfare country, valuing fairness more than efficiency. Salaries are already much lower than in the US, and with various taxes up to 52%, take-home pay is actually similar to China or even less. Add high rent and high prices, and the money saved is inevitably less.
 
-Abnormal rent. I previously shared in my [year-end review](https://youngforest.github.io/2022/12/25/2022-summary-and-2023-resolutions/#%E7%94%9F%E6%B4%BB) that Dublin's rent is catching up with Europe's first-tier cities, while the infrastructure and services enjoyed are third-tier.
+Abnormal rent. I previously shared in my [year-end review](https://youngforest.github.io/en/2022/12/25/2022-summary-and-2023-resolutions/#%E7%94%9F%E6%B4%BB) that Dublin's rent is catching up with Europe's first-tier cities, while the infrastructure and services enjoyed are third-tier.
 
 ## FAQ
 

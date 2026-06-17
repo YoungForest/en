@@ -199,4 +199,4 @@ During this month and a half in the cruel problem-solving group, I followed the 
 
 Looking back at my graduate life, I did not do research well, but I did solve quite a few problems. This week I officially passed 1000+ solved problems.
 
-Thinking back to [when I saw that LeetCode had more than 1000 problems](https://youngforest.github.io/2019/03/03/LeetCode-weekly-contest-126/), I was still sighing: how could anyone ever finish them? Now LeetCode has 1400+ problems, and I have also solved 1000+.
+Thinking back to [when I saw that LeetCode had more than 1000 problems](https://youngforest.github.io/en/2019/03/03/LeetCode-weekly-contest-126/), I was still sighing: how could anyone ever finish them? Now LeetCode has 1400+ problems, and I have also solved 1000+.

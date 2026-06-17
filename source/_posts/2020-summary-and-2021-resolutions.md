@@ -8,7 +8,7 @@ categories:
   - Diary
 ---
 
-Reposted from [my blog](https://youngforest.github.io/2020/11/25/2020-summary-and-2021-resolutions/)
+Reposted from [my blog](https://youngforest.github.io/en/2020/11/25/2020-summary-and-2021-resolutions/)
 
 This year-end summary is a bit early; December has not even arrived yet. But since I just submitted the plagiarism check for my master's thesis today, even though there are still many things to do, I have no mood to work at all. I might as well use this restless mood to write a first draft of my year-end summary. I do not know whether the mood will affect it.
 
@@ -16,7 +16,7 @@ From the very beginning, 2020 was destined to be an extraordinary year. Before, 
 
 ## 2020 Work Review
 
-First, I will compare against [the outlook I wrote last year](https://youngforest.github.io/2020/02/20/2019-summary-and-2020-resolutions/) and review how much I completed.
+First, I will compare against [the outlook I wrote last year](https://youngforest.github.io/en/2020/02/20/2019-summary-and-2020-resolutions/) and review how much I completed.
 
 Daily problem solving was completed as hoped. Especially after joining the [Cruel check-in group](https://wisdompeak.github.io/lc-score-board/), solving problems could even earn red packets, which made me very happy. In the group I also got to know a bunch of strong people. Everyone there is talented, and they speak so nicely. Over two and a half years of graduate school, I solved 1k+ problems, participated in nearly 100 LeetCode weekly contests, once entered the global top 500, kept my rating stable at 2200+, kept my rating rank stable in the top 1000, solved all 4 problems in more than half of weekly contests, guaranteed 3 problems, often ranked top 500, reached top 100 at best, and won gifts 3 times on the Chinese server. Although the gifts were not valuable, I was very happy. My highest rank in the Cruel group was 11th, stable top 40, and sometimes stable top 20. These achievements still make me a little proud. Others may not value them much, but I enjoyed them myself, gained a sense of achievement, and built positive feedback for problem solving.
 But afterward I will not invest more time in problem solving. I have now passed the peak of grinding LeetCode, there is temporarily no pressure to find a job, and my problem-solving level has reached a certain height, so the marginal benefit is not as large as before. The plan afterward is to do one or two problems a day to keep my feel, try to participate in weekly contests on weekends, and continue being a sickle in the Cruel group. More time will be invested in other skills, such as work skills, system design, spoken English, and so on.

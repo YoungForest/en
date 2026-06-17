@@ -39,4 +39,4 @@ After applying, reconnect the VPN and the problem should be solved.
 
 ## Postscript
 
-Next, I will try setting up a jump host on Ubuntu. This way, my Mac may be able to connect to Hangzhou Research Institute machines through that jump host. (It has already succeeded. The next post is updated [here](https://youngforest.github.io/2021/03/26/SSH-proxy-by-jump-server/).)
+Next, I will try setting up a jump host on Ubuntu. This way, my Mac may be able to connect to Hangzhou Research Institute machines through that jump host. (It has already succeeded. The next post is updated [here](https://youngforest.github.io/en/2021/03/26/SSH-proxy-by-jump-server/).)

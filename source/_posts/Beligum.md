@@ -9,7 +9,7 @@ categories:
 ---
 
 In the second half of this year, I was fortunate to have the opportunity to come to Belgium for an exchange semester, about five months.
-This is my first time going abroad for such a long period. Previously I also participated in a school program and went to the United Kingdom for a half-month study tour. For details, you can read [Thoughts and Observations from My Study Tour in Britain](https://youngforest.github.io/2016/08/25/my-britain-trip/), which I wrote three years ago.
+This is my first time going abroad for such a long period. Previously I also participated in a school program and went to the United Kingdom for a half-month study tour. For details, you can read [Thoughts and Observations from My Study Tour in Britain](https://youngforest.github.io/en/2016/08/25/my-britain-trip/), which I wrote three years ago.
 Next, I will summarize my exchange program from four aspects: city, life, study, and travel.
 
 ## City

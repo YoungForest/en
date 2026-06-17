@@ -8,26 +8,26 @@ categories:
   - Diary
 ---
 
-Reposted from [my blog](https://youngforest.github.io/2025/12/27/2025-summary-and-2026-resolutions/)
+Reposted from [my blog](https://youngforest.github.io/en/2025/12/27/2025-summary-and-2026-resolutions/)
 
 Previous year-end reviews:
 
-- [2024 Year-End Review](https://youngforest.github.io/2024/12/28/2024-summary-and-2025-resolutions/)
-- [2023 Year-End Review](https://youngforest.github.io/2023/12/23/2023-summary-and-2024-resolutions/)
-- [2022 Year-End Review](https://youngforest.github.io/2022/12/25/2022-summary-and-2023-resolutions/)
-- [2021 Year-End Review](https://youngforest.github.io/2021/12/28/2021-summary-and-2022-resolutions/)
-- [2020 Year-End Review](https://youngforest.github.io/2020/11/25/2020-summary-and-2021-resolutions/)
-- [2019 Year-End Review](https://youngforest.github.io/2020/02/20/2019-summary-and-2020-resolutions/)
-- [2019 Mid-Year Review (Birthday Thoughts)](https://youngforest.github.io/2019/07/15/Happy-birthday-2019/)
-- [2018 Year-End Review](https://youngforest.github.io/2018/12/12/2018-summary-and-2019-resolutions/)
-- [2017 New Year Outlook](https://youngforest.github.io/2017/02/22/2017-resolutions/)
+- [2024 Year-End Review](https://youngforest.github.io/en/2024/12/28/2024-summary-and-2025-resolutions/)
+- [2023 Year-End Review](https://youngforest.github.io/en/2023/12/23/2023-summary-and-2024-resolutions/)
+- [2022 Year-End Review](https://youngforest.github.io/en/2022/12/25/2022-summary-and-2023-resolutions/)
+- [2021 Year-End Review](https://youngforest.github.io/en/2021/12/28/2021-summary-and-2022-resolutions/)
+- [2020 Year-End Review](https://youngforest.github.io/en/2020/11/25/2020-summary-and-2021-resolutions/)
+- [2019 Year-End Review](https://youngforest.github.io/en/2020/02/20/2019-summary-and-2020-resolutions/)
+- [2019 Mid-Year Review (Birthday Thoughts)](https://youngforest.github.io/en/2019/07/15/Happy-birthday-2019/)
+- [2018 Year-End Review](https://youngforest.github.io/en/2018/12/12/2018-summary-and-2019-resolutions/)
+- [2017 New Year Outlook](https://youngforest.github.io/en/2017/02/22/2017-resolutions/)
 
 Milestone reviews:
 
-- [Three-Year Master's Review](https://youngforest.github.io/2021/07/03/my-3-years-master/)
-- [Four-Year University Review](https://youngforest.github.io/2018/10/03/my-4-years-college/)
+- [Three-Year Master's Review](https://youngforest.github.io/en/2021/07/03/my-3-years-master/)
+- [Four-Year University Review](https://youngforest.github.io/en/2018/10/03/my-4-years-college/)
 
-These important posts are all under the [Diary category](https://youngforest.github.io/categories/dairy/) on my blog.
+These important posts are all under the [Diary category](https://youngforest.github.io/en/categories/Diary/) on my blog.
 
 # 2025 Review
 
@@ -73,13 +73,13 @@ I also do not think humanity will go extinct or be replaced. Darwin's theory of 
 
 ## Reading Ten Thousand Books
 
-This year I read more than 30 books. See my [list of book reviews](https://youngforest.github.io/categories/%E8%AF%BB%E5%90%8E%E6%84%9F/). Ones I especially liked include:
+This year I read more than 30 books. See my [list of book reviews](https://youngforest.github.io/en/categories/Book-Notes/). Ones I especially liked include:
 
-- [Fei-Fei Li's *The Worlds I See*](https://youngforest.github.io/2025/12/31/The-World-I-see/)
-- [*A Little History of the World*](https://youngforest.github.io/2026/01/01/Little-history-of-world/)
-- [*The Bitcoin Standard*](https://youngforest.github.io/2026/01/01/The-Bitcoin-Standard/)
-- [*Why Nations Fail*](https://youngforest.github.io/2025/06/23/Why-Nations-fail/)
-- [*Genome: The Autobiography of a Species in 23 Chapters*](https://youngforest.github.io/2026/01/01/Genome-The-autobiography-of-a-species-in-23-chapters/)
+- [Fei-Fei Li's *The Worlds I See*](https://youngforest.github.io/en/2025/12/31/The-World-I-see/)
+- [*A Little History of the World*](https://youngforest.github.io/en/2026/01/01/Little-history-of-world/)
+- [*The Bitcoin Standard*](https://youngforest.github.io/en/2026/01/01/The-Bitcoin-Standard/)
+- [*Why Nations Fail*](https://youngforest.github.io/en/2025/06/23/Why-Nations-fail/)
+- [*Genome: The Autobiography of a Species in 23 Chapters*](https://youngforest.github.io/en/2026/01/01/Genome-The-autobiography-of-a-species-in-23-chapters/)
 - Michio Kaku's *Hyperspace*
 
 Liu Cixin must have read it. Famous ideas such as technological explosion, the average density determining the fate of the universe, and ten-dimensional space collapsing into three dimensions all reveal the shadow of *Remembrance of Earth's Past*. Recently I also read Brian Greene's *The Fabric of the Cosmos: Space, Time, and the Texture of Reality*. Compared with Rovelli's loop quantum gravity, superstring theory is indeed more shocking and more fundamental. Perhaps loop quantum gravity can also unify quantum mechanics and general relativity and explain spacetime. But for the more fundamental essence and origin of the universe, superstring theory gives the kind of answer I crave more. I read Kaku's *Parallel Worlds* in high school. Concepts such as the goldfish scientist are of the same lineage. Honestly, compared with Hawking's popular science works, Kaku is better. Hawking's physical disability and unyielding spirit added to his fame and prestige. Compared with Greene and Hawking, Kaku seems much weaker in scientific research, but as a writer he is very successful.
