@@ -8,13 +8,13 @@ categories:
 date: 2020-02-20 16:50:42
 ---
 
-[Reposted from my blog](https://youngforest.github.io/2020/02/20/2019-summary-and-2020-resolutions/)
+[Reposted from my blog](https://youngforest.github.io/en/2020/02/20/2019-summary-and-2020-resolutions/)
 
 2020 is destined to be an unusual year for me, mainly because I am facing the two gates of graduation and job hunting. This is the most important challenge and task I have faced in the past two years. I have prepared for it for a long time, hoping that all the accumulation would finally pay off. Reality, however, did not go as I wished.
 
 ## Review of 2019
 
-In [last year's plan](https://youngforest.github.io/2018/12/12/2018-summary-and-2019-resolutions/), I wrote down my plans and expectations for 2019.
+In [last year's plan](https://youngforest.github.io/en/2018/12/12/2018-summary-and-2019-resolutions/), I wrote down my plans and expectations for 2019.
 
 I overfulfilled my LeetCode practice goal. I have now solved 800+ problems.
 

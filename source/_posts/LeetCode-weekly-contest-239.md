@@ -114,7 +114,7 @@ space complexity: O(n).
 
 ## 1851. Minimum Interval to Include Each Query
 
-This problem is somewhat similar to [the last problem from last night's biweekly contest](https://youngforest.github.io/2021/05/02/LeetCode-biweekly-contest-51/#1847-Closest-Room), and it needs the offline query technique.
+This problem is somewhat similar to [the last problem from last night's biweekly contest](https://youngforest.github.io/en/2021/05/02/LeetCode-biweekly-contest-51/#1847-Closest-Room), and it needs the offline query technique.
 
 Sort intervals by size from small to large. Whenever a new interval is added, update the answers for the queries it can cover.
 

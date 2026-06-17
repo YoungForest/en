@@ -12,19 +12,19 @@ In the blink of an eye, 2022 is about to pass. I do not know whether it is becau
 
 Previous year-end reviews:
 
-- [2021 Year-End Review](https://youngforest.github.io/2021/12/28/2021-summary-and-2022-resolutions/)
-- [2020 Year-End Review](https://youngforest.github.io/2020/11/25/2020-summary-and-2021-resolutions/)
-- [2019 Year-End Review](https://youngforest.github.io/2020/02/20/2019-summary-and-2020-resolutions/)
-- [2019 Mid-Year Review (Birthday Thoughts)](https://youngforest.github.io/2019/07/15/Happy-birthday-2019/)
-- [2018 Year-End Review](https://youngforest.github.io/2018/12/12/2018-summary-and-2019-resolutions/)
-- [2017 New Year Outlook](https://youngforest.github.io/2017/02/22/2017-resolutions/)
+- [2021 Year-End Review](https://youngforest.github.io/en/2021/12/28/2021-summary-and-2022-resolutions/)
+- [2020 Year-End Review](https://youngforest.github.io/en/2020/11/25/2020-summary-and-2021-resolutions/)
+- [2019 Year-End Review](https://youngforest.github.io/en/2020/02/20/2019-summary-and-2020-resolutions/)
+- [2019 Mid-Year Review (Birthday Thoughts)](https://youngforest.github.io/en/2019/07/15/Happy-birthday-2019/)
+- [2018 Year-End Review](https://youngforest.github.io/en/2018/12/12/2018-summary-and-2019-resolutions/)
+- [2017 New Year Outlook](https://youngforest.github.io/en/2017/02/22/2017-resolutions/)
 
 Milestone reviews:
 
-- [Three-Year Master's Review](https://youngforest.github.io/2021/07/03/my-3-years-master/)
-- [Four-Year University Review](https://youngforest.github.io/2018/10/03/my-4-years-college/)
+- [Three-Year Master's Review](https://youngforest.github.io/en/2021/07/03/my-3-years-master/)
+- [Four-Year University Review](https://youngforest.github.io/en/2018/10/03/my-4-years-college/)
 
-These important blog posts are all under the [Diary category](https://youngforest.github.io/categories/dairy/) on my blog.
+These important blog posts are all under the [Diary category](https://youngforest.github.io/en/categories/Diary/) on my blog.
 
 ## 2022 Personal Review
 

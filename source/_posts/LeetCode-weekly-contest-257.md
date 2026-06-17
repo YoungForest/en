@@ -29,7 +29,7 @@ Among them, *小乌龟的投资智慧* is the most useful book to me, especially
 
 On the other hand, I have been practicing. I divide my assets into four parts: flexible access, including cash and money market funds; conservative bond funds and fixed-income products, such as time deposits; and riskier equity funds, mainly broad-based index funds and sector index funds.
 
-Half a year ago I wrote [my own investment story](https://youngforest.github.io/2021/03/22/investment/). Now, I can confidently say that my knowledge and experience have become richer and more professional. Although I have not earned much return, after starting work and increasing my principal, investing and personal finance have become more important.
+Half a year ago I wrote [my own investment story](https://youngforest.github.io/en/2021/03/22/investment/). Now, I can confidently say that my knowledge and experience have become richer and more professional. Although I have not earned much return, after starting work and increasing my principal, investing and personal finance have become more important.
 
 My overall stock position is currently low, roughly less than one-third, and most of my money is in the other three conservative investment categories.
 

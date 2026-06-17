@@ -15,7 +15,7 @@ categories:
 
 I did not participate in the previous LC-CN spring and fall contests, because our lab used to hold group meetings every Saturday afternoon, which perfectly conflicted with the contest time. Now my advisor has changed to holding small group meetings on weekdays and a large group meeting once a month, so I finally had the chance to participate in the 2021 Spring Contest.
 
-On Monday, during the Qingming Festival, I participated in the solo contest. [Summary blog here](https://youngforest.github.io/2021/04/05/LCCUP-21-Spring-Solo/).
+On Monday, during the Qingming Festival, I participated in the solo contest. [Summary blog here](https://youngforest.github.io/en/2021/04/05/LCCUP-21-Spring-Solo/).
 
 On Saturday, I teamed up with Lao Lai and George from the **Buddhist Problem-Solving Group** and set out in a very Buddhist way. The final result was indeed very Buddhist: we ended after two problems. I solved the first problem, and George solved the second problem, though I provided the idea and helped review + debug. I have to say, competing with two teammates was not as effective as me competing alone. No wonder ACM teams need a long time to build chemistry.
 

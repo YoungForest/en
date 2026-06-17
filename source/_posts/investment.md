@@ -9,7 +9,7 @@ categories:
 ---
 
 Sharing my investment story.
-Originally published on [Forest's Blog](https://youngforest.github.io/2021/03/22/investment/).
+Originally published on [Forest's Blog](https://youngforest.github.io/en/2021/03/22/investment/).
 
 ## First Steps
 

@@ -8,25 +8,25 @@ categories:
   - Diary
 ---
 
-Reposted from [my blog](https://youngforest.github.io/2024/12/28/2024-summary-and-2025-resolutions/)
+Reposted from [my blog](https://youngforest.github.io/en/2024/12/28/2024-summary-and-2025-resolutions/)
 
 Previous year-end reviews:
 
-- [2023 Year-End Review](https://youngforest.github.io/2023/12/23/2023-summary-and-2024-resolutions/)
-- [2022 Year-End Review](https://youngforest.github.io/2022/12/25/2022-summary-and-2023-resolutions/)
-- [2021 Year-End Review](https://youngforest.github.io/2021/12/28/2021-summary-and-2022-resolutions/)
-- [2020 Year-End Review](https://youngforest.github.io/2020/11/25/2020-summary-and-2021-resolutions/)
-- [2019 Year-End Review](https://youngforest.github.io/2020/02/20/2019-summary-and-2020-resolutions/)
-- [2019 Mid-Year Review (Birthday Thoughts)](https://youngforest.github.io/2019/07/15/Happy-birthday-2019/)
-- [2018 Year-End Review](https://youngforest.github.io/2018/12/12/2018-summary-and-2019-resolutions/)
-- [2017 New Year Outlook](https://youngforest.github.io/2017/02/22/2017-resolutions/)
+- [2023 Year-End Review](https://youngforest.github.io/en/2023/12/23/2023-summary-and-2024-resolutions/)
+- [2022 Year-End Review](https://youngforest.github.io/en/2022/12/25/2022-summary-and-2023-resolutions/)
+- [2021 Year-End Review](https://youngforest.github.io/en/2021/12/28/2021-summary-and-2022-resolutions/)
+- [2020 Year-End Review](https://youngforest.github.io/en/2020/11/25/2020-summary-and-2021-resolutions/)
+- [2019 Year-End Review](https://youngforest.github.io/en/2020/02/20/2019-summary-and-2020-resolutions/)
+- [2019 Mid-Year Review (Birthday Thoughts)](https://youngforest.github.io/en/2019/07/15/Happy-birthday-2019/)
+- [2018 Year-End Review](https://youngforest.github.io/en/2018/12/12/2018-summary-and-2019-resolutions/)
+- [2017 New Year Outlook](https://youngforest.github.io/en/2017/02/22/2017-resolutions/)
 
 Milestone reviews:
 
-- [Three-Year Master's Review](https://youngforest.github.io/2021/07/03/my-3-years-master/)
-- [Four-Year University Review](https://youngforest.github.io/2018/10/03/my-4-years-college/)
+- [Three-Year Master's Review](https://youngforest.github.io/en/2021/07/03/my-3-years-master/)
+- [Four-Year University Review](https://youngforest.github.io/en/2018/10/03/my-4-years-college/)
 
-These important posts are all under the [Diary category](https://youngforest.github.io/categories/dairy/) on my blog.
+These important posts are all under the [Diary category](https://youngforest.github.io/en/categories/Diary/) on my blog.
 
 ## Ten Years of Programming Experience
 
@@ -36,7 +36,7 @@ In 2014, at 18, I left my hometown and went to Beijing for university. That youn
 
 From "Shahe Town" to "Zhichun Road" to "Shilipu"; from "Changping" to "Haidian" and then "Chaoyang"; from "Beijing" to "Dublin." I experienced much glory and dreams, many troubles and heartbreaks. I traveled ten thousand miles, read ten thousand books, and met many different people. I grew from a small-town exam-taker into a working person. I was lucky to choose computer science, a major full of technological dividends, and witnessed the rise and saturation of the mobile internet, the surging rise of AI, the peak and retreat of globalization, peace and conflict, and the continuous progress of human technology. The S&P 500 rose from 1,900 points to 6,000.
 
-"Computer science" was already a popular major back then, but it absolutely did not have today's TOP 1 status. At that time, Beihang's undergraduate computer science ranking was said to be 4th. Only after starting university did I formally write my first line of code. I began learning C and Python at the same time. For a beginner, two languages at once meant total confusion: braces `{` versus newlines, `printf` versus `print`, compilation versus interpretation, static versus dynamic. Python even still had `2` and `3` back then. Many concepts only became clear later, until now I can recite them like family treasures. Later I successively used `C++`, `Java`, `GoLang`, `TypeScript`, and `C#` as my main languages for periods of time. Out of interest, I also learned niche languages such as `Lisp` and `Rust`. In sophomore and junior year, I finally started to get a feel for it. During those two years I tinkered and self-studied a lot, helped by the school's hard-core courses. In senior year I began internships and formally entered the industry. I previously summarized my [four years of university](https://youngforest.github.io/2018/10/03/my-4-years-college/) and [three years of master's study](https://youngforest.github.io/2021/07/03/my-3-years-master/). I have to say, doing a master's was really a waste of time. It is just that China is too competitive, and even finding a good job often requires graduate school. I was already 25 when I graduated. After going abroad, I found that most people start working after a bachelor's degree, enter the industry early, and get promoted and raises early. Now I have worked full time for more than three years. Counting previous internships, I have experienced six companies. Looking back, over all these years I touched many things only shallowly, while my resume became quite flashy and full.
+"Computer science" was already a popular major back then, but it absolutely did not have today's TOP 1 status. At that time, Beihang's undergraduate computer science ranking was said to be 4th. Only after starting university did I formally write my first line of code. I began learning C and Python at the same time. For a beginner, two languages at once meant total confusion: braces `{` versus newlines, `printf` versus `print`, compilation versus interpretation, static versus dynamic. Python even still had `2` and `3` back then. Many concepts only became clear later, until now I can recite them like family treasures. Later I successively used `C++`, `Java`, `GoLang`, `TypeScript`, and `C#` as my main languages for periods of time. Out of interest, I also learned niche languages such as `Lisp` and `Rust`. In sophomore and junior year, I finally started to get a feel for it. During those two years I tinkered and self-studied a lot, helped by the school's hard-core courses. In senior year I began internships and formally entered the industry. I previously summarized my [four years of university](https://youngforest.github.io/en/2018/10/03/my-4-years-college/) and [three years of master's study](https://youngforest.github.io/en/2021/07/03/my-3-years-master/). I have to say, doing a master's was really a waste of time. It is just that China is too competitive, and even finding a good job often requires graduate school. I was already 25 when I graduated. After going abroad, I found that most people start working after a bachelor's degree, enter the industry early, and get promoted and raises early. Now I have worked full time for more than three years. Counting previous internships, I have experienced six companies. Looking back, over all these years I touched many things only shallowly, while my resume became quite flashy and full.
 
 It is truly as Jin Yong wrote: Dugu Qiubai began with the "sharp green steel sword, too rigid and easily broken," then moved to the "Ziwei soft sword, flexible and adaptable," then in middle age to the "heavy sword without edge, great skill appearing clumsy," and finally to the "sword of grass and wood, returning to simplicity," where flowers, grass, and trees can all be swords. That is the highest realm. Programmers are the same.
 
@@ -54,7 +54,7 @@ Hao Xulie's "If you do it comfortably, you can do it for a long time; if you do 
 
 ### Buying a Home
 
-Following [last year's New Year wish](https://youngforest.github.io/2023/12/23/2023-summary-and-2024-resolutions/), I successfully bought a home in Ireland this year.
+Following [last year's New Year wish](https://youngforest.github.io/en/2023/12/23/2023-summary-and-2024-resolutions/), I successfully bought a home in Ireland this year.
 
 Buying a home was not something I absolutely had to do, and I do not think it is a rigid need.
 
@@ -80,24 +80,24 @@ In Ireland, realizing the Chinese dream is truly not difficult. I lived in Beiji
 
 ### Reading Ten Thousand Books
 
-This year I read about 25 books: [list of book reviews](https://youngforest.github.io/categories/%E8%AF%BB%E5%90%8E%E6%84%9F/).
+This year I read about 25 books: [list of book reviews](https://youngforest.github.io/en/categories/Book-Notes/).
 
 Books I especially recommend:
 
-- [*The Almanack of Naval Ravikant: A Guide to Wealth and Happiness*](https://youngforest.github.io/2024/07/27/The-Almanack-of-Naval-Ravikant/)
-- [*Elon Musk*](https://youngforest.github.io/2024/03/07/Elon-Musk/)
-- [*Just Keep Buying*](https://youngforest.github.io/2024/03/16/Just-Keep-Buying/)
-- [*The Gains and Losses of Economic Changes in the Past Dynasties*](https://youngforest.github.io/2024/01/29/The-gains-and-losses-of-economic-changes-in-the-past-dynasties/)
-- [*Guns, Germs, and Steel*](https://youngforest.github.io/2024/01/08/Guns-Germs-and-Steel/)
+- [*The Almanack of Naval Ravikant: A Guide to Wealth and Happiness*](https://youngforest.github.io/en/2024/07/27/The-Almanack-of-Naval-Ravikant/)
+- [*Elon Musk*](https://youngforest.github.io/en/2024/03/07/Elon-Musk/)
+- [*Just Keep Buying*](https://youngforest.github.io/en/2024/03/16/Just-Keep-Buying/)
+- [*The Gains and Losses of Economic Changes in the Past Dynasties*](https://youngforest.github.io/en/2024/01/29/The-gains-and-losses-of-economic-changes-in-the-past-dynasties/)
+- [*Guns, Germs, and Steel*](https://youngforest.github.io/en/2024/01/08/Guns-Germs-and-Steel/)
 
 If, like me, you are very interested in science:
 
-- [*Reality Is Not What It Seems: The Journey to Quantum Gravity*](https://youngforest.github.io/2024/03/01/Reality-Is-Not-What-It-Seems-The-Journey-to-Quantum-Gravity/)
+- [*Reality Is Not What It Seems: The Journey to Quantum Gravity*](https://youngforest.github.io/en/2024/03/01/Reality-Is-Not-What-It-Seems-The-Journey-to-Quantum-Gravity/)
 - [*A Little History of Science*](https://book.douban.com/subject/11226708/)
-- [*A Matter of Degrees*](https://youngforest.github.io/2024/09/02/A-Matter-of-Degrees/)
-- [*Deep Simplicity: Chaos, Complexity and the Emergence of Life*](https://youngforest.github.io/2024/09/15/Chaos-Complexity-and-the-Emergence-of-Life/)
+- [*A Matter of Degrees*](https://youngforest.github.io/en/2024/09/02/A-Matter-of-Degrees/)
+- [*Deep Simplicity: Chaos, Complexity and the Emergence of Life*](https://youngforest.github.io/en/2024/09/15/Chaos-Complexity-and-the-Emergence-of-Life/)
 
-Friends often ask me to recommend some investing and personal finance books. I usually recommend [*The Psychology of Money*](https://book.douban.com/subject/35060020/), [*Just Keep Buying*](https://youngforest.github.io/2024/03/16/Just-Keep-Buying/), [*Little Turtle's Investment Wisdom*](https://book.douban.com/subject/26948036/), [*Beating the Street*](https://book.douban.com/subject/2189613/), and [*The Millionaire Next Door*](https://book.douban.com/subject/36593827/).
+Friends often ask me to recommend some investing and personal finance books. I usually recommend [*The Psychology of Money*](https://book.douban.com/subject/35060020/), [*Just Keep Buying*](https://youngforest.github.io/en/2024/03/16/Just-Keep-Buying/), [*Little Turtle's Investment Wisdom*](https://book.douban.com/subject/26948036/), [*Beating the Street*](https://book.douban.com/subject/2189613/), and [*The Millionaire Next Door*](https://book.douban.com/subject/36593827/).
 
 After reading these, the point is really to understand a few things. 1. Margin of safety. Investment should use money you will not need for a long time, more than five years. Keep six months to three years of living expenses on hand as cash equivalents; the exact length depends on age, family situation, and work. 2. Stocks greatly outperform real estate, bonds, gold, and other assets. 3. Passive index funds greatly outperform individual stocks and active funds. 4. Going all in directly beats DCA and market timing. 5. Buying and never selling beats market timing. 6. The United States and US stocks beat other countries. 7. The hardest part of investing is psychology: chasing highs and panic-selling, emotional short-term thinking, all need to be overcome.
 
@@ -189,13 +189,13 @@ When working abroad, status is actually the most important thing. It mainly mean
 
 This year I subscribed to YouTube Premium and listened to all four seasons of Luo Zhenyu's *Luoji Siwei*, perhaps 200 hours. Luo Pang is very skilled and excellent at summarizing other people's knowledge and outputting viewpoints. Liberalism and conservatism are what he supports. In particular, episode [83: Did He Really Save America?](https://youtu.be/mCiLIZRQSXo?si=Gvfbc5AVCLp_IUcn) directly criticizes Roosevelt's New Deal and Keynesianism, partly rehabilitates Hoover, and fully rehabilitates the liberal market economy.
 
-I also read [Nassim Taleb's *Antifragile*](https://youngforest.github.io/2024/08/24/Antifragile-Things-That-Gain-from-Disorder/). Of course it contains many views, and liberalism is also what he promotes.
+I also read [Nassim Taleb's *Antifragile*](https://youngforest.github.io/en/2024/08/24/Antifragile-Things-That-Gain-from-Disorder/). Of course it contains many views, and liberalism is also what he promotes.
 
 Growing up in a socialist country, the Party manages everything. The government, as a paternal authority, takes care of and controls everyone in every possible way. Although things have loosened a lot compared with the Mao era, there is still plenty. I did not experience the earlier era myself, so I cannot personally feel family planning, the Great Leap Forward, or the Cultural Revolution, but during the three pandemic years I was basically all in China, "enjoying" extreme unfreedom.
 
 Of course, many compatriots are willing to exchange freedom for security. But everyone has their own aspirations; vote with your feet.
 
-Combining this with Wu Xiaobo's [*The Gains and Losses of Economic Changes in the Past Dynasties*](https://youngforest.github.io/2024/01/29/The-gains-and-losses-of-economic-changes-in-the-past-dynasties/), freedom is also a prerequisite for economic development. As the saying goes, "tighten control and everything dies; loosen control and everything lives; once it lives, it becomes chaotic."
+Combining this with Wu Xiaobo's [*The Gains and Losses of Economic Changes in the Past Dynasties*](https://youngforest.github.io/en/2024/01/29/The-gains-and-losses-of-economic-changes-in-the-past-dynasties/), freedom is also a prerequisite for economic development. As the saying goes, "tighten control and everything dies; loosen control and everything lives; once it lives, it becomes chaotic."
 
 Ireland is actually quite free, but high taxes are a major drawback. For many ambitious talents, many still go to regions with higher income and lower taxes, such as the United States, the Middle East, Singapore, and Switzerland. Of course, according to the theory of the "veil of ignorance," a welfare society is also an advantage. If you did not know your starting configuration before birth, you would certainly prefer a welfare state.
 
@@ -229,13 +229,13 @@ At the end of the year, South Korea staged the Russian script of a president dec
 
 However, my attention to news is actually useless. It is only out of interest. I remain very optimistic about the future, with unprecedented confidence in human civilization. Historically speaking, today's global turmoil is not especially severe. It can even be counted as a relatively good era, comparable to Europe's golden age from 1848 to 1914, dominated by peace, economic development, continuous technological breakthroughs, and considerable improvements in people's living standards. Everything develops exponentially, and according to the principle of compound interest, the momentum is unstoppable. AI is in full swing, and SpaceX's Starship is also exciting. Humanity has developed to a [Kardashev scale](https://zh.wikipedia.org/zh-hans/%E5%8D%A1%E5%B0%94%E8%BE%BE%E8%82%96%E5%A4%AB%E6%8C%87%E6%95%B0) civilization level of 0.7. I am quite optimistic about future development toward Type I, Type II, and Type III.
 
-Liu Cixin once said, "Give civilization to time, not time to civilization." But as a member of human civilization, I still hope to give civilization more time. (This reminds me that Netflix also released a new *3 Body Problem* series this year, and I wrote some thoughts: [Thoughts on Netflix's *3 Body Problem*: Question Cheng Xin, Understand Cheng Xin, Become Cheng Xin](https://youngforest.github.io/2024/03/25/3-body/).)
+Liu Cixin once said, "Give civilization to time, not time to civilization." But as a member of human civilization, I still hope to give civilization more time. (This reminds me that Netflix also released a new *3 Body Problem* series this year, and I wrote some thoughts: [Thoughts on Netflix's *3 Body Problem*: Question Cheng Xin, Understand Cheng Xin, Become Cheng Xin](https://youngforest.github.io/en/2024/03/25/3-body/).)
 
 ### Investing
 
 Like last year, this year was again full of stock-picking gods everywhere. The broad market alone rose 26%, repeatedly hitting new all-time highs and reaching 6,000 points.
 
-At the beginning of the year I read Walter Isaacson's [*Elon Musk*](https://youngforest.github.io/2024/03/07/Elon-Musk/), and it was indeed exciting. I bought 10 shares of TSLA at a cost basis of 190. It fell as low as 160, and I eventually sold at 260. I guess I sold too early. Within a month, after the US election, TSLA took off, reaching as high as 460 and now still around 430. The volatility is huge. Without blind faith, one indeed cannot hold it. I do not have the fate of sudden wealth. I also bought very little, basically with a playful mentality.
+At the beginning of the year I read Walter Isaacson's [*Elon Musk*](https://youngforest.github.io/en/2024/03/07/Elon-Musk/), and it was indeed exciting. I bought 10 shares of TSLA at a cost basis of 190. It fell as low as 160, and I eventually sold at 260. I guess I sold too early. Within a month, after the US election, TSLA took off, reaching as high as 460 and now still around 430. The volatility is huge. Without blind faith, one indeed cannot hold it. I do not have the fate of sudden wealth. I also bought very little, basically with a playful mentality.
 
 This year I continued following the advice of [*Just Keep Buying*](https://book.douban.com/review/15812972/) and went all in on the S&P 500. Faith in broad-market indices is relatively easy to build, especially because I am interested in history and technology, and therefore have great confidence in human civilization. The fundamental growth driver behind the S&P 500 is still the accelerating improvement of human productivity and the long-term compound development of the economy.
 

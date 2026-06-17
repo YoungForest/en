@@ -8,7 +8,7 @@ categories:
   - Diary
 ---
 
-Reposted from [my blog](https://youngforest.github.io/2023/12/23/2023-summary-and-2024-resolutions/)
+Reposted from [my blog](https://youngforest.github.io/en/2023/12/23/2023-summary-and-2024-resolutions/)
 
 The Christmas holiday is approaching, and the Microsoft Ireland office has long been filled with a festive atmosphere. Decorations everywhere, Christmas trees and Santa Claus ornaments: Christmas really is Ireland's biggest holiday. Ireland gives two days off for Christmas, December 25 and 26, one more day than the US. More people, especially colleagues from Christian countries, take annual leave around the holiday to go home and spend it with family. So December is a relatively relaxed working period, and everyone is quite laid-back.
 
@@ -16,20 +16,20 @@ There is still half a month before the new year, and my life and thoughts probab
 
 Previous year-end reviews:
 
-- [2022 Year-End Review](https://youngforest.github.io/2022/12/25/2022-summary-and-2023-resolutions/)
-- [2021 Year-End Review](https://youngforest.github.io/2021/12/28/2021-summary-and-2022-resolutions/)
-- [2020 Year-End Review](https://youngforest.github.io/2020/11/25/2020-summary-and-2021-resolutions/)
-- [2019 Year-End Review](https://youngforest.github.io/2020/02/20/2019-summary-and-2020-resolutions/)
-- [2019 Mid-Year Review (Birthday Thoughts)](https://youngforest.github.io/2019/07/15/Happy-birthday-2019/)
-- [2018 Year-End Review](https://youngforest.github.io/2018/12/12/2018-summary-and-2019-resolutions/)
-- [2017 New Year Outlook](https://youngforest.github.io/2017/02/22/2017-resolutions/)
+- [2022 Year-End Review](https://youngforest.github.io/en/2022/12/25/2022-summary-and-2023-resolutions/)
+- [2021 Year-End Review](https://youngforest.github.io/en/2021/12/28/2021-summary-and-2022-resolutions/)
+- [2020 Year-End Review](https://youngforest.github.io/en/2020/11/25/2020-summary-and-2021-resolutions/)
+- [2019 Year-End Review](https://youngforest.github.io/en/2020/02/20/2019-summary-and-2020-resolutions/)
+- [2019 Mid-Year Review (Birthday Thoughts)](https://youngforest.github.io/en/2019/07/15/Happy-birthday-2019/)
+- [2018 Year-End Review](https://youngforest.github.io/en/2018/12/12/2018-summary-and-2019-resolutions/)
+- [2017 New Year Outlook](https://youngforest.github.io/en/2017/02/22/2017-resolutions/)
 
 Milestone reviews:
 
-- [Three-Year Master's Review](https://youngforest.github.io/2021/07/03/my-3-years-master/)
-- [Four-Year University Review](https://youngforest.github.io/2018/10/03/my-4-years-college/)
+- [Three-Year Master's Review](https://youngforest.github.io/en/2021/07/03/my-3-years-master/)
+- [Four-Year University Review](https://youngforest.github.io/en/2018/10/03/my-4-years-college/)
 
-These important blog posts are all under the [Diary category](https://youngforest.github.io/categories/dairy/) on my blog.
+These important blog posts are all under the [Diary category](https://youngforest.github.io/en/categories/Diary/) on my blog.
 
 ## 2023 Personal Review
 
@@ -103,7 +103,7 @@ Later, to protect my eyes, I specifically bought a Kindle. Unlike the old joke t
 
 This year I went to many places and met many friends.
 
-When I first came last year, I applied for a Netherlands visa. See my [experience applying for a Netherlands visa](https://youngforest.github.io/2022/12/15/Netherlands-Visa-from-Ireland/). At the beginning of the year, I went to the Netherlands to visit my ex after four months of long distance. Later I also applied for a UK visa myself and went to the UK twice. I went to Sheffield to see my cousin studying for a master's degree; went to Cambridge to have meals with Lai Bo and Ma Ge and visited Microsoft Research Cambridge, MSRC; went to London to visit Google, once my dream company, thanks to Ding Yu's hospitality, Amazon's office, thanks to Hao Ge and Yang Ge, and UCL, thanks to Haoyang. I also wrote a [France visa slot monitoring bot](https://youngforest.github.io/2023/09/20/Ireland-France-visa-monitor/), helping myself and many friends get France visa appointments. I went to Paris to see Congcong, my high school classmate and also a high-energy physics talent, and had a meal with Da Qiang Ge. I went to Stockholm, Sweden to visit Shi Ge, although I was stood up, and made a pilgrimage to the Nobel Prize Museum. I went to Athens, Greece to meet Lei Ge and Flathead Ge in person. I went to Malta by piggybacking on an academic conference, recalling the green years of campus life.
+When I first came last year, I applied for a Netherlands visa. See my [experience applying for a Netherlands visa](https://youngforest.github.io/en/2022/12/15/Netherlands-Visa-from-Ireland/). At the beginning of the year, I went to the Netherlands to visit my ex after four months of long distance. Later I also applied for a UK visa myself and went to the UK twice. I went to Sheffield to see my cousin studying for a master's degree; went to Cambridge to have meals with Lai Bo and Ma Ge and visited Microsoft Research Cambridge, MSRC; went to London to visit Google, once my dream company, thanks to Ding Yu's hospitality, Amazon's office, thanks to Hao Ge and Yang Ge, and UCL, thanks to Haoyang. I also wrote a [France visa slot monitoring bot](https://youngforest.github.io/en/2023/09/20/Ireland-France-visa-monitor/), helping myself and many friends get France visa appointments. I went to Paris to see Congcong, my high school classmate and also a high-energy physics talent, and had a meal with Da Qiang Ge. I went to Stockholm, Sweden to visit Shi Ge, although I was stood up, and made a pilgrimage to the Nobel Prize Museum. I went to Athens, Greece to meet Lei Ge and Flathead Ge in person. I went to Malta by piggybacking on an academic conference, recalling the green years of campus life.
 
 This year I also met many new friends and talked with them.
 
@@ -111,7 +111,7 @@ They came from different countries, different backgrounds and classes, different
 
 Through this firsthand contact, I better understood the importance and value of Diversity and Inclusion promoted by international big companies, or by so-called "white left" politics. It is not just political correctness; it is indeed progress, and it does promote productivity and human civilization.
 
-Compared with my thoughts on "political correctness" one year ago, in [a blog post written late last year](https://youngforest.github.io/2022/11/19/Western-political-correctness/), my understanding is now deeper and further along. I have also further escaped previous prejudices and cultural imprints.
+Compared with my thoughts on "political correctness" one year ago, in [a blog post written late last year](https://youngforest.github.io/en/2022/11/19/Western-political-correctness/), my understanding is now deeper and further along. I have also further escaped previous prejudices and cultural imprints.
 
 I realized very early that my problem was not reading and learning too little, but thinking too little. As the ancient saying goes: "Learning without thinking leads to confusion." In fact, I have been subconsciously trying to change.
 
@@ -139,7 +139,7 @@ Friends familiar with me, or readers who have read my previous year-end reviews 
 
 Perhaps it is exactly this information gap that makes Ireland a value depression. There are many study and work opportunities here, but not many people know about them, so competition is not that fierce. Most people, whether planning to settle down or using Ireland as a stepping stone, come for these good study and work opportunities.
 
-If you want to know more about the experience of moving from China to Ireland, you can refer to my [previous blog: From Beijing to Dublin, A Programmer's Journey to Europe](https://youngforest.github.io/2022/12/09/Find-a-Europe-SDE-job-from-China/) and [podcast](https://youtu.be/W_AltNnX4fw). Friends in China can also listen on [Xiaoyuzhou](https://www.xiaoyuzhoufm.com/episode/6558ee9451ba721857f6eb45?s=eyJ1IjogIjY0YTQ3OWQwZWRjZTY3MTA0YWYzNWJhMyJ9).
+If you want to know more about the experience of moving from China to Ireland, you can refer to my [previous blog: From Beijing to Dublin, A Programmer's Journey to Europe](https://youngforest.github.io/en/2022/12/09/Find-a-Europe-SDE-job-from-China/) and [podcast](https://youtu.be/W_AltNnX4fw). Friends in China can also listen on [Xiaoyuzhou](https://www.xiaoyuzhoufm.com/episode/6558ee9451ba721857f6eb45?s=eyJ1IjogIjY0YTQ3OWQwZWRjZTY3MTA0YWYzNWJhMyJ9).
 
 Therefore, after breaking up with my ex in the first half of the year, I was in an awkward situation in Ireland. I could neither advance nor retreat. I had nowhere to go and no home. Returning to China was definitely impossible, and I would also feel embarrassed to go back. When I went abroad, my family did not really agree, and I stubbornly came out anyway. Moreover, I still have dreams not yet realized: the ideal life of "two acres of thin farmland, one ox, wife, children, and a warm kang." Obviously this is much easier to realize in developed countries. The direction of China's reforms in recent years has also disappointed and worried me. Since I cannot help the world, I can only cultivate myself.
 

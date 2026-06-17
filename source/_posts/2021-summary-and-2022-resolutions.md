@@ -11,17 +11,17 @@ categories:
 Happy New Year. There are still three days before 2021 ends, and I have finally started writing my annual year-end review and New Year outlook. Recently I have noticed more and more classmates writing year-end reviews, but I am not really following the trend. I started doing this very early, first in notebooks and later on my blog. Besides the annual transition from the old year to the new one, I also write reviews and outlooks at milestone moments in life, such as graduating from college and graduate school.
 
 Previous year-end reviews:
-- [2020 Year-End Review](https://youngforest.github.io/2020/11/25/2020-summary-and-2021-resolutions/)
-- [2019 Year-End Review](https://youngforest.github.io/2020/02/20/2019-summary-and-2020-resolutions/)
-- [2019 Mid-Year Review (Birthday Thoughts)](https://youngforest.github.io/2019/07/15/Happy-birthday-2019/)
-- [2018 Year-End Review](https://youngforest.github.io/2018/12/12/2018-summary-and-2019-resolutions/)
-- [2017 New Year Outlook](https://youngforest.github.io/2017/02/22/2017-resolutions/)
+- [2020 Year-End Review](https://youngforest.github.io/en/2020/11/25/2020-summary-and-2021-resolutions/)
+- [2019 Year-End Review](https://youngforest.github.io/en/2020/02/20/2019-summary-and-2020-resolutions/)
+- [2019 Mid-Year Review (Birthday Thoughts)](https://youngforest.github.io/en/2019/07/15/Happy-birthday-2019/)
+- [2018 Year-End Review](https://youngforest.github.io/en/2018/12/12/2018-summary-and-2019-resolutions/)
+- [2017 New Year Outlook](https://youngforest.github.io/en/2017/02/22/2017-resolutions/)
 
 Milestone reviews:
-- [Three-Year Master's Program Review](https://youngforest.github.io/2021/07/03/my-3-years-master/)
-- [Four-Year College Review](https://youngforest.github.io/2018/10/03/my-4-years-college/)
+- [Three-Year Master's Program Review](https://youngforest.github.io/en/2021/07/03/my-3-years-master/)
+- [Four-Year College Review](https://youngforest.github.io/en/2018/10/03/my-4-years-college/)
 
-These important posts are all under the [dairy category](https://youngforest.github.io/categories/dairy/) on my blog.
+These important posts are all under the [dairy category](https://youngforest.github.io/en/categories/Diary/) on my blog.
 
 ## 2021 Work Review
 

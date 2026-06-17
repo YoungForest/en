@@ -7,7 +7,7 @@ categories:
 - Diary
 ---
 
-When I graduated from college, I wrote a four-year review: [Four-Year College Review](https://youngforest.github.io/2018/10/03/my-4-years-college/). Now, in the blink of an eye, three years have passed. I have graduated from graduate school and am about to enter the workplace.
+When I graduated from college, I wrote a four-year review: [Four-Year College Review](https://youngforest.github.io/en/2018/10/03/my-4-years-college/). Now, in the blink of an eye, three years have passed. I have graduated from graduate school and am about to enter the workplace.
 
 Although I went through half a year of delayed graduation, in the end I still graduated successfully without any real danger. Last week I completed my graduation trip to Wuhan, and over the weekend I returned to Beijing to move and prepare for onboarding. With bright expectations for the future, I feel full of ambition.
 
