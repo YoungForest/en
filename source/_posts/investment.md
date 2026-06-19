@@ -8,8 +8,12 @@ categories:
 - Life
 ---
 
+![The beginning of a personal investment story](/en/images/ai/investment/en-hero.webp)
+
 Sharing my investment story.
 Originally published on [Forest's Blog](https://youngforest.github.io/en/2021/03/22/investment/).
+
+![First cautious steps into investing](/en/images/ai/investment/en-first-steps.webp)
 
 ## First Steps
 
@@ -21,6 +25,8 @@ Later, when I went to China Construction Bank and explained the situation, the s
 Then I began living as a Beipiao in Beijing, only going home once every half year. I could not make the timing, and I also did not want the hassle, so that money just stayed there.
 
 This financial-management experience counts as a failed lesson, since I could not even withdraw the principal.
+
+![Trying asset allocation again with more structure](/en/images/ai/investment/en-trying-again.webp)
 
 ## Trying Again
 
