@@ -10,6 +10,8 @@ categories:
 
 Reposted from [my blog](https://youngforest.github.io/en/2024/12/28/2024-summary-and-2025-resolutions/)
 
+![A programmer's desk for the 2024 year-end review](/en/images/ai/2024-summary-and-2025-resolutions/en-hero.webp)
+
 Previous year-end reviews:
 
 - [2023 Year-End Review](https://youngforest.github.io/en/2023/12/23/2023-summary-and-2024-resolutions/)
@@ -28,6 +30,8 @@ Milestone reviews:
 
 These important posts are all under the [Diary category](https://youngforest.github.io/en/categories/Diary/) on my blog.
 
+![Ten years of programming craft](/en/images/ai/2024-summary-and-2025-resolutions/en-ten-years-programming.webp)
+
 ## Ten Years of Programming Experience
 
 The BGM here should be Ye Shengtao's "How Many Ten Years Are Left," a song that sings out so many feelings about life.
@@ -41,6 +45,8 @@ From "Shahe Town" to "Zhichun Road" to "Shilipu"; from "Changping" to "Haidian" 
 It is truly as Jin Yong wrote: Dugu Qiubai began with the "sharp green steel sword, too rigid and easily broken," then moved to the "Ziwei soft sword, flexible and adaptable," then in middle age to the "heavy sword without edge, great skill appearing clumsy," and finally to the "sword of grass and wood, returning to simplicity," where flowers, grass, and trees can all be swords. That is the highest realm. Programmers are the same.
 
 There is another song I also like: "You Were Once a Youth," the theme song of the film *The Ark of Mr. Chow*. Every lyric really sings my heart, from past romanticism and idealism to today's realism, nostalgia, and longing. The wheel of history rolls forward. Fate has pushed me along unimaginable roads toward unknown paths. Although I make New Year outlooks every year, once the time scale stretches to ten years, life cannot be predicted and should not be limited. My current life was unimaginable to me ten years ago, and today's me cannot imagine life ten years from now. People often overestimate the short-term progress of themselves and the world, but underestimate long-term progress. This is the terror of exponential growth. I hope I will always remain a youth, and continue to keep curiosity, kindness, and optimism toward the world.
+
+![A personal review of home, books, travel, and work](/en/images/ai/2024-summary-and-2025-resolutions/en-personal-review.webp)
 
 ## 2024 Personal Review
 

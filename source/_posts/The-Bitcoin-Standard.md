@@ -8,6 +8,8 @@ categories:
 - Book Notes
 ---
 
+![Money and scarcity in The Bitcoin Standard](/en/images/ai/The-Bitcoin-Standard/en-hero.webp)
+
 [Douban link to the Taiwan translation](https://book.douban.com/subject/35332013/)
 
 Hard money: a high stock-to-flow ratio. Bitcoin satisfies this extremely well, and is instead a deflationary currency.

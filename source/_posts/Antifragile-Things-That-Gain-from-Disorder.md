@@ -8,6 +8,8 @@ categories:
 - Book Notes
 ---
 
+![Stress and resilience in Antifragile](/en/images/ai/Antifragile-Things-That-Gain-from-Disorder/en-hero.webp)
+
 A feast of conservatism, liberalism, and optimism.
 
 Nassim Taleb is a writer recommended by both Naval and Li Zong. Perhaps they would call him a philosopher.

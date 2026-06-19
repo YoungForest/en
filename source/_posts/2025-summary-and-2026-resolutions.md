@@ -10,6 +10,8 @@ categories:
 
 Reposted from [my blog](https://youngforest.github.io/en/2025/12/27/2025-summary-and-2026-resolutions/)
 
+![A quiet desk for the 2025 year-end review](/en/images/ai/2025-summary-and-2026-resolutions/en-hero.webp)
+
 Previous year-end reviews:
 
 - [2024 Year-End Review](https://youngforest.github.io/en/2024/12/28/2024-summary-and-2025-resolutions/)
@@ -30,6 +32,8 @@ Milestone reviews:
 These important posts are all under the [Diary category](https://youngforest.github.io/en/categories/Diary/) on my blog.
 
 # 2025 Review
+
+![Markets, currencies, and AI in the historical process](/en/images/ai/2025-summary-and-2026-resolutions/en-historical-process.webp)
 
 ## The Historical Process
 
@@ -70,6 +74,8 @@ Large language models have already learned humanity's vast corpus and knowledge.
 Philosophical discussions about AI are also becoming more and more real. From the perspective of the universe, intelligence, and consciousness, a second intelligence beyond modern Homo sapiens is about to be born. From the perspective of evolution and technological progress, it is also inevitable that AI will surpass humans in intelligence.
 
 I also do not think humanity will go extinct or be replaced. Darwin's theory of evolution says survival belongs to the fittest, not the smartest. In history, among the descendants of Homo erectus, only Homo sapiens remained; other human species either went extinct on their own or disappeared in competition with Homo sapiens. But humans shared an ecological niche with close relatives, and that was indeed a competitive relationship. The relationship between AI and humans is not like that. It is more cooperative. The modern world is also not a natural state, but a civilized state, and cannot be compared directly with prehistory.
+
+![Books and travel notes on a reflective desk](/en/images/ai/2025-summary-and-2026-resolutions/en-reading.webp)
 
 ## Reading Ten Thousand Books
 

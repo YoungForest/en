@@ -1,5 +1,5 @@
 ---
-title: Sword Stained with Royal Blood: The Peerless Statesman Yuan Chonghuan
+title: "Sword Stained with Royal Blood: The Peerless Statesman Yuan Chonghuan"
 date: 2023-08-20 00:11:53
 tags:
 - Reading

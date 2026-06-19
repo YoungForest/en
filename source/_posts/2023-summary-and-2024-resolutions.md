@@ -10,6 +10,8 @@ categories:
 
 Reposted from [my blog](https://youngforest.github.io/en/2023/12/23/2023-summary-and-2024-resolutions/)
 
+![A European desk for the 2023 year-end review](/en/images/ai/2023-summary-and-2024-resolutions/en-hero.webp)
+
 The Christmas holiday is approaching, and the Microsoft Ireland office has long been filled with a festive atmosphere. Decorations everywhere, Christmas trees and Santa Claus ornaments: Christmas really is Ireland's biggest holiday. Ireland gives two days off for Christmas, December 25 and 26, one more day than the US. More people, especially colleagues from Christian countries, take annual leave around the holiday to go home and spend it with family. So December is a relatively relaxed working period, and everyone is quite laid-back.
 
 There is still half a month before the new year, and my life and thoughts probably will not change during this time. Quite a few friends are also looking forward to my year-end review. It has already become an annual fixed program. From 2017 to now, this is already the seventh year.
@@ -30,6 +32,8 @@ Milestone reviews:
 - [Four-Year University Review](https://youngforest.github.io/en/2018/10/03/my-4-years-college/)
 
 These important blog posts are all under the [Diary category](https://youngforest.github.io/en/categories/Diary/) on my blog.
+
+![A year of work, travel, and life in Europe](/en/images/ai/2023-summary-and-2024-resolutions/en-personal-review.webp)
 
 ## 2023 Personal Review
 
@@ -128,6 +132,8 @@ Later, centralization even evolved into totalitarianism. Under that condition, a
 After "setting things right," the situation improved somewhat, but the problem was never fundamentally solved.
 
 Since this year, because of the change in environment, I have gained more freedom to think. Combined with my long-standing habit of loving learning, the effect has been astonishing, sometimes even frightening to myself.
+
+![A peaceful outlook for a better life in 2024](/en/images/ai/2023-summary-and-2024-resolutions/en-good-life-2024.webp)
 
 ## Yearning for a Good Life in 2024
 
