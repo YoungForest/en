@@ -15,17 +15,15 @@
     <category term="The Three-Body Problem" />
     <category term="A Global History" />
     <category term="A Matter of Degrees" />
+    <category term="Dublin" />
     <category term="Kuaishou" />
     <category term="Tech" />
-    <category term="Dublin" />
     <category term="Alibaba" />
     <category term="intern" />
     <category term="travel" />
     <category term="Travel Notes" />
     <category term="Antifragile" />
     <category term="Are Your Lights On?" />
-    <category term="Beijing" />
-    <category term="Hukou" />
     <category term="Business Cycles" />
     <category term="Economics" />
     <category term="ByteDance" />
@@ -38,8 +36,8 @@
     <category term="C++" />
     <category term="Database" />
     <category term="Django" />
-    <category term="C++11" />
     <category term="Elon Musk" />
+    <category term="C++11" />
     <category term="bank" />
     <category term="money" />
     <category term="Europe" />
@@ -58,6 +56,8 @@
     <category term="Competitive Programming" />
     <category term="Algorithm" />
     <category term="LeetCode" />
+    <category term="Beijing" />
+    <category term="Hukou" />
     <category term="A Little History of the World" />
     <category term="Liu Shen Lei Lei Reads Jin Yong" />
     <category term="Liu Shen Lei Lei Reads Tang Poetry" />
@@ -90,10 +90,11 @@
     <category term="The Gains and Losses of Economic Changes in the Past Dynasties" />
     <category term="Linux" />
     <category term="Why Nations Fail" />
-    <category term="Windows" />
     <category term="The Times" />
     <category term="XiaoLin Says" />
+    <category term="Sword Stained with Royal Blood" />
     <category term="Atom" />
+    <category term="Windows" />
     <category term="hash" />
     <category term="unordered_map" />
     <category term="Tinkering" />
@@ -101,22 +102,22 @@
     <category term="Amazon" />
     <category term="Microsoft" />
     <category term="China" />
-    <category term="Travelogue" />
     <category term="vim" />
+    <category term="Travelogue" />
     <category term="investing" />
     <category term="Internship" />
     <category term="TeX" />
-    <category term="Life and Death Are Wearing Me Out" />
     <category term="Mac" />
+    <category term="Life and Death Are Wearing Me Out" />
     <category term="Ubuntu" />
     <category term="Owncloud" />
     <category term="Benchmark" />
     <category term="RIP" />
     <category term="sensetime" />
     <category term="Sublime" />
+    <category term="Git" />
     <category term="vscode" />
     <category term="gcc" />
-    <category term="Git" />
     <entry>
         <id>https://youngforest.github.io/en/2026/01/01/Little-history-of-world/</id>
         <title>A Little History of the World</title>

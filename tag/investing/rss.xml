@@ -18,17 +18,15 @@
         <category>The Three-Body Problem</category>
         <category>A Global History</category>
         <category>A Matter of Degrees</category>
+        <category>Dublin</category>
         <category>Kuaishou</category>
         <category>Tech</category>
-        <category>Dublin</category>
         <category>Alibaba</category>
         <category>intern</category>
         <category>travel</category>
         <category>Travel Notes</category>
         <category>Antifragile</category>
         <category>Are Your Lights On?</category>
-        <category>Beijing</category>
-        <category>Hukou</category>
         <category>Business Cycles</category>
         <category>Economics</category>
         <category>ByteDance</category>
@@ -41,8 +39,8 @@
         <category>C++</category>
         <category>Database</category>
         <category>Django</category>
-        <category>C++11</category>
         <category>Elon Musk</category>
+        <category>C++11</category>
         <category>bank</category>
         <category>money</category>
         <category>Europe</category>
@@ -61,6 +59,8 @@
         <category>Competitive Programming</category>
         <category>Algorithm</category>
         <category>LeetCode</category>
+        <category>Beijing</category>
+        <category>Hukou</category>
         <category>A Little History of the World</category>
         <category>Liu Shen Lei Lei Reads Jin Yong</category>
         <category>Liu Shen Lei Lei Reads Tang Poetry</category>
@@ -93,10 +93,11 @@
         <category>The Gains and Losses of Economic Changes in the Past Dynasties</category>
         <category>Linux</category>
         <category>Why Nations Fail</category>
-        <category>Windows</category>
         <category>The Times</category>
         <category>XiaoLin Says</category>
+        <category>Sword Stained with Royal Blood</category>
         <category>Atom</category>
+        <category>Windows</category>
         <category>hash</category>
         <category>unordered_map</category>
         <category>Tinkering</category>
@@ -104,22 +105,22 @@
         <category>Amazon</category>
         <category>Microsoft</category>
         <category>China</category>
-        <category>Travelogue</category>
         <category>vim</category>
+        <category>Travelogue</category>
         <category>investing</category>
         <category>Internship</category>
         <category>TeX</category>
-        <category>Life and Death Are Wearing Me Out</category>
         <category>Mac</category>
+        <category>Life and Death Are Wearing Me Out</category>
         <category>Ubuntu</category>
         <category>Owncloud</category>
         <category>Benchmark</category>
         <category>RIP</category>
         <category>sensetime</category>
         <category>Sublime</category>
+        <category>Git</category>
         <category>vscode</category>
         <category>gcc</category>
-        <category>Git</category>
         <item>
             <guid isPermalink="true">https://youngforest.github.io/en/2021/03/22/investment/</guid>
             <title>My Investment Story (Part 1)</title>
@@ -127,10 +128,13 @@
             <category>money</category>
             <category>investing</category>
             <pubDate>Mon, 22 Mar 2021 20:32:28 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;Sharing my investment story.&lt;br&gt;Originally published on &lt;a href=&#34;https://youngforest.github.io/en/2021/03/22/investment/&#34;&gt;Forest’s Blog&lt;/a&gt;.&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;&lt;img src=&#34;/en/images/ai/investment/en-hero.webp&#34; alt=&#34;The beginning of a personal investment story&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Sharing my investment story.&lt;br&gt;Originally published on &lt;a href=&#34;https://youngforest.github.io/en/2021/03/22/investment/&#34;&gt;Forest’s Blog&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/en/images/ai/investment/en-first-steps.webp&#34; alt=&#34;First cautious steps into investing&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;First-Steps&#34;&gt;&lt;a href=&#34;#First-Steps&#34; class=&#34;headerlink&#34; title=&#34;First Steps&#34;&gt;&lt;/a&gt;First Steps&lt;/h2&gt;&lt;p&gt;When I was little, I had neither the habit nor the capital for financial management. First, I had no allowance. Second, my Lunar New Year lucky money basically had to be handed over. One year, probably to cultivate my financial awareness, my dad took me to China Construction Bank to open an account. He topped up a few hundred yuan of lucky money to one thousand yuan and put it into a passbook. It was a one-year fixed deposit with automatic compounding.&lt;/p&gt;
 &lt;p&gt;It was a very good start in itself. But maybe my family did not care that much about chasing money, and this money was somehow forgotten. The password I had set before was also said to be wrong. When I grew up, I could not withdraw it anymore.&lt;br&gt;And at the beginning the account had been opened with the household register. Back then children did not have ID cards, unlike now.&lt;br&gt;Later, when I went to China Construction Bank and explained the situation, the staff said I had to withdraw it on the exact anniversary date of account opening. I was speechless.&lt;br&gt;Then I began living as a Beipiao in Beijing, only going home once every half year. I could not make the timing, and I also did not want the hassle, so that money just stayed there.&lt;/p&gt;
 &lt;p&gt;This financial-management experience counts as a failed lesson, since I could not even withdraw the principal.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/en/images/ai/investment/en-trying-again.webp&#34; alt=&#34;Trying asset allocation again with more structure&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;Trying-Again&#34;&gt;&lt;a href=&#34;#Trying-Again&#34; class=&#34;headerlink&#34; title=&#34;Trying Again&#34;&gt;&lt;/a&gt;Trying Again&lt;/h2&gt;&lt;p&gt;After entering university, I finally had the right to spend and manage money independently. At first, it was only living expenses and tuition from my father. Later, I had a decent scholarship and income from teaching assistant work, basically achieving financial independence. Because both spending and income were small, I did not manage the money specially. After learning enough and getting an internship, I started earning 300 yuan per day, then 400 yuan per day, and somehow accumulated tens of thousands in savings. At that point, when I saw the money I had earned, my first reaction was to save it, which became my second attempt at financial management.&lt;/p&gt;
 &lt;p&gt;At that time, Yu’e Bao and Chaochaoying still had pretty good yields, so I put most of the money there without needing to worry about it. Later I learned about this thing called funds. Although my father had bought funds before and lost money, luckily he never withdrew them and also stopped checking them, so it could not really be called a loss. Maybe he has earned quite a bit by now. I naturally assumed I could do it too. And by then it was already 2018, buying and selling funds on Alipay was very convenient. I went all-in on one “chicken” Alipay recommended to me: Harvest Environmental Protection and Low Carbon Equity Fund. Alipay said the fund’s historical returns were amazing, and I also thought environmental protection was the future, so I bought 6,000 yuan of it.&lt;/p&gt;
 &lt;p&gt;Let me state the conclusion first: another failed financial investment. It was also my first time being harvested as a “leek”, feeling the coldness of the capital market. When I finally cleared the position, I lost 1,600 yuan after holding it for half a year.&lt;br&gt;Here are a few lessons:&lt;/p&gt;

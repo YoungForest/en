@@ -18,17 +18,15 @@
         <category>The Three-Body Problem</category>
         <category>A Global History</category>
         <category>A Matter of Degrees</category>
+        <category>Dublin</category>
         <category>Kuaishou</category>
         <category>Tech</category>
-        <category>Dublin</category>
         <category>Alibaba</category>
         <category>intern</category>
         <category>travel</category>
         <category>Travel Notes</category>
         <category>Antifragile</category>
         <category>Are Your Lights On?</category>
-        <category>Beijing</category>
-        <category>Hukou</category>
         <category>Business Cycles</category>
         <category>Economics</category>
         <category>ByteDance</category>
@@ -41,8 +39,8 @@
         <category>C++</category>
         <category>Database</category>
         <category>Django</category>
-        <category>C++11</category>
         <category>Elon Musk</category>
+        <category>C++11</category>
         <category>bank</category>
         <category>money</category>
         <category>Europe</category>
@@ -61,6 +59,8 @@
         <category>Competitive Programming</category>
         <category>Algorithm</category>
         <category>LeetCode</category>
+        <category>Beijing</category>
+        <category>Hukou</category>
         <category>A Little History of the World</category>
         <category>Liu Shen Lei Lei Reads Jin Yong</category>
         <category>Liu Shen Lei Lei Reads Tang Poetry</category>
@@ -93,10 +93,11 @@
         <category>The Gains and Losses of Economic Changes in the Past Dynasties</category>
         <category>Linux</category>
         <category>Why Nations Fail</category>
-        <category>Windows</category>
         <category>The Times</category>
         <category>XiaoLin Says</category>
+        <category>Sword Stained with Royal Blood</category>
         <category>Atom</category>
+        <category>Windows</category>
         <category>hash</category>
         <category>unordered_map</category>
         <category>Tinkering</category>
@@ -104,22 +105,22 @@
         <category>Amazon</category>
         <category>Microsoft</category>
         <category>China</category>
-        <category>Travelogue</category>
         <category>vim</category>
+        <category>Travelogue</category>
         <category>investing</category>
         <category>Internship</category>
         <category>TeX</category>
-        <category>Life and Death Are Wearing Me Out</category>
         <category>Mac</category>
+        <category>Life and Death Are Wearing Me Out</category>
         <category>Ubuntu</category>
         <category>Owncloud</category>
         <category>Benchmark</category>
         <category>RIP</category>
         <category>sensetime</category>
         <category>Sublime</category>
+        <category>Git</category>
         <category>vscode</category>
         <category>gcc</category>
-        <category>Git</category>
         <item>
             <guid isPermalink="true">https://youngforest.github.io/en/2017/04/08/atom-explore/</guid>
             <title>A Brief First Taste of Atom</title>
@@ -129,7 +130,7 @@
             <description><![CDATA[ &lt;h2 id=&#34;Configure-Proxy&#34;&gt;&lt;a href=&#34;#Configure-Proxy&#34; class=&#34;headerlink&#34; title=&#34;Configure Proxy&#34;&gt;&lt;/a&gt;Configure Proxy&lt;/h2&gt;&lt;p&gt;My requirement was to insert LaTeX formulas into Markdown documents. Atom’s default &lt;code&gt;markdown-preview&lt;/code&gt; package could not satisfy this requirement. After searching, I found that the community package &lt;code&gt;markdown-preview-plus&lt;/code&gt; could satisfy it.&lt;/p&gt;
 &lt;h3 id=&#34;Atom-Package-Management&#34;&gt;&lt;a href=&#34;#Atom-Package-Management&#34; class=&#34;headerlink&#34; title=&#34;Atom Package Management&#34;&gt;&lt;/a&gt;&lt;a href=&#34;http://flight-manual.atom.io/using-atom/sections/atom-packages/#atom-packages&#34;&gt;Atom Package Management&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Following the official tutorial, the installation failed:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Installing “&lt;a href=&#34;mailto:&amp;#109;&amp;#97;&amp;#x72;&amp;#107;&amp;#x64;&amp;#111;&amp;#x77;&amp;#x6e;&amp;#45;&amp;#112;&amp;#x72;&amp;#101;&amp;#118;&amp;#105;&amp;#101;&amp;#119;&amp;#x2d;&amp;#112;&amp;#x6c;&amp;#x75;&amp;#x73;&amp;#64;&amp;#50;&amp;#46;&amp;#52;&amp;#46;&amp;#x39;&#34;&gt;&amp;#109;&amp;#97;&amp;#x72;&amp;#107;&amp;#x64;&amp;#111;&amp;#x77;&amp;#x6e;&amp;#45;&amp;#112;&amp;#x72;&amp;#101;&amp;#118;&amp;#105;&amp;#101;&amp;#119;&amp;#x2d;&amp;#112;&amp;#x6c;&amp;#x75;&amp;#x73;&amp;#64;&amp;#50;&amp;#46;&amp;#52;&amp;#46;&amp;#x39;&lt;/a&gt;” failed.&lt;/p&gt;
+&lt;p&gt;Installing “&lt;a href=&#34;mailto:&amp;#x6d;&amp;#97;&amp;#x72;&amp;#107;&amp;#x64;&amp;#x6f;&amp;#119;&amp;#110;&amp;#45;&amp;#112;&amp;#114;&amp;#101;&amp;#118;&amp;#105;&amp;#x65;&amp;#x77;&amp;#45;&amp;#x70;&amp;#x6c;&amp;#117;&amp;#x73;&amp;#64;&amp;#50;&amp;#x2e;&amp;#52;&amp;#46;&amp;#57;&#34;&gt;&amp;#x6d;&amp;#97;&amp;#x72;&amp;#107;&amp;#x64;&amp;#x6f;&amp;#119;&amp;#110;&amp;#45;&amp;#112;&amp;#114;&amp;#101;&amp;#118;&amp;#105;&amp;#x65;&amp;#x77;&amp;#45;&amp;#x70;&amp;#x6c;&amp;#117;&amp;#x73;&amp;#64;&amp;#50;&amp;#x2e;&amp;#52;&amp;#46;&amp;#57;&lt;/a&gt;” failed.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;In the log, I found this request:&lt;/p&gt;
 &lt;blockquote&gt;

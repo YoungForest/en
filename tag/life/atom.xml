@@ -15,17 +15,15 @@
     <category term="The Three-Body Problem" />
     <category term="A Global History" />
     <category term="A Matter of Degrees" />
+    <category term="Dublin" />
     <category term="Kuaishou" />
     <category term="Tech" />
-    <category term="Dublin" />
     <category term="Alibaba" />
     <category term="intern" />
     <category term="travel" />
     <category term="Travel Notes" />
     <category term="Antifragile" />
     <category term="Are Your Lights On?" />
-    <category term="Beijing" />
-    <category term="Hukou" />
     <category term="Business Cycles" />
     <category term="Economics" />
     <category term="ByteDance" />
@@ -38,8 +36,8 @@
     <category term="C++" />
     <category term="Database" />
     <category term="Django" />
-    <category term="C++11" />
     <category term="Elon Musk" />
+    <category term="C++11" />
     <category term="bank" />
     <category term="money" />
     <category term="Europe" />
@@ -58,6 +56,8 @@
     <category term="Competitive Programming" />
     <category term="Algorithm" />
     <category term="LeetCode" />
+    <category term="Beijing" />
+    <category term="Hukou" />
     <category term="A Little History of the World" />
     <category term="Liu Shen Lei Lei Reads Jin Yong" />
     <category term="Liu Shen Lei Lei Reads Tang Poetry" />
@@ -90,10 +90,11 @@
     <category term="The Gains and Losses of Economic Changes in the Past Dynasties" />
     <category term="Linux" />
     <category term="Why Nations Fail" />
-    <category term="Windows" />
     <category term="The Times" />
     <category term="XiaoLin Says" />
+    <category term="Sword Stained with Royal Blood" />
     <category term="Atom" />
+    <category term="Windows" />
     <category term="hash" />
     <category term="unordered_map" />
     <category term="Tinkering" />
@@ -101,27 +102,28 @@
     <category term="Amazon" />
     <category term="Microsoft" />
     <category term="China" />
-    <category term="Travelogue" />
     <category term="vim" />
+    <category term="Travelogue" />
     <category term="investing" />
     <category term="Internship" />
     <category term="TeX" />
-    <category term="Life and Death Are Wearing Me Out" />
     <category term="Mac" />
+    <category term="Life and Death Are Wearing Me Out" />
     <category term="Ubuntu" />
     <category term="Owncloud" />
     <category term="Benchmark" />
     <category term="RIP" />
     <category term="sensetime" />
     <category term="Sublime" />
+    <category term="Git" />
     <category term="vscode" />
     <category term="gcc" />
-    <category term="Git" />
     <entry>
         <id>https://youngforest.github.io/en/2025/12/27/2025-summary-and-2026-resolutions/</id>
         <title>2025 Year-End Review and 2026 New Year Outlook</title>
         <link rel="alternate" href="https://youngforest.github.io/en/2025/12/27/2025-summary-and-2026-resolutions/"/>
         <content type="html">&lt;p&gt;Reposted from &lt;a href=&#34;https://youngforest.github.io/en/2025/12/27/2025-summary-and-2026-resolutions/&#34;&gt;my blog&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/en/images/ai/2025-summary-and-2026-resolutions/en-hero.webp&#34; alt=&#34;A quiet desk for the 2025 year-end review&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Previous year-end reviews:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://youngforest.github.io/en/2024/12/28/2024-summary-and-2025-resolutions/&#34;&gt;2024 Year-End Review&lt;/a&gt;&lt;/li&gt;
@@ -140,7 +142,8 @@
 &lt;li&gt;&lt;a href=&#34;https://youngforest.github.io/en/2018/10/03/my-4-years-college/&#34;&gt;Four-Year University Review&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;These important posts are all under the &lt;a href=&#34;https://youngforest.github.io/en/categories/Diary/&#34;&gt;Diary category&lt;/a&gt; on my blog.&lt;/p&gt;
-&lt;h1 id=&#34;2025-Review&#34;&gt;&lt;a href=&#34;#2025-Review&#34; class=&#34;headerlink&#34; title=&#34;2025 Review&#34;&gt;&lt;/a&gt;2025 Review&lt;/h1&gt;&lt;h2 id=&#34;The-Historical-Process&#34;&gt;&lt;a href=&#34;#The-Historical-Process&#34; class=&#34;headerlink&#34; title=&#34;The Historical Process&#34;&gt;&lt;/a&gt;The Historical Process&lt;/h2&gt;&lt;h3 id=&#34;The-Strong-Rise-of-the-Euro&#34;&gt;&lt;a href=&#34;#The-Strong-Rise-of-the-Euro&#34; class=&#34;headerlink&#34; title=&#34;The Strong Rise of the Euro&#34;&gt;&lt;/a&gt;The Strong Rise of the Euro&lt;/h3&gt;&lt;p&gt;The euro was unusually strong this year. It stood out among many currencies, with the &lt;a href=&#34;https://finance.yahoo.com/quote/%5EXDE/?guccounter=1&amp;guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&amp;guce_referrer_sig=AQAAAJUbguSB1BaqGq5vWs0tiw-jx2VWEsDBXS0XAiJecjmnBMgQXQ7z7GCMNdtKYpRuF7W-48gBtYwSsBy-XyNpFju2VPx_MPREoTOpHDMv5oaQAXSf5I0bnyKKuY4m-3X-kMEW3jKDB5_0uE4IjqBKxR-rwCX9wENjGEiCaxlOosru&#34;&gt;Euro Currency Index (^XDE)&lt;/a&gt; up 13.5% YTD. Everyone knows the joke about the yen’s depreciation:&lt;/p&gt;
+&lt;h1 id=&#34;2025-Review&#34;&gt;&lt;a href=&#34;#2025-Review&#34; class=&#34;headerlink&#34; title=&#34;2025 Review&#34;&gt;&lt;/a&gt;2025 Review&lt;/h1&gt;&lt;p&gt;&lt;img src=&#34;/en/images/ai/2025-summary-and-2026-resolutions/en-historical-process.webp&#34; alt=&#34;Markets, currencies, and AI in the historical process&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;The-Historical-Process&#34;&gt;&lt;a href=&#34;#The-Historical-Process&#34; class=&#34;headerlink&#34; title=&#34;The Historical Process&#34;&gt;&lt;/a&gt;The Historical Process&lt;/h2&gt;&lt;h3 id=&#34;The-Strong-Rise-of-the-Euro&#34;&gt;&lt;a href=&#34;#The-Strong-Rise-of-the-Euro&#34; class=&#34;headerlink&#34; title=&#34;The Strong Rise of the Euro&#34;&gt;&lt;/a&gt;The Strong Rise of the Euro&lt;/h3&gt;&lt;p&gt;The euro was unusually strong this year. It stood out among many currencies, with the &lt;a href=&#34;https://finance.yahoo.com/quote/%5EXDE/?guccounter=1&amp;guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&amp;guce_referrer_sig=AQAAAJUbguSB1BaqGq5vWs0tiw-jx2VWEsDBXS0XAiJecjmnBMgQXQ7z7GCMNdtKYpRuF7W-48gBtYwSsBy-XyNpFju2VPx_MPREoTOpHDMv5oaQAXSf5I0bnyKKuY4m-3X-kMEW3jKDB5_0uE4IjqBKxR-rwCX9wENjGEiCaxlOosru&#34;&gt;Euro Currency Index (^XDE)&lt;/a&gt; up 13.5% YTD. Everyone knows the joke about the yen’s depreciation:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;When the company first offered Xiaoming an annual salary equivalent to RMB 800,000, he hesitated. After all, Tokyo’s cost of living was high.&lt;br&gt;But after counting overtime pay, RMB 700,000 was actually acceptable. So he came to Japan and began his middle-class life on RMB 600,000 a year. Through constant hard work and raises, he eventually became, in his friends’ words, a RMB 500,000-a-year talent.&lt;br&gt;Still, Xiaoming believes that as long as he gets promoted to Manager next time, he can earn RMB 400,000 and reach the peak of life.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -157,6 +160,7 @@
 &lt;p&gt;Large language models have already learned humanity’s vast corpus and knowledge. They have begun generating knowledge themselves and learning from each other. I do not know when the day will come when AI surpasses humanity’s collective intelligence, the so-called technological singularity. My prediction is that it will be no later than the end of 2030.&lt;/p&gt;
 &lt;p&gt;Philosophical discussions about AI are also becoming more and more real. From the perspective of the universe, intelligence, and consciousness, a second intelligence beyond modern Homo sapiens is about to be born. From the perspective of evolution and technological progress, it is also inevitable that AI will surpass humans in intelligence.&lt;/p&gt;
 &lt;p&gt;I also do not think humanity will go extinct or be replaced. Darwin’s theory of evolution says survival belongs to the fittest, not the smartest. In history, among the descendants of Homo erectus, only Homo sapiens remained; other human species either went extinct on their own or disappeared in competition with Homo sapiens. But humans shared an ecological niche with close relatives, and that was indeed a competitive relationship. The relationship between AI and humans is not like that. It is more cooperative. The modern world is also not a natural state, but a civilized state, and cannot be compared directly with prehistory.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/en/images/ai/2025-summary-and-2026-resolutions/en-reading.webp&#34; alt=&#34;Books and travel notes on a reflective desk&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;Reading-Ten-Thousand-Books&#34;&gt;&lt;a href=&#34;#Reading-Ten-Thousand-Books&#34; class=&#34;headerlink&#34; title=&#34;Reading Ten Thousand Books&#34;&gt;&lt;/a&gt;Reading Ten Thousand Books&lt;/h2&gt;&lt;p&gt;This year I read more than 30 books. See my &lt;a href=&#34;https://youngforest.github.io/en/categories/Book-Notes/&#34;&gt;list of book reviews&lt;/a&gt;. Ones I especially liked include:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://youngforest.github.io/en/2025/12/31/The-World-I-see/&#34;&gt;Fei-Fei Li’s &lt;em&gt;The Worlds I See&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
@@ -229,6 +233,7 @@
         <title>2024 Year-End Review and 2025 New Year Outlook</title>
         <link rel="alternate" href="https://youngforest.github.io/en/2024/12/28/2024-summary-and-2025-resolutions/"/>
         <content type="html">&lt;p&gt;Reposted from &lt;a href=&#34;https://youngforest.github.io/en/2024/12/28/2024-summary-and-2025-resolutions/&#34;&gt;my blog&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/en/images/ai/2024-summary-and-2025-resolutions/en-hero.webp&#34; alt=&#34;A programmer&amp;#39;s desk for the 2024 year-end review&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Previous year-end reviews:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://youngforest.github.io/en/2023/12/23/2023-summary-and-2024-resolutions/&#34;&gt;2023 Year-End Review&lt;/a&gt;&lt;/li&gt;
@@ -246,12 +251,14 @@
 &lt;li&gt;&lt;a href=&#34;https://youngforest.github.io/en/2018/10/03/my-4-years-college/&#34;&gt;Four-Year University Review&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;These important posts are all under the &lt;a href=&#34;https://youngforest.github.io/en/categories/Diary/&#34;&gt;Diary category&lt;/a&gt; on my blog.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/en/images/ai/2024-summary-and-2025-resolutions/en-ten-years-programming.webp&#34; alt=&#34;Ten years of programming craft&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;Ten-Years-of-Programming-Experience&#34;&gt;&lt;a href=&#34;#Ten-Years-of-Programming-Experience&#34; class=&#34;headerlink&#34; title=&#34;Ten Years of Programming Experience&#34;&gt;&lt;/a&gt;Ten Years of Programming Experience&lt;/h2&gt;&lt;p&gt;The BGM here should be Ye Shengtao’s “How Many Ten Years Are Left,” a song that sings out so many feelings about life.&lt;/p&gt;
 &lt;p&gt;In 2014, at 18, I left my hometown and went to Beijing for university. That young man back then knew nothing about the future. From then on, I drifted from place to place. During these ten years, both I myself and the world underwent earth-shaking changes.&lt;/p&gt;
 &lt;p&gt;From “Shahe Town” to “Zhichun Road” to “Shilipu”; from “Changping” to “Haidian” and then “Chaoyang”; from “Beijing” to “Dublin.” I experienced much glory and dreams, many troubles and heartbreaks. I traveled ten thousand miles, read ten thousand books, and met many different people. I grew from a small-town exam-taker into a working person. I was lucky to choose computer science, a major full of technological dividends, and witnessed the rise and saturation of the mobile internet, the surging rise of AI, the peak and retreat of globalization, peace and conflict, and the continuous progress of human technology. The S&amp;amp;P 500 rose from 1,900 points to 6,000.&lt;/p&gt;
 &lt;p&gt;“Computer science” was already a popular major back then, but it absolutely did not have today’s TOP 1 status. At that time, Beihang’s undergraduate computer science ranking was said to be 4th. Only after starting university did I formally write my first line of code. I began learning C and Python at the same time. For a beginner, two languages at once meant total confusion: braces &lt;code&gt;&amp;#123;&lt;/code&gt; versus newlines, &lt;code&gt;printf&lt;/code&gt; versus &lt;code&gt;print&lt;/code&gt;, compilation versus interpretation, static versus dynamic. Python even still had &lt;code&gt;2&lt;/code&gt; and &lt;code&gt;3&lt;/code&gt; back then. Many concepts only became clear later, until now I can recite them like family treasures. Later I successively used &lt;code&gt;C++&lt;/code&gt;, &lt;code&gt;Java&lt;/code&gt;, &lt;code&gt;GoLang&lt;/code&gt;, &lt;code&gt;TypeScript&lt;/code&gt;, and &lt;code&gt;C#&lt;/code&gt; as my main languages for periods of time. Out of interest, I also learned niche languages such as &lt;code&gt;Lisp&lt;/code&gt; and &lt;code&gt;Rust&lt;/code&gt;. In sophomore and junior year, I finally started to get a feel for it. During those two years I tinkered and self-studied a lot, helped by the school’s hard-core courses. In senior year I began internships and formally entered the industry. I previously summarized my &lt;a href=&#34;https://youngforest.github.io/en/2018/10/03/my-4-years-college/&#34;&gt;four years of university&lt;/a&gt; and &lt;a href=&#34;https://youngforest.github.io/en/2021/07/03/my-3-years-master/&#34;&gt;three years of master’s study&lt;/a&gt;. I have to say, doing a master’s was really a waste of time. It is just that China is too competitive, and even finding a good job often requires graduate school. I was already 25 when I graduated. After going abroad, I found that most people start working after a bachelor’s degree, enter the industry early, and get promoted and raises early. Now I have worked full time for more than three years. Counting previous internships, I have experienced six companies. Looking back, over all these years I touched many things only shallowly, while my resume became quite flashy and full.&lt;/p&gt;
 &lt;p&gt;It is truly as Jin Yong wrote: Dugu Qiubai began with the “sharp green steel sword, too rigid and easily broken,” then moved to the “Ziwei soft sword, flexible and adaptable,” then in middle age to the “heavy sword without edge, great skill appearing clumsy,” and finally to the “sword of grass and wood, returning to simplicity,” where flowers, grass, and trees can all be swords. That is the highest realm. Programmers are the same.&lt;/p&gt;
 &lt;p&gt;There is another song I also like: “You Were Once a Youth,” the theme song of the film &lt;em&gt;The Ark of Mr. Chow&lt;/em&gt;. Every lyric really sings my heart, from past romanticism and idealism to today’s realism, nostalgia, and longing. The wheel of history rolls forward. Fate has pushed me along unimaginable roads toward unknown paths. Although I make New Year outlooks every year, once the time scale stretches to ten years, life cannot be predicted and should not be limited. My current life was unimaginable to me ten years ago, and today’s me cannot imagine life ten years from now. People often overestimate the short-term progress of themselves and the world, but underestimate long-term progress. This is the terror of exponential growth. I hope I will always remain a youth, and continue to keep curiosity, kindness, and optimism toward the world.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/en/images/ai/2024-summary-and-2025-resolutions/en-personal-review.webp&#34; alt=&#34;A personal review of home, books, travel, and work&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;2024-Personal-Review&#34;&gt;&lt;a href=&#34;#2024-Personal-Review&#34; class=&#34;headerlink&#34; title=&#34;2024 Personal Review&#34;&gt;&lt;/a&gt;2024 Personal Review&lt;/h2&gt;&lt;p&gt;This year was another steady year, like previous years. My J-personality trait was fully maxed out.&lt;/p&gt;
 &lt;p&gt;Although there was nothing earth-shattering or thrilling, and I basically stayed in my comfort zone the whole time, my inner world has become very strong. I can now stay in the comfort zone with a clear conscience :) I do not seek to go fast, only to go far.&lt;/p&gt;
 &lt;p&gt;This is actually also because the knowledge I have learned in recent years has made me stronger inside. As the saying goes, knowledge is power. Stand on the shoulders of giants.&lt;/p&gt;
@@ -391,6 +398,7 @@
         <title>2023 Year-End Review and 2024 New Year Outlook</title>
         <link rel="alternate" href="https://youngforest.github.io/en/2023/12/23/2023-summary-and-2024-resolutions/"/>
         <content type="html">&lt;p&gt;Reposted from &lt;a href=&#34;https://youngforest.github.io/en/2023/12/23/2023-summary-and-2024-resolutions/&#34;&gt;my blog&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/en/images/ai/2023-summary-and-2024-resolutions/en-hero.webp&#34; alt=&#34;A European desk for the 2023 year-end review&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The Christmas holiday is approaching, and the Microsoft Ireland office has long been filled with a festive atmosphere. Decorations everywhere, Christmas trees and Santa Claus ornaments: Christmas really is Ireland’s biggest holiday. Ireland gives two days off for Christmas, December 25 and 26, one more day than the US. More people, especially colleagues from Christian countries, take annual leave around the holiday to go home and spend it with family. So December is a relatively relaxed working period, and everyone is quite laid-back.&lt;/p&gt;
 &lt;p&gt;There is still half a month before the new year, and my life and thoughts probably will not change during this time. Quite a few friends are also looking forward to my year-end review. It has already become an annual fixed program. From 2017 to now, this is already the seventh year.&lt;/p&gt;
 &lt;p&gt;Previous year-end reviews:&lt;/p&gt;
@@ -409,6 +417,7 @@
 &lt;li&gt;&lt;a href=&#34;https://youngforest.github.io/en/2018/10/03/my-4-years-college/&#34;&gt;Four-Year University Review&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;These important blog posts are all under the &lt;a href=&#34;https://youngforest.github.io/en/categories/Diary/&#34;&gt;Diary category&lt;/a&gt; on my blog.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/en/images/ai/2023-summary-and-2024-resolutions/en-personal-review.webp&#34; alt=&#34;A year of work, travel, and life in Europe&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;2023-Personal-Review&#34;&gt;&lt;a href=&#34;#2023-Personal-Review&#34; class=&#34;headerlink&#34; title=&#34;2023 Personal Review&#34;&gt;&lt;/a&gt;2023 Personal Review&lt;/h2&gt;&lt;p&gt;Unlike the previous few years, perhaps because of the three-year pandemic, time felt like it flew by. Every year passed quickly, and it was hard to tell what year it was anymore. This year, time felt a little slower, probably because I changed environments, work was relatively relaxed, and I had more time for travel and reading, which added many memories and thoughts. Also this year, life went through some dramatic changes. I faintly feel that this may be a turning point for the next few years, a new starting point.&lt;/p&gt;
 &lt;h3 id=&#34;Work&#34;&gt;&lt;a href=&#34;#Work&#34; class=&#34;headerlink&#34; title=&#34;Work&#34;&gt;&lt;/a&gt;Work&lt;/h3&gt;&lt;p&gt;This year’s economic environment, both in the West and in China, was full of serious tests.&lt;/p&gt;
 &lt;p&gt;After the pandemic ended in the West in 2022, consumption rebounded. Combined with years of quantitative easing and excessive money printing, plus the Russia-Ukraine war, severe inflation emerged. It was second only to the high inflation of the 1970s oil crisis. How serious was inflation? In the year since I came to Ireland, I could already feel a 10% price increase, or shrinkflation, in supermarkets. That is not even comparing with pre-pandemic prices.&lt;/p&gt;
@@ -460,6 +469,7 @@
 &lt;p&gt;Later, centralization even evolved into totalitarianism. Under that condition, any thinking and self-learning became reactionary and required paying an enormous price.&lt;/p&gt;
 &lt;p&gt;After “setting things right,” the situation improved somewhat, but the problem was never fundamentally solved.&lt;/p&gt;
 &lt;p&gt;Since this year, because of the change in environment, I have gained more freedom to think. Combined with my long-standing habit of loving learning, the effect has been astonishing, sometimes even frightening to myself.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/en/images/ai/2023-summary-and-2024-resolutions/en-good-life-2024.webp&#34; alt=&#34;A peaceful outlook for a better life in 2024&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;Yearning-for-a-Good-Life-in-2024&#34;&gt;&lt;a href=&#34;#Yearning-for-a-Good-Life-in-2024&#34; class=&#34;headerlink&#34; title=&#34;Yearning for a Good Life in 2024&#34;&gt;&lt;/a&gt;Yearning for a Good Life in 2024&lt;/h2&gt;&lt;p&gt;Actually, my New Year wishes every year are similar: work, body, mental health, and learning.&lt;/p&gt;
 &lt;h3 id=&#34;Leave-Asia-for-Europe-and-later-leave-Europe-for-America&#34;&gt;&lt;a href=&#34;#Leave-Asia-for-Europe-and-later-leave-Europe-for-America&#34; class=&#34;headerlink&#34; title=&#34;Leave Asia for Europe, and later leave Europe for America&#34;&gt;&lt;/a&gt;Leave Asia for Europe, and later leave Europe for America&lt;/h3&gt;&lt;p&gt;Friends familiar with me, or readers who have read my previous year-end reviews and blog posts, may know that the main reason I came to Europe last year was to accompany study. Before I came to Ireland last year, I had never thought about coming to Ireland, and had not even considered this country. In fact, after meeting many friends in Ireland, I was surprised to find that Ireland is such a quiet, magical little country. There are many outsiders in Dublin, but everyone came to Ireland accidentally for all kinds of strange reasons. Very few people treated Ireland as their first choice from the beginning. For example, many students applied to Irish schools only as a side option, with the UK as their priority. When I looked for jobs last year, I mainly applied to the Netherlands and applied to Ireland on the side. People did not know much about Ireland before; they only started learning deeply after getting offers. When I left home last year, relatives and friends did not know where Ireland was, and many thought it was still part of the UK.&lt;/p&gt;
 &lt;p&gt;Perhaps it is exactly this information gap that makes Ireland a value depression. There are many study and work opportunities here, but not many people know about them, so competition is not that fierce. Most people, whether planning to settle down or using Ireland as a stepping stone, come for these good study and work opportunities.&lt;/p&gt;

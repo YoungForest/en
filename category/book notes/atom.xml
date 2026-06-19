@@ -15,17 +15,15 @@
     <category term="The Three-Body Problem" />
     <category term="A Global History" />
     <category term="A Matter of Degrees" />
+    <category term="Dublin" />
     <category term="Kuaishou" />
     <category term="Tech" />
-    <category term="Dublin" />
     <category term="Alibaba" />
     <category term="intern" />
     <category term="travel" />
     <category term="Travel Notes" />
     <category term="Antifragile" />
     <category term="Are Your Lights On?" />
-    <category term="Beijing" />
-    <category term="Hukou" />
     <category term="Business Cycles" />
     <category term="Economics" />
     <category term="ByteDance" />
@@ -38,8 +36,8 @@
     <category term="C++" />
     <category term="Database" />
     <category term="Django" />
-    <category term="C++11" />
     <category term="Elon Musk" />
+    <category term="C++11" />
     <category term="bank" />
     <category term="money" />
     <category term="Europe" />
@@ -58,6 +56,8 @@
     <category term="Competitive Programming" />
     <category term="Algorithm" />
     <category term="LeetCode" />
+    <category term="Beijing" />
+    <category term="Hukou" />
     <category term="A Little History of the World" />
     <category term="Liu Shen Lei Lei Reads Jin Yong" />
     <category term="Liu Shen Lei Lei Reads Tang Poetry" />
@@ -90,10 +90,11 @@
     <category term="The Gains and Losses of Economic Changes in the Past Dynasties" />
     <category term="Linux" />
     <category term="Why Nations Fail" />
-    <category term="Windows" />
     <category term="The Times" />
     <category term="XiaoLin Says" />
+    <category term="Sword Stained with Royal Blood" />
     <category term="Atom" />
+    <category term="Windows" />
     <category term="hash" />
     <category term="unordered_map" />
     <category term="Tinkering" />
@@ -101,22 +102,22 @@
     <category term="Amazon" />
     <category term="Microsoft" />
     <category term="China" />
-    <category term="Travelogue" />
     <category term="vim" />
+    <category term="Travelogue" />
     <category term="investing" />
     <category term="Internship" />
     <category term="TeX" />
-    <category term="Life and Death Are Wearing Me Out" />
     <category term="Mac" />
+    <category term="Life and Death Are Wearing Me Out" />
     <category term="Ubuntu" />
     <category term="Owncloud" />
     <category term="Benchmark" />
     <category term="RIP" />
     <category term="sensetime" />
     <category term="Sublime" />
+    <category term="Git" />
     <category term="vscode" />
     <category term="gcc" />
-    <category term="Git" />
     <entry>
         <id>https://youngforest.github.io/en/2026/01/01/Genome-The-autobiography-of-a-species-in-23-chapters/</id>
         <title>Genome: The Autobiography of a Species in 23 Chapters</title>
@@ -222,7 +223,8 @@
         <id>https://youngforest.github.io/en/2026/01/01/The-Bitcoin-Standard/</id>
         <title>The Bitcoin Standard: The Decentralized Alternative to Central Banking</title>
         <link rel="alternate" href="https://youngforest.github.io/en/2026/01/01/The-Bitcoin-Standard/"/>
-        <content type="html">&lt;p&gt;&lt;a href=&#34;https://book.douban.com/subject/35332013/&#34;&gt;Douban link to the Taiwan translation&lt;/a&gt;&lt;/p&gt;
+        <content type="html">&lt;p&gt;&lt;img src=&#34;/en/images/ai/The-Bitcoin-Standard/en-hero.webp&#34; alt=&#34;Money and scarcity in The Bitcoin Standard&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://book.douban.com/subject/35332013/&#34;&gt;Douban link to the Taiwan translation&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Hard money: a high stock-to-flow ratio. Bitcoin satisfies this extremely well, and is instead a deflationary currency.&lt;/p&gt;
 &lt;p&gt;Acceptance / liquidity.&lt;/p&gt;
 &lt;p&gt;The failure of the Hunt brothers’ silver speculation in the late 1970s has been repeatedly mentioned in several books I have read recently: Ray Dalio’s &lt;em&gt;Principles&lt;/em&gt;, Paul Volcker’s &lt;em&gt;Keeping At It&lt;/em&gt;, and this book. The case keeps getting brought back out.&lt;/p&gt;
@@ -434,7 +436,8 @@
         <id>https://youngforest.github.io/en/2024/08/24/Antifragile-Things-That-Gain-from-Disorder/</id>
         <title>Antifragile: Things That Gain from Disorder</title>
         <link rel="alternate" href="https://youngforest.github.io/en/2024/08/24/Antifragile-Things-That-Gain-from-Disorder/"/>
-        <content type="html">&lt;p&gt;A feast of conservatism, liberalism, and optimism.&lt;/p&gt;
+        <content type="html">&lt;p&gt;&lt;img src=&#34;/en/images/ai/Antifragile-Things-That-Gain-from-Disorder/en-hero.webp&#34; alt=&#34;Stress and resilience in Antifragile&#34;&gt;&lt;/p&gt;
+&lt;p&gt;A feast of conservatism, liberalism, and optimism.&lt;/p&gt;
 &lt;p&gt;Nassim Taleb is a writer recommended by both Naval and Li Zong. Perhaps they would call him a philosopher.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Antifragile&lt;/em&gt; feels more like a success book. It tells people to embrace pressure and bad things in order to gain restorative growth. It is actually like the passive skill of Saiyans in &lt;em&gt;Dragon Ball&lt;/em&gt;: every time they recover from near death, their combat power multiplies. Vegeta used this skill to grind combat power, but in the end he was still killed by Frieza.&lt;/p&gt;
 &lt;p&gt;My two years in Ireland have been truly lying flat and comfortable. One should not enter Europe too young. People can become useless from comfort. Although life is happy, there is no restorative growth.&lt;/p&gt;
