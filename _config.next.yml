@@ -157,5 +157,5 @@ math:
     enable: false
     tags: none
   katex:
-    enable: true
-    copy_tex: true
+    enable: false
+    copy_tex: false
