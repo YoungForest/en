@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/The-Bitcoin-Standard.md
+context: Contrasts hard money and scarcity with expanding paper supply and decentralized digital money.
+assets:
+  - id: hero
+    file: review/editorial-comic-v1-samples/en-bitcoin.webp
+    placement: hero
+    alt: Metal is forged into a scarce coin that connects to independent nodes while a tower of blank paper buckles
+    composition: A left-to-right progression from minting to trade to a decentralized network, contrasted with expanding paper.
+    review_status: candidate

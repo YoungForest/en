@@ -5,8 +5,10 @@ tags:
 - tech
 categories:
 - Tinkering
+translations:
+  zh-CN: https://youngforest.github.io/2021/03/26/SSH-proxy-by-jump-server/
+  en: https://youngforest.github.io/en/2021/03/26/SSH-proxy-by-jump-server/
 ---
-
 ## Motivation
 
 Following the problem in the previous post, [Fixing Ubuntu Desktop VPN Access to Public Internet Resources](https://youngforest.github.io/en/2021/03/18/Ubuntu-vpn-cannot-access-public-resource/), I tried configuring a jump host to access machines at the Hangzhou Research Institute.

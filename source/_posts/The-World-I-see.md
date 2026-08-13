@@ -1,18 +1,23 @@
 ---
 title: "The Worlds I See: Curiosity, Exploration, and Discovery at the Dawn of AI"
+description: "Reflections on Fei-Fei Li, AI history, immigration, scientific progress, and the American dream."
 date: 2025-12-31 20:06:52
 tags:
 - Reading
 - The Worlds I See
 categories:
 - Book Notes
+translations:
+  zh-CN: https://youngforest.github.io/2025/12/31/The-World-I-see/
+  en: https://youngforest.github.io/en/2025/12/31/The-World-I-see/
 ---
-
 [Douban link to the Taiwan translation](https://book.douban.com/subject/36698437/)
 
 When it first came out, I tried reading the original English edition. I found it too hard. As a scientist, Fei-Fei Li's diction and sentence structures are too ornate and complex. Perhaps because she is a 1.5-generation immigrant with painful memories of language, now that she is fluent she has started showing off her skill. As a bestseller, it indeed quickly received a Chinese translation. Great!
 
 The National Air and Space Museum, which is repeatedly mentioned in the book, is also a place I long to visit. Unfortunately, I did not go there the last time I went to DC.
+
+<!-- more -->
 
 Algorithms, data, and compute. These are the three foundations of modern AI. Fei-Fei Li's contribution to data alone is enough to secure her name and status. Many algorithms had already been prepared in advance, especially for computer vision. They were already ready in the 1990s. Compute only became ready in the last ten-plus years. I will read the Nvidia biography next year: https://book.douban.com/subject/37210122/
 

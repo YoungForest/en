@@ -6,8 +6,10 @@ tags:
 - intern
 categories:
 - interview
+translations:
+  zh-CN: https://youngforest.github.io/2018/12/09/sensetime-intern-interview/
+  en: https://youngforest.github.io/en/2018/12/09/sensetime-intern-interview/
 ---
-
 Last week I sent my resume to a classmate interning at SenseTime and scheduled an interview with HR for this Thursday. On Friday I received another call from HR to discuss the offer. I have to say, SenseTime's recruiting efficiency is really high. From another angle, this also reflects the fact that they are very short of people. Many SenseTime classmates asked me whether I had other classmates to recommend for internships.
 
 SenseTime alumni are jokingly called the "BUAA lab," because SenseTime has recruited a large number of BUAA interns, and many full-time employees were converted directly from internships. When I was an undergraduate, almost an entire class was interning there.

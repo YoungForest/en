@@ -5,8 +5,10 @@ tags:
 - Competitive Programming
 categories:
 - LeetCode
+translations:
+  zh-CN: https://youngforest.github.io/2019/02/04/LeetCode-weekly-contest-122/
+  en: https://youngforest.github.io/en/2019/02/04/LeetCode-weekly-contest-122/
 ---
-
 Because I was staying at home for the holiday, I actually forgot what day of the week it was and only knew which day of the twelfth lunar month it was. Today I finally realized it was already Monday and that I had missed the weekly contest. On this Chinese New Year's Eve, before watching the Spring Festival Gala with my family, Forest and his whole family wish everyone a happy New Year! I will quickly finish these four contest problems so I can eat New Year's Eve dinner with peace of mind.
 
 Since official Notes cannot be used during the contest, writing on the blog is a convenient substitute.

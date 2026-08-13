@@ -5,8 +5,10 @@ tags:
 - Travel
 categories:
 - Diary
+translations:
+  zh-CN: https://youngforest.github.io/2016/08/25/my-britain-trip/
+  en: https://youngforest.github.io/en/2016/08/25/my-britain-trip/
 ---
-
 This summer, I was fortunate to participate in the UK exchange camp jointly organized by Beihang's Advanced Engineering School and the Cambridge Eastern Education and Development Society. The exchange camp lasted two weeks, with rich content and diverse formats. It gave me a deep understanding of British humanities and culture, as well as the situation of Chinese students studying abroad, and successfully fulfilled my pre-trip goals. Next, I will organize the whole trip and share it with everyone, hoping it will be helpful.
 
 <!--more-->

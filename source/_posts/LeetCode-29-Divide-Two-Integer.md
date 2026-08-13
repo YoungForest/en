@@ -4,8 +4,10 @@ date: 2018-10-23 16:41:47
 tags:
 categories:
 - LeetCode
+translations:
+  zh-CN: https://youngforest.github.io/2018/10/23/LeetCode-29-Divide-Two-Integer/
+  en: https://youngforest.github.io/en/2018/10/23/LeetCode-29-Divide-Two-Integer/
 ---
-
 I have not practiced LeetCode for four weeks. On one hand, the sense of urgency decreased; on the other, I lacked execution.
 Recently I have another interview to prepare for: an algorithm intern interview for the video team at Xiaohongshu.
 On one side, I need to look at machine learning knowledge to avoid repeating the mistakes from the Kuaishou interview; on the other, I need to review my coding ability. Sure enough, after four weeks without practicing, I can no longer even write code well. As a future programmer, how can poor coding ability be acceptable? I still need to start practicing LeetCode again in a planned way.

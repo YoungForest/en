@@ -5,8 +5,10 @@ tags:
 - travel
 categories:
 - Diary
+translations:
+  zh-CN: https://youngforest.github.io/2021/07/02/Wuhan-trip/
+  en: https://youngforest.github.io/en/2021/07/02/Wuhan-trip/
 ---
-
 I finally graduated, and the graduation trip that had been planned for a long time was officially put on the agenda. Because we had to wait for my girlfriend to finish her exam, and I also had to come back before onboarding, preferably with a few days left to rest and buy furniture, my girlfriend and I only had one week to travel. We went to three places in total: Linfen, Shanxi -> Wuhan, Hubei -> Suizhou, Hubei.
 
 The purpose was roughly to meet my parents and visit my girlfriend's grandmother, whom she had not seen for ten years.

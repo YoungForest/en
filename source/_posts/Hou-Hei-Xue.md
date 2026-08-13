@@ -6,8 +6,10 @@ tags:
 - Hou Hei Xue
 categories:
 - Book Notes
+translations:
+  zh-CN: https://youngforest.github.io/2024/07/20/Hou-Hei-Xue/
+  en: https://youngforest.github.io/en/2024/07/20/Hou-Hei-Xue/
 ---
-
 [Douban link](https://book.douban.com/subject/1911687/)
 
 Do not be deceived by the title. Do not judge it literally and think this is a success book, where after reading it you can learn to be thick-faced and black-hearted and become a hero. It is not. This book is mainly a satire of history and social reality. *Hou Hei Xue* was written in the early Republic of China, precisely when society was undergoing drastic transformation. Traditional Chinese doctrines were being reflected on and overthrown, while modern Western doctrines had not yet been fully accepted. It was in this context that the patriarch of Hou Hei wrote this satirical theory. It truly tears old China's benevolence, righteousness, and morality into pieces, revealing the dark reality of society.

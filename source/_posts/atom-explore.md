@@ -5,6 +5,9 @@ tags:
 - Atom
 categories:
 - Tinkering
+translations:
+  zh-CN: https://youngforest.github.io/2017/04/08/atom-explore/
+  en: https://youngforest.github.io/en/2017/04/08/atom-explore/
 ---
 ## Configure Proxy
 My requirement was to insert LaTeX formulas into Markdown documents. Atom's default `markdown-preview` package could not satisfy this requirement. After searching, I found that the community package `markdown-preview-plus` could satisfy it.

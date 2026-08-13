@@ -5,8 +5,10 @@ tags:
 - Algorithm
 categories:
 - Programming
+translations:
+  zh-CN: https://youngforest.github.io/2019/12/14/find-all-unique-pairs-of-maximum-and-second-maximum-elements-over-all-sub-arrays-in-onlogn/
+  en: https://youngforest.github.io/en/2019/12/14/find-all-unique-pairs-of-maximum-and-second-maximum-elements-over-all-sub-arrays-in-onlogn/
 ---
-
 The root of the problem is that a classmate asked about a lucky number problem: [Codeforces 280B](https://codeforces.com/problemset/problem/280/B). [Codeforces 281D](https://codeforces.com/problemset/problem/281/D) is the same problem.
 
 [Find all unique pairs of maximum and second maximum elements over all sub-arrays in O(NlogN)](https://www.geeksforgeeks.org/find-all-unique-pairs-of-maximum-and-second-maximum-elements-over-all-sub-arrays-in-onlogn/)

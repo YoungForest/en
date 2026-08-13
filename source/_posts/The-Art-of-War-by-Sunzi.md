@@ -6,8 +6,10 @@ tags:
 - The Art of War
 categories:
 - Book Notes
+translations:
+  zh-CN: https://youngforest.github.io/2024/05/06/The-Art-of-War-by-Sunzi/
+  en: https://youngforest.github.io/en/2024/05/06/The-Art-of-War-by-Sunzi/
 ---
-
 [Douban link](https://book.douban.com/subject/26917969/)
 
 After watching *The Knockout*, I also came to read *The Art of War*. I could not understand the original, so I came to an interpretation. I also watched Lao Gao's videos, and they are indeed impressive. Gao Qiqiang used one copy of *The Art of War* to settle Jinghai City, growing from a small fishmonger into the boss of both black and white forces. Of course, saying he relied only on *The Art of War* is somewhat exaggerated, but it was indeed a necessary condition. After reading it, I feel *The Art of War* is like the *Nine Yin Manual* in wuxia novels. Although it talks about military strategy, all things in the world have countless hidden connections behind them. Many of its principles are useful in business and even personal life, especially investing and personal finance. An information model I learned before says "wisdom, knowledge, and information" go from most important to least important, and from least numerous to most numerous. True wisdom is great principles made simple, explainable in just a few sentences. *The Art of War* mainly talks about wisdom and knowledge, and also about how to gather information and intelligence, which is why it has endured for five thousand years.

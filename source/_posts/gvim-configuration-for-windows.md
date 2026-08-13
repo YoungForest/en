@@ -5,8 +5,10 @@ tags:
 - vim
 categories:
 - Tinkering
+translations:
+  zh-CN: https://youngforest.github.io/2017/03/26/gvim-configuration-for-windows/
+  en: https://youngforest.github.io/en/2017/03/26/gvim-configuration-for-windows/
 ---
-
 Recently, because I was preparing for the GRE, I spent all day memorizing words, practicing listening, and writing. I felt quite annoyed and had not tinkered with anything for a long time. So I took some time to download and configure gVim on my laptop, which also counted as a break.
 
 # [Download](http://www.vim.org/download.php#pc)

@@ -4,8 +4,10 @@ date: 2018-10-26 23:19:20
 tags:
 - LeetCode
 categories:
+translations:
+  zh-CN: https://youngforest.github.io/2018/10/26/LeetCode-380-Insert-Delete-GetRandomO-1/
+  en: https://youngforest.github.io/en/2018/10/26/LeetCode-380-Insert-Delete-GetRandomO-1/
 ---
-
 The key point of this problem is understanding "average O(1) time", which is also an important concept in time-complexity analysis: "amortized".
 In *Algorithms, Fourth Edition*, the analysis of many data-structure operations uses this method. So "amortized time complexity" is often associated with operations on the corresponding data structure. When I interviewed at Megvii in May, the second problem asked me to construct a queue data structure that maintains the maximum value, and the final requirement was that the operation time complexity be "amortized O(1)". Unfortunately, at that time I was not familiar with the concept of "amortized". I could analyze worst-case time complexity, and although I eventually derived the correct answer under the interviewer's guidance, the final result was predictably no hire.
 

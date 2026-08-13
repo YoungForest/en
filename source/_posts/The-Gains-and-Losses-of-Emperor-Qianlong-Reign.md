@@ -6,11 +6,15 @@ tags:
 - The Hungry Golden Age
 categories:
 - Book Notes
+translations:
+  zh-CN: https://youngforest.github.io/2026/01/01/The-Gains-and-Losses-of-Emperor-Qianlong-Reign/
+  en: https://youngforest.github.io/en/2026/01/01/The-Gains-and-Losses-of-Emperor-Qianlong-Reign/
 ---
-
 [Douban link](https://book.douban.com/subject/35888701/)
 
-# The prelude to a golden age is decline, and its ending is also decline
+## The prelude to a golden age is decline, and its ending is also decline
+
+<!-- more -->
 
 > Imperial power is like a malignant tumor, one of the most expansionary things in the world. It does not allow independent people or independent affairs to exist. The exclusive nature of autocratic power drives it to forever strive to break through all limits, throw off all restraints, penetrate every corner of society, poison every cell, and finally suffocate the entire society in its tight embrace. The scholar's pursuit of personal dignity became an obstacle to imperial power in the Qing dynasty, when autocracy reached its peak.
 

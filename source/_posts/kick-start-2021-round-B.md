@@ -5,8 +5,10 @@ tags:
 - Competitive Programming
 categories:
 - KickStart
+translations:
+  zh-CN: https://youngforest.github.io/2021/04/20/kick-start-2021-round-B/
+  en: https://youngforest.github.io/en/2021/04/20/kick-start-2021-round-B/
 ---
-
 The contest time was 7 a.m. to 10 a.m. Beijing time on the 19th, and it happened that I had to submit the first draft of my graduation thesis at 2 p.m. Recently I had been busy writing the thesis, so I did not participate in Round B. Now I have already passed the age of campus recruitment, so competing in Kick Start is purely for fun.
 
 Post-contest upsolving.

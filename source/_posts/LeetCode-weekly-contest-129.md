@@ -5,8 +5,10 @@ tags:
 - Competitive Programming
 categories:
 - LeetCode
+translations:
+  zh-CN: https://youngforest.github.io/2019/03/31/LeetCode-weekly-contest-129/
+  en: https://youngforest.github.io/en/2019/03/31/LeetCode-weekly-contest-129/
 ---
-
 Last weekend, because I was preparing for Google's Kick Start Round A, I skipped one LeetCode weekly contest. But I still made up the LeetCode problems that evening. The four problems were not easy, but after thinking through them I solved them independently. It was a small comfort after Kick Start had beaten me into silence.
 
 ## 1020. Partition Array Into Three Parts With Equal Sum

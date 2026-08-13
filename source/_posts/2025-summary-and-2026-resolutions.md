@@ -1,16 +1,21 @@
 ---
 title: 2025 Year-End Review and 2026 New Year Outlook
+description: "Looking back on work, reading, investing, and life in 2025, with practical goals for 2026."
 date: 2025-12-27 16:22:50
 tags:
   - life
   - Year-End Review
 categories:
   - Diary
+translations:
+  zh-CN: https://youngforest.github.io/2025/12/27/2025-summary-and-2026-resolutions/
+  en: https://youngforest.github.io/en/2025/12/27/2025-summary-and-2026-resolutions/
 ---
-
 Reposted from [my blog](https://youngforest.github.io/en/2025/12/27/2025-summary-and-2026-resolutions/)
 
 ![A quiet desk for the 2025 year-end review](/en/images/ai/2025-summary-and-2026-resolutions/en-hero.webp)
+
+<!-- more -->
 
 Previous year-end reviews:
 
@@ -31,7 +36,7 @@ Milestone reviews:
 
 These important posts are all under the [Diary category](https://youngforest.github.io/en/categories/Diary/) on my blog.
 
-# 2025 Review
+## 2025 Review
 
 ![Markets, currencies, and AI in the historical process](/en/images/ai/2025-summary-and-2026-resolutions/en-historical-process.webp)
 
@@ -150,7 +155,7 @@ As Gao Xiaosong said, "Taiwan is China's past, and also China's future." "Past" 
 
 Madeira was in June. The weather was clear, the people were warm, and road infrastructure was good, suitable for driving around the island and hiking. I also happened to catch a festival parade, which was extremely festive. Portugal and Spain have quite a few large islands in the Atlantic, very suitable for vacation. As former leaders of the Age of Discovery and former empires on which the sun never set, they now have these overseas territories left as witnesses to their glory.
 
-# 2026 Outlook
+## 2026 Outlook
 
 Next year, I will continue to be a friend of time. I will persist in doing things with long-term returns: keep exercising, reading, watching films, traveling (I want to go to Japan, Korea, and Southeast Asia), talking with people face to face, and Just Keep Buying and Holding as an investment strategy.
 

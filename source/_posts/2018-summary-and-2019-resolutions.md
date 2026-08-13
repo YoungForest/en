@@ -6,8 +6,10 @@ tags:
 - Year-end Summary
 categories:
 - Diary
+translations:
+  zh-CN: https://youngforest.github.io/2018/12/12/2018-summary-and-2019-resolutions/
+  en: https://youngforest.github.io/en/2018/12/12/2018-summary-and-2019-resolutions/
 ---
-
 Merry Christmas!
 
 There are still five days before 2019, and 2018 is about to end. A year passes so quickly. I wonder how your 2018 was. How many of the New Year's plans you made a year ago did you accomplish?

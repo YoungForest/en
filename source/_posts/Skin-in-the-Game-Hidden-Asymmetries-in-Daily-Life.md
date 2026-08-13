@@ -7,11 +7,15 @@ tags:
 - Nassim Nicholas Taleb
 categories:
 - Book Notes
+translations:
+  zh-CN: https://youngforest.github.io/2026/01/01/Skin-in-the-Game-Hidden-Asymmetries-in-Daily-Life/
+  en: https://youngforest.github.io/en/2026/01/01/Skin-in-the-Game-Hidden-Asymmetries-in-Daily-Life/
 ---
-
 [Douban link](https://book.douban.com/subject/30417612/)
 
 I had previously read *Antifragile* and was amazed; it absolutely lived up to its reputation. But this final book in the *Incerto* series, *Skin in the Game*, feels less full of new knowledge and less surprising. Many times I read it in a muddled state. Perhaps the author had exhausted his talent. After all, he has been retired from the world for so long, and his core views have more or less already been output. The translation is also barely satisfactory, especially the Chinese title. The original *Skin in the Game* is much better.
+
+<!-- more -->
 
 > Robert Rubin's dealings. Some may think that overthrowing the aristocrats above us means civilization and progress, but that may not be the case.
 

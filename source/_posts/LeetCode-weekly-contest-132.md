@@ -5,8 +5,10 @@ tags:
 - Competitive Programming
 categories:
 - LeetCode
+translations:
+  zh-CN: https://youngforest.github.io/2019/04/14/LeetCode-weekly-contest-132/
+  en: https://youngforest.github.io/en/2019/04/14/LeetCode-weekly-contest-132/
 ---
-
 This contest was not hard, but the code was not easy to implement. It was not easy to write bug-free in one pass. What it tested was using a programming language to handle complex logic and various unexpected cases. For example, in the third problem, when the previous `dp` is 0, the length should be updated to 2; otherwise it should be `dp + 1`. In the fourth problem, when looking for delimiters under various cases, how should it be handled if none is found?
 
 | Rank |	Name |	Score |	Finish Time | 	Q1 (4) |	Q2 (5) |	Q3 (5) |	Q4 (5)|

@@ -7,8 +7,10 @@ tags:
 - XiaoLin Says
 categories:
 - Book Review
+translations:
+  zh-CN: https://youngforest.github.io/2024/06/04/Xiao-Lin/
+  en: https://youngforest.github.io/en/2024/06/04/Xiao-Lin/
 ---
-
 [Douban link for this book](https://book.douban.com/subject/36673627/)
 
 XiaoLin is one of my favorite uploaders. Beautiful, top student, Wall Street investment banking, startup founder. All kinds of eye-catching labels. And her videos are genuinely high quality: well produced, while still easy to understand. I read her book partly to support her. The content of the whole book, to be honest, is basically all covered in her videos, and in many cases the videos explain it even better. After all, videos make it much easier to show charts and diagrams. So actually, even if you do not read this book, just watching her YouTube or Bilibili videos is probably enough. The most magical thing about reading this book is that it comes with a built-in voice feature. I have to marvel at how powerful the human brain is: while reading, XiaoLin's voice and videos automatically start playing in my head. It was a pretty nice experience. It also worked as a review of the knowledge she had talked about in earlier videos.

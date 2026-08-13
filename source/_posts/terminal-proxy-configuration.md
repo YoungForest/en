@@ -5,8 +5,10 @@ tags:
 categories:
 - Tinkering
 date: 2016-11-02 23:30:00
+translations:
+  zh-CN: https://youngforest.github.io/2016/11/02/terminal-proxy-configuration/
+  en: https://youngforest.github.io/en/2016/11/02/terminal-proxy-configuration/
 ---
-
 ## Problem
 As a Linuxer, being proficient with the terminal is an essential skill. But in the terminal, downloading and installing things can sometimes be very slow, which is frustrating. I naturally wondered whether I could add a proxy to improve the speed. I had been using Shadowsocks before, and the browser used SwitchyProxy, which achieved basic proxy-based internet access. So, is there a similar tool in the terminal? The answer is yes. Through targeted searching, I successfully solved the proxy problem in the terminal. I summarize it here and hope it can help everyone.
 <!-- more -->

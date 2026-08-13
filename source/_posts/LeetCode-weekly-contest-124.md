@@ -5,8 +5,10 @@ tags:
 - Competitive Programming
 categories:
 - LeetCode
+translations:
+  zh-CN: https://youngforest.github.io/2019/02/17/LeetCode-weekly-contest-124/
+  en: https://youngforest.github.io/en/2019/02/17/LeetCode-weekly-contest-124/
 ---
-
 Today was my first LeetCode weekly contest after work started again. I solved three problems and ranked 772 / 4174. Seeing my rank drop from 200+ to 700+ each time felt pretty disappointing. I think the reasons for the drop are: 1. Ranking around 200 was a case where both my state and luck were relatively good; most of the time before, I was also around 700. 2. Although the third problem was Hard, my final submission TLEed. I think if I had had another half hour, I could have ACed it. The reason I did not have enough time later was directly related to spending too much time debugging problems 2 and 4. I am still not familiar enough with many implementations, such as BFS and backtracking, and cannot write them flexibly from memory. Even when solving the fourth problem, I still had to look up C++ APIs on the spot, so my familiarity with the language is also insufficient.
 
 ## 993. Cousins in Binary Tree

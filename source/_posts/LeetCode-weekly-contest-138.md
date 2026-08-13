@@ -5,8 +5,10 @@ tags:
 - Competitive Programming
 categories:
 - LeetCode
+translations:
+  zh-CN: https://youngforest.github.io/2019/05/26/LeetCode-weekly-contest-138/
+  en: https://youngforest.github.io/en/2019/05/26/LeetCode-weekly-contest-138/
 ---
-
 Although the problem quality this week was quite good, the difficulty was not high. It was a contest about speed.
 Because the second problem had a relatively long statement, my problem-solving order was 1->3->4->2.
 

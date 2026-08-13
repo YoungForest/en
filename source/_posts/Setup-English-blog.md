@@ -5,8 +5,10 @@ categories:
 - Tinkering
 tags:
 - Hexo
+translations:
+  zh-CN: https://youngforest.github.io/2021/09/07/Setup-English-blog/
+  en: https://youngforest.github.io/en/2021/09/07/Setup-English-blog/
 ---
-
 Since joining Amazon, I have had more exposure to English and foreign colleagues. The need to practice using English has grown stronger. Also, to connect more with the international world, I decided to create my own English blog.
 
 ## Steps

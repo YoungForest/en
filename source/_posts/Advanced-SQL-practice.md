@@ -6,6 +6,9 @@ tags:
 - Tech
 categories:
 - Intern
+translations:
+  zh-CN: https://youngforest.github.io/2018/05/07/Advanced-SQL-practice/
+  en: https://youngforest.github.io/en/2018/05/07/Advanced-SQL-practice/
 ---
 This week at the company I wrote many long and functionally complex SQL statements. I deeply felt that my database and SQL knowledge was still only superficial and completely unable to meet engineering requirements.
 The second mentor responsible for guiding me is also quite proficient in SQL and gave me a lot of guidance and suggestions.

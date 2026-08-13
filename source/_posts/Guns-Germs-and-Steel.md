@@ -6,8 +6,10 @@ tags:
 - Guns, Germs, and Steel
 categories:
 - Book Notes
+translations:
+  zh-CN: https://youngforest.github.io/2024/01/08/Guns-Germs-and-Steel/
+  en: https://youngforest.github.io/en/2024/01/08/Guns-Germs-and-Steel/
 ---
-
 [Douban link: Guns, Germs, and Steel: The Fates of Human Societies](https://book.douban.com/subject/35714810/)
 
 Why is today's international society the way it is? This is also the question asked in the book by Yali, a native farmer from New Guinea. Eurasia and the settler societies of Eurasians, such as North America and Australia, dominate. The proximate cause is the Age of Exploration that began in 1492: Europeans brought guns (and horses), germs, steel (various technologies), and advanced political systems such as states, opening the colonial era. Together with the Industrial Revolution in Western Europe, this laid the foundation for Western society's leading position today. The later rising stars are East Asia (Japan, South Korea, China), South Asia (India), and Southeast Asia (Vietnam, Indonesia). Some have already become developed countries, while others are developing very quickly. Africa, especially sub-Saharan Africa, remains poor. These proximate causes are obvious and much discussed.

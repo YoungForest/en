@@ -1,11 +1,14 @@
 ---
 title: A Four-Year College Retrospective
+description: "Looking back on four years of university: classes, competitions, friendships, change, and pivotal choices."
 date: 2018-10-03 10:41:38
 tags:
 categories:
 - Diary
+translations:
+  zh-CN: https://youngforest.github.io/2018/10/03/my-4-years-college/
+  en: https://youngforest.github.io/en/2018/10/03/my-4-years-college/
 ---
-
 In September 2014, almost by accident, I came to the School of Computer Science at Beihang University. I did not expect that once I stepped through that door, there would be no going back. I went from a fresh-faced kid who had never touched code to a future engineer. Those four years were an important stage in the growth of both my technical ability and my worldview. In a sense, college shaped who I became afterward. Some parts are worth affirming, while others are flaws I now very much want to discard.
 
 Beihang's curriculum is known for its solid foundation. The core Computer Science courses, Computer Organization, Operating Systems, Compilers, and Computer Networks, are spread across four semesters in sophomore and junior year. Each semester, these foundational courses are heavy courses that demand a lot of effort. Looking back now, the emphasis on these fundamentals was absolutely right. In senior year, after going through many internship interviews and internships, I deeply felt how important these foundations are in interviews and real work. The problem was that most students at the time lacked motivation and could not understand the school's good intentions. I considered myself near the top of the school academically, and I collected plenty of scholarships and certificates. But when it comes to these CS fundamentals, I still would not dare claim that I truly understood them. More often I humbly tell myself that there is still a lot to make up for. The debts you incur when you are young eventually have to be repaid. Over these four years, it looked as if I learned a lot, but in reality I learned very little. The best way to study would have been to use the school's courses as a framework, then actively learn beyond them: read the extended materials for every topic instead of letting the teacher put links in the PPT while I did not even bother downloading them, search for more information online, and spend more time in the library.

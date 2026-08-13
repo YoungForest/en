@@ -6,8 +6,10 @@ tags:
 - Intern
 categories:
 - Interview
+translations:
+  zh-CN: https://youngforest.github.io/2018/08/14/face-interview/
+  en: https://youngforest.github.io/en/2018/08/14/face-interview/
 ---
-
 A Tsinghua graduate was the interviewer. At the beginning, he asked me about my future work intentions. I answered "algorithm engineer," but in fact I was interviewing for a development role, so the senior person lectured me a bit. He asked whether I had applied to the wrong group and whether I still had not found the direction I was interested in. Then he asked what I was doing in my current internship at Kuaishou. I talked about some of it, and then got criticized again. He said this feature engineering work would all be replaced by deep learning later.
 
 When the formal interview started, he only asked two questions: implementing a queue that maintains the minimum value, and implementing a stack that maintains the minimum value.

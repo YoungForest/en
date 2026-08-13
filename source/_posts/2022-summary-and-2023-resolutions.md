@@ -6,8 +6,10 @@ tags:
   - Year-End Review
 categories:
   - Diary
+translations:
+  zh-CN: https://youngforest.github.io/2022/12/25/2022-summary-and-2023-resolutions/
+  en: https://youngforest.github.io/en/2022/12/25/2022-summary-and-2023-resolutions/
 ---
-
 In the blink of an eye, 2022 is about to pass. I do not know whether it is because of pandemic restrictions or because I myself am getting older, but now time feels like it flies, truly like a white horse passing a crack. The ancients did not deceive me.
 
 Previous year-end reviews:

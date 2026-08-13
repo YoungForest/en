@@ -7,8 +7,10 @@ tags:
 - Ma Boyong
 categories:
 - Book Notes
+translations:
+  zh-CN: https://youngforest.github.io/2024/10/20/Shi-Nan-Zhi-Tu/
+  en: https://youngforest.github.io/en/2024/10/20/Shi-Nan-Zhi-Tu/
 ---
-
 Weekly book 24: **Shi Nan Zhi Tu** by [Ma Boyong](https://book.douban.com/search/%E9%A9%AC%E4%BC%AF%E5%BA%B8)
 
 The author seems to be using the Han dynasty's Nanyue issue to map onto the Taiwan issue. Ma Boyong is still as good as ever at taking a few scattered words from historical records and imagining a complete suspense story out of them. His earlier *The Longest Day in Chang'an* and *The Lychees of Chang'an* are both like this.

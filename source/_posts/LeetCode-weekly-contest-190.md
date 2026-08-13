@@ -5,8 +5,10 @@ tags:
 - Competitive Programming
 categories:
 - LeetCode
+translations:
+  zh-CN: https://youngforest.github.io/2020/05/24/LeetCode-weekly-contest-190/
+  en: https://youngforest.github.io/en/2020/05/24/LeetCode-weekly-contest-190/
 ---
-
 Last night, my dad helped me clean my ear, and accidentally made it bleed. I went to the district hospital early this morning for a checkup. Fortunately, it was nothing serious; only the external ear canal was injured. Rest for a week and it should heal naturally. As long as it does not get infected, it is fine. I was prescribed some amoxicillin.
 So I skipped the weekly contest and solved the problems after the contest.
 

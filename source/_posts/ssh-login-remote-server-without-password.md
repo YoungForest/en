@@ -5,6 +5,9 @@ tags:
 - Tech
 categories:
 - Tinkering
+translations:
+  zh-CN: https://youngforest.github.io/2018/05/08/ssh-login-remote-server-without-password/
+  en: https://youngforest.github.io/en/2018/05/08/ssh-login-remote-server-without-password/
 ---
 The following commands are only for Unix-like systems.
 Windows does not need this solution. Many PuTTY-like tools on Windows can choose "remember password" to implement passwordless login.

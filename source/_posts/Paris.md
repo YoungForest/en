@@ -6,8 +6,10 @@ tags:
 - Travel Notes
 categories:
 - Diary
+translations:
+  zh-CN: https://youngforest.github.io/2019/09/30/Paris/
+  en: https://youngforest.github.io/en/2019/09/30/Paris/
 ---
-
 Last Friday happened to be September 27, the holiday for the French-speaking region of Belgium. The school was closed, and with the weekend we had exactly three days off. On the train back from Amsterdam the previous week, we decided on this trip to Paris. The members of this trip were: me, zfn, lsd, and wyd.
 
 Overall feeling: I like Paris so much. I love Paris.

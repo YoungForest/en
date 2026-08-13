@@ -6,8 +6,10 @@ tags:
 - New Graduate
 categories:
 - Interview
+translations:
+  zh-CN: https://youngforest.github.io/2020/06/23/Bytedance-new-graduate-interview/
+  en: https://youngforest.github.io/en/2020/06/23/Bytedance-new-graduate-interview/
 ---
-
 I applied for ByteDance's early batch, for a backend development role in the Technology Middle Platform.
 I did not review computer science fundamentals well enough, so my answers were poor.
 Wishing for an offer.

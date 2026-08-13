@@ -5,8 +5,10 @@ tags:
 - life
 categories:
 - Diary
+translations:
+  zh-CN: https://youngforest.github.io/2019/07/15/Happy-birthday-2019/
+  en: https://youngforest.github.io/en/2019/07/15/Happy-birthday-2019/
 ---
-
 This year I still spent my 23rd birthday at school. In the afternoon, I went out with my roommates to watch the movie *The Lion King*. In the evening, we went to Chengnan Jiushi and ate "Beijing cuisine." I suppose that counts as celebrating my birthday. Happy birthday to me.
 Since I left home at 18 and came alone to the capital to study, birthdays have no longer been as lively and warm as they were at home. Drifting away from home, even though classmates or friends still wish you happy birthday, and closer friends may accompany me to celebrate, the warmth of family is gone. People come and go, and those around you can basically only accompany you for a period of time. At moments like this, I always miss childhood.
 

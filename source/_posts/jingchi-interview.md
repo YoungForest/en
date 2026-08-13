@@ -6,8 +6,10 @@ tags:
 categories:
 - interview
 date: 2018-09-28 11:22:23
+translations:
+  zh-CN: https://youngforest.github.io/2018/09/28/jingchi-interview/
+  en: https://youngforest.github.io/en/2018/09/28/jingchi-interview/
 ---
-
 Yesterday I participated in an intern interview with JingChi Technology. This internship interview was arranged uniformly by the lab, not something I found myself.
 
 The format was online interview. There were two rounds in total, each expected to last one hour, but the second round actually only asked questions for half an hour. The first round used Skype. The call quality was poor, and there was no video output. The second round used WeChat voice plus [collabedit](http://collabedit.com/), and the effect was much better.

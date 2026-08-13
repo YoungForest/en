@@ -5,8 +5,10 @@ tags:
 - Competitive Programming
 categories:
 - KickStart
+translations:
+  zh-CN: https://youngforest.github.io/2019/03/24/kick-start-2019-round-A/
+  en: https://youngforest.github.io/en/2019/03/24/kick-start-2019-round-A/
 ---
-
 [Problem link]
 
 This was my first time participating in Kick Start. Back in undergrad, I had joined its predecessor, Code Jam, with my roommate tls. This year I finally started preparing seriously for the Kick Start series. The reason is that it is one of Google's channels for selecting software engineers, and Google is my dream company.

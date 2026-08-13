@@ -1,14 +1,19 @@
 ---
 title: "Why Nations Fail: The Origins of Power, Prosperity, and Poverty"
+description: "Reading Why Nations Fail through institutions, critical junctures, innovation, and long-term growth."
 date: 2025-06-23 10:56:31
 tags:
 - Reading
 - Why Nations Fail
 categories:
 - Book Notes
+translations:
+  zh-CN: https://youngforest.github.io/2025/06/23/Why-Nations-fail/
+  en: https://youngforest.github.io/en/2025/06/23/Why-Nations-fail/
 ---
-
 Be sure to read the English edition or the Taiwanese translation; those who know, know. Although China is a classic case of a historically failed state and of a country where extractive institutions produced short-lived growth, the book actually does not spend that much space on it. But as a Chinese person, the cases from other countries are also worth studying, and I did not know much about them before, especially many cases from Africa and Latin America. Still, everywhere in my mind I was verifying China's failure. Comparing the socialist education I received from the beginning, which was terrifying brainwashing plus rewritten history and politics, with the various history, economics, and political books I read after becoming an adult, I strongly agree with the book's arguments. I myself am also voting with my feet. If time is limited, pay attention to these two sections.
+
+<!-- more -->
 
 Chapter 13, "Why Nations Fail Today", section 5, "The New Absolutism"
 

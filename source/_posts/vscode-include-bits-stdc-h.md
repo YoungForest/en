@@ -6,8 +6,10 @@ tags:
 - gcc
 categories:
 - Programming
+translations:
+  zh-CN: https://youngforest.github.io/2020/05/18/vscode-include-bits-stdc-h/
+  en: https://youngforest.github.io/en/2020/05/18/vscode-include-bits-stdc-h/
 ---
-
 Recently, I have often needed to include the universal header `bits/stdc++.h` when doing Kick Start. However, my beloved editor VS Code always fails to locate this header correctly and shows a red squiggly error. As a programmer, I absolutely cannot tolerate that, so I tried to solve the problem. I searched online for many solutions, but most of them did not directly solve my issue. So I am summarizing my own solution here for everyone to use.
 
 Programming environment:

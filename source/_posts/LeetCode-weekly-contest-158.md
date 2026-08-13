@@ -5,8 +5,10 @@ tags:
 - Competitive Programming
 categories:
 - LeetCode
+translations:
+  zh-CN: https://youngforest.github.io/2019/10/14/LeetCode-weekly-contest-158/
+  en: https://youngforest.github.io/en/2019/10/14/LeetCode-weekly-contest-158/
 ---
-
 ## 1221. Split a String in Balanced Strings
 
 Understand the definition of balanced, and you will find that we only need to find positions where the counts of L and R are equal.

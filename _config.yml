@@ -5,7 +5,7 @@
 # Site
 title: YoungForest's blog
 subtitle:
-description: A programmer in Amazon Beijing, China
+description: Software engineer writing about technology, reading, investing, and life
 author: YoungForest
 language: 
 - en
@@ -70,6 +70,41 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: next
 # landscape
+
+# Automatic fallback for posts without an explicit <!-- more --> marker.
+# Three top-level blocks keeps the index scannable without cutting sentences.
+excerpt:
+  depth: 3
+  excerpt_excludes: []
+  more_excludes: []
+  hideWholePostExcerpts: true
+
+# Markdown renderer aligned with the Chinese site. KaTeX support preserves
+# existing $$...$$ blocks without loading MathJax on every page.
+markdown:
+  preset: default
+  render:
+    html: true
+    xhtmlOut: false
+    breaks: true
+    linkify: true
+    typographer: true
+    quotes: '“”‘’'
+  plugins:
+    - markdown-it-abbr
+    - markdown-it-footnote
+    - markdown-it-ins
+    - markdown-it-sub
+    - markdown-it-sup
+    - '@traptitech/markdown-it-katex'
+  anchors:
+    level: 2
+    collisionSuffix: 'v'
+    permalink: false
+    permalinkClass: header-anchor
+    permalinkSymbol: ¶
+    case: 0
+    separator: '-'
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

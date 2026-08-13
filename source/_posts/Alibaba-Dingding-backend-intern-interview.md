@@ -6,8 +6,10 @@ tags:
 - intern
 categories:
 - interview
+translations:
+  zh-CN: https://youngforest.github.io/2020/03/04/Alibaba-Dingding-backend-intern-interview/
+  en: https://youngforest.github.io/en/2020/03/04/Alibaba-Dingding-backend-intern-interview/
 ---
-
 The interview was done by DingTalk phone/video call, and the hand-written coding part was completed through Alibaba's online platform.
 
 There were two algorithm questions:

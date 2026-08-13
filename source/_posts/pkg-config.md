@@ -5,8 +5,10 @@ tags:
 - C++
 categories:
 - Programming
+translations:
+  zh-CN: https://youngforest.github.io/2019/03/17/pkg-config/
+  en: https://youngforest.github.io/en/2019/03/17/pkg-config/
 ---
-
 Recently I have been learning how to use [google-test](https://github.com/google/googletest) and reading its source code. When I ran `make install`, I noticed that besides installing header files into `/usr/local/` and a shared library into `/usr/lib/`, it also installed two `.pc` files into `/usr/local/lib/pkgconfig/`. So what exactly is `pkg-config`?
 
 From this [guide](https://people.freedesktop.org/~dbn/pkg-config-guide.html), we can find all the useful basic information about `pkg-config`.

@@ -6,8 +6,10 @@ tags:
   - Year-End Review
 categories:
   - Diary
+translations:
+  zh-CN: https://youngforest.github.io/2021/12/28/2021-summary-and-2022-resolutions/
+  en: https://youngforest.github.io/en/2021/12/28/2021-summary-and-2022-resolutions/
 ---
-
 Happy New Year. There are still three days before 2021 ends, and I have finally started writing my annual year-end review and New Year outlook. Recently I have noticed more and more classmates writing year-end reviews, but I am not really following the trend. I started doing this very early, first in notebooks and later on my blog. Besides the annual transition from the old year to the new one, I also write reviews and outlooks at milestone moments in life, such as graduating from college and graduate school.
 
 Previous year-end reviews:

@@ -5,8 +5,10 @@ tags:
 - RIP
 categories:
 - Life
+translations:
+  zh-CN: https://youngforest.github.io/2023/05/15/rip-hao/
+  en: https://youngforest.github.io/en/2023/05/15/rip-hao/
 ---
-
 R.I.P.
 
 I was fortunate to be in the same problem-solving group as 左耳朵耗子. When everyone heard the news, we thought it was a rumor and even mentioned him in the group. But with multiple sources confirming it, it should be true now.

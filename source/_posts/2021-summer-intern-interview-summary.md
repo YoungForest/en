@@ -5,8 +5,10 @@ tags:
 - Intern
 categories:
 - Interview
+translations:
+  zh-CN: https://youngforest.github.io/2020/04/30/2021-summer-intern-interview-summary/
+  en: https://youngforest.github.io/en/2020/04/30/2021-summer-intern-interview-summary/
 ---
-
 Nearly two months have passed since I posted my first summer internship interview experience on Nowcoder. In between, I successively participated in recruiting processes at eight companies. All roles were backend/server development roles, based in Beijing.
 
 ## Failed

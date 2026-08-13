@@ -4,8 +4,10 @@ categories:
   - Kaggle
 date: 2018-08-14 11:22:23
 tags:
+translations:
+  zh-CN: https://youngforest.github.io/2018/08/14/kaggle-titanic-tutorial/
+  en: https://youngforest.github.io/en/2018/08/14/kaggle-titanic-tutorial/
 ---
-
 To train my data mining ability more quickly, I plan to spend some time on Kaggle competitions over the next month. The current plan is to follow the competitions, Datasets, and expert notebooks under [Tutorial](https://www.kaggle.com/tags/tutorial) as an introduction. After that, I will choose a simple regular competition to participate in.
 As for whether I will eventually follow Brother Huan onto the path of data mining competitions, that depends on how I feel after getting started and whether I am willing to continue spending a lot of energy on it.
 

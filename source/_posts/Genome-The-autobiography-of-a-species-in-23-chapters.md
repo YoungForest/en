@@ -6,9 +6,13 @@ tags:
 - Genome
 categories:
 - Book Notes
+translations:
+  zh-CN: https://youngforest.github.io/2026/01/01/Genome-The-autobiography-of-a-species-in-23-chapters/
+  en: https://youngforest.github.io/en/2026/01/01/Genome-The-autobiography-of-a-species-in-23-chapters/
 ---
-
 Recommended by Charlie Munger in *Poor Charlie's Almanack*.
+
+<!-- more -->
 
 > Behavior is far from being controlled by our biological characteristics; our biological characteristics are often controlled by our behavior.
 

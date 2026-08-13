@@ -5,6 +5,9 @@ tags:
 - Benchmark
 categories:
 - Laboratory
+translations:
+  zh-CN: https://youngforest.github.io/2017/01/14/pressure-test-to-CPU-memory-disk-network-IO/
+  en: https://youngforest.github.io/en/2017/01/14/pressure-test-to-CPU-memory-disk-network-IO/
 ---
 Recently, a senior schoolmate in the lab had a requirement: write four small programs to stress test memory, CPU, disk, and network respectively. The test programs needed adjustable pressure levels, such as high, medium, and low. No more words; roll up the sleeves and get to work. The requirement was simple, but implementation was not. I learned while writing the programs and barely completed the task.
 

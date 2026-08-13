@@ -6,8 +6,10 @@ tags:
 - Life
 categories:
 - Ireland
+translations:
+  zh-CN: https://youngforest.github.io/2022/11/11/Ireland-Onboarding/
+  en: https://youngforest.github.io/en/2022/11/11/Ireland-Onboarding/
 ---
-
 It has been two weeks since I successfully moved to Ireland. Because I have been busy handling all kinds of things since arriving, life has slowly begun to get on track. Starting today, I will gradually share some guides for the early stage of working or studying in Ireland. On one hand, I have stepped into many pits myself; on the other hand, now I have finally succeeded at some things, so I have a bit of experience that can help everyone.
 
 ![Irish flag](/images/ireland-flag.png)

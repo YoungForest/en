@@ -6,8 +6,10 @@ tags:
 - Hukou
 categories:
 - Life
+translations:
+  zh-CN: https://youngforest.github.io/2022/01/12/Beijing-residence/
+  en: https://youngforest.github.io/en/2022/01/12/Beijing-residence/
 ---
-
 As a system with Chinese characteristics, hukou has always been an important consideration when people think about work, life, and settlement. Thirty years ago, our parents' generation went to great lengths to convert rural hukou into urban hukou; now we go to great lengths for a Beijing hukou. Many things have changed, yet some things have not.
 
 Fortunately, Beijing also issued its [new hukou rules](http://rsj.beijing.gov.cn/xxgk/zcwj/202107/t20210712_2433865.html) this year. Most of the content stayed the same, but the "separately listed quota" gave us an opportunity.

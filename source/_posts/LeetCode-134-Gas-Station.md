@@ -5,8 +5,10 @@ tags:
 - Algorithm
 categories:
 - LeetCode
+translations:
+  zh-CN: https://youngforest.github.io/2019/09/06/LeetCode-134-Gas-Station/
+  en: https://youngforest.github.io/en/2019/09/06/LeetCode-134-Gas-Station/
 ---
-
 [Problem description](https://leetcode.com/problems/gas-station/description/)
 
 This problem was one I encountered in my Google intern phone interview in February. At that time I solved it in a very messy way and failed the first round directly. Today, after seeing [a classmate's explanation](https://zhuanlan.zhihu.com/p/81412559), I decided to try this problem again. After all, in the past half year I have solved 500+ problems, and my algorithm ability has grown somewhat. I only saw the problem title in the explanation, not the content, so I guess I was able to solve this problem independently half a year later. After AC, I actually cried, sad about how insufficient my ability was back then. I do not know whether I will have such a good opportunity again.

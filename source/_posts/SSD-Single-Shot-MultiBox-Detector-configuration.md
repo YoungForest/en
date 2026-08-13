@@ -2,8 +2,10 @@
 title: 'SSD: Single Shot MultiBox Detector Configuration and Usage Summary'
 date: 2017-01-12 23:50:49
 tags:
+translations:
+  zh-CN: https://youngforest.github.io/2017/01/12/SSD-Single-Shot-MultiBox-Detector-configuration/
+  en: https://youngforest.github.io/en/2017/01/12/SSD-Single-Shot-MultiBox-Detector-configuration/
 ---
-
 ## Experimental Environment
 + Ubuntu 16.04
 + CPU only, because my own machine had no NVIDIA card. AMD is all tears.

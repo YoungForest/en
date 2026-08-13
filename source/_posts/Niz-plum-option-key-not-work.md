@@ -5,8 +5,10 @@ tags:
 - Keyboard
 categories:
 - Tinkering
+translations:
+  zh-CN: https://youngforest.github.io/2021/10/13/Niz-plum-option-key-not-work/
+  en: https://youngforest.github.io/en/2021/10/13/Niz-plum-option-key-not-work/
 ---
-
 Recently, when using my beloved Niz Plum 66 keyboard, I ran into a strange bug.
 
 In Bluetooth mode, the left Option key stopped working. Since my Hammerspoon setup and many other app shortcuts use it heavily, I could occasionally use the right Option key as a temporary substitute, but that was never a real solution. My work efficiency dropped a lot.

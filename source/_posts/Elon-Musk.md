@@ -6,8 +6,10 @@ tags:
 - Elon Musk
 categories:
 - Book Notes
+translations:
+  zh-CN: https://youngforest.github.io/2024/03/07/Elon-Musk/
+  en: https://youngforest.github.io/en/2024/03/07/Elon-Musk/
 ---
-
 [Douban link](https://book.douban.com/subject/36518892/)
 
 Giving up the English edition and switching to the translated edition was indeed the right choice. 380,000 Chinese characters, finished in one week. So satisfying. Especially the section about the first decade after 2000, covering the early days of SpaceX and Tesla, was truly inspiring: an adventure that changed the course of human history. Compared with the original, the translation is somewhat abridged, mainly around the China-related parts. I compared them; there is actually not much missing, and it is understandable for passing review.

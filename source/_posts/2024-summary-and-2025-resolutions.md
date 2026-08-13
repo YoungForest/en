@@ -1,13 +1,16 @@
 ---
 title: 2024 Year-End Review and 2025 New Year Outlook
+description: "A review of the changes, lessons, and experiences that shaped 2024, plus plans for 2025."
 date: 2024-12-28 00:04:56
 tags:
   - life
   - Year-End Review
 categories:
   - Diary
+translations:
+  zh-CN: https://youngforest.github.io/2024/12/28/2024-summary-and-2025-resolutions/
+  en: https://youngforest.github.io/en/2024/12/28/2024-summary-and-2025-resolutions/
 ---
-
 Reposted from [my blog](https://youngforest.github.io/en/2024/12/28/2024-summary-and-2025-resolutions/)
 
 ![A programmer's desk for the 2024 year-end review](/en/images/ai/2024-summary-and-2025-resolutions/en-hero.webp)

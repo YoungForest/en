@@ -5,6 +5,9 @@ tags:
 - LeetCode
 categories:
 - Programming
+translations:
+  zh-CN: https://youngforest.github.io/2019/02/17/Queue-and-Stack/
+  en: https://youngforest.github.io/en/2019/02/17/Queue-and-Stack/
 ---
 Today let's study two important data structures together: queue and stack.
 This article is based on LeetCode's Explore tutorial, [Introduction to Data Structure - Queue & Stack](https://leetcode.com/explore/featured/card/queue-stack/).

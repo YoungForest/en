@@ -5,8 +5,10 @@ tags:
 - Database
 - Django
 categories:
+translations:
+  zh-CN: https://youngforest.github.io/2017/01/23/Django-note/
+  en: https://youngforest.github.io/en/2017/01/23/Django-note/
 ---
-
 **[Abstract]** [Django](https://www.djangoproject.com/) is a high-level Python web framework that can help us quickly develop and design a clean, programmatic application. Although Django is relatively bulky, since experts nowadays all use [Flask](http://flask.pocoo.org/) maybe, and is more suitable for large web applications, my database course project was a small project. Still, Django's reputation was too strong, and I had previously had a little contact with it in the lab, so my teammate and I decisively chose Django. With Django's help, implementing our course project was as easy as chopping vegetables.
 
 <!-- more -->

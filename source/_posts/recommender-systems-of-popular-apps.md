@@ -1,11 +1,14 @@
 ---
 title: How Recommendation Systems Transform and Enslave Your Thinking
+description: "How recommendation systems in popular apps shape attention, preferences, and the information we consume."
 tags:
   - Tech
 date: 2018-07-3 22:55:55
 categories:
+translations:
+  zh-CN: https://youngforest.github.io/2018/07/03/recommender-systems-of-popular-apps/
+  en: https://youngforest.github.io/en/2018/07/03/recommender-systems-of-popular-apps/
 ---
-
 At Yuanzi's invitation, I wrote an article researching and discussing the recommendation systems used by today's popular content apps.
 Here is how it started:
 Yuanzi is a heavy Zhihu user. For a while, she spent more than an hour every day browsing Zhihu, and her worldview was deeply influenced by it.

@@ -6,8 +6,10 @@ tags:
 - Sword Stained with Royal Blood
 categories:
 - Book Notes
+translations:
+  zh-CN: https://youngforest.github.io/2023/08/20/Yuan-Chong-Huan/
+  en: https://youngforest.github.io/en/2023/08/20/Yuan-Chong-Huan/
 ---
-
 [Douban link: Sword Stained with Royal Blood](https://book.douban.com/subject/1055976/)
 The novel itself is a 6/10, but the appended "A Critical Biography of Yuan Chonghuan" is extremely good. It has history, as well as Jin Yong's own commentary. Most importantly, many of its views on the fall of the Ming align with mine. It is worth 10/10. I had so many thoughts that a short review could not hold them, so I wrote a [very long book review](https://book.douban.com/review/15397152/).
 

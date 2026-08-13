@@ -5,8 +5,10 @@ tags:
 - Competitive Programming
 categories:
 - LeetCode
+translations:
+  zh-CN: https://youngforest.github.io/2018/12/26/LeetCode-weekly-contest-116/
+  en: https://youngforest.github.io/en/2018/12/26/LeetCode-weekly-contest-116/
 ---
-
 It is time for the weekend LeetCode weekly contest again. This time the result was not good. The main reason was that I wanted to solve both the second and third problems, and ended up solving neither. If I had focused all my time on the second problem, I probably could still have ACed it.
 
 ## 961. N-Repeated Element in Size 2N Array

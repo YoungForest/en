@@ -6,8 +6,10 @@ tags:
   - year-end summary
 categories:
   - Diary
+translations:
+  zh-CN: https://youngforest.github.io/2020/11/25/2020-summary-and-2021-resolutions/
+  en: https://youngforest.github.io/en/2020/11/25/2020-summary-and-2021-resolutions/
 ---
-
 Reposted from [my blog](https://youngforest.github.io/en/2020/11/25/2020-summary-and-2021-resolutions/)
 
 This year-end summary is a bit early; December has not even arrived yet. But since I just submitted the plagiarism check for my master's thesis today, even though there are still many things to do, I have no mood to work at all. I might as well use this restless mood to write a first draft of my year-end summary. I do not know whether the mood will affect it.

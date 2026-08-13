@@ -5,8 +5,10 @@ tags:
 - Competitive Programming
 categories:
 - KickStart
+translations:
+  zh-CN: https://youngforest.github.io/2019/11/25/kick-start-2019-round-H/
+  en: https://youngforest.github.io/en/2019/11/25/kick-start-2019-round-H/
 ---
-
 Because Europe was on winter time, I was in UTC +1.00, so for this contest I deliberately got up at 6 a.m. to participate. After finishing, I rested for an hour, then went to Ghent with friends for the whole day. When I came back at night, I suddenly remembered that Machine Learning assignment 2 was due that day, and then started rushing the deadline like crazy. Facts proved that without studying seriously, I still could not handle the assignment. I submitted something rough; better than not submitting at all. For the blank questions, I generously told the TA that I simply did not know how to do them.
 
 This was the last round of Kick Start 2019, and I still really wanted to participate. This year I participated in six Kick Start rounds in total. Although I already got an interview invitation in Round A, I still could not afford to be careless. The rankings for each round are shown below:

@@ -1,13 +1,16 @@
 ---
 title: Ireland Driving License Application
+description: "A practical account of Ireland’s driving licence process, documents, tests, and common pitfalls."
 date: 2023-06-10 11:50:50
 tags:
 - Ireland
 - Life
 categories:
 - Ireland
+translations:
+  zh-CN: https://youngforest.github.io/2023/06/10/Ireland-Driving-License/
+  en: https://youngforest.github.io/en/2023/06/10/Ireland-Driving-License/
 ---
-
 Ireland is an island country with not particularly developed public transportation, and its cities are also quite small. Having a car is very important for improving long-term quality of life. This is especially true if you plan to build a family; without a car, it is definitely very inconvenient. So not long after I came to Ireland, I began my driving license application journey.
 
 Unlike in China, where you sign up for a driving school, pay once, and get a complete service package, Ireland's driving license application process is fairly complicated and requires handling everything step by step yourself.

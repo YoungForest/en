@@ -6,8 +6,10 @@ tags:
 - Liu Shen Lei Lei Reads Jin Yong
 categories:
 - Book Notes
+translations:
+  zh-CN: https://youngforest.github.io/2024/07/22/Liu-Shen-Lei-Lei-Du-Jin-Yong/
+  en: https://youngforest.github.io/en/2024/07/22/Liu-Shen-Lei-Lei-Du-Jin-Yong/
 ---
-
 [Douban link](https://book.douban.com/subject/35479455/)
 
 This is a collection of articles from Liu Shen Lei Lei's WeChat public account of the same name, organized by different Jin Yong novels. Reading it all at once felt very satisfying. I clapped my hands in delight many times.

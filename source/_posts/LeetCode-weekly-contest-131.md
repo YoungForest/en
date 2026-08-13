@@ -5,8 +5,10 @@ tags:
 - Competitive Programming
 categories:
 - LeetCode
+translations:
+  zh-CN: https://youngforest.github.io/2019/04/07/LeetCode-weekly-contest-131/
+  en: https://youngforest.github.io/en/2019/04/07/LeetCode-weekly-contest-131/
 ---
-
 The problem numbers in this contest startled me. LeetCode is really willful, directly starting problem numbers from 5000+. It looks like the room for growth in problem count has already exceeded my imagination.
 
 Back to the point, this contest was also mainly about speed on simple problems.

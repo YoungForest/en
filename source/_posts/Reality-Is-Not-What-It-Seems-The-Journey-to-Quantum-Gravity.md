@@ -6,8 +6,10 @@ tags:
 - Reality Is Not What It Seems
 categories:
 - Book Review
+translations:
+  zh-CN: https://youngforest.github.io/2024/03/01/Reality-Is-Not-What-It-Seems-The-Journey-to-Quantum-Gravity/
+  en: https://youngforest.github.io/en/2024/03/01/Reality-Is-Not-What-It-Seems-The-Journey-to-Quantum-Gravity/
 ---
-
 [Douban link](https://book.douban.com/subject/27156306/)
 
 Another book that was delightful and hard to put down. Besides the familiar story from Greek philosophy to classical physics, and then to modern physics, including relativity and quantum physics, the book mainly focuses on cutting-edge "loop quantum gravity": a theory that tries to unify relativity and quantum mechanics. The earlier historical part is relatively brief, but it offers a different angle. For that part, you can also read Cao Tianyuan's [*Does God Play Dice?*](https://book.douban.com/subject/1467022/), which is also excellent and tells more of the story.

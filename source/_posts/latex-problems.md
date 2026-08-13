@@ -4,6 +4,9 @@ date: 2018-03-27 19:27:55
 tags:
 - TeX
 categories:
+translations:
+  zh-CN: https://youngforest.github.io/2018/03/27/latex-problems/
+  en: https://youngforest.github.io/en/2018/03/27/latex-problems/
 ---
 I used LaTeX to write my graduation thesis and encountered many problems. I summarize them here.
 

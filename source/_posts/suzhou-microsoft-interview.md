@@ -7,8 +7,10 @@ tags:
 categories:
 - Interview
 mathjax: true
+translations:
+  zh-CN: https://youngforest.github.io/2018/06/01/suzhou-microsoft-interview/
+  en: https://youngforest.github.io/en/2018/06/01/suzhou-microsoft-interview/
 ---
-
 Thanks to a referral from senior schoolmate @lxc, I had the opportunity to go to Microsoft Suzhou and interview for a summer internship in the O365 department. Although I failed in the end, I learned a lot from this failure.
 I am summarizing it here to prepare for future internship and job hunting.
 

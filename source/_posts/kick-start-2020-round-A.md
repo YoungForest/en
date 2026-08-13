@@ -5,8 +5,10 @@ tags:
 - Competitive Programming
 categories:
 - KickStart
+translations:
+  zh-CN: https://youngforest.github.io/2020/03/22/kick-start-2020-round-A/
+  en: https://youngforest.github.io/en/2020/03/22/kick-start-2020-round-A/
 ---
-
 Kick Start has changed a little in the new year:
 1. Whether all test results are correct is now returned immediately. Previously, large dataset results could only be seen after the contest. This is effectively a difficulty reduction and reduces the cost of mistakes for contestants. In the past, one small mistake meant losing the score for the large dataset. Now it is more like adding a time penalty.
 2. The number of problems changed from 3 to 4, with the time unchanged, adding one easier problem for points.

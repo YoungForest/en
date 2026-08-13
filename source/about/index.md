@@ -3,8 +3,8 @@ title: about
 date: 2021-04-07 21:06:03
 ---
 
-Hi，everyone!
-I'm Forest. A programmer from Amazon Beijing, China.
-This is my personal **English** blog. If you prefer Chinese, refer to [**Here**](https://youngforest.github.io).
-Here I will share my learning and life as a record.
-You could find me in other social platforms too. Feel free to get touch with me.
+Hi, everyone! I'm Forest, a software engineer.
+
+This is my personal **English** blog about technology, reading, investing, and life. If you prefer Chinese, visit the [Chinese blog](https://youngforest.github.io/).
+
+I keep this site as a durable record outside social platforms. You can also find me through the links in the sidebar.

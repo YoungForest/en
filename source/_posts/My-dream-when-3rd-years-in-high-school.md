@@ -5,8 +5,10 @@ tags:
 - Life
 categories:
 - Diary
+translations:
+  zh-CN: https://youngforest.github.io/2013/06/07/My-dream-when-3rd-years-in-high-school/
+  en: https://youngforest.github.io/en/2013/06/07/My-dream-when-3rd-years-in-high-school/
 ---
-
 June 7, 2013 was the last day of the Gaokao for the senior students one grade above me in high school.
 From that day on, I was the one closest to the Gaokao, although I would not officially enter senior year until September.
 At the time, I was studying at Xiangfen High School in Shanxi Province. I was not yet 17, and I wrote this "My Dream" to state my ambition and encourage myself. Now ten years have passed. In June 2023, while organizing files on my hard drive, I was pleasantly surprised to discover this "document." Looking back, I did not realize my Tsinghua dream back then. After being beaten by society, my ideals, including my literary talent, are far from as excellent as they were then. But the words from that year still move me. I thank my former self.

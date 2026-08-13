@@ -5,8 +5,10 @@ tags:
 - Competitive Programming
 categories:
 - LeetCode
+translations:
+  zh-CN: https://youngforest.github.io/2019/08/31/LeetCode-weekly-contest-151/
+  en: https://youngforest.github.io/en/2019/08/31/LeetCode-weekly-contest-151/
 ---
-
 This week I went to ByteDance to attend the summer camp, and still had classes on Sunday, so I skipped the weekly contest. Then how could I participate in Kick Start? After all, this month's Round E was the so-called golden round, important for getting interview slots, so I chose to skip the summer camp.
 
 After the summer camp ended, I made up the problems as promised. I have to say, LeetCode is still much less difficult than Kick Start. It feels like Kick Start's warm-up problems are Medium, and the last two problems are Hard.

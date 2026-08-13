@@ -6,8 +6,10 @@ tags:
 - Intern
 categories:
 - Interview
+translations:
+  zh-CN: https://youngforest.github.io/2020/03/20/Mihayo-backend-intern-interview/
+  en: https://youngforest.github.io/en/2020/03/20/Mihayo-backend-intern-interview/
 ---
-
 # First Round
 
 time: 2020-03-20 16:29:48

@@ -1,13 +1,16 @@
 ---
 title: My Investment Story (Part 1)
+description: "How my investing journey began, what changed my thinking, and the lessons that still shape it."
 date: 2021-03-22 20:32:28
 tags:
 - money
 - investing
 categories:
 - Life
+translations:
+  zh-CN: https://youngforest.github.io/2021/03/22/investment/
+  en: https://youngforest.github.io/en/2021/03/22/investment/
 ---
-
 ![The beginning of a personal investment story](/en/images/ai/investment/en-hero.webp)
 
 Sharing my investment story.

@@ -5,8 +5,10 @@ tags:
 - Competitive Programming
 categories:
 - LeetCode
+translations:
+  zh-CN: https://youngforest.github.io/2019/07/07/LeetCode-weekly-contest-144/
+  en: https://youngforest.github.io/en/2019/07/07/LeetCode-weekly-contest-144/
 ---
-
 This morning I had to take the TOEFL exam, so I could not participate in the weekly contest as usual. I solved the problems after the contest.
 
 

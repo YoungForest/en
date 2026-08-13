@@ -6,8 +6,10 @@ tags:
 - interview
 categories:
 - Diary
+translations:
+  zh-CN: https://youngforest.github.io/2019/09/06/ByteDance-Camp/
+  en: https://youngforest.github.io/en/2019/09/06/ByteDance-Camp/
 ---
-
 Overall, the experience was very happy and I gained a lot.
 
 I was very lucky to attend this year's Byte Camp. I think this one-week event was the most meaningful activity I attended this year. This year's summer camp was divided into three tracks: Engineering, Algorithm, and Product. I participated in the Engineering track.

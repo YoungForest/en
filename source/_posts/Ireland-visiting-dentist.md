@@ -6,8 +6,10 @@ tags:
 - Life
 categories:
 - Ireland
+translations:
+  zh-CN: https://youngforest.github.io/2023/10/03/Ireland-visiting-dentist/
+  en: https://youngforest.github.io/en/2023/10/03/Ireland-visiting-dentist/
 ---
-
 My teeth are naturally rather soft and prone to cavities. When I was studying in Beijing, I already had an inseparable relationship with the dental departments of the university hospital and Peking University Third Hospital. After a long illness, one becomes half a doctor. Last year I came to Ireland, and I also went to the dentist here right away and have visited dentists often. So I will summarize and share my experience and thoughts.
 
 Two days before leaving Beijing, I suddenly had a toothache and discovered that one tooth had a hole, meaning a cavity, and a fairly serious one. Previously I had always gone to public hospitals. First, I trusted top-tier public hospitals more. Second, costs were lower and medical insurance could reimburse. Third, as a student, referrals could only go to Peking University Third Hospital, which I was familiar with. But public-hospital appointments needed to be booked a week in advance and were hard to get. Therefore, the next morning I decisively went to a well-reviewed private dental hospital near the hotel where I was staying, without even needing registration. Private hospitals indeed have good service. After taking an X-ray, the dentist said the cavity had reached the nerve and required root canal treatment, followed by a crown. The treatment cycle would take at least two weeks and require two visits. A few years earlier, one of my teeth had undergone similar treatment at Peking University Third Hospital. So I knew very clearly what this meant: your tooth is actually already dead; only the corpse remains. Because I was flying the next day, in the end the dentist prescribed me some painkillers.

@@ -5,8 +5,10 @@ tags:
 - Tinkering
 categories:
 - tech
+translations:
+  zh-CN: https://youngforest.github.io/2021/02/27/build-qBittorrent/
+  en: https://youngforest.github.io/en/2021/02/27/build-qBittorrent/
 ---
-
 ## Cause
 
 Recently the pressure of graduation has been quite heavy, so I wanted to download a movie from Beiyouren and relax a bit. But I found that qBittorrent, the BitTorrent client I had always used for seeding and downloading, could no longer open. I searched online for quite a while for the cause and solution.

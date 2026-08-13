@@ -5,8 +5,10 @@ tags:
 - Competitive Programming
 categories:
 - LeetCode
+translations:
+  zh-CN: https://youngforest.github.io/2019/03/10/LeetCode-weekly-contest-127/
+  en: https://youngforest.github.io/en/2019/03/10/LeetCode-weekly-contest-127/
 ---
-
 The scores for this week's four problems were 4, 4, 5, and 6, so they should not be too hard. Keep going, Forest!
 
 Because the problems were too simple, even though I finished 15 minutes early, my rank was still 912 / 4712. This contest was really easy, and it completely tested coding speed and familiarity. Whether you can get it bug-free on the first try matters a lot. If a corner case is wrong, debugging it takes a lot of time. I got one wrong answer on both problems 1 and 2, which cost me quite a bit of time.

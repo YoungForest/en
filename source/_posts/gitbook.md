@@ -4,8 +4,10 @@ date: 2019-07-16 15:34:35
 tags:
 categories:
 - Programming
+translations:
+  zh-CN: https://youngforest.github.io/2019/07/16/gitbook/
+  en: https://youngforest.github.io/en/2019/07/16/gitbook/
 ---
-
 Unlike a blog, a book is relatively more complete and more systematic. Blogs, by comparison, are much more scattered. However, excellent blog series are often adapted into books.
 If you want to share larger-scale, systematic knowledge, writing a small book is a good choice.
 This article introduces a tool called `GitBook`, which lets you write a book in Markdown, put it on GitHub, and generate web and PDF versions of the book. Compared with traditional LaTeX, it is simpler and more convenient. It suits contemporary programmers.

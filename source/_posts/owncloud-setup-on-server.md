@@ -2,9 +2,12 @@
 title: owncloud setup on server
 date: 2017-08-20 22:42:32
 tags:
-	- Ubuntu
-	- Owncloud
+  - Ubuntu
+  - Owncloud
 categories:
+translations:
+  zh-CN: https://youngforest.github.io/2017/08/20/owncloud-setup-on-server/
+  en: https://youngforest.github.io/en/2017/08/20/owncloud-setup-on-server/
 ---
 ## Introduction
 [ownCloud](https://owncloud.org/) is a private cloud solution that can replace Baidu Cloud. It provides both enterprise and personal editions, and individuals can use a server to build the personal edition of ownCloud. The official website provides multiple server-side solutions. Compiling it yourself can get the latest version of ownCloud; ownCloud also provides [binary installation packages](https://download.owncloud.org/download/repositories/stable/owncloud/) for major distribution repositories, which are more convenient and faster, and more suitable for personal use.
@@ -36,4 +39,3 @@ mysql --user=root --password
 ### windows
 ### Android
 ### Linux
-

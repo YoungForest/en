@@ -5,8 +5,10 @@ tags:
 - Competitive Programming
 categories:
 - LeetCode
+translations:
+  zh-CN: https://youngforest.github.io/2020/02/09/LeetCode-weekly-contest-175/
+  en: https://youngforest.github.io/en/2020/02/09/LeetCode-weekly-contest-175/
 ---
-
 This week my glasses broke, so I was not in form. Dinner at home was also late, so I did not finish the problems.
 
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (4) |	Q3 (5) |	Q4 (6)|

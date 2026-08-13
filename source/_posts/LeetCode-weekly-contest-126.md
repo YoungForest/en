@@ -5,8 +5,10 @@ tags:
 - Competitive Programming
 categories:
 - LeetCode
+translations:
+  zh-CN: https://youngforest.github.io/2019/03/03/LeetCode-weekly-contest-126/
+  en: https://youngforest.github.io/en/2019/03/03/LeetCode-weekly-contest-126/
 ---
-
 Today I tried recording video while solving problems. Due to venue limitations, I could not use a microphone to explain, so the result was barely satisfactory. Although I could compensate a bit with text annotations, the biggest advantage of video communication was lost. In the future, I should still focus on blogging to spread my thoughts.
 Especially since this time I only solved two problems. I attempted both of the last two problems, but failed on both. The video effect was too poor. If people watch videos on Bilibili, they are there to see the uploader show off. This time I did not manage to show off and instead met my Waterloo, which was quite embarrassing. But in the end I still plan to upload the video. I am just that thick-skinned: not afraid of embarrassment, and not afraid that future people will dig up my old shame.
 

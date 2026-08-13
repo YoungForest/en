@@ -7,8 +7,10 @@ tags:
 - unordered_map
 categories:
 - Programming
+translations:
+  zh-CN: https://youngforest.github.io/2020/05/27/unordered-map-hash-pair-c/
+  en: https://youngforest.github.io/en/2020/05/27/unordered-map-hash-pair-c/
 ---
-
 Today, while solving [an AtCoder problem](https://atcoder.jp/contests/abc168/tasks/abc168_e), one test case kept getting TLE. I studied the difference between that test case and the others, but could not figure it out no matter how hard I thought. Later, I replaced `unordered_map` with `map` and it passed. Although the difference between HashMap and TreeMap is not large on small datasets, HashMap should still be better when the data volume is large. So the best practice is to use a HashMap when ordering is not needed.
 
 I had also never encountered a case before where HashMap performed so much worse than TreeMap. After spending the whole morning on it, I finally located the issue: my hash function implementation for `pair` was terrible. Since the C++ STL does not provide a hash specialization for `pair`, if you want to use `pair` as a key in `unordered_map`, you need to implement the hash function yourself. I had directly copied an implementation from the internet: `std::hash<T>()(pair.first) ^ std::hash<U>()(pair.second)`. To avoid misleading anyone, I will not paste that code here. This copied implementation really hurt me: the hash function had severe collisions, causing very low efficiency. Surprisingly, this wrong implementation is everywhere online, both in Chinese and in English. I only found the root cause and the correct implementation in an obscure corner, namely the comment section of a [Stack Overflow question](https://stackoverflow.com/questions/20590656/error-for-hash-function-of-pair-of-ints). So I am summarizing it in this post to help more people avoid the pitfall.

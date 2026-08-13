@@ -6,8 +6,10 @@ tags:
 - contest
 categories:
 - Programming
+translations:
+  zh-CN: https://youngforest.github.io/2020/04/12/codeforces-round-633-Div2/
+  en: https://youngforest.github.io/en/2020/04/12/codeforces-round-633-Div2/
 ---
-
 [Official editorial](https://codeforces.com/blog/entry/75913)
 
 Problems on Codeforces are generally harder than ordinary interview problems. If your goal is only interviews, practicing LeetCode is enough. But if you are interested in algorithms and competitive programming, I strongly encourage you to give it a try. The quantity and quality of the problems far exceed LeetCode. It also provides different tracks for students at different levels, with different problem difficulties. For high-level players, the contest experience is much better.

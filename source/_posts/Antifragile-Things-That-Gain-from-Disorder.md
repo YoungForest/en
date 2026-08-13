@@ -1,13 +1,16 @@
 ---
 title: "Antifragile: Things That Gain from Disorder"
+description: "Notes on Antifragile and its lessons about randomness, experimentation, redundancy, and real life."
 date: 2024-08-24 10:31:57
 tags:
 - Reading
 - Antifragile
 categories:
 - Book Notes
+translations:
+  zh-CN: https://youngforest.github.io/2024/08/24/Antifragile-Things-That-Gain-from-Disorder/
+  en: https://youngforest.github.io/en/2024/08/24/Antifragile-Things-That-Gain-from-Disorder/
 ---
-
 ![Stress and resilience in Antifragile](/en/images/ai/Antifragile-Things-That-Gain-from-Disorder/en-hero.webp)
 
 A feast of conservatism, liberalism, and optimism.

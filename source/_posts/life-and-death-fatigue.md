@@ -6,8 +6,10 @@ tags:
 - Life and Death Are Wearing Me Out
 categories:
 - Book Notes
+translations:
+  zh-CN: https://youngforest.github.io/2023/12/12/life-and-death-fatigue/
+  en: https://youngforest.github.io/en/2023/12/12/life-and-death-fatigue/
 ---
-
 [Douban link: *Life and Death Are Wearing Me Out*](https://book.douban.com/subject/35587028/)
 
 Is the rating this high? When I was in high school, Mo Yan won the Nobel Prize in Literature. At that time I followed the trend and read quite a few of his novels, such as *Big Breasts and Wide Hips* and *Forty-One Bombs*. Thinking back to the reading environment then, it was actually very interesting: someone bought a book, and then everyone in the class who was interested took turns borrowing and reading it. In university I also continued reading *Frog*. Mo Yan's novels always let one read out a feeling of being oppressed by society and the times. They also strongly reflect the hardship and helplessness of peasants, and are a ruthless satire of social change. Against the backdrop of today's worsening speech environment, I hope more people can read these books, and that these books can live a little longer.

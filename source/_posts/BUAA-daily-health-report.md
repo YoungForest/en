@@ -4,8 +4,10 @@ date: 2021-04-01 11:16:46
 tags:
 categories:
 - Tinkering
+translations:
+  zh-CN: https://youngforest.github.io/2021/04/01/BUAA-daily-health-report/
+  en: https://youngforest.github.io/en/2021/04/01/BUAA-daily-health-report/
 ---
-
 Auto daily health report solution for BUAA.
 
 <!-- more -->

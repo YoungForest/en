@@ -6,8 +6,10 @@ tags:
 - Travelogue
 categories:
 - Diary
+translations:
+  zh-CN: https://youngforest.github.io/2018/10/09/guangzhou-tour/
+  en: https://youngforest.github.io/en/2018/10/09/guangzhou-tour/
 ---
-
 After the National Day holiday, Second Senior Brother and I had a chance to go to Guangdong. We visited Guangzhou, Macau, and Hong Kong in order. On October 6, we set off from Beijing, took a 10-hour high-speed train to Guangzhou South Railway Station, and then checked into Guangdong Hotel.
 
 ## Guangzhou

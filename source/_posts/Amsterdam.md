@@ -6,8 +6,10 @@ tags:
 - Travel Notes
 categories:
 - Diary
+translations:
+  zh-CN: https://youngforest.github.io/2019/09/23/Amsterdam/
+  en: https://youngforest.github.io/en/2019/09/23/Amsterdam/
 ---
-
 In the first week after arriving in Europe and settling down, we went to beautiful Amsterdam in the Netherlands and two surrounding villages.
 Because it was our first trip out, many parts of the itinerary were poorly arranged, and the cost was relatively high. It was about 450 euros per person. By comparison, the Paris trip a week later only cost 300 euros, and the experience was even better.
 I think the Netherlands is absolutely the best place to enjoy Northern European countryside scenery.

@@ -5,8 +5,10 @@ tags:
 - WeRide
 categories:
 - Life
+translations:
+  zh-CN: https://youngforest.github.io/2018/10/28/Complain-before-Weride-internship/
+  en: https://youngforest.github.io/en/2018/10/28/Complain-before-Weride-internship/
 ---
-
 Copyright belongs to the author. For any form of reposting, please contact the author.
 Author: YoungForest (from Douban)
 Source: https://www.douban.com/note/694767558/

@@ -1,5 +1,6 @@
 ---
 title: "Studying in Europe: A Chat About Banks and Money"
+description: "A practical guide to choosing, opening, and using bank accounts while living in Europe."
 date: 2019-12-07 12:22:12
 tags:
 - bank
@@ -7,8 +8,10 @@ tags:
 - Europe
 categories:
 - Life
+translations:
+  zh-CN: https://youngforest.github.io/2019/12/07/Europe-bank-accounts/
+  en: https://youngforest.github.io/en/2019/12/07/Europe-bank-accounts/
 ---
-
 This semester I was lucky enough to come to Belgium as an exchange student for one semester. I ran into quite a few difficulties around "money", and gradually worked through them with help from classmates. Here I want to thank the friends who helped me, and also share my own experience so that more people can benefit from it.
 
 In today's globalized world, when you come to Europe, how to spend money conveniently and save money at the same time is something every international student cares about. Spending money in Europe can basically be divided into two categories: cash and card payment. The two complement each other. It is not like in China, where one phone can take you everywhere.
@@ -17,7 +20,7 @@ My own experience was: I exchanged 700 euros in cash in China and brought it wit
 
 Next, I will introduce how to apply for each method, along with their pros and cons.
 
-# Cash and Card Payment
+## Cash and Card Payment
 
 When you first arrive in Belgium, it is necessary to bring enough cash from China. It also gives you some peace of mind. I brought 700 euros, and it turned out to be more than enough when backed by a credit card. Belgium, as one of the more developed regions in Europe, supports card payment in most consumption scenarios. Even some large payments, such as rent, must be paid by card. Luckily, my credit card limit was high enough. When paying rent for the first time, I even needed to help pay for two classmates traveling with me. This is where the advantage of bringing a credit card abroad really showed.
 
@@ -40,7 +43,7 @@ The drawbacks are:
 
 If anyone wants to apply for this card, you can find a classmate who already has one to refer you. That way both people can get pretty nice gifts.
 
-# Traditional Bank: ING
+## Traditional Bank: ING
 
 ![ING debit card](/images/money/ing.jpg)
 
@@ -60,7 +63,7 @@ My usual approach is to keep the larger amount of money in the ING account, and 
 
 Another drawback of ING is that its currency exchange rate is relatively poor, probably about 10% worse than the market rate. You also need to make an appointment in advance. Online appointments take seven working days and allow you to specify denominations. Offline appointments are faster, about three working days, but do not allow you to specify denominations, which is very inconvenient. I once exchanged Hungarian forints and came back with nine 10,000-forint notes. In fact, that was only equivalent to around 300 euros.
 
-# Online Banks
+## Online Banks
 
 Europe is the birthplace of banking. The banking industry is very developed, and the financial and economic systems are quite mature. Besides traditional banks, there are also many online banks. These online banks solve many pain points of traditional banks:
 
@@ -152,7 +155,7 @@ Its advantages are similar to other online banks. I have used it relatively litt
 
 The drawback is that it only has GBP and EUR accounts.
 
-# Payment Methods
+## Payment Methods
 
 Besides common card payment, two other payment methods are also popular in Europe:
 

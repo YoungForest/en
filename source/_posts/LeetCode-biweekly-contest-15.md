@@ -5,8 +5,10 @@ tags:
 - Competitive Programming
 categories:
 - LeetCode
+translations:
+  zh-CN: https://youngforest.github.io/2019/12/14/LeetCode-biweekly-contest-15/
+  en: https://youngforest.github.io/en/2019/12/14/LeetCode-biweekly-contest-15/
 ---
-
 I did not go out this week, and happened to run into the biweekly contest. It had been a long time since I joined one, so it really felt rare.
 All the problems in this biweekly contest were standard and not hard. I finished everything with one AC on each problem and still had 50 minutes left. A typical speed contest.
 

@@ -6,6 +6,9 @@ tags:
 - Internship
 categories:
 - Interview
+translations:
+  zh-CN: https://youngforest.github.io/2018/04/30/kuaishou-intern-interview/
+  en: https://youngforest.github.io/en/2018/04/30/kuaishou-intern-interview/
 ---
 Thanks to senior schoolmate @lxc for the referral and interview advice, I was fortunate enough to attend the interview for an algorithm intern role in Kuaishou's recommendation group, and I eventually passed the interview and received the offer.
 Although intern interviews may be relatively simple, I think this still has reference value.

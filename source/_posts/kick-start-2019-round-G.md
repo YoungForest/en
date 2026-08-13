@@ -5,8 +5,10 @@ tags:
 - Competitive Programming
 categories:
 - KickStart
+translations:
+  zh-CN: https://youngforest.github.io/2019/10/20/kick-start-2019-round-G/
+  en: https://youngforest.github.io/en/2019/10/20/kick-start-2019-round-G/
 ---
-
 This round was the second-to-last round of the year, and also a relatively easy one.
 
 I solved the third problem and the small data sets for problems 1 and 2. My algorithm for the second problem was correct in itself, but I did not correctly estimate the maximum number of bits in `k` or prevent overflow, so I got WA on the large data set. The first problem was not hard either, but I was not sensitive enough to divisors, so I missed the better solution. Overall, this was the closest I got to AC in a round. My luck was relatively good, and I finished the contest one hour early. Later, because I really could not think of more solutions or details to watch out for, I gave up.

@@ -5,6 +5,9 @@ tags:
 - Sublime
 categories:
 - Tinkering
+translations:
+  zh-CN: https://youngforest.github.io/2017/01/18/sublime-personlize/
+  en: https://youngforest.github.io/en/2017/01/18/sublime-personlize/
 ---
 **[Abstract]** [Sublime Text 3](https://www.sublimetext.com/) is a powerful editor. I officially started using it in the second semester of sophomore year. After half a year of continuous exploration, I configured Sublime into a personalized editor that satisfies most of my daily coding needs.
 

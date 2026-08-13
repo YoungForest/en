@@ -4,8 +4,10 @@ tags:
 date: 2016-05-25 14:48:41
 categories:
 - Diary
+translations:
+  zh-CN: https://youngforest.github.io/2016/05/25/my-shahe-story/
+  en: https://youngforest.github.io/en/2016/05/25/my-shahe-story/
 ---
-
 There is only a month and a half left before I leave Shahe, this "broken" place. Unexpectedly, I have already stayed here for almost two years, so now is the most suitable time to write my Shahe-Beihang story.
 
 Looking back, I have gone from fresh meat to old cured meat. The initial freshness I felt toward college life has long disappeared, turning into day after day of busyness with coursework. Sometimes I really want to change my state and live the college life I once imagined. But when facing the larger system, I feel my own smallness and helplessness, and can only comfort myself with "for the interests of the country and the nation." Here I do not want to complain too much. I only want to share my two years of experience at Shahe-Beihang, to give later students a reference and leave myself a log for future review.

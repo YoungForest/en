@@ -6,8 +6,10 @@ tags:
 - Travel Notes
 categories:
 - Diary
+translations:
+  zh-CN: https://youngforest.github.io/2019/09/17/Beligum/
+  en: https://youngforest.github.io/en/2019/09/17/Beligum/
 ---
-
 In the second half of this year, I was fortunate to have the opportunity to come to Belgium for an exchange semester, about five months.
 This is my first time going abroad for such a long period. Previously I also participated in a school program and went to the United Kingdom for a half-month study tour. For details, you can read [Thoughts and Observations from My Study Tour in Britain](https://youngforest.github.io/en/2016/08/25/my-britain-trip/), which I wrote three years ago.
 Next, I will summarize my exchange program from four aspects: city, life, study, and travel.

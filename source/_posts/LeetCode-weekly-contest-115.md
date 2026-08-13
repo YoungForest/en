@@ -5,8 +5,10 @@ tags:
 - Competitive Programming
 categories:
 - LeetCode
+translations:
+  zh-CN: https://youngforest.github.io/2018/12/19/LeetCode-weekly-contest-115/
+  en: https://youngforest.github.io/en/2018/12/19/LeetCode-weekly-contest-115/
 ---
-
 I have not participated in LeetCode weekly contests for a while. Recently, because I am preparing for Google's phone interview at the end of January, I need to pick algorithms back up again. Reviewing algorithm books is one part; the other part is preparing by solving problems. Since time is limited, LeetCode weekly contests are a good choice. The contest has a time limit, so it is closer to a real interview.
 The weekly contest lasts one and a half hours, has four problems of different difficulty levels, and starts at 10:30 every weekend. Previously it was 9:30, maybe because of U.S. winter time, so it was delayed by one hour.
 As before, I only completed two problems. For the third problem, I had some idea, later proven wrong. I glanced at the fourth problem and decisively gave up.

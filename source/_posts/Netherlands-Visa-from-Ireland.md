@@ -5,8 +5,10 @@ tags:
 - Travel
 categories:
 - Diary
+translations:
+  zh-CN: https://youngforest.github.io/2022/12/15/Netherlands-Visa-from-Ireland/
+  en: https://youngforest.github.io/en/2022/12/15/Netherlands-Visa-from-Ireland/
 ---
-
 ![Netherlands visa rendering](/images/NetherlandsVisa.jpg)
 
 I finally got the Netherlands Schengen visa I had been longing for in Dublin: a short-stay visa for visiting friends and relatives.

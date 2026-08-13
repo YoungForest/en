@@ -6,8 +6,10 @@ tags:
 - A Global History
 categories:
 - Book Notes
+translations:
+  zh-CN: https://youngforest.github.io/2023/10/01/A-Global-History-From-Prehistory-to-the-21st-Century/
+  en: https://youngforest.github.io/en/2023/10/01/A-Global-History-From-Prehistory-to-the-21st-Century/
 ---
-
 [Douban link: *A Global History: From Prehistory to the 21st Century*](https://book.douban.com/subject/10583099/)
 
 I strongly recommend every Chinese person read this book. It may be a bit of a tome, and some places are also relatively brief. After all, it is a global history and cannot cover everything. But after finishing it, the gains are enormous. Especially for someone like me, "born under the red flag and raised in New China," the history I learned from childhood was all from People's Education Press history textbooks. Even when reading extracurricular books, they were based on Chinese perspectives and experiences, with similar education and cultural backgrounds. This book was written by an American born in Canada and later teaching in the United States. It can be considered a completely Western perspective. From this angle, it can de-romanticize our previous history education, reduce ideological influence, and move closer to modern history.

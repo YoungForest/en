@@ -6,8 +6,10 @@ tags:
 - Poor Charlie's Almanack
 categories:
 - Book Notes
+translations:
+  zh-CN: https://youngforest.github.io/2024/08/07/Poor-Charlie-Almanack/
+  en: https://youngforest.github.io/en/2024/08/07/Poor-Charlie-Almanack/
 ---
-
 Weekly book 18: *Poor Charlie's Almanack: The Essential Wit and Wisdom of Charles T. Munger*
 
 Charlie Munger passed away at the end of last year at age 99. I am ashamed that I only now read *Poor Charlie's Almanack*, which gathers the essence of his thinking. It can be considered the product of 80 years of his intellectual wisdom, since the third edition of the original book was completed in 2008. Recently I have read too many success books, and I am truly full of expectation and confidence about the future and myself.

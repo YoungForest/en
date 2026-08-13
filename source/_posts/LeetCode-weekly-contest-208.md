@@ -5,8 +5,10 @@ tags:
 - Competitive Programming
 categories:
 - LeetCode
+translations:
+  zh-CN: https://youngforest.github.io/2020/09/30/LeetCode-weekly-contest-208/
+  en: https://youngforest.github.io/en/2020/09/30/LeetCode-weekly-contest-208/
 ---
-
 It has been three and a half months since I last wrote a weekly contest summary. It is indeed a pity that the habit of writing weekly contest solutions, which I had kept for half a year, was interrupted. But at that time, it was unavoidable. In July I was busy with my short paper; in August came the proposal and midterm; in September the semester officially started; and since early July I had also been doing my summer internship at Amazon. There really were more tasks than before. Back then I felt overwhelmed and did not have enough energy to do everything well. Each weekly contest writeup usually takes half a day, and together with the contest itself, it basically costs a whole day. The energy drain from competing and writing solutions is obvious. Although the writeups stopped for these three months, I still kept participating in contests as usual. After all, I joined the "Cruel Problem Solving" group, and with more people doing weekly contests together, the feedback and enthusiasm from competing every week became stronger.
 
 Over these three months, my ranking in the Cruel group also went up and down and down and down... At best I was ranked 15th, and at worst I had already fallen to 90th. Overall, I feel that I am better at conventional, not-too-hard problems. When I encounter something I have not seen before or have not practiced much, it is very easy for me to fail on the last problem.

@@ -5,8 +5,10 @@ tags:
 - Competitive Programming
 categories:
 - LeetCode
+translations:
+  zh-CN: https://youngforest.github.io/2019/01/13/LeetCode-weekly-contest-119/
+  en: https://youngforest.github.io/en/2019/01/13/LeetCode-weekly-contest-119/
 ---
-
 This contest went rather badly. My rank was roughly 1486 / 3845. The problems were:
 - The second problem was relatively simple. Since it was an Easy problem, I directly used brute force and got one TLE. Earlier, because of carelessness, I also wrote the wrong variable in the `for` loop condition once. That caused two penalties.
 - The third problem was not very hard either, but in the end I did not think of the O(n) solution. I only thought of an O(n ^ 2) approach. I thought of prefix sums and noticed the keyword divisible, but I did not connect it to the key point that equal prefix sums work.

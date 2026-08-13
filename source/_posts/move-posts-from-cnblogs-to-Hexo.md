@@ -5,8 +5,10 @@ tags:
 categories:
   - Tinkering
 date: 2016-11-22 01:42:23
+translations:
+  zh-CN: https://youngforest.github.io/2016/11/22/move-posts-from-cnblogs-to-Hexo/
+  en: https://youngforest.github.io/en/2016/11/22/move-posts-from-cnblogs-to-Hexo/
 ---
-
 Regarding how to migrate posts from other blogs to `Hexo`, the [official documentation](https://hexo.io/docs/migration.html) provides some guidance. I also followed the official documentation to try migrating my previous posts from CNBlogs to the new blog. I encountered some problems during this process, so here are the solutions.
 <!-- more -->
 ## Migration Plugin Not Installed

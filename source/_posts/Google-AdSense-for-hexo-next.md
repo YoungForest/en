@@ -5,8 +5,10 @@ categories:
 - Tinkering
 tags:
 - Hexo
+translations:
+  zh-CN: https://youngforest.github.io/2021/02/25/Google-AdSense-for-hexo-next/
+  en: https://youngforest.github.io/en/2021/02/25/Google-AdSense-for-hexo-next/
 ---
-
 ## Motivation
 
 Recently, after watching some videos by "Banfo Xianren", I became more interested in money. Besides taking out part of my savings to invest in A-shares, I also started thinking about how to increase passive income. I have always had the habit of writing a blog. I have been writing for more than five years and have accumulated over a hundred articles. Although daily page views are only in the dozens, even a small fly still has meat. Referring to some experiences from experts, I tried making money by placing ads.

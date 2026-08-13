@@ -6,8 +6,10 @@ tags:
 - The Almanack of Naval Ravikant
 categories:
 - Book Notes
+translations:
+  zh-CN: https://youngforest.github.io/2024/07/27/The-Almanack-of-Naval-Ravikant/
+  en: https://youngforest.github.io/en/2024/07/27/The-Almanack-of-Naval-Ravikant/
 ---
-
 [Douban link](https://book.douban.com/subject/35876121/)
 
 The first half is about wealth, suitable for reading before age 35 to change one's current situation. Much of the wisdom is also widely recognized and easy to accept around the world. The second half is about happiness, suitable for reading after 35 to accept the current situation. But that part is more subjective and differs from person to person. It belongs to greater wisdom and is more rare. Finally, *Die with Zero* (also a book).

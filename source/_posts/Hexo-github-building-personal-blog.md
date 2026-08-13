@@ -6,8 +6,10 @@ categories:
 tags:
 - Hexo
 mathjax: false
+translations:
+  zh-CN: https://youngforest.github.io/2016/11/02/Hexo-github-building-personal-blog/
+  en: https://youngforest.github.io/en/2016/11/02/Hexo-github-building-personal-blog/
 ---
-
 ## Motivation, Placed First
 I used to have a blog on CNBlogs, but I did not maintain it often. Even now, counting everything, it only had three essays and one follower. The main reason was that I did not have the habit of writing. In high school, I kept a diary for a while and wrote more than half a notebook in total. It was all motivational, self-deceiving, content written for myself.
 

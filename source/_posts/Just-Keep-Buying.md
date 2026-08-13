@@ -6,8 +6,10 @@ tags:
 - Just Keep Buying
 categories:
 - Book Notes
+translations:
+  zh-CN: https://youngforest.github.io/2024/03/16/Just-Keep-Buying/
+  en: https://youngforest.github.io/en/2024/03/16/Just-Keep-Buying/
 ---
-
 [Douban link](https://book.douban.com/subject/35871073/)
 
 A very good investing book, somewhat similar to *The Psychology of Money*. It uses a lot of data and backtesting to convince readers.

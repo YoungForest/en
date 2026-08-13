@@ -5,8 +5,10 @@ tags:
 - life
 categories:
 - Diary
+translations:
+  zh-CN: https://youngforest.github.io/2022/11/19/Western-political-correctness/
+  en: https://youngforest.github.io/en/2022/11/19/Western-political-correctness/
 ---
-
 ![Green Book](/images/green-book.jpg)
 
 Whether from watching domestic news while in China, or from real feelings after coming to Ireland, political correctness is a very obvious feature of the West. The common domestic view is that political correctness is rather stupid and amounts to digging one's own grave. Yet after coming here, I found that they themselves are actually proud of it. Today I will share some of my own analysis and views on the reasons behind political correctness.

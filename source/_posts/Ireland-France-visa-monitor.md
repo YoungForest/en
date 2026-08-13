@@ -7,8 +7,10 @@ tags:
 - Side Project
 categories:
 - Ireland
+translations:
+  zh-CN: https://youngforest.github.io/2023/09/20/Ireland-France-visa-monitor/
+  en: https://youngforest.github.io/en/2023/09/20/Ireland-France-visa-monitor/
 ---
-
 It is a painful process to book an France visa appointment. A tool was implemented to notify you when a new slot is released. As a 9 years of expereinced software engineer, I finally beat the scalpers and got my France visa appointment by the script. A software engineer never bows to scalpers.
 
 Currently, only Dublin Ireland appointments are supported. Please read the instructions docs to learn how to use it: [Google Docs](https://docs.google.com/document/d/1uHJCxINt9Sb0f1HHybCFhxkmpzxRURilsxqD6OQLpQ4/edit?usp=sharing)

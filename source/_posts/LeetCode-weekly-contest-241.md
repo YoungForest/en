@@ -5,8 +5,10 @@ tags:
 - Competitive Programming
 categories:
 - LeetCode
+translations:
+  zh-CN: https://youngforest.github.io/2021/05/16/LeetCode-weekly-contest-241/
+  en: https://youngforest.github.io/en/2021/05/16/LeetCode-weekly-contest-241/
 ---
-
 Both this week's weekly contest and biweekly contest went badly. Time to start the Cruel Coding check-in journey.
 
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (5) |	Q3 (5) |	Q4 (6)|

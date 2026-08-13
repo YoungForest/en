@@ -1,12 +1,12 @@
 ---
 title: Windows Development Environment improvement tips From a Microsoft Employee
+description: "Practical improvements for a smoother Windows development environment, terminal, toolchain, and workflow."
 date: 2022-12-17 22:28:25
 tags:
 - Windows
 categories:
 - Tech Sharing
 ---
-
 ## Introduction
 
 As a former Mac user, transitioning to Windows 11 was initially challenging for me. I found myself missing the ease of use and convenience of MacOS, and I struggled to adapt to the different development environment. However, with some effort and exploration, I discovered some tools and techniques that have helped me improve my experience as a developer in Windows. I know someone has to use Windows as his dev machine, like Microsoft employees. In this article, I want to share my experience and offer some tips and resources to help you enhance your Windows development environment, specifically with regards to shell improvements.

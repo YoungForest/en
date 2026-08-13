@@ -6,8 +6,10 @@ tags:
 - The Three-Body Problem
 categories:
 - Book Review
+translations:
+  zh-CN: https://youngforest.github.io/2024/03/25/3-body/
+  en: https://youngforest.github.io/en/2024/03/25/3-body/
 ---
-
 Recently Netflix's version of *The Three-Body Problem* has become popular, surrounded by both praise and criticism. I have not watched it, so I cannot really comment. But it did bring back my own memories with *The Three-Body Problem*.
 
 As for the novels, I read them about ten years ago in the Shahe library. Although the series had not yet won the Hugo Award at the time, it was already slowly becoming popular. In my memory, the original title was something like *Remembrance of Earth's Past*: *The Three-Body Problem*, *The Dark Forest*, and *Death's End*. Although *The Three-Body Problem* is only the first book and also the name of the virtual reality game in it, because it became so popular, it gradually became the name people used for the whole series. The funny thing is that in the library, I could only borrow the first and third books. The second book was always impossible to reserve. So my reading order was: first, third, second. I also read Baoshu's continuation, *The Redemption of Time*. My personal ranking of the three books is: *Death's End* > *The Dark Forest* > *The Three-Body Problem*. That was also how I fell into the science fiction pit. After that, I read Liu Cixin's other novels. I also encountered Asimov's *Foundation* and *Galactic Empire* series, and the novella *The End of Eternity*. They are all excellent and recommended.

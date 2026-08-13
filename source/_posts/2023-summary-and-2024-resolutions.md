@@ -1,13 +1,16 @@
 ---
 title: 2023 Year-End Review and 2024 New Year Outlook
+description: "A candid review of work, life, and growth in 2023, followed by clear goals for 2024."
 date: 2023-12-23 12:15:24
 tags:
   - life
   - Year-End Review
 categories:
   - Diary
+translations:
+  zh-CN: https://youngforest.github.io/2023/12/23/2023-summary-and-2024-resolutions/
+  en: https://youngforest.github.io/en/2023/12/23/2023-summary-and-2024-resolutions/
 ---
-
 Reposted from [my blog](https://youngforest.github.io/en/2023/12/23/2023-summary-and-2024-resolutions/)
 
 ![A European desk for the 2023 year-end review](/en/images/ai/2023-summary-and-2024-resolutions/en-hero.webp)

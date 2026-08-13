@@ -1,14 +1,17 @@
 ---
 title: Tencent WeChat Business Group Summer Intern Interview
+description: "A detailed review of a Tencent WeChat backend internship interview, including process and technical questions."
 date: 2020-03-11 10:28:43
 tags:
 - Tencent
 - Intern
 categories:
 - Interview
+translations:
+  zh-CN: https://youngforest.github.io/2020/03/11/Tencent-WeChat-backend-intern-interview/
+  en: https://youngforest.github.io/en/2020/03/11/Tencent-WeChat-backend-intern-interview/
 ---
-
-# First Round
+## First Round
 
 time: 2020-03-11 10:28:43
 
@@ -51,7 +54,7 @@ Question: what does your group work on, and why ask so many deep learning and di
 
 Answer: large-scale distributed training framework. Tech stack: C++, Python.
 
-# Second Round
+## Second Round
 
 time: 2020-03-17 21:59:18
 
@@ -109,7 +112,7 @@ Space: O(1)
 
 After I finished writing the code, he kept asking me to optimize it, with a hint that it was not an optimization at the time-complexity level. I found several places, and the code above is my final version. Only then was the interviewer satisfied.
 
-# Third Round
+## Third Round
 
 time: 2020-03-19 09:06:13
 
@@ -128,7 +131,7 @@ After asking everything, the interviewer ended the interview very decisively. It
 
 Two out of three interviews were held at night, so you can see the overtime state. Only the third-round interviewer turned on video. Seeing the expert's hairline, I felt that my own ability was really too weak.
 
-# Fourth Round
+## Fourth Round
 
 time: 2020-03-19 23:53:31
 
@@ -149,7 +152,7 @@ Rounds 1 and 2 were clearly from the distributed framework group. Rounds 3 and 4
 
 I also participated in a Microsoft SWE intern interview in the afternoon. At the time I already felt I was doomed, and sure enough, I received a Thank You Letter that evening. A sad song for myself. Keep going for fall recruiting, try again!
 
-# Fifth Round
+## Fifth Round
 
 time: 2020-03-20 17:40:42
 
@@ -173,7 +176,7 @@ Next, wait for the HR interview.
 He was from the WeChat Search Service group. Rounds three and four were also from that group. The first two rounds were from the distributed training framework group, and both the interview format and content were different. He said I probably did not pass the distributed training framework group, so my resume was released to their group. He could only see the evaluations from rounds three and four; cross-group information is not transparent. I really do lack fundamentals and experience in distributed training.
 I can also understand why five interviews were needed.
 
-# Seventh Round
+## Seventh Round
 
 time: 2020-03-31 19:22:14
 
@@ -316,7 +319,7 @@ I answered honestly: graduate grades are not important.
 
 The interviewer had also studied at Beihang in earlier years, and at the end we chatted a bit about the current state of my lab.
 
-# Eighth Round: Another Mysterious Interview, Bad Review
+## Eighth Round: Another Mysterious Interview, Bad Review
 
 time: 2020-04-13 12:59:03
 
@@ -365,7 +368,7 @@ vector<int> findUnique(const vector<int>& v) {    // 4G
 The interviewer was from the WeChat Kitcup Recommendation System group. I directly gave feedback that next time they should schedule the interview in advance; this time was very rushed and my state was not good.
 This interviewer's attitude was also among the worst I have encountered. Several times when communicating with him, he said, "don't ask me." Many questions were also unclear. Bad review. I really wanted to complain about him.
 
-# Ninth Round
+## Ninth Round
 
 This interview only lasted about 10 minutes. He asked one algorithm problem: determine whether a linked list is a palindrome. Required time complexity O(N), space complexity O(1). Around LeetCode Medium difficulty.
 
@@ -373,7 +376,7 @@ Then he asked me: I see you have interviewed with Tencent many times before and 
 
 Afterward I checked the official website, and it was really true, so I changed it to not accept reassignment. I hope the Beijing groups can pick me up. I wonder whether engineers in a group can directly pick specific candidates. Otherwise, I could contact classmates and senior schoolmates working at Tencent.
 
-# 4.26 Written Test
+## 4.26 Written Test
 
 TX's written test was quite difficult, especially problems 2 and 3. But TX does not produce algorithm problems; it is only a porter of algorithm problems.
 

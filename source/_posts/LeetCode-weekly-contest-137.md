@@ -5,8 +5,10 @@ tags:
 - Competitive Programming
 categories:
 - LeetCode
+translations:
+  zh-CN: https://youngforest.github.io/2019/05/19/LeetCode-weekly-contest-137/
+  en: https://youngforest.github.io/en/2019/05/19/LeetCode-weekly-contest-137/
 ---
-
 This week's problems were harder than usual. You could also say they happened to hit my blind spot: DP problems. To be honest, I have not studied DP problems deeply. This contest had especially many DP problems, especially the fourth problem, which can be solved with the classic **knapsack problem**.
 
 | Rank |	Name |	Score |	Finish Time | 	Q1 (4) |	Q2 (5) |	Q3 (6) |	Q4 (8)|

@@ -1,13 +1,16 @@
 ---
 title: "From Beijing to Dublin: A Programmer's Journey to Europe"
+description: "A practical account of finding a European software engineering job from China, from preparation to relocation."
 date: 2022-12-09 16:42:27
 tags:
   - life
   - Tech
 categories:
   - Diary
+translations:
+  zh-CN: https://youngforest.github.io/2022/12/09/Find-a-Europe-SDE-job-from-China/
+  en: https://youngforest.github.io/en/2022/12/09/Find-a-Europe-SDE-job-from-China/
 ---
-
 Reposted from [my blog](https://youngforest.github.io/en/2022/12/09/Find-a-Europe-SDE-job-from-China/)
 
 This year, according to plan, I applied from China to programmer positions in Europe. Although I happened to encounter a macroeconomic downturn, with companies freezing hiring or even laying off people one after another, I was lucky enough to still receive two offers and successfully onboard in November, completing the physical move. Although there were many bumps along the way, looking back, everything can be considered smooth. On the road of "running," I received help from many experienced group friends. Therefore I wrote this blog post to summarize my experience and lessons, for the convenience of those who come later.

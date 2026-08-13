@@ -5,8 +5,10 @@ tags:
 - Mac
 categories:
 - Tech
+translations:
+  zh-CN: https://youngforest.github.io/2019/11/11/mac-write-ntfs-solution/
+  en: https://youngforest.github.io/en/2019/11/11/mac-write-ntfs-solution/
 ---
-
 Using macOS does have some inconvenient parts, such as writing to NTFS hard drives or USB drives. By default, Mac only supports reading NTFS. But as long as you have the courage to tinker, the solution is still very simple.
 
 ## Most Recommended Method

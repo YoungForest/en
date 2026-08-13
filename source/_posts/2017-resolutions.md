@@ -6,8 +6,10 @@ tags:
 - Year-End Review
 categories:
 - Diary
+translations:
+  zh-CN: https://youngforest.github.io/2017/02/22/2017-resolutions/
+  en: https://youngforest.github.io/en/2017/02/22/2017-resolutions/
 ---
-
 ## Preface
 It is now the seventh day of the Lunar New Year, the day most working people return to work, and also the day Xiangzhong starts school. Yet as a college student, I can actually stay on break until the second lunar month, which is why I still have time to write at 2 a.m. I just read [an article](http://www.jianshu.com/p/0566385dceff), and the author's words described my state to a large extent: a salted fish too lazy even to turn over. The author's personal experience and advice also made me feel ashamed.
 

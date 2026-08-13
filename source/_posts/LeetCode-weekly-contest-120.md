@@ -5,8 +5,10 @@ tags:
 - Competitive Programming
 categories:
 - LeetCode
+translations:
+  zh-CN: https://youngforest.github.io/2019/01/20/LeetCode-weekly-contest-120/
+  en: https://youngforest.github.io/en/2019/01/20/LeetCode-weekly-contest-120/
 ---
-
 This week, I joined the weekly contest together with my good friend "Female Voice Male". Competing with a classmate still brings quite a bit of pressure. I have been practicing algorithm problems for half a year, while he is still a beginner. If I lost in the end, that would be embarrassing. Fortunately, the result was acceptable, and I did not embarrass myself. I ACed all problems with 10 minutes left, and every problem passed on the first try, so I was slightly ahead. I have to say that this contest's problems were much easier than previous ones. My previous level had stayed at solving only two problems with a ranking around 800, while this time my ranking was 356 / 3870. From the ranking, there was some progress.
 
 Below I share the ideas for the four problems.

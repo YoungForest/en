@@ -6,8 +6,10 @@ tags:
 - contest
 categories:
 - Programming
+translations:
+  zh-CN: https://youngforest.github.io/2023/07/01/Codeforces-Educational-Codeforces-Round-151/
+  en: https://youngforest.github.io/en/2023/07/01/Codeforces-Educational-Codeforces-Round-151/
 ---
-
 [Contest link](https://codeforces.com/contest/1845)
 [Official editorial](https://codeforces.com/blog/entry/117791)
 

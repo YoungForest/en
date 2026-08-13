@@ -1,5 +1,6 @@
 ---
 title: "Business Cycles: History, Theory and Investment Reality"
+description: "Notes on the history and theory of business cycles, market psychology, and investment reality."
 date: 2025-05-26 22:15:29
 tags:
 - Reading
@@ -7,13 +8,17 @@ tags:
 - Economics
 categories:
 - Book Notes
+translations:
+  zh-CN: https://youngforest.github.io/2025/05/26/Business-cycles-history-theory-and-investment-reality/
+  en: https://youngforest.github.io/en/2025/05/26/Business-cycles-history-theory-and-investment-reality/
 ---
-
 The first 30% is especially interesting. Because it is ancient, full of stories and legend, and has relatively few figures, the economics is also easy for modern people to understand. After entering the post-Keynesian era, it becomes much harder. There are many figures, many schools, and many disagreements.
 
 The most important core fact about the free market is that a transaction simply cannot happen unless both sides benefit.
 
 Microeconomics is a science. Macroeconomics feels more like sociology. It is like the book I read before, [*Deep Simplicity: Chaos, Complexity and the Emergence of Life*](https://book.douban.com/subject/3370214/). Tiny changes in a system can bring incalculable effects.
+
+<!-- more -->
 
 It is much easier to predict economic activity by studying the stock market than to predict the stock market by studying the economy.
 

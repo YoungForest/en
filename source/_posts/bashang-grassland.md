@@ -5,8 +5,10 @@ tags:
 - Travel
 categories:
 - Diary
+translations:
+  zh-CN: https://youngforest.github.io/2018/10/07/bashang-grassland/
+  en: https://youngforest.github.io/en/2018/10/07/bashang-grassland/
 ---
-
 How should I enjoy the last holiday of 2018, National Day? I chose to join a group tour, Beijing Chuxin Outdoor, to go horseback riding on the Bashang Grassland in Fengning, Hebei. At 19:30 on the evening of September 30, we gathered at the south entrance of Huitong West Street and got on the bus. We headed north. By the time we reached a service area at the northernmost part of Beijing around 9:30, it already felt cold. When we arrived at a farmhouse lodging in Fengning County near midnight, the weather was already very cold. According to the host, it had just snowed the day before, so these two days were especially cold. Later, after National Day, when scrolling through Moments, I saw that people who went to deserts, Gobi, or volcanoes were all cold without exception. So in autumn, going to these places really requires careful thought and full preparation. Before departure, the tour leader repeatedly emphasized bringing thick clothes, preferably a down jacket. I have been afraid of cold since childhood, so I directly brought my thickest down jacket, a Canada Goose with 500g of down. It is said that this jacket can even handle Antarctica. I have never been to Antarctica, so I do not know whether that is true. But it had no problem resisting the temperature of an autumn grassland night.
 
 <!-- more -->

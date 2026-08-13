@@ -1,13 +1,16 @@
 ---
 title: "The Bitcoin Standard: The Decentralized Alternative to Central Banking"
+description: "Reading The Bitcoin Standard through scarcity, stock-to-flow, monetary history, and sound money."
 date: 2026-01-01 20:33:57
 tags:
 - Reading
 - The Bitcoin Standard
 categories:
 - Book Notes
+translations:
+  zh-CN: https://youngforest.github.io/2026/01/01/The-Bitcoin-Standard/
+  en: https://youngforest.github.io/en/2026/01/01/The-Bitcoin-Standard/
 ---
-
 ![Money and scarcity in The Bitcoin Standard](/en/images/ai/The-Bitcoin-Standard/en-hero.webp)
 
 [Douban link to the Taiwan translation](https://book.douban.com/subject/35332013/)
@@ -15,6 +18,8 @@ categories:
 Hard money: a high stock-to-flow ratio. Bitcoin satisfies this extremely well, and is instead a deflationary currency.
 
 Acceptance / liquidity.
+
+<!-- more -->
 
 The failure of the Hunt brothers' silver speculation in the late 1970s has been repeatedly mentioned in several books I have read recently: Ray Dalio's *Principles*, Paul Volcker's *Keeping At It*, and this book. The case keeps getting brought back out.
 

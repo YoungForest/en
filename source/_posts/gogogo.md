@@ -5,8 +5,10 @@ tags:
 - Life
 categories:
 - Diary
+translations:
+  zh-CN: https://youngforest.github.io/2016/11/09/gogogo/
+  en: https://youngforest.github.io/en/2016/11/09/gogogo/
 ---
-
 Recently, I experienced two things that made me feel the need to reflect on myself over the past few years.
 
 The first was that last night's compiler test 1 did not pass. More specifically, the correct program did not produce the correct result. The compiler test reminded me of the Computer Organization test two years ago, and then I thought a lot.
