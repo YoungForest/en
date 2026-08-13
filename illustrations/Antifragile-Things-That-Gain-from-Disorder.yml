@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/Antifragile-Things-That-Gain-from-Disorder.md
+context: Contrasts systems that gain from short stress and recovery with polished systems that hide accumulating fragility.
+assets:
+  - id: hero
+    file: review/editorial-comic-v1-pilot-candidates/en-Antifragile-Things-That-Gain-from-Disorder-hero.webp
+    placement: hero
+    alt: A storm strengthens a flexible garden while a protected polished monolith develops a deep hidden crack
+    composition: A resilient garden of trees and small structures is contrasted with one isolated fragile monolith.
+    review_status: candidate

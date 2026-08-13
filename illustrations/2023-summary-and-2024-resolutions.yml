@@ -1,0 +1,22 @@
+version: editorial-comic-v1
+post: source/_posts/2023-summary-and-2024-resolutions.md
+context: Reviews work, European life, travel, reading, and a major personal transition in 2023 while looking toward a balanced 2024.
+assets:
+  - id: hero
+    file: review/editorial-comic-v1-pilot-candidates/en-2023-summary-and-2024-resolutions-hero.webp
+    placement: hero
+    alt: Forest reflects at a winter desk on software work, European travel, books, and a new beginning as dawn reaches the street
+    composition: A glowing memory path moves from a quiet international apartment through work, travel, and books toward sunrise.
+    review_status: candidate
+  - id: personal-review
+    file: review/editorial-comic-v1-pilot-candidates/en-2023-summary-and-2024-resolutions-personal-review.webp
+    placement: before-2023-personal-review
+    alt: Forest leaves a narrow routine and follows a bright path into travel, home, books, and freedom to think
+    composition: A diagonal path connects the old office and home routine with an open European horizon.
+    review_status: candidate
+  - id: good-life-2024
+    file: review/editorial-comic-v1-pilot-candidates/en-2023-summary-and-2024-resolutions-good-life-2024.webp
+    placement: before-2024-outlook
+    alt: Forest stands in a courtyard connecting focused work, exercise, reflection, and a quiet home life
+    composition: Four connected rooms open to one calm courtyard, expressing a grounded and balanced good life.
+    review_status: candidate

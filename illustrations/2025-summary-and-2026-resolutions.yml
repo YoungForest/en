@@ -8,3 +8,15 @@ assets:
     alt: Forest looks from a desk of software, books, markets, and travel memories toward a train and a bright horizon
     composition: The recurring Forest character stands between a reflective desk and an open international journey.
     review_status: approved
+  - id: historical-process
+    file: review/editorial-comic-v1-pilot-candidates/en-2025-summary-and-2026-resolutions-historical-process.webp
+    placement: before-historical-process
+    alt: Blank paper, scarce metal tokens, asset blocks, and a glowing network converge as vast weather over a coastal city
+    composition: Interlocking winds, tides, and an AI constellation express systemic historical forces and uncertainty.
+    review_status: candidate
+  - id: reading
+    file: review/editorial-comic-v1-pilot-candidates/en-2025-summary-and-2026-resolutions-reading.webp
+    placement: before-reading
+    alt: A book-built observatory opens windows into history, economics, science, philosophy, and human journeys
+    composition: An intimate reading room and telescope open into a wide network of connected ideas.
+    review_status: candidate
