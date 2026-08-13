@@ -6,6 +6,9 @@ tags:
 - Windows
 categories:
 - Tech Sharing
+translations:
+  zh-CN: https://youngforest.github.io/2022/12/17/Windows-Dev-Improvement/
+  en: https://youngforest.github.io/en/2022/12/17/Windows-Dev-Improvement/
 ---
 ## Introduction
 

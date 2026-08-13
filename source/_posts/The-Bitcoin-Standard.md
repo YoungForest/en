@@ -11,7 +11,7 @@ translations:
   zh-CN: https://youngforest.github.io/2026/01/01/The-Bitcoin-Standard/
   en: https://youngforest.github.io/en/2026/01/01/The-Bitcoin-Standard/
 ---
-<figure class="post-hero">
+<figure class="editorial-illustration editorial-illustration--hero">
   <img src="/en/images/ai/The-Bitcoin-Standard/en-hero.webp" alt="Money and scarcity in The Bitcoin Standard" width="1536" height="864" decoding="async" fetchpriority="high">
 </figure>
 

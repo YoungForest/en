@@ -13,7 +13,9 @@ translations:
 ---
 Reposted from [my blog](https://youngforest.github.io/en/2025/12/27/2025-summary-and-2026-resolutions/)
 
-![A quiet desk for the 2025 year-end review](/en/images/ai/2025-summary-and-2026-resolutions/en-hero.webp)
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/2025-summary-and-2026-resolutions/en-hero.webp" alt="Forest looks from a desk of software, books, markets, and travel memories toward a train and a bright horizon" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
 
 <!-- more -->
 

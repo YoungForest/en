@@ -3,8 +3,8 @@ post: source/_posts/2025-summary-and-2026-resolutions.md
 context: Reviews software work, AI, investing, reading, and travel in 2025 while looking toward 2026.
 assets:
   - id: hero
-    file: review/editorial-comic-v1-samples/en-2025-review.webp
+    file: source/images/ai/2025-summary-and-2026-resolutions/en-hero.webp
     placement: hero
     alt: Forest looks from a desk of software, books, markets, and travel memories toward a train and a bright horizon
     composition: The recurring Forest character stands between a reflective desk and an open international journey.
-    review_status: candidate
+    review_status: approved
