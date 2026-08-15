@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/Little-history-of-world.md
+context: A humane world history for children and adults, centered on reason, dignity, freedom, memory, and the limits of perspective.
+assets:
+  - id: hero
+    file: review/editorial-comic-v1-reading-batch/en-Little-history-of-world-hero.webp
+    placement: hero
+    alt: A library cabinet unfolds layered scenes from cave hearths and ancient cities to printing, industry, and a green modern city
+    composition: A child and older reader explore a paper theater of eras while distant paths continue beyond the cabinet's European frame.
+    review_status: candidate

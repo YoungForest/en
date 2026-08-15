@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/Why-Nations-fail.md
+context: Explores institutions, critical junctures, incentives, creative destruction, and the divergence of prosperity and poverty.
+assets:
+  - id: hero
+    file: review/editorial-comic-v1-reading-batch/en-Why-Nations-fail-hero.webp
+    placement: hero
+    alt: One river divides an open port of shared workshops from a guarded canal feeding a fragile leaning tower
+    composition: Two civic systems emerge from one crossroads, contrasting open exchange and invention with guarded extraction and brittle growth.
+    review_status: candidate
