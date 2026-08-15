@@ -11,7 +11,9 @@ translations:
   zh-CN: https://youngforest.github.io/2024/08/24/Antifragile-Things-That-Gain-from-Disorder/
   en: https://youngforest.github.io/en/2024/08/24/Antifragile-Things-That-Gain-from-Disorder/
 ---
-![Stress and resilience in Antifragile](/en/images/ai/Antifragile-Things-That-Gain-from-Disorder/en-hero.webp)
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Antifragile-Things-That-Gain-from-Disorder/en-hero.webp" alt="A storm strengthens a flexible garden while a protected polished monolith develops a deep hidden crack" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
 
 A feast of conservatism, liberalism, and optimism.
 

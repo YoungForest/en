@@ -3,20 +3,20 @@ post: source/_posts/2024-summary-and-2025-resolutions.md
 context: Reflects on ten years of programming craft and a steady 2024 shaped by long-term thinking.
 assets:
   - id: hero
-    file: review/editorial-comic-v1-pilot-candidates/en-2024-summary-and-2025-resolutions-hero.webp
+    file: source/images/ai/2024-summary-and-2025-resolutions/en-hero.webp
     placement: hero
     alt: Forest looks across blank notebooks that form ten patient steps from a quiet room toward an open horizon
     composition: A low panoramic view turns notebooks and simple hardware into stepping stones toward the future.
-    review_status: candidate
+    review_status: approved
   - id: ten-years-programming
-    file: review/editorial-comic-v1-pilot-candidates/en-2024-summary-and-2025-resolutions-ten-years-programming.webp
+    file: source/images/ai/2024-summary-and-2025-resolutions/en-ten-years-programming.webp
     placement: before-ten-years-programming
     alt: Forest stands at the clear end of a long workbench where years of complex gadgets give way to simple tools
     composition: A workbench moves from experimental clutter to a few sturdy tools and an open path.
-    review_status: candidate
+    review_status: approved
   - id: personal-review
-    file: review/editorial-comic-v1-pilot-candidates/en-2024-summary-and-2025-resolutions-personal-review.webp
+    file: source/images/ai/2024-summary-and-2025-resolutions/en-personal-review.webp
     placement: before-2024-personal-review
     alt: Forest carries home, books, health, investment, and travel at an unhurried pace beside a tortoise and resting hare
     composition: A balanced tray and coastal path express going far rather than fast.
-    review_status: candidate
+    review_status: approved

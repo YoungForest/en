@@ -11,12 +11,16 @@ translations:
   zh-CN: https://youngforest.github.io/2021/03/22/investment/
   en: https://youngforest.github.io/en/2021/03/22/investment/
 ---
-![The beginning of a personal investment story](/en/images/ai/investment/en-hero.webp)
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/investment/en-hero.webp" alt="Forest rows from a past investment storm toward calmer water, a patient grove, and a distant lighthouse" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
 
 Sharing my investment story.
 Originally published on [Forest's Blog](https://youngforest.github.io/en/2021/03/22/investment/).
 
-![First cautious steps into investing](/en/images/ai/investment/en-first-steps.webp)
+<figure class="editorial-illustration">
+  <img src="/en/images/ai/investment/en-first-steps.webp" alt="A childhood token planter grows through the seasons until adult Forest discovers that his old key no longer fits" width="1536" height="864" loading="lazy" decoding="async">
+</figure>
 
 ## First Steps
 
@@ -29,7 +33,9 @@ Then I began living as a Beipiao in Beijing, only going home once every half yea
 
 This financial-management experience counts as a failed lesson, since I could not even withdraw the principal.
 
-![Trying asset allocation again with more structure](/en/images/ai/investment/en-trying-again.webp)
+<figure class="editorial-illustration">
+  <img src="/en/images/ai/investment/en-trying-again.webp" alt="Forest moves from spilling one unstable pile of tokens to several low baskets beside a slow-growing grove" width="1536" height="864" loading="lazy" decoding="async">
+</figure>
 
 ## Trying Again
 

@@ -13,7 +13,9 @@ translations:
 ---
 Reposted from [my blog](https://youngforest.github.io/en/2023/12/23/2023-summary-and-2024-resolutions/)
 
-![A European desk for the 2023 year-end review](/en/images/ai/2023-summary-and-2024-resolutions/en-hero.webp)
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/2023-summary-and-2024-resolutions/en-hero.webp" alt="Forest reflects at a winter desk on software work, European travel, books, and a new beginning as dawn reaches the street" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
 
 The Christmas holiday is approaching, and the Microsoft Ireland office has long been filled with a festive atmosphere. Decorations everywhere, Christmas trees and Santa Claus ornaments: Christmas really is Ireland's biggest holiday. Ireland gives two days off for Christmas, December 25 and 26, one more day than the US. More people, especially colleagues from Christian countries, take annual leave around the holiday to go home and spend it with family. So December is a relatively relaxed working period, and everyone is quite laid-back.
 
@@ -36,7 +38,9 @@ Milestone reviews:
 
 These important blog posts are all under the [Diary category](https://youngforest.github.io/en/categories/Diary/) on my blog.
 
-![A year of work, travel, and life in Europe](/en/images/ai/2023-summary-and-2024-resolutions/en-personal-review.webp)
+<figure class="editorial-illustration">
+  <img src="/en/images/ai/2023-summary-and-2024-resolutions/en-personal-review.webp" alt="Forest leaves a narrow routine and follows a bright path into travel, home, books, and freedom to think" width="1536" height="864" loading="lazy" decoding="async">
+</figure>
 
 ## 2023 Personal Review
 
@@ -136,7 +140,9 @@ After "setting things right," the situation improved somewhat, but the problem w
 
 Since this year, because of the change in environment, I have gained more freedom to think. Combined with my long-standing habit of loving learning, the effect has been astonishing, sometimes even frightening to myself.
 
-![A peaceful outlook for a better life in 2024](/en/images/ai/2023-summary-and-2024-resolutions/en-good-life-2024.webp)
+<figure class="editorial-illustration">
+  <img src="/en/images/ai/2023-summary-and-2024-resolutions/en-good-life-2024.webp" alt="Forest stands in a courtyard connecting focused work, exercise, reflection, and a quiet home life" width="1536" height="864" loading="lazy" decoding="async">
+</figure>
 
 ## Yearning for a Good Life in 2024
 

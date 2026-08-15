@@ -3,20 +3,20 @@ post: source/_posts/investment.md
 context: A personal investment story moving from childhood savings and tempting recommendations toward diversification and long-term patience.
 assets:
   - id: hero
-    file: review/editorial-comic-v1-pilot-candidates/en-investment-hero.webp
+    file: source/images/ai/investment/en-hero.webp
     placement: hero
     alt: Forest rows from a past investment storm toward calmer water, a patient grove, and a distant lighthouse
     composition: A small sturdy boat contrasts turbulent shortcuts with a calm long-term destination.
-    review_status: candidate
+    review_status: approved
   - id: first-steps
-    file: review/editorial-comic-v1-pilot-candidates/en-investment-first-steps.webp
+    file: source/images/ai/investment/en-first-steps.webp
     placement: before-first-steps
     alt: A childhood token planter grows through the seasons until adult Forest discovers that his old key no longer fits
     composition: A circular sequence of seasons turns an inaccessible childhood deposit into a humorous lesson.
-    review_status: candidate
+    review_status: approved
   - id: trying-again
-    file: review/editorial-comic-v1-pilot-candidates/en-investment-trying-again.webp
+    file: source/images/ai/investment/en-trying-again.webp
     placement: before-trying-again
     alt: Forest moves from spilling one unstable pile of tokens to several low baskets beside a slow-growing grove
     composition: A diagonal before-and-after scene contrasts concentration and haste with diversification and patience.
-    review_status: candidate
+    review_status: approved

@@ -40,7 +40,9 @@ These important posts are all under the [Diary category](https://youngforest.git
 
 ## 2025 Review
 
-![Markets, currencies, and AI in the historical process](/en/images/ai/2025-summary-and-2026-resolutions/en-historical-process.webp)
+<figure class="editorial-illustration">
+  <img src="/en/images/ai/2025-summary-and-2026-resolutions/en-historical-process.webp" alt="Blank paper, scarce metal tokens, asset blocks, and a glowing network converge as vast weather over a coastal city" width="1536" height="864" loading="lazy" decoding="async">
+</figure>
 
 ## The Historical Process
 
@@ -82,7 +84,9 @@ Philosophical discussions about AI are also becoming more and more real. From th
 
 I also do not think humanity will go extinct or be replaced. Darwin's theory of evolution says survival belongs to the fittest, not the smartest. In history, among the descendants of Homo erectus, only Homo sapiens remained; other human species either went extinct on their own or disappeared in competition with Homo sapiens. But humans shared an ecological niche with close relatives, and that was indeed a competitive relationship. The relationship between AI and humans is not like that. It is more cooperative. The modern world is also not a natural state, but a civilized state, and cannot be compared directly with prehistory.
 
-![Books and travel notes on a reflective desk](/en/images/ai/2025-summary-and-2026-resolutions/en-reading.webp)
+<figure class="editorial-illustration">
+  <img src="/en/images/ai/2025-summary-and-2026-resolutions/en-reading.webp" alt="A book-built observatory opens windows into history, economics, science, philosophy, and human journeys" width="1536" height="864" loading="lazy" decoding="async">
+</figure>
 
 ## Reading Ten Thousand Books
 

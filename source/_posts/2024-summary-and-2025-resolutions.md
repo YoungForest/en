@@ -13,7 +13,9 @@ translations:
 ---
 Reposted from [my blog](https://youngforest.github.io/en/2024/12/28/2024-summary-and-2025-resolutions/)
 
-![A programmer's desk for the 2024 year-end review](/en/images/ai/2024-summary-and-2025-resolutions/en-hero.webp)
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/2024-summary-and-2025-resolutions/en-hero.webp" alt="Forest looks across blank notebooks that form ten patient steps from a quiet room toward an open horizon" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
 
 Previous year-end reviews:
 
@@ -33,7 +35,9 @@ Milestone reviews:
 
 These important posts are all under the [Diary category](https://youngforest.github.io/en/categories/Diary/) on my blog.
 
-![Ten years of programming craft](/en/images/ai/2024-summary-and-2025-resolutions/en-ten-years-programming.webp)
+<figure class="editorial-illustration">
+  <img src="/en/images/ai/2024-summary-and-2025-resolutions/en-ten-years-programming.webp" alt="Forest stands at the clear end of a long workbench where years of complex gadgets give way to simple tools" width="1536" height="864" loading="lazy" decoding="async">
+</figure>
 
 ## Ten Years of Programming Experience
 
@@ -49,7 +53,9 @@ It is truly as Jin Yong wrote: Dugu Qiubai began with the "sharp green steel swo
 
 There is another song I also like: "You Were Once a Youth," the theme song of the film *The Ark of Mr. Chow*. Every lyric really sings my heart, from past romanticism and idealism to today's realism, nostalgia, and longing. The wheel of history rolls forward. Fate has pushed me along unimaginable roads toward unknown paths. Although I make New Year outlooks every year, once the time scale stretches to ten years, life cannot be predicted and should not be limited. My current life was unimaginable to me ten years ago, and today's me cannot imagine life ten years from now. People often overestimate the short-term progress of themselves and the world, but underestimate long-term progress. This is the terror of exponential growth. I hope I will always remain a youth, and continue to keep curiosity, kindness, and optimism toward the world.
 
-![A personal review of home, books, travel, and work](/en/images/ai/2024-summary-and-2025-resolutions/en-personal-review.webp)
+<figure class="editorial-illustration">
+  <img src="/en/images/ai/2024-summary-and-2025-resolutions/en-personal-review.webp" alt="Forest carries home, books, health, investment, and travel at an unhurried pace beside a tortoise and resting hare" width="1536" height="864" loading="lazy" decoding="async">
+</figure>
 
 ## 2024 Personal Review
 
