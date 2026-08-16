@@ -3,14 +3,14 @@ post: source/_posts/Tencent-WeChat-backend-intern-interview.md
 context: Records an unexpectedly long backend internship interview with surprise calls, technical breadth, process friction, team changes, and a location mismatch.
 assets:
   - id: hero
-    file: review/editorial-comic-v1-career-tech-batch/en-Tencent-WeChat-backend-intern-interview-hero.webp
+    file: source/images/ai/Tencent-WeChat-backend-intern-interview/en-hero.webp
     placement: hero
     alt: A late telephone call unfolds Forest's kitchen wall into a long row of booths filled with networks, cards, drawers, pointers, and blocks
     composition: An accordion corridor of physical challenges conveys surprise, readiness, technical breadth, and many rounds without corporate imagery.
-    review_status: candidate
+    review_status: approved
   - id: interview-marathon
-    file: review/editorial-comic-v1-career-tech-batch/en-Tencent-WeChat-backend-intern-interview-interview-marathon.webp
+    file: source/images/ai/Tencent-WeChat-backend-intern-interview/en-interview-marathon.webp
     placement: before-eighth-round
     alt: Forest relays a blank notebook through repeated interview tables, mismatched paper rollers, a revolving door, and a blocked city fork
     composition: A carnival relay course expresses repetition, scheduling chaos, live-coding friction, changing teams, and location mismatch.
-    review_status: candidate
+    review_status: approved

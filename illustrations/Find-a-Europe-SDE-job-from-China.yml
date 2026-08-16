@@ -3,20 +3,20 @@ post: source/_posts/Find-a-Europe-SDE-job-from-China.md
 context: A first-person account of applying from Beijing to European software roles, preparing for interviews, relocating, and weighing life in Ireland.
 assets:
   - id: hero
-    file: review/editorial-comic-v1-career-tech-batch/en-Find-a-Europe-SDE-job-from-China-hero.webp
+    file: source/images/ai/Find-a-Europe-SDE-job-from-China/en-hero.webp
     placement: hero
     alt: Forest moves from a winter study desk through trains, an airport, and paper applications into a wet Irish coastal town
     composition: A long desk connects preparation, applications, travel, two blank offers, and arrival in an independent night-to-dawn sequence.
-    review_status: candidate
+    review_status: approved
   - id: interview-path
-    file: review/editorial-comic-v1-career-tech-batch/en-Find-a-Europe-SDE-job-from-China-interview-path.webp
+    file: source/images/ai/Find-a-Europe-SDE-job-from-China/en-interview-path.webp
     placement: before-interview-preparation
     alt: Forest switches among puzzle, design, systems, and story tracks while frozen buffers block most routes and two station lamps remain lit
     composition: A railway switching yard expresses interviews, hiring freezes, timing, practice, persistence, luck, and two offers.
-    review_status: candidate
+    review_status: approved
   - id: ireland-reality
-    file: review/editorial-comic-v1-career-tech-batch/en-Find-a-Europe-SDE-job-from-China-ireland-reality.webp
+    file: source/images/ai/Find-a-Europe-SDE-job-from-China/en-ireland-reality.webp
     placement: before-ireland
     alt: Forest carries a small plant through warm work and family rooms, crowded buses, rain, housing pressure, and a quiet green coast
     composition: A rainy neighborhood cutaway balances career and community with weather, transport, airport access, and rent.
-    review_status: candidate
+    review_status: approved

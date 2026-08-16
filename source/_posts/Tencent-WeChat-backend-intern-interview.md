@@ -19,6 +19,12 @@ Last week HR contacted me to ask about my preferred work city, but did not sched
 
 Last night at 8:30, I suddenly received a call from Shenzhen, Guangdong, asking whether it was convenient, and the interview started directly. Surprise, excitement, all at once. The official interview website was also not very good and had quite a few issues. For example, during live coding, the content on the other side's website could not refresh in time.
 
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Tencent-WeChat-backend-intern-interview/en-hero.webp" alt="A late telephone call unfolds Forest's kitchen wall into a long row of booths filled with networks, cards, drawers, pointers, and blocks" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 ## Computer Science Fundamentals
 
 ### Distributed Systems, Deep Learning
@@ -319,6 +325,10 @@ I answered honestly: graduate grades are not important.
 
 The interviewer had also studied at Beihang in earlier years, and at the end we chatted a bit about the current state of my lab.
 
+<figure class="editorial-illustration">
+  <img src="/en/images/ai/Tencent-WeChat-backend-intern-interview/en-interview-marathon.webp" alt="Forest relays a blank notebook through repeated interview tables, mismatched paper rollers, a revolving door, and a blocked city fork" width="1536" height="864" loading="lazy" decoding="async">
+</figure>
+
 ## Eighth Round: Another Mysterious Interview, Bad Review
 
 time: 2020-04-13 12:59:03
@@ -450,4 +460,3 @@ int main() {
     return 0;
 }
 ```
-

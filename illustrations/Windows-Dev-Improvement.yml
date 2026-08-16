@@ -3,8 +3,8 @@ post: source/_posts/Windows-Dev-Improvement.md
 context: Improves a Windows development workflow through shell completion, command history, package management, prompt customization, and directory jumping.
 assets:
   - id: hero
-    file: review/editorial-comic-v1-career-tech-batch/en-Windows-Dev-Improvement-hero.webp
+    file: source/images/ai/Windows-Dev-Improvement/en-hero.webp
     placement: hero
     alt: A tangled railway signal room becomes a clean tool library of blank cards, routed crates, adjustable lamps, and a compass-guided lift
     composition: Physical workshop metaphors contrast an overloaded legacy environment with a calm modular developer toolchain.
-    review_status: candidate
+    review_status: approved

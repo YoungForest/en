@@ -14,6 +14,12 @@ translations:
 
 As a former Mac user, transitioning to Windows 11 was initially challenging for me. I found myself missing the ease of use and convenience of MacOS, and I struggled to adapt to the different development environment. However, with some effort and exploration, I discovered some tools and techniques that have helped me improve my experience as a developer in Windows. I know someone has to use Windows as his dev machine, like Microsoft employees. In this article, I want to share my experience and offer some tips and resources to help you enhance your Windows development environment, specifically with regards to shell improvements.
 
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Windows-Dev-Improvement/en-hero.webp" alt="A tangled railway signal room becomes a clean tool library of blank cards, routed crates, adjustable lamps, and a compass-guided lift" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 ## Clink
 
 Clink is a powerful tool that enhances the functionality of the Windows command prompt. It provides several features that can help you be more productive and efficient when working with the command line.

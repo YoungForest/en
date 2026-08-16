@@ -24,6 +24,10 @@ Yuanzi suddenly became very interested in recommendation systems and "took reven
 
     How about I give you an assignment? Since you have been researching recommendation systems recently, why don't you look up some materials and see how the recommendation systems of today's major content apps are built, what ideas they use, and organize it into an article?
 
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/recommender-systems-of-popular-apps/en-hero.webp" alt="A mechanical gardener multiplies the reader's chosen flower inside a narrowing mirrored greenhouse while a diverse garden waits outside" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
 <!-- more -->
 
 This pushed me to organize my internship experience from the past two months and read a large amount of public material.

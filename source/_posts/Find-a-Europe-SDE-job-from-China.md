@@ -15,6 +15,12 @@ Reposted from [my blog](https://youngforest.github.io/en/2022/12/09/Find-a-Europ
 
 This year, according to plan, I applied from China to programmer positions in Europe. Although I happened to encounter a macroeconomic downturn, with companies freezing hiring or even laying off people one after another, I was lucky enough to still receive two offers and successfully onboard in November, completing the physical move. Although there were many bumps along the way, looking back, everything can be considered smooth. On the road of "running," I received help from many experienced group friends. Therefore I wrote this blog post to summarize my experience and lessons, for the convenience of those who come later.
 
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Find-a-Europe-SDE-job-from-China/en-hero.webp" alt="Forest moves from a winter study desk through trains, an airport, and paper applications into a wet Irish coastal town" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 ![Ran away](/images/润了.png)
 
 ## Background
@@ -72,6 +78,10 @@ First, small-company and big-company interview modes and content differ greatly,
 Second, because I had only one year of work experience, I received very few interviews from small companies. After all, relocating someone from overseas takes longer to onboard and is not cheap. They prefer hiring Senior people.
 
 Finally, because I encountered this year's harsh macro environment, applying to big companies a few months later was deadly. By June and July, news of Hire Freeze or Layoff arrived one after another. Big companies do value ability, but luck is also very important. If I had been later, it would have been even worse. The Microsoft team whose offer I finally accepted was not the team I interviewed with at first. The first team had Hire Freeze. Fortunately, the team I joined was very foundational and important, and even against the background of company-wide Hire Freeze, it still managed to secure a small amount of Head Count.
+
+<figure class="editorial-illustration">
+  <img src="/en/images/ai/Find-a-Europe-SDE-job-from-China/en-interview-path.webp" alt="Forest switches among puzzle, design, systems, and story tracks while frozen buffers block most routes and two station lamps remain lit" width="1536" height="864" loading="lazy" decoding="async">
+</figure>
 
 ## Interview Preparation
 
@@ -150,6 +160,10 @@ Podcasts:
 YouTube:
 
 - [DanCroitor](https://www.youtube.com/watch?v=IyPJFHFUpbQ&ab_channel=DanCroitor)
+
+<figure class="editorial-illustration">
+  <img src="/en/images/ai/Find-a-Europe-SDE-job-from-China/en-ireland-reality.webp" alt="Forest carries a small plant through warm work and family rooms, crowded buses, rain, housing pressure, and a quiet green coast" width="1536" height="864" loading="lazy" decoding="async">
+</figure>
 
 ## How Is Ireland?
 
