@@ -18,6 +18,10 @@ The most important core fact about the free market is that a transaction simply 
 
 Microeconomics is a science. Macroeconomics feels more like sociology. It is like the book I read before, [*Deep Simplicity: Chaos, Complexity and the Emergence of Life*](https://book.douban.com/subject/3370214/). Tiny changes in a system can bring incalculable effects.
 
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Business-cycles-history-theory-and-investment-reality/en-hero.webp" alt="A coastal city turns through four market seasons while crowds chase bubbles and a quiet observer measures the real tide" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
 <!-- more -->
 
 It is much easier to predict economic activity by studying the stock market than to predict the stock market by studying the economy.

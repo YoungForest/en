@@ -3,8 +3,8 @@ post: source/_posts/The-World-I-see.md
 context: Connects a scientist's memoir and immigrant journey with algorithms, data, compute, curiosity, and patient scientific progress.
 assets:
   - id: hero
-    file: review/editorial-comic-v1-reading-batch/en-The-World-I-see-hero.webp
+    file: source/images/ai/The-World-I-see/en-hero.webp
     placement: hero
     alt: A journey from an immigrant family table across mountains to a university lab, with blank image cards becoming a constellation network
     composition: A diagonal migration and discovery path links family, a grocery, a camera prism, travel, a campus laboratory, and a space museum without depicting a real scientist.
-    review_status: candidate
+    review_status: approved

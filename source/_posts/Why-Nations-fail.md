@@ -13,6 +13,10 @@ translations:
 ---
 Be sure to read the English edition or the Taiwanese translation; those who know, know. Although China is a classic case of a historically failed state and of a country where extractive institutions produced short-lived growth, the book actually does not spend that much space on it. But as a Chinese person, the cases from other countries are also worth studying, and I did not know much about them before, especially many cases from Africa and Latin America. Still, everywhere in my mind I was verifying China's failure. Comparing the socialist education I received from the beginning, which was terrifying brainwashing plus rewritten history and politics, with the various history, economics, and political books I read after becoming an adult, I strongly agree with the book's arguments. I myself am also voting with my feet. If time is limited, pay attention to these two sections.
 
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Why-Nations-fail/en-hero.webp" alt="One river divides an open port of shared workshops from a guarded canal feeding a fragile leaning tower" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
 <!-- more -->
 
 Chapter 13, "Why Nations Fail Today", section 5, "The New Absolutism"

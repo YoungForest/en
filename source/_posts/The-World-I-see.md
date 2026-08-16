@@ -17,6 +17,10 @@ When it first came out, I tried reading the original English edition. I found it
 
 The National Air and Space Museum, which is repeatedly mentioned in the book, is also a place I long to visit. Unfortunately, I did not go there the last time I went to DC.
 
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/The-World-I-see/en-hero.webp" alt="A journey from an immigrant family table across mountains to a university lab, with blank image cards becoming a constellation network" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
 <!-- more -->
 
 Algorithms, data, and compute. These are the three foundations of modern AI. Fei-Fei Li's contribution to data alone is enough to secure her name and status. Many algorithms had already been prepared in advance, especially for computer vision. They were already ready in the 1990s. Compute only became ready in the last ten-plus years. I will read the Nvidia biography next year: https://book.douban.com/subject/37210122/

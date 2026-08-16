@@ -3,8 +3,8 @@ post: source/_posts/Business-cycles-history-theory-and-investment-reality.md
 context: Connects business-cycle history and macro uncertainty with market psychology, crowd behavior, and investment reality.
 assets:
   - id: hero
-    file: review/editorial-comic-v1-reading-batch/en-Business-cycles-history-theory-and-investment-reality-hero.webp
+    file: source/images/ai/Business-cycles-history-theory-and-investment-reality/en-hero.webp
     placement: hero
     alt: A coastal city turns through four market seasons while crowds chase bubbles and a quiet observer measures the real tide
     composition: A seasonal mechanical theater contrasts booms and busts while copper pipes pulse and a fortune teller points the wrong way.
-    review_status: candidate
+    review_status: approved
