@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/recommender-systems-of-popular-apps.md
+context: Explains recommendation feedback loops, engagement optimization, filter bubbles, and deliberate exposure to diverse ideas.
+assets:
+  - id: hero
+    file: review/editorial-comic-v1-career-tech-batch/en-recommender-systems-of-popular-apps-hero.webp
+    placement: hero
+    alt: A mechanical gardener multiplies the reader's chosen flower inside a narrowing mirrored greenhouse while a diverse garden waits outside
+    composition: Repeated plants and mirrored walls embody reinforcement, contrasted with a neglected seed and an open library garden.
+    review_status: candidate
