@@ -1,0 +1,16 @@
+version: editorial-comic-v1
+post: source/_posts/my-4-years-college.md
+context: Looks back on computer-science foundations, competitions, self-directed tinkering, internships, and uncertainty about direction.
+assets:
+  - id: hero
+    file: review/editorial-comic-v1-growth-life-batch/en-my-4-years-college-hero.webp
+    placement: hero
+    alt: A younger Forest follows an accordion campus map that adds mathematics, computer systems, a small web workshop, mentors, and an unfinished bridge
+    composition: Four college stages independently show strong foundations accumulating while the eventual direction remains open.
+    review_status: candidate
+  - id: career-crossroads
+    file: review/editorial-comic-v1-growth-life-batch/en-my-4-years-college-career-crossroads.webp
+    placement: before-career-choice
+    alt: Forest rebuilds a railway junction from broad foundation tools while specialized routes lead toward research, engineering, algorithms, and an overseas ferry
+    composition: A switching yard replaces the game-class metaphor with a distinct English composition about preparation and choosing a path.
+    review_status: candidate

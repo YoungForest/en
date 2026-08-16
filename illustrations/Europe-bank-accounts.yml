@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/Europe-bank-accounts.md
+context: Explains practical tradeoffs among cash, credit cards, traditional banks, online banks, and everyday payments during a European exchange.
+assets:
+  - id: hero
+    file: review/editorial-comic-v1-growth-life-batch/en-Europe-bank-accounts-hero.webp
+    placement: hero
+    alt: Forest routes reserves and daily spending through a Belgian apartment using plain cash, unbranded cards, jars, rent, groceries, and travel
+    composition: Household plumbing visualizes the payment ecosystem without endorsing a product or imitating a financial interface.
+    review_status: candidate
