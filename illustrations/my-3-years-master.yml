@@ -3,14 +3,14 @@ post: source/_posts/my-3-years-master.md
 context: Reflects on graduate-school setbacks, a European exchange, internships, graduation, and planning for professional life.
 assets:
   - id: hero
-    file: review/editorial-comic-v1-growth-life-batch/en-my-3-years-master-hero.webp
+    file: source/images/ai/my-3-years-master/en-hero.webp
     placement: hero
     alt: Forest crosses a folding master's journey of laboratory revisions, European exchange, remote work, graduation, and a professional sunrise
     composition: An accordion worktable independently connects setbacks, exchange, practical engineering, graduation, and the first career step.
-    review_status: candidate
+    review_status: approved
   - id: future-compass
-    file: review/editorial-comic-v1-growth-life-batch/en-my-3-years-master-future-compass.webp
+    file: source/images/ai/my-3-years-master/en-future-compass.webp
     placement: before-future-aspirations
     alt: Forest repairs a lighthouse workshop powered by reliable teamwork, careful saving, engineering practice, communication, and exercise
     composition: A harbor workshop turns the article's professional, financial, language, and health goals into coordinated mechanisms.
-    review_status: candidate
+    review_status: approved

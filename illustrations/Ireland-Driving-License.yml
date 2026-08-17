@@ -3,8 +3,8 @@ post: source/_posts/Ireland-Driving-License.md
 context: Records the Irish driving-licence journey from theory and eyesight checks through permits, lessons, testing, and the full licence.
 assets:
   - id: hero
-    file: review/editorial-comic-v1-growth-life-batch/en-Ireland-Driving-License-hero.webp
+    file: source/images/ai/Ireland-Driving-License/en-hero.webp
     placement: hero
     alt: Forest circles an Irish coastal road through abstract theory tiles, an eyesight lens, a blank permit envelope, supervised practice, a road test, and a key
     composition: An independent circular-road metaphor conveys the process without copying official documents, signs, or interfaces.
-    review_status: candidate
+    review_status: approved

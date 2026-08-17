@@ -14,6 +14,12 @@ When I graduated from college, I wrote a four-year review: [Four-Year College Re
 
 Although I went through half a year of delayed graduation, in the end I still graduated successfully without any real danger. Last week I completed my graduation trip to Wuhan, and over the weekend I returned to Beijing to move and prepare for onboarding. With bright expectations for the future, I feel full of ambition.
 
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/my-3-years-master/en-hero.webp" alt="Forest crosses a folding master's journey of laboratory revisions, European exchange, remote work, graduation, and a professional sunrise" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 ## Three Years of Graduate School
 
 Three years ago, because my undergraduate grades were excellent, I eventually took the seemingly glamorous path of guaranteed graduate-school admission.
@@ -39,6 +45,10 @@ In the first semester of my second year, I went to Belgium as an exchange studen
 During the exchange, I met my girlfriend, got to know her, and eventually fell in love. That also counts as a wonderful fate.
 
 During the summer after my second year, I passed Amazon's remote internship and then smoothly received an Amazon offer. This slightly made up for the regret of being unable to go to Google because of the sudden pandemic.
+
+<figure class="editorial-illustration">
+  <img src="/en/images/ai/my-3-years-master/en-future-compass.webp" alt="Forest repairs a lighthouse workshop powered by reliable teamwork, careful saving, engineering practice, communication, and exercise" width="1536" height="864" loading="lazy" decoding="async">
+</figure>
 
 ## Looking Toward the Future
 

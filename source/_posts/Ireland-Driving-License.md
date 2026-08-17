@@ -17,6 +17,10 @@ Unlike in China, where you sign up for a driving school, pay once, and get a com
 
 This blog post records the application process and guide, for the convenience of Chinese people in Ireland.
 
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Ireland-Driving-License/en-hero.webp" alt="Forest circles an Irish coastal road through abstract theory tiles, an eyesight lens, a blank permit envelope, supervised practice, a road test, and a key" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
 <!-- more -->
 
 ## Using a Chinese Driving License in Ireland

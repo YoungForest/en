@@ -14,6 +14,12 @@ translations:
 ---
 This semester I was lucky enough to come to Belgium as an exchange student for one semester. I ran into quite a few difficulties around "money", and gradually worked through them with help from classmates. Here I want to thank the friends who helped me, and also share my own experience so that more people can benefit from it.
 
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Europe-bank-accounts/en-hero.webp" alt="Forest routes reserves and daily spending through a Belgian apartment using plain cash, unbranded cards, jars, rent, groceries, and travel" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 In today's globalized world, when you come to Europe, how to spend money conveniently and save money at the same time is something every international student cares about. Spending money in Europe can basically be divided into two categories: cash and card payment. The two complement each other. It is not like in China, where one phone can take you everywhere.
 
 My own experience was: I exchanged 700 euros in cash in China and brought it with me, and I also brought a China Merchants Bank Visa all-currency credit card. Because the visa application required proof of funds, I had also transferred more than 3,000 euros to the school's account in advance. After that, the school returned 666 euros to my account every month as living expenses. After arriving, I opened an ING Green Account, tried online banks including Revolut, Curve, Bunq, and Monese, and set up Google Pay and PayPal. After traveling around Europe independently and combining different payment methods, I found a way to make spending both convenient and economical.
