@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
-<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 5.4.2">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 8.1.2">
 
   <link rel="apple-touch-icon" sizes="180x180" href="/en/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/en/images/favicon-32x32-next.png">
@@ -16,22 +16,21 @@
 
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"youngforest.github.io","root":"/en/","images":"/en/images","scheme":"Mist","darkmode":false,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/en/js/config.js" defer></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"youngforest.github.io","root":"/en/","images":"/en/images","scheme":"Mist","darkmode":false,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"buttons","active":"disqus","storage":true,"lazyload":true,"nav":null,"activeClass":"disqus"},"stickytabs":false,"motion":{"enable":false,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/en/search.json","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/en/js/config.js" defer></script>
 
-    <meta name="description" content="1221. Split a String in Balanced Strings Understand the definition of balanced, and you will find that we only need to find positions where the counts of L and R are equal.  Time complexity: O(N), Spa">
+    <meta name="description" content="1221. Split a String in Balanced Strings Understand the definition of balanced, and you will find that we only need to find positions where the counts of L and R are equal. Time complexity: O(N), Spac">
 <meta property="og:type" content="article">
 <meta property="og:title" content="LeetCode weekly contest 158">
 <meta property="og:url" content="https://youngforest.github.io/en/2019/10/14/LeetCode-weekly-contest-158/index.html">
 <meta property="og:site_name" content="YoungForest&#39;s blog">
-<meta property="og:description" content="1221. Split a String in Balanced Strings Understand the definition of balanced, and you will find that we only need to find positions where the counts of L and R are equal.  Time complexity: O(N), Spa">
+<meta property="og:description" content="1221. Split a String in Balanced Strings Understand the definition of balanced, and you will find that we only need to find positions where the counts of L and R are equal. Time complexity: O(N), Spac">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2019-10-14T02:09:33.000Z">
-<meta property="article:modified_time" content="2026-06-19T13:56:25.279Z">
+<meta property="article:modified_time" content="2026-08-17T11:12:58.316Z">
 <meta property="article:author" content="YoungForest">
 <meta property="article:tag" content="Competitive Programming">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 
 
 <link rel="canonical" href="https://youngforest.github.io/en/2019/10/14/LeetCode-weekly-contest-158/">
@@ -42,9 +41,6 @@
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>LeetCode weekly contest 158 | YoungForest's blog</title>
   
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-88350169-1"></script>
-  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"UA-88350169-1","only_pageview":false,"measure_protocol_api_secret":null}</script>
-  <script src="/en/js/third-party/analytics/google-analytics.js" defer></script>
 
 
 
@@ -55,7 +51,16 @@
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
-<script src="/en/js/utils.js" defer></script><script src="/en/js/motion.js" defer></script><script src="/en/js/sidebar.js" defer></script><script src="/en/js/next-boot.js" defer></script>
+<script src="/en/js/utils.js" defer></script><script src="/en/js/sidebar.js" defer></script><script src="/en/js/next-boot.js" defer></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/en/js/third-party/search/local-search.js" defer></script>
+
+
+
+
+
+
 
   
 
@@ -63,20 +68,23 @@
 
 
 
-
+  
+    <link rel="alternate" hreflang="zh-CN" href="https://youngforest.github.io/2019/10/14/LeetCode-weekly-contest-158/">
+    <link rel="alternate" hreflang="x-default" href="https://youngforest.github.io/2019/10/14/LeetCode-weekly-contest-158/">
+  
+  
+    <link rel="alternate" hreflang="en" href="https://youngforest.github.io/en/2019/10/14/LeetCode-weekly-contest-158/">
   
 
 
-
-
-<script data-ad-client="ca-pub-9046219176772396" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9046219176772396"></script>
 
   <noscript>
     <link rel="stylesheet" href="/en/css/noscript.css">
   </noscript>
+<link rel="alternate" href="/en/atom.xml" title="YoungForest's blog" type="application/atom+xml">
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+<body itemscope itemtype="http://schema.org/WebPage">
   <div class="headband"></div>
 
   <main class="main">
@@ -101,6 +109,7 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger" aria-label="Search" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -109,11 +118,37 @@
 
 <nav class="site-nav">
   <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/en/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/en/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/en/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li><li class="menu-item menu-item-categories"><a href="/en/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li><li class="menu-item menu-item-archives"><a href="/en/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li><li class="menu-item menu-item-中文"><a href="https://youngforest.github.io/" rel="section"><i class="fa fa-language fa-fw"></i>中文</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="Searching..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </header>
         
@@ -140,7 +175,7 @@
         <div class="site-overview-wrap sidebar-panel">
           <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
   <p class="site-author-name" itemprop="name">YoungForest</p>
-  <div class="site-description" itemprop="description">A programmer in Amazon Beijing, China</div>
+  <div class="site-description" itemprop="description">Software engineer writing about technology, reading, investing, and life</div>
 </div>
 <div class="site-state-wrap animated">
   <nav class="site-state">
@@ -246,7 +281,7 @@
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="YoungForest's blog">
-      <meta itemprop="description" content="A programmer in Amazon Beijing, China">
+      <meta itemprop="description" content="Software engineer writing about technology, reading, investing, and life">
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
@@ -273,7 +308,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2026-06-19 21:56:25" itemprop="dateModified" datetime="2026-06-19T21:56:25+08:00">2026-06-19</time>
+      <time title="Modified: 2026-08-17 19:12:58" itemprop="dateModified" datetime="2026-08-17T19:12:58+08:00">2026-08-17</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -286,20 +321,6 @@
     </span>
 
   
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus: </span>
-    
-    <a title="disqus" href="/en/2019/10/14/LeetCode-weekly-contest-158/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/10/14/LeetCode-weekly-contest-158/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
 </div>
 
         </div>
@@ -308,25 +329,33 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><h2 id="1221-Split-a-String-in-Balanced-Strings"><a href="#1221-Split-a-String-in-Balanced-Strings" class="headerlink" title="1221. Split a String in Balanced Strings"></a>1221. Split a String in Balanced Strings</h2><p>Understand the definition of balanced, and you will find that we only need to find positions where the counts of L and R are equal.</p>
-<p>Time complexity: O(N),<br>Space complexity: O(1).</p>
+    <div class="post-body" itemprop="articleBody"><h2 id="1221-Split-a-String-in-Balanced-Strings">1221. Split a String in Balanced Strings</h2>
+<p>Understand the definition of balanced, and you will find that we only need to find positions where the counts of L and R are equal.</p>
+<p>Time complexity: O(N),<br>
+Space complexity: O(1).</p>
 <figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">impl</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">pub</span> <span class="keyword">fn</span> <span class="title function_">balanced_string_split</span>(s: <span class="type">String</span>) <span class="punctuation">-&gt;</span> <span class="type">i32</span> &#123;</span><br><span class="line">        <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">ans</span> = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">l</span> = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">r</span> = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> <span class="variable">c</span> <span class="keyword">in</span> s.<span class="title function_ invoke__">chars</span>() &#123;</span><br><span class="line">            <span class="keyword">match</span> c &#123;</span><br><span class="line">                <span class="string">&#x27;L&#x27;</span> =&gt; &#123; l += <span class="number">1</span>&#125;,</span><br><span class="line">                <span class="string">&#x27;R&#x27;</span> =&gt; &#123; r += <span class="number">1</span>&#125;,</span><br><span class="line">                _ =&gt; (),</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> l == r &#123;</span><br><span class="line">                ans += <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        ans</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="1222-Queens-That-Can-Attack-the-King"><a href="#1222-Queens-That-Can-Attack-the-King" class="headerlink" title="1222. Queens That Can Attack the King"></a>1222. Queens That Can Attack the King</h2><p>Although understanding the problem is slightly more complicated, the algorithm is actually very direct: search outward from the King, rather than starting from the queens.</p>
-<p>Time complexity: O(queens.len() + chessboard.len()),<br>space complexity: O(queens.len()).</p>
+<h2 id="1222-Queens-That-Can-Attack-the-King">1222. Queens That Can Attack the King</h2>
+<p>Although understanding the problem is slightly more complicated, the algorithm is actually very direct: search outward from the King, rather than starting from the queens.</p>
+<p>Time complexity: O(queens.len() + chessboard.len()),<br>
+space complexity: O(queens.len()).</p>
 <figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">pub</span> <span class="keyword">fn</span> <span class="title function_">queens_attackthe_king</span>(queens: <span class="type">Vec</span>&lt;<span class="type">Vec</span>&lt;<span class="type">i32</span>&gt;&gt;, king: <span class="type">Vec</span>&lt;<span class="type">i32</span>&gt;) <span class="punctuation">-&gt;</span> <span class="type">Vec</span>&lt;<span class="type">Vec</span>&lt;<span class="type">i32</span>&gt;&gt; &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">qs</span>: HashSet&lt;(<span class="type">i32</span>, <span class="type">i32</span>)&gt; = HashSet::<span class="title function_ invoke__">new</span>();</span><br><span class="line">    <span class="keyword">for</span> <span class="variable">queen</span> <span class="keyword">in</span> queens.<span class="title function_ invoke__">iter</span>() &#123;</span><br><span class="line">        qs.<span class="title function_ invoke__">insert</span>((queen[<span class="number">0</span>], queen[<span class="number">1</span>]));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">ans</span>: <span class="type">Vec</span>&lt;<span class="type">Vec</span>&lt;<span class="type">i32</span>&gt;&gt; = <span class="type">Vec</span>::<span class="title function_ invoke__">new</span>();</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">direction</span> = <span class="built_in">vec!</span>[</span><br><span class="line">        (<span class="number">0</span>, <span class="number">1</span>),</span><br><span class="line">        (<span class="number">1</span>, <span class="number">1</span>),</span><br><span class="line">        (<span class="number">1</span>, <span class="number">0</span>),</span><br><span class="line">        (<span class="number">1</span>, -<span class="number">1</span>),</span><br><span class="line">        (<span class="number">0</span>, -<span class="number">1</span>),</span><br><span class="line">        (-<span class="number">1</span>, -<span class="number">1</span>),</span><br><span class="line">        (-<span class="number">1</span>, <span class="number">0</span>),</span><br><span class="line">        (-<span class="number">1</span>, <span class="number">1</span>),</span><br><span class="line">    ];</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">k</span> = (king[<span class="number">0</span>], king[<span class="number">1</span>]);</span><br><span class="line">    <span class="keyword">for</span> (x, y) <span class="keyword">in</span> direction.<span class="title function_ invoke__">iter</span>() &#123;</span><br><span class="line">        <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">target</span>: (<span class="type">i32</span>, <span class="type">i32</span>) = k;</span><br><span class="line">        <span class="keyword">loop</span> &#123;</span><br><span class="line">            target.<span class="number">0</span> += x;</span><br><span class="line">            target.<span class="number">1</span> += y;</span><br><span class="line">            <span class="keyword">if</span> target.<span class="number">0</span> &gt;= <span class="number">0</span> &amp;&amp; target.<span class="number">0</span> &lt; <span class="number">8</span> &amp;&amp; target.<span class="number">1</span> &gt;= <span class="number">0</span> &amp;&amp; target.<span class="number">1</span> &lt; <span class="number">8</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> qs.<span class="title function_ invoke__">contains</span>(&amp;target) &#123;</span><br><span class="line">                    ans.<span class="title function_ invoke__">push</span>(<span class="built_in">vec!</span>[target.<span class="number">0</span>, target.<span class="number">1</span>]);</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    ans</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="1223-Dice-Roll-Simulation"><a href="#1223-Dice-Roll-Simulation" class="headerlink" title="1223. Dice Roll Simulation"></a>1223. Dice Roll Simulation</h2><p>DFS with memoization.</p>
-<p>By analyzing the maximum possible size of the memo, we can know:<br>Time complexity: O(6 * N ^ 2),<br>space complexity: O(6 * N ^ 2).</p>
+<h2 id="1223-Dice-Roll-Simulation">1223. Dice Roll Simulation</h2>
+<p>DFS with memoization.</p>
+<p>By analyzing the maximum possible size of the memo, we can know:<br>
+Time complexity: O(6 * N ^ 2),<br>
+space complexity: O(6 * N ^ 2).</p>
 <figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">use</span> std::collections::HashMap;</span><br><span class="line"></span><br><span class="line"><span class="keyword">impl</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> MOD_NUMBER: <span class="type">i32</span> = <span class="number">1000000007</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">pub</span> <span class="keyword">fn</span> <span class="title function_">answer</span>(</span><br><span class="line">        <span class="keyword">mut</span> memo: &amp;<span class="keyword">mut</span> HashMap&lt;(<span class="type">i32</span>, <span class="type">usize</span>, <span class="type">i32</span>), <span class="type">i32</span>&gt;,</span><br><span class="line">        roll_max: &amp;<span class="type">Vec</span>&lt;<span class="type">i32</span>&gt;,</span><br><span class="line">        n: <span class="type">i32</span>,</span><br><span class="line">        previous_number: <span class="type">usize</span>,</span><br><span class="line">        previous_consecutive: <span class="type">i32</span>,</span><br><span class="line">    ) <span class="punctuation">-&gt;</span> <span class="type">i32</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> n == <span class="number">0</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">match</span> memo.<span class="title function_ invoke__">get</span>(&amp;(n, previous_number, previous_consecutive)) &#123;</span><br><span class="line">            <span class="title function_ invoke__">Some</span>(value) =&gt; &#123;</span><br><span class="line">                <span class="keyword">return</span> *value;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="literal">None</span> =&gt; &#123;</span><br><span class="line">                <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">ans</span> = <span class="number">0</span>;</span><br><span class="line">                <span class="keyword">for</span> <span class="variable">i</span> <span class="keyword">in</span> <span class="number">0</span>..<span class="number">6</span> &#123;</span><br><span class="line">                    <span class="keyword">if</span> i == previous_number &#123;</span><br><span class="line">                        <span class="keyword">if</span> previous_consecutive == roll_max[previous_number] &#123;</span><br><span class="line">                            <span class="keyword">continue</span>;</span><br><span class="line">                        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                            ans = (ans</span><br><span class="line">                                + Solution::<span class="title function_ invoke__">answer</span>(&amp;<span class="keyword">mut</span> memo, &amp;roll_max, n - <span class="number">1</span>, i, previous_consecutive + <span class="number">1</span>))</span><br><span class="line">                                % Solution::MOD_NUMBER;</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                        ans = (ans + Solution::<span class="title function_ invoke__">answer</span>(&amp;<span class="keyword">mut</span> memo, &amp;roll_max, n - <span class="number">1</span>, i, <span class="number">1</span>)) % Solution::MOD_NUMBER;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">                memo.<span class="title function_ invoke__">insert</span>((n, previous_number, previous_consecutive), ans);</span><br><span class="line">                <span class="keyword">return</span> ans;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">pub</span> <span class="keyword">fn</span> <span class="title function_">die_simulator</span>(n: <span class="type">i32</span>, roll_max: <span class="type">Vec</span>&lt;<span class="type">i32</span>&gt;) <span class="punctuation">-&gt;</span> <span class="type">i32</span> &#123;</span><br><span class="line">        <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">memo</span>: HashMap&lt;(<span class="type">i32</span>, <span class="type">usize</span>, <span class="type">i32</span>), <span class="type">i32</span>&gt; = HashMap::<span class="title function_ invoke__">new</span>();</span><br><span class="line">        Solution::<span class="title function_ invoke__">answer</span>(&amp;<span class="keyword">mut</span> memo, &amp;roll_max, n, <span class="number">0</span>, <span class="number">0</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="1224-Maximum-Equal-Frequency"><a href="#1224-Maximum-Equal-Frequency" class="headerlink" title="1224. Maximum Equal Frequency"></a>1224. Maximum Equal Frequency</h2><p>First clarify the meaning of <code>an array prefix of nums</code>, namely a prefix array.<br>Then, seeing the bolded <code>exactly one</code>, we know that there are two possible valid prefix arrays:</p>
+<h2 id="1224-Maximum-Equal-Frequency">1224. Maximum Equal Frequency</h2>
+<p>First clarify the meaning of <code>an array prefix of nums</code>, namely a prefix array.<br>
+Then, seeing the bolded <code>exactly one</code>, we know that there are two possible valid prefix arrays:</p>
 <ul>
 <li>The count of the number with the highest occurrence count minus 1 equals the occurrence count of all other numbers.</li>
-<li>One number has occurrence count 1, and all other numbers have the same occurrence count.<br>Finally, looking at the data size <code>10^5</code>, we can basically determine that an <code>O(N * log N)</code> or <code>O(N)</code> algorithm is required.</li>
+<li>One number has occurrence count 1, and all other numbers have the same occurrence count.<br>
+Finally, looking at the data size <code>10^5</code>, we can basically determine that an <code>O(N * log N)</code> or <code>O(N)</code> algorithm is required.</li>
 </ul>
 <p>The algorithm is almost obvious. It is natural to think of using a hash table to record the occurrence count of each distinct number, and using a TreeSet to store the occurrence counts, so that occurrence counts can be updated quickly. Then one pass is enough.</p>
-<p>Time complexity: O(N log N),<br>space complexity: O(N).</p>
+<p>Time complexity: O(N log N),<br>
+space complexity: O(N).</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">maxEqualFreq</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">        unordered_map&lt;<span class="type">int</span>, <span class="type">int</span>&gt; count;</span><br><span class="line">        multiset&lt;<span class="type">int</span>&gt; order;</span><br><span class="line">        <span class="type">int</span> ans = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> x = <span class="number">0</span>; x &lt; nums.<span class="built_in">size</span>(); ++x) &#123;</span><br><span class="line">            <span class="type">int</span> i = nums[x];</span><br><span class="line">            <span class="keyword">if</span> (count[i] != <span class="number">0</span>) &#123;</span><br><span class="line">                <span class="keyword">auto</span> it = order.<span class="built_in">find</span>(count[i]);</span><br><span class="line">                order.<span class="built_in">erase</span>(it);</span><br><span class="line">            &#125;</span><br><span class="line">            ++count[i];</span><br><span class="line">            order.<span class="built_in">insert</span>(count[i]);</span><br><span class="line">            <span class="comment">// detemiate</span></span><br><span class="line">            <span class="keyword">auto</span> it1 = order.<span class="built_in">begin</span>();</span><br><span class="line">            <span class="keyword">auto</span> it2 = order.<span class="built_in">end</span>();</span><br><span class="line">            --it2;</span><br><span class="line">            <span class="type">int</span> n = order.<span class="built_in">size</span>() - <span class="number">1</span>;</span><br><span class="line">            <span class="type">int</span> length = x + <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">if</span> (it1 == it2) &#123;</span><br><span class="line">                ans = x + <span class="number">1</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> ((*it2) == (*it1) + <span class="number">1</span>) &#123;</span><br><span class="line">                    <span class="keyword">if</span> ( (*it2) * <span class="number">1</span> + (*it1) * (n) == length) &#123;</span><br><span class="line">                        ans = x + <span class="number">1</span>;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">if</span> (*it1 == <span class="number">1</span>) &#123;</span><br><span class="line">                    <span class="keyword">if</span> (*it2 * n == length - <span class="number">1</span>) &#123;</span><br><span class="line">                        ans = x + <span class="number">1</span>;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
     </div>
@@ -434,8 +463,64 @@
 <noscript>
   <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
 </noscript>
-<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"YoungForest","count":true,"i18n":{"disqus":"disqus"}}</script>
+<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"YoungForest","count":false,"i18n":{"disqus":"disqus"}}</script>
 <script src="/en/js/third-party/comments/disqus.js" defer></script>
+<script>
+  (() => {
+    if (window.location.hostname !== 'youngforest.github.io') return;
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function() { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', 'G-G6NR9DW560');
+    const loadAnalytics = () => {
+      if (document.querySelector('script[data-ga4-loader]')) return;
+      const script = document.createElement('script');
+      script.async = true;
+      script.dataset.ga4Loader = '';
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-G6NR9DW560';
+      document.head.appendChild(script);
+    };
+    if ('requestIdleCallback' in window) {
+      window.requestIdleCallback(loadAnalytics, { timeout: 2500 });
+    } else {
+      window.addEventListener('load', () => window.setTimeout(loadAnalytics, 1000), { once: true });
+    }
+  })();
+</script>
+
+<script>
+  (() => {
+    const reported = new Set();
+    const thresholds = [25, 50, 75, 100];
+    const reportDepth = () => {
+      const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+      if (scrollable <= 0) return;
+      const depth = Math.min(100, Math.round((window.scrollY / scrollable) * 100));
+      thresholds.forEach(percent => {
+        if (depth >= percent && !reported.has(percent)) {
+          reported.add(percent);
+          if (typeof window.gtag === 'function') {
+            window.gtag('event', 'scroll_depth', {
+              percent_scrolled: percent,
+              page_path: window.location.pathname
+            });
+          }
+        }
+      });
+    };
+    window.addEventListener('scroll', reportDepth, { passive: true });
+    reportDepth();
+  })();
+</script>
+
+<script>
+  (() => {
+    const sidebarToggle = document.querySelector('.sidebar-toggle[role="button"]');
+    if (sidebarToggle && !sidebarToggle.hasAttribute('aria-label')) {
+      sidebarToggle.setAttribute('aria-label', 'Toggle sidebar');
+    }
+  })();
+</script>
 
 </body>
 </html>

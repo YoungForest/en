@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
-<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 5.4.2">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 8.1.2">
 
   <link rel="apple-touch-icon" sizes="180x180" href="/en/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/en/images/favicon-32x32-next.png">
@@ -16,9 +16,8 @@
 
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"youngforest.github.io","root":"/en/","images":"/en/images","scheme":"Mist","darkmode":false,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/en/js/config.js" defer></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"youngforest.github.io","root":"/en/","images":"/en/images","scheme":"Mist","darkmode":false,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"buttons","active":"disqus","storage":true,"lazyload":true,"nav":null,"activeClass":"disqus"},"stickytabs":false,"motion":{"enable":false,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/en/search.json","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/en/js/config.js" defer></script>
 
     <meta name="description" content="Recently, a senior schoolmate in the lab had a requirement: write four small programs to stress test memory, CPU, disk, and network respectively. The test programs needed adjustable pressure levels, s">
 <meta property="og:type" content="article">
@@ -28,10 +27,10 @@
 <meta property="og:description" content="Recently, a senior schoolmate in the lab had a requirement: write four small programs to stress test memory, CPU, disk, and network respectively. The test programs needed adjustable pressure levels, s">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2017-01-14T04:39:23.000Z">
-<meta property="article:modified_time" content="2026-06-19T13:56:25.288Z">
+<meta property="article:modified_time" content="2026-08-17T11:12:58.322Z">
 <meta property="article:author" content="YoungForest">
 <meta property="article:tag" content="Benchmark">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 
 
 <link rel="canonical" href="https://youngforest.github.io/en/2017/01/14/pressure-test-to-CPU-memory-disk-network-IO/">
@@ -42,9 +41,6 @@
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>Stress Testing CPU, Memory, Disk Read/Write, and Network | YoungForest's blog</title>
   
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-88350169-1"></script>
-  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"UA-88350169-1","only_pageview":false,"measure_protocol_api_secret":null}</script>
-  <script src="/en/js/third-party/analytics/google-analytics.js" defer></script>
 
 
 
@@ -55,7 +51,16 @@
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
-<script src="/en/js/utils.js" defer></script><script src="/en/js/motion.js" defer></script><script src="/en/js/sidebar.js" defer></script><script src="/en/js/next-boot.js" defer></script>
+<script src="/en/js/utils.js" defer></script><script src="/en/js/sidebar.js" defer></script><script src="/en/js/next-boot.js" defer></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/en/js/third-party/search/local-search.js" defer></script>
+
+
+
+
+
+
 
   
 
@@ -63,20 +68,23 @@
 
 
 
-
+  
+    <link rel="alternate" hreflang="zh-CN" href="https://youngforest.github.io/2017/01/14/pressure-test-to-CPU-memory-disk-network-IO/">
+    <link rel="alternate" hreflang="x-default" href="https://youngforest.github.io/2017/01/14/pressure-test-to-CPU-memory-disk-network-IO/">
+  
+  
+    <link rel="alternate" hreflang="en" href="https://youngforest.github.io/en/2017/01/14/pressure-test-to-CPU-memory-disk-network-IO/">
   
 
 
-
-
-<script data-ad-client="ca-pub-9046219176772396" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9046219176772396"></script>
 
   <noscript>
     <link rel="stylesheet" href="/en/css/noscript.css">
   </noscript>
+<link rel="alternate" href="/en/atom.xml" title="YoungForest's blog" type="application/atom+xml">
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+<body itemscope itemtype="http://schema.org/WebPage">
   <div class="headband"></div>
 
   <main class="main">
@@ -101,6 +109,7 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger" aria-label="Search" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -109,11 +118,37 @@
 
 <nav class="site-nav">
   <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/en/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/en/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/en/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li><li class="menu-item menu-item-categories"><a href="/en/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li><li class="menu-item menu-item-archives"><a href="/en/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li><li class="menu-item menu-item-中文"><a href="https://youngforest.github.io/" rel="section"><i class="fa fa-language fa-fw"></i>中文</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="Searching..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </header>
         
@@ -133,14 +168,14 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Test-Environment"><span class="nav-number">1.</span> <span class="nav-text">Test Environment</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CPU"><span class="nav-number">2.</span> <span class="nav-text">CPU</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Basic-Idea"><span class="nav-number">2.0.1.</span> <span class="nav-text">Basic Idea</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Program-Source-Code"><span class="nav-number">2.0.2.</span> <span class="nav-text">Program Source Code</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Usage"><span class="nav-number">2.0.3.</span> <span class="nav-text">Usage</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Disk-Read-Write"><span class="nav-number">3.</span> <span class="nav-text">Disk Read&#x2F;Write</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Disk-Read-Operation"><span class="nav-number">3.1.</span> <span class="nav-text">Disk Read Operation</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Basic-Idea-1"><span class="nav-number">3.1.1.</span> <span class="nav-text">Basic Idea</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Program-Source-Code-1"><span class="nav-number">3.1.2.</span> <span class="nav-text">Program Source Code</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Usage-1"><span class="nav-number">3.1.3.</span> <span class="nav-text">Usage</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Disk-Write-Operation"><span class="nav-number">3.2.</span> <span class="nav-text">Disk Write Operation</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Basic-Idea-2"><span class="nav-number">3.2.1.</span> <span class="nav-text">Basic Idea</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Program-Source-Code-2"><span class="nav-number">3.2.2.</span> <span class="nav-text">Program Source Code</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Usage-2"><span class="nav-number">3.2.3.</span> <span class="nav-text">Usage</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Memory"><span class="nav-number">4.</span> <span class="nav-text">Memory</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Basic-Idea-3"><span class="nav-number">4.0.1.</span> <span class="nav-text">Basic Idea</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Program-Source-Code-3"><span class="nav-number">4.0.2.</span> <span class="nav-text">Program Source Code</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Usage-3"><span class="nav-number">4.0.3.</span> <span class="nav-text">Usage</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Network"><span class="nav-number">5.</span> <span class="nav-text">Network</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Basic-Idea-4"><span class="nav-number">5.0.1.</span> <span class="nav-text">Basic Idea</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Installation"><span class="nav-number">5.0.2.</span> <span class="nav-text">Installation</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Usage-4"><span class="nav-number">5.0.3.</span> <span class="nav-text">Usage</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Server"><span class="nav-number">5.0.3.1.</span> <span class="nav-text">Server</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Client"><span class="nav-number">5.0.3.2.</span> <span class="nav-text">Client</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#References"><span class="nav-number">5.0.4.</span> <span class="nav-text">References</span></a></li></ol></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Test-Environment"><span class="nav-number">1.</span> <span class="nav-text">Test Environment</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CPU"><span class="nav-number">2.</span> <span class="nav-text">CPU</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Basic-Idea"><span class="nav-number">2.1.</span> <span class="nav-text">Basic Idea</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Program-Source-Code"><span class="nav-number">2.2.</span> <span class="nav-text">Program Source Code</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Usage"><span class="nav-number">2.3.</span> <span class="nav-text">Usage</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Disk-Read-Write"><span class="nav-number">3.</span> <span class="nav-text">Disk Read&#x2F;Write</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Disk-Read-Operation"><span class="nav-number">3.1.</span> <span class="nav-text">Disk Read Operation</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Basic-Idea-v2"><span class="nav-number">3.1.1.</span> <span class="nav-text">Basic Idea</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Program-Source-Code-v2"><span class="nav-number">3.1.2.</span> <span class="nav-text">Program Source Code</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Usage-v2"><span class="nav-number">3.1.3.</span> <span class="nav-text">Usage</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Disk-Write-Operation"><span class="nav-number">3.2.</span> <span class="nav-text">Disk Write Operation</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Basic-Idea-v3"><span class="nav-number">3.2.1.</span> <span class="nav-text">Basic Idea</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Program-Source-Code-v3"><span class="nav-number">3.2.2.</span> <span class="nav-text">Program Source Code</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Usage-v3"><span class="nav-number">3.2.3.</span> <span class="nav-text">Usage</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Memory"><span class="nav-number">4.</span> <span class="nav-text">Memory</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Basic-Idea-v4"><span class="nav-number">4.1.</span> <span class="nav-text">Basic Idea</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Program-Source-Code-v4"><span class="nav-number">4.2.</span> <span class="nav-text">Program Source Code</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Usage-v4"><span class="nav-number">4.3.</span> <span class="nav-text">Usage</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Network"><span class="nav-number">5.</span> <span class="nav-text">Network</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Basic-Idea-v5"><span class="nav-number">5.1.</span> <span class="nav-text">Basic Idea</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Installation"><span class="nav-number">5.2.</span> <span class="nav-text">Installation</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Usage-v5"><span class="nav-number">5.3.</span> <span class="nav-text">Usage</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Server"><span class="nav-number">5.3.1.</span> <span class="nav-text">Server</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Client"><span class="nav-number">5.3.2.</span> <span class="nav-text">Client</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#References"><span class="nav-number">5.4.</span> <span class="nav-text">References</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
         <div class="site-overview-wrap sidebar-panel">
           <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
   <p class="site-author-name" itemprop="name">YoungForest</p>
-  <div class="site-description" itemprop="description">A programmer in Amazon Beijing, China</div>
+  <div class="site-description" itemprop="description">Software engineer writing about technology, reading, investing, and life</div>
 </div>
 <div class="site-state-wrap animated">
   <nav class="site-state">
@@ -246,7 +281,7 @@
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="YoungForest's blog">
-      <meta itemprop="description" content="A programmer in Amazon Beijing, China">
+      <meta itemprop="description" content="Software engineer writing about technology, reading, investing, and life">
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
@@ -273,7 +308,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2026-06-19 21:56:25" itemprop="dateModified" datetime="2026-06-19T21:56:25+08:00">2026-06-19</time>
+      <time title="Modified: 2026-08-17 19:12:58" itemprop="dateModified" datetime="2026-08-17T19:12:58+08:00">2026-08-17</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -286,20 +321,6 @@
     </span>
 
   
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus: </span>
-    
-    <a title="disqus" href="/en/2017/01/14/pressure-test-to-CPU-memory-disk-network-IO/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/01/14/pressure-test-to-CPU-memory-disk-network-IO/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
 </div>
 
         </div>
@@ -310,44 +331,62 @@
     
     <div class="post-body" itemprop="articleBody"><p>Recently, a senior schoolmate in the lab had a requirement: write four small programs to stress test memory, CPU, disk, and network respectively. The test programs needed adjustable pressure levels, such as high, medium, and low. No more words; roll up the sleeves and get to work. The requirement was simple, but implementation was not. I learned while writing the programs and barely completed the task.</p>
 <span id="more"></span>
-<h2 id="Test-Environment"><a href="#Test-Environment" class="headerlink" title="Test Environment"></a>Test Environment</h2><p>Ubuntu 14.04</p>
-<h2 id="CPU"><a href="#CPU" class="headerlink" title="CPU"></a>CPU</h2><p>Inspired by the first chapter of <em>The Beauty of Programming</em>, “Make the CPU Usage Curve Follow Your Commands,” I quickly completed the CPU stress testing program.</p>
-<h4 id="Basic-Idea"><a href="#Basic-Idea" class="headerlink" title="Basic Idea"></a>Basic Idea</h4><p>Determine a small period. I set the period to 100, and this value can be changed by changing the value of <code>PIECE</code>; the period is <code>100 * PIECE</code>.</p>
+<h2 id="Test-Environment">Test Environment</h2>
+<p>Ubuntu 14.04</p>
+<h2 id="CPU">CPU</h2>
+<p>Inspired by the first chapter of <em>The Beauty of Programming</em>, “Make the CPU Usage Curve Follow Your Commands,” I quickly completed the CPU stress testing program.</p>
+<h4 id="Basic-Idea">Basic Idea</h4>
+<p>Determine a small period. I set the period to 100, and this value can be changed by changing the value of <code>PIECE</code>; the period is <code>100 * PIECE</code>.</p>
 <p>Within each period, <code>stress</code> percent of the time is spent in an infinite loop, and the remaining <code>(100-stress)</code> percent of the time calls <code>usleep</code>, note the difference between <code>sleep</code> and <code>usleep</code>.</p>
-<h4 id="Program-Source-Code"><a href="#Program-Source-Code" class="headerlink" title="Program Source Code"></a>Program Source Code</h4><script src="https://gist.github.com/YoungForest/04080ae9ad932aa1fd7211c05e93b197.js"></script>
-
-<h4 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ 程序名 stress    <span class="comment"># 其中 0&lt;=stress&lt;=100</span></span><br><span class="line">$ <span class="comment"># 例子</span></span><br><span class="line">$ gcc cpu_benchmark.c -o cpu_benchmark.out</span><br><span class="line">$ cpu_benchmark.out 50</span><br></pre></td></tr></table></figure>
-<h2 id="Disk-Read-Write"><a href="#Disk-Read-Write" class="headerlink" title="Disk Read/Write"></a>Disk Read/Write</h2><p>For disk stress testing, I implemented read and write operations with two separate programs.</p>
-<h3 id="Disk-Read-Operation"><a href="#Disk-Read-Operation" class="headerlink" title="Disk Read Operation"></a>Disk Read Operation</h3><h4 id="Basic-Idea-1"><a href="#Basic-Idea-1" class="headerlink" title="Basic Idea"></a>Basic Idea</h4><p>Similar to the CPU stress test, within one period, 1s, first read a specific amount of data, <code>speed</code>, from disk, then sleep for the remaining time in the period.</p>
-<h4 id="Program-Source-Code-1"><a href="#Program-Source-Code-1" class="headerlink" title="Program Source Code"></a>Program Source Code</h4><script src="https://gist.github.com/YoungForest/9faaa24df53b3e78d27c18155ee26384.js"></script>
-
-<h4 id="Usage-1"><a href="#Usage-1" class="headerlink" title="Usage"></a>Usage</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ python3 disk_read.py 硬盘名 level    <span class="comment"># 其中level可以是0, 1, 2, 3</span></span><br><span class="line">$ <span class="comment"># 例子</span></span><br><span class="line">$ python3 disk_read.py /dev/vda 2</span><br></pre></td></tr></table></figure>
-
-<h3 id="Disk-Write-Operation"><a href="#Disk-Write-Operation" class="headerlink" title="Disk Write Operation"></a>Disk Write Operation</h3><h4 id="Basic-Idea-2"><a href="#Basic-Idea-2" class="headerlink" title="Basic Idea"></a>Basic Idea</h4><p>The stress test for disk write operations is similar to read operations. Within one period, 1s, write a specific amount of data to a file, then delete it, and sleep for the remaining time in the period.</p>
-<p>To write data into the file, I used the command<br><code>dd if=/dev/zero of=/path/to/targetfile bs=1024k count=speed conv=fdatasync &gt; /dev/null 2&gt; /dev/null</code>.<br>This command reads data from <code>/dev/zero</code>, which is actually invalid data and is often used as a data source for initializing files, and writes it to <code>/path/to/targetfile</code>. To avoid the error output and standard output produced by <code>dd</code> affecting the readability of this program, I used redirection. <code>/dev/null</code> is a black-hole device; any data can be input into it without bad effects.</p>
-<h4 id="Program-Source-Code-2"><a href="#Program-Source-Code-2" class="headerlink" title="Program Source Code"></a>Program Source Code</h4><script src="https://gist.github.com/YoungForest/0b3fdfbe15821b32991d9d48a9122290.js"></script>
-
-<h4 id="Usage-2"><a href="#Usage-2" class="headerlink" title="Usage"></a>Usage</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ python3 disk_write.py 硬盘名 level    <span class="comment"># 其中level可以是0, 1, 2, 3</span></span><br><span class="line">$ <span class="comment"># 例子</span></span><br><span class="line">$ python3 disk_write.py /dev/vda 2</span><br></pre></td></tr></table></figure>
-
-<h2 id="Memory"><a href="#Memory" class="headerlink" title="Memory"></a>Memory</h2><h4 id="Basic-Idea-3"><a href="#Basic-Idea-3" class="headerlink" title="Basic Idea"></a>Basic Idea</h4><p>For memory testing, my senior schoolmate introduced me to the program <a target="_blank" rel="noopener" href="https://linux.die.net/man/8/memtester"><code>memtester</code></a>. Specific installation and usage:</p>
+<h4 id="Program-Source-Code">Program Source Code</h4>
+<script src="https://gist.github.com/YoungForest/04080ae9ad932aa1fd7211c05e93b197.js"></script>
+<h4 id="Usage">Usage</h4>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ 程序名 stress    <span class="comment"># 其中 0&lt;=stress&lt;=100</span></span><br><span class="line">$ <span class="comment"># 例子</span></span><br><span class="line">$ gcc cpu_benchmark.c -o cpu_benchmark.out</span><br><span class="line">$ cpu_benchmark.out 50</span><br></pre></td></tr></table></figure>
+<h2 id="Disk-Read-Write">Disk Read/Write</h2>
+<p>For disk stress testing, I implemented read and write operations with two separate programs.</p>
+<h3 id="Disk-Read-Operation">Disk Read Operation</h3>
+<h4 id="Basic-Idea-v2">Basic Idea</h4>
+<p>Similar to the CPU stress test, within one period, 1s, first read a specific amount of data, <code>speed</code>, from disk, then sleep for the remaining time in the period.</p>
+<h4 id="Program-Source-Code-v2">Program Source Code</h4>
+<script src="https://gist.github.com/YoungForest/9faaa24df53b3e78d27c18155ee26384.js"></script>
+<h4 id="Usage-v2">Usage</h4>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ python3 disk_read.py 硬盘名 level    <span class="comment"># 其中level可以是0, 1, 2, 3</span></span><br><span class="line">$ <span class="comment"># 例子</span></span><br><span class="line">$ python3 disk_read.py /dev/vda 2</span><br></pre></td></tr></table></figure>
+<h3 id="Disk-Write-Operation">Disk Write Operation</h3>
+<h4 id="Basic-Idea-v3">Basic Idea</h4>
+<p>The stress test for disk write operations is similar to read operations. Within one period, 1s, write a specific amount of data to a file, then delete it, and sleep for the remaining time in the period.</p>
+<p>To write data into the file, I used the command<br>
+<code>dd if=/dev/zero of=/path/to/targetfile bs=1024k count=speed conv=fdatasync &gt; /dev/null 2&gt; /dev/null</code>.<br>
+This command reads data from <code>/dev/zero</code>, which is actually invalid data and is often used as a data source for initializing files, and writes it to <code>/path/to/targetfile</code>. To avoid the error output and standard output produced by <code>dd</code> affecting the readability of this program, I used redirection. <code>/dev/null</code> is a black-hole device; any data can be input into it without bad effects.</p>
+<h4 id="Program-Source-Code-v3">Program Source Code</h4>
+<script src="https://gist.github.com/YoungForest/0b3fdfbe15821b32991d9d48a9122290.js"></script>
+<h4 id="Usage-v3">Usage</h4>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ python3 disk_write.py 硬盘名 level    <span class="comment"># 其中level可以是0, 1, 2, 3</span></span><br><span class="line">$ <span class="comment"># 例子</span></span><br><span class="line">$ python3 disk_write.py /dev/vda 2</span><br></pre></td></tr></table></figure>
+<h2 id="Memory">Memory</h2>
+<h4 id="Basic-Idea-v4">Basic Idea</h4>
+<p>For memory testing, my senior schoolmate introduced me to the program <a target="_blank" rel="noopener" href="https://linux.die.net/man/8/memtester"><code>memtester</code></a>. Specific installation and usage:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="comment"># 安装</span></span><br><span class="line">$ <span class="built_in">sudo</span> apt-get install memtester</span><br><span class="line">$ <span class="comment"># 从PHYSADDR处分配MEMORY大小的内存, 测试ITERATIONS次.</span></span><br><span class="line">$ <span class="built_in">sudo</span> memtester [-p PHYSADDR] &lt;MEMORY&gt; [ITERATIONS]</span><br></pre></td></tr></table></figure>
-
 <p>In general, there is no need to specify <code>PHYSADDR</code>, because it may destroy memory occupied by other processes, which has some risk.</p>
 <p>Using the <code>memtester</code> program, I did some simple processing and completed the requirement.</p>
-<h4 id="Program-Source-Code-3"><a href="#Program-Source-Code-3" class="headerlink" title="Program Source Code"></a>Program Source Code</h4><script src="https://gist.github.com/YoungForest/73875763467c9cd1eeccad3496a18398.js"></script>
-
-<h4 id="Usage-3"><a href="#Usage-3" class="headerlink" title="Usage"></a>Usage</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ python3 memory_benchmark.py &lt;MEMORY&gt; [ITERATIONS]</span><br><span class="line">$ <span class="comment"># 例子</span></span><br><span class="line">$ python3 memory_benchmark.py 3m 10</span><br><span class="line">$ python3 memory_benchmark.py 2m </span><br></pre></td></tr></table></figure>
-
-<h2 id="Network"><a href="#Network" class="headerlink" title="Network"></a>Network</h2><p>The senior schoolmate’s requirement was for public network stress testing. I looked through a lot of materials; most tools measured network speed, rather than allowing a specified upload or download rate for testing. Fortunately, after searching for several days, I finally found a tool, <code>iperf</code>, that could barely complete the task.</p>
-<h4 id="Basic-Idea-4"><a href="#Basic-Idea-4" class="headerlink" title="Basic Idea"></a>Basic Idea</h4><p>One machine acts as the server, and another machine acts as the client. The client sends packets to the server, the server receives them, and the connection uses UDP. That is to say, if there is no server, the client can still stress test network upload; but without a client, the server cannot stress test network download. In simple terms, the server, download, is passive, while the client, upload, is active. You can still send packets wildly even if nobody receives them, but if nobody sends packets, no matter what, you cannot receive packets.</p>
-<h4 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">sudo</span> apt-get install iperf</span><br></pre></td></tr></table></figure>
-
-<h4 id="Usage-4"><a href="#Usage-4" class="headerlink" title="Usage"></a>Usage</h4><h5 id="Server"><a href="#Server" class="headerlink" title="Server"></a>Server</h5><p>Start the server:</p>
+<h4 id="Program-Source-Code-v4">Program Source Code</h4>
+<script src="https://gist.github.com/YoungForest/73875763467c9cd1eeccad3496a18398.js"></script>
+<h4 id="Usage-v4">Usage</h4>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ python3 memory_benchmark.py &lt;MEMORY&gt; [ITERATIONS]</span><br><span class="line">$ <span class="comment"># 例子</span></span><br><span class="line">$ python3 memory_benchmark.py 3m 10</span><br><span class="line">$ python3 memory_benchmark.py 2m </span><br></pre></td></tr></table></figure>
+<h2 id="Network">Network</h2>
+<p>The senior schoolmate’s requirement was for public network stress testing. I looked through a lot of materials; most tools measured network speed, rather than allowing a specified upload or download rate for testing. Fortunately, after searching for several days, I finally found a tool, <code>iperf</code>, that could barely complete the task.</p>
+<h4 id="Basic-Idea-v5">Basic Idea</h4>
+<p>One machine acts as the server, and another machine acts as the client. The client sends packets to the server, the server receives them, and the connection uses UDP. That is to say, if there is no server, the client can still stress test network upload; but without a client, the server cannot stress test network download. In simple terms, the server, download, is passive, while the client, upload, is active. You can still send packets wildly even if nobody receives them, but if nobody sends packets, no matter what, you cannot receive packets.</p>
+<h4 id="Installation">Installation</h4>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">sudo</span> apt-get install iperf</span><br></pre></td></tr></table></figure>
+<h4 id="Usage-v5">Usage</h4>
+<h5 id="Server">Server</h5>
+<p>Start the server:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ iperf -s</span><br></pre></td></tr></table></figure>
-
-<h5 id="Client"><a href="#Client" class="headerlink" title="Client"></a>Client</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ iperf -c 服务器ip -b 压力值</span><br><span class="line">$ <span class="comment"># 比如:</span></span><br><span class="line">$ iperf -c 123.206.61.77 -b 11m</span><br></pre></td></tr></table></figure>
-
-<h4 id="References"><a href="#References" class="headerlink" title="References"></a>References</h4><p><a target="_blank" rel="noopener" href="http://www.binarytides.com/linux-commands-monitor-network/">How to monitor network on Linux</a><br><a target="_blank" rel="noopener" href="https://www.linux.com/learn/five-funny-little-linux-network-testers-and-monitors">Linux network testing and monitoring</a><br><a target="_blank" rel="noopener" href="http://tuxtweaks.com/2014/11/linux-network-speed-test/?utm_source=tuicool&utm_medium=referral">[Linux] Test network speed in a LAN</a></p>
+<h5 id="Client">Client</h5>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ iperf -c 服务器ip -b 压力值</span><br><span class="line">$ <span class="comment"># 比如:</span></span><br><span class="line">$ iperf -c 123.206.61.77 -b 11m</span><br></pre></td></tr></table></figure>
+<h4 id="References">References</h4>
+<p><a target="_blank" rel="noopener" href="http://www.binarytides.com/linux-commands-monitor-network/">How to monitor network on Linux</a><br>
+<a target="_blank" rel="noopener" href="https://www.linux.com/learn/five-funny-little-linux-network-testers-and-monitors">Linux network testing and monitoring</a><br>
+<a target="_blank" rel="noopener" href="http://tuxtweaks.com/2014/11/linux-network-speed-test/?utm_source=tuicool&amp;utm_medium=referral">[Linux] Test network speed in a LAN</a></p>
 
     </div>
 
@@ -454,8 +493,64 @@
 <noscript>
   <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
 </noscript>
-<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"YoungForest","count":true,"i18n":{"disqus":"disqus"}}</script>
+<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"YoungForest","count":false,"i18n":{"disqus":"disqus"}}</script>
 <script src="/en/js/third-party/comments/disqus.js" defer></script>
+<script>
+  (() => {
+    if (window.location.hostname !== 'youngforest.github.io') return;
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function() { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', 'G-G6NR9DW560');
+    const loadAnalytics = () => {
+      if (document.querySelector('script[data-ga4-loader]')) return;
+      const script = document.createElement('script');
+      script.async = true;
+      script.dataset.ga4Loader = '';
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-G6NR9DW560';
+      document.head.appendChild(script);
+    };
+    if ('requestIdleCallback' in window) {
+      window.requestIdleCallback(loadAnalytics, { timeout: 2500 });
+    } else {
+      window.addEventListener('load', () => window.setTimeout(loadAnalytics, 1000), { once: true });
+    }
+  })();
+</script>
+
+<script>
+  (() => {
+    const reported = new Set();
+    const thresholds = [25, 50, 75, 100];
+    const reportDepth = () => {
+      const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+      if (scrollable <= 0) return;
+      const depth = Math.min(100, Math.round((window.scrollY / scrollable) * 100));
+      thresholds.forEach(percent => {
+        if (depth >= percent && !reported.has(percent)) {
+          reported.add(percent);
+          if (typeof window.gtag === 'function') {
+            window.gtag('event', 'scroll_depth', {
+              percent_scrolled: percent,
+              page_path: window.location.pathname
+            });
+          }
+        }
+      });
+    };
+    window.addEventListener('scroll', reportDepth, { passive: true });
+    reportDepth();
+  })();
+</script>
+
+<script>
+  (() => {
+    const sidebarToggle = document.querySelector('.sidebar-toggle[role="button"]');
+    if (sidebarToggle && !sidebarToggle.hasAttribute('aria-label')) {
+      sidebarToggle.setAttribute('aria-label', 'Toggle sidebar');
+    }
+  })();
+</script>
 
 </body>
 </html>

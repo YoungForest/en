@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
-<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 5.4.2">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 8.1.2">
 
   <link rel="apple-touch-icon" sizes="180x180" href="/en/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/en/images/favicon-32x32-next.png">
@@ -16,9 +16,8 @@
 
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"youngforest.github.io","root":"/en/","images":"/en/images","scheme":"Mist","darkmode":false,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/en/js/config.js" defer></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"youngforest.github.io","root":"/en/","images":"/en/images","scheme":"Mist","darkmode":false,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"buttons","active":"disqus","storage":true,"lazyload":true,"nav":null,"activeClass":"disqus"},"stickytabs":false,"motion":{"enable":false,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/en/search.json","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/en/js/config.js" defer></script>
 
     <meta name="description" content="To train my data mining ability more quickly, I plan to spend some time on Kaggle competitions over the next month. The current plan is to follow the competitions, Datasets, and expert notebooks under">
 <meta property="og:type" content="article">
@@ -28,9 +27,9 @@
 <meta property="og:description" content="To train my data mining ability more quickly, I plan to spend some time on Kaggle competitions over the next month. The current plan is to follow the competitions, Datasets, and expert notebooks under">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2018-08-14T03:22:23.000Z">
-<meta property="article:modified_time" content="2026-06-19T13:56:25.286Z">
+<meta property="article:modified_time" content="2026-08-17T11:12:58.321Z">
 <meta property="article:author" content="YoungForest">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 
 
 <link rel="canonical" href="https://youngforest.github.io/en/2018/08/14/kaggle-titanic-tutorial/">
@@ -41,9 +40,6 @@
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>Getting Started with Kaggle: Titanic | YoungForest's blog</title>
   
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-88350169-1"></script>
-  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"UA-88350169-1","only_pageview":false,"measure_protocol_api_secret":null}</script>
-  <script src="/en/js/third-party/analytics/google-analytics.js" defer></script>
 
 
 
@@ -54,7 +50,16 @@
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
-<script src="/en/js/utils.js" defer></script><script src="/en/js/motion.js" defer></script><script src="/en/js/sidebar.js" defer></script><script src="/en/js/next-boot.js" defer></script>
+<script src="/en/js/utils.js" defer></script><script src="/en/js/sidebar.js" defer></script><script src="/en/js/next-boot.js" defer></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/en/js/third-party/search/local-search.js" defer></script>
+
+
+
+
+
+
 
   
 
@@ -62,20 +67,23 @@
 
 
 
-
+  
+    <link rel="alternate" hreflang="zh-CN" href="https://youngforest.github.io/2018/08/14/kaggle-titanic-tutorial/">
+    <link rel="alternate" hreflang="x-default" href="https://youngforest.github.io/2018/08/14/kaggle-titanic-tutorial/">
+  
+  
+    <link rel="alternate" hreflang="en" href="https://youngforest.github.io/en/2018/08/14/kaggle-titanic-tutorial/">
   
 
 
-
-
-<script data-ad-client="ca-pub-9046219176772396" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9046219176772396"></script>
 
   <noscript>
     <link rel="stylesheet" href="/en/css/noscript.css">
   </noscript>
+<link rel="alternate" href="/en/atom.xml" title="YoungForest's blog" type="application/atom+xml">
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+<body itemscope itemtype="http://schema.org/WebPage">
   <div class="headband"></div>
 
   <main class="main">
@@ -100,6 +108,7 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger" aria-label="Search" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -108,11 +117,37 @@
 
 <nav class="site-nav">
   <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/en/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/en/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/en/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li><li class="menu-item menu-item-categories"><a href="/en/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li><li class="menu-item menu-item-archives"><a href="/en/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li><li class="menu-item menu-item-中文"><a href="https://youngforest.github.io/" rel="section"><i class="fa fa-language fa-fw"></i>中文</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="Searching..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </header>
         
@@ -139,7 +174,7 @@
         <div class="site-overview-wrap sidebar-panel">
           <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
   <p class="site-author-name" itemprop="name">YoungForest</p>
-  <div class="site-description" itemprop="description">A programmer in Amazon Beijing, China</div>
+  <div class="site-description" itemprop="description">Software engineer writing about technology, reading, investing, and life</div>
 </div>
 <div class="site-state-wrap animated">
   <nav class="site-state">
@@ -245,7 +280,7 @@
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="YoungForest's blog">
-      <meta itemprop="description" content="A programmer in Amazon Beijing, China">
+      <meta itemprop="description" content="Software engineer writing about technology, reading, investing, and life">
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
@@ -272,7 +307,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2026-06-19 21:56:25" itemprop="dateModified" datetime="2026-06-19T21:56:25+08:00">2026-06-19</time>
+      <time title="Modified: 2026-08-17 19:12:58" itemprop="dateModified" datetime="2026-08-17T19:12:58+08:00">2026-08-17</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -285,20 +320,6 @@
     </span>
 
   
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus: </span>
-    
-    <a title="disqus" href="/en/2018/08/14/kaggle-titanic-tutorial/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/08/14/kaggle-titanic-tutorial/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
 </div>
 
         </div>
@@ -307,21 +328,24 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><p>To train my data mining ability more quickly, I plan to spend some time on Kaggle competitions over the next month. The current plan is to follow the competitions, Datasets, and expert notebooks under <a target="_blank" rel="noopener" href="https://www.kaggle.com/tags/tutorial">Tutorial</a> as an introduction. After that, I will choose a simple regular competition to participate in.<br>As for whether I will eventually follow Brother Huan onto the path of data mining competitions, that depends on how I feel after getting started and whether I am willing to continue spending a lot of energy on it.</p>
+    <div class="post-body" itemprop="articleBody"><p>To train my data mining ability more quickly, I plan to spend some time on Kaggle competitions over the next month. The current plan is to follow the competitions, Datasets, and expert notebooks under <a target="_blank" rel="noopener" href="https://www.kaggle.com/tags/tutorial">Tutorial</a> as an introduction. After that, I will choose a simple regular competition to participate in.<br>
+As for whether I will eventually follow Brother Huan onto the path of data mining competitions, that depends on how I feel after getting started and whether I am willing to continue spending a lot of energy on it.</p>
 <p>Data mining ability is mainly divided into two parts:</p>
 <ul>
 <li>machine learning</li>
 <li>feature engineering</li>
 </ul>
 <p>When I previously interned in the recommendation team at Kuaishou, the work also involved these topics. Recommendation systems can also be considered a branch of data mining. In terms of output, they predict whether a user will click a certain item.</p>
-<p><a target="_blank" rel="noopener" href="https://www.kaggle.com/c/titanic">Titanic: Machine Learning from Disaster</a>, as most people’s first step into Kaggle, really is a concentrated showcase of data mining skills. By contrast, the competitions that have recently been popular on Kaggle are mostly related to CV or NLP. They require more domain knowledge and dilute the importance of general data mining skills.<br>There are also many <a target="_blank" rel="noopener" href="https://www.kaggle.com/tags/tutorial">other tutorials</a> on Kaggle for users to study. In the future I will choose some of them for focused learning and try to get started with Kaggle before the semester begins.</p>
+<p><a target="_blank" rel="noopener" href="https://www.kaggle.com/c/titanic">Titanic: Machine Learning from Disaster</a>, as most people’s first step into Kaggle, really is a concentrated showcase of data mining skills. By contrast, the competitions that have recently been popular on Kaggle are mostly related to CV or NLP. They require more domain knowledge and dilute the importance of general data mining skills.<br>
+There are also many <a target="_blank" rel="noopener" href="https://www.kaggle.com/tags/tutorial">other tutorials</a> on Kaggle for users to study. In the future I will choose some of them for focused learning and try to get started with Kaggle before the semester begins.</p>
 <span id="more"></span>
 <p>The Titanic training skills are:</p>
 <ul>
 <li>binary classification, alive or dead</li>
 <li>basic Python/R</li>
 </ul>
-<p><a target="_blank" rel="noopener" href="https://www.kaggle.com/helgejo/an-interactive-data-science-tutorial/notebook">notebook link</a> This is the notebook I followed this time.<br>I manually typed all the code and refused to copy and paste; I also completed all the Exercises that needed to be done. I gained an initial understanding of the general competition workflow:</p>
+<p><a target="_blank" rel="noopener" href="https://www.kaggle.com/helgejo/an-interactive-data-science-tutorial/notebook">notebook link</a> This is the notebook I followed this time.<br>
+I manually typed all the code and refused to copy and paste; I also completed all the Exercises that needed to be done. I gained an initial understanding of the general competition workflow:</p>
 <ul>
 <li>problem understanding</li>
 <li>data understanding</li>
@@ -330,21 +354,39 @@
 <li>model evaluation</li>
 <li>submitting results</li>
 </ul>
-<h2 id="Problem-Understanding"><a href="#Problem-Understanding" class="headerlink" title="Problem Understanding"></a>Problem Understanding</h2><p>In the problem description, Kaggle usually provides the dataset background, the goal of each challenge, and the required skills.<br>You can also judge what domain knowledge is needed. For example, in Titanic, knowledge of Western names in the early twentieth century, aristocratic titles, and ships is extremely helpful.</p>
-<p>After reading the problem description, you can form basic guesses: what factors have the greatest impact on survival?<br>I would think of age and gender. Hasn’t the media always said that when a ship sinks, women and children go first?<br>Later, we use data analysis to verify whether the guesses are reasonable.</p>
-<h2 id="Data-Understanding"><a href="#Data-Understanding" class="headerlink" title="Data Understanding"></a>Data Understanding</h2><p>With Python and its visualization tools, we can quickly get an initial understanding of the data.</p>
-<p>For example, <code>titanic</code> stores all raw data as a <code>pd.DataFrame</code>. <code>titanic.head()</code> can display the first five rows, and <code>titanic.describe()</code> displays statistics for all features, including maximum, minimum, missing counts, mean, variance, and so on.<br>After gaining an intuitive understanding of all raw features, you can know which features are categorical, which are continuous, and which need preprocessing.</p>
-<p>With a heat map, you can intuitively see correlations between different features.<br>For continuous values, draw their distribution charts with <code>plot_distribution()</code>; for categorical values, draw box plots with <code>plot_categories</code>.</p>
+<h2 id="Problem-Understanding">Problem Understanding</h2>
+<p>In the problem description, Kaggle usually provides the dataset background, the goal of each challenge, and the required skills.<br>
+You can also judge what domain knowledge is needed. For example, in Titanic, knowledge of Western names in the early twentieth century, aristocratic titles, and ships is extremely helpful.</p>
+<p>After reading the problem description, you can form basic guesses: what factors have the greatest impact on survival?<br>
+I would think of age and gender. Hasn’t the media always said that when a ship sinks, women and children go first?<br>
+Later, we use data analysis to verify whether the guesses are reasonable.</p>
+<h2 id="Data-Understanding">Data Understanding</h2>
+<p>With Python and its visualization tools, we can quickly get an initial understanding of the data.</p>
+<p>For example, <code>titanic</code> stores all raw data as a <code>pd.DataFrame</code>. <code>titanic.head()</code> can display the first five rows, and <code>titanic.describe()</code> displays statistics for all features, including maximum, minimum, missing counts, mean, variance, and so on.<br>
+After gaining an intuitive understanding of all raw features, you can know which features are categorical, which are continuous, and which need preprocessing.</p>
+<p>With a heat map, you can intuitively see correlations between different features.<br>
+For continuous values, draw their distribution charts with <code>plot_distribution()</code>; for categorical values, draw box plots with <code>plot_categories</code>.</p>
 <p>With these skills, you can develop a clear sense of <strong>which features to select for modeling</strong> and <strong>how to perform data preprocessing</strong>.</p>
-<h2 id="Data-Preprocessing"><a href="#Data-Preprocessing" class="headerlink" title="Data Preprocessing"></a>Data Preprocessing</h2><p>For categorical variables, they need to be converted into numeric types before further modeling.<br>Binary categorical variables can simply be mapped to (0, 1).<br>Multi-class categorical variables need one-hot encoding with <code>pd.get_dummies()</code>.</p>
-<p><strong>Fill missing values</strong>. Because real-world data collection is uncertain, some rows have missing values in certain columns. At this point there are two choices: drop the entire row, or fill missing values with meaningful values.<br>When data is precious, because the dataset is small or there are too many missing values, filling is generally used. For categorical values, you can fill “Unknown”; for continuous values, you generally fill the mean.</p>
+<h2 id="Data-Preprocessing">Data Preprocessing</h2>
+<p>For categorical variables, they need to be converted into numeric types before further modeling.<br>
+Binary categorical variables can simply be mapped to (0, 1).<br>
+Multi-class categorical variables need one-hot encoding with <code>pd.get_dummies()</code>.</p>
+<p><strong>Fill missing values</strong>. Because real-world data collection is uncertain, some rows have missing values in certain columns. At this point there are two choices: drop the entire row, or fill missing values with meaningful values.<br>
+When data is precious, because the dataset is small or there are too many missing values, filling is generally used. For categorical values, you can fill “Unknown”; for continuous values, you generally fill the mean.</p>
 <p><strong>Feature engineering</strong>. This is the skill that separates contestants of different levels. It requires domain knowledge and enough sensitivity to the data. However, because of deep learning this year, feature engineering has shown a trend of being abandoned. Differences between contestants mainly come from parameter tuning. In Titanic, if you understand the West in the early twentieth century well enough, you can do some feature engineering. For example, extract “Title” from names to identify whether someone is nobility, commoner, or staff. If you are familiar enough with ships, you can extract cabin class from cabins and ticket class from ticket numbers.</p>
 <p><strong>Assemble the final dataset</strong>. After preprocessing, the dataset needs feature selection and assembly into a form suitable for modeling. It is usually a <code>pd.DataFrame</code>, and it also needs to be split into Train, Valid, and Test sets.</p>
-<h2 id="Modeling-and-Model-Evaluation"><a href="#Modeling-and-Model-Evaluation" class="headerlink" title="Modeling and Model Evaluation"></a>Modeling and Model Evaluation</h2><p>This is also where a lot of work lies. Common machine learning models need to be tried one by one, and each model’s parameters need to be adjusted and tried again. Then the validation set is used for evaluation, and the best model is selected.<br>Often, you also need to return to data preprocessing, select different features, perform different feature engineering, then come back for modeling and evaluation.</p>
+<h2 id="Modeling-and-Model-Evaluation">Modeling and Model Evaluation</h2>
+<p>This is also where a lot of work lies. Common machine learning models need to be tried one by one, and each model’s parameters need to be adjusted and tried again. Then the validation set is used for evaluation, and the best model is selected.<br>
+Often, you also need to return to data preprocessing, select different features, perform different feature engineering, then come back for modeling and evaluation.</p>
 <p>This part is the tedious experimental part, because it requires a lot of attempts and choices. Of course, you can write automation scripts to speed up this work.</p>
-<h2 id="Submission"><a href="#Submission" class="headerlink" title="Submission"></a>Submission</h2><p>Submission is relatively simple. The main thing is to pay attention to the submission method and format. Competitions usually provide a submission template to help participants understand the required format.</p>
-<p>My first submission received a score of 0 because the predicted values had not been converted from floating-point numbers to integers. After fixing that issue, I got a score of 0.77033 and ranked 6242/9939.<br>This submission counted as one experience of the whole workflow.<br>I will continue feature engineering and parameter tuning later to obtain a higher score.<br>The impressive thing is that many people have full scores. I previously heard there might be a bug leaking prediction information into features; I do not know whether that was the reason.</p>
-<h2 id="Afterword"><a href="#Afterword" class="headerlink" title="Afterword"></a>Afterword</h2><p>According to senior schoolmates looking for jobs this year and information online, competition for algorithm engineer roles is extremely intense this year. A large reason is the high salaries of algorithm roles and the sweet returns last year’s graduates received. Everyone has been switching from development roles to algorithm roles. Many data mining competitions have also become very popular as a result, and Kaggle is the hottest competition platform among them. I also plan to ride the wave for one month and see whether I have the talent and ability to do algorithms.</p>
+<h2 id="Submission">Submission</h2>
+<p>Submission is relatively simple. The main thing is to pay attention to the submission method and format. Competitions usually provide a submission template to help participants understand the required format.</p>
+<p>My first submission received a score of 0 because the predicted values had not been converted from floating-point numbers to integers. After fixing that issue, I got a score of 0.77033 and ranked 6242/9939.<br>
+This submission counted as one experience of the whole workflow.<br>
+I will continue feature engineering and parameter tuning later to obtain a higher score.<br>
+The impressive thing is that many people have full scores. I previously heard there might be a bug leaking prediction information into features; I do not know whether that was the reason.</p>
+<h2 id="Afterword">Afterword</h2>
+<p>According to senior schoolmates looking for jobs this year and information online, competition for algorithm engineer roles is extremely intense this year. A large reason is the high salaries of algorithm roles and the sweet returns last year’s graduates received. Everyone has been switching from development roles to algorithm roles. Many data mining competitions have also become very popular as a result, and Kaggle is the hottest competition platform among them. I also plan to ride the wave for one month and see whether I have the talent and ability to do algorithms.</p>
 <p>On Kaggle, the first people I followed were Brother Huan, <code>mgchbot</code>, and my senior schoolmate, <code>sparkingarthur</code>. Looking at their profiles, they really are impressive people. Brother Huan in particular is worthy of being a double KDD Cup champion. My senior schoolmate is also strong, though he is usually very modest in front of me, perhaps because someone like Brother Huan is always around. Their Kaggle rankings are 100 and 1000 respectively, among more than 80,000 users at the time. Since I have not finished any competition yet, my ranking is Unranked. Learn from excellent people, especially with the temptation of a 400k+ hukou value.</p>
 
     </div>
@@ -449,8 +491,64 @@
 <noscript>
   <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
 </noscript>
-<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"YoungForest","count":true,"i18n":{"disqus":"disqus"}}</script>
+<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"YoungForest","count":false,"i18n":{"disqus":"disqus"}}</script>
 <script src="/en/js/third-party/comments/disqus.js" defer></script>
+<script>
+  (() => {
+    if (window.location.hostname !== 'youngforest.github.io') return;
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function() { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', 'G-G6NR9DW560');
+    const loadAnalytics = () => {
+      if (document.querySelector('script[data-ga4-loader]')) return;
+      const script = document.createElement('script');
+      script.async = true;
+      script.dataset.ga4Loader = '';
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-G6NR9DW560';
+      document.head.appendChild(script);
+    };
+    if ('requestIdleCallback' in window) {
+      window.requestIdleCallback(loadAnalytics, { timeout: 2500 });
+    } else {
+      window.addEventListener('load', () => window.setTimeout(loadAnalytics, 1000), { once: true });
+    }
+  })();
+</script>
+
+<script>
+  (() => {
+    const reported = new Set();
+    const thresholds = [25, 50, 75, 100];
+    const reportDepth = () => {
+      const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+      if (scrollable <= 0) return;
+      const depth = Math.min(100, Math.round((window.scrollY / scrollable) * 100));
+      thresholds.forEach(percent => {
+        if (depth >= percent && !reported.has(percent)) {
+          reported.add(percent);
+          if (typeof window.gtag === 'function') {
+            window.gtag('event', 'scroll_depth', {
+              percent_scrolled: percent,
+              page_path: window.location.pathname
+            });
+          }
+        }
+      });
+    };
+    window.addEventListener('scroll', reportDepth, { passive: true });
+    reportDepth();
+  })();
+</script>
+
+<script>
+  (() => {
+    const sidebarToggle = document.querySelector('.sidebar-toggle[role="button"]');
+    if (sidebarToggle && !sidebarToggle.hasAttribute('aria-label')) {
+      sidebarToggle.setAttribute('aria-label', 'Toggle sidebar');
+    }
+  })();
+</script>
 
 </body>
 </html>

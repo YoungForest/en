@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
-<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 5.4.2">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 8.1.2">
 
   <link rel="apple-touch-icon" sizes="180x180" href="/en/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/en/images/favicon-32x32-next.png">
@@ -16,9 +16,8 @@
 
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"youngforest.github.io","root":"/en/","images":"/en/images","scheme":"Mist","darkmode":false,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/en/js/config.js" defer></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"youngforest.github.io","root":"/en/","images":"/en/images","scheme":"Mist","darkmode":false,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"buttons","active":"disqus","storage":true,"lazyload":true,"nav":null,"activeClass":"disqus"},"stickytabs":false,"motion":{"enable":false,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/en/search.json","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/en/js/config.js" defer></script>
 
     <meta name="description" content="This article is based on LeetCode’s tutorial Introduction to Algorithms - Recursion I. Its purpose is to help me become more familiar with the important programming concept of “recursion”. If it can a">
 <meta property="og:type" content="article">
@@ -28,11 +27,11 @@
 <meta property="og:description" content="This article is based on LeetCode’s tutorial Introduction to Algorithms - Recursion I. Its purpose is to help me become more familiar with the important programming concept of “recursion”. If it can a">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2019-02-11T04:58:52.000Z">
-<meta property="article:modified_time" content="2026-06-19T13:56:25.288Z">
+<meta property="article:modified_time" content="2026-08-17T11:12:58.323Z">
 <meta property="article:author" content="YoungForest">
 <meta property="article:tag" content="Algorithm">
 <meta property="article:tag" content="LeetCode">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 
 
 <link rel="canonical" href="https://youngforest.github.io/en/2019/02/11/recursion/">
@@ -43,9 +42,6 @@
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>Recursion | YoungForest's blog</title>
   
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-88350169-1"></script>
-  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"UA-88350169-1","only_pageview":false,"measure_protocol_api_secret":null}</script>
-  <script src="/en/js/third-party/analytics/google-analytics.js" defer></script>
 
 
 
@@ -56,7 +52,16 @@
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
-<script src="/en/js/utils.js" defer></script><script src="/en/js/motion.js" defer></script><script src="/en/js/sidebar.js" defer></script><script src="/en/js/next-boot.js" defer></script>
+<script src="/en/js/utils.js" defer></script><script src="/en/js/sidebar.js" defer></script><script src="/en/js/next-boot.js" defer></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/en/js/third-party/search/local-search.js" defer></script>
+
+
+
+
+
+
 
   
 
@@ -64,20 +69,23 @@
 
 
 
-
+  
+    <link rel="alternate" hreflang="zh-CN" href="https://youngforest.github.io/2019/02/11/recursion/">
+    <link rel="alternate" hreflang="x-default" href="https://youngforest.github.io/2019/02/11/recursion/">
+  
+  
+    <link rel="alternate" hreflang="en" href="https://youngforest.github.io/en/2019/02/11/recursion/">
   
 
 
-
-
-<script data-ad-client="ca-pub-9046219176772396" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9046219176772396"></script>
 
   <noscript>
     <link rel="stylesheet" href="/en/css/noscript.css">
   </noscript>
+<link rel="alternate" href="/en/atom.xml" title="YoungForest's blog" type="application/atom+xml">
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+<body itemscope itemtype="http://schema.org/WebPage">
   <div class="headband"></div>
 
   <main class="main">
@@ -102,6 +110,7 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger" aria-label="Search" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -110,11 +119,37 @@
 
 <nav class="site-nav">
   <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/en/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/en/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/en/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li><li class="menu-item menu-item-categories"><a href="/en/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li><li class="menu-item menu-item-archives"><a href="/en/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li><li class="menu-item menu-item-中文"><a href="https://youngforest.github.io/" rel="section"><i class="fa fa-language fa-fw"></i>中文</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="Searching..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </header>
         
@@ -141,7 +176,7 @@
         <div class="site-overview-wrap sidebar-panel">
           <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
   <p class="site-author-name" itemprop="name">YoungForest</p>
-  <div class="site-description" itemprop="description">A programmer in Amazon Beijing, China</div>
+  <div class="site-description" itemprop="description">Software engineer writing about technology, reading, investing, and life</div>
 </div>
 <div class="site-state-wrap animated">
   <nav class="site-state">
@@ -247,7 +282,7 @@
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="YoungForest's blog">
-      <meta itemprop="description" content="A programmer in Amazon Beijing, China">
+      <meta itemprop="description" content="Software engineer writing about technology, reading, investing, and life">
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
@@ -274,7 +309,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2026-06-19 21:56:25" itemprop="dateModified" datetime="2026-06-19T21:56:25+08:00">2026-06-19</time>
+      <time title="Modified: 2026-08-17 19:12:58" itemprop="dateModified" datetime="2026-08-17T19:12:58+08:00">2026-08-17</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -287,20 +322,6 @@
     </span>
 
   
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus: </span>
-    
-    <a title="disqus" href="/en/2019/02/11/recursion/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/02/11/recursion/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
 </div>
 
         </div>
@@ -311,67 +332,91 @@
     
     <div class="post-body" itemprop="articleBody"><p>This article is based on LeetCode’s tutorial <a target="_blank" rel="noopener" href="https://leetcode.com/explore/learn/card/recursion-i/">Introduction to Algorithms - Recursion I</a>. Its purpose is to help me become more familiar with the important programming concept of “recursion”. If it can also help others, that would be even better.</p>
 <p>The structure of this article is exactly the same as LeetCode’s tutorial. It is divided into six parts: Introduction, Principles of Recursion, Recurrence Relation, Memoization, Complexity Analysis, and Conclusion.</p>
-<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>The goal of this card is to answer the following questions:</p>
+<h2 id="Introduction">Introduction</h2>
+<p>The goal of this card is to answer the following questions:</p>
 <ol>
 <li>What is recursion? How does recursion work?</li>
 <li>How do we solve a problem recursively?</li>
 <li>How do we analyze the time complexity and space complexity of a recursive algorithm?</li>
 <li>How can we apply recursion in a better way?</li>
 </ol>
-<h2 id="Principles-of-Recursion"><a href="#Principles-of-Recursion" class="headerlink" title="Principles of Recursion"></a>Principles of Recursion</h2><p>Every time a recursive function calls itself, it transforms the given problem into a subproblem. The recursive process continues until the subproblem can be solved directly without further recursion.</p>
+<h2 id="Principles-of-Recursion">Principles of Recursion</h2>
+<p>Every time a recursive function calls itself, it transforms the given problem into a subproblem. The recursive process continues until the subproblem can be solved directly without further recursion.</p>
 <p>Necessary properties for avoiding infinite recursion in a recursive function:</p>
 <ol>
 <li>termination conditions (<strong>base cases</strong>)</li>
 <li>a set of rules (<strong>recurrence relation</strong>) that can reduce all other cases to base cases.</li>
 </ol>
 <p>A recursive function can call itself from multiple places.</p>
-<h3 id="Example-Reverse-a-String"><a href="#Example-Reverse-a-String" class="headerlink" title="Example: Reverse a String"></a>Example: Reverse a String</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">printReverse</span><span class="params">(<span class="type">const</span> <span class="type">char</span> *str)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (!*str) <span class="keyword">return</span>;  <span class="comment">// base case</span></span><br><span class="line">    <span class="built_in">printReverse</span>(str + <span class="number">1</span>);</span><br><span class="line">    <span class="built_in">putchar</span>(*str);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="Recursive-Function"><a href="#Recursive-Function" class="headerlink" title="Recursive Function"></a>Recursive Function</h3><p>If a problem has a recursive solution, we can implement it by following these steps.</p>
+<h3 id="Example-Reverse-a-String">Example: Reverse a String</h3>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">printReverse</span><span class="params">(<span class="type">const</span> <span class="type">char</span> *str)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (!*str) <span class="keyword">return</span>;  <span class="comment">// base case</span></span><br><span class="line">    <span class="built_in">printReverse</span>(str + <span class="number">1</span>);</span><br><span class="line">    <span class="built_in">putchar</span>(*str);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Recursive-Function">Recursive Function</h3>
+<p>If a problem has a recursive solution, we can implement it by following these steps.</p>
 <p>We define the problem as something that can be implemented by function <code>F(x)</code>, where <code>X</code> is the input to the function and also represents the scope of the problem.</p>
 <p>Inside function <code>F(X)</code>, we implement the following steps:</p>
 <ol>
-<li>Split the problem into smaller scopes, $x_1 \belong X, x_2 \belong X, …, x_n \belong X$.</li>
+<li>Split the problem into smaller scopes, <span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \belong at position 5: x_1 \̲b̲e̲l̲o̲n̲g̲ ̲X, x_2 \belong …'>x_1 \belong X, x_2 \belong X, ..., x_n \belong X</span>.</li>
 <li>Recursively call <code>F(x_1), F(x_2), ..., F(x_n)</code> to solve the subproblems of <code>X</code>.</li>
 <li>Finally, process the solutions of the subproblems and combine them into the solution corresponding to <code>X</code>.</li>
 </ol>
-<h2 id="Recurrence-Relation"><a href="#Recurrence-Relation" class="headerlink" title="Recurrence Relation"></a>Recurrence Relation</h2><p>Definition: the relationship between the solution of a problem and the solutions of its subproblems.</p>
-<h3 id="Example-Pascal’s-Triangle"><a href="#Example-Pascal’s-Triangle" class="headerlink" title="Example: Pascal’s Triangle"></a>Example: Pascal’s Triangle</h3><p>Definition: Pascal’s Triangle is a triangular arrangement of numbers. In Pascal’s Triangle, the leftmost and rightmost numbers of each row are always 1. For the remaining numbers, each number is the sum of the two numbers directly above it in the previous row.</p>
-<p>Expressed mathematically, the recurrence relation is:<br>$f(i, j) = f(i-1, j-1) + f(i-1, j),$</p>
-<p>and the base cases are:<br>$f(i, j) = 1, if j = 1 or j = i$.</p>
-<p>Here, $f(i, j)$ represents the <code>j</code>-th number in row <code>i</code>.</p>
-<h2 id="Memoization"><a href="#Memoization" class="headerlink" title="Memoization"></a>Memoization</h2><h3 id="Repeated-Computation-During-Recursion"><a href="#Repeated-Computation-During-Recursion" class="headerlink" title="Repeated Computation During Recursion"></a>Repeated Computation During Recursion</h3><p>Recursive solutions are often very <strong>intuitive</strong> and <strong>easy to code</strong>. But most of the time, repeated computation during recursion causes performance loss.</p>
-<p><strong>Memoization</strong><br>is a general technique for avoiding repeated computation.<br>Yes, this word is not misspelled. It is not Memorization.</p>
+<h2 id="Recurrence-Relation">Recurrence Relation</h2>
+<p>Definition: the relationship between the solution of a problem and the solutions of its subproblems.</p>
+<h3 id="Example-Pascal’s-Triangle">Example: Pascal’s Triangle</h3>
+<p>Definition: Pascal’s Triangle is a triangular arrangement of numbers. In Pascal’s Triangle, the leftmost and rightmost numbers of each row are always 1. For the remaining numbers, each number is the sum of the two numbers directly above it in the previous row.</p>
+<p>Expressed mathematically, the recurrence relation is:<br>
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>i</mi><mo separator="true">,</mo><mi>j</mi><mo stretchy="false">)</mo><mo>=</mo><mi>f</mi><mo stretchy="false">(</mo><mi>i</mi><mo>−</mo><mn>1</mn><mo separator="true">,</mo><mi>j</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mi>f</mi><mo stretchy="false">(</mo><mi>i</mi><mo>−</mo><mn>1</mn><mo separator="true">,</mo><mi>j</mi><mo stretchy="false">)</mo><mo separator="true">,</mo></mrow><annotation encoding="application/x-tex">f(i, j) = f(i-1, j-1) + f(i-1, j),</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.1076em;">f</span><span class="mopen">(</span><span class="mord mathnormal">i</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0572em;">j</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.1076em;">f</span><span class="mopen">(</span><span class="mord mathnormal">i</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.854em;vertical-align:-0.1944em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0572em;">j</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.1076em;">f</span><span class="mopen">(</span><span class="mord mathnormal">i</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0572em;">j</span><span class="mclose">)</span><span class="mpunct">,</span></span></span></span></p>
+<p>and the base cases are:<br>
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>i</mi><mo separator="true">,</mo><mi>j</mi><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mo separator="true">,</mo><mi>i</mi><mi>f</mi><mi>j</mi><mo>=</mo><mn>1</mn><mi>o</mi><mi>r</mi><mi>j</mi><mo>=</mo><mi>i</mi></mrow><annotation encoding="application/x-tex">f(i, j) = 1, if j = 1 or j = i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.1076em;">f</span><span class="mopen">(</span><span class="mord mathnormal">i</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0572em;">j</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">i</span><span class="mord mathnormal" style="margin-right:0.1076em;">f</span><span class="mord mathnormal" style="margin-right:0.0572em;">j</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.854em;vertical-align:-0.1944em;"></span><span class="mord">1</span><span class="mord mathnormal" style="margin-right:0.0278em;">or</span><span class="mord mathnormal" style="margin-right:0.0572em;">j</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6595em;"></span><span class="mord mathnormal">i</span></span></span></span>.</p>
+<p>Here, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>i</mi><mo separator="true">,</mo><mi>j</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">f(i, j)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.1076em;">f</span><span class="mopen">(</span><span class="mord mathnormal">i</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0572em;">j</span><span class="mclose">)</span></span></span></span> represents the <code>j</code>-th number in row <code>i</code>.</p>
+<h2 id="Memoization">Memoization</h2>
+<h3 id="Repeated-Computation-During-Recursion">Repeated Computation During Recursion</h3>
+<p>Recursive solutions are often very <strong>intuitive</strong> and <strong>easy to code</strong>. But most of the time, repeated computation during recursion causes performance loss.</p>
+<p><strong>Memoization</strong><br>
+is a general technique for avoiding repeated computation.<br>
+Yes, this word is not misspelled. It is not Memorization.</p>
 <p>Definition: to avoid repeated computation, we can store intermediate subproblem results in a cache, so that when they are needed again later, they do not need to be recomputed.</p>
 <p>Memoization can be implemented with a hashmap. Especially in OOP, decorators can be used to implement generic memoization.</p>
-<h3 id="Example-Fibonacci-Number"><a href="#Example-Fibonacci-Number" class="headerlink" title="Example: Fibonacci Number"></a>Example: Fibonacci Number</h3><p><a target="_blank" rel="noopener" href="https://leetcode.com/articles/climbing-stairs/">Multiple solutions to Fibonacci numbers</a>, including the <strong>Binet’s Formula</strong> method and a formula-based method with O(log n) time complexity, are quite impressive.</p>
-<h2 id="Complexity-Analysis"><a href="#Complexity-Analysis" class="headerlink" title="Complexity Analysis"></a>Complexity Analysis</h2><p>The complexity of a recursive algorithm is sometimes not obvious and has to be analyzed through certain patterns.</p>
+<h3 id="Example-Fibonacci-Number">Example: Fibonacci Number</h3>
+<p><a target="_blank" rel="noopener" href="https://leetcode.com/articles/climbing-stairs/">Multiple solutions to Fibonacci numbers</a>, including the <strong>Binet’s Formula</strong> method and a formula-based method with O(log n) time complexity, are quite impressive.</p>
+<h2 id="Complexity-Analysis">Complexity Analysis</h2>
+<p>The complexity of a recursive algorithm is sometimes not obvious and has to be analyzed through certain patterns.</p>
 <p>Tail recursion is a special technique that can reduce recursion stack usage and optimize space complexity to be the same as an iterative algorithm.</p>
-<h3 id="Time-Complexity"><a href="#Time-Complexity" class="headerlink" title="Time Complexity"></a>Time Complexity</h3><p>The time complexity of a recursive algorithm is:<br>O(T) = R * O(s),<br>where R is the number of recursive calls, and O(s) is the computational complexity produced by each recursive call.<br>Generally speaking, R is harder to calculate, while O(s) is analyzed in the same way as the time complexity of a non-recursive algorithm.</p>
-<p>With the execution tree technique, we can better analyze the number of recursive calls.<br>An execution tree is a tree that shows the flow of recursive calls in a concrete case. Each node represents one call, and the value on the node represents the parameter at the time of the call.<br>The number of nodes in this tree is R.</p>
+<h3 id="Time-Complexity">Time Complexity</h3>
+<p>The time complexity of a recursive algorithm is:<br>
+O(T) = R * O(s),<br>
+where R is the number of recursive calls, and O(s) is the computational complexity produced by each recursive call.<br>
+Generally speaking, R is harder to calculate, while O(s) is analyzed in the same way as the time complexity of a non-recursive algorithm.</p>
+<p>With the execution tree technique, we can better analyze the number of recursive calls.<br>
+An execution tree is a tree that shows the flow of recursive calls in a concrete case. Each node represents one call, and the value on the node represents the parameter at the time of the call.<br>
+The number of nodes in this tree is R.</p>
 <p>Special attention is needed for how the execution tree changes when memoization is used.</p>
-<h3 id="Space-Complexity"><a href="#Space-Complexity" class="headerlink" title="Space Complexity"></a>Space Complexity</h3><p>The space usage of a recursive algorithm is mainly divided into two parts:</p>
+<h3 id="Space-Complexity">Space Complexity</h3>
+<p>The space usage of a recursive algorithm is mainly divided into two parts:</p>
 <ol>
 <li>recursion related</li>
 <li>non-recursion related</li>
 </ol>
-<h4 id="recursion-related"><a href="#recursion-related" class="headerlink" title="recursion related"></a>recursion related</h4><p>As we know from studying compilers, each function call pushes the following onto the stack:</p>
+<h4 id="recursion-related">recursion related</h4>
+<p>As we know from studying compilers, each function call pushes the following onto the stack:</p>
 <ol>
 <li>the function return address</li>
 <li>function parameters</li>
 <li>local variables of the function</li>
 </ol>
 <p>The depth of the function call stack in a recursive algorithm goes from the initial case to the base case.</p>
-<h4 id="non-recursion-related"><a href="#non-recursion-related" class="headerlink" title="non-recursion related"></a>non-recursion related</h4><p>The space used by global variables is mainly allocated on the heap. For example, memoization needs a hashmap.</p>
-<h3 id="Tail-Recursion"><a href="#Tail-Recursion" class="headerlink" title="Tail Recursion"></a>Tail Recursion</h3><p>Tail recursion is a form of recursion where the recursive call is the final instruction of the recursive function, and there is only one recursive call in the function.</p>
+<h4 id="non-recursion-related">non-recursion related</h4>
+<p>The space used by global variables is mainly allocated on the heap. For example, memoization needs a hashmap.</p>
+<h3 id="Tail-Recursion">Tail Recursion</h3>
+<p>Tail recursion is a form of recursion where the recursive call is the final instruction of the recursive function, and there is only one recursive call in the function.</p>
 <p>A good example of tail recursion. Note that <code>non_tail_recursion</code> still performs computation after the final recursive call.</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">    </span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">helper_non_tail_recursion</span><span class="params">(<span class="type">int</span> start, <span class="type">int</span> [] ls)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (start &gt;= ls.length) &#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// not a tail recursion because it does some computation after the recursive call returned.</span></span><br><span class="line">    <span class="keyword">return</span> ls[start] + helper_non_tail_recursion(start+<span class="number">1</span>, ls);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">sum_non_tail_recursion</span><span class="params">(<span class="type">int</span> [] ls)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (ls == <span class="literal">null</span> || ls.length == <span class="number">0</span>) &#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> helper_non_tail_recursion(<span class="number">0</span>, ls);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">//---------------------------------------------</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">helper_tail_recursion</span><span class="params">(<span class="type">int</span> start, <span class="type">int</span> [] ls, <span class="type">int</span> acc)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (start &gt;= ls.length) &#123;</span><br><span class="line">      <span class="keyword">return</span> acc;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// this is a tail recursion because the final instruction is the recursive call.</span></span><br><span class="line">    <span class="keyword">return</span> helper_tail_recursion(start+<span class="number">1</span>, ls, acc+ls[start]);</span><br><span class="line">  &#125;</span><br><span class="line">    </span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">sum_tail_recursion</span><span class="params">(<span class="type">int</span> [] ls)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (ls == <span class="literal">null</span> || ls.length == <span class="number">0</span>) &#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> helper_tail_recursion(<span class="number">0</span>, ls, <span class="number">0</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>The principle behind eliminating the recursion stack for tail recursion:<br>the compiler knows that after returning from the callee, the function will immediately return again, so it does not need the data saved in the function call stack. Only one stack frame is needed, and all levels share that stack frame, so the return process can skip the entire recursion stack.</p>
+<p>The principle behind eliminating the recursion stack for tail recursion:<br>
+the compiler knows that after returning from the callee, the function will immediately return again, so it does not need the data saved in the function call stack. Only one stack frame is needed, and all levels share that stack frame, so the return process can skip the entire recursion stack.</p>
 <p>Not all language compilers support tail call optimization. For example, C and C++ support it, while Python and Java do not.</p>
 <p>Tail recursion is usually not that easy to implement. It requires the recursive call to appear only as the final instruction. If multiple functions need to be called, or if the return value needs further computation, then it cannot be tail recursion.</p>
 <p>Careful readers may notice the similarity between tail recursion and iteration (loops). In fact, some functional programming languages do not even support loops; they only have recursion, yet can fully implement iteration. Since we usually use loops more often and tail recursion less often, if you need to write tail recursion, usually because an interview asks for it, you can first write the loop version. Then try to turn the updates of local variables into parameters of the tail-recursive function. This often leads to elegant tail-recursive code, though for most people its readability is not high.</p>
-<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>The pattern for solving recursion problems:</p>
+<h2 id="Conclusion">Conclusion</h2>
+<p>The pattern for solving recursion problems:</p>
 <ol>
 <li>Define the recursive function</li>
 <li>Write down the recurrence relation and base case</li>
@@ -485,8 +530,64 @@
 <noscript>
   <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
 </noscript>
-<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"YoungForest","count":true,"i18n":{"disqus":"disqus"}}</script>
+<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"YoungForest","count":false,"i18n":{"disqus":"disqus"}}</script>
 <script src="/en/js/third-party/comments/disqus.js" defer></script>
+<script>
+  (() => {
+    if (window.location.hostname !== 'youngforest.github.io') return;
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function() { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', 'G-G6NR9DW560');
+    const loadAnalytics = () => {
+      if (document.querySelector('script[data-ga4-loader]')) return;
+      const script = document.createElement('script');
+      script.async = true;
+      script.dataset.ga4Loader = '';
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-G6NR9DW560';
+      document.head.appendChild(script);
+    };
+    if ('requestIdleCallback' in window) {
+      window.requestIdleCallback(loadAnalytics, { timeout: 2500 });
+    } else {
+      window.addEventListener('load', () => window.setTimeout(loadAnalytics, 1000), { once: true });
+    }
+  })();
+</script>
+
+<script>
+  (() => {
+    const reported = new Set();
+    const thresholds = [25, 50, 75, 100];
+    const reportDepth = () => {
+      const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+      if (scrollable <= 0) return;
+      const depth = Math.min(100, Math.round((window.scrollY / scrollable) * 100));
+      thresholds.forEach(percent => {
+        if (depth >= percent && !reported.has(percent)) {
+          reported.add(percent);
+          if (typeof window.gtag === 'function') {
+            window.gtag('event', 'scroll_depth', {
+              percent_scrolled: percent,
+              page_path: window.location.pathname
+            });
+          }
+        }
+      });
+    };
+    window.addEventListener('scroll', reportDepth, { passive: true });
+    reportDepth();
+  })();
+</script>
+
+<script>
+  (() => {
+    const sidebarToggle = document.querySelector('.sidebar-toggle[role="button"]');
+    if (sidebarToggle && !sidebarToggle.hasAttribute('aria-label')) {
+      sidebarToggle.setAttribute('aria-label', 'Toggle sidebar');
+    }
+  })();
+</script>
 
 </body>
 </html>
