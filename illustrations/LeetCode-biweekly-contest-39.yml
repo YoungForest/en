@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-biweekly-contest-39.md
+context: >-
+  A biweekly contest post uses a circular helper array to defuse the bomb, enumerates split points to balance a string, bounds BFS state for minimum jumps home, and distributes repeated integers with subset sums and memoized DP; brute-force attempts for the last two timed out before correct post-contest solutions.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-biweekly-contest-39/en-hero.webp
+    placement: hero
+    alt: A circular safety box gathers nearby beads, a cutter balances a two-colour strand, a jumper avoids blocked stones and a lean subset cabinet replaces an overgrown search tree
+    composition: >-
+      Do not use Forest. Create a distinct English four-scene physical workshop. Beads around a circular safety box are gathered by a sliding window until the centre is harmless. A dark-and-pale strand is tested at several split positions and the fewest wrong-side beads are removed. A single jumping token crosses a bounded rail around forbidden stones, carrying a small reversible-state latch, and reaches a home-shaped dock. At the end, an overgrown brute-force search tree has overheated and stopped, while a lean post-contest rig packs request subsets into capacity drawers with memory clasps. No people, characters, letters, digits, formulas, code, arrows, readable text, fake UI, violent explosion, logos, brands, trademarks or watermarks.
+    review_status: approved

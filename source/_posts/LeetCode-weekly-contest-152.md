@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 152
 date: 2019-09-01 19:52:40
+description: Weekly notes on prime arrangements, diet windows, palindrome queries and seven-letter puzzles, plus two careless penalties.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2019/09/01/LeetCode-weekly-contest-152/
   en: https://youngforest.github.io/en/2019/09/01/LeetCode-weekly-contest-152/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-152/en-hero.webp" alt="Forest corrects two mis-set levers beside a prime bead sorter, diet window, parity lanterns and seven-petal puzzle wheel" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (4) |	Q3 (5) |	Q4 (6)|
 |--|--|--|--|--|--|--|--|
 | 111 / 5333 |	YoungForest | 	18	 | 	1:11:49 | 0:11:56  1 | 0:21:44  1 | 0:37:27 | 1:01:49 |

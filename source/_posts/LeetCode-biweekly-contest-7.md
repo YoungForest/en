@@ -1,6 +1,7 @@
 ---
 title: LeetCode biweekly contest 7
 date: 2019-08-25 23:46:29
+description: Biweekly notes on a one-row keyboard, hierarchical paths, minimum-cost stick merging and village water distribution during camp.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2019/08/25/LeetCode-biweekly-contest-7/
   en: https://youngforest.github.io/en/2019/08/25/LeetCode-biweekly-contest-7/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-biweekly-contest-7/en-hero.webp" alt="Forest works in an unbranded room with a blank key rail, nested file tree, stick-merging rope machine and village water network" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (4) |	Q3 (5) |	Q4 (6)|
 |--|--|--|--|--|--|--|--|
 | 106 / 1901 |	YoungForest | 18 | 1:01:13 | 0:05:46 | 0:27:13 | 0:35:34  | 1:01:13 |

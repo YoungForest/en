@@ -1,6 +1,7 @@
 ---
 title: LeetCode Weekly Contest 215
 date: 2020-11-15 16:59:45
+description: Contest solutions implement an ordered stream, compare character-frequency sets, and preserve the longest middle segment; problem four is unfinished.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2020/11/15/LeetCode-weekly-contest-215/
   en: https://youngforest.github.io/en/2020/11/15/LeetCode-weekly-contest-215/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-215/en-hero.webp" alt="Ordered parcels wait for a pointer gate, two bead sets preserve matching frequencies, end stones are removed to keep the longest middle and the final grid-town cabinet stays closed" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (4) |	Q3 (5) |	Q4 (6)|
 |--|--|--|--|--|--|--|--|
 | 362 / 9683 | YoungForest | 12 | 0:35:02 | 0:04:21 | 0:13:42 | 0:30:02  1 | null |

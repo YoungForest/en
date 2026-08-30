@@ -1,0 +1,19 @@
+version: editorial-comic-v1
+post: source/_posts/Shi-Nan-Zhi-Tu.md
+context: >-
+  The review moves from a Nanyue mystery, vivid food, and delayed justice to the author's life abroad, homesickness, and the realization that the remembered hometown cannot truly be recovered.
+assets:
+  - id: hero
+    file: source/images/ai/Shi-Nan-Zhi-Tu/en-hero.webp
+    placement: hero
+    alt: A museum kitchen archive turns a southern feast into an old mystery as steam, sugarcane, jujube pits, and sealed objects converge on an empty chair
+    composition: >-
+      Use a distinct English composition: a museum-like kitchen archive presents a southern historical feast as a cold case. Steam, sugarcane, jujube pits, and sealed objects form a simple visual trail toward an empty chair, joining appetite, mystery, and justice arriving too late. No real cover, author likeness, readable records, map labels, or character names.
+    review_status: approved
+  - id: remembered-home
+    file: source/images/ai/Shi-Nan-Zhi-Tu/en-remembered-home.webp
+    placement: inline-before-homesickness
+    alt: Forest carries a young jujube tree through a rainy ferry terminal while a nostalgic courtyard dissolves behind him and a clear coastal road opens ahead
+    composition: >-
+      Use the fictional Forest character with short dark hair, round glasses, charcoal overshirt, and muted-teal T-shirt, never as a portrait. In a rainy ferry terminal, Forest carries a young jujube tree; a nostalgic courtyard dissolves like a warm reflection behind him while a clear coastal road opens ahead. No flags, passports, text, or real landmark.
+    review_status: approved

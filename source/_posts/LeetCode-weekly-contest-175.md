@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 175
 date: 2020-02-09 15:46:26
+description: A weekly review of doubled values, anagram frequencies, time buckets and exam seating, written after broken glasses disrupted the contest.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2020/02/09/LeetCode-weekly-contest-175/
   en: https://youngforest.github.io/en/2020/02/09/LeetCode-weekly-contest-175/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-175/en-hero.webp" alt="Forest wears taped round glasses beside doubled tokens, balanced bead ropes, time bins and an exam-seat grid with diagonal constraints" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 This week my glasses broke, so I was not in form. Dinner at home was also late, so I did not finish the problems.
 
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (4) |	Q3 (5) |	Q4 (6)|

@@ -6,6 +6,7 @@ tags:
 - Liu Shen Lei Lei Reads Jin Yong
 categories:
 - Book Notes
+description: "Notes on Liu Shen Lei Lei's humorous cross-reading of Jin Yong: heroes, minor characters, compassion, modern analogies, and satire through the jianghu."
 translations:
   zh-CN: https://youngforest.github.io/2024/07/22/Liu-Shen-Lei-Lei-Du-Jin-Yong/
   en: https://youngforest.github.io/en/2024/07/22/Liu-Shen-Lei-Lei-Du-Jin-Yong/
@@ -13,6 +14,12 @@ translations:
 [Douban link](https://book.douban.com/subject/35479455/)
 
 This is a collection of articles from Liu Shen Lei Lei's WeChat public account of the same name, organized by different Jin Yong novels. Reading it all at once felt very satisfying. I clapped my hands in delight many times.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Liu-Shen-Lei-Lei-Du-Jin-Yong/en-hero.webp" alt="Anonymous jianghu figures rotate through an archive carousel while a warmly lit minor character and a distant office-boardroom shadow reveal the book's compassionate modern comparisons" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 Because these were originally WeChat public-account articles, they are very good at attracting traffic and readers. The language is relaxed and humorous, yet also very reasonable. It counts as a set of unique interpretations of Jin Yong's novels. The author has clearly read the novels many times, so he can bring up characters from different works effortlessly. He is good at horizontal comparisons (different characters in the same novel) and vertical comparisons (similar characters across different novels), and even knows the experiences and fates of many minor characters by heart. He pays attention not only to the protagonists, but also to supporting characters, always starting from their own perspectives. This reveals a kind of compassion for the world. The author also believes this is one of the core qualities of Jin Yong's novels. Another is "the great hero serves the country and the people." The perspective is also very modern. Sometimes he jumps out of the jianghu and compares things to companies or real life, and the humorous effect appears.
 

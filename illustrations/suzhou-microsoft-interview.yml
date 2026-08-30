@@ -1,0 +1,16 @@
+version: editorial-comic-v1
+post: source/_posts/suzhou-microsoft-interview.md
+context: A three-round technical internship interview ranges from tail recursion, memory copying, trees, and arrays to SQL and rounding, ending in rejection but also unusually direct advice about clarifying questions, communicating thought, and learning from mistakes.
+assets:
+  - id: hero
+    file: source/images/ai/suzhou-microsoft-interview/en-hero.webp
+    placement: hero
+    alt: Forest moves through three engineering benches with a narrowing recursion coil, overlapping memory blocks, tree paths, joined data cards, and a rounding balance
+    composition: Show the human Forest character following one route through three unnumbered benches. The first turns a branching recursion coil into a compact loop beside overlapping memory blocks, the second contains tree paths and a turning route, and the third joins three decks of data cards before a rounding balance. Include no corporate marks or interface.
+    review_status: approved
+  - id: learning-loop
+    file: source/images/ai/suzhou-microsoft-interview/en-learning-loop.webp
+    placement: before-result
+    alt: After a blank door closes, Forest sends rejected puzzle pieces through a magnifier and feedback loop to rebuild a clearer and sturdier solution
+    composition: Outside a closed unmarked door, Forest chooses not to discard a failed puzzle. He inspects each returned piece with a magnifier, then feeds it around a loop into a workbench that adds a question bridge, a communication conduit, and a review gear, producing a stronger structure. Treat rejection as usable feedback.
+    review_status: approved

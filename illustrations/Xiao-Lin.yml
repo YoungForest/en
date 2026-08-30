@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/Xiao-Lin.md
+context: Accessible macroeconomic storytelling is useful, but hindsight can make cycles look cleaner and causal relationships simpler than they really are.
+assets:
+  - id: hero
+    file: source/images/ai/Xiao-Lin/en-hero.webp
+    placement: hero
+    alt: An economic road looks smooth and orderly in a rear-view mirror while the road ahead divides among interlocking gears, waves, and uncertain branches
+    composition: Use an unoccupied abstract observation console and a large rear-view mirror to contrast a tidy retrospective story with a forward path made of cycles, gears, and branching roads, without portraits, labels, or chart text.
+    review_status: approved

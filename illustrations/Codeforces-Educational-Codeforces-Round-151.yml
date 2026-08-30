@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/Codeforces-Educational-Codeforces-Round-151.md
+context: >-
+  Three solutions use case analysis to compose a target, measure the longest shared route, and greedily seek a password that is not a subsequence.
+assets:
+  - id: hero
+    file: source/images/ai/Codeforces-Educational-Codeforces-Round-151/en-hero.webp
+    placement: hero
+    alt: Allowed blocks bypass a forbidden bin, two routes share an origin before splitting, and a greedy arm chooses the farthest eligible bead
+    composition: >-
+      Do not use Forest. Make a distinct English logic conservatory with three clean stations. Plain allowed blocks fill a target vessel while one block shape remains isolated inside a closed forbidden bin; arrangements are shown physically without checkmarks. Two garden paths leave one origin stone, overlap for as long as their destination stones permit, then branch into different quadrants. A long master bead strand passes behind a row of colour-range arches, and a mechanical arm repeatedly selects the farthest-right eligible bead so a candidate strand fails to stay in sequence. No people, characters, letters, digits, password text, code, formulas, readable text, contest branding, logo, trademark or watermark.
+    review_status: approved

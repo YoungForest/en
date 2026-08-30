@@ -5,13 +5,18 @@ tags:
 - Travel
 categories:
 - Diary
+description: "Reflections on a first trip abroad through universities, cultural observations, travel, and friendships that strengthened a desire to study overseas."
 translations:
   zh-CN: https://youngforest.github.io/2016/08/25/my-britain-trip/
   en: https://youngforest.github.io/en/2016/08/25/my-britain-trip/
 ---
 This summer, I was fortunate to participate in the UK exchange camp jointly organized by Beihang's Advanced Engineering School and the Cambridge Eastern Education and Development Society. The exchange camp lasted two weeks, with rich content and diverse formats. It gave me a deep understanding of British humanities and culture, as well as the situation of Chinese students studying abroad, and successfully fulfilled my pre-trip goals. Next, I will organize the whole trip and share it with everyone, hoping it will be helpful.
 
-<!--more-->
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/my-britain-trip/en-hero.webp" alt="Forest carries a suitcase onto his first overseas journey as a paper-map road links an airport, a classroom, a college courtyard, grey hills, and new friends waiting ahead" width="1536" height="864" decoding="async">
+</figure>
+
+<!-- more -->
 
 This was my first opportunity to go abroad, and it can also be considered a landmark event in my life. I was very excited and had been looking forward to this exchange for half a semester. Before going to Britain, the Brexit referendum succeeded by a narrow margin of several million votes. Prime Minister Cameron resigned, the pound fell 10%, and we invisibly saved some money. After several months of pre-trip preparation, we finally set foot in this country eight thousand kilometers from home and began a two-week study trip. The so-called study trip included both an intense journey around Britain, from south to north and then from north to south, visiting many natural and cultural landscapes, and five full days of study life in Cambridge, one night lodging at Durham University, visits and tours at the University of Edinburgh, exchange and study at the University of Manchester, and two days of experience at the University of London. The 14-day exchange camp, from Heathrow Airport to Heathrow Airport, could be said to have brainwashed the whole person. There were many reasons for this brainwashing, and I will describe them below from several aspects.
 
@@ -31,7 +36,7 @@ Scotland. England, Scotland, Britain, Great Britain, the United Kingdom... most 
 
 The two-week experience of living in Britain has now ended. Although I still had not adjusted from jet lag, I hurried to write this summary. When the exchange in Britain ended, everyone was reluctant to part. We went from polite strangers to close conversations with each other. But after all, everyone is at Beihang, so there will be many opportunities to meet again in the future. The lovely people in Britain, however, may be hard to meet again. The huge and cute fat driver, the petite Julie, the mentors in Edinburgh and Oxford, as well as Teacher Kong and Teacher Gao; we shared a wonderful memory together, and I will always remember you.
 
-# Afterword
+## Afterword
 
 ![A photo with "Sherlock" at 221B Baker Street](/images/britain.jpg)
 A photo with "Sherlock" at 221B Baker Street. Because there are many Chinese tourists, he can speak Chinese. After getting permission for the photo, I said "Thank you," and he politely replied, "It was nothing."

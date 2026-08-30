@@ -6,11 +6,16 @@ tags:
 - Genome
 categories:
 - Book Notes
+description: "Notes on genes, behavior, free will, and the circular causality that makes biological and social outcomes difficult to predict."
 translations:
   zh-CN: https://youngforest.github.io/2026/01/01/Genome-The-autobiography-of-a-species-in-23-chapters/
   en: https://youngforest.github.io/en/2026/01/01/Genome-The-autobiography-of-a-species-in-23-chapters/
 ---
 Recommended by Charlie Munger in *Poor Charlie's Almanack*.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Genome-The-autobiography-of-a-species-in-23-chapters/en-hero.webp" width="1536" height="864" alt="A DNA double helix passes through footprints, environmental gears, and an open branching gate before looping back into itself" decoding="async">
+</figure>
 
 <!-- more -->
 

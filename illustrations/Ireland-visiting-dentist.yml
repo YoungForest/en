@@ -1,0 +1,16 @@
+version: editorial-comic-v1
+post: source/_posts/Ireland-visiting-dentist.md
+context: The author describes sudden tooth pain before leaving Beijing, fillings and cleaning after reaching Ireland, and the practical help provided by two layers of employer health-insurance reimbursement.
+assets:
+  - id: hero
+    file: source/images/ai/Ireland-visiting-dentist/en-hero.webp
+    placement: hero
+    alt: Forest carries a cracked tooth model and suitcase from a hurried departure into a calm clinic beneath a rainy Irish streetscape
+    composition: Create an independent scene on a rainy Irish streetscape. Forest steps from a travel footbridge with a suitcase and a simplified cracked tooth model toward a calm clinic lamp, while the distant departure side remains in a muted pain shadow. Preserve the standard outfit; show no brands, medical interface, or treatment procedure.
+    review_status: approved
+  - id: insurance
+    file: source/images/ai/Ireland-visiting-dentist/en-insurance.webp
+    placement: before-treatment-and-insurance
+    alt: Two protective teal canopies filter blank dental bills into a final tray holding only a few small amber coins
+    composition: Use a distinct Irish waiting-room metaphor. Blank dental bill slips move from a simple chair through two layered teal protective canopies, with most slips absorbed at each layer and only a few small amber coins reaching a tray. No insurer identity, currency symbols, numbers, text, or promise of coverage.
+    review_status: approved

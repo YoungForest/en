@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/Are-Your-Lights-On-How-to-Figure-Out-What-the-Problem-Really-Is.md
+context: Explores the difference between a stated problem and the problem that actually needs solving, including when to help and when to step away from the source.
+assets:
+  - id: hero
+    file: source/images/ai/Are-Your-Lights-On-How-to-Figure-Out-What-the-Problem-Really-Is/en-hero.webp
+    placement: hero
+    alt: A team measures and adjusts a door that will not open while a small lamp reveals the pebble actually jamming its hinge
+    composition: In an old technical workshop, elaborate measurements focus on the wrong part of a stuck door while one modest lamp exposes the real obstruction at the hinge.
+    review_status: approved

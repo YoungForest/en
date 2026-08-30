@@ -1,0 +1,17 @@
+version: editorial-comic-v1
+post: source/_posts/build-qBittorrent.md
+context: Hoping to unwind from graduation pressure with a movie, the author instead spends an afternoon preserving the Mac security checks and manually assembling the Qt, Boost, libtorrent, and OpenSSL build chain.
+assets:
+  - id: hero
+    file: source/images/ai/build-qBittorrent/en-hero.webp
+    placement: hero
+    alt: Forest follows a trail of loose dependency parts from an untouched film projector to an unfinished machine beside an unbranded laptop
+    composition: Create a distinct English composition in a small night-time kitchen workspace. Forest has left an untouched film projector and bowl of snacks at one end of the table; a winding trail of springs, frames, lock cylinders, and network gears leads to an unfinished build machine beside an unbranded laptop at the other end. His expression is focused but ruefully amused. No code, screens, logos, app icons, or readable text.
+    review_status: approved
+  - id: dependency-chain
+    file: source/images/ai/build-qBittorrent/en-dependency-chain.webp
+    placement: before-version-mismatch
+    alt: An assembly line of interlocking library modules stops at one undersized network gear while Forest shapes a replacement at a side bench
+    composition: >-
+      Use a clean cutaway workshop metaphor different from the Chinese image: a stepped assembly line carries abstract frame modules, coiled springs, a small lock core, and network gears toward one finished package, but one undersized gear leaves a visible gap and stops the line. Forest shapes a correctly sized replacement at a side bench. No labels, numbers, code, terminal window, brand marks, or readable text.
+    review_status: approved

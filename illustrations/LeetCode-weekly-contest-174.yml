@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-174.md
+context: >-
+  Returning to contests after four months away, the author reviews the weakest matrix rows, removing frequent values to halve an array, maximizing the product after splitting a binary tree, and restricted jumps to lower heights.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-174/en-hero.webp
+    placement: hero
+    alt: Forest walks a practice pier past ranked shield rows, a halved bead heap, balanced split trees and descending jump pillars
+    composition: >-
+      Use the fictional Forest. An independent practice pier ranks sparse-to-dense shield rows, removes the dominant colour groups until half a bead heap remains, balances the weights of two subtrees after one cut, and sends a wooden jumper across lower nearby towers. A blank suitcase lightly suggests returning from travel. No company reference, readable text, letters, digits, formulas, logos, fake UI or watermark.
+    review_status: approved

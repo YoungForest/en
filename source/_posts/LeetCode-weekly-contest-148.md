@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 148
 date: 2019-08-04 12:03:11
+description: A top-100 contest review covering zigzag arrays, a tree-colouring game, change-only snapshots and greedy chunked palindromes.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2019/08/04/LeetCode-weekly-contest-148/
   en: https://youngforest.github.io/en/2019/08/04/LeetCode-weekly-contest-148/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-148/en-hero.webp" alt="Forest celebrates beside descending zigzag blocks, a branch-colouring game, change-only snapshot cabinet and mirrored ribbon chunks" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (4) |	Q2 (5) |	Q3 (6) |	Q4 (8)|
 |--|--|--|--|--|--|--|--|
 | 77 / 5319 |	YoungForest | 23	 | 		0:56:45 | 0:09:51  | 0:24:02 | 0:41:20 | 0:56:45 |

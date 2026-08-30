@@ -5,6 +5,7 @@ tags:
 - Competitive Programming
 categories:
 - KickStart
+description: "Returning to algorithm competition for interest, four problems restore the joy of reasoning through symmetry, geometry, terrain and graph structure."
 translations:
   zh-CN: https://youngforest.github.io/2021/03/22/kick-start-2021-round-A/
   en: https://youngforest.github.io/en/2021/03/22/kick-start-2021-round-A/
@@ -17,6 +18,10 @@ translations:
 I participated in Kick Start after a long absence. For the previous two years, because I wanted to go to Google, I had kept participating. But man proposes, God disposes: because of the pandemic, both internships and autumn recruitment basically fell through. I had participated in 10+ contests over more than two years, and they were "wasted" in that sense.
 This year I joined purely out of interest. The result was indeed a 1000+ rank. Before, I was usually in the several hundreds.
 I have to say that since last year Kick Start has become much easier and friendlier. Previously I often could only solve one and a half problems. Later, to broaden participation, three problems became four, and the overall difficulty also came down.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/kick-start-2021-round-A/en-hero.webp" alt="A calm tabletop of four tactile puzzles shows mirrored beads, L-shaped tiles, rising rabbit terrain and a network ring opening into a tree" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
 
 <!-- more -->
 

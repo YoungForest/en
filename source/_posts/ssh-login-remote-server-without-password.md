@@ -5,6 +5,7 @@ tags:
 - Tech
 categories:
 - Tinkering
+description: "A concise guide to passwordless SSH login on Unix-like systems: generate a key pair, upload the public key, fix permissions, and connect."
 translations:
   zh-CN: https://youngforest.github.io/2018/05/08/ssh-login-remote-server-without-password/
   en: https://youngforest.github.io/en/2018/05/08/ssh-login-remote-server-without-password/
@@ -13,7 +14,11 @@ The following commands are only for Unix-like systems.
 Windows does not need this solution. Many PuTTY-like tools on Windows can choose "remember password" to implement passwordless login.
 I did not find a similar password-remembering solution on Mac, but using a key is actually a more secure method.
 
-<!--more-->
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/ssh-login-remote-server-without-password/en-hero.webp" alt="A private key remains safely inside a home lighthouse while its matching public pattern opens a distant server gate" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## Step 1: Generate an RSA Key Pair
 ``` bash

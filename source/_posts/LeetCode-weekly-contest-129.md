@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 129
 date: 2019-03-31 10:24:51
+description: Evening make-up notes on three equal partitions, repeated-unit divisibility, the best sightseeing pair and binary-substring coverage.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2019/03/31/LeetCode-weekly-contest-129/
   en: https://youngforest.github.io/en/2019/03/31/LeetCode-weekly-contest-129/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-129/en-hero.webp" alt="Forest returns to an evening bench for three equal bead segments, a unit-bead remainder wheel, paired towers and coverage windows" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 Last weekend, because I was preparing for Google's Kick Start Round A, I skipped one LeetCode weekly contest. But I still made up the LeetCode problems that evening. The four problems were not easy, but after thinking through them I solved them independently. It was a small comfort after Kick Start had beaten me into silence.
 
 ## 1020. Partition Array Into Three Parts With Equal Sum

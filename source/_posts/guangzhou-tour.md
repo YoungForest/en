@@ -6,11 +6,18 @@ tags:
 - Travelogue
 categories:
 - Diary
+description: "A trip from Beijing through Guangzhou, Macau and Hong Kong, mixing food, transport, surprises and carefree play with reflections on work and home."
 translations:
   zh-CN: https://youngforest.github.io/2018/10/09/guangzhou-tour/
   en: https://youngforest.github.io/en/2018/10/09/guangzhou-tour/
 ---
 After the National Day holiday, Second Senior Brother and I had a chance to go to Guangdong. We visited Guangzhou, Macau, and Hong Kong in order. On October 6, we set off from Beijing, took a 10-hour high-speed train to Guangzhou South Railway Station, and then checked into Guangdong Hotel.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/guangzhou-tour/en-hero.webp" alt="Forest and a companion ride a playful river-delta transport loop past morning tea, a ferry, and a steep tram before the homebound train restores daily focus" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## Guangzhou
 

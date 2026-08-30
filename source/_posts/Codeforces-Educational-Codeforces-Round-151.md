@@ -1,6 +1,7 @@
 ---
 title: Codeforces Educational Codeforces Round 151
 date: 2023-07-01 16:33:20
+description: "Three solutions use case analysis to compose a target, measure the longest shared route, and greedily seek a password that is not a subsequence."
 tags:
 - codeforces
 - contest
@@ -15,6 +16,12 @@ translations:
 
 I solved the first two problems and got stuck on the third.
 Rating change: 1407 -> 1378
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Codeforces-Educational-Codeforces-Round-151/en-hero.webp" alt="Allowed blocks bypass a forbidden bin, two routes share an origin before splitting, and a greedy arm chooses the farthest eligible bead" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## [A. Forbidden Integer](https://codeforces.com/contest/1845/problem/A)
 

@@ -1,0 +1,19 @@
+version: editorial-comic-v1
+post: source/_posts/QDII-off-exchange-to-on-exchange-arbitrage.md
+context: >-
+  The article explains why on-exchange QDII premiums arise and records the author's practical route through account discovery, account linking, seat details, custody transfer, and exchange sale.
+assets:
+  - id: hero
+    file: source/images/ai/QDII-off-exchange-to-on-exchange-arbitrage/en-hero.webp
+    placement: hero
+    alt: Identical asset crates sit at different heights in a quiet depot and an active market hall, joined only by a narrow capacity-limited rail line
+    composition: >-
+      Use a distinct English composition: identical abstract asset crates sit in a quiet depot and an active market hall at visibly different heights, while a narrow capacity-limited rail line connects them. Convey premium, restricted flow, and arbitrage without numbers, currency symbols, fund codes, real platforms, or promised profit.
+    review_status: approved
+  - id: custody-route
+    file: source/images/ai/QDII-off-exchange-to-on-exchange-arbitrage/en-custody-route.webp
+    placement: inline-before-steps
+    alt: An unlabelled fund crate moves through a key gate, account coupling, seat token, custody siding, and finally an open exchange platform
+    composition: >-
+      Present the process as an intermodal rail route with five unnumbered stages: a key gate, paired-account coupling, a geometric seat token, a waiting custody siding, and an open exchange platform. This is an editorial transition, not a factual interface. No labels, app screens, buttons, numbers, brands, or profit symbols.
+    review_status: approved

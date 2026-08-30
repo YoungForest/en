@@ -1,6 +1,7 @@
 ---
 title: LeetCode Weekly Contest 211
 date: 2020-10-19 20:12:22
+description: "A contest recap on endpoint spans, cyclic string operations, conflict-free teams, and thresholded graph connectivity."
 tags:
 - Competitive Programming
 categories:
@@ -15,6 +16,12 @@ translations:
 
 This week's problems were pretty good, and my own ranking was also nice. I ACed 10 minutes early. I like this kind of tense and exciting feeling. When I ACed 40 minutes early last week, I actually was not as happy as today.
 Because my rankings in two consecutive weekly contests were very high, my rank in the Cruel group also rose to 15th. A long-lost highest position. Keep it up.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-211/en-hero.webp" alt="A circular workshop measures matching endpoints, rotates a bead necklace, arranges a balanced team and links stations through factor gears" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## 1624. Largest Substring Between Two Equal Characters
 

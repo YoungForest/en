@@ -1,6 +1,7 @@
 ---
 title: Kick Start 2021 Round B
 date: 2021-04-20 19:31:25
+description: "The upsolving notes cover increasing substrings and arithmetic progressions, including a type-conversion bug and an approach that timed out."
 tags:
 - Competitive Programming
 categories:
@@ -15,7 +16,11 @@ Post-contest upsolving.
 
 [Contest problem link](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000435a5b)
 
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/kick-start-2021-round-B/en-hero.webp" alt="An ascending bead run grows beneath a progression rail while an adjustable stone and nested gears expose a slower route" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
 
+<!-- more -->
 
 ## [Increasing Substring](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000435a5b/000000000077a882)
 

@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-biweekly-contest-1.md
+context: >-
+  The first biweekly contest offered a Europe-friendly evening slot. After another difficult written test, the author solved two tasks and later reviewed fixed points, substring index pairs, worker-bike assignments and counting digits in a range.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-biweekly-contest-1/en-hero.webp
+    placement: hero
+    alt: A tired Forest leaves one blank exam desk for an evening puzzle bench of fixed positions, paired fragments, bicycles and counting wheels
+    composition: >-
+      Use fictional Forest in a distinct evening campus courtyard. He moves from one desk holding blank exam sheets toward a second puzzle bench, with a small nearly empty battery-shaped object but no symbols. Four tactile ideas fill the bench: a token settling exactly above its matching slot, short unmarked fragments pairing within a colour strip, miniature riders connected to bicycles by shortest cords, and layered counting wheels that deliberately skip leading empty positions. Moonlight and lit windows suggest the Europe-friendly time. No readable text, letters, digits, formulas, logos, brands, fake UI or watermark.
+    review_status: approved

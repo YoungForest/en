@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-29-Divide-Two-Integer.md
+context: >-
+  After four weeks away from practice, the author restarts interview preparation through integer division without multiply, divide or modulo, replacing repeated subtraction with doubled long-division chunks while handling signs and bounds.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-29-Divide-Two-Integer/en-hero.webp
+    placement: hero
+    alt: Forest restarts practice by replacing one-block hauling with doubled cargo batches and a guarded sign gate
+    composition: >-
+      Use fictional Forest in an independent reopened coding workshop. A tiny cart removes only one blank block per trip and creates an absurdly long queue; Forest replaces it with a doubling rig where small crates pair into progressively larger batches, then the largest fitting batch is removed from a target pile step by step like tactile long division. A two-color reversible entrance gate handles direction and a sturdy end buffer protects the integer boundary. No multiplication, division or modulo symbols, no numbers, formulas, text, logos, employer cues, interview screens, watermark or signature.
+    review_status: approved

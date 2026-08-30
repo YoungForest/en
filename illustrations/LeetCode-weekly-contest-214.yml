@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-214.md
+context: >-
+  The write-up builds a recurrence array, greedily removes duplicate frequencies, sells diminishing stacks of coloured balls in layers, and counts ranges while inserting into a sorted array.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-214/en-hero.webp
+    placement: hero
+    alt: A marble market combines recurrence chutes, trims jars to unique levels, sells descending towers by layer and inserts balls through counting gates
+    composition: >-
+      Do not use Forest. Build a distinct English scene as a compact covered marble market viewed diagonally. A forked chute combines earlier plain marbles to create the next one. A row of vessels is carefully scooped until every fill height differs. Tall stacks of amber and teal balls are sold as broad horizontal layers, stepping down like a terrace while one basket catches each batch. At the exit, each incoming ball rolls between two mechanical counting gates and then drops into the correct place in a sorted wooden channel. No characters, letters, digits, prices, currency signs, code, formulas, readable text, logo, trademark or watermark.
+    review_status: approved

@@ -1,6 +1,7 @@
 ---
 title: 2020 Summer Internship Job Search Summary
 date: 2020-04-30 16:51:34
+description: "A review of eight backend internship recruiting processes, including rejections, cancellations, offers, ongoing interviews, and lessons learned."
 tags:
 - Intern
 categories:
@@ -10,6 +11,12 @@ translations:
   en: https://youngforest.github.io/en/2020/04/30/2021-summer-intern-interview-summary/
 ---
 Nearly two months have passed since I posted my first summer internship interview experience on Nowcoder. In between, I successively participated in recruiting processes at eight companies. All roles were backend/server development roles, based in Beijing.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/2021-summer-intern-interview-summary/en-hero.webp" alt="Forest carries a resume through eight branching interview tracks whose exits show rejection, pause, success, and waiting without words" width="1536" height="864" decoding="async">
+</figure>
+
+<!-- more -->
 
 ## Failed
 
@@ -39,6 +46,10 @@ Because I previously thought Ant Financial was an independent company, I applied
 
 [DingTalk first round](https://www.nowcoder.com/discuss/375152)
 
+
+<figure class="editorial-illustration">
+  <img src="/en/images/ai/2021-summer-intern-interview-summary/en-successful-landing.webp" alt="Forest steps out of a looping interview maze onto a small lit platform while several routes continue moving behind him" width="1536" height="864" loading="lazy" decoding="async">
+</figure>
 
 ## Successfully Landed
 

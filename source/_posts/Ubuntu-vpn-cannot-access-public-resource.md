@@ -5,12 +5,19 @@ tags:
 - Linux
 categories:
 - Tinkering
+description: "How a local route setting fixed an Ubuntu VPN connection that reached private research resources but blocked the public internet."
 translations:
   zh-CN: https://youngforest.github.io/2021/03/18/Ubuntu-vpn-cannot-access-public-resource/
   en: https://youngforest.github.io/en/2021/03/18/Ubuntu-vpn-cannot-access-public-resource/
 ---
 Because of research needs, I needed to connect to the Hangzhou Research Institute VPN before I could use GPUs for neural network training tasks.
 However, after configuring OpenVPN on Ubuntu 18.04, I found a difficult problem: after connecting to the VPN, I could not access the public Internet, such as Baidu and similar websites. These were not sites outside the Great Firewall, but the "external network" relative to the local intranet. After disconnecting the VPN, I could access the public Internet, but could not access Hangzhou Research Institute resources. Since in daily work both the public Internet and the Hangzhou Research Institute intranet are basically indispensable, I spent two days investigating and fixing this problem. Also, other classmates using the VPN did not have similar issues, so I believed this was a problem specific to `Ubuntu`. The fix itself was simple, but the process of locating the problem was very bumpy.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Ubuntu-vpn-cannot-access-public-resource/en-hero.webp" alt="A harbour lock routes one research cargo boat through a private canal while ordinary boats remain on the open public waterway" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## Symptoms
 

@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/Setup-English-blog.md
+context: Uses the Chinese Hexo blog as a template for an independent English repository, configures separate deployment paths and menus, and links the two sites together.
+assets:
+  - id: hero
+    file: source/images/ai/Setup-English-blog/en-hero.webp
+    placement: hero
+    alt: Two blog houses built from the same modular blueprint deploy along separate tracks and remain connected by a two-way bridge
+    composition: A shared blank blueprint produces two matching library kiosks in different settings, each taking its own deployment track before a small bridge reconnects them.
+    review_status: approved

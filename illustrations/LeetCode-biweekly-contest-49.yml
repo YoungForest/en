@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-biweekly-contest-49.md
+context: >-
+  Four solutions use board parity for square colour, match sentences from both ends, group values by the difference from their reversal, and pair remainder groups before memoized search for fresh donut batches; the post also records a failed rejudge and correction.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-biweekly-contest-49/en-hero.webp
+    placement: hero
+    alt: Parity gears colour a checkerboard square, blank phrases meet from both ends, mirrored-value differences gather matching tokens and remainder trays feed a corrected memoized batch planner
+    composition: >-
+      Do not use Forest. Create a distinct English physical algorithm studio. Parity gears beneath a plain alternating checkerboard select a square colour without coordinates. Two rows of featureless phrase blocks enter a matching frame from the beginning and end, allowing an extra middle segment while the outer pieces align. Value stones pass a mirror-reversal device; the physical difference between each stone and its reflection becomes a matching key shape, and equal keys collect together. Coloured remainder trays first pair complementary loads into complete fresh batches, then the leftover multiset enters memoized state drawers; a visibly cracked earlier track is safely closed and replaced by a sound route, acknowledging the rejudge correction. No people, characters, letters, digits, formulas, code, arrows, readable text, real food brands, software UI, logos, trademarks or watermarks.
+    review_status: approved

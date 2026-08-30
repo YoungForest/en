@@ -2,6 +2,7 @@
 title: 'Getting Started with Kaggle: Titanic'
 categories:
   - Kaggle
+description: "A hands-on Titanic tutorial covering problem framing, data exploration, preprocessing, feature engineering, model evaluation, and submission."
 date: 2018-08-14 11:22:23
 tags:
 translations:
@@ -19,6 +20,10 @@ When I previously interned in the recommendation team at Kuaishou, the work also
 
 [Titanic: Machine Learning from Disaster](https://www.kaggle.com/c/titanic), as most people's first step into Kaggle, really is a concentrated showcase of data mining skills. By contrast, the competitions that have recently been popular on Kaggle are mostly related to CV or NLP. They require more domain knowledge and dilute the importance of general data mining skills.
 There are also many [other tutorials](https://www.kaggle.com/tags/tutorial) on Kaggle for users to study. In the future I will choose some of them for focused learning and try to get started with Kaggle before the semester begins.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/kaggle-titanic-tutorial/en-hero.webp" alt="Mixed passenger clues enter a data workshop and pass through gap repair, feature drawers, competing model machines, a validation scale, and a final submission envelope" width="1536" height="864" decoding="async">
+</figure>
 
 <!-- more -->
 The Titanic training skills are:

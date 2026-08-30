@@ -5,12 +5,19 @@ tags:
 - LeetCode
 categories:
 - Programming
+description: "A practical guide to queues and stacks, covering implementations, circular queues, BFS, DFS, and building one structure from the other."
 translations:
   zh-CN: https://youngforest.github.io/2019/02/17/Queue-and-Stack/
   en: https://youngforest.github.io/en/2019/02/17/Queue-and-Stack/
 ---
 Today let's study two important data structures together: queue and stack.
 This article is based on LeetCode's Explore tutorial, [Introduction to Data Structure - Queue & Stack](https://leetcode.com/explore/featured/card/queue-stack/).
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Queue-and-Stack/en-hero.webp" alt="Amber tiles enter the rear and leave the front of a serpentine lane while a gripper beside them can reach only the top disc of a sealed stack" width="1536" height="864" decoding="async">
+</figure>
+
+<!-- more -->
 
 ## Introduction
 

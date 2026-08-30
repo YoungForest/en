@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-538-Convert-BST-to-Greater-Tree.md
+context: >-
+  The post first passes right-subtree totals recursively to transform a binary search tree, then simplifies the idea to reverse inorder with one running total and presents an iterative stack version.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-538-Convert-BST-to-Greater-Tree/en-hero.webp
+    placement: hero
+    alt: Amber light flows from the rightmost search-tree branch through every node, carrying the accumulated energy leftward
+    composition: >-
+      Use a pure technical metaphor with no Forest. A clean mechanical binary search tree stands on warm-gray paper. Amber light begins at the rightmost node, travels through a reverse-inorder route across the root and toward the left, and each transparent storage ring retains all light beads gathered so far. A stack of muted-teal blank trays beside the tree temporarily holds nodes while the mechanism descends right and returns. In the background, tangled accumulator pipes resolve into one steady glowing reservoir, suggesting the simpler running-total solution. No readable or pseudo-readable text, letters, digits, formulas, logos, fake UI, watermark or signature.
+    review_status: approved

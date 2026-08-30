@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-218.md
+context: >-
+  The contest solutions parse a small token language in one pass, use hashing to pair values to a target sum, concatenate consecutive binary values with shifts and modulo, and combine a greedy upper bound with pruned backtracking for minimum incompatibility.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-218/en-hero.webp
+    placement: hero
+    alt: Shape tokens pass through a parser, complementary weights lock together, dark and pale bead strings concatenate and a pruned grouping tree keeps the best balanced arrangement
+    composition: >-
+      Do not use Forest. Build a distinct English landscape of four compact problem-solving stations. A tiny set of symbol-free shape tokens enters a single-pass interpreter and emerges as matching physical pieces. Unequal stones meet complementary partners at a cabinet of unlabeled hash drawers and lock into equal combined weights. Dark and pale bead segments concatenate through a shifting drum while overflow loops into a return tray to suggest modulo. The last station is a branching grouping topiary: unique stones are distributed among small trays, an early greedy arrangement sets a visible height limit, and pruning shears remove every branch already worse than the best, leaving the tightest spreads. No people, characters, letters, digits, formulas, code, arrows, readable text, fake UI, logos, brands, trademarks or watermarks.
+    review_status: approved

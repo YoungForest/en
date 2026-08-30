@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 140
 date: 2019-06-09 13:11:58
+description: Weekly notes on a judging incident, adjacent-token state machines, tile permutations, recursive tree pruning and the smallest distinct subsequence.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2019/06/09/LeetCode-weekly-contest-140/
   en: https://youngforest.github.io/en/2019/06/09/LeetCode-weekly-contest-140/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-140/en-hero.webp" alt="A wordless algorithm workshop recalibrates a judging machine beside state beads, permutation tiles, a pruned tree and a monotonic rail" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (4) |	Q2 (5) |	Q3 (6) |	Q4 (8)|
 |--|--|--|--|--|--|--|--|
 | 313 / 4046 |	YoungForest | 16 | 1:03:21 | 0:21:32 (1) | 0:36:08 | 0:53:21 (1) | null |

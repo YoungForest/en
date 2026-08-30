@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 144
 date: 2019-07-07 19:18:15
+description: Post-exam notes on address replacement, difference-style flight bookings, deleting tree nodes and splitting nested parentheses.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2019/07/07/LeetCode-weekly-contest-144/
   en: https://youngforest.github.io/en/2019/07/07/LeetCode-weekly-contest-144/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-144/en-hero.webp" alt="Forest leaves a blank exam room for a protected address chain, flight-change rail, split tree and two nesting tracks" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 This morning I had to take the TOEFL exam, so I could not participate in the weekly contest as usual. I solved the problems after the contest.
 
 

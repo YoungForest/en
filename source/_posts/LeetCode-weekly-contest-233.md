@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 233
 date: 2021-03-25 09:43:36
+description: "Three contest solutions handle ascending runs, order backlogs and a bounded peak; a post-contest binary trie counts XOR pairs in a range."
 tags:
 - Competitive Programming
 categories:
@@ -20,6 +21,10 @@ I did not participate in the biweekly contest, was half an hour late to the week
 In the future, before contests, I still need to conserve energy and compete properly.
 
 For the fourth problem, I actually had an idea at the end, but unfortunately there was not enough time. I had previously done similar problems using Trie to handle XOR, so the impression was still quite deep.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-233/en-hero.webp" alt="Rising steps collect their best load, bid and ask trays clear into a backlog, a sand budget bounds an array peak and a late-lit binary tree filters paired signals" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
 
 <!-- more -->
 

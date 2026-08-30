@@ -6,6 +6,7 @@ tags:
 - interview
 categories:
 - Diary
+description: "A week at a 2019 engineering camp: selection tests, intensive lectures, a two-person project sprint, and a tiring but rewarding technical experience."
 translations:
   zh-CN: https://youngforest.github.io/2019/09/06/ByteDance-Camp/
   en: https://youngforest.github.io/en/2019/09/06/ByteDance-Camp/
@@ -13,6 +14,12 @@ translations:
 Overall, the experience was very happy and I gained a lot.
 
 I was very lucky to attend this year's Byte Camp. I think this one-week event was the most meaningful activity I attended this year. This year's summer camp was divided into three tracks: Engineering, Algorithm, and Product. I participated in the Engineering track.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/ByteDance-Camp/en-hero.webp" alt="Younger Forest circles a one-week engineering track from a puzzle gate through a crowded lecture arc to a two-person midnight project bench" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 Selection for the Engineering and Algorithm tracks was completed through a written test and interview. The written test questions were also the same, completed online through the Nowcoder platform. There were two opportunities for the written test; if you participated in both, the higher score was used. The written test was divided into basic questions (Operating Systems, Computer Organization, Computer Networks) and programming questions. There were four programming questions, with increasing difficulty. I participated in the first session and ACed the first three. The difficulty was roughly equivalent to LeetCode Medium. The difficulty of the last problem directly jumped to ICPC World Finals level, requiring knowledge of min-cost flow. I had never done ACM, and it was my first time hearing about min-cost flow, so I could not solve it. Because my written test was okay, I did not attend the interview and directly got camp admission. However, according to classmates who attended the interview, the interview was also quite easy and low in difficulty.
 
@@ -41,4 +48,3 @@ Finally, thanks to Sister Manlian and the other staff and volunteers who worked 
 There are a few things about the summer camp that I want to complain about, and I hope they can be improved next year:
 1. The food at the opening banquet was not very good: either too salty or too sweet.
 2. There was no place to rest at noon. Although we sat on 6k-yuan chairs, the backrests had nowhere to place the neck or head, so every day I could only lean against the wall and make do with a nap. My waist still hurts because of it.
-

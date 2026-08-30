@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 147
 date: 2019-07-28 20:31:35
+description: Weekly notes on a three-term recurrence, a board path with a special final cell, bordered squares and memoised stone-game DP.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2019/07/28/LeetCode-weekly-contest-147/
   en: https://youngforest.github.io/en/2019/07/28/LeetCode-weekly-contest-147/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-147/en-hero.webp" alt="Forest completes a three-stage contest relay with recurrence lanterns, a special-end board path, bordered tiles and stone-game memory drawers" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (2) |	Q2 (5) |	Q3 (7) |	Q4 (7)|
 |--|--|--|--|--|--|--|--|
 | 175 / 4906 |	YoungForest | 21 | 	1:14:32 | 0:08:18  1  | 0:27:17  1  | 0:41:32 | 1:04:32 |

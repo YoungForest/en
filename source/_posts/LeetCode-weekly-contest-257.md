@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 257
 date: 2021-09-06 23:15:10
+description: Four solutions enumerate ordered quadruplets, count weak characters, use DP to visit every room, and connect prime-factor components for GCD sorting.
 tags:
 - Competitive Programming
 categories:
@@ -14,6 +15,12 @@ translations:
 | 222 / 12542 | YoungForest | 18 | 1:32:31 | 0:06:21  🐞1 | 0:12:18 |  0:24:28 | 1:17:31  🐞2 |
 
 It has been a long time since I did not need to check in. I had checked in for three weeks before, and I really could not take it anymore. After starting work, I have spent much less energy and time on problem solving. Many check-ins were done by my girlfriend, or I simply copied one. You get what you put in. Learning is like rowing upstream: if you do not advance, you fall back. My weekly contest results have indeed declined because my ability has declined. Although I do not plan to change this and am slowly accepting the fact, I will still keep doing weekly contests and stay in the Cruel Problem Solving group, just to maintain a basic problem-solving feel. There is no need to set excessively high expectations for myself.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-257/en-hero.webp" alt="Four forward gates select marbles, sorted spear-and-shield tokens expose weaker pieces, a room track loops before advancing and factor gears connect sortable stones" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 Recently, besides work, I have spent a lot of time on investing and personal finance.
 

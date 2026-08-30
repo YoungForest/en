@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/Mendeley-GB-T-7714-2005.md
+context: >-
+  The author records fixes for thesis-reference problems including name casing, multi-author abbreviation, conference separators, and converting CNKI citations into Bib records.
+assets:
+  - id: hero
+    file: source/images/ai/Mendeley-GB-T-7714-2005/en-hero.webp
+    placement: hero
+    alt: A library bindery feeds mismatched citation cards through a careful standardization loom and receives a tidy row of uniform reference cards
+    composition: >-
+      Use a distinct English composition: a quiet library bindery uses a loom-like standardization machine to align mismatched blank citation cards, remove redundant divider tabs, resize oversized name blocks, and bridge an incompatible source shape into a clean uniform row. Purely physical metaphor; no real software interface, letters, punctuation, citation text, platform logos, or readable text.
+    review_status: approved

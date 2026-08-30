@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-215.md
+context: >-
+  The contest record implements an ordered stream with an array and pointer, checks whether two strings can transform by comparing character and frequency sets, and reframes reducing a target from both ends as preserving the longest middle segment; the fourth problem has only the words profile DP and no solution.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-215/en-hero.webp
+    placement: hero
+    alt: Ordered parcels wait for a pointer gate, two bead sets preserve matching frequencies, end stones are removed to keep the longest middle and the final grid-town cabinet stays closed
+    composition: >-
+      Do not use Forest. Build an independently composed English four-island bench. Shape-coded parcels enter slots out of order, and a pointer gate releases only the newly completed consecutive run. Two collections of coloured beads may exchange positions and colours while preserving the same palette and the same set of pile heights. Stones are removed from both ends of a long chain so a muted-teal frame can retain the longest middle section. The final profile-grid town remains inside a closed cabinet with disconnected model homes and untouched tools, clearly indicating that no solution was written. No people, characters, letters, digits, formulas, code, arrows, readable text, fake UI, logos, brands, trademarks or watermarks.
+    review_status: approved

@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-245.md
+context: >-
+  Three in-contest solutions test equal character redistribution, binary-search maximum removals while preserving a subsequence, and filter triplets that can merge to a target; the fourth problem remains unfinished.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-245/en-hero.webp
+    placement: hero
+    alt: Tokens divide evenly, removable links preserve a target strand, three-part pieces fill a target frame and the final tournament bench stays unresolved
+    composition: >-
+      Do not use Forest. Record the intended four-part physical metaphor for redistribution, binary-search removals, triplet filtering and an unresolved tournament meeting. The bilingual pair was paused after the Chinese candidate exhausted its single targeted regeneration and remained unacceptable; no English asset was generated or inserted.
+    review_status: rejected

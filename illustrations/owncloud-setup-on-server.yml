@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/owncloud-setup-on-server.md
+context: >-
+  This older technical note records setting up a personal cloud service on an Ubuntu server by taking the convenient binary-package route, configuring web and database pieces, and preparing access from multiple devices.
+assets:
+  - id: hero
+    file: source/images/ai/owncloud-setup-on-server/en-hero.webp
+    placement: hero
+    alt: A small self-managed cloud locker in a garden shed securely distributes personal files to several unbranded devices
+    composition: >-
+      Do not use Forest. Make a distinct English composition: a tidy garden shed contains a small self-managed cloud locker with file drawers, a simple web-service wheel and a database cylinder. Outside, one exhausting path is scattered with loose build parts while a shorter path delivers a complete prebuilt crate. Muted-teal cables connect the locker to a desktop, phone and laptop, with one amber status lamp showing the whole system working. No real product icon, hosting provider, brand, interface, code, password, readable text, number, logo, trademark or watermark.
+    review_status: approved

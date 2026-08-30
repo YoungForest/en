@@ -1,6 +1,7 @@
 ---
 title: LeetCode Weekly Contest 209
 date: 2020-10-07 11:35:47
+description: Contest solutions cover a special array, parity tree, circular viewing window and recursive bit operations; the last was learned after the contest.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2020/10/07/LeetCode-weekly-contest-209/
   en: https://youngforest.github.io/en/2020/10/07/LeetCode-weekly-contest-209/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-209/en-hero.webp" alt="One threshold step matches the stones above it, alternating tree levels order dark and pale fruit, a circular viewing sector covers the most points and a folded bit machine opens after the contest" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (4) |	Q3 (5) |	Q4 (6)|
 |--|--|--|--|--|--|--|--|
 | 522 / 12138 | YoungForest | 12 | 0:49:07 | 0:05:12 | 0:11:28 | 0:39:07 2 | null |
@@ -195,4 +202,3 @@ public:
 
 Time complexity: O(log N),
 space complexity: O(log N).
-

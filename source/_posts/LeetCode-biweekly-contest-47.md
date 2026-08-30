@@ -1,6 +1,7 @@
 ---
 title: LeetCode Biweekly Contest 47
 date: 2021-03-07 16:06:47
+description: Four solutions find an aligned point, test distinct powers of three, sum substring frequency gaps, and count degree pairs with repeated-edge correction.
 tags:
 - Competitive Programming
 categories:
@@ -14,6 +15,10 @@ translations:
 | 64 / 9933 | YoungForest | 18 | 0:55:55 |  0:03:37 |  0:07:16 |  0:13:28 | 0:55:55 |
 
 A crazy rating-gain round. I solved 3 problems in 13 minutes. The idea for the last problem was also relatively smooth. I hit two blockers: first, at the beginning I forgot to consider point pairs with no edge between them; second, I solved the complementary problem, but when returning the answer, I carelessly thought the total count was `n^2`, while in fact it is `C(n, 2) = n * (n - 1) / 2`. Debugging wasted quite a bit of time. If it had gone more smoothly, maybe the result could have broken through the sky and won the generous top-20 prize.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-biweekly-contest-47/en-hero.webp" alt="Crossed rails select the nearest aligned point, distinct tripling weights meet a target, bead windows compare frequency towers and degree pairs pass a threshold before duplicate-rope correction" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
 
 <!-- more -->
 

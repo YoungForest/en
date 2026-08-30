@@ -6,11 +6,18 @@ tags:
 - Liu Shen Lei Lei Reads Tang Poetry
 categories:
 - Book Notes
+description: "A romantic journey through Tang poetry, compassion, and criticism through the past, questioning the equation of criticism with hostility."
 translations:
   zh-CN: https://youngforest.github.io/2024/07/25/Liu-Shen-Lei-Lei-Du-Tang-Shi/
   en: https://youngforest.github.io/en/2024/07/25/Liu-Shen-Lei-Lei-Du-Tang-Shi/
 ---
 It has the feeling of Dangnian Mingyue's *Those Things in the Ming Dynasty*. I do not know whether it is intentional imitation or unintentional resemblance.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Liu-Shen-Lei-Lei-Du-Tang-Shi/en-hero.webp" alt="Four landscape windows for pastoral life, frontier unrest, ancient ruins, and farewell surround a blank scroll beneath an open moonlit skylight" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 It often interacts with Jin Yong's novels, especially with the same compassion for the world.
 

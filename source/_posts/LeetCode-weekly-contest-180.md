@@ -1,6 +1,7 @@
 ---
 title: LeetCode Weekly Contest 180
 date: 2020-03-15 22:04:28
+description: Weekly notes on lucky matrix values, range-increment stacks, balanced search trees and team performance during a family visit.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2020/03/15/LeetCode-weekly-contest-180/
   en: https://youngforest.github.io/en/2020/03/15/LeetCode-weekly-contest-180/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-180/en-hero.webp" alt="Forest works beside a glowing bead matrix, lifted lower trays, a balanced branching mobile and runners coupled to an efficiency gear" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 Since LeetCode [updated the weekly contest rating algorithm](https://leetcode.com/discuss/general-discussion/518516/New-Rating-Algorithm-Details-Contest-Season-and-Absence-in-Participation), the result shocked me. My rating directly rose to 2171, with global rank 608/81184 and 53 contests completed. I remember that last week I was still hoping to break 2000 in the next few weeks, since I was already 1990+. The updated algorithm shows that I had already reached 2000 last August.
 
 This Sunday I went back to the village to visit my grandmother. Because of the pandemic, the family had not been able to get together for a while. Today, at long last, almost everyone was there. I also joined the weekly contest from my hometown. Because the environment was not suitable for thinking, the result was only so-so.

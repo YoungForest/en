@@ -1,6 +1,7 @@
 ---
 title: Implementing a Terminal Proxy
-tags: 
+description: "A practical guide to routing terminal traffic through a local proxy and caching relay, testing the route, enabling it on demand, and configuring Git."
+tags:
   - Linux
 categories:
 - Tinkering
@@ -11,6 +12,10 @@ translations:
 ---
 ## Problem
 As a Linuxer, being proficient with the terminal is an essential skill. But in the terminal, downloading and installing things can sometimes be very slow, which is frustrating. I naturally wondered whether I could add a proxy to improve the speed. I had been using Shadowsocks before, and the browser used SwitchyProxy, which achieved basic proxy-based internet access. So, is there a similar tool in the terminal? The answer is yes. Through targeted searching, I successfully solved the proxy problem in the terminal. I summarize it here and hope it can help everyone.
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/terminal-proxy-configuration/en-hero.webp" alt="Data parcels leave a congested dock through a teal relay pump and amber proxy tunnel before joining an open remote network track" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
 <!-- more -->
 ## Tools Needed
 Shadowsocks, Polipo
@@ -119,4 +124,3 @@ git config --global http.proxy <address of the proxy server>:<port of the proxy 
 [Connect to GitHub via SSH](https://gist.github.com/chuyik/02d0d37a49edc162546441092efae6a1)
 
 Enjoy proxy-based internet access in the terminal.
-

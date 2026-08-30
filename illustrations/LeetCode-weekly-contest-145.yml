@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-145.md
+context: >-
+  The weekly review covers custom relative sorting, the lowest common ancestor of deepest leaves, longest well-performing intervals using prefix structure, and a bitmask-style search for the smallest sufficient team.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-145/en-hero.webp
+    placement: hero
+    alt: Forest orders beads by a custom rail, traces deepest leaves, balances work tokens and selects the smallest complete tool team
+    composition: >-
+      Use fictional Forest at a forest planning pavilion, staged differently from the Chinese edition. Four tactile models share one broad table: coloured beads reorder according to a sample rail; glowing paths from the deepest leaves meet at one ancestor branch; bright and dark work tokens create a rising and falling balance track whose longest positive stretch is measured; and small wooden figures carrying complementary tool shapes are chosen to fill every shape slot with the fewest members. Avoid binary characters or skill labels. No readable text, letters, digits, formulas, logos, brands, fake UI or watermark.
+    review_status: approved

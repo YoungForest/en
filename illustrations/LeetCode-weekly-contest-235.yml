@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-235.md
+context: >-
+  The post truncates a sentence, deduplicates user-active minutes, combines greedy replacement with binary search to reduce absolute difference, and records a brute-force subsequence-GCD DP that timed out.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-235/en-hero.webp
+    placement: hero
+    alt: A token ribbon is trimmed, duplicate clock seals merge by user, calipers find a nearest stone and an expanding gear network stalls at a sand timer
+    composition: >-
+      Do not use Forest. Create a distinct English four-part editorial puzzle desk. A long ribbon made of blank word-like tiles is cleanly trimmed after a chosen tile, with no glyphs. Separate coloured owner trays collect clock-shaped seals and merge duplicate moments. Sorted stones sit below closing calipers while a mechanical hand uses a binary-search split to find the nearest replacement and reduce the gap between two rows. Finally, toothed gears stand for values and an enormous branching network combines subsequences into common-divisor gears; the brute-force web visibly bottlenecks beside a plain sand timer, with no victory cue. No people, characters, letters, digits, code, formulas, readable text, UI, failure cross marks, brand, trademark or watermark.
+    review_status: approved

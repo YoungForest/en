@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/slipt-string-by-C.md
+context: >-
+  While solving a C problem, the author finds strtok for splitting a string; the original string is supplied on the first call, while later calls continue from saved state.
+assets:
+  - id: hero
+    file: source/images/ai/slipt-string-by-C/en-hero.webp
+    placement: hero
+    alt: A continuous bead ribbon enters a splitter once, then an empty handoff lever releases the remembered remainder in tidy segments
+    composition: >-
+      Do not use Forest. Represent the string as one continuous ribbon of blank geometric beads. A full spool enters a central separator wheel on the first pass; the mechanism stores its place, and later pulls of a completely blank handoff lever release the remaining ribbon as tidy segments divided at special beads. Explain stateful repeated splitting without showing code. No readable or pseudo-readable text, letters, digits, formulas, brands, real or fake UI, watermark or signature.
+    review_status: approved

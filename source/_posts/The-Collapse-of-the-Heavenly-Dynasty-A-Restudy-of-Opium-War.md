@@ -6,11 +6,16 @@ tags:
 - The Collapse of the Heavenly Dynasty
 categories:
 - Book Notes
+description: "A reflection on the people, policies, institutions, and inherited narratives surrounding the Opium War and China's difficult path toward modernization."
 translations:
   zh-CN: https://youngforest.github.io/2026/01/01/The-Collapse-of-the-Heavenly-Dynasty-A-Restudy-of-Opium-War/
   en: https://youngforest.github.io/en/2026/01/01/The-Collapse-of-the-Heavenly-Dynasty-A-Restudy-of-Opium-War/
 ---
 [Douban link](https://book.douban.com/subject/25935941/)
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/The-Collapse-of-the-Heavenly-Dynasty-A-Restudy-of-Opium-War/en-hero.webp" alt="Transparent historical map layers reveal a court clockwork, a maritime compass, and changing policy paths across one museum restoration table" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
 
 <!-- more -->
 

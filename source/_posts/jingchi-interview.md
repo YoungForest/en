@@ -1,5 +1,6 @@
 ---
 title: JingChi (WeRide) Interview
+description: "A candid account of a 2018 online internship interview: two algorithm and project rounds, an HR call, and a judgment about learning returns."
 tags:
 - WeRide
 - intern
@@ -16,11 +17,19 @@ The format was online interview. There were two rounds in total, each expected t
 
 The technical interviews were both very simple. After all, they were hiring coding interns for a data annotation platform, so naturally the requirements were extremely low. I felt like I was about to be sold cheaply.
 
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/jingchi-interview/en-hero.webp" alt="Forest crosses two remote interview platforms, leaving a broken audio bridge for a clear voice line and a shared geometric board" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
 <!-- more -->
 
 ## First Interview
 
 The first interview asked about projects and one [valid parentheses](https://leetcode.com/problems/valid-parentheses/description/) problem.
+
+<figure class="editorial-illustration">
+  <img src="/en/images/ai/jingchi-interview/en-second-round.webp" alt="Forest sets aside a dusty archive of old project pieces and offers a fresh internship mechanism that opens a path into a small mobility workshop" width="1536" height="864" loading="lazy" decoding="async">
+</figure>
 
 ## Second Interview
 

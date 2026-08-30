@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-190.md
+context: >-
+  After a minor ear-canal injury caused the author to miss the live contest, the post-contest review covers sentence prefixes, a fixed-length vowel window, pseudo-palindromic tree paths, and maximum dot products of two subsequences.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-190/en-hero.webp
+    placement: hero
+    alt: Forest solves an evening puzzle trail of blank prefix tiles, a five-colour window, lantern-tree paths and weighted bead pairings
+    composition: >-
+      Use the fictional Forest. At a calm evening desk, a tiny plain ear patch supplies only the post-contest context. A magnifier compares beginnings of blank tiles, a frame slides over five pebble colours, lantern paths nearly mirror along a tree, and two weighted bead rows seek the best grid pairing. No blood, medicine, medical claims, readable text, letters, digits, equations, logos, fake UI or watermark.
+    review_status: approved

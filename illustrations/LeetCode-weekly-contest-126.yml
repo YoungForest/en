@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-126.md
+context: >-
+  After a poor microphone-free recording attempt, the author returns to blogging and reviews common characters, repeated substitutions, sliding windows and interval dynamic programming for merging stones.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-126/en-hero.webp
+    placement: hero
+    alt: Forest leaves a silent recording booth for a paper desk of shared beads, vanishing triples, a sliding frame and layered stone merges
+    composition: >-
+      Use fictional Forest in an independent small community studio layout. A plain camera-shaped object and empty microphone stand sit in a cool, silent booth with no screen content or branding; Forest gives them a mildly sheepish glance, then opens a warm paper notebook at a nearby workbench. Across the bench, common colored beads remain after several sets overlap, repeated blank triplet pieces vanish, a muted-teal frame slides along a bead stream, and small stone piles merge through nested interval trays from short spans to long spans. No readable text, letters, digits, formulas, logos, brands, video-platform cues, fake UI or watermark.
+    review_status: approved

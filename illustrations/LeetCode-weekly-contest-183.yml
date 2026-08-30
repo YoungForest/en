@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-183.md
+context: >-
+  The contest review covers a minimum non-increasing subsequence that outweighs the remainder, reducing a binary representation to one, the longest diverse string without three identical consecutive characters, and optimal stone-taking dynamic programming; the author also records a rating recovery.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-183/en-hero.webp
+    placement: hero
+    alt: Forest studies a greedy balance, carry-bead spiral, guarded three-colour braid and two wooden players taking stones in turns
+    composition: >-
+      Use the fictional Forest. A distinct blank kitchen counter holds a balance that selects heavy stones until they outweigh the rest, a carry machine reducing a dark-and-teal bead chain to one bead, a three-colour braid stopped from repeating three equal sections, and two wooden players taking small handfuls from a curved trail; an unmarked gauge suggests recovery. No readable text, letters, digits, equations, logos, fake UI or watermark.
+    review_status: approved

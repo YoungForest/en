@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 154
 date: 2019-09-18 10:08:36
+description: Post-contest notes on frequency construction, nested reversal, repeated-array maximum sums and critical network connections across time zones.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2019/09/18/LeetCode-weekly-contest-154/
   en: https://youngforest.github.io/en/2019/09/18/LeetCode-weekly-contest-154/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-154/en-hero.webp" alt="Forest watches dawn beside paired balloon beads, reversing nested loops, a repeated belt and a network crossed by one fragile bridge" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 Last weekend I was in Belgium, and the contest time was from 4:30 a.m. to 6:00 a.m. The timing was unsuitable, so I did not participate. I found that only the biweekly contest time, Saturday from 4:30 p.m. to 6:00 p.m., is somewhat suitable. My goal of ranking 2000 this year is probably going to be postponed. Even in the best case, the number of contests I can participate in is only one-third of what it would be in China.
 
 ## 1189. Maximum Number of Balloons
@@ -145,5 +152,4 @@ public:
 ```
 
 ## 1192. Critical Connections in a Network
-
 

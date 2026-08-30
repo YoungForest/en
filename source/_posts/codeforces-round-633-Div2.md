@@ -1,6 +1,7 @@
 ---
 title: Codeforces Round 633 Div2
 date: 2020-04-12 22:06:55
+description: "Three solutions simplify diamond-belt states, reorder sorted values from the middle outward, and use doubling power to repair a nondecreasing array."
 tags:
 - codeforces
 - contest
@@ -15,6 +16,12 @@ translations:
 Problems on Codeforces are generally harder than ordinary interview problems. If your goal is only interviews, practicing LeetCode is enough. But if you are interested in algorithms and competitive programming, I strongly encourage you to give it a try. The quantity and quality of the problems far exceed LeetCode. It also provides different tracks for students at different levels, with different problem difficulties. For high-level players, the contest experience is much better.
 
 So far I have participated in two Div.2 contests, and my rating is 1480. Yes, the initial rating is 1500, and I actually dropped.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/codeforces-round-633-Div2/en-hero.webp" alt="A jewel workshop links two diamond states, alternates sorted pillars from the centre and raises gaps with doubling lifts" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## A. Filling Diamonds
 

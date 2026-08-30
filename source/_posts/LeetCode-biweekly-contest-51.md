@@ -1,6 +1,7 @@
 ---
 title: LeetCode Biweekly Contest 51
 date: 2021-05-02 11:52:18
+description: Four solutions shift alternating characters, manage seats with a min-heap, maximize a capped increasing array, and answer closest-room queries offline.
 tags:
 - Competitive Programming
 categories:
@@ -16,6 +17,10 @@ translations:
 A hand-speed contest. Recently my hand speed is far worse than before, and the last problem also took quite a bit of time because I was not familiar enough with it.
 
 Actually, in a hand-speed contest, the algorithms for all problems are not hard. Thinking of the correct solution is quick, but implementing it quickly and bug-free tests every programmer's fundamentals.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-biweekly-contest-51/en-hero.webp" alt="Alternating tokens pass through shift gears, a heap dispenser returns the smallest seat token, sorted stones become a gently rising staircase and eligible room keys gather around a preferred position" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
 
 <!-- more -->
 

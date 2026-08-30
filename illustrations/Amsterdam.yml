@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/Amsterdam.md
+context: >-
+  A first trip after settling in Europe combines an overpacked Amsterdam-and-villages itinerary, missed trains and luggage sprints with the unexpected reward of a rural night beneath the Milky Way and a meteor.
+assets:
+  - id: hero
+    file: source/images/ai/Amsterdam/en-hero.webp
+    placement: hero
+    alt: Forest and four anonymous travellers cross a playful luggage obstacle course that opens into a quiet rural backyard beneath the Milky Way
+    composition: >-
+      Use a distinct English composition with fictional Forest, never a portrait, and four anonymous simplified travel silhouettes. An overambitious blank folded itinerary becomes a playful obstacle course of suitcases, branching rails, a departing train and a ticking clock; the course opens into a quiet canal-side backyard where the group finally pauses beneath a luminous Milky Way and one meteor. Keep cultural cues generic and atmospheric. Do not identify real companions or hosts and do not show place names, station signs, tickets, readable text, logos, trademarks or interfaces.
+    review_status: approved

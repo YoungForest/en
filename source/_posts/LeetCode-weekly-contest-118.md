@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 118
 date: 2019-01-06 10:37:36
+description: Progress after switching to C++ through power sums, pancake sorting, tree flips, rational equality and renewed language fundamentals.
 tags:
 - Competitive Programming
 categories:
@@ -10,6 +11,10 @@ translations:
   en: https://youngforest.github.io/en/2019/01/06/LeetCode-weekly-contest-118/
 ---
 The weekly LeetCode weekly contest has begun. This week I genuinely improved compared with before. First, I am more familiar with C++; previously I always used Python. The answering process was also smoother, and I almost solved three problems.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-118/en-hero.webp" alt="Forest sharpens new tools beside power beads, a flipped disc stack, a preorder tree and equal repeating-water vessels" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
 
 <!-- more -->
 

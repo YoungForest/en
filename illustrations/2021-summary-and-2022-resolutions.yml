@@ -1,0 +1,16 @@
+version: editorial-comic-v1
+post: source/_posts/2021-summary-and-2022-resolutions.md
+context: Reviews graduation, remote work, career growth, English and system-design learning, then looks toward Europe, continued study, and more creative output in 2022.
+assets:
+  - id: hero
+    file: source/images/ai/2021-summary-and-2022-resolutions/en-hero.webp
+    placement: hero
+    alt: Forest binds graduation, remote work, English practice, and code projects into a yearly journal that grows thicker toward a new dawn
+    composition: In a winter apartment, Forest binds an unlabeled journal whose four turning pages show graduation, remote work, spoken English, and code projects, making recorded memory visibly thicker.
+    review_status: approved
+  - id: 2022-outlook
+    file: source/images/ai/2021-summary-and-2022-resolutions/en-2022-outlook.webp
+    placement: before-2022-outlook
+    alt: Forest crosses a bridge toward a rainy European skyline while tending skill gears, conversation bubbles, a book seedling, and a microphone
+    composition: Four connected bridge spans lead toward a rainy European skyline, with Forest caring for work skills, spoken English, sustained reading, and public creative output along the way.
+    review_status: approved

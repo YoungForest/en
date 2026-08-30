@@ -1,6 +1,7 @@
 ---
 title: LeetCode Weekly Contest 177
 date: 2020-02-23 12:12:46
+description: A weekly review of date differences, valid binary trees, closest divisor pairs and the largest multiple of three, focused on fast, bug-free work.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2020/02/23/LeetCode-weekly-contest-177/
   en: https://youngforest.github.io/en/2020/02/23/LeetCode-weekly-contest-177/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-177/en-hero.webp" alt="Forest follows a puzzle-garden path past blank calendar stones, connected trees, factor blocks and a circular table of pebble groups" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (4) |	Q2 (5) |	Q3 (5) |	Q4 (6)|
 |--|--|--|--|--|--|--|--|
 | 333 / 6106 |	YoungForest | 	20 | 1:04:22 | 0:25:00 | 0:33:40 | 0:43:21 | 0:59:22  1 |

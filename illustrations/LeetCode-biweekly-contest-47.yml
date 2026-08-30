@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-biweekly-contest-47.md
+context: >-
+  Four solutions find the nearest aligned point, test a sum of distinct powers of three, accumulate max-minus-min frequency across all substrings, and count node pairs by degree before correcting repeated edges.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-biweekly-contest-47/en-hero.webp
+    placement: hero
+    alt: Crossed rails select the nearest aligned point, distinct tripling weights meet a target, bead windows compare frequency towers and degree pairs pass a threshold before duplicate-rope correction
+    composition: >-
+      Do not use Forest. Create an independent English algorithm studio. A central peg checks candidates only along perpendicular horizontal and vertical rails, and a neutral caliper chooses the nearest aligned peg. A set of uniquely sized weights grows by a tripling pattern and each may be used once to balance a target pan. Expanding windows over a coloured bead strand produce frequency towers, and a difference yoke compares the tallest with the shortest nonempty tower for every window. A graph's node-degree weights sort into a paired threshold gate, then a duplicate-rope mechanism corrects pairs inflated by repeated edges. No people, characters, letters, digits, formulas, code, arrows, readable text, fake UI, logos, brands, trademarks or watermarks.
+    review_status: approved

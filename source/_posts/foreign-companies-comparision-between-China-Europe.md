@@ -1,6 +1,7 @@
 ---
 title: Comparing Foreign Companies in China and Europe
 date: 2023-10-18 19:56:40
+description: "A firsthand comparison of US technology companies in China and Europe: benefits, talent, work rhythms, diversity, and time-zone collaboration."
 tags:
 - Amazon
 - Microsoft
@@ -13,6 +14,12 @@ translations:
   en: https://youngforest.github.io/en/2023/10/18/foreign-companies-comparision-between-China-Europe/
 ---
 I have been fortunate enough to work at foreign companies both in China and in Europe. Both companies were American multinationals, and therefore foreign companies in both China and Ireland. Both also belong to the internet industry. My overall feeling can be summarized in one sentence: it all depends on comparison with peers.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/foreign-companies-comparision-between-China-Europe/en-hero.webp" alt="Forest sits at a long desk spanning Beijing and Dublin as morning and evening clocks face a distant US office and three teams relay one service lamp" width="1536" height="864" decoding="async">
+</figure>
+
+<!-- more -->
 
 The characteristics of foreign companies in China are Work Life Balance, no overtime, good benefits, good package, and very humane treatment. Colleagues are also very strong, basically graduates of top schools. Of course, in recent years the salary level of China's internet industry has also caught up and in some cases even surpassed them, such as emerging companies ByteDance and Pinduoduo. I stayed at this foreign company for two years. Because I joined after the pandemic, it was basically work from home, even remote onboarding. The biggest feeling of humane treatment came from the 2021 Beijing hukou amnesty. At that time, the policy had half-year and three-year quotas, to be decided through negotiation between company and employee. That is, after you paid social security for half a year or three years, the hukou process could begin. It was said to be negotiation, but employees were in a weak position and did not have many choices. Foreign companies basically let employees choose for themselves, and of course employees all chose half a year. At that time, mainstream domestic internet companies basically gave three years. Some went even further and added a service period to five years, requiring an agreement that if you left early you had to repay money proportionally. When everyone generally had five days of annual leave, foreign companies gave 12 days. Housing fund contributions were also paid at the maximum 12%. China's labor law actually sets quite high standards. For example, layoff compensation is N+1, much higher than Europe's standard of N/2. In the first half of 2023, American big tech companies had large-scale layoffs, and my former company was no exception. The China office was also affected, but compensation was N+6. Still quite nice.
 

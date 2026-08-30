@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 159
 date: 2019-10-21 09:29:11
+description: Weekly notes on collinear points, removing subfolders, balancing a four-symbol string and weighted job scheduling.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2019/10/21/LeetCode-weekly-contest-159/
   en: https://youngforest.github.io/en/2019/10/21/LeetCode-weekly-contest-159/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-159/en-hero.webp" alt="A wordless logistics yard aligns posts under one cable, removes nested crates, slides a frame across four-colour cargo and schedules job carts" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 ## 1232. Check If It Is a Straight Line
 
 Check whether every three consecutive points are collinear.

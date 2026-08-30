@@ -1,6 +1,7 @@
 ---
 title: LeetCode Weekly Contest 217
 date: 2020-11-29 20:28:52
+description: Contest solutions sum wealth, preserve a subsequence with a monotonic stack, count complementary moves by intervals, and minimize deviation by halving.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2020/11/29/LeetCode-weekly-contest-217/
   en: https://youngforest.github.io/en/2020/11/29/LeetCode-weekly-contest-217/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-217/en-hero.webp" alt="An abacus totals rows of coins, a monotone rack ejects larger stones, complementary pairs create interval ridges and repeated halving pulls the widest values together" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (4) |	Q3 (6) |	Q4 (7)|
 |--|--|--|--|--|--|--|--|
 | 356 / 9462 | YoungForest | 13 | 	1:24:07 |  0:03:55	 | 0:20:14 |  1:09:07  3 | null |

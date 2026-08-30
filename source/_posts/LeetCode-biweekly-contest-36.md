@@ -1,6 +1,7 @@
 ---
 title: LeetCode Biweekly Contest 36
 date: 2020-10-06 09:29:23
+description: A biweekly review covers parking capacity, access alerts, row-column matrices and server rotation; only the first two were solved during the contest.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2020/10/06/LeetCode-biweekly-contest-36/
   en: https://youngforest.github.io/en/2020/10/06/LeetCode-biweekly-contest-36/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-biweekly-contest-36/en-hero.webp" alt="Three vehicle sizes consume matching bays, access tokens share one hourglass window, row and column vessels fill a grid and a repaired server carousel redistributes requests" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (4) |	Q3 (6) |	Q4 (7)|
 |--|--|--|--|--|--|--|--|
 | 1667 / 8332 | YoungForest | 7 | 0:15:37 | 0:01:46 | 0:15:37 | null | null |
@@ -164,4 +171,3 @@ public:
 
 Time complexity: O(arrival.size() * k),
 space complexity: O(k).
-

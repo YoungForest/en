@@ -1,0 +1,19 @@
+version: editorial-comic-v1
+post: source/_posts/unordered-map-hash-pair-c.md
+context: >-
+  A collision-prone XOR hash for pair causes a timeout and a lost morning, leading the author back to a classic hash-combine technique and a broader lesson about copying snippets without understanding them.
+assets:
+  - id: hero
+    file: source/images/ai/unordered-map-hash-pair-c/en-hero.webp
+    placement: hero
+    alt: Swapped pairs of geometric tokens jam one symmetric sorting chute while a better mixer distributes each combination across separate bins
+    composition: >-
+      Use an overhead warehouse composition distinct from the Chinese image. Swapped pairs of circle-and-triangle tokens enter two sides of a perfectly symmetric chute, receive identical plain keys, and pile into one jammed bin. Nearby, a compact multi-stage tumbler rotates and offsets each pair before distributing distinct keys across many open bins. No code, constants, container names, equations, logos, labels, or readable text.
+    review_status: approved
+  - id: hash-combine
+    file: source/images/ai/unordered-map-hash-pair-c/en-hash-combine.webp
+    placement: before-correct-implementation
+    alt: An old unlabelled workshop manual unfolds into a layered mixing mechanism that turns two components into several distinct key patterns
+    composition: >-
+      Create a cutaway desk scene rather than the Chinese toolbox. An old completely unlabelled workshop manual opens into a small three-stage mechanical model: two geometric parts enter, an accumulating wheel rotates and offsets them, and several distinct key patterns emerge into separate trays. A flimsy copied stencil sits discarded at the edge. No real book cover, title, code, formula, numbers, brand, or readable text.
+    review_status: approved

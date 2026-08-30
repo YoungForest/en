@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/sublime-personlize.md
+context: >-
+  After six months of exploration, the author tailored a code editor with language-specific settings and a more comfortable colour scheme. Existing comparison screenshots remain in the article.
+assets:
+  - id: hero
+    file: source/images/ai/sublime-personlize/en-hero.webp
+    placement: hero
+    alt: A modular editor desk swaps language-specific tool trays and adjusts stage-light filters until the workspace feels comfortable
+    composition: >-
+      Do not use Forest. Make a distinct English composition as a small theatre-like editor desk: several modular tool trays with different geometric instruments slide beneath a blank abstract code sheet, suggesting language-specific settings. Above it, a row of charcoal, muted-teal and amber stage-light filters is being tuned until the central work surface becomes calm and readable, while discarded mismatched filters lean comically to one side. No reproduction of a real editor UI or theme, no application icon, brand, code, readable text, number, logo, trademark or watermark.
+    review_status: approved

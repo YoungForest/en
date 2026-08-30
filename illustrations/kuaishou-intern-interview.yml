@@ -1,0 +1,16 @@
+version: editorial-comic-v1
+post: source/_posts/kuaishou-intern-interview.md
+context: After passing two algorithm-intern interviews and joining the team, the author turns weak answers into a preparation plan centered on data structures and algorithms, with SQL and machine learning as supporting skills.
+assets:
+  - id: hero
+    file: source/images/ai/kuaishou-intern-interview/en-hero.webp
+    placement: hero
+    alt: Forest crosses two unmarked interview gates along a route of array tracks, memory boxes, and tree branches toward a bright internship workbench
+    composition: Show Forest crossing two distinct unnumbered interview gates. The first is flanked by a continuous-array track and reversible blocks; the second by small memory boxes, a rotated array ring, and a binary tree. The path reaches a bright unbranded internship workbench. Preserve short dark hair, round glasses, charcoal overshirt, and muted-teal T-shirt.
+    review_status: approved
+  - id: preparation-path
+    file: source/images/ai/kuaishou-intern-interview/en-preparation-path.webp
+    placement: before-interview-preparation
+    alt: Forest reorganizes scattered problem pieces into an interview-preparation road with a strong central route and supporting side paths
+    composition: At a blank worktable, Forest rearranges scattered algorithm branches, code blocks, data cards, concurrency gears, and a machine-learning prism into a route. Algorithms and data structures form the broad central road while the other skills become narrower supporting paths, turning weak answers into priorities.
+    review_status: approved

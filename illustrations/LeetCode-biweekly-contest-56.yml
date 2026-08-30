@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-biweekly-contest-56.md
+context: >-
+  Four solutions enumerate square-sum triples, use breadth-first search for the nearest exit, play a two-half sum game, and minimize cost under a time limit.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-biweekly-contest-56/en-hero.webp
+    placement: hero
+    alt: Square tiles form a right triangle, maze waves reach the nearest exit, blank counters balance two halves and timed routes compare costs
+    composition: >-
+      Do not use Forest. Make a distinct English mathematics workshop in four spacious bays. Sets of square tiles assemble around a right triangle so the two smaller square areas exactly fill the largest frame. A muted-teal ripple expands level by level from a maze entrance and reaches the nearest boundary opening first. Two mechanical arms alternate placing blank counters on the two halves of a balance, one widening and one narrowing the difference. Several road models run beneath one sand timer, and plain cost tokens accumulate while only routes within the time gate remain. No people, question marks, characters, letters, digits, currency signs, code, formulas, readable text, logo, trademark or watermark.
+    review_status: approved

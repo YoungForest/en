@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/github-page-binding-domain.md
+context: >-
+  A historical configuration note about binding a custom domain to a static site by completing settings on both the domain and repository sides.
+assets:
+  - id: hero
+    file: source/images/ai/github-page-binding-domain/en-hero.webp
+    placement: hero
+    alt: A custom address plaque crosses a domain-routing bridge to a static-site lighthouse secured by a repository anchor
+    composition: >-
+      Do not use Forest. Represent the blog as an unmarked static-site lighthouse. A blank amber address plaque travels across a domain-routing bridge, passes through muted-teal branching nodes and fits neatly beside the lighthouse door; on the other side, a plain file-crate repository anchor secures the connection, showing that both ends require setup. Keep it a clear engineering fable with mild relief at a successful fit. No readable or pseudo-readable text, letters, digits, domain names, GitHub or Tencent marks, Octocat, brands, real or fake UI, watermark or signature.
+    review_status: approved

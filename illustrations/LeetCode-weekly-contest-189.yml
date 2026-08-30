@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-189.md
+context: >-
+  The contest counts active time intervals, stably sorts words by length, tests whether sets are contained by others, and finishes with angular sweep for partial disk coverage; the author also reflects that a temporary ranking high came from one lucky result rather than stable improvement.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-189/en-hero.webp
+    placement: hero
+    alt: A moment of light crosses student intervals, blank cards reorder by length, transparent sets test containment and a rotating disk covers the densest points
+    composition: >-
+      Do not use Forest. Create a distinct English four-island geometry desk: one amber instant of light crosses several unlabelled interval ribbons and illuminates only the wooden student figures active at that moment; blank cards of visibly different lengths settle from shortest to longest while preserving peers; transparent cases holding different plain tokens nest and compare, with only cases not fully contained by another raised on small plinths; a clear circular disk pivots around an edge point and at one angle encloses the densest cluster of pegs. Add a tiny unnumbered ranking float that briefly rose and is settling to its usual level. No readable text, digits, letters, formulas, code, arrows, company marks, fake UI or watermark.
+    review_status: approved

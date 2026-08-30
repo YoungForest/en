@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/3-body.md
+context: Looking back at reading the trilogy a decade earlier, the author notices a shift from admiring ruthless survival logic toward understanding the emotions humanity cannot simply discard.
+assets:
+  - id: hero
+    file: source/images/ai/3-body/en-hero.webp
+    placement: hero
+    alt: Younger and older Forest stand at opposite ends of a cosmic board, one holding austere geometric pieces and the other sheltering a warm light
+    composition: Place younger and older Forest at opposite ends of one abstract cosmic board. The younger figure studies cold geometric pieces and rigid paths; the older figure bends to protect a small amber glow while the star paths quietly connect both stages of life. Preserve short dark hair, round glasses, charcoal overshirt, and muted-teal T-shirt.
+    review_status: approved

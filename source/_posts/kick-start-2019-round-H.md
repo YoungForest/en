@@ -5,6 +5,7 @@ tags:
 - Competitive Programming
 categories:
 - KickStart
+description: "A six-in-the-morning contest, a day trip and a rushed assignment frame solutions for a changing citation index, diagonal flips and balanced arrangements."
 translations:
   zh-CN: https://youngforest.github.io/2019/11/25/kick-start-2019-round-H/
   en: https://youngforest.github.io/en/2019/11/25/kick-start-2019-round-H/
@@ -24,6 +25,12 @@ Overall, my rank first went down and then went up. It does not reflect a change 
 Recently I also unexpectedly received an invitation to Google's Beijing A Day with Google. Unfortunately I was not in Beijing anymore, so I had to decline. In addition, I emailed Google to report that all Google recruiting-related forms did not include Beihang University in the "My University" options. I guessed this might be because Beihang was on the U.S. Department of Commerce blacklist. Google resolved it quickly. From now on, my Beihang is no longer treated like a diploma mill.
 
 In this contest, I solved the warm-up problem and the small test set 1 of problem 3. I guess that counts as a normal performance.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/kick-start-2019-round-H/en-hero.webp" alt="A predawn puzzle cabinet links rising blank-paper steps, a diagonal tile loom and a balanced arrangement of coloured counters" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## A. H-index
 

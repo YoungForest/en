@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-232.md
+context: >-
+  Four solutions test whether one swap equalizes two strings, find a star-graph centre, greedily allocate extra students by marginal pass-ratio gain, and expand from a fixed index for the best good-subarray score.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-232/en-hero.webp
+    placement: hero
+    alt: Two mismatched beads swap into alignment, spokes reveal a central hub, bonus marbles enter the best-gain vessel and two rails expand from an anchored column
+    composition: >-
+      Do not use Forest. Make a distinct English four-stage algorithm coach's bench. Two equal blank bead strings differ at exactly two positions and a physical crossing arm swaps those beads into alignment. A star of plain rods joins several outer sockets to one central hub, with the shared hub of the first two rods visibly sufficient. Transparent class vessels contain pass and total marbles on a priority carousel, and each bonus marble rolls to the vessel with the greatest marginal rise. A fixed anchor sits among varied-height columns while two mechanical rails expand outward, choosing the taller next boundary and holding a rigid rectangle whose height is the current minimum. No people, characters, letters, digits, formulas, code, readable text, axes, arrows, UI, logos, brands, trademarks or watermarks.
+    review_status: approved

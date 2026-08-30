@@ -6,11 +6,18 @@ tags:
 - gcc
 categories:
 - Programming
+description: "How to align an editor's include paths with GCC's real search order so the universal C++ header is indexed without false errors."
 translations:
   zh-CN: https://youngforest.github.io/2020/05/18/vscode-include-bits-stdc-h/
   en: https://youngforest.github.io/en/2020/05/18/vscode-include-bits-stdc-h/
 ---
 Recently, I have often needed to include the universal header `bits/stdc++.h` when doing Kick Start. However, my beloved editor VS Code always fails to locate this header correctly and shows a red squiggly error. As a programmer, I absolutely cannot tolerate that, so I tried to solve the problem. I searched online for many solutions, but most of them did not directly solve my issue. So I am summarizing my own solution here for everyone to use.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/vscode-include-bits-stdc-h/en-hero.webp" alt="A mechanical catalogue cart follows the compiler's shelf order to retrieve an umbrella-shaped master binder as a red squiggle unknots itself" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 Programming environment:
 g++ 9.1.0, Mac 10.14.2, VS Code 1.45.1

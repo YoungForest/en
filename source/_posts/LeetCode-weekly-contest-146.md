@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 146
 date: 2019-07-21 22:49:39
+description: A day-out, night-finish review of domino normalisation, alternating paths, minimum-cost leaf trees and sign enumeration.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2019/07/21/LeetCode-weekly-contest-146/
   en: https://youngforest.github.io/en/2019/07/21/LeetCode-weekly-contest-146/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-146/en-hero.webp" alt="Forest returns from a daytime reunion to rotate dominoes, trace alternating paths, lift large leaves and flip three sign levers at night" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 Today my high school classmate xl came to Beijing to chat with me. I had lunch and dinner with him and hcq, and we chatted for the whole afternoon. During the morning contest, I only hurriedly finished the warm-up problem. For the second problem, because of carelessness, I wrote the timing of the `red` change incorrectly and had no time to debug it. I did not even look at the last two problems.
 After coming back at 9 p.m., I finally finished the problems, and also found the bug in the second problem.
 But in terms of time, it should have been too late.

@@ -1,0 +1,16 @@
+version: editorial-comic-v1
+post: source/_posts/2019-summary-and-2020-resolutions.md
+context: Reviews coding practice, technical study, internships, research, and communication challenges before setting graduation, career, and health goals for 2020.
+assets:
+  - id: hero
+    file: source/images/ai/2019-summary-and-2020-resolutions/en-hero.webp
+    placement: hero
+    alt: Forest carries algorithm blocks, internship tools, and research papers toward two parallel gates representing graduation and job hunting
+    composition: Forest packs a year of technical and research accumulation for two gates that must be crossed together, conveying preparation alongside uncertainty without real employer or university branding.
+    review_status: approved
+  - id: social-support
+    file: source/images/ai/2019-summary-and-2020-resolutions/en-social-support.webp
+    placement: before-learning-detached-from-social-interaction
+    alt: Forest carries heavy blocks alone on a tilting narrow bridge while nearby peers extend shared scaffolding and support ropes
+    composition: Forest initially builds alone in the wrong direction while a nearby peer network offers shared structure, emotional support, and practical guidance through physical scaffolding rather than labels.
+    review_status: approved

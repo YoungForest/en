@@ -1,0 +1,19 @@
+version: editorial-comic-v1
+post: source/_posts/Django-note.md
+context: >-
+  The author recalls using Django with a teammate for a database course project, relying on a large framework to assemble frontend and backend quickly while rescuing features and documentation in the final hours.
+assets:
+  - id: hero
+    file: source/images/ai/Django-note/en-hero.webp
+    placement: hero
+    alt: Younger Forest and a teammate use a large modular workshop rig to assemble a database foundation, service pipes, and a simple charging-station model
+    composition: >-
+      Use a distinct English composition with younger fictional Forest and one generic teammate. A large modular workshop rig supplies ready-made database foundations, service pipes, and page panels that snap into a small charging-station model, conveying leverage from a complete framework. No framework logo, code, readable text, or fake interface.
+    review_status: approved
+  - id: deadline-rescue
+    file: source/images/ai/Django-note/en-deadline-rescue.webp
+    placement: inline-before-time-allocation
+    alt: Under a nearly empty hourglass, Forest and a teammate repair opposite sides of a course-project machine while loose documentation pages settle into place
+    composition: >-
+      Show a different last-minute rescue metaphor: beneath a nearly empty hourglass, Forest repairs the functional side of a course-project machine while the teammate connects two last components and corrals loose documentation pages on the other side. Keep the humour gentle and collaborative. No grades, code, labels, brands, or fake interface.
+    review_status: approved

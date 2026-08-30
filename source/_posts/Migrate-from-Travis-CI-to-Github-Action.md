@@ -5,7 +5,15 @@ tags:
 - Blog
 categories:
 - Tech Sharing
+description: Migrating a Hexo blog deployment from Travis CI to GitHub Actions after free public-repository builds stopped working.
+translations:
+  zh-CN: https://youngforest.github.io/2021/12/18/Migrate-from-Travis-CI-to-Github-Action/
+  en: https://youngforest.github.io/en/2021/12/18/Migrate-from-Travis-CI-to-Github-Action/
 ---
+
+<figure class="editorial-illustration editorial-illustration--hero"><img src="/en/images/ai/Migrate-from-Travis-CI-to-Github-Action/en-hero.webp" width="1536" height="864" alt="Static-page crates cross from a dark stalled conveyor into a branching workflow machine that restores paired-site delivery" decoding="async" fetchpriority="high"></figure>
+
+<!-- more -->
 
 Two months ago, I configured Travis CI to automatically deploy my blog in
 [Travis CI Hexo Automatically Deploy](https://youngforest.github.io/en/2021/10/09/Travis-CI-Hexo-Automatically-Deploy/).

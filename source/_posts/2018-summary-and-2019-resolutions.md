@@ -1,6 +1,7 @@
 ---
 title: 2018 Year-End Summary and 2019 New Year Outlook
 date: 2018-12-12 21:29:47
+description: "A 2018 review of internships and career exploration, followed by goals for health, exchange, and deeper systems learning."
 tags:
 - Life
 - Year-end Summary
@@ -13,6 +14,12 @@ translations:
 Merry Christmas!
 
 There are still five days before 2019, and 2018 is about to end. A year passes so quickly. I wonder how your 2018 was. How many of the New Year's plans you made a year ago did you accomplish?
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/2018-summary-and-2019-resolutions/en-hero.webp" alt="Forest organizes three internship toolboxes and tangled compiler parts into a career compass pointing toward computer systems" width="1536" height="864" decoding="async">
+</figure>
+
+<!-- more -->
 
 In my 2017 New Year's plan, I once wrote this passage:
 > I recently read Cai Dongfan's [History of the Five Dynasties](https://book.douban.com/subject/3089584/), learned about the chaotic history of the Five Dynasties, lamented that most rulers were muddleheaded and ruined their states, and that even wise rulers had flaws. At the same time, I put myself in their shoes and asked whether I would be a wise emperor. The answer was no. I am lazy, have no willpower, dislike criticism, and only like praise. If I were placed in the position of an emperor, I would definitely be a ruler who lost his country. Thinking about it is still frightening.
@@ -56,6 +63,10 @@ Finally, the value of the PhD degree itself. For an ordinary person, the benefit
 
 Then when should I pursue it? I think, of course, the earlier the better, but quality matters more than speed. So I need to work for several years first, and only then find a good opportunity to pursue a PhD at a top school with a strong advisor. I will try to earn a PhD before age 40.
 
+<figure class="editorial-illustration">
+  <img src="/en/images/ai/2018-summary-and-2019-resolutions/en-2019-plan.webp" alt="Forest arranges health, internship, overseas exchange, and systems learning as four mutually supporting stepping stones for the year ahead" width="1536" height="864" loading="lazy" decoding="async">
+</figure>
+
 ## 2019 resolution
 
 Earlier I summarized and looked ahead with a lot of broad principles, but is there no concrete plan or vision at the end? There should still be one, although I think the self-understanding above is more important. These resolutions are very concrete and represent the ideal situation. If I can eventually achieve 80% of them, I will be satisfied. Concrete plans are affected by many factors, including some I cannot control.
@@ -76,4 +87,3 @@ Earlier I summarized and looked ahead with a lot of broad principles, but is the
         - *The Beauty of Programming*, interviews and algorithms
         - *Design Patterns*, OOP
     - Participate in more real interviews
-

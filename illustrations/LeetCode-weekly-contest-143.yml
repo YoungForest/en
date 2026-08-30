@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-143.md
+context: >-
+  The review covers increasingly large candy distributions, recovering a path in a reverse-labelled zigzag tree, shelf packing with pruning or dynamic programming, and parsing a boolean expression.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-143/en-hero.webp
+    placement: hero
+    alt: A mechanical workshop distributes growing bead portions, restores a zigzag tree path, prunes shelf layouts and opens nested logic gates
+    composition: >-
+      Use a character-free thematic workshop staged differently from the Chinese edition. A carousel drops increasing bead portions into plain cups; mirrored branches on a layered zigzag tree reveal a path back to the root; a width-limited travelling bookshelf tests book groupings while a pruning shear removes impossible arrangements; and a nested system of plain rings and two contrasting mechanical gates opens from the inside outward. No readable text, letters, digits, formulas, logos, brands, fake UI or watermark.
+    review_status: approved

@@ -6,6 +6,7 @@ tags:
 - Sword Stained with Royal Blood
 categories:
 - Book Notes
+description: "A review of Yuan Chonghuan's biography that examines late-Ming institutions, imperial decisions, corruption, and the cost borne by ordinary people."
 translations:
   zh-CN: https://youngforest.github.io/2023/08/20/Yuan-Chong-Huan/
   en: https://youngforest.github.io/en/2023/08/20/Yuan-Chong-Huan/
@@ -14,6 +15,12 @@ translations:
 The novel itself is a 6/10, but the appended "A Critical Biography of Yuan Chonghuan" is extremely good. It has history, as well as Jin Yong's own commentary. Most importantly, many of its views on the fall of the Ming align with mine. It is worth 10/10. I had so many thoughts that a short review could not hold them, so I wrote a [very long book review](https://book.douban.com/review/15397152/).
 
 Yuan Chonghuan was truly a peerless statesman. The Ming-Qing transition was China's last dynastic change under the feudal monarchy system. Because it happened relatively recently, records and historical memory are quite clear. And because multiple forces were competing, the drama was intense. The ending was that the Manchus entered the Central Plains and established 268 years of rule over China proper. It ended as an even greater tragedy, making it all the more regrettable and infuriating. The year 1644 was the first year of Shunzhi, the seventeenth year of Chongzhen, and the first year of Yongchang. I am grateful to Jin Yong for using this background to write this wuxia novel. This novel also connects several of Jin Yong's other works, such as *The Deer and the Cauldron*; characters including Jiu Nan, Gui Xinshu, and Feng Nandi all appear.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Yuan-Chong-Huan/en-hero.webp" alt="A frontier commander repairs a breach in the wall while ropes from the court pull his tools in conflicting directions and civilians shelter below" width="1536" height="864" decoding="async">
+</figure>
+
+<!-- more -->
 
 My earliest exposure to this period of history was through various Qing palace dramas I watched as a child, such as *The Secret History of Xiaozhuang*. Later, in college, I read Dangnian Mingyue's *Those Things in the Ming Dynasty*, which gave me a relatively detailed understanding of this period. Regarding the tragic history of the late Ming, Dangnian Mingyue can be said to have been reluctant to write too much. In particular, as a civil servant, whether intentionally or not, he was good at using the "Spring and Autumn brushwork": glorifying Ming emperors and covering up their faults, especially Emperor Yingzong and Emperor Chongzhen. After finishing it, I somehow felt that "my ministers have misled me" made sense, and that the reason the Ming fell was simply that "the Great Ming's fate" had run out. Many changes were left unexplained. For example, from Tianqi to Chongzhen, it suddenly went from upright officials filling the court to eunuch-party domination; even after the eunuch party was destroyed, the entire bureaucracy still became deeply corrupt.
 

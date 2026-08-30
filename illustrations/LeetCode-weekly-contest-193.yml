@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-193.md
+context: >-
+  The first three problems use running prefix sums, greedy removal by frequency and binary search on the answer; the final problem was missed in contest because tree binary lifting was unfamiliar, then learned as a space-for-time ancestor table.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-193/en-hero.webp
+    placement: hero
+    alt: A cumulative canal, frequency baskets, a threshold greenhouse and a doubling scaffold on an ancestor oak create four linked learning stations
+    composition: >-
+      Do not use Forest. Create a distinct English garden-laboratory with four large calm islands: a canal gathers one extra droplet into each successive basin; baskets of identical stones are ordered by how full they are and the sparsest is emptied first; a row of blank greenhouse gates crosses from closed buds to enough flowers for bouquets at one amber threshold; an old ancestor oak carries mechanical platforms that jump one level, then two, then four, with one late spare rung waiting at the base to suggest learning after the contest. No people, readable text, digits, letters, formulas, code, arrows, logos, trademarks, fake UI or watermark.
+    review_status: approved

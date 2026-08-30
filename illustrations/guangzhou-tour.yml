@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/guangzhou-tour.md
+context: >-
+  The author and a companion travel south from Beijing through Guangzhou, Macau, and Hong Kong, mixing morning tea, unfamiliar transport and carefree play with expensive surprises, wrong turns and exhaustion before returning to work and study. Existing photos remain factual records.
+assets:
+  - id: hero
+    file: source/images/ai/guangzhou-tour/en-hero.webp
+    placement: hero
+    alt: Forest and a companion ride a playful river-delta transport loop past morning tea, a ferry, and a steep tram before the homebound train restores daily focus
+    composition: >-
+      Use fictional Forest, never a portrait: short dark hair, round glasses, charcoal overshirt and muted-teal T-shirt; show the companion as a simplified figure. Create a distinct English composition as a compact river-delta transport loop seen from above. A train arrives beside a leisurely tea basket, a small ferry crosses toward restrained blank gaming tokens and old masonry, and a steep tram threads between dense buildings and a comically narrow hotel room. At the loop's exit, the pair board a homebound train while a closed notebook waits on a calm desk. Keep three large beats rather than dense sightseeing details. No real landmark, casino, theme-park character, consumer product, brand, price, station sign, map label, readable text, number, logo, trademark or watermark.
+    review_status: approved

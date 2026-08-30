@@ -6,6 +6,7 @@ categories:
 tags:
 - Hexo
 mathjax: false
+description: "My first Hexo and GitHub Pages setup: why I began writing, how the site was built, and what went wrong during deployment."
 translations:
   zh-CN: https://youngforest.github.io/2016/11/02/Hexo-github-building-personal-blog/
   en: https://youngforest.github.io/en/2016/11/02/Hexo-github-building-personal-blog/
@@ -13,7 +14,11 @@ translations:
 ## Motivation, Placed First
 I used to have a blog on CNBlogs, but I did not maintain it often. Even now, counting everything, it only had three essays and one follower. The main reason was that I did not have the habit of writing. In high school, I kept a diary for a while and wrote more than half a notebook in total. It was all motivational, self-deceiving, content written for myself.
 
-<!--more-->
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Hexo-github-building-personal-blog/en-hero.webp" alt="Forest binds scattered technical notes into pages that form a small bridge toward an orderly public bookshelf" width="1536" height="864" decoding="async">
+</figure>
+
+<!-- more -->
 
 First, I used to feel that there was nothing to write about, but now I think there is actually quite a lot. I have tinkered with many things over the past two years. But to be honest, after finishing the tinkering, I forget things very quickly. The next time I do it myself or help someone else handle the same problem, I basically have to start over. After writing things down, whether for my own future needs or for friends to reference, it is extremely useful.
 
@@ -80,4 +85,3 @@ npm install hexo-generator-sitemap@1 --save
 
 When you visit your `GitHub Pages` in the browser, you will see the deployed blog.
 You can see my deployed blog [here](https://youngforest.github.io/).
-

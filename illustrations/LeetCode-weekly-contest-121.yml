@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-121.md
+context: >-
+  Distracted while traveling home for vacation, the author completes only one contest task, later solves more on the train, and reflects after a phone interview on speed, patterns and communication practice.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-121/en-hero.webp
+    placement: hero
+    alt: Forest regains focus at a train worktable with alternating beads, time drawers, route passes and three layered bit plates
+    composition: >-
+      Use fictional Forest in an independent quiet railway-carriage composition, with a plain travel bag and blurred anonymous platform behind him but no signs, station identity or train branding. At the small worktable, alternating amber and teal beads never form a run longer than two; stacked time drawers yield the latest available blank token; overlapping blank travel-pass tiles cover a winding unmarked route at minimum cost; three perforated abstract plates combine so every opening closes. A plain handset, hourglass and diagram tools sit nearby to suggest later phone-interview lessons about speed and communication without depicting an employer or interview screen. No readable text, letters, digits, formulas, logos, brands, fake UI, watermark or signature.
+    review_status: approved

@@ -1,6 +1,7 @@
 ---
 title: LeetCode Biweekly Contest 37
 date: 2020-10-18 09:54:27
+description: A biweekly review covers trimmed means, network-quality search and segment DP; problem three passed two minutes late and problem four stayed unimplemented.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2020/10/18/LeetCode-biweekly-contest-37/
   en: https://youngforest.github.io/en/2020/10/18/LeetCode-biweekly-contest-37/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-biweekly-contest-37/en-hero.webp" alt="A sorted bead row sheds both ends before weighing the middle, tower signals reveal a bright coordinate, clamps form non-overlapping segments and an ornate sequence cabinet remains unfinished" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (4) |	Q3 (5) |	Q4 (7)|
 |--|--|--|--|--|--|--|--|
 | 893 / 8250 | YoungForest | 7 | 0:27:31 | 0:11:24 | 0:27:31 |  null | null |
@@ -118,4 +125,3 @@ This problem is already beyond my current ability. I had no idea at all.
 After studying the discussion section once, it seems there are roughly two types of algorithms:
 - [modular multiplicative inverse](https://leetcode-cn.com/problems/fancy-sequence/solution/qi-miao-xu-lie-by-zerotrac2/)
 - [lazy segment tree](https://leetcode-cn.com/problems/fancy-sequence/solution/ru-guo-bu-liao-jie-cheng-fa-ni-yuan-jiu-hao-hao-xu/)
-

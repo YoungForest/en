@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-231.md
+context: >-
+  Three in-contest solutions recognize one lit segment with a state machine, close a target-sum gap in maximum steps, and combine Dijkstra distances with memoized path counts; post-contest grouped DP makes every fixed-length segment XOR to zero.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-231/en-hero.webp
+    placement: hero
+    alt: One uninterrupted lamp run crosses a state gate, large weights close a balance gap, paths descend through a distance landscape and a late-lit grouped loom resolves XOR signals
+    composition: >-
+      Do not use Forest. Create a distinct English four-bay signal workshop. A row of plain lamps contains at most one uninterrupted illuminated run, controlled by a three-chamber physical state gate. A target balance has a gap and a mechanical hand repeatedly adds the largest allowed upward- or downward-oriented weight; an extra-long weight trough hints at overflow without symbols. A graph terrain receives distance height from its destination, and only edges that physically descend toward that destination glow, with small memo drawers caching finished branches. In the last bay, repeating columns are sorted into residue groups and a DP loom chooses group states so fixed-length windows cancel through a faceted XOR prism; evening illumination marks post-contest completion. No people, characters, letters, digits, plus/minus signs, formulas, code, readable text, arrows, UI, logo, trademark or watermark.
+    review_status: approved

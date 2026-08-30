@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-257.md
+context: >-
+  Four solutions enumerate index-ordered quadruplets, sort and count weak characters, use dynamic programming for the first day all rooms have been visited, and connect values through prime-factor union-find components for GCD sorting.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-257/en-hero.webp
+    placement: hero
+    alt: Four forward gates select marbles, sorted spear-and-shield tokens expose weaker pieces, a room track loops before advancing and factor gears connect sortable stones
+    composition: >-
+      Do not use Forest. Create a distinct English four-bay algorithm coaching bench. A conveyor passes through four forward-only physical selection gates and the chosen marbles meet in a balance tray, conveying ordered indices without labels. Spear-and-shield tokens sort by descending spear height and ascending shield size within ties, while a scanning bar separates pieces dominated in both dimensions. A chain of rooms has a forward door and a physical return loop; alternate visits loop back or advance, and a folded DP rail reuses prior journey length. Finally, blank value stones attach to prime-factor gear hubs in a union-find rack, then align with sorted destination sockets. No people, characters, letters, digits, formulas, code, readable text, arrows, game logos, UI, brands, trademarks or watermarks.
+    review_status: approved

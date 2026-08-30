@@ -1,5 +1,6 @@
 ---
 title: Manually Building qBittorrent on Mac
+description: "After a macOS update stopped qBittorrent from opening, I kept the security checks and documented an afternoon of building Qt, Boost, and libtorrent."
 date: 2021-02-27 17:10:01
 tags:
 - Tinkering
@@ -20,6 +21,12 @@ There are two solutions:
 - Manually build the app yourself
 
 For certain reasons, I could not make too many system-level changes to the Mac. So I had to try the second solution. It turned out that manually building qBittorrent was not simple; one whole afternoon passed like that, and I did not get to watch the movie either. To make it easier for classmates with the same problem to reference, I record my solution here. During my build process, I did not find similar tutorials or references online, and there were indeed quite a few pitfalls.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/build-qBittorrent/en-hero.webp" alt="Forest follows a trail of loose dependency parts from an untouched film projector to an unfinished machine beside an unbranded laptop" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## Steps
 
@@ -63,6 +70,10 @@ you can delete the corresponding folder or change its owner with `chown`.
 brew cleanup
 sudo rm -rf /usr/local/Cellar/openssl/1.0.2q
 ```
+
+<figure class="editorial-illustration">
+  <img src="/en/images/ai/build-qBittorrent/en-dependency-chain.webp" alt="An assembly line of interlocking library modules stops at one undersized network gear while Forest shapes a replacement at a side bench" width="1536" height="864" loading="lazy" decoding="async">
+</figure>
 
 After I ran `brew install libtorrent-rasterbar` and then `./configure`, I still ran into a wrong-version problem for that library:
 

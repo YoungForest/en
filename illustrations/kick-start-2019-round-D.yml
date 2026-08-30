@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/kick-start-2019-round-D.md
+context: >-
+  The contest note focuses on an XOR interval problem: after overcommitting to a segment tree, the author finds the direct parity rule and chooses between trimming the left or right end when the odd count is odd.
+assets:
+  - id: hero
+    file: source/images/ai/kick-start-2019-round-D/en-hero.webp
+    placement: hero
+    alt: Forest abandons a tangled tree mechanism, pairs parity lanterns and compares two end trims on a long bead interval
+    composition: >-
+      Use fictional Forest in an outdoor night contest shelter. A tangled branching interval contraption occupies the background but remains idle. In the foreground, Forest discovers the simple pattern by pairing amber and teal lanterns, then studies a long line of mixed beads with two possible scissors: remove through the first special bead from the left or from the right, keeping the longer middle span. Keep the XOR idea purely visual and lightly humorous. No readable text, letters, digits, formulas, logos, brands, fake UI or watermark.
+    review_status: approved

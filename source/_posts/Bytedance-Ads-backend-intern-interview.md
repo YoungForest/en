@@ -1,5 +1,6 @@
 ---
 title: ByteDance Summer Internship Ads Backend Development Interview
+description: "A backend internship interview review and an edit-distance search optimized by reusing dynamic-programming work across shared Trie prefixes."
 date: 2020-02-27 18:34:40
 tags:
 - ByteDance
@@ -20,6 +21,12 @@ translations:
     * Edit Distance
 
 
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Bytedance-Ads-backend-intern-interview/en-hero.webp" alt="Forest faces a sequence of hash buckets, index shelves, concurrency gears, network bridges, and string pieces at an unbranded interview table" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 The algorithm question was to compute [Edit Distance (Levenshtein Distance)](https://en.wikipedia.org/wiki/Levenshtein_distance). I had happened to encounter edit distance before while reading *Grokking Algorithms*, and it can be solved with DP. But this problem was a bit more complex: among many strings, find the string with the smallest distance. It can be understood as "Fuzzy matching".
 The rough statement was:
 ```
@@ -33,6 +40,10 @@ The rough statement was:
 ```
 
 I did not think of a good solution. With brute force, comparing every string with `P` has time complexity: O(P.size() * sum(S_i.size())).
+
+<figure class="editorial-illustration">
+  <img src="/en/images/ai/Bytedance-Ads-backend-intern-interview/en-trie-distance.webp" alt="Several blank character-block strings merge into a shared prefix tree where distance beads reuse common branches to reveal the shortest path" width="1536" height="864" loading="lazy" decoding="async">
+</figure>
 
 Later, I searched online for solutions, and they were not hard to find. Use a Trie to avoid repeated DP computation among different strings. The time complexity becomes O(P.size() * number of Trie nodes). Although the worst-case complexity does not improve, it is a real optimization. This should be the solution the interviewer wanted.
 

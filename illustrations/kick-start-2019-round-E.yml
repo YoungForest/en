@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/kick-start-2019-round-E.md
+context: >-
+  The solutions connect cherry nodes with a path-compressed minimum spanning tree, order coding-versus-eating slots around a binary-search boundary, and classify street numbers through odd and even divisors.
+assets:
+  - id: hero
+    file: source/images/ai/kick-start-2019-round-E/en-hero.webp
+    placement: hero
+    alt: A cherry-vine network, a balanced pair of appetite trays and an odd-even cobblestone sieve share one winding route
+    composition: >-
+      Do not use Forest. Build a distinct English scene as a small tabletop town crossed by one winding route. A cherry orchard at left is joined by the fewest short vine bridges, with compressed roots visibly snapping closer to a central hub. A market stall in the middle sorts paired gear and meal tokens along a sloped rail, and an unlabeled divider balances two empty trays. At right, patterned cobblestones roll through an odd-even sieve and only a few warm stones fit the final street. No letters, digits, formulas, code, brand, fake interface, readable text, logo, trademark or watermark.
+    review_status: approved

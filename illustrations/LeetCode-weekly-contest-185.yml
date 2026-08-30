@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-185.md
+context: >-
+  The contest covers alternating two token types, aggregating restaurant orders, a frog-call state machine, and array DP with an exact number of maximum comparisons, followed by notes on designing states for unfamiliar problems.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-185/en-hero.webp
+    placement: hero
+    alt: Circles and squares alternate, café orders merge by shape, frogs cycle through lily pads and tiered trays build arrays with counted new highs
+    composition: >-
+      Do not use Forest. A distinct English loop begins with alternating circles and squares plus one surplus token, routes food-shaped order pieces from café tables into matching unlabelled trays, moves frogs through a lily-pad state cycle, and builds rising block arrays across transparent tiers while a small mechanical bead advances at each new high. No readable text, digits, letters, formulas, code, brands, fake UI or watermark.
+    review_status: approved

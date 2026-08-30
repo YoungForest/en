@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-biweekly-contest-23.md
+context: >-
+  The contest covers counting the largest digit-sum groups, using odd frequencies to construct non-empty palindromes, testing circle-rectangle overlap, and a sorted suffix-sum greedy choice of dishes.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-biweekly-contest-23/en-hero.webp
+    placement: hero
+    alt: Tokens fill equally tallest group cylinders, mirrored beads form centred necklaces, a compass measures circle-to-rectangle distance and sorted plates stop before the balance falls
+    composition: >-
+      Do not use Forest. A distinct English four-island desk groups blank tokens into several equally tallest cylinders, mirrors paired beads into necklaces with odd centres, measures the closest gap between a circle and rectangle, and adds sorted dessert plates to a rotating table until the cumulative balance would fall. No readable text, digits, formulas, code, brands, fake UI or watermark.
+    review_status: approved

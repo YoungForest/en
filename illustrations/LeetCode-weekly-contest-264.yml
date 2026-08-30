@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-264.md
+context: >-
+  After six weeks of daily practice, the author finishes all four contest problems in 323rd place, covering token validation, balanced-number enumeration, tree-split scores and prerequisite scheduling.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-264/en-hero.webp
+    placement: hero
+    alt: Forest leaves a six-stage practice gate and tunes a token sieve, balance wheel, split tree and dependency railway
+    composition: >-
+      Use fictional Forest in an independent post-contest workshop. A six-section practice lane ends at an open gate, leading to four compact machines: a token sieve rejecting malformed blank pieces, a bead wheel whose groups balance by repeated shape, a branching mechanical tree whose separated limbs load a product scale, and a small dependency railway that releases course carts only after feeder tracks arrive. A plain amber medal suggests a strong finish without rank or numbers. No readable or pseudo-readable text, letters, digits, formulas, real scoreboard, logos, UI, watermark or signature.
+    review_status: approved

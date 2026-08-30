@@ -1,6 +1,7 @@
 ---
 title: LeetCode Biweekly Contest 24
 date: 2020-04-19 05:37:57
+description: A biweekly review of positive prefix starts, greedy Fibonacci decomposition, happy-string backtracking and DP for restoring an array under a limit.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2020/04/19/LeetCode-biweekly-contest-24/
   en: https://youngforest.github.io/en/2020/04/19/LeetCode-biweekly-contest-24/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-biweekly-contest-24/en-hero.webp" alt="A lift raises a dipping cumulative railway, spiral blocks fill a vessel greedily, a three-colour bead tree branches and blank tiles accumulate in layered trays" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (4) |	Q3 (5) |	Q4 (6)|
 |--|--|--|--|--|--|--|--|
 | 700 / 7729 |	YoungForest | 18 | 	1:17:49 | 0:04:50 |  0:10:38 | 0:17:45 |   1:02:49 3 |

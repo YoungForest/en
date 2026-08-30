@@ -1,6 +1,7 @@
 ---
 title: LeetCode Biweekly Contest 54
 date: 2021-06-16 01:36:43
+description: "Four solutions check interval coverage, locate exhausted chalk, find the largest magic square, and minimize the cost of flipping an expression."
 tags:
 - Competitive Programming
 categories:
@@ -14,6 +15,12 @@ translations:
 | 120 / 12076 | YoungForest | 18 | 	1:19:33 |  0:03:17 | 0:09:23 🐞1 |  0:26:15 | 1:04:33 🐞2 |
 
 I continued to maintain good results, especially on the last problem, which was still quite hard. At the beginning I had no idea and even wanted to give up, but in the end I still solved the difficult problem through my own thinking.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-biweekly-contest-54/en-hero.webp" alt="Overlapping bands cover a track, chalk circles a seat ring, equal vessels reveal a large magic square and a logic tree changes colour with the fewest gears" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## 1893. Check if All the Integers in a Range Are Covered
 

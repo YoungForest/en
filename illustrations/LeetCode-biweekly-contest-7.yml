@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-biweekly-contest-7.md
+context: >-
+  During a summer camp, the author joins the biweekly contest from a hotel and reviews movement on a single-row keyboard, a hierarchical file system, minimum-cost stick connections, and village water distribution using wells and pipes.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-biweekly-contest-7/en-hero.webp
+    placement: hero
+    alt: Forest works in an unbranded room with a blank key rail, nested file tree, stick-merging rope machine and village water network
+    composition: >-
+      Use the fictional Forest. A separate comfortable but unbranded room becomes four physical puzzles: a hand slider travels across blank keys, nested wooden drawers form a path-addressed hierarchy, the shortest sticks merge first through a small heap-shaped rope mill, and a village model chooses among individual wells and connecting pipes to form the least-cost network. No company or hotel marks, readable text, letters, digits, path names, fake UI or watermark.
+    review_status: approved

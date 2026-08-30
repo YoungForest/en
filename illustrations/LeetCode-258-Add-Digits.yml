@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-258-Add-Digits.md
+context: >-
+  The post moves from recursively or iteratively summing digits to the digital-root pattern that yields a single result in constant time, with a link to the congruence proof and extensions.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-258-Add-Digits/en-hero.webp
+    placement: hero
+    alt: Beads cycle through a nine-slot loop and cancel in complete rounds until one amber result bead remains
+    composition: >-
+      Use a pure technical metaphor with no Forest. Contrast a tall recursive sequence of collection bowls with an independent compact circular mechanism whose nine blank physical pockets accept unmarked beads; every complete circuit quietly returns to the beginning while one amber bead settles on a blank central seat. Convey digital-root congruence through the repeated nine-pocket geometry only. No numbers, formulas, plus or modulo symbols, readable or pseudo-readable text, letters, logos, UI, watermark or signature.
+    review_status: approved

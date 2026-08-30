@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/Travis-CI-Hexo-Automatically-Deploy.md
+context: >-
+  The post records a historical Travis CI workflow for automatically building and deploying paired Hexo blogs, including repository access, secret variables, dependencies, theme checkout and public-directory publication.
+assets:
+  - id: hero
+    file: source/images/ai/Travis-CI-Hexo-Automatically-Deploy/en-hero.webp
+    placement: hero
+    alt: Two blog scrolls move through a cloud assembly line, sealed key vault and branch gate toward paired site beacons
+    composition: >-
+      Use a pure technical metaphor with no Forest. In an independent vintage cloud workshop, two blank blog scrolls enter a compact assembly line; dependency parts and a theme stencil are fitted in sequence, a sealed key vault feeds one protected cable, and a branch gate releases finished static bundles to two paired site beacons. Convey commit-triggered automatic build and deployment without any real service logo, token value, terminal or configuration screen. No readable or pseudo-readable text, letters, digits, brands, UI, watermark or signature.
+    review_status: approved

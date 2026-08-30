@@ -1,6 +1,7 @@
 ---
 title: LeetCode Weekly Contest 189
 date: 2020-05-17 18:47:50
+description: A weekly review of interval counting, stable length sorting, set containment and angular disk coverage, plus a reflection on ranking luck.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2020/05/17/LeetCode-weekly-contest-189/
   en: https://youngforest.github.io/en/2020/05/17/LeetCode-weekly-contest-189/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-189/en-hero.webp" alt="A moment of light crosses student intervals, blank cards reorder by length, transparent sets test containment and a rotating disk covers the densest points" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (4) |	Q3 (5) |	Q4 (7)|
 |--|--|--|--|--|--|--|--|
 | 484 / 13036|	YoungForest | 19 | 1:27:45 | 0:11:20 | 0:19:20  1 | 0:08:48 |  1:22:45 |

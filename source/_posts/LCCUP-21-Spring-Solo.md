@@ -1,6 +1,7 @@
 ---
 title: LeetCode 2021 Spring Contest - Solo
 date: 2021-04-05 19:27:19
+description: "Five problems move from budgeted pairs and a spiral orchestra layout to greedy reordering, a changing maze, and batched tasks."
 tags:
 - Competitive Programming
 categories:
@@ -14,6 +15,12 @@ translations:
 | 171 / 2750 | YoungForest | 12 | 0:56:51 | 0:06:21 | 0:49:14 | 0:56:55 | null | null |
 
 [Contest link](https://leetcode-cn.com/contest/season/2021-spring/ranking/solo/)
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LCCUP-21-Spring-Solo/en-hero.webp" alt="A spring pavilion pairs market tokens, spirals orchestra seats, postpones hazard blocks and flips a time-changing maze" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## LCP 28. Purchase Plans
 

@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/Netherlands-Visa-from-Ireland.md
+context: >-
+  After receiving Irish residence permission, the author applies for a short-stay Schengen visa to visit a friend studying in the Netherlands, navigating scarce appointments, supporting documents, insurance, bank evidence and passport collection. The existing visa image remains factual evidence.
+assets:
+  - id: hero
+    file: source/images/ai/Netherlands-Visa-from-Ireland/en-hero.webp
+    placement: hero
+    alt: Forest guides a small bundle of blank documents through a winter clockwork checkpoint until a bridge opens toward a waiting friend across the water
+    composition: >-
+      Use fictional Forest, never a portrait. Make a distinct English composition as a winter clockwork checkpoint beside the sea. Forest places a bundle of blank documents into successive mechanical trays: a residence-card-shaped blank tile unlocks the first gear, a scarce appointment bell opens briefly, an invitation-and-insurance bundle balances a scale, and a plain passport-shaped booklet emerges at the end. The completed mechanism lowers a small bridge toward a warmly lit opposite shore where a friend waits. No real passport, visa, identity document, flag, national map, embassy or visa-centre mark, vaccine brand, amount, date, readable text, number, logo, trademark or watermark.
+    review_status: approved

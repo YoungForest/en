@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/face-interview.md
+context: >-
+  The author recalls a development-role interview marked by a mismatch in career direction, an uncomfortable exchange, two minimum-value data-structure questions, and a second round that never happened.
+assets:
+  - id: hero
+    file: source/images/ai/face-interview/en-hero.webp
+    placement: hero
+    alt: Younger Forest arrives at an interview junction where an algorithm compass points away from a developer workbench, two minimum mechanisms sit on the table, and the next chair is empty
+    composition: >-
+      Use a distinct English composition with younger fictional Forest, never a portrait. At an interview-room junction, an algorithm compass points toward a different track from the developer workbench; a queue-like channel and stack-like tower each preserve one lowest sphere, while the next interview chair remains empty. No company logo, interviewer likeness, code, readable text, or hiring interface.
+    review_status: approved

@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 149
 date: 2019-08-11 12:34:32
+description: Weekly notes on date arithmetic, bounded dice sums, repeated runs and range majorities, plus a lesson about forcing segment trees.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2019/08/11/LeetCode-weekly-contest-149/
   en: https://youngforest.github.io/en/2019/08/11/LeetCode-weekly-contest-149/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-149/en-hero.webp" alt="Forest leaves an overgrown tree machine for a calendar wheel, bounded bead dice, broken colour ribbon and majority sampler" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (4) |	Q2 (5) |	Q3 (6) |	Q4 (9)|
 |--|--|--|--|--|--|--|--|
 | 476 / 5091 |	YoungForest | 15	 | 	1:00:14 | 0:10:21  | 0:42:14 | 1:00:14 | null |

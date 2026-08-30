@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-186.md
+context: >-
+  The contest reviews binary-string splits, cards taken from both ends, diagonal matrix traversal and constrained-subsequence DP; the author also records the speed and tooling tradeoffs of switching languages.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-186/en-hero.webp
+    placement: hero
+    alt: Forest races past balanced bead halves, cards taken from both ends, diagonal cube trays and a descending block queue
+    composition: >-
+      Use the fictional Forest. The corrected English composition uses only physical objects: balanced trays compare a split two-colour bead chain, mechanical hands take abstract cards from both ends around a preserved middle frame, tilted grids release cubes diagonally, and differently sized blocks descend through a queue rail with the largest delivered first. Forest carries an unmarked light toolbox past a loose wrench. No readable characters, code, language mascot, logo, fake UI or watermark.
+    review_status: approved

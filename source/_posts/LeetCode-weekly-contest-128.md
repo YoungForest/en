@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 128
 date: 2019-03-17 15:50:49
+description: Contest notes on bit complements, duration pairs, binary-search shipping capacity and counting repeated digits after an unsolved final task.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2019/03/17/LeetCode-weekly-contest-128/
   en: https://youngforest.github.io/en/2019/03/17/LeetCode-weekly-contest-128/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-128/en-hero.webp" alt="Forest trains with flipped beads, paired sound discs, repeated ship-capacity trials and a cabinet of distinct patterns" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 The first three problems went smoothly and were solved within 30 minutes. For the last Hard problem, my thinking was quite messy, and even after one hour I still did not solve it.
 This contest made me feel that it still comes down to familiarity.
 Because I had done similar problems before for problems 2 and 3, I solved them quickly. The second problem even took only 2 minutes!!!

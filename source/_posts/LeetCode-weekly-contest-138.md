@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 138
 date: 2019-05-26 11:27:38
+description: Speed-contest notes on sorting, sliding windows, one-swap permutations, priority queues and planning edge cases before coding.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2019/05/26/LeetCode-weekly-contest-138/
   en: https://youngforest.github.io/en/2019/05/26/LeetCode-weekly-contest-138/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-138/en-hero.webp" alt="Forest pauses in a speed workshop to place edge-case markers before sorting figures, sliding a calm window, swapping beads and alternating crates" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 Although the problem quality this week was quite good, the difficulty was not high. It was a contest about speed.
 Because the second problem had a relatively long statement, my problem-solving order was 1->3->4->2.
 

@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/Ireland-France-visa-monitor.md
+context: >-
+  The author built a small side project in Ireland that watches for newly released French visa appointments and sends an alert; the user still makes the booking, helping the author secure a slot without scalpers.
+assets:
+  - id: hero
+    file: source/images/ai/Ireland-France-visa-monitor/en-hero.webp
+    placement: hero
+    alt: Forest waits by a quiet harbour while a tiny lookout bell detects one newly lit appointment window and alerts him to book it himself
+    composition: >-
+      Use a distinct English composition with fictional Forest, never a portrait. A quiet harbour at night has a row of small closed appointment lanterns across the water. Beside Forest, a simple clockwork lookout watches them continuously; when one lantern alone turns amber, the lookout rings a physical bell while Forest gets up to cross a small bridge and handle the booking himself. The mechanism observes and alerts only; it does not seize, reserve, or bypass anything. No real visa document, flag, consulate, passport, place name, date, browser, bot booking action, scalper figure, text, number, logo, trademark or readable interface.
+    review_status: approved

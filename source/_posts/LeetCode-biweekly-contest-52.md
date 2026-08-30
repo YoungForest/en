@@ -1,6 +1,7 @@
 ---
 title: LeetCode Biweekly Contest 52
 date: 2021-05-16 19:13:00
+description: Three solutions sort sentence pieces, simulate growing memory allocations and rotate a box; the floor-pair attempt times out before a prefix-sum reference.
 tags:
 - Competitive Programming
 categories:
@@ -12,6 +13,10 @@ translations:
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (5) |	Q3 (5) |	Q4 (6)|
 |--|--|--|--|--|--|--|--|
 | 2217 / 10364 | YoungForest | 12 | 0:51:47 | 0:05:11 | 0:51:47 | 0:29:51 | null |
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-biweekly-contest-52/en-hero.webp" alt="Notched blank word blocks sort into order, growing loads drain two memory reservoirs, stones settle after a box turns and a quotient-bucket machine remains jammed beside a later prefix rail" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
 
 <!-- more -->
 

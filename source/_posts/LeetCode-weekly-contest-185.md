@@ -1,6 +1,7 @@
 ---
 title: LeetCode Weekly Contest 185
 date: 2020-04-20 11:42:21
+description: A weekly review of alternating token types, restaurant-order aggregation, a frog state machine and exact-comparison array DP, with notes on state design.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2020/04/20/LeetCode-weekly-contest-185/
   en: https://youngforest.github.io/en/2020/04/20/LeetCode-weekly-contest-185/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-185/en-hero.webp" alt="Circles and squares alternate, café orders merge by shape, frogs cycle through lily pads and tiered trays build arrays with counted new highs" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (4) |	Q2 (4) |	Q3 (6) |	Q4 (7)|
 |--|--|--|--|--|--|--|--|
 | 703 / 9206 |	YoungForest | 12 | 	0:36:35 |  0:10:24 | 0:22:03 | 0:31:35  1 | null |

@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-biweekly-contest-52.md
+context: >-
+  Three solutions order sentence pieces by trailing positions, simulate growing allocations across two memory pools, and rotate a box so stones settle around obstacles; the fourth quotient-bucket attempt times out before a post-contest prefix-sum reference.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-biweekly-contest-52/en-hero.webp
+    placement: hero
+    alt: Notched blank word blocks sort into order, growing loads drain two memory reservoirs, stones settle after a box turns and a quotient-bucket machine remains jammed beside a later prefix rail
+    composition: >-
+      Do not use Forest. Create a distinct English workshop arrangement. Featureless word blocks carry only differently placed physical notches and sort into one ordered row. Two memory reservoirs alternately accept successively larger plain loads from a rising stack until neither can take the next piece. A transparent-sided crate with stones and fixed obstacles rotates a quarter turn and the stones settle against barriers. The last quotient-pair bay uses sorted stones, harmonic-sized collection buckets and nested gears; it is visibly jammed from being too slow, while a separate post-contest prefix-rail model sits nearby as a later lesson, not an in-contest success. No people, characters, letters, digits, formulas, code, readable text, arrows, fake UI, logos, brands, trademarks or watermarks.
+    review_status: approved

@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/The-Almanack-of-Naval-Ravikant.md
+context: The notes frame wealth as the capacity to change circumstances and happiness as wisdom about accepting reality, then connect classics, falsifiability, luck, historical conditions, and long-term consequences.
+assets:
+  - id: hero
+    file: source/images/ai/The-Almanack-of-Naval-Ravikant/en-hero.webp
+    placement: hero
+    alt: A long path runs from a lever-powered orchard toward a still pond while a telescope examines both present stones and distant consequences
+    composition: Join a lever-and-gear orchard bearing gradual fruit to a quiet pond with an empty pack set down beside it. At the midpoint, place an unmarked telescope whose split view examines real stones underfoot and the path far ahead, expressing wealth, happiness, facts, and consequences without depicting any public figure.
+    review_status: approved

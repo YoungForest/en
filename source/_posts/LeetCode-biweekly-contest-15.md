@@ -1,6 +1,7 @@
 ---
 title: LeetCode biweekly contest 14
 date: 2019-12-14 16:12:29
+description: Biweekly notes on quarter-frequency elements, covered intervals, combination iteration and falling paths without reusing a column.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2019/12/14/LeetCode-biweekly-contest-15/
   en: https://youngforest.github.io/en/2019/12/14/LeetCode-biweekly-contest-15/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-biweekly-contest-15/en-hero.webp" alt="Forest finishes early beside a dominant pebble stream, nested interval arches, combination carousel and alternating-column falling ramp" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 I did not go out this week, and happened to run into the biweekly contest. It had been a long time since I joined one, so it really felt rare.
 All the problems in this biweekly contest were standard and not hard. I finished everything with one AC on each problem and still had 50 minutes left. A typical speed contest.
 

@@ -1,6 +1,7 @@
 ---
 title: "Just Keep Buying: Proven Ways to Save Money and Build Your Wealth"
 date: 2024-03-16 23:13:47
+description: "An evidence-based look at market timing, diversification, housing, luck, and why steady investing compounds over time."
 tags:
 - Reading
 - Just Keep Buying
@@ -13,6 +14,12 @@ translations:
 [Douban link](https://book.douban.com/subject/35871073/)
 
 A very good investing book, somewhat similar to *The Psychology of Money*. It uses a lot of data and backtesting to convince readers.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Just-Keep-Buying/en-hero.webp" alt="Unmarked tokens arrive at regular intervals into a broad diversified basket while a young tree grows steadily through changing seasons" width="1536" height="864" decoding="async">
+</figure>
+
+<!-- more -->
 
 The points I benefited from most:
 

@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 136
 date: 2019-05-12 12:04:20
+description: "A contest recap on bounded robot paths, four-colour garden graphs, maximum-sum partitions, and suffix or binary-search duplicate detection."
 tags:
 - Competitive Programming
 categories:
@@ -16,6 +17,12 @@ translations:
 The quality of recent contests has been decent. Even the simplest warm-up problem requires careful thought. There is also a DP problem every time. DP is the type of thing where even after doing many problems, you may still fail to write a new one when you encounter it.
 This time I returned to my previous level and dropped to 200+.
 For this contest, it probably required finishing the first three problems within 55 minutes to enter the top 200. First, I solved problems relatively slowly. Second, I got an index issue wrong in the DP for the third problem, which caused one penalty. So unfortunately I did not enter the top 200.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-136/en-hero.webp" alt="A tiny robot loops through a four-colour allotment beside raised partition blocks and overlapping patterned ribbons" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## 1041. Robot Bounded In Circle
 

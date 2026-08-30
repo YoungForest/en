@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-biweekly-contest-51.md
+context: >-
+  Four solutions shift alternating characters, manage seats with a minimum heap, sort and cap adjacent growth to maximize the final value, and process room-size queries offline before choosing the nearest identifier.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-biweekly-contest-51/en-hero.webp
+    placement: hero
+    alt: Alternating tokens pass through shift gears, a heap dispenser returns the smallest seat token, sorted stones become a gently rising staircase and eligible room keys gather around a preferred position
+    composition: >-
+      Do not use Forest. Create an independent English algorithm workshop. Alternating seed tokens and offset weights pass through small shift gears, producing a transformed shape after each seed without letters or numbers. A heap-shaped seat-token hopper always dispenses its smallest plain token and accepts returned tokens. Unordered stones sort along a belt, then a limiter makes a staircase that rises by at most one physical step at a time and ends as high as possible. Finally, room keys sorted by physical size enter an ordered candidate rail as a minimum-size gate opens; a query caliper compares the nearest eligible key on either side of a preferred blank position. No people, characters, letters, digits, formulas, code, readable text, arrows, fake UI, logos, brands, trademarks or watermarks.
+    review_status: approved

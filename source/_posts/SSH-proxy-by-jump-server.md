@@ -1,6 +1,7 @@
 ---
 title: Logging in to a Server Through an SSH Jump Host
 date: 2021-03-26 15:11:02
+description: "How to reach a remote server through a jump host using SSH ProxyJump or port forwarding."
 tags:
 - tech
 categories:
@@ -12,6 +13,12 @@ translations:
 ## Motivation
 
 Following the problem in the previous post, [Fixing Ubuntu Desktop VPN Access to Public Internet Resources](https://youngforest.github.io/en/2021/03/18/Ubuntu-vpn-cannot-access-public-resource/), I tried configuring a jump host to access machines at the Hangzhou Research Institute.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/SSH-proxy-by-jump-server/en-hero.webp" alt="An encrypted beam travels from a laptop through an intermediate gatehouse to a remote server tower that was otherwise unreachable" width="1536" height="864" decoding="async">
+</figure>
+
+<!-- more -->
 
 In my research work, my MacBook could not connect to OpenVPN and therefore could not access the Hangzhou Research Institute machines. My Ubuntu desktop already had the VPN configured and could access the servers. I now wanted to route through the Ubuntu desktop so the Mac could "directly" access the Hangzhou Research Institute. Abstracting the problem:
 
@@ -25,8 +32,6 @@ After persistent online searching and experiments, I summarized two techniques a
 
 - SSH proxy
 - SSH tunnel
-
-<!-- more -->
 
 
 ## SSH Proxy

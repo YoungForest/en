@@ -1,6 +1,7 @@
 ---
 title: LeetCode biweekly contest 27
 date: 2020-05-31 17:41:49
+description: A speed-contest review of array reversal as sorting, fixed-window binary patterns, memoized prerequisite DFS and a two-robot cherry-grid DP.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2020/05/31/LeetCode-biweekly-contest-27/
   en: https://youngforest.github.io/en/2020/05/31/LeetCode-biweekly-contest-27/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-biweekly-contest-27/en-hero.webp" alt="Two shuffled tile rows settle into one order, two-tone bead windows fill pattern trays, remembered course paths are reused and twin robots cross a cherry grid" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (4) |	Q3 (5) |	Q4 (6)|
 |--|--|--|--|--|--|--|--|
 | 231 / 7926 |	YoungForest | 18 | 	0:42:16 | 0:04:51 |   0:10:55 | 0:22:31  1 |  0:37:16 |

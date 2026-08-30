@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-biweekly-contest-48.md
+context: >-
+  A post-contest record finds the second-largest digit, manages authentication tokens by expiry time, and greedily extends the consecutive value range; it also preserves a timed-out brute force, while the fourth problem has only a heading.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-biweekly-contest-48/en-hero.webp
+    placement: hero
+    alt: A tiered rack reveals the second-highest value, token lifelines renew or expire, sorted coins extend a continuous bridge and the final pairing cabinet remains unopened
+    composition: >-
+      Do not use Forest. Create a distinct English four-island physical workshop. Mixed value stones sort into descending tiers and the second tier glows after the highest is passed. Anonymous authentication tokens travel on finite sand-fed lifelines; a renewal clasp extends only a still-active token, while expired ones drop into a dull tray. Sorted coins extend a bridge of reachable consecutive values whenever the next coin touches the current end; a stalled combinatorial brute-force contraption remains beside the efficient bridge. The final score-pairing bay is a closed cabinet with untouched tools and no completion cue. No people, characters, letters, digits, formulas, code, arrows, readable text, clock faces, fake UI, logos, brands, trademarks or watermarks.
+    review_status: approved

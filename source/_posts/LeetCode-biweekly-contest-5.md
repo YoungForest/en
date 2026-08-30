@@ -1,6 +1,7 @@
 ---
 title: LeetCode biweekly contest 5
 date: 2019-07-27 23:06:57
+description: Biweekly notes on largest unique values, Armstrong numbers, minimum spanning trees and topological ordering, finished with time to spare.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2019/07/27/LeetCode-biweekly-contest-5/
   en: https://youngforest.github.io/en/2019/07/27/LeetCode-biweekly-contest-5/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-biweekly-contest-5/en-hero.webp" alt="Forest selects one large unmatched token beside a place-value wheel, minimum bridge network and dependency-release rack" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (3) |	Q3 (5) |	Q4 (7)|
 |--|--|--|--|--|--|--|--|
 | 98 / 1634 |	YoungForest | 18 | 0:35:23 | 0:11:01 | 0:10:53 | 0:22:40 | 0:35:23 |

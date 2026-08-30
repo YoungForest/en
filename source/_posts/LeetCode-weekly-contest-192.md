@@ -1,6 +1,7 @@
 ---
 title: LeetCode Weekly Contest 192
 date: 2020-06-07 22:36:35
+description: A weekly review of array interleaving, median-based strength sorting, browser-history simulation and paint-house DP, with two final-problem TLEs.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2020/06/07/LeetCode-weekly-contest-192/
   en: https://youngforest.github.io/en/2020/06/07/LeetCode-weekly-contest-192/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-192/en-hero.webp" alt="Two bead rows interleave, strong stones rank around a median, a physical memory corridor moves back and forward, and painted row houses form exact neighbourhoods" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (4) |	Q3 (5) |	Q4 (6)|
 |--|--|--|--|--|--|--|--|
 | 374 / 13805 |	YoungForest | 18 | 	0:53:48 | 0:07:19 | 0:07:35 | 0:15:00 | 0:43:48 2 |

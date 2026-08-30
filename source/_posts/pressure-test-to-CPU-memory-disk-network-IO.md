@@ -5,11 +5,16 @@ tags:
 - Benchmark
 categories:
 - Laboratory
+description: A practical record of building adjustable stress tests for CPU, memory, disk I/O, and network, including implementation ideas, code, and usage.
 translations:
   zh-CN: https://youngforest.github.io/2017/01/14/pressure-test-to-CPU-memory-disk-network-IO/
   en: https://youngforest.github.io/en/2017/01/14/pressure-test-to-CPU-memory-disk-network-IO/
 ---
 Recently, a senior schoolmate in the lab had a requirement: write four small programs to stress test memory, CPU, disk, and network respectively. The test programs needed adjustable pressure levels, such as high, medium, and low. No more words; roll up the sleeves and get to work. The requirement was simple, but implementation was not. I learned while writing the programs and barely completed the task.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/pressure-test-to-CPU-memory-disk-network-IO/en-hero.webp" alt="One unmarked control lever adjusts the load on a processor wheel, a memory-block tank, a disk rotor, and a two-ended network conduit" width="1536" height="864" decoding="async">
+</figure>
 
 <!-- more -->
 ## Test Environment
@@ -129,4 +134,3 @@ $ iperf -c 123.206.61.77 -b 11m
 [How to monitor network on Linux](http://www.binarytides.com/linux-commands-monitor-network/)
 [Linux network testing and monitoring](https://www.linux.com/learn/five-funny-little-linux-network-testers-and-monitors)
 [[Linux] Test network speed in a LAN](http://tuxtweaks.com/2014/11/linux-network-speed-test/?utm_source=tuicool&utm_medium=referral)
-

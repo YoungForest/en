@@ -1,6 +1,7 @@
 ---
 title: LeetCode Weekly Contest 186
 date: 2020-04-26 13:04:58
+description: A weekly review of split scores, cards taken from both ends, diagonal traversal and constrained-subset DP, plus the tradeoffs of a faster language.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2020/04/26/LeetCode-weekly-contest-186/
   en: https://youngforest.github.io/en/2020/04/26/LeetCode-weekly-contest-186/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-186/en-hero.webp" alt="Forest races past balanced bead halves, cards taken from both ends, diagonal cube trays and a descending block queue" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (4) |	Q2 (4) |	Q3 (6) |	Q4 (7)|
 |--|--|--|--|--|--|--|--|
 | 113 / 11684 |	YoungForest | 18 | 0:34:17 | 0:04:32 |  0:10:54 | 0:18:49 | 0:34:17 |

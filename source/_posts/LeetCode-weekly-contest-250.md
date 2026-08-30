@@ -1,6 +1,7 @@
 ---
 title: LeetCode Weekly Contest 250
 date: 2021-07-19 09:20:38
+description: "Four solutions filter around broken keys, add ladder rungs in batches, optimize grid DP, and answer offline tree queries with a binary trie."
 tags:
 - Competitive Programming
 categories:
@@ -14,6 +15,12 @@ translations:
 | 192 / 13694 | YoungForest | 18 | 	1:22:27 |  0:03:20 | 0:09:15  🐞1 | 0:28:08 | 1:07:27  🐞2 |
 
 My results have been pretty good for two consecutive weeks, both in the top 200. As a result, the rating of my US-site alt account is about to reach 2400 too. Future contests will require even more caution.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-250/en-hero.webp" alt="A repair shop filters blank word blocks, fills ladder gaps, scans a point grid from both sides and routes tree tokens through a binary sorter" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## 1935. Maximum Number of Words You Can Type
 

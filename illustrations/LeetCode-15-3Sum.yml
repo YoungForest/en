@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-15-3Sum.md
+context: >-
+  In an interview the author solves classic 3Sum with a hash-based idea, later hits a timeout, then uses sorting, two pointers and duplicate skipping to reduce constants within the same asymptotic complexity.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-15-3Sum/en-hero.webp
+    placement: hero
+    alt: Forest moves inward from both ends of a sorted bead rail to find unique triples that balance a central scale
+    composition: >-
+      Use fictional Forest in an independently arranged post-interview balance workshop. A looping, overheated collection net sits aside while a long rail orders cool light beads through warm heavy beads. Forest anchors one bead and moves two physical sliders inward from opposite ends until three beads level a central three-arm balance. Repeated-pattern beads leave through a quiet bypass so no triple is duplicated. Gentle humor: the older machine's success lamp flickers unpredictably even when nothing changes. No readable or pseudo-readable text, letters, digits, formulas, logos, employer or interviewer identity, fake UI, watermark or signature.
+    review_status: approved

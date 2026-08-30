@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/recursion.md
+context: A structured guide to recursion, recurrence relations, base cases, memoization, complexity analysis, call stacks, and tail-recursion optimization.
+assets:
+  - id: hero
+    file: source/images/ai/recursion/en-hero.webp
+    placement: hero
+    alt: A nested workshop unfolds into smaller copies until an amber base-case tile sends results back upward, while side drawers hold repeated results
+    composition: Show recursion as a mechanical workshop opening into progressively smaller versions of itself, ending at a visibly different amber base-case tile whose results travel back upward and combine. A few side drawers suggest memoization; include no code, equations, or labels.
+    review_status: approved

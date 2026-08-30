@@ -6,6 +6,7 @@ tags:
 - Internship
 categories:
 - Interview
+description: A review of two algorithm-intern interviews, preparation gaps, onboarding, and a practical study path centered on data structures and algorithms.
 translations:
   zh-CN: https://youngforest.github.io/2018/04/30/kuaishou-intern-interview/
   en: https://youngforest.github.io/en/2018/04/30/kuaishou-intern-interview/
@@ -16,14 +17,18 @@ Doing internships can be considered one route toward eventually finding a good j
 Now that the internship has finally stabilized, and there is still some time before the deadline for my graduation thesis, I happen to have time to summarize my interview and internship.
 I hope this can guide my future search for other internships or full-time jobs :)
 
-<!--more-->
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/kuaishou-intern-interview/en-hero.webp" alt="Forest crosses two unmarked interview gates along a route of array tracks, memory boxes, and tree branches toward a bright internship workbench" width="1536" height="864" decoding="async">
+</figure>
 
-# Interview
+<!-- more -->
+
+## Interview
 
 I went through two rounds of interviews in total, taking nearly two hours.
 Overall, I felt that my preparation was not sufficient, and many areas still needed improvement.
 
-## First Round
+### First Round
 
 The interviewer was a friendly, slightly chubby engineer. He was very kind and took the interview seriously.
 After I started the internship, I often ran into him during meetings and meals, which felt very familiar. We were not in the same team, but we were in the same larger group.
@@ -35,7 +40,7 @@ Interview content:
 - SQL-related: differences between left join, right join, and inner join; whether I knew partition;
 - Machine learning-related: definitions of precision and recall.
 
-## Second Round
+### Second Round
 
 The interviewer was a serious engineer. My impression was that he reacted very quickly, possibly someone at the leader level.
 Unfortunately, after joining I never saw him in the larger group.
@@ -50,7 +55,11 @@ Unfortunately, after joining I never saw him in the larger group.
 - Use of socket libraries for network communication in Java and C++. (I did not answer these two well.)
 - My level of understanding of machine learning, and whether I had studied loss functions.
 
-## Interview Preparation
+<figure class="editorial-illustration">
+  <img src="/en/images/ai/kuaishou-intern-interview/en-preparation-path.webp" alt="Forest reorganizes scattered problem pieces into an interview-preparation road with a strong central route and supporting side paths" width="1536" height="864" loading="lazy" decoding="async">
+</figure>
+
+### Interview Preparation
 
 After this interview, I became clearer about what to prepare for interviews:
 
@@ -67,7 +76,7 @@ Based on my senior schoolmate's advice, I think the following preparation path a
 - Multi-threading: *Java Concurrency in Practice*
 - Machine learning: Zhou Zhihua's *Machine Learning*, also known as the "Watermelon Book"
 
-# Onboarding
+## Onboarding
 
 Earlier, because of my graduation thesis, I hesitated over whether to accept the internship offer.<!--and keeping my grandma company-->
 After consulting my senior schoolmate and weighing the pros and cons, I finally accepted the offer and joined on April 19.<!--persuaded by my grandma-->

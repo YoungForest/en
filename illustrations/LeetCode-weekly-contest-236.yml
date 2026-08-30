@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-236.md
+context: >-
+  Three completed solutions determine a product sign, solve a Josephus circle, and use bottom-up dynamic programming for minimum side jumps; the fourth section contains only its heading and must remain visibly unfinished.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-236/en-hero.webp
+    placement: hero
+    alt: Directional weights feed a balance, tokens leave a circular carousel, a runner changes lanes around barriers and a fourth bench stays unopened
+    composition: >-
+      Do not use Forest. Draw a distinct English problem-solving studio with four horizontal bays. In the first, upward and downward geometric weights plus a hollow neutral pebble determine which way a balance tips, without plus, minus, or zero symbols. In the second, plain coloured tokens leave a circular carousel at a fixed rhythm until one illuminated place remains. In the third, a small wheeled runner crosses three lanes and makes only necessary side hops around barriers, while a folded mechanism fills decisions backward from the finish to suggest bottom-up DP. The fourth bay is intentionally dormant: a closed parts tray beside an unused bench, no check mark, trophy, or implied solution. No people, characters, letters, digits, mathematical symbols, formulas, code, readable text, UI, brand, logo, trademark or watermark.
+    review_status: approved

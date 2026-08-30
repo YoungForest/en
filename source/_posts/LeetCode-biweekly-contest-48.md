@@ -1,6 +1,7 @@
 ---
 title: LeetCode Biweekly Contest 48
 date: 2021-03-21 16:55:34
+description: An after-contest record finds the second-largest digit, manages expiring tokens and greedily extends consecutive values; problem four remains unfinished.
 tags:
 - Competitive Programming
 categories:
@@ -10,6 +11,12 @@ translations:
   en: https://youngforest.github.io/en/2021/03/21/LeetCode-biweekly-contest-48/
 ---
 I missed the contest, then upsolved it after the contest.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-biweekly-contest-48/en-hero.webp" alt="A tiered rack reveals the second-highest value, token lifelines renew or expire, sorted coins extend a continuous bridge and the final pairing cabinet remains unopened" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## 1796. Second Largest Digit in a String
 

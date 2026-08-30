@@ -5,10 +5,13 @@ tags:
 - Travel
 categories:
 - Diary
+description: 'A seven-day return to Shandong through Mount Tai, Qingdao and Jinan, using travel to process a low season and imagine future ways of living.'
 translations:
   zh-CN: https://youngforest.github.io/2018/09/14/shandong-trip/
   en: https://youngforest.github.io/en/2018/09/14/shandong-trip/
 ---
+<figure class="editorial-illustration editorial-illustration--hero"><img src="/en/images/ai/shandong-trip/en-hero.webp" width="1536" height="864" alt="Forest backpacks through mountain steps, a windy coast and spring-fed lakes on a seven-day journey from heaviness to openness" decoding="async" fetchpriority="high"></figure>
+
 From August 21 to August 28, I spent seven days traveling in Shandong with a feeling of self-exile. When I was little, in 2008, I once followed my father and a tour group to Shandong. We visited the classic tourist cities, including Qingdao, Yantai, Weihai, and Dalian across the sea. I was still young and innocent then, and only felt that not having to go to school and traveling to unfamiliar places was very interesting. Now ten years have passed. The scenic spots were the same, but my mood and feelings were different.
 
 This trip was decided on temporarily. Earlier, classmates had invited me to Chongqing for a graduation trip, but for various reasons I did not manage to go. After mid-August, after some emotional turmoil and after being brainwashed by Sanmao's wandering literature, a classmate from Shandong, whom we can call "Female-Voice Guy" because his voice is especially feminine, invited me to travel around Shandong together. I agreed. I hoped this trip would make me feel a little better, filling my mind with a hurried journey so I would not think about troubles I should not think about.

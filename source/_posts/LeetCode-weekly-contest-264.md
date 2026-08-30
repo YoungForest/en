@@ -5,7 +5,13 @@ tags:
 - Competitive Programming
 categories:
 - LeetCode
+description: 'Weekly Contest 264 recap: a top-500 finish and solutions for word validation, balanced numbers, tree scores and course scheduling.'
+translations:
+  zh-CN: https://youngforest.github.io/2021/10/24/LeetCode-weekly-contest-264/
+  en: https://youngforest.github.io/en/2021/10/24/LeetCode-weekly-contest-264/
 ---
+
+<figure class="editorial-illustration editorial-illustration--hero"><img src="/en/images/ai/LeetCode-weekly-contest-264/en-hero.webp" width="1536" height="864" alt="Forest leaves a six-stage practice gate and tunes a token sieve, balance wheel, split tree and dependency railway" decoding="async" fetchpriority="high"></figure>
 
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (4) |	Q3 (5) |	Q4 (6)|
 |--|--|--|--|--|--|--|--|

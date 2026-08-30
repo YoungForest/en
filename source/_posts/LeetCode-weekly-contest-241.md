@@ -1,6 +1,7 @@
 ---
 title: LeetCode Weekly Contest 241
 date: 2021-05-16 18:42:19
+description: "Three solutions cover subset XOR, alternating swaps and mutable pair counts; the last records a time-limit-exceeded DP attempt for visible sticks."
 tags:
 - Competitive Programming
 categories:
@@ -14,6 +15,10 @@ Both this week's weekly contest and biweekly contest went badly. Time to start t
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (5) |	Q3 (5) |	Q4 (6)|
 |--|--|--|--|--|--|--|--|
 | 717 / 11572 | YoungForest | 12 | 	0:23:51 | 0:05:35 | 0:17:33 | 0:23:51 | null |
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-241/en-hero.webp" alt="Branching switches feed an XOR prism, two-colour beads alternate, a small tray queries a mutable warehouse and a stick recurrence remains visibly sprawling" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
 
 <!-- more -->
 

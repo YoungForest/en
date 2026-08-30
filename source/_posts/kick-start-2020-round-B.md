@@ -5,6 +5,7 @@ tags:
 - Competitive Programming
 categories:
 - KickStart
+description: "Four solutions find local mountain peaks, schedule buses backward, decode nested robot paths and calculate how a wandering robot avoids a rectangular hole."
 translations:
   zh-CN: https://youngforest.github.io/2020/04/19/kick-start-2020-round-B/
   en: https://youngforest.github.io/en/2020/04/19/kick-start-2020-round-B/
@@ -14,6 +15,12 @@ translations:
 | YoungForest | 74 | 524 | 5 + 7 | 10 + 13 | 11 + 16 | 14 + 0 | 1:35:18 |
 
 Last year I participated in six Kick Start rounds in total and successfully got Google's internship offer this year. Unfortunately, because of the pandemic, all Google China summer internship programs were canceled. This year, for full-time recruiting, I still need to continue participating in Kick Start. Although today's Round B was at 7 a.m., many classmates still joined. Unfortunately, my time complexity for the last problem was too high, and the large test set TLE'd.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/kick-start-2020-round-B/en-hero.webp" alt="Four connected travel dioramas show a highlighted mountain peak, backward bus tokens, a nested mechanical path and probability beads skirting a dark grid hole" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## Bike Tour
 

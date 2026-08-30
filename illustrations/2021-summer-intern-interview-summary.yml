@@ -1,0 +1,16 @@
+version: editorial-comic-v1
+post: source/_posts/2021-summer-intern-interview-summary.md
+context: Reviews two months of backend internship recruiting across eight companies, including failures, paused processes, offers, ongoing interviews, and lessons from uneven performance.
+assets:
+  - id: hero
+    file: source/images/ai/2021-summer-intern-interview-summary/en-hero.webp
+    placement: hero
+    alt: Forest carries a resume through eight branching interview tracks whose exits show rejection, pause, success, and waiting without words
+    composition: In an international university career hall, eight unlabeled tracks branch from Forest; some loop back, one ends abruptly, and others reach an amber-lit exit or remain unfinished.
+    review_status: approved
+  - id: successful-landing
+    file: source/images/ai/2021-summer-intern-interview-summary/en-successful-landing.webp
+    placement: before-successful-landing
+    alt: Forest steps out of a looping interview maze onto a small lit platform while several routes continue moving behind him
+    composition: A lightly humorous interview maze releases Forest onto an amber platform with a blank invitation envelope while several teal paths still continue in the background.
+    review_status: approved

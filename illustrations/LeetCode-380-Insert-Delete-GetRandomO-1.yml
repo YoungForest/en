@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-380-Insert-Delete-GetRandomO-1.md
+context: >-
+  Through insert, delete and random access, the author revisits amortized complexity: a hash map locates array positions, and deletion swaps the last element into the gap before popping it so operations remain average constant time.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-380-Insert-Delete-GetRandomO-1/en-hero.webp
+    placement: hero
+    alt: Forest uses index cords to find storage slots, fills a deletion gap with the last crate and samples through an even spinner
+    composition: >-
+      Use fictional Forest in an independently arranged anonymous data-structure workshop. A blank peg map connects each token by a direct cord to a long row of equal open slots. A removed middle token leaves one gap, and a compact lift moves the final token into it before the trailing slot folds away. A plain unmarked balanced spinner above selects one of the remaining slots through a mechanical grabber. Small counterweights absorb an occasional heavier adjustment across many easy motions to suggest amortized cost. No numbers, letters, formulas, complexity notation, labels, logos, employer identity, interviewer, fake UI, watermark or readable text.
+    review_status: approved

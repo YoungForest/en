@@ -1,6 +1,7 @@
 ---
 title: LeetCode Weekly Contest 213
 date: 2020-11-01 11:16:44
+description: Contest solutions concatenate distinct pieces, count sorted vowel strings, reserve ladders for the largest climbs, and select a path with combinations.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2020/11/01/LeetCode-weekly-contest-213/
   en: https://youngforest.github.io/en/2020/11/01/LeetCode-weekly-contest-213/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-213/en-hero.webp" alt="Distinct pieces assemble into a long road, a five-tier bead staircase accumulates combinations, ladders span the tallest roofs and a triangular counter selects a path through a grid" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (4) |	Q3 (5) |	Q4 (6)|
 |--|--|--|--|--|--|--|--|
 | 139 / 10630 | YoungForest | 18 | 0:39:13 | 0:06:26 | 0:14:56 |   0:22:59 |  0:39:13 |

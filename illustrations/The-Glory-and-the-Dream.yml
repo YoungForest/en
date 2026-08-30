@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/The-Glory-and-the-Dream.md
+context: A history of American society from 1932 to 1972 puts crises, division, media shifts, and technological change on a longer scale, tempering reactions to the present while returning to freedom and tolerance.
+assets:
+  - id: hero
+    file: source/images/ai/The-Glory-and-the-Dream/en-hero.webp
+    placement: hero
+    alt: A forty-year historical panorama runs from an empty bowl and factory gears to radio, television, and a rocket while a present-day storm looks tiny inside a foreground teacup
+    composition: Unroll a wordless forty-year panorama marked by an empty bowl, factory machinery, radio and television forms, and a rocket, then place a tiny storm in a foreground teacup to show historical perspective without flags, famous faces, real book covers, or party symbols.
+    review_status: approved

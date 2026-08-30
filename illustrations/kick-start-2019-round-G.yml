@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/kick-start-2019-round-G.md
+context: >-
+  The write-up moves from divisor-based page counting and memoization to high-bit greedy search with overflow guards, then to meet-in-the-middle enumeration of two smaller combination sets.
+assets:
+  - id: hero
+    file: source/images/ai/kick-start-2019-round-G/en-hero.webp
+    placement: hero
+    alt: Blank book leaves climb a shrinking staircase, guarded beads descend a tall bit tower, and two puzzle caravans meet halfway
+    composition: >-
+      Do not use Forest. Make an independent English editorial tableau built around a zigzag journey. Blank book leaves hop across progressively shorter steps while a small memory cabinet catches repeated leaves. The route rises into a tall bead tower where an articulated arm chooses warm or teal beads from the highest safe shelf downward, with padded overflow bumpers. It then splits into two compact caravans of abstract puzzle pieces that enumerate separately and meet on a central bridge to form valid pairs. Add slight humour with one escaped page circling back. No letter, digit, binary glyph, code, formula, scoreboard, readable text, logo, trademark or watermark.
+    review_status: approved

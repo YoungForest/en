@@ -6,6 +6,7 @@ tags:
 - Travel Notes
 categories:
 - Diary
+description: "A five-month exchange in Belgium, reflecting on life in Liege, slow daily rhythms, demanding English-taught courses, and wider travel across Europe."
 translations:
   zh-CN: https://youngforest.github.io/2019/09/17/Beligum/
   en: https://youngforest.github.io/en/2019/09/17/Beligum/
@@ -13,6 +14,12 @@ translations:
 In the second half of this year, I was fortunate to have the opportunity to come to Belgium for an exchange semester, about five months.
 This is my first time going abroad for such a long period. Previously I also participated in a school program and went to the United Kingdom for a half-month study tour. For details, you can read [Thoughts and Observations from My Study Tour in Britain](https://youngforest.github.io/en/2016/08/25/my-britain-trip/), which I wrote three years ago.
 Next, I will summarize my exchange program from four aspects: city, life, study, and travel.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Beligum/en-hero.webp" alt="Forest crosses a compact exchange-year station where city life, rainy routines, a hilltop classroom, and onward travel meet on one journey" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## City
 
@@ -43,4 +50,3 @@ As the headquarters of the European Union and a transportation hub of Europe, Br
 ![Coast of Nice, France](/images/Belgium/france-nice.jpg)
 
 ![Colosseum in Rome](/images/Belgium/Italy-Roma-Colosseum.jpg)
-

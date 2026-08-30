@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/Details-of-Democracy.md
+context: The author revisits a collection of essays about freedom, democracy, pressure created when public opinion lacks an outlet, and the book's continuing value after fifteen years of change.
+assets:
+  - id: hero
+    file: source/images/ai/Details-of-Democracy/en-hero.webp
+    placement: hero
+    alt: In a quiet civic atrium, steam from a sealed pressure vessel finds a path through branching pipes toward open windows and many small lights outside
+    composition: Avoid the author, book cover, flags, public figures, and text. Build an English-language civic metaphor as a quiet circular atrium with empty stools, a sealed pressure vessel gathering steam, and branching pipes that finally reach opening windows and many calm lights outside, expressing outlets for public opinion, freedom, and institutional detail.
+    review_status: approved

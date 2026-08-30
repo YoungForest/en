@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-259.md
+context: >-
+  Missing the live contest for Mid-Autumn family plans, the author later solves and explains three tasks: a middle-symbol toggle, prefix and suffix bounds for beauty, and equal-width square detection; the fourth remains only a heading.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-259/en-hero.webp
+    placement: hero
+    alt: Forest returns under a harvest moon to a toggle lever, bounded garden and square-point frame while one final crate stays closed
+    composition: >-
+      Use fictional Forest in an independently arranged quiet after-contest studio with no depiction of real relatives or partner. A round harvest-moon lamp marks the missed live event. Forest works through three stations: a central shape toggling opposite mechanical motions, a garden lane bounded by the tallest earlier post and shortest later post, and a peg field where only equal-sided frames close. A fourth blank crate remains sealed because the source post contains no solution there. No readable or pseudo-readable text, problem numbers, digits, formulas, logos, real people, fake UI, watermark or signature.
+    review_status: approved

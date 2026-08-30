@@ -1,6 +1,7 @@
 ---
 title: LeetCode Weekly Contest 255
 date: 2021-08-23 11:39:46
+description: Three contest solutions find an extrema GCD, a missing binary string and a closest row sum; the fourth records giving up and consulting a solution.
 tags:
 - Competitive Programming
 categories:
@@ -14,6 +15,12 @@ translations:
 | 406 / 11837 | YoungForest | 	12 | 	0:36:07 | 0:01:21 | 0:09:54 |  0:26:07  🐞2 | null |
 
 This week's Q4 was extremely hard. After thinking for half an hour, I decisively gave up and went to make Coca-Cola chicken wings with my girlfriend.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-255/en-hero.webp" alt="Extreme stones enter a common-tooth gear, a two-colour pattern cabinet keeps one empty socket, row choices approach a balance target and a final bench remains at the reference stage" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 Interestingly, after the contest, LC China went down. Scores could not be fetched, and the Cruel Coding board defaulted everyone to 0 points. I felt bad for the students on the China site.
 

@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 156
 date: 2019-10-04 12:41:57
+description: Post-contest notes on unique occurrence counts, equal substrings within budget, adjacent-duplicate removal and a rotating snake shortest path.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2019/10/04/LeetCode-weekly-contest-156/
   en: https://youngforest.github.io/en/2019/10/04/LeetCode-weekly-contest-156/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-156/en-hero.webp" alt="A wordless workshop links distinct bead towers, a budgeted sliding frame, collapsing colour groups and a rotating two-link wooden snake" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 Solved the problems after the contest.
 
 ## 1207. Unique Number of Occurrences

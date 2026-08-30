@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 142
 date: 2019-06-23 23:09:42
+description: Weekly notes on sample statistics, car-pool capacity, mountain-array searches and brace expansion after a comparator bug.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2019/06/23/LeetCode-weekly-contest-142/
   en: https://youngforest.github.io/en/2019/06/23/LeetCode-weekly-contest-142/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-142/en-hero.webp" alt="Forest repairs a contradictory sorting balance beside a sample gauge, car-pool stops, mountain probes and branching parser" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (5) |	Q2 (5) |	Q3 (8) |	Q4 (8)|
 |--|--|--|--|--|--|--|--|
 | 851 / 4504 |	YoungForest | 13 | 1:39:38 | null |  1:00:12 2 | 1:19:38 2 | null |

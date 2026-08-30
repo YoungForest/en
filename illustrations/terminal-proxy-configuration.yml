@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/terminal-proxy-configuration.md
+context: The guide routes terminal traffic through a local proxy and caching relay, verifies the public route, and makes the setup convenient through environment variables, an alias, and Git configuration.
+assets:
+  - id: hero
+    file: source/images/ai/terminal-proxy-configuration/en-hero.webp
+    placement: hero
+    alt: Data parcels leave a congested dock through a teal relay pump and amber proxy tunnel before joining an open remote network track
+    composition: Replace terminal interfaces with mechanical logistics. Blank data parcels wait at a congested dock, a teal relay pump and switchable valve send them through an amber tunnel, and they emerge onto an open fast remote track. Express local proxying, caching relay, and optional routing without commands, addresses, or brands.
+    review_status: approved

@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 158
 date: 2019-10-14 10:09:33
+description: Weekly notes on balanced splits, eight-direction attacks, constrained roll sequences and equal frequencies after one removal.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2019/10/14/LeetCode-weekly-contest-158/
   en: https://youngforest.github.io/en/2019/10/14/LeetCode-weekly-contest-158/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-158/en-hero.webp" alt="A wordless machine links balanced colour reservoirs, a radial centre piece, blank-cube repetition control and one bead lifted from frequency groups" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 ## 1221. Split a String in Balanced Strings
 
 Understand the definition of balanced, and you will find that we only need to find positions where the counts of L and R are equal.

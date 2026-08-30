@@ -1,6 +1,7 @@
 ---
 title: LeetCode Weekly Contest 214
 date: 2020-11-08 18:20:06
+description: "Four solutions build a recurrence array, enforce unique frequencies, sell diminishing ball stacks by layer, and count sorted insertion cost."
 tags:
 - Competitive Programming
 categories:
@@ -14,6 +15,12 @@ translations:
 | 393 / 9769 | YoungForest | 18 | 1:36:40 | 0:05:13 | 0:11:24 | 0:44:59 |  1:26:40  2 |
 
 My ranking in the Cruel group has stayed at 14th. It seems this is where my level has converged. Recently, because I have been busy writing my master's thesis, and on the other hand autumn recruitment has ended, I have not even done check-in problems. Only in November did I resume doing the daily problem on the US and Chinese servers to earn points for clothes. As for the Cruel group, because I can basically exempt myself from check-in, I have not checked in there for a month.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-214/en-hero.webp" alt="A marble market combines recurrence chutes, trims jars to unique levels, sells descending towers by layer and inserts balls through counting gates" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## 5561. Get Maximum in Generated Array
 

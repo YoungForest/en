@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-biweekly-contest-37.md
+context: >-
+  The post trims both ends of a sorted array before averaging, brute-forces a grid for maximum network quality, and counts non-overlapping segments with a DP state for whether a segment has begun; problem three passed two minutes after the contest, while problem four remained unsolved and was only studied through modular inverses and a lazy segment tree.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-biweekly-contest-37/en-hero.webp
+    placement: hero
+    alt: A sorted bead row sheds both ends before weighing the middle, tower signals reveal a bright coordinate, clamps form non-overlapping segments and an ornate sequence cabinet remains unfinished
+    composition: >-
+      Do not use Forest. Build an independently composed English static four-island bench. A sorted bead row has small end portions placed into side trays while the middle rests on an averaging balance. Several blank signal towers cast overlapping translucent rings across a compact grid and an amber pin marks the strongest coordinate. Non-overlapping rods connect endpoint pegs, with open and closed clamps embodying the DP state; the last clamp rests beside a just-finished sand timer with no markings, implying a two-minute late pass. An ornate sequence cabinet remains closed and incomplete, accompanied only by a cyclic gear set and a folded branching tool representing concepts studied later rather than a completed solution. No people, characters, letters, digits, formulas, code, arrows, arrowheads, chevrons, dashed direction paths, clock markings, readable text, fake UI, logos, brands, trademarks or watermarks.
+    review_status: approved

@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-191.md
+context: >-
+  The first three problems brute-force the largest product, multiply the widest horizontal and vertical cake gaps, and traverse a tree to redirect roads toward the centre; the final two-box coloured-ball problem requires backtracking, probability and combinatorics that were a knowledge gap.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-191/en-hero.webp
+    placement: hero
+    alt: The two largest fruits power a product scale, the widest cake gaps meet, tree roads converge on one town and two coloured-ball boxes face an unfinished probability balance
+    composition: >-
+      Do not use Forest. Create a distinct English four-island puzzle table: the two largest fruits from a varied basket sit on a twin mechanical scale and turn the largest gear; a rectangular sponge cake has several horizontal and vertical cuts, with the widest gap in each direction edged in amber to form the largest piece; country lanes branch like a tree and all paving patterns converge on one unmarked market town without arrows; two equal wooden boxes hold equal counts of multicolour balls while an unfinished brass combinatorics balance compares their distinct colour sets. No people, readable text, digits, formulas, code, arrows, logos, trademarks, fake UI or watermark.
+    review_status: approved

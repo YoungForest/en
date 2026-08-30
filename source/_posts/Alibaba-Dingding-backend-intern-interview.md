@@ -6,11 +6,18 @@ tags:
 - intern
 categories:
 - interview
+description: A DingTalk backend internship interview spanning linked lists, two-sum, C++, compilers, operating systems, networking, and career plans.
 translations:
   zh-CN: https://youngforest.github.io/2020/03/04/Alibaba-Dingding-backend-intern-interview/
   en: https://youngforest.github.io/en/2020/03/04/Alibaba-Dingding-backend-intern-interview/
 ---
 The interview was done by DingTalk phone/video call, and the hand-written coding part was completed through Alibaba's online platform.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Alibaba-Dingding-backend-intern-interview/en-hero.webp" alt="Forest sits at an unmarked remote interview table with linked carriages, paired weights, and a widening row of engineering tools" width="1536" height="864" decoding="async">
+</figure>
+
+<!-- more -->
 
 There were two algorithm questions:
 
@@ -138,6 +145,10 @@ vector<int> twoSum(vector<int>& v,int target) {
     return ans;
 }
 ```
+
+<figure class="editorial-illustration">
+  <img src="/en/images/ai/Alibaba-Dingding-backend-intern-interview/en-knowledge-gauntlet.webp" alt="Forest carries a toolbox through a corridor of compiler gears, expanding containers, locks, a memory maze, and a broken network bridge" width="1536" height="864" loading="lazy" decoding="async">
+</figure>
 
 My main programming language is C++, so the interviewer asked many C++-related questions.
 

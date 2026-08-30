@@ -1,6 +1,7 @@
 ---
 title: LeetCode Weekly Contest 243
 date: 2021-05-30 17:22:10
+description: "Four solutions convert words to values, insert one digit greedily, schedule servers with priority queues, and use DP to minimize skipped rests."
 tags:
 - Competitive Programming
 categories:
@@ -20,6 +21,9 @@ LingShen's big data:
 1882,Process Tasks Using Servers,process-tasks-using-servers,1979.1112273597
 1883,Minimum Skips to Arrive at Meeting On Time,minimum-skips-to-arrive-at-meeting-on-time,2587.8725248485
 
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-243/en-hero.webp" alt="Coloured bead strings balance on an abacus, one bead enters the best slot, twin queues dispatch tasks and a road skips selected rests before the timer empties" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
 
 <!-- more -->
 

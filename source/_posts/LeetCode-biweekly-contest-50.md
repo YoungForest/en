@@ -1,6 +1,7 @@
 ---
 title: LeetCode Biweekly Contest 50
 date: 2021-04-18 11:57:36
+description: Three solutions raise an increasing array, count points in circles and maintain XOR in reverse; the fourth has only a link and no completed solution.
 tags:
 - Competitive Programming
 categories:
@@ -20,6 +21,10 @@ This biweekly contest was a disguised hand-speed contest, with 141 people solvin
 I smoothly finished the first three problems in 10 minutes, but thought about Q4 for an hour without making a major breakthrough.
 
 Although I had a few clues and felt it was a DP problem, afterward I found that the problem had already gone beyond the syllabus, so not solving it was normal.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-biweekly-contest-50/en-hero.webp" alt="A lifting rig minimally raises an increasing row, hoops count scattered pegs, a reverse bead chain feeds a complement prism and the final permutation cabinet remains closed and unresolved" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
 
 <!-- more -->
 

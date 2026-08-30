@@ -1,0 +1,19 @@
+version: editorial-comic-v1
+post: source/_posts/find-all-unique-pairs-of-maximum-and-second-maximum-elements-over-all-sub-arrays-in-onlogn.md
+context: >-
+  The post moves from enumerating every subarray to the observation that a second maximum only pairs with its nearest larger neighbour on either side, then presents a monotonic-stack method and an XOR highest-bit expansion.
+assets:
+  - id: hero
+    file: source/images/ai/find-all-unique-pairs-of-maximum-and-second-maximum-elements-over-all-sub-arrays-in-onlogn/en-hero.webp
+    placement: hero
+    alt: A mountain ridge is buried under overlapping survey frames while a descending rack selects only the nearest taller peak on each side
+    composition: >-
+      Use a distinct topographic metaphor. A ridge of peaks with varied heights is covered on the left by many overlapping survey frames, each searching for the tallest two peaks. On the right, the same peaks pass through a clean descending rack; smaller peak tokens pop out and connect only to the first taller token before or after them. Make the contrast between repeated windows and one-pass filtering clear without code, equations, numerals, labels, interfaces, or logos.
+    review_status: approved
+  - id: highest-bit
+    file: source/images/ai/find-all-unique-pairs-of-maximum-and-second-maximum-elements-over-all-sub-arrays-in-onlogn/en-highest-bit.webp
+    placement: before-independent-solution
+    alt: Tall amber beacons along a layered rail line send search carts in both directions until the next beacon blocks the route
+    composition: >-
+      Create a top-down rail-line metaphor distinct from the Chinese image. Each array element is an unlabeled layered tile beside one straight track; only the tiles lit at the highest differing layer become tall amber beacons. A tiny teal search cart leaves each beacon in both directions, visits lower unlit tiles, and stops at the next beacon, with paired wheel marks showing no tile is crossed more than twice. No binary digits, numbers, arrows with labels, code, or readable text.
+    review_status: approved

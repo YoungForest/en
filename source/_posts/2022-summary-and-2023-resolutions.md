@@ -1,6 +1,7 @@
 ---
 title: 2022 Year-End Review and 2023 New Year Outlook
 date: 2022-12-25 10:59:13
+description: "A 2022 review of lockdowns, remote work, European interviews, and moving from Beijing to Dublin, followed by goals for work, health, family, and learning."
 tags:
   - life
   - Year-End Review
@@ -11,6 +12,12 @@ translations:
   en: https://youngforest.github.io/en/2022/12/25/2022-summary-and-2023-resolutions/
 ---
 In the blink of an eye, 2022 is about to pass. I do not know whether it is because of pandemic restrictions or because I myself am getting older, but now time feels like it flies, truly like a white horse passing a crack. The ancients did not deceive me.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/2022-summary-and-2023-resolutions/en-hero.webp" alt="Forest pulls a suitcase through a gateway of turning calendar pages from a confined Beijing room into the morning light of a rainy Dublin apartment" width="1536" height="864" decoding="async">
+</figure>
+
+<!-- more -->
 
 Previous year-end reviews:
 
@@ -27,6 +34,10 @@ Milestone reviews:
 - [Four-Year University Review](https://youngforest.github.io/en/2018/10/03/my-4-years-college/)
 
 These important blog posts are all under the [Diary category](https://youngforest.github.io/en/categories/Diary/) on my blog.
+
+<figure class="editorial-illustration">
+  <img src="/en/images/ai/2022-summary-and-2023-resolutions/en-personal-review.webp" alt="Forest moves in relay through a home office, an interview practice track, packing boxes, and an international workplace" width="1536" height="864" loading="lazy" decoding="async">
+</figure>
 
 ## 2022 Personal Review
 
@@ -76,6 +87,10 @@ First, because I was preparing for European interviews, I learned a lot of inter
 Second, I learned a lot at work. I myself really like learning new knowledge. The pleasure of acquiring new knowledge is similar to shopping or gaming. For skills needed at work, I generally tend to spend more time systematically learning them. For example, for Java I read *Effective Java* and *Core Java*, and for C# I read *More Effective C#*.
 
 Finally, miscellaneous things I am interested in. Especially during the last two months after coming to Europe, I had unprecedented free time and strong love for knowledge. Mainly *A Brief History of the Human Body*, *A Short History of Europe*, and *A Brief History of Quantum Science*. Besides these, I also watched many classic films from Douban's [TOP250](https://movie.douban.com/top250).
+
+<figure class="editorial-illustration">
+  <img src="/en/images/ai/2022-summary-and-2023-resolutions/en-good-life-2023.webp" alt="Forest tends a code tree, running shoes, a warm family lamp, and a seedling growing from books as four paths join a calm river" width="1536" height="864" loading="lazy" decoding="async">
+</figure>
 
 ## Longing for a Good Life in 2023
 

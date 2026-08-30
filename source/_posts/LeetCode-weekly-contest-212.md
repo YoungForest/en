@@ -1,6 +1,7 @@
 ---
 title: LeetCode Weekly Contest 212
 date: 2020-10-26 16:47:43
+description: "Four solutions track key duration, test arithmetic subarrays, minimize path effort, and transform matrix ranks by connectivity."
 tags:
 - Competitive Programming
 categories:
@@ -14,6 +15,12 @@ translations:
 | 103 / 10984 | YoungForest | 19 | 1:19:51 | 0:06:36 | 0:12:02 | 0:39:44 2 | 1:09:51 |
 
 This week's weekly contest continued the strong momentum, and my ranking was also very high. Together with last week's ranking, my rank in the Cruel group rose to a new high, 11th.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-212/en-hero.webp" alt="A relief workshop times a plain key, sorts arithmetic stepping stones, traces a gentle minimax path and lifts connected matrix tiles" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## 1629. Slowest Key
 

@@ -5,6 +5,7 @@ tags:
 - Competitive Programming
 categories:
 - KickStart
+description: "Four solutions find a descending pattern, build a dependency wall, identify square-valued subarrays and maintain alternating weighted candy queries."
 translations:
   zh-CN: https://youngforest.github.io/2020/05/18/kick-start-2020-round-C/
   en: https://youngforest.github.io/en/2020/05/18/kick-start-2020-round-C/
@@ -14,6 +15,12 @@ translations:
 | YoungForest | 74 | 524 | 5 + 7 | 10 + 13 | 11 + 16 | 14 + 0 | 1:35:18 |
 
 Last month, because my Round B result was decent, I received a "Congraduation" email from Google CN HR. This month, I will keep going and work hard toward the dream of joining Google.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/kick-start-2020-round-C/en-hero.webp" alt="An overhead wooden puzzle case contains descending blank blocks, a dependency wall, square-making beads and two branching balances for alternating candies" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## A. Countdown
 

@@ -1,6 +1,7 @@
 ---
 title: LeetCode Weekly Contest 249
 date: 2021-07-11 17:54:25
+description: "Four solutions concatenate arrays, count length-three palindromes, colour grids with DP, and merge valid binary search trees."
 tags:
 - Competitive Programming
 categories:
@@ -20,6 +21,12 @@ This week counts as my first week after joining Amazon, and my global rank surpr
 The last two problems this week were both hard, so they really separated people.
 
 Because my China-site rating had reached 2460, I was worried about losing rating, so recently I have basically been playing on the US site. The US-site account is a 2330 "alt account", so it is basically hard to lose points.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-249/en-hero.webp" alt="A greenhouse line duplicates a tile ribbon, sorts mirrored bead triplets, weaves a three-colour grid and grafts saplings into one valid tree" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## 1929. Concatenation of Array
 

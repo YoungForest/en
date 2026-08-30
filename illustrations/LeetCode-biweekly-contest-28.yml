@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-biweekly-contest-28.md
+context: >-
+  The contest uses a monotonic stack for the next discount, brute-force rectangle updates, prefix sums for two non-overlapping target subarrays, and interval DP to place mailboxes near medians; the last problem needed debugging after memo parameters changed and problem three timed out in contest.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-biweekly-contest-28/en-hero.webp
+    placement: hero
+    alt: Discount stones, a recoloured tile rectangle, two separate target tracks and mailboxes placed among median row houses form an algorithm neighbourhood
+    composition: >-
+      Do not use Forest. Build a distinct English row-house neighbourhood as four broad physical puzzle islands: shelf stones each settle against the first smaller stone to their right; a tiled maintenance board has one rectangular region recoloured; a long bead track holds two separated amber segments that each fill an equal unmarked target bowl; a line of row houses receives a few muted-teal mailboxes placed near the middle home of each group. A loose memory cog and one softly steaming timer suggest the cache bug and TLE without labels. No people, readable text, price numerals, letters, formulas, code, arrows, logos, trademarks, fake UI or watermark.
+    review_status: approved

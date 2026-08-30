@@ -5,6 +5,7 @@ tags:
 - Life
 categories:
 - Diary
+description: "A junior-year reflection on past academic choices and the possible paths of graduate study, work, studying abroad, and entrepreneurship."
 translations:
   zh-CN: https://youngforest.github.io/2016/11/09/gogogo/
   en: https://youngforest.github.io/en/2016/11/09/gogogo/
@@ -14,6 +15,12 @@ Recently, I experienced two things that made me feel the need to reflect on myse
 The first was that last night's compiler test 1 did not pass. More specifically, the correct program did not produce the correct result. The compiler test reminded me of the Computer Organization test two years ago, and then I thought a lot.
 
 The second was this morning's quiz in compiler class. I completely could not do the second problem, and even if I wanted to copy someone else's answer, there was nobody to copy from. The people around me were unreliable, and the reliable people were not around me. This made me realize again that only I myself am truly dependable. If I cannot rely on myself, then there is nobody I can truly rely on.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/gogogo/en-hero.webp" alt="Forest stands at four future paths before dawn, carrying the accumulated stones of past coursework while gathering failed compiler pieces into his own toolbox" width="1536" height="864" decoding="async">
+</figure>
+
+<!-- more -->
 
 ## The Past
 
@@ -25,20 +32,19 @@ By junior year, when it was time to consider my future path, I discovered that o
 
 ## Paths Forward
 
-#### Graduate Recommendation
+### Graduate Recommendation
 This is the most likely path and also the easiest path I am currently facing. But looking at my poor GPA, I am now powerless to turn the tide and can only be at others' mercy. External recommendation is absolutely impossible, and I do not even dare guarantee staying at my own school, since there are still many extra-point items behind me.
 
-#### Work
+### Work
 Just like my roommate `zjy` said, I know nothing, so what company would want me? My situation is similar to his. Although I have studied professional knowledge seriously for two and a half years, both the depth and suitability are far from market demand. `tls` naturally does not need to worry. With rich ACM experience here, whether studying abroad or entering an international top company, he is certainly on the path to the peak of life.
 
-#### Study Abroad
+### Study Abroad
 Speaking of this, since spending two weeks in the UK in summer 2016, I unexpectedly developed the idea and courage to study abroad. I did not expect that half a year would pass and my sharp spirit would already disappear, but the belief remains. Although I do not have the courage to fight with my back to the river, I still have the stubbornness not to submit to fate.
 
-#### Entrepreneurship
+### Entrepreneurship
 This option is left to others. I never even dare think about it. I have no capital, no network, no powerful father, no quality, and no courage.
 
 ## The Future
 New year, new semester. This year will at least determine the development of the next two years, and may even determine the fate of my whole life.
 
 Keep going!
-

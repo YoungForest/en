@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-biweekly-contest-60.md
+context: >-
+  The author records a biweekly contest result: the first three tasks were completed, the third took two incorrect attempts, and the fourth remained unfinished.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-biweekly-contest-60/en-hero.webp
+    placement: hero
+    alt: Forest clears three contest mechanisms while two retry beetles linger by the third and a fourth bay remains dark
+    composition: >-
+      Use fictional Forest in an independent four-stage contest workshop. The first two mechanisms glow steadily; the third is complete but has two small amber retry beetles beside its reset lever; the fourth bay is quiet and unfinished. Forest has just cleared the third stage and looks toward the unopened final mechanism. Do not show a rank or problem numbers. No readable or pseudo-readable text, letters, digits, formulas, real scoreboard, logos, UI, watermark or signature.
+    review_status: approved

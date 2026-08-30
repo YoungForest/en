@@ -1,6 +1,7 @@
 ---
 title: LeetCode Weekly Contest 191
 date: 2020-05-31 17:40:09
+description: A weekly review of maximum products, widest cake cuts, tree-road redirection and the two-box probability and combinatorics problem missed in contest.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2020/05/31/LeetCode-weekly-contest-191/
   en: https://youngforest.github.io/en/2020/05/31/LeetCode-weekly-contest-191/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-191/en-hero.webp" alt="The two largest fruits power a product scale, the widest cake gaps meet, tree roads converge on one town and two coloured-ball boxes face an unfinished probability balance" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (4) |	Q3 (5) |	Q4 (7)|
 |--|--|--|--|--|--|--|--|
 | 765 / 13283 |	YoungForest | 12 | 0:27:19 | 0:02:16 | 0:12:53 | 0:27:19 |  null |
@@ -153,5 +160,4 @@ class Solution:
         dfs(0)
         return self.good / self.all
 ```
-
 

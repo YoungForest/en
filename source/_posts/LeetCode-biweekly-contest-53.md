@@ -1,6 +1,7 @@
 ---
 title: LeetCode biweekly contest 53
 date: 2021-05-30 11:44:44
+description: Four solutions test three distinct characters, pair array extremes, rank rhombus sums, and use bitmask DP for minimum XOR matching.
 tags:
 - Competitive Programming
 categories:
@@ -21,6 +22,10 @@ Ling Shen's rating data:
 1877,Minimize Maximum Pair Sum in Array,minimize-maximum-pair-sum-in-array,1301.3817574010
 1878,Get Biggest Three Rhombus Sums in a Grid,get-biggest-three-rhombus-sums-in-a-grid,1897.5516652727
 1879,Minimum XOR Sum of Two Arrays,minimum-xor-sum-of-two-arrays,2145.1839952670
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-biweekly-contest-53/en-hero.webp" alt="A three-slot window tests distinct beads, heavy and light weights pair across balances, diagonal rails rank three rhombus sums and a masked matching table minimizes prism light" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
 
 <!-- more -->
 

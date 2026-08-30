@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-241.md
+context: >-
+  Three completed solutions enumerate subset XOR, count swaps for alternation, and maintain mutable pair counts; the last records a DP attempt for visible sticks.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-241/en-hero.webp
+    placement: hero
+    alt: Branching switches feed an XOR prism, two-colour beads alternate, a small tray queries a mutable warehouse and a stick recurrence remains visibly sprawling
+    composition: >-
+      Do not use Forest. Create a distinct English combinatorics workshop in four clear scenes. A branching switchboard enumerates include-or-exclude choices and sends blank tokens through an XOR prism. Teal and amber beads pass through a minimal swap rack toward either of two alternating arrangements after feasibility bowls compare their counts. A small tray scans a few weights while a large mutable warehouse groups many weights into reverse hash drawers, allowing one drawer to change and pair counts to be queried quickly. Descending sticks enter layered recurrence frames; only unobscured tops glow, but the branching mechanism visibly proliferates rather than converging, honestly depicting the recorded time-limit-exceeded DP attempt. No people, characters, letters, digits, code, formulas, readable text, fake UI, logo, trademark or watermark.
+    review_status: approved

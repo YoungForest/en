@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 121
 date: 2019-01-27 16:05:48
+description: Travel-day contest and phone-interview notes on alternating strings, time maps, ticket costs, bitwise triples and communicating under pressure.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2019/01/27/LeetCode-weekly-contest-121/
   en: https://youngforest.github.io/en/2019/01/27/LeetCode-weekly-contest-121/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-121/en-hero.webp" alt="Forest regains focus at a train worktable with alternating beads, time drawers, route passes and three layered bit plates" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 Today I went home for vacation, with a train at 3:30 p.m. But I still squeezed out time from a busy schedule to join the regular weekly contest. The result was poor because I was not focused enough while going home. I only solved the warm-up problem. The second problem TLEed, and in the end it could have passed by changing one variable to a reference, which was also a lesson: use references whenever possible. I did not have enough time to finish the third problem, though after getting on the train in the afternoon, with no distractions, I finally completed it independently. The idea had actually been correct from the beginning; I just did not have time to debug the details. As for the fourth problem, I did not even have time to finish reading the statement.
 
 ## 984. String Without AAA or BBB

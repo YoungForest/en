@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-120.md
+context: >-
+  The author joins an easier contest with a friend, passes all four tasks on the first try and recognizes progress from practice, reviewing sorted squares, turbulent runs, coin distribution in a tree and visiting every grid cell.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-120/en-hero.webp
+    placement: hero
+    alt: Forest and an anonymous peer train beside sorted square beads, a turbulent ribbon, a balanced coin tree and an all-cell path
+    composition: >-
+      Use fictional Forest and one anonymous simplified peer in an independently laid out open-air practice pavilion. Their adjacent tracks gently motivate one another without a winner podium. A single flowing apparatus draws beads from both ends of an ordered dark-to-light row and merges square tiles by size, follows an alternating high-low amber and teal ribbon for its longest uninterrupted run, redistributes round coins along binary-tree branches until every node holds one, and guides a footprint token across each available cell of a blank grid exactly once before reaching the exit. Friendly eye contact and relaxed posture convey earned progress. No readable text, letters, digits, formulas, logos, brands, real-person likenesses, fake UI, watermark or signature.
+    review_status: approved

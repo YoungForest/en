@@ -1,6 +1,7 @@
 ---
 title: LeetCode Weekly Contest 235
 date: 2021-04-05 12:12:49
+description: "Solutions truncate a sentence, deduplicate active minutes, minimize absolute difference, and record a subsequence-GCD approach that timed out."
 tags:
 - Competitive Programming
 categories:
@@ -12,6 +13,12 @@ translations:
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (5) |	Q3 (5) |	Q4 (6)|
 |--|--|--|--|--|--|--|--|
 | 889 / 11443 | YoungForest | 12 | 0:27:18 | 0:01:52 | 0:07:49 | 0:27:18 | null |
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-235/en-hero.webp" alt="A token ribbon is trimmed, duplicate clock seals merge by user, calipers find a nearest stone and an expanding gear network stalls at a sand timer" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## 1816. Truncate Sentence
 

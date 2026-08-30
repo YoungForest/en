@@ -1,6 +1,7 @@
 ---
 title: LeetCode Weekly Contest 222
 date: 2021-01-03 16:07:11
+description: Four solutions greedily load crates, count power-of-two meal pairs, split an array with two boundaries, and map a target before finding an LIS.
 tags:
 - Competitive Programming
 categories:
@@ -12,6 +13,12 @@ translations:
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (4) |	Q3 (5) |	Q4 (6)|
 |--|--|--|--|--|--|--|--|
 | 331 / 9692 | YoungForest | 18 | 2:02:29 | 0:05:32	 | 0:13:55  2 | 0:54:53  2 | 1:17:29  5 |
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-222/en-hero.webp" alt="Dense-unit crates fill a truck first, food tokens pair into doubling trays, two gates divide prefix weights and mapped target sockets feed a longest rising rail" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## 5641. Maximum Units on a Truck
 

@@ -1,0 +1,16 @@
+version: editorial-comic-v1
+post: source/_posts/Bytedance-Ads-backend-intern-interview.md
+context: The author reviews an ads-backend internship interview spanning hash maps, database indexes and transactions, concurrency, networking, and RPC, then improves a brute-force edit-distance search by reusing dynamic-programming work across shared Trie prefixes.
+assets:
+  - id: hero
+    file: source/images/ai/Bytedance-Ads-backend-intern-interview/en-hero.webp
+    placement: hero
+    alt: Forest faces a sequence of hash buckets, index shelves, concurrency gears, network bridges, and string pieces at an unbranded interview table
+    composition: Seat Forest at one end of an unbranded long interview table. Arrange plain hash buckets, layered index shelves, interlocking concurrency gears, a two-ended network bridge, and blank string pieces from left to right as a sequence of challenges. Preserve short dark hair, round glasses, charcoal overshirt, and muted-teal T-shirt.
+    review_status: approved
+  - id: trie-distance
+    file: source/images/ai/Bytedance-Ads-backend-intern-interview/en-trie-distance.webp
+    placement: before-trie-optimization
+    alt: Several blank character-block strings merge into a shared prefix tree where distance beads reuse common branches to reveal the shortest path
+    composition: Several rows of blank character blocks feed into a mechanical prefix tree. Matching beginnings merge into one shared trunk, muted-teal distance beads travel each common branch only once, and an amber glow reveals the shortest branch toward a simple target silhouette, showing how Trie traversal reuses dynamic-programming work.
+    review_status: approved

@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/my-shahe-story.md
+context: Before leaving the Shahe campus, the author looks back on two undergraduate years of freshman expectations, student activities, demanding coursework, becoming a homebody, valuing sleep, missing classmates, and anticipating the next stage.
+assets:
+  - id: hero
+    file: source/images/ai/my-shahe-story/en-hero.webp
+    placement: hero
+    alt: Forest pauses midway along a campus path with coursework and debugging blocks, student-club props, and an oversized pillow while looking toward friends and a bridge ahead
+    composition: Place the human Forest character midway along a generic campus path with no school name or crest. Coursework and debugging blocks, student-club props, and a slightly exaggerated pillow compete for his attention; friends glance back in the distance and a bridge leads onward. Keep the humor tired but affectionate.
+    review_status: approved

@@ -1,6 +1,7 @@
 ---
 title: LeetCode biweekly contest 1
 date: 2019-06-03 20:03:05
+description: First-biweekly notes on fixed points, substring index pairs, worker-bike assignments and counting digits across a range.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2019/06/03/LeetCode-biweekly-contest-1/
   en: https://youngforest.github.io/en/2019/06/03/LeetCode-biweekly-contest-1/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-biweekly-contest-1/en-hero.webp" alt="A tired Forest leaves one blank exam desk for an evening puzzle bench of fixed positions, paired fragments, bicycles and counting wheels" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (4) |	Q2 (5) |	Q3 (6) |	Q4 (8)|
 |--|--|--|--|--|--|--|--|
 | 241 / 983 |	YoungForest | 7 | 	0:18:23 | 0:09:56 | 0:18:23 | null  | null |

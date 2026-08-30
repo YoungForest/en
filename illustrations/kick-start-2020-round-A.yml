@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/kick-start-2020-round-A.md
+context: >-
+  This four-problem contest recap uses greedy allocation for houses, dynamic programming across plate stacks, binary search on workout difficulty, and trie plus DFS grouping by common prefixes.
+assets:
+  - id: hero
+    file: source/images/ai/kick-start-2020-round-A/en-hero.webp
+    placement: hero
+    alt: A circular contest workshop packs small houses, selects stacked plates, splits a long track and bundles ribbons deep in a branching tree
+    composition: >-
+      Do not use Forest. Create a distinct English scene as a circular contest workshop divided into four tactile stations around a blank clock rim. One station packs the smallest model houses into a limited canvas purse first. One lifts selected top plates from several stacks into the best glowing set. One repeatedly places divider pegs into the widest stretch of a training track. One feeds blank coloured ribbons through a branching wooden trie and ties groups at the deepest shared branch. Keep the actions immediately readable at phone size. No text, digit, currency mark, code, formula, score, scoreboard, company identity, logo, trademark or watermark.
+    review_status: approved

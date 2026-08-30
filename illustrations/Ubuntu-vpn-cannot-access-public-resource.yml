@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/Ubuntu-vpn-cannot-access-public-resource.md
+context: >-
+  Connecting to a research VPN made the private network reachable but cut off the public internet. After ruling out DNS, the author corrected the local route so only private resources use the tunnel while normal traffic stays public. Screenshots retain the exact setting.
+assets:
+  - id: hero
+    file: source/images/ai/Ubuntu-vpn-cannot-access-public-resource/en-hero.webp
+    placement: hero
+    alt: A harbour lock routes one research cargo boat through a private canal while ordinary boats remain on the open public waterway
+    composition: >-
+      Do not use Forest. Create a distinct English metaphor as a harbour with two waterways. At first, an oversized private lock pulls every boat toward a narrow teal canal, leaving the sunny public waterway unreachable. A small route selector is corrected so only one boat carrying abstract compute crates enters the private canal while ordinary boats continue along the amber-lit open water. Both navigation lamps glow at once. No real operating system, VPN brand, institution, network labels, IP address, domain, DNS label, interface, code, readable text, number, logo, trademark or watermark.
+    review_status: approved

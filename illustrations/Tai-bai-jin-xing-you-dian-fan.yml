@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/Tai-bai-jin-xing-you-dian-fan.md
+context: >-
+  The author recommends Ma Boyong's deconstruction of Journey to the West, admiring its celestial bureaucracy, blame shifting, miscarriages of justice, factional struggle, suspense, reversals, and compassion.
+assets:
+  - id: hero
+    file: source/images/ai/Tai-bai-jin-xing-you-dian-fan/en-hero.webp
+    placement: hero
+    alt: A celestial records office passes one cracked responsibility vessel around a circular bureaucracy while an anonymous investigator follows the hidden trail beneath the clouds
+    composition: >-
+      Use a distinct English composition: a circular celestial records office passes one cracked responsibility vessel from desk to desk while an anonymous investigator traces its hidden route beneath layered clouds; a playful spiral gust hints that an old disturbance was useful to every department. All figures and mythology must be original and anonymous. No recognizable Journey to the West character, author likeness, real book cover, readable text, seals, labels, logos, or celebrities.
+    review_status: approved

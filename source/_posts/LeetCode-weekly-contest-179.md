@@ -1,6 +1,7 @@
 ---
 title: LeetCode Weekly Contest 179
 date: 2020-03-08 13:54:54
+description: A weekly review of odd-count construction, continuous bulb prefixes, organisation-tree relay time and a frog's exact-time position.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2020/03/08/LeetCode-weekly-contest-179/
   en: https://youngforest.github.io/en/2020/03/08/LeetCode-weekly-contest-179/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-179/en-hero.webp" alt="Forest watches a malformed token gate, odd bead groups, a continuous blue bulb prefix, a messenger tree and frogs timed by a sandglass beam" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (4) |	Q3 (5) |	Q4 (6)|
 |--|--|--|--|--|--|--|--|
 | 539 / 6242 |	YoungForest | 18 | 	1:09:53 | 0:05:43 | 0:13:09 | 0:24:01 | 1:04:53  1 |

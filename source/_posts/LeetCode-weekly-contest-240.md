@@ -1,6 +1,7 @@
 ---
 title: LeetCode Weekly Contest 240
 date: 2021-05-09 17:18:34
+description: Four solutions find the busiest year, maximize distance between arrays, compute a subarray min-product, and topologically count colours in a DAG.
 tags:
 - Competitive Programming
 categories:
@@ -18,6 +19,10 @@ This week had the May Day holiday plus thesis plagiarism checking. My mood was m
 After the defense is over, I will be willing to do anything.
 
 In the previous few weeks, because my China-site rating was too high, I did not dare to compete there, afraid of losing rating. I moved to the US site, and now I have also pushed the US-site rating to 2350. That rating is also too high. Later I plan to move back to the China site again, because the new recruitment season is approaching, and China-site sponsor gifts are relatively generous. Although last year I only ranked high enough a few times and received prizes, at least there was a reward and a small expectation.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-240/en-hero.webp" alt="Blank time bays accumulate arrivals and departures, two sliders stretch across sorted rows, a minimum-height frame drives an interval-weight gear and coloured graph tokens accumulate in topological order" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
 
 <!-- more -->
 

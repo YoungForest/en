@@ -1,6 +1,7 @@
 ---
 title: kick start 2019 round D
 date: 2019-07-28 16:19:32
+description: Kick Start notes on leaving an overcomplicated segment-tree path for a direct parity rule and the longest valid interval.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2019/07/28/kick-start-2019-round-D/
   en: https://youngforest.github.io/en/2019/07/28/kick-start-2019-round-D/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/kick-start-2019-round-D/en-hero.webp" alt="Forest abandons a tangled tree mechanism, pairs parity lanterns and compares two end trims on a long bead interval" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 Rank: 765 / 1866.
 
 ## X or What

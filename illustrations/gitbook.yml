@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/gitbook.md
+context: Introduces a workflow for organizing loose Markdown notes into a coherent small book that can be previewed and published in several forms.
+assets:
+  - id: hero
+    file: source/images/ai/gitbook/en-hero.webp
+    placement: hero
+    alt: Loose blank note cards pass through a modular binding workshop and emerge as a structured book, a continuous web-page scroll, and printed folios
+    composition: An independent library-press setting uses blank chapter cards, sorting trays, and binding mechanisms to show systematic publishing without depicting real software or branding.
+    review_status: approved

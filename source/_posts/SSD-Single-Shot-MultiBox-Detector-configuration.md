@@ -2,6 +2,7 @@
 title: 'SSD: Single Shot MultiBox Detector Configuration and Usage Summary'
 date: 2017-01-12 23:50:49
 tags:
+description: "Notes on configuring an SSD object detector in a CPU-only Ubuntu environment, including Python support and fixes for HDF5, OpenBLAS, and Boost paths."
 translations:
   zh-CN: https://youngforest.github.io/2017/01/12/SSD-Single-Shot-MultiBox-Detector-configuration/
   en: https://youngforest.github.io/en/2017/01/12/SSD-Single-Shot-MultiBox-Detector-configuration/
@@ -12,6 +13,11 @@ translations:
 
 ## Environment Configuration
 Basically follow the [official documentation](https://github.com/weiliu89/caffe/tree/ssd). Here I only show the parts that differ from the documentation.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/SSD-Single-Shot-MultiBox-Detector-configuration/en-hero.webp" alt="A modest CPU workshop casts several correctly sized frames around passing objects after three misplaced dependency parts are routed into matching sockets" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
 <!-- more -->
 ### Makefile.confile
 + line 8: CPU only

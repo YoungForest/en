@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/Yuan-Chong-Huan.md
+context: A biography of Yuan Chonghuan becomes a reflection on how a capable frontier commander was constrained by failing institutions, imperial decisions, and court politics while ordinary people bore the cost.
+assets:
+  - id: hero
+    file: source/images/ai/Yuan-Chong-Huan/en-hero.webp
+    placement: hero
+    alt: A frontier commander repairs a breach in the wall while ropes from the court pull his tools in conflicting directions and civilians shelter below
+    composition: Center an unnamed, non-portrait late-Ming commander seen mostly from behind as he repairs a storm-battered frontier wall; bureaucratic ropes from the rear tug at his tools and arms while civilians shelter below. Include no flags, writing, famous face, or book cover.
+    review_status: approved

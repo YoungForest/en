@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 141
 date: 2019-06-16 11:44:47
+description: Exam-week notes on in-place zero duplication, label-limited selection, binary-grid paths and shortest common supersequences.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2019/06/16/LeetCode-weekly-contest-141/
   en: https://youngforest.github.io/en/2019/06/16/LeetCode-weekly-contest-141/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-141/en-hero.webp" alt="Forest studies beside blank exam binders while duplicating hollow beads, limiting labelled weights, crossing a grid and weaving two sequences" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (4) |	Q2 (5) |	Q3 (6) |	Q4 (8)|
 |--|--|--|--|--|--|--|--|
 | 234 / 4126 |	YoungForest | 22 | 1:18:45 | 0:25:23  1 | 0:36:29 | 0:51:47 | 1:13:45 |

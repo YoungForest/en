@@ -1,0 +1,19 @@
+version: editorial-comic-v1
+post: source/_posts/Elon-Musk.md
+context: >-
+  The post follows the biography through internet startups, rockets, electric vehicles, AI, and a social platform, balancing admiration for high-risk engineering with concern about aggressive cost cutting and its human consequences.
+assets:
+  - id: hero
+    file: source/images/ai/Elon-Musk/en-hero.webp
+    placement: hero
+    alt: Four industrial rooms orbit an empty workbench as a glowing accelerator links a garage, payment pipes, a rocket test stand, and an electric assembly line
+    composition: >-
+      Use a distinct orbital workshop composition without portraying Musk or any other real person. Four small industrial rooms orbit an empty workbench: a garage startup, abstract payment pipes, a rocket test stand, and an electric assembly line. A glowing accelerator path binds them and continues toward a star field, while scattered hard hats hint at the workers affected by the pace. No company marks, recognizable products, real book cover, readable text, or celebrity likeness.
+    review_status: approved
+  - id: delete-loop
+    file: source/images/ai/Elon-Musk/en-delete-loop.webp
+    placement: inline-before-cost-cutting-reflection
+    alt: A stripped-down machine and a tray of safety margins pull against each other on a workshop balance while a test loop returns only essential parts
+    composition: >-
+      Make the English transition a workshop balance rather than pruning shears. A rapidly stripped-down abstract machine occupies one pan while bolts, supports, backups, and safety margins occupy the other; behind them, a circular test track returns only the parts proven essential. The metaphor should hold admiration and unease at once. No real vehicle, rocket, logo, numbered steps, text, or interface.
+    review_status: approved

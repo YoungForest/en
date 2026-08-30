@@ -1,6 +1,7 @@
 ---
 title: LeetCode Biweekly Contest 21
 date: 2020-03-08 11:35:48
+description: A biweekly review of increasing-decreasing strings, vowel parity states, binary-tree zigzags and maximum-sum BST subtrees.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2020/03/08/LeetCode-biweekly-contest-21/
   en: https://youngforest.github.io/en/2020/03/08/LeetCode-biweekly-contest-21/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-biweekly-contest-21/en-hero.webp" alt="Beads rise and fall on a wave, five lamps repeat a state, birds alternate through branches and nested gauges pour valid tree fruit into a basket" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (4) |	Q2 (4) |	Q3 (5) |	Q4 (6)|
 |--|--|--|--|--|--|--|--|
 | 175 / 4729 |	YoungForest | 19 | 	1:05:07 | 0:21:38 |  0:39:43 |  0:50:40 |  1:05:07 |

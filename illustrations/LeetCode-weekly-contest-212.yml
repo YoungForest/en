@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-212.md
+context: >-
+  Four solutions track key duration, test arithmetic subarrays, minimize path effort, and transform matrix ranks by connectivity.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-212/en-hero.webp
+    placement: hero
+    alt: A relief workshop times a plain key, sorts arithmetic stepping stones, traces a gentle minimax path and lifts connected matrix tiles
+    composition: >-
+      Do not use Forest. Create a distinct English relief-map workshop. A blank piano-like key holds a long pendulum to show duration. Loose stepping stones slide into a sequence with evenly rising heights. A small teal marble follows a route across a topographic grid, favouring gentle passes over steep walls. On the far side, equal-height square tiles form islands joined along rows and columns, then rise on separate platforms to the lowest compatible levels. No key labels, characters, letters, digits, code, formulas, readable text, fake UI, logo, trademark or watermark.
+    review_status: approved

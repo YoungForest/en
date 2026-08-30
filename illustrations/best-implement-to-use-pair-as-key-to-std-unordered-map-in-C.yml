@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/best-implement-to-use-pair-as-key-to-std-unordered-map-in-C.md
+context: >-
+  The author argues that simple XOR is a weak way to combine hashes for a C++ pair and shares a reusable Boost-inspired hash_combine template with better distribution.
+assets:
+  - id: hero
+    file: source/images/ai/best-implement-to-use-pair-as-key-to-std-unordered-map-in-C/en-hero.webp
+    placement: hero
+    alt: A crude crossing chute drops several paired shapes into the same bin while a layered mixing mill distributes other pairs cleanly across separate compartments
+    composition: >-
+      Use a distinct English composition: a crude crossing chute repeatedly collapses different paired geometric tokens into one crowded bin, while a compact layered mixing mill adds an amber offset gear, rotates the pair through several stages, and distributes outputs across separate compartments. Physical metaphor only. No XOR or hash symbols, code, numbers, formula, interface, brand, labels, or readable text.
+    review_status: approved

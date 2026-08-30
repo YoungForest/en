@@ -5,7 +5,13 @@ tags:
 - Blog
 categories:
 - Tech Sharing
+description: A historical guide to automatically deploying paired Hexo blogs with Travis CI, GitHub tokens and a deployment workflow.
+translations:
+  zh-CN: https://youngforest.github.io/2021/10/09/Travis-CI-Hexo-Automatically-Deploy/
+  en: https://youngforest.github.io/en/2021/10/09/Travis-CI-Hexo-Automatically-Deploy/
 ---
+
+<figure class="editorial-illustration editorial-illustration--hero"><img src="/en/images/ai/Travis-CI-Hexo-Automatically-Deploy/en-hero.webp" width="1536" height="864" alt="Two blog scrolls move through a cloud assembly line, sealed key vault and branch gate toward paired site beacons" decoding="async" fetchpriority="high"></figure>
 
 [Hexo](https://hexo.io/docs/) is a powerful blog engine. It is a good choice for a personal blog. I have used it for 5 years. Recently, I setup [my English site](https://youngforest.github.io/en) besides [the original Chinese site](https://youngforest.github.io/). With 2 sites, it is more work to write, git and deploy.
 Fortunately, there is a better solution for this problem. We could use [Travis CI](https://travis-ci.com/) to automatically deploy the blog. The remain work is writing posts and git commit and push them. The CI would help us to deploy sites automatically.

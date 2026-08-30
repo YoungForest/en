@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LCCUP-21-Spring-Team.md
+context: >-
+  The recap balances bucket upgrades against water-filling rounds, then distributes a bounded connected colouring across a binary tree.
+assets:
+  - id: hero
+    file: source/images/ai/LCCUP-21-Spring-Team/en-hero.webp
+    placement: hero
+    alt: Upgradeable buckets fill vats in shared rounds while a binary orchard divides a limited connected chain of teal lights
+    composition: >-
+      Do not use Forest. Create a distinct English spring pump house in two spacious bays. Adjustable buckets can be enlarged before a shared rhythm wheel pours repeated rounds into several vats; an unmarked balance compares the effort of upgrades against the number of filling rounds. Beside it, a sculptural binary orchard carries fruits of varied size, while a limited set of muted-teal lamps must form one connected cluster from a chosen node and split between left and right branches through plain allocation trays. No people, team names, rankings, characters, letters, digits, code, formulas, readable text, logo, trademark or watermark.
+    review_status: approved

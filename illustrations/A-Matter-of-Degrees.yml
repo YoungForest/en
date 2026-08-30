@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/A-Matter-of-Degrees.md
+context: Uses temperature to connect the universe, the Sun, Earth, life, and human civilization while rediscovering a childhood curiosity about physics and science.
+assets:
+  - id: hero
+    file: source/images/ai/A-Matter-of-Degrees/en-hero.webp
+    placement: hero
+    alt: A thermometer becomes a glowing thread linking a nebula, the Sun, Earth, evolving life, and human curiosity
+    composition: An amber thermometer column crosses a natural-history cabinet from cosmic heat to the Sun, Earth, evolving life, and a small observatory, making temperature the shared thread.
+    review_status: approved

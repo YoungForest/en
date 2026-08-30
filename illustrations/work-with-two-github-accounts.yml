@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/work-with-two-github-accounts.md
+context: >-
+  During an internship, the author uses one computer for work, personal, and lab tasks, separating two code-hosting identities with SSH keys, host aliases, repository remotes, and local commit identity.
+assets:
+  - id: hero
+    file: source/images/ai/work-with-two-github-accounts/en-hero.webp
+    placement: hero
+    alt: Forest operates a two-lane key switchyard where a default work lane and a repository-specific personal lane reach separate code workshops without colliding
+    composition: >-
+      Use a distinct English composition with fictional Forest, never a portrait. Forest operates a physical two-lane key switchyard: one default key continues to a work workshop, while a second uniquely shaped key takes a repository-specific siding toward a personal workshop; the tracks remain separate yet easy to switch. No real employer, code-hosting logo, cat-shaped trademark, email address, code, terminal, configuration text, interface, labels, or readable text.
+    review_status: approved

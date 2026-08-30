@@ -1,0 +1,17 @@
+version: editorial-comic-v1
+post: source/_posts/Beijing-residence.md
+context: Drawing on personal experience, the author explains eligibility and employer quotas under Beijing's 2021 separately listed route, then records the paperwork, waiting, social-insurance proof, and 2023 completion.
+assets:
+  - id: hero
+    file: source/images/ai/Beijing-residence/en-hero.webp
+    placement: hero
+    alt: Forest discovers a newly opened side path through a dense city maze while carrying a blank folder toward a softly lit home
+    composition: Create a distinct English-reader composition as a bird's-eye city maze. Forest carries a blank folder at a crowded circular quota junction; a newly opened teal side path passes two neutral geometric checkpoints and continues toward a softly lit home courtyard. The mood mixes relief with the weight of bureaucracy. Avoid landmark replicas, official papers, seals, insignia, company marks, maps with labels, or readable text.
+    review_status: approved
+  - id: process
+    file: source/images/ai/Beijing-residence/en-process.webp
+    placement: before-settlement-process
+    alt: A blank folder passes between employer, school, archive, and waiting stations across changing seasons before becoming a simple house key
+    composition: >-
+      Use an isometric tabletop journey rather than the Chinese horizontal road. A blank folder is handed between four neutral miniature stations: an employer desk in autumn, a review window in winter, a school archive in spring, and a long social-insurance hourglass, before reaching a small house key under the next winter lamp. No official buildings, readable documents, seals, logos, dates, or guarantees.
+    review_status: approved

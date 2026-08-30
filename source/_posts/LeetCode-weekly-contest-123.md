@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 123
 date: 2019-02-10 10:29:44
+description: Post-holiday contest notes on digitwise addition, union-find, reverse calculator reasoning and two-window distinct-subarray counting.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2019/02/10/LeetCode-weekly-contest-123/
   en: https://youngforest.github.io/en/2019/02/10/LeetCode-weekly-contest-123/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-123/en-hero.webp" alt="Forest returns after the holiday to carry beads, join relation loops, repair a calculator backward and move two windows" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 This contest was the first one after the Spring Festival.
 
 ## 989. Add to Array-Form of Integer

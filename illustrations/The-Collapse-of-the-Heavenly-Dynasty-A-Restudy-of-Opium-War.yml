@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/The-Collapse-of-the-Heavenly-Dynasty-A-Restudy-of-Opium-War.md
+context: >-
+  The essay connects the late Qianlong era to the Opium War, using two mutually illuminating histories to reconsider textbook narratives, institutions, policy choices, and the burdens carried into modernization.
+assets:
+  - id: hero
+    file: source/images/ai/The-Collapse-of-the-Heavenly-Dynasty-A-Restudy-of-Opium-War/en-hero.webp
+    placement: hero
+    alt: Transparent historical map layers reveal a court clockwork, a maritime compass, and changing policy paths across one museum restoration table
+    composition: >-
+      Use a distinct museum-restoration composition. Several translucent map layers lie over one table: a self-contained court clockwork on the oldest layer, a maritime compass and steam route on another, and branching institutional paths on the newest. A blank archival lens lifts one layer to reveal how the same silhouettes change when the narrative frame changes. No real historical figure, battle scene, national flag, political slogan, readable document, or book cover.
+    review_status: approved

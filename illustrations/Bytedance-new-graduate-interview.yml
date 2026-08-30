@@ -1,0 +1,16 @@
+version: editorial-comic-v1
+post: source/_posts/Bytedance-new-graduate-interview.md
+context: A rushed early-round backend interview covering algorithm optimization and several computer science fundamentals, followed by a lesson about systematic preparation.
+assets:
+  - id: hero
+    file: source/images/ai/Bytedance-new-graduate-interview/en-hero.webp
+    placement: hero
+    alt: Forest hurries toward an interview chair with one polished algorithm tool while the computer-fundamentals toolbox behind him still has several empty compartments
+    composition: Show Forest carrying one well-prepared algorithm tool toward a simple interview setting while a second toolbox of abstract process, network, and data components remains visibly unfinished, with no company branding or interface.
+    review_status: approved
+  - id: review-plan
+    file: source/images/ai/Bytedance-new-graduate-interview/en-review-plan.webp
+    placement: before-summary
+    alt: Forest arranges scattered systems, networking, database, and language cards into a three-stage study bridge leading toward the next interview
+    composition: Use four groups of blank physical study cards and a small three-stage bridge to turn scattered fundamentals into a short review plan, ending at one empty interview chair.
+    review_status: approved

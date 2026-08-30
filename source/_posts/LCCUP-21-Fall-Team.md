@@ -1,6 +1,7 @@
 ---
 title: LCCUP 21 Fall Team
 date: 2021-09-25 20:28:48
+description: "The solutions count colours on a tree, search bicycle states, reconstruct volunteer counts backwards, and use DP for stack-or-queue security choices."
 tags:
 - Competitive Programming
 categories:
@@ -18,6 +19,12 @@ For this year's fall contest, I only participated in the team contest, not the i
 After solving four problems in one hour, only five people AC'd the last two problems. After staring at them for a long time, we did not find any idea with a feasible time complexity. So we decisively gave up, and the last two hours were saved for doing something else.
 
 Although I now use my [English blog](https://youngforest.github.io/en/) to write weekly contest summaries, both the spring and fall contests are events on the China LeetCode site, and only Chinese users can participate in and see them. So considering the audience, this contest summary was still written in Chinese.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LCCUP-21-Fall-Team/en-hero.webp" alt="A coloured firework tree, empty bicycle terrain, reverse-flow venue network and stack-or-queue gate share an autumn arena" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## [LCP 44. Opening Ceremony Fireworks](https://leetcode-cn.com/problems/sZ59z6/)
 

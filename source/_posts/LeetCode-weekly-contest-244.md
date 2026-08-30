@@ -1,6 +1,7 @@
 ---
 title: LeetCode Weekly Contest 244
 date: 2021-06-06 15:37:26
+description: "Four solutions rotate a matrix, count sorted reductions, minimize flips in a circular alternating string, and reduce packaging waste with prefix sums."
 tags:
 - Competitive Programming
 categories:
@@ -14,6 +15,10 @@ translations:
 | 142 / 14467 | YoungForest | 18 | 0:51:13 |  0:05:21 | 0:09:54 |  0:30:19 | 0:46:13 🐞1 |
 
 This afternoon I arranged to have dinner with [Cruel Coding East God](http://leetcode.com/ddoudle), a strong player with a 2700+ rating. He did his undergraduate studies at Zhejiang University and is doing graduate school in Canada. This summer he came to Beijing for an internship at Megvii, so we had a chance to meet offline.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-244/en-hero.webp" alt="A tiled tray rotates toward a template, stepped blocks reduce by level, a two-colour belt alternates with few flips and nested boxes capture spare space" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
 
 <!-- more -->
 

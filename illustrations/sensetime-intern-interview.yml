@@ -1,0 +1,16 @@
+version: editorial-comic-v1
+post: source/_posts/sensetime-intern-interview.md
+context: A referral leads into three increasingly technical internship interviews, followed by the author's decision to value hands-on engineering and a lifetime of writing code over the prestige hierarchy around job titles.
+assets:
+  - id: hero
+    file: source/images/ai/sensetime-intern-interview/en-hero.webp
+    placement: hero
+    alt: Forest crosses three increasingly deep technical workbenches, moving from algorithm pieces into operating-system gears, compiler pipelines, and language mechanisms
+    composition: "Let the human Forest character follow one continuous path through three unnumbered interview workbenches: algorithm pieces and a lamp mechanism first, operating-system gears, compiler pipelines, and language internals next, then closure loops and a dynamic-programming puzzle. Include no company marks, writing, or fake interface."
+    review_status: approved
+  - id: engineering-path
+    file: source/images/ai/sensetime-intern-interview/en-engineering-path.webp
+    placement: before-afterword
+    alt: Forest leaves a floating staircase of career trophies and chooses a grounded engineering bench where he can build reliable software by hand
+    composition: "Turn the career choice into a fork: one side rises toward blank trophies arranged for comparison, while the grounded side holds an engineering bench where Forest uses blocks, gears, and tools to build a reliable system with a settled expression. Include no job-title text, company marks, or code."
+    review_status: approved

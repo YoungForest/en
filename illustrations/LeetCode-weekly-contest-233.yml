@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-233.md
+context: >-
+  Three in-contest solutions accumulate the best ascending run, maintain an order backlog, and binary-search a bounded array peak; after the contest, a binary trie counts XOR pairs inside a range.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-233/en-hero.webp
+    placement: hero
+    alt: Rising steps collect their best load, bid and ask trays clear into a backlog, a sand budget bounds an array peak and a late-lit binary tree filters paired signals
+    composition: >-
+      Do not use Forest. Create a distinct English coaching lab with four connected bays. A run of strictly rising blocks transfers accumulated weight to a best-load tray and restarts after a drop. Teal bid trays and amber ask trays sit on two height-sorted racks; the closest compatible trays consume one another and residual pieces remain in a backlog. A symmetric row of blocks rises around one chosen socket while a binary-search clamp tests possible unmarked peak heights against a fixed sand budget. Finally, a two-shape branching lamp tree combines paired signals and passes results through two physical range gates; warm evening task lighting shows this fourth bay was completed afterward, without text or clocks. No people, characters, letters, digits, formulas, code, readable text, arrows, UI, contest branding, logo, trademark or watermark.
+    review_status: approved

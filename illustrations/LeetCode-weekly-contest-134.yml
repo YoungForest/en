@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-134.md
+context: >-
+  Several corner cases cause penalties. The review covers moving stones, coloring a region's border, reframing crossing lines as a longest common subsequence, and escaping a huge maze by bounding the blocked area.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-134/en-hero.webp
+    placement: hero
+    alt: Forest repairs corner-case gears beside consecutive stones, a colored border, uncrossed pairings and a bounded maze escape
+    composition: >-
+      Use fictional Forest in a distinct mapmaker's workshop. A few jammed trial gears sit safely in a repair tray while he follows four connected paths: endpoint stones close gaps on a narrow rail; only the exposed rim of a connected tile island receives color; tangled cords between two bead rows are replaced by the longest order-preserving uncrossed set; and a tiny cluster of blockers forms a finite enclosure inside an otherwise vast blank maze floor. Emphasize bounding the search. No readable text, letters, digits, formulas, logos, brands, fake UI or watermark.
+    review_status: approved

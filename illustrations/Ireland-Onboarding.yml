@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/Ireland-Onboarding.md
+context: Two weeks after arriving in Ireland, the author turns early SIM-card mistakes into a newcomer guide comparing airport, shop, and online routes while retaining the factual flag and SIM photographs.
+assets:
+  - id: hero
+    file: source/images/ai/Ireland-Onboarding/en-hero.webp
+    placement: hero
+    alt: Forest stands with luggage and an envelope at a rainy three-way junction leading to an airport counter, a local shop, and a home mailbox
+    composition: In a gently rainy Irish suburb, show newly arrived Forest with luggage, a raincoat, and a blank envelope at a three-way junction. The routes end visually at an airport baggage counter, a small local shop, and a red-brick home's mailbox; he holds a tiny unbranded SIM card. Include no prices, carrier marks, maps, or interfaces.
+    review_status: approved

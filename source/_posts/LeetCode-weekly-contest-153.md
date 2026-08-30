@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 153
 date: 2019-09-15 20:31:56
+description: Weekly notes on circular routes, weekdays, one-deletion maximum sums and replacements for a strictly increasing array before moving abroad.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2019/09/15/LeetCode-weekly-contest-153/
   en: https://youngforest.github.io/en/2019/09/15/LeetCode-weekly-contest-153/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-153/en-hero.webp" alt="Forest waits with a blank suitcase among a circular shuttle route, seven-light calendar wheel, one-bead removal track and replacement staircase" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (4) |	Q3 (5) |	Q4 (7)|
 |--|--|--|--|--|--|--|--|
 | 392 / 6212 |	YoungForest | 	12	 | 	0:41:42 | 0:06:46  1 | 0:16:11 | 0:36:42 | null |

@@ -1,6 +1,7 @@
 ---
 title: LeetCode Weekly Contest 242
 date: 2021-05-23 10:30:24
+description: "Four solutions compare binary runs, binary-search speed, update jump ranges once, and use linear DP for the best stone-game score difference."
 tags:
 - Competitive Programming
 categories:
@@ -16,6 +17,12 @@ translations:
 AK 40 minutes early. Although because of carelessness I had one WA on each of the first three problems, causing 15 minutes of penalty time, the good news is that I probably will not need to do daily Cruel Coding check-ins this week. Perfect timing to go all in on preparing for Wednesday's master's thesis defense.
 
 My three years of master's study all depend on Wednesday. Finish it in one battle. Keep going, Forest!
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-242/en-hero.webp" alt="Calipers compare two coloured runs, a speed gate narrows, jump tiles light only once and prefix stones move across a game balance" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## 1869. Longer Contiguous Segments of Ones than Zeros
 

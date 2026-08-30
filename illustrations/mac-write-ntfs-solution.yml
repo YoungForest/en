@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/mac-write-ntfs-solution.md
+context: >-
+  The post compares two ways to write to an NTFS drive from macOS: a manual command-line mount with recurring setup cost and a lightweight helper that makes the routine path simpler; the author chooses the latter.
+assets:
+  - id: hero
+    file: source/images/ai/mac-write-ntfs-solution/en-hero.webp
+    placement: hero
+    alt: Two routes approach a read-only external drive, with a complex hand-built bridge beside a small helper ferry carrying write parcels across
+    composition: >-
+      Use a distinct English technical-choice metaphor without Forest. A generic unbranded external drive sits beyond a one-way read-only moat. On one side, a complicated hand-built bridge requires several unlabeled levers, ropes and remembered steps; beside it, a small neutral helper ferry carries simple data parcels across with less friction. Show both routes as legitimate but make the lightweight everyday choice feel calmer. No Apple symbol, software logo, drive brand, command, filename, labels, letters, numbers, readable text or interface.
+    review_status: approved

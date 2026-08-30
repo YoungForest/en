@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-243.md
+context: >-
+  Four solutions convert words to values, greedily insert one digit, schedule servers with two priority queues, and use DP to minimize skipped rests before a deadline.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-243/en-hero.webp
+    placement: hero
+    alt: Coloured bead strings balance on an abacus, one bead enters the best slot, twin queues dispatch tasks and a road skips selected rests before the timer empties
+    composition: >-
+      Do not use Forest. Make a distinct English railway dispatch hall in four clear scenes. Three unmarked coloured-bead strings feed an abacus where the first two combine to balance the third. A single amber bead slides along a positive or negative bead chain and enters the earliest slot that maximizes its overall silhouette. Arriving task trays wait on one rail while free server machines are ordered on another by physical weight and a secondary shape cue; the clock advances only to arrivals or releases. A segmented journey offers either a rounded rest platform or a direct skip at each stop, and layered route cards find the fewest skipped rests before a plain sand timer empties. No people, characters, letters, digits, clock numerals, code, formulas, readable text, contest branding, logo, trademark or watermark.
+    review_status: approved

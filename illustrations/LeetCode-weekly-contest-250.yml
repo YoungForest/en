@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-250.md
+context: >-
+  Four solutions filter around broken keys, add ladder rungs in batches, optimize grid DP, and answer offline tree queries with a binary trie.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-250/en-hero.webp
+    placement: hero
+    alt: A repair shop filters blank word blocks, fills ladder gaps, scans a point grid from both sides and routes tree tokens through a binary sorter
+    composition: >-
+      Do not use Forest. Create a distinct English algorithm repair hangar. Several blank typewriter keys are visibly broken; groups of plain word tiles pass only when none share the broken-key colours. A rung machine fills every oversized ladder gap in one batch. Across a point-grid floor, two lantern beams sweep each row from opposite sides and preserve the best left and right choices. At the final station, tokens from the current root-to-node path enter a binary branching sorter; a query prism favours opposite branches, and tokens retract during backtracking. No people, characters, letters, digits, key labels, code, formulas, readable text, fake UI, logo, trademark or watermark.
+    review_status: approved

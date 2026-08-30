@@ -1,0 +1,17 @@
+version: editorial-comic-v1
+post: source/_posts/jingchi-interview.md
+context: The author recalls a lab-arranged 2018 internship interview with two project-and-algorithm rounds, an HR call, and a candid judgment about cheap labour, learning returns, and what to do next.
+assets:
+  - id: hero
+    file: source/images/ai/jingchi-interview/en-hero.webp
+    placement: hero
+    alt: Forest crosses two remote interview platforms, leaving a broken audio bridge for a clear voice line and a shared geometric board
+    composition: >-
+      Use a side-on journey rather than the Chinese desk scene. Forest steps across two floating remote-interview platforms above a dorm room: the first bridge is made of broken audio pulses and an empty video frame, while the second is a stable voice line ending at a shared board of abstract shapes. Two simple hourglasses suggest two rounds. No product logos, screens, readable text, or company branding.
+    review_status: approved
+  - id: second-round
+    file: source/images/ai/jingchi-interview/en-second-round.webp
+    placement: before-second-interview
+    alt: Forest sets aside a dusty archive of old project pieces and offers a fresh internship mechanism that opens a path into a small mobility workshop
+    composition: In a distinct interview-room composition, Forest places a dusty transparent archive box of fragmented old project pieces to one side and offers a fresh interlocking internship mechanism across the table. The fictional interviewer follows that mechanism toward a compact mobility research workshop in the background. Use only abstract sensors and wheels, with no autonomous-driving brand, corporate mark, text, or real-person likeness.
+    review_status: approved

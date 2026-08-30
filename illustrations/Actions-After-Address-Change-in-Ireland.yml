@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/Actions-After-Address-Change-in-Ireland.md
+context: >-
+  The author records seven categories to update after moving address in Ireland: bank, broker, pension, insurance, tax, vehicle and employer records, helping important mail reach the new home.
+assets:
+  - id: hero
+    file: source/images/ai/Actions-After-Address-Change-in-Ireland/en-hero.webp
+    placement: hero
+    alt: Forest carries moving boxes to a new home while one blank address token branches toward seven account stations
+    composition: >-
+      Use fictional Forest in an independent rainy neighborhood moving scene. Forest carries simple boxes toward a new home while a completely blank amber address token enters a tidy routing hub. Seven muted-teal paths lead to abstract, unlabelled stations for savings, investing, pension, medical cover, tax records, a vehicle and an employer desk; sealed envelopes redirect from the old doorway to the new one. No real address or institution. No readable or pseudo-readable text, letters, digits, forms, logos, brands, UI, watermark or signature.
+    review_status: approved

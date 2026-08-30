@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-237.md
+context: >-
+  Four solutions check a pangram, greedily buy the cheapest ice creams, schedule a single-threaded CPU with a priority queue, and reduce pairwise AND-XOR work to independent bit counts, including two integer-overflow pitfalls.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-237/en-hero.webp
+    placement: hero
+    alt: A complete cabinet of abstract tokens leads to cheap ice creams, a one-lane task scheduler and paired signal lamps feeding an XOR prism
+    composition: >-
+      Do not use Forest. Create a distinct English editorial-comic coaching bench with four connected stations. A cabinet of twenty-six non-letter abstract token shapes has every compartment occupied, conveying completeness without an alphabet. An unlabelled coin tray buys small ice creams in ascending price order. A single-lane processor receives plain task parcels by arrival position while a compact priority mechanism chooses the shortest parcel first and a long clockwork rail warns of overflow. Two banks of teal and amber signal lamps pass through pairwise overlap shutters, then odd or even illumination feeds a final XOR-like prism. No people, characters, letters, digits, formulas, code, readable text, UI, brand, contest logo, trademark or watermark.
+    review_status: approved

@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/gvim-configuration-for-windows.md
+context: >-
+  While taking a break from exam preparation, the author configures gVim on Windows, separating shared editor settings from GUI-only choices and adding encoding, clipboard, font, and Markdown-preview conveniences.
+assets:
+  - id: hero
+    file: source/images/ai/gvim-configuration-for-windows/en-hero.webp
+    placement: hero
+    alt: A shared configuration trunk feeds two editor rooms while a GUI room adds its own palette, type gauge, and preview window
+    composition: >-
+      Use a distinct English technical metaphor without Forest. A central unlabeled configuration trunk sends identical muted-teal roots into two small editor rooms, one spare terminal-like workshop and one graphical studio. Only the graphical room adds amber branches to a colour palette, a typography gauge and a clipboard mechanism; a blank Markdown sheet passes through a simple bridge to an unbranded preview window. The hierarchy of shared settings versus GUI-only settings must be obvious. No real application icon, operating-system logo, browser mark, editor name, code, path, shortcut, letters, numbers, readable text or fake interface.
+    review_status: approved

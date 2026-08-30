@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/Poor-Charlie-Almanack.md
+context: Reflects on multidisciplinary thinking, inversion, reading, and waiting for the right opportunity after reading Poor Charlie's Almanack.
+assets:
+  - id: hero
+    file: source/images/ai/Poor-Charlie-Almanack/en-hero.webp
+    placement: hero
+    alt: A lattice of gears, scales, compasses, and a telescope converges into one clear path toward a rare open opportunity
+    composition: A workshop of connected mental-model tools forms a sturdy observation lattice that filters many distractions into one decisive route, without portraying a real person or book cover.
+    review_status: approved

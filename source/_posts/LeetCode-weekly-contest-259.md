@@ -5,7 +5,13 @@ tags:
 - Competitive Programming
 categories:
 - LeetCode
+description: Weekly Contest 259 follow-up solutions for operation simulation, array beauty, square detection and repeated subsequences.
+translations:
+  zh-CN: https://youngforest.github.io/2021/09/22/LeetCode-weekly-contest-259/
+  en: https://youngforest.github.io/en/2021/09/22/LeetCode-weekly-contest-259/
 ---
+
+<figure class="editorial-illustration editorial-illustration--hero"><img src="/en/images/ai/LeetCode-weekly-contest-259/en-hero.webp" width="1536" height="864" alt="Forest returns under a harvest moon to a toggle lever, bounded garden and square-point frame while one final crate stays closed" decoding="async" fetchpriority="high"></figure>
 
 [LeetCode weekly contest 259](https://leetcode.com/contest/weekly-contest-259/)
 

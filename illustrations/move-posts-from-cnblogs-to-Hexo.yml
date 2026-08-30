@@ -1,0 +1,19 @@
+version: editorial-comic-v1
+post: source/_posts/move-posts-from-cnblogs-to-Hexo.md
+context: >-
+  The author recounts three problems when moving an old blog to Hexo: installing the plugin in the wrong directory, an RSS feed carrying only summaries, and mixed legacy HTML and Markdown producing broken formatting.
+assets:
+  - id: hero
+    file: source/images/ai/move-posts-from-cnblogs-to-Hexo/en-hero.webp
+    placement: hero
+    alt: Younger Forest crosses from an old blog island to a static-site workshop after replacing a ferry of empty envelopes with complete archive crates
+    composition: >-
+      Use younger fictional Forest with short dark hair, round glasses, charcoal overshirt, and muted-teal T-shirt, clearly not a portrait. Make the English composition a small ferry crossing: the first ferry from an unbranded old-blog island carries empty summary envelopes, while Forest redirects complete archive crates onto a second ferry bound for a clean static-site workshop. No real site logo, readable post, commands, labels, or UI.
+    review_status: approved
+  - id: format-repair
+    file: source/images/ai/move-posts-from-cnblogs-to-Hexo/en-format-repair.webp
+    placement: inline-before-format-problems
+    alt: Forest repairs a loom where tangled rich-text fabric becomes orderly body, quotation, and code-shaped blocks without replacing the original migration evidence
+    composition: >-
+      Use a distinct textile-loom metaphor. Forest repairs a loom fed by tangled legacy rich-text fabric; the output becomes three orderly blank block shapes representing body copy, quotations, and code. Keep the article's real screenshots untouched. Do not show editor branding, readable HTML or Markdown, code, letters, fake interface, or watermark.
+    review_status: approved

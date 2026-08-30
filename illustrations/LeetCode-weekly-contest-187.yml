@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-187.md
+context: >-
+  The contest covers a unique terminal city, spacing between marked positions, a two-pointer range window, and a priority queue with deduplication for the kth smallest matrix-row sum.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-187/en-hero.webp
+    placement: hero
+    alt: Roads converge on a terminal town, glowing markers keep their distance, a sliding frame bounds wooden bars and sorted marbles feed a heap and duplicate gate
+    composition: >-
+      Do not use Forest. An independently arranged English landscape joins converging roads and a terminal town to a high rail of spaced markers, a framed range of unequal wooden bars and sorted marble lanes that feed a heap basket while a side gate diverts duplicate clusters. No readable text, digits, letters, formulas, code, logos, fake UI or watermark.
+    review_status: approved

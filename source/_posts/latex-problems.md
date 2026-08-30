@@ -4,11 +4,18 @@ date: 2018-03-27 19:27:55
 tags:
 - TeX
 categories:
+description: "A LaTeX troubleshooting note: a thesis compiles but embedded PDF images stay blank until the output driver is made compatible."
 translations:
   zh-CN: https://youngforest.github.io/2018/03/27/latex-problems/
   en: https://youngforest.github.io/en/2018/03/27/latex-problems/
 ---
 I used LaTeX to write my graduation thesis and encountered many problems. I summarize them here.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/latex-problems/en-hero.webp" alt="A finished thesis page passes through a projector with a blank image window until a small compatibility adapter brings the picture into view" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## PDF Cannot Display Correctly
 ### Problem Description

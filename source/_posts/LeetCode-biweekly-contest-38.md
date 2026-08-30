@@ -1,6 +1,7 @@
 ---
 title: LeetCode Biweekly Contest 38
 date: 2020-11-01 08:56:43
+description: A biweekly review of frequency sorting, the widest empty vertical strip, brute-force substring pairs differing once, and memoized column-frequency DP.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2020/11/01/LeetCode-biweekly-contest-38/
   en: https://youngforest.github.io/en/2020/11/01/LeetCode-biweekly-contest-38/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-biweekly-contest-38/en-hero.webp" alt="Coloured stones reorder by pile height, the widest empty lane opens between point towers, paired bead windows differ once and a column cabinet feeds a remembered target chain" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (4) |	Q3 (5) |	Q4 (6)|
 |--|--|--|--|--|--|--|--|
 | 318 / 7446 | YoungForest | 18 | 1:07:29 | 0:12:38 | 0:16:42 |  0:57:29  2 |  0:41:26 |

@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/latex-problems.md
+context: >-
+  A graduation thesis compiles successfully but embedded PDF images remain blank because the source and default output versions are incompatible; a matching output-driver setting makes the images visible.
+assets:
+  - id: hero
+    file: source/images/ai/latex-problems/en-hero.webp
+    placement: hero
+    alt: A finished thesis page passes through a projector with a blank image window until a small compatibility adapter brings the picture into view
+    composition: >-
+      Use a distinct English technical metaphor without Forest. A finished stack of blank, unlabelled thesis pages feeds into an old projection press; the press runs normally, yet the image aperture on the first page remains empty because two transparent plates have incompatible edge shapes. A small amber compatibility adapter aligns the plates, and the next page reveals a simple landscape in the same aperture. No real thesis content, formula, LaTeX or PDF symbol, version number, command, filename, letters, numbers, readable text, interface, logo, trademark or watermark.
+    review_status: approved

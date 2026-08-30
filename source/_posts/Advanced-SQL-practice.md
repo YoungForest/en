@@ -1,5 +1,6 @@
 ---
 title: Advanced SQL Practice
+description: "How complex Hive SQL exposed gaps in my knowledge and led me to learn layered validation, joins, partitions, and better interview answers."
 date: 2018-05-07 23:30:25
 tags:
 - Kuaishou
@@ -14,6 +15,10 @@ This week at the company I wrote many long and functionally complex SQL statemen
 The second mentor responsible for guiding me is also quite proficient in SQL and gave me a lot of guidance and suggestions.
 Without comparison, there is no hurt. Seeing how weak I was and how strong my senior schoolmate was made me feel ashamed and then determined, so I developed the idea and action plan of advancing my SQL skills.
 
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Advanced-SQL-practice/en-hero.webp" alt="Forest faces a tangled data-processing machine while a mentor demonstrates inside-out validation with a stack of small transparent trays" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
 <!--more-->
 The two tutorials recommended to me, thanks to my Kuaishou senior schoolmate and second mentor:
 - *Sams Teach Yourself SQL in 10 Minutes*
@@ -26,12 +31,16 @@ The advantage of *Sams Teach Yourself SQL in 10 Minutes* is that it contains mor
 
 There are [42 Database interview problems on LeetCode](https://leetcode.com/problemset/database/). I must practice them when I have time.
 
-# Problems Encountered in Practice
+## Problems Encountered in Practice
 Because my role is algorithm engineer in the recommendation team, there is a large amount of data mining work.
 Also, what I write is not pure SQL, but [Hive](https://cwiki.apache.org/confluence/display/Hive/Home)-SQL.
 Hive has many limitations and challenges. For example, you cannot nest a `select` clause inside `select`; `select 2 * (select 3);` is not allowed. The solution I finally found was to use aggregate functions or computable relationships between columns for the needed calculations, which really tests flexible use of `union` or `join`. The data volume is especially large, and each query is time-consuming. I learned to use small queries to verify ideas, validate layer by layer from the inside outward, and run queries and calculations in `jupyter notebook`.
 
-# Answering Interview Questions
+<figure class="editorial-illustration">
+  <img src="/en/images/ai/Advanced-SQL-practice/en-joins-partitions.webp" alt="Three sets of transparent data trays overlap in different ways while a partition cabinet sorts a large stream of records into searchable drawers" width="1536" height="864" loading="lazy" decoding="async">
+</figure>
+
+## Answering Interview Questions
 The interviewer in the first round asked me at the time: Do you know SQL?
 
 Me: Yes, and I also previously had an internship at a database company.

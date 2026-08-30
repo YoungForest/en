@@ -1,6 +1,7 @@
 ---
 title: LeetCode Weekly Contest 230
 date: 2021-03-01 09:51:47
+description: "Three contest solutions filter items, search dessert costs and balance array sums; a post-contest monotonic stack computes car collisions."
 tags:
 - Competitive Programming
 categories:
@@ -16,6 +17,12 @@ translations:
 Since autumn recruitment ended, my enthusiasm for practicing problems and contests has declined day by day.
 Previously I did three problems every day, China server, US server, and Cruel. Now I do zero problems a day. Of course, occasionally, when my weekly contest result is not enough to exempt me from check-in, I still need to do one problem per day.
 In contrast, contest feedback is still quite strong. In the long term, rating and ranking growth provide motivation. In the short term, Cruel ranking and each contest ranking provide motivation, plus extra points as rewards. Also, after the weekly contest, I can get a red packet in the Cruel group and add a chicken drumstick for myself.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-230/en-hero.webp" alt="Objects pass a shape filter, dessert toppings branch three ways, high-impact marbles balance two jars and late-lit cars merge through a monotonic garage" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## 1773. Count Items Matching a Rule
 

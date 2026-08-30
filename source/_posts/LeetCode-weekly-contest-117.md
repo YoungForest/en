@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 117
 date: 2018-12-30 10:47:49
+description: An experiment in blogging during the contest, covering univalued trees, equal adjacent differences, spell filters and observation lamps.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2018/12/30/LeetCode-weekly-contest-117/
   en: https://youngforest.github.io/en/2018/12/30/LeetCode-weekly-contest-117/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-117/en-hero.webp" alt="Forest records while training with a single-color tree, equal-gap beads, layered sound filters and observation lamps on branches" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 Today I participated in LeetCode weekly contest 117 and used a different strategy: writing the blog summary while solving the problems. I hoped this would record my real thoughts more faithfully and improve my blogging efficiency. The previous two times, writing the blog afterward always delayed things by several days.
 
 ## 965. Univalued Binary Tree

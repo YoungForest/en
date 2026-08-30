@@ -1,0 +1,16 @@
+version: editorial-comic-v1
+post: source/_posts/2018-summary-and-2019-resolutions.md
+context: Reviews growing from low confidence toward a backend and computer-systems direction, then plans health, internships, overseas exchange, and technical study for 2019.
+assets:
+  - id: hero
+    file: source/images/ai/2018-summary-and-2019-resolutions/en-hero.webp
+    placement: hero
+    alt: Forest organizes three internship toolboxes and tangled compiler parts into a career compass pointing toward computer systems
+    composition: At a reflective year-end workbench, Forest turns several internships and an uncertain technical maze into a clearer backend and systems direction without real employer branding.
+    review_status: approved
+  - id: 2019-plan
+    file: source/images/ai/2018-summary-and-2019-resolutions/en-2019-plan.webp
+    placement: before-2019-resolution
+    alt: Forest arranges health, internship, overseas exchange, and systems learning as four mutually supporting stepping stones for the year ahead
+    composition: Four unlabeled stepping stones use running shoes, a tool satchel, a travel case, and systems gears to express practical goals on an open path without numbers or slogans.
+    review_status: approved

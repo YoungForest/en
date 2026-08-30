@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-124.md
+context: >-
+  The contest solutions identify cousin nodes in a binary tree, spread rot from multiple sources across an orange grid, greedily flip fixed-width bit windows, and backtrack through square-sum permutations.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-124/en-hero.webp
+    placement: hero
+    alt: A greenhouse tree holds cousin oranges above a spreading tile orchard while a reversible ribbon leads through glowing square arches
+    composition: >-
+      Do not use Forest. Create a distinct English scene inside a compact glasshouse. A tiered binary espalier holds two matching oranges at the same height on separate parent branches. Below, an orchard of square planters receives concentric colour changes from several dark fruit sources. A wide two-sided ribbon passes through a sliding fixed-width frame, flipping its visible side as it advances and cancelling where folds overlap. The ribbon exits through a trail of stone arches that glow only when neighbouring fruit tokens fit a square-shaped recess. No letter, digit, bit glyph, code, formula, scoreboard, readable text, logo, trademark or watermark.
+    review_status: approved

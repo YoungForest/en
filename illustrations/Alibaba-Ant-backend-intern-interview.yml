@@ -1,0 +1,16 @@
+version: editorial-comic-v1
+post: source/_posts/Alibaba-Ant-backend-intern-interview.md
+context: A backend internship process passes through technical interviews, a written test, assessment, data and business discussion, and a cross interview—mixing smooth progress after a perfect test with pressure from deep project and behavioral questions.
+assets:
+  - id: hero
+    file: source/images/ai/Alibaba-Ant-backend-intern-interview/en-hero.webp
+    placement: hero
+    alt: Forest carries algorithm blocks and project tools through four workshop gateways as hash buckets, matrix tiles, and data pipes become progressively deeper and more complex
+    composition: Show the human young man Forest walking one continuous path through four unnumbered workshop gateways, beginning with hash buckets and algorithm blocks and progressing toward matrix tiles, data pipes, and a layered project model, with no company branding or fake screens.
+    review_status: approved
+  - id: fourth-round
+    file: source/images/ai/Alibaba-Ant-backend-intern-interview/en-fourth-round.webp
+    placement: before-fourth-round
+    alt: Forest opens the nested layers of a project model with a magnifying glass while three unfamiliar question weights make an interview without coding feel unexpectedly heavy
+    composition: At the fourth workbench, have the human young man Forest inspect a layered project model with a magnifying glass while three wordless, differently shaped question weights hang nearby, conveying deep project probing and unexpected behavioral questions without a questionnaire or interface.
+    review_status: approved

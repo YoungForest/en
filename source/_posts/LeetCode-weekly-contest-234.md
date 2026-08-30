@@ -1,6 +1,7 @@
 ---
 title: LeetCode Weekly Contest 234
 date: 2021-03-28 11:42:25
+description: "Four solutions deduplicate integers, track a permutation reset, replace bracket keys by lookup, and maximize a product by splitting a fixed total."
 tags:
 - Competitive Programming
 categories:
@@ -14,6 +15,10 @@ translations:
 | 672 / 12421 | YoungForest | 19 | 1:19:08 | 0:12:04  2 | 0:23:51 | 0:29:26 | 0:54:08  3 |
 
 It was check-in time again. I had been doing this brutal check-in for five consecutive weeks. And honestly, I did not feel the problems were that easy this time. I got 5 WAs and my mental state more or less exploded, but the ranking was still not ideal. It feels like LeetCode is getting more and more competitive.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-234/en-hero.webp" alt="A mixed ribbon yields deduplicated bead strings, a permutation carousel resets, paired capsules meet lookup drawers and equal blocks build a high product tower" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
 
 <!-- more -->
 

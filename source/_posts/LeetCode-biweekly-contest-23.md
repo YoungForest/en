@@ -1,6 +1,7 @@
 ---
 title: LeetCode Biweekly Contest 23
 date: 2020-04-07 13:08:11
+description: A biweekly review of largest digit-sum groups, palindrome construction, circle-rectangle overlap and a sorted suffix-sum greedy choice of dishes.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2020/04/07/LeetCode-biweekly-contest-23/
   en: https://youngforest.github.io/en/2020/04/07/LeetCode-biweekly-contest-23/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-biweekly-contest-23/en-hero.webp" alt="Tokens fill equally tallest group cylinders, mirrored beads form centred necklaces, a compass measures circle-to-rectangle distance and sorted plates stop before the balance falls" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (5) |	Q3 (5) |	Q4 (6)|
 |--|--|--|--|--|--|--|--|
 | 199 / 7026 |	YoungForest | 19 | 	0:40:57 |  0:08:05 |  0:11:44 | 0:33:38 |   0:40:57 |

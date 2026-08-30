@@ -1,6 +1,7 @@
 ---
 title: LeetCode Biweekly Contest 42
 date: 2020-12-27 22:12:29
+description: A biweekly contest review covers queue and waiting-time simulation, greedy binary-string changes, and two-pointer swaps for consecutive ones.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2020/12/27/LeetCode-biweekly-contest-42/
   en: https://youngforest.github.io/en/2020/12/27/LeetCode-biweekly-contest-42/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-biweekly-contest-42/en-hero.webp" alt="A sandwich queue and kitchen timing rig run beside sorted binary stones, while a final amber token stops one step short of the finish gate" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (4) |	Q3 (5) |	Q4 (6)|
 |--|--|--|--|--|--|--|--|
 | 573 / 6631 | YoungForest | 12 | 0:51:14 |  0:19:42 | 0:24:42  1 |  0:46:14 | Debugged it one minute too late. So annoying! |

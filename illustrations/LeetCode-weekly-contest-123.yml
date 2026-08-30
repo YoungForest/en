@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-123.md
+context: >-
+  In the first contest after Spring Festival, the author reviews digitwise addition, union-find equations, reverse calculator reasoning and two sliding windows for exactly distinct values, while looking forward to studying with peers again.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-123/en-hero.webp
+    placement: hero
+    alt: Forest returns after the holiday to carry beads, join relation loops, repair a calculator backward and move two windows
+    composition: >-
+      Use fictional Forest in an independent post-holiday transition scene. A couple of plain warm paper lantern shapes and packed-away ribbons suggest the season without text or a specific place. Forest moves from a quiet home corner toward a shared study table where bead columns pass a carry bead leftward, cords join matching wooden figures into consistent groups while one contradictory loop is exposed, a broken mechanical counter is repaired by tracing gears backward, and two nested muted-teal frames move over a stream of distinct colored tokens. Peers appear only as simplified background silhouettes. No readable text, letters, digits, formulas, logos, brands, identifiable locations, fake UI or watermark.
+    review_status: approved

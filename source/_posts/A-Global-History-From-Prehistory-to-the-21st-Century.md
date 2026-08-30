@@ -1,6 +1,7 @@
 ---
 title: "A Global History: From Prehistory to the 21st Century"
 date: 2023-10-01 00:00:50
+description: "A reflection on global history and how modernization, technology, intellectual freedom, and institutions shape long-term national development."
 tags:
 - Reading
 - A Global History
@@ -14,9 +15,19 @@ translations:
 
 I strongly recommend every Chinese person read this book. It may be a bit of a tome, and some places are also relatively brief. After all, it is a global history and cannot cover everything. But after finishing it, the gains are enormous. Especially for someone like me, "born under the red flag and raised in New China," the history I learned from childhood was all from People's Education Press history textbooks. Even when reading extracurricular books, they were based on Chinese perspectives and experiences, with similar education and cultural backgrounds. This book was written by an American born in Canada and later teaching in the United States. It can be considered a completely Western perspective. From this angle, it can de-romanticize our previous history education, reduce ideological influence, and move closer to modern history.
 
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/A-Global-History-From-Prehistory-to-the-21st-Century/en-hero.webp" alt="A rotating globe passes through a many-sided prism and the same history appears as complementary silhouettes in several viewing windows" width="1536" height="864" decoding="async">
+</figure>
+
+<!-- more -->
+
 The most important realization is why China must achieve modernization, including economic modernization, political modernization, intellectual modernization, and technological modernization. Science and technology are the primary productive forces. Liberalism is the safeguard for the development of science and technology. Democracy is the safeguard for freedom. History and the present fully prove this point.
 
 I also quote a sentence from the People's Education Press high-school physics textbook when I was in school, which is said to have been deleted now: "**Without academic democracy and freedom of thought, science cannot flourish.**"
+
+<figure class="editorial-illustration">
+  <img src="/en/images/ai/A-Global-History-From-Prehistory-to-the-21st-Century/en-accelerator-brake.webp" alt="One mechanical linkage presses a giant truck's accelerator and brake at once, grinding a deep trench beneath its wheels" width="1536" height="864" loading="lazy" decoding="async">
+</figure>
 
 According to Marxist political economy, productive forces determine relations of production; the economic base determines the superstructure. It is obvious that the Soviet Union's autocracy and planned economy had already seriously hindered the development of productive forces. As in the previously popular "accelerationist theory," the Soviet Union was like a huge truck whose driver stepped hard on the accelerator with one foot and on the brake with the other. In the 21st century's global competition, especially US-China competition, without changing the superstructure it is impossible to catch up with the United States. The only outcome is to fall back into being a second-rate regional power.
 

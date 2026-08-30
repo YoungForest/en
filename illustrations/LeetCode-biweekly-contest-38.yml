@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-biweekly-contest-38.md
+context: >-
+  Four contest solutions sort by frequency and value, find the widest empty vertical strip after sorting x-coordinates, brute-force substring pairs differing in exactly one character, and count target-string constructions with per-column frequencies and memoized DP; the third problem timed out twice after brute force was overcomplicated.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-biweekly-contest-38/en-hero.webp
+    placement: hero
+    alt: Coloured stones reorder by pile height, the widest empty lane opens between point towers, paired bead windows differ once and a column cabinet feeds a remembered target chain
+    composition: >-
+      Do not use Forest. Create a distinct English four-island static workshop. Coloured stones are grouped into piles and arranged from shorter frequency piles to taller ones, with equal piles ordered by reverse stone size. Point towers stand at sorted horizontal positions and an amber frame marks the widest empty vertical lane. Two bead strips sit in paired windows, each compared window containing exactly one contrasting bead; two overbuilt little contraptions have overheated beside the simpler direct comparison, recording two timeouts. A column-divided bead dictionary cabinet supplies a memoized branching assembly that either uses or skips each column and ends in one unmarked target chain. No people, characters, letters, digits, formulas, code, arrows, arrowheads, chevrons, dashed direction paths, readable text, fake UI, logos, brands, trademarks or watermarks.
+    review_status: approved

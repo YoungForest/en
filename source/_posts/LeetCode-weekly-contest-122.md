@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 122
 date: 2019-02-04 18:38:09
+description: New Year's Eve catch-up and interview reflection through even-sum queries, leaf-to-root strings, interval intersections and vertical tree traversal.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2019/02/04/LeetCode-weekly-contest-122/
   en: https://youngforest.github.io/en/2019/02/04/LeetCode-weekly-contest-122/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-122/en-hero.webp" alt="Forest catches up before a holiday dinner with even beads, overlapping ribbons, a leaf-root path and vertical tree trays" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 Because I was staying at home for the holiday, I actually forgot what day of the week it was and only knew which day of the twelfth lunar month it was. Today I finally realized it was already Monday and that I had missed the weekly contest. On this Chinese New Year's Eve, before watching the Spring Festival Gala with my family, Forest and his whole family wish everyone a happy New Year! I will quickly finish these four contest problems so I can eat New Year's Eve dinner with peace of mind.
 
 Since official Notes cannot be used during the contest, writing on the blog is a convenient substitute.

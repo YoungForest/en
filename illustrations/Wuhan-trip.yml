@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/Wuhan-trip.md
+context: >-
+  After finishing his master's degree, the author and his partner spend one week travelling through Linfen, Wuhan, and Suizhou to visit family, eating local food, crossing a bridge late at night, and returning to move into post-campus life.
+assets:
+  - id: hero
+    file: source/images/ai/Wuhan-trip/en-hero.webp
+    placement: hero
+    alt: Forest and a companion leave an emptied campus room and follow a looping tabletop journey past family bowls, humid rain, a night bridge, and flat-pack furniture
+    composition: >-
+      Use a distinct English composition with fictional Forest, never a portrait, and one equally simplified unrecognizable companion. On a large tabletop, a looping travel ribbon begins at an emptied campus room, passes family meal bowls, a humid amber rain cloud above a wide river, and a bridge at night, then ends beside flat-pack furniture in a new room. No real relatives, celebrity, recognizable landmark signage, map labels, train numbers, brands, photographs, or readable text.
+    review_status: approved

@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-221.md
+context: >-
+  Four contest problems compare vowel counts in two string halves, greedily eat the soonest-expiring apples, simulate balls through a slanted-board maze with DFS, and answer maximum-XOR queries with a binary trie; shared-pointer overhead caused three timeouts before raw pointers passed.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-221/en-hero.webp
+    placement: hero
+    alt: A balance compares two bowls of vowel beads, apples leave by freshness, balls cross a slatted maze and a branching machine speeds up after shedding heavy rings
+    composition: >-
+      Do not use Forest. Create an independently composed English four-island tabletop. A balance compares two half-bowls holding equal kinds of smooth vowel-like beads with no symbols. An orchard conveyor picks the apple nearest to spoiling while later fruit waits in tidy bins. Several marbles descend through a compact maze of diagonal slats, some exiting and some trapped. At the end, a binary branching machine of dark and pale forks guides a query bead toward contrasting branches; it first strains under three bulky nested safety rings, then runs freely after the rings are removed, conveying repeated timeout from overhead without showing code. No people, characters, letters, digits, formulas, code, arrows, readable text, clock faces, fake UI, logos, brands, trademarks or watermarks.
+    review_status: approved

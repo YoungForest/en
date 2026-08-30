@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/Liu-Shen-Lei-Lei-Du-Jin-Yong.md
+context: >-
+  The author enjoys Liu Shen Lei Lei's humorous cross-reading of Jin Yong: comparisons within and across novels, compassion for minor characters, modern workplace analogies, and satire through the jianghu.
+assets:
+  - id: hero
+    file: source/images/ai/Liu-Shen-Lei-Lei-Du-Jin-Yong/en-hero.webp
+    placement: hero
+    alt: Anonymous jianghu figures rotate through an archive carousel while a warmly lit minor character and a distant office-boardroom shadow reveal the book's compassionate modern comparisons
+    composition: >-
+      Use a distinct English composition: an open circular archive carousel holds anonymous original jianghu figures from different imagined tales, with visual sightlines comparing figures across shelves. Give one minor character equal warm light, while a distant glass reflection turns the carousel into a modern office-boardroom silhouette. No recognizable Jin Yong characters, author likeness, book cover, readable text, logos, or celebrities.
+    review_status: approved

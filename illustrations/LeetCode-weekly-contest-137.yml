@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-137.md
+context: >-
+  A DP-heavy contest exposes the author's knowledge gap, moving from stone collisions and adjacent duplicate removal to longest word chains and the classic minimum knapsack partition.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-137/en-hero.webp
+    placement: hero
+    alt: Forest enters a dynamic-planning workshop of colliding stones, cancelling beads, growing links and two balanced baskets
+    composition: >-
+      Use fictional Forest in a distinct terraced workshop. He steps around a literal blind corner into four connected state-saving mechanisms: a priority chute repeatedly collides the two heaviest stones; a vertical stack cancels adjacent matching beads; blank link tiles grow one step at a time into a longest chain; and a knapsack-like balance divides stones between amber and teal baskets to minimize their difference. Show learning through reusable intermediate states, with gentle humor. No readable text, letters, digits, formulas, logos, brands, real book covers, fake UI or watermark.
+    review_status: approved

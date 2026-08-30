@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/Hou-Hei-Xue.md
+context: The author reads Hou Hei Xue as satirical essays that expose social machinery through official rhetoric, persistent human nature, and criticism of orthodox thought rather than as a success manual.
+assets:
+  - id: hero
+    file: source/images/ai/Hou-Hei-Xue/en-hero.webp
+    placement: hero
+    alt: A polished civic hall facade peels back to reveal empty chairs on strings, branching escape hatches, and a comically padded hollow mask
+    composition: Avoid the author, book cover, and real people; stage the universal satire in a modern civic hall rather than copying the Chinese image. A polished respectable facade curls away like theatre scenery, exposing empty high-backed chairs moved by strings and several concealed escape hatches, while a comically thick-rimmed yet hollow mask rests in the foreground. No readable text, flags, insignia, or political portraits.
+    review_status: approved

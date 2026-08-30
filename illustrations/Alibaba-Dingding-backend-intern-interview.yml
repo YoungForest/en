@@ -1,0 +1,16 @@
+version: editorial-comic-v1
+post: source/_posts/Alibaba-Dingding-backend-intern-interview.md
+context: A server-development internship interview begins with a doubly linked list and two-sum coding tasks, then expands across compilers, C++, data structures, operating systems, networking, and career plans.
+assets:
+  - id: hero
+    file: source/images/ai/Alibaba-Dingding-backend-intern-interview/en-hero.webp
+    placement: hero
+    alt: Forest sits at an unmarked remote interview table with linked carriages, paired weights, and a widening row of engineering tools
+    composition: Put Forest at an unbranded remote interview table. On one side are tiny carriages linked in both directions; in the center are abstract weights searching for a matching pair without characters; on the other side the route widens into compiler gears, memory blocks, locks, and a knotted network cable. Show no interface.
+    review_status: approved
+  - id: knowledge-gauntlet
+    file: source/images/ai/Alibaba-Dingding-backend-intern-interview/en-knowledge-gauntlet.webp
+    placement: before-cpp-questions
+    alt: Forest carries a toolbox through a corridor of compiler gears, expanding containers, locks, a memory maze, and a broken network bridge
+    composition: Turn the later questions into a horizontal knowledge gauntlet. Forest carries a plain toolbox past compiler gears, expandable container blocks, three distinct keys and locks, a memory maze, and a network bridge being repaired. Keep each station readable and lightly humorous without words, code, brands, or interface.
+    review_status: approved

@@ -6,6 +6,7 @@ tags:
 - The Hungry Golden Age
 categories:
 - Book Notes
+description: "A review of The Hungry Golden Age on imperial expansion, property rights, the Macartney Embassy, and the decline hidden beneath Qianlong-era prosperity."
 translations:
   zh-CN: https://youngforest.github.io/2026/01/01/The-Gains-and-Losses-of-Emperor-Qianlong-Reign/
   en: https://youngforest.github.io/en/2026/01/01/The-Gains-and-Losses-of-Emperor-Qianlong-Reign/
@@ -13,6 +14,10 @@ translations:
 [Douban link](https://book.douban.com/subject/35888701/)
 
 ## The prelude to a golden age is decline, and its ending is also decline
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/The-Gains-and-Losses-of-Emperor-Qianlong-Reign/en-hero.webp" alt="A gilded palace shell presses down on dim workshops below while a closing gate separates the empire from a distant observation vessel" width="1536" height="864" decoding="async">
+</figure>
 
 <!-- more -->
 

@@ -4,10 +4,15 @@ date: 2018-09-12 15:38:08
 tags:
 categories:
 - LeetCode
+description: Finding the single number under linear-time and constant-space constraints through pairwise XOR cancellation.
 translations:
   zh-CN: https://youngforest.github.io/2018/09/12/LeetCode-136-Single-Number/
   en: https://youngforest.github.io/en/2018/09/12/LeetCode-136-Single-Number/
 ---
+<figure class="editorial-illustration editorial-illustration--hero"><img src="/en/images/ai/LeetCode-136-Single-Number/en-hero.webp" width="1536" height="864" alt="Forest passes matching stones through a cancellation arch while one accumulator bowl preserves the lone amber stone" decoding="async" fetchpriority="high"></figure>
+
+<!-- more -->
+
 Description: https://leetcode.com/problems/single-number/description/
 Solution: https://leetcode.com/problems/single-number/solution/
 Difficulty: Easy

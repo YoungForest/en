@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-255.md
+context: >-
+  Three in-contest solutions compute the GCD of array extremes, find a missing binary string, and use DP to choose one value per row near a target; the fourth section records giving up and consulting a solution afterward.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-255/en-hero.webp
+    placement: hero
+    alt: Extreme stones enter a common-tooth gear, a two-colour pattern cabinet keeps one empty socket, row choices approach a balance target and a final bench remains at the reference stage
+    composition: >-
+      Do not use Forest. Create a distinct English four-part problem-solving desk. Calipers remove the largest and smallest stones from a row and feed them through a Euclidean gear pair until one common tooth spacing remains. A compact cabinet displays existing fixed-length patterns using only teal and ivory beads, with one unique empty socket standing for the missing pattern and no binary digits. A stack of matrix trays requires a mechanical hand to choose exactly one stone from each row; a DP lattice preserves reachable weights and selects the tray nearest a plain target balance. The final subset-sum reconstruction bench is intentionally unresolved: only the initial paired piles are separated, beside a closed generic reference folio and supper tray under evening light, with no completion cue. No people, characters, letters, digits, formulas, code, readable text, real book cover, food brand, logo, trademark or watermark.
+    review_status: approved

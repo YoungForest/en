@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/vscode-include-bits-stdc-h.md
+context: >-
+  When the editor falsely marks a universal C++ header as missing, the author inspects the compiler's real header search order and adds those directories to the editor configuration, aligning indexing with compilation. Existing screenshots preserve the exact paths and settings.
+assets:
+  - id: hero
+    file: source/images/ai/vscode-include-bits-stdc-h/en-hero.webp
+    placement: hero
+    alt: A mechanical catalogue cart follows the compiler's shelf order to retrieve an umbrella-shaped master binder as a red squiggle unknots itself
+    composition: >-
+      Do not use Forest. Make a distinct English composition as a circular archive. Several unlabeled shelves form the compiler's ordered search route around a central umbrella-shaped master binder. An editor's mechanical catalogue cart initially circles the wrong empty shelf while a red squiggle tangles its wheels. A muted-teal guide rail is extended through the correct shelf order, the cart reaches the master binder, and the red squiggle unknots and rolls away. No real editor UI, application icon, C++ symbol, filename, code, file path, readable text, letter, number, logo, trademark or watermark.
+    review_status: approved

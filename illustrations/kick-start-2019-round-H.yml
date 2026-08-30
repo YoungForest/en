@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/kick-start-2019-round-H.md
+context: >-
+  The author wakes at six for the final algorithm round of the year, travels afterward, rushes an assignment, and reflects on how relaxed mindset shaped fluctuating results; the solutions cover a changing citation index, diagonal flips, and divisibility through balanced arrangements.
+assets:
+  - id: hero
+    file: source/images/ai/kick-start-2019-round-H/en-hero.webp
+    placement: hero
+    alt: A predawn puzzle cabinet links rising blank-paper steps, a diagonal tile loom and a balanced arrangement of coloured counters
+    composition: >-
+      Do not use Forest. Create a distinct English composition as a wide predawn cabinet with three open compartments. In the first, blank paper cards and small citation pebbles mechanically raise a step; in the second, an invented diagonal loom flips a black-and-cream diamond pattern toward one colour; in the third, alternating coloured counters move between two shallow trays until a central beam balances. A tiny blank clock without marks and an unfinished stack of blank paper sit outside the cabinet. Use one amber thread to guide the eye from early-morning pressure toward calm structure. No digit, letter, formula, code, scoreboard, contest/company identity, readable text, logo, trademark or watermark.
+    review_status: approved

@@ -5,13 +5,20 @@ tags:
 - Travel
 categories:
 - Diary
+description: "A 2022 account of applying in Ireland for a Netherlands short-stay Schengen visa, covering appointments, documents, costs and practical lessons."
 translations:
   zh-CN: https://youngforest.github.io/2022/12/15/Netherlands-Visa-from-Ireland/
   en: https://youngforest.github.io/en/2022/12/15/Netherlands-Visa-from-Ireland/
 ---
-![Netherlands visa rendering](/images/NetherlandsVisa.jpg)
-
 I finally got the Netherlands Schengen visa I had been longing for in Dublin: a short-stay visa for visiting friends and relatives.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Netherlands-Visa-from-Ireland/en-hero.webp" alt="Forest guides a small bundle of blank documents through a winter clockwork checkpoint until a bridge opens toward a waiting friend across the water" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
+![Netherlands visa rendering](/images/NetherlandsVisa.jpg)
 
 Because my friend was studying in Amsterdam and I was working in Ireland, and because Ireland is not part of the Schengen Area, if we wanted to visit each other, I needed to apply for a Schengen visa and she needed to apply for an Irish visa.
 

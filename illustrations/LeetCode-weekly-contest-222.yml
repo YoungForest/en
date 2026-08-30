@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-222.md
+context: >-
+  Four solutions greedily load a truck by units, count meal pairs reaching powers of two, move two boundaries to split a positive array three ways, and map target positions before using LIS to find the minimum insertions.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-222/en-hero.webp
+    placement: hero
+    alt: Dense-unit crates fill a truck first, food tokens pair into doubling trays, two gates divide prefix weights and mapped target sockets feed a longest rising rail
+    composition: >-
+      Do not use Forest. Create an independent English algorithm logistics hall. Crates sorted by unit density load a small unbranded truck from richest to lightest until capacity is full. Generic food tokens pair with earlier tokens, and only combined weights fitting a sequence of doubling pans are counted. Two sliding gates divide a positive bead chain into three parts while a prefix-weight balance keeps the left no heavier than the middle and the middle no heavier than the right. Unique target sockets define a relative order; matching incoming beads are remapped onto that order and a rising rail preserves the longest increasing subsequence, leaving the missing sockets as required insertions. No people, characters, letters, digits, formulas, code, arrows, readable text, vehicle logos, food brands, fake UI, trademarks or watermarks.
+    review_status: approved

@@ -1,6 +1,7 @@
 ---
 title: Kick Start 2019 Round E
 date: 2019-08-29 19:12:03
+description: "Three solutions use a minimum spanning tree, a coding-versus-eating boundary, and odd-even divisor analysis to classify street numbers."
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2019/08/29/kick-start-2019-round-E/
   en: https://youngforest.github.io/en/2019/08/29/kick-start-2019-round-E/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/kick-start-2019-round-E/en-hero.webp" alt="A cherry-vine network, a balanced pair of appetite trays and an odd-even cobblestone sieve share one winding route" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 ## Cherries Mesh
 
 Minimum spanning tree.

@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 124
 date: 2019-02-17 15:11:48
+description: "Four contest solutions cover cousin nodes, multi-source BFS for rotting oranges, greedy fixed-window flips, and square-sum permutations."
 tags:
 - Competitive Programming
 categories:
@@ -10,6 +11,12 @@ translations:
   en: https://youngforest.github.io/en/2019/02/17/LeetCode-weekly-contest-124/
 ---
 Today was my first LeetCode weekly contest after work started again. I solved three problems and ranked 772 / 4174. Seeing my rank drop from 200+ to 700+ each time felt pretty disappointing. I think the reasons for the drop are: 1. Ranking around 200 was a case where both my state and luck were relatively good; most of the time before, I was also around 700. 2. Although the third problem was Hard, my final submission TLEed. I think if I had had another half hour, I could have ACed it. The reason I did not have enough time later was directly related to spending too much time debugging problems 2 and 4. I am still not familiar enough with many implementations, such as BFS and backtracking, and cannot write them flexibly from memory. Even when solving the fourth problem, I still had to look up C++ APIs on the spot, so my familiarity with the language is also insufficient.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-124/en-hero.webp" alt="A greenhouse tree holds cousin oranges above a spreading tile orchard while a reversible ribbon leads through glowing square arches" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## 993. Cousins in Binary Tree
 

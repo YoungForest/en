@@ -6,6 +6,7 @@ tags:
 - Travel Notes
 categories:
 - Diary
+description: "A first European trip through Amsterdam and nearby villages: missed trains, rushed planning, a late rural arrival, and an unforgettable Milky Way."
 translations:
   zh-CN: https://youngforest.github.io/2019/09/23/Amsterdam/
   en: https://youngforest.github.io/en/2019/09/23/Amsterdam/
@@ -13,6 +14,12 @@ translations:
 In the first week after arriving in Europe and settling down, we went to beautiful Amsterdam in the Netherlands and two surrounding villages.
 Because it was our first trip out, many parts of the itinerary were poorly arranged, and the cost was relatively high. It was about 450 euros per person. By comparison, the Paris trip a week later only cost 300 euros, and the experience was even better.
 I think the Netherlands is absolutely the best place to enjoy Northern European countryside scenery.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Amsterdam/en-hero.webp" alt="Forest and four anonymous travellers cross a playful luggage obstacle course that opens into a quiet rural backyard beneath the Milky Way" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 The people on this trip were: zfn, lxf, lsd, zjz (Director Zhang), and me.
 

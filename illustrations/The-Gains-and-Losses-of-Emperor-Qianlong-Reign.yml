@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/The-Gains-and-Losses-of-Emperor-Qianlong-Reign.md
+context: A review of The Hungry Golden Age examines how the Qianlong era's polished prosperity concealed expanding imperial power, unstable property rights, social suffocation, and isolation, while the Macartney Embassy supplies an outside perspective.
+assets:
+  - id: hero
+    file: source/images/ai/The-Gains-and-Losses-of-Emperor-Qianlong-Reign/en-hero.webp
+    placement: hero
+    alt: A gilded palace shell presses down on dim workshops below while a closing gate separates the empire from a distant observation vessel
+    composition: Use a fictional cutaway rather than real architecture or people. Above, an ornate but overweight gilded palace canopy surrounds an empty banquet. Below, ordinary workshops dim as ever-growing power conduits squeeze their space. At the side, a gate closes while a small distant vessel observes through a telescope. Include no emperor portrait, flags, or book cover.
+    review_status: approved

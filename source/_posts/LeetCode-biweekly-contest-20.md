@@ -1,6 +1,7 @@
 ---
 title: LeetCode biweekly contest 20
 date: 2020-02-23 11:34:19
+description: A biweekly review of bit-count sorting, periodic discounts, three-character sliding windows and recursive valid pickup-delivery orders.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2020/02/23/LeetCode-biweekly-contest-20/
   en: https://youngforest.github.io/en/2020/02/23/LeetCode-biweekly-contest-20/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-biweekly-contest-20/en-hero.webp" alt="Forest reconnects plain hoses beside rising dot-token chutes, a periodic disk press, a three-colour bead window and nested pickup-delivery parcel rails" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (4) |	Q3 (5) |	Q4 (6)|
 |--|--|--|--|--|--|--|--|
 | 233 / 4347 |	YoungForest | 18 | 	0:41:39 | 0:03:32 |  0:13:58  1 |  0:24:13 |  0:31:39  1 |

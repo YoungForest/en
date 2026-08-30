@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-192.md
+context: >-
+  The first three problems quickly interleave an array, rank values by strength around a median, and simulate browser history with two indices; the last uses three-dimensional DP to paint exact neighbourhood groups but timed out twice due to implementation efficiency.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-192/en-hero.webp
+    placement: hero
+    alt: Two bead rows interleave, strong stones rank around a median, a physical memory corridor moves back and forward, and painted row houses form exact neighbourhoods
+    composition: >-
+      Do not use Forest. Create a distinct English four-island speed workshop: two bead rows interlace like a zipper into one track; varied stones orbit a central median stone and rank by distance then size; a physical corridor of visited rooms has two plain sliding markers for current and furthest reach, allowing backward and forward travel without any browser screen; a terrace of houses is painted muted teal, amber and dusty coral into contiguous neighbourhoods while three stacked translucent trays represent position, remaining groups and previous colour. Two overheated sand timers hint at two TLEs. No people, readable text, digits, letters, formulas, code, arrows, logos, trademarks, fake UI or watermark.
+    review_status: approved

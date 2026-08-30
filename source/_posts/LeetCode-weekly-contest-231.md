@@ -1,6 +1,7 @@
 ---
 title: LeetCode Weekly Contest 231
 date: 2021-03-07 16:06:05
+description: "Three contest solutions handle one bit segment, a target-sum gap and restricted paths; post-contest grouped DP makes window XOR zero."
 tags:
 - Competitive Programming
 categories:
@@ -14,6 +15,10 @@ translations:
 | 221 / 12900 | YoungForest | 13 | 	0:26:48 |  0:03:30 |  0:08:23  1 | 0:21:48 | null |
 
 A 3-problem contestant, again. sad.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-231/en-hero.webp" alt="One uninterrupted lamp run crosses a state gate, large weights close a balance gap, paths descend through a distance landscape and a late-lit grouped loom resolves XOR signals" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
 
 <!-- more -->
 

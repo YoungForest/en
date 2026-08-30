@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/2017-resolutions.md
+context: During a late holiday night, the author reflects on laziness and weak willpower, then sets concrete goals around English study, sleep, breakfast, exercise, and refusing excuses while facing graduate-school and family career pressures.
+assets:
+  - id: hero
+    file: source/images/ai/2017-resolutions/en-hero.webp
+    placement: hero
+    alt: At a late-night desk, Forest nudges aside an unmoving salted-fish cushion and arranges morning, breakfast, exercise, and study pieces into a new-year path
+    composition: Show Forest at a late-night student desk nudging aside a stubborn salted-fish-shaped cushion, then arranging plain sunrise, breakfast-bowl, running-shoe, and book-shaped pieces into an upward route. Include a completely blank planning sheet and balance gentle humor with real pressure. Preserve the standard Forest outfit.
+    review_status: approved

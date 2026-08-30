@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-175.md
+context: >-
+  The contest review covers checking doubled values, balancing two strings into anagrams, counting events by time interval, and maximizing exam seating; the author's broken glasses and late dinner contributed to an unfinished contest.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-175/en-hero.webp
+    placement: hero
+    alt: Forest wears taped round glasses beside doubled tokens, balanced bead ropes, time bins and an exam-seat grid with diagonal constraints
+    composition: >-
+      Use the fictional Forest. At a long workbench, Forest's round glasses are neatly taped while paired small and large tokens, two colour-balanced bead ropes, paper-bird tokens falling into time bins, and a classroom grid with blocked chairs and diagonal sightlines form one continuous problem set. No alphabet shapes, readable text, numbers, social-media branding, fake UI or watermark.
+    review_status: approved

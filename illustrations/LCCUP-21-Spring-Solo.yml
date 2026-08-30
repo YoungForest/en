@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LCCUP-21-Spring-Solo.md
+context: >-
+  Five problems move from budgeted pairs and a spiral orchestra layout to greedy reordering, a changing maze, and batched tasks.
+assets:
+  - id: hero
+    file: source/images/ai/LCCUP-21-Spring-Solo/en-hero.webp
+    placement: hero
+    alt: A spring pavilion pairs market tokens, spirals orchestra seats, postpones hazard blocks and flips a time-changing maze
+    composition: >-
+      Do not use Forest. Create a distinct English scene in an open spring pavilion divided into clear visual stations. A market sorter pairs plain objects beneath an unmarked capacity arch. Empty orchestra stools form a square spiral, with one target stool highlighted in amber. A tower conveyor postpones the darkest hazard block so a small teal life bead keeps moving safely. Behind them, several transparent maze layers flip like theatre scenery across time; one barrier can be crossed once and another can be removed permanently. No people, characters, letters, digits, prices, currency symbols, code, formulas, readable text, logo, trademark or watermark.
+    review_status: approved

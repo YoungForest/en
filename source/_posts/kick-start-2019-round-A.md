@@ -5,6 +5,7 @@ tags:
 - Competitive Programming
 categories:
 - KickStart
+description: "A first serious contest round explores selecting a matched training group, placing one new service office and fairly allocating overlapping seat requests."
 translations:
   zh-CN: https://youngforest.github.io/2019/03/24/kick-start-2019-round-A/
   en: https://youngforest.github.io/en/2019/03/24/kick-start-2019-round-A/
@@ -24,6 +25,12 @@ My scores were:
 
 That is, I passed the warm-up problem and the small case of the second problem.
 Overall, the problems were much harder than LeetCode. In the end, only two people got a full score.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/kick-start-2019-round-A/en-hero.webp" alt="A folded planning board turns uneven training pieces, a distant city grid and overlapping seat ribbons into three increasingly fair arrangements" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## 1. Training
 

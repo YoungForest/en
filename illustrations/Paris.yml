@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/Paris.md
+context: >-
+  The author and three companions use a three-day break to travel by coach from Belgium to Paris, balancing a tight budget and exhaustion with museums, the Seine, Versailles, food, history, and a strong impression of French cultural confidence. Existing photographs remain the factual travel record.
+assets:
+  - id: hero
+    file: source/images/ai/Paris/en-hero.webp
+    placement: hero
+    alt: Forest and three companions cross a playful Paris stage of museum arches, a river boat, a glowing iron tower and a distant formal garden
+    composition: >-
+      Use fictional Forest, never a portrait: short dark hair, round glasses, charcoal overshirt and muted-teal T-shirt; show three companions as simplified figures. Create a distinct English composition as a wide theatrical stage divided by a curling river. On the left, a humble coach drops the group beside classical museum arches; in the centre, one traveller dozes comically in a small boat while the others look toward a warm glowing iron lattice tower; on the right, a distant formal garden closes the journey. Use luggage and tired postures to balance wonder with budget travel. Do not copy the article photographs or depict a celebrity, real artwork, readable text, number, logo, brand, trademark or watermark.
+    review_status: approved

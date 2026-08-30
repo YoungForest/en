@@ -1,6 +1,7 @@
 ---
 title: 2021 Year-End Review and 2022 New Year Outlook
 date: 2021-12-28 23:35:06
+description: "A 2021 review of graduation, remote work, career growth, English, and system design, followed by plans for Europe, reading, and creative output."
 tags:
   - life
   - Year-End Review
@@ -11,6 +12,12 @@ translations:
   en: https://youngforest.github.io/en/2021/12/28/2021-summary-and-2022-resolutions/
 ---
 Happy New Year. There are still three days before 2021 ends, and I have finally started writing my annual year-end review and New Year outlook. Recently I have noticed more and more classmates writing year-end reviews, but I am not really following the trend. I started doing this very early, first in notebooks and later on my blog. Besides the annual transition from the old year to the new one, I also write reviews and outlooks at milestone moments in life, such as graduating from college and graduate school.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/2021-summary-and-2022-resolutions/en-hero.webp" alt="Forest binds graduation, remote work, English practice, and code projects into a yearly journal that grows thicker toward a new dawn" width="1536" height="864" decoding="async">
+</figure>
+
+<!-- more -->
 
 Previous year-end reviews:
 - [2020 Year-End Review](https://youngforest.github.io/en/2020/11/25/2020-summary-and-2021-resolutions/)
@@ -72,6 +79,10 @@ This year I still stayed in the ["Cruel Coding group"](http://board.cruelcoding.
 In the new year, I will continue maintaining this hobby and habit. But it does not mean solving problems every single day; rather, I will do it freely while staying within bounds. Solve when I want to solve. Later, if I go to Europe and cannot participate in LeetCode weekly contests because of the time difference, I will switch to another platform, such as Codeforces.
 
 Overall, in this crucial year, thanks to long-term preparation beforehand, I passed through fairly smoothly and reached shore safely. If a man takes no thought about what is distant, he will find sorrow near at hand. I have always liked planning ahead and working hard over the long term. In the new year, keep going!
+
+<figure class="editorial-illustration">
+  <img src="/en/images/ai/2021-summary-and-2022-resolutions/en-2022-outlook.webp" alt="Forest crosses a bridge toward a rainy European skyline while tending skill gears, conversation bubbles, a book seedling, and a microphone" width="1536" height="864" loading="lazy" decoding="async">
+</figure>
 
 ## Aspirations for a Good Life in 2022
 

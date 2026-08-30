@@ -1,6 +1,7 @@
 ---
 title: LeetCode Biweekly Contest 22
 date: 2020-03-23 22:47:33
+description: A biweekly review of array-distance search, cinema-seat bitmaps, memoized integer power values and circular DP for non-adjacent pizza slices.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2020/03/23/LeetCode-biweekly-contest-22/
   en: https://youngforest.github.io/en/2020/03/23/LeetCode-biweekly-contest-22/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-biweekly-contest-22/en-hero.webp" alt="Sorted marble lanes meet compass light rings, family figures occupy adjacent lit seats, cached paths guide later beads and claws pick separated pizza slices" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (4) |	Q2 (4) |	Q3 (5) |	Q4 (6)|
 |--|--|--|--|--|--|--|--|
 | 1357 / 5632 |	YoungForest | 	12 | 1:27:09 |  0:05:06 |  0:48:41  1 |  1:22:09 |  null |

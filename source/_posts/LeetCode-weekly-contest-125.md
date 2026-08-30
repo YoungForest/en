@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 125
 date: 2019-02-24 11:11:14
+description: Late-start contest notes on trust relationships, four-direction searches, maximum binary trees and efficient grid illumination.
 tags:
 - Competitive Programming
 categories:
@@ -10,6 +11,10 @@ translations:
   en: https://youngforest.github.io/en/2019/02/24/LeetCode-weekly-contest-125/
 ---
 This weekend was insanely busy, and I paid the price for my procrastination and laziness. Everything piled up together, and Sunday had a ridiculous number of deadlines. At 10 a.m. I had a meeting with my advisor to discuss how to prepare the make-up exam for the undergraduate Computer Organization course. By the time I got back to the lab after the meeting, the contest had already started. After a brief hesitation over whether to join the contest as planned or first finish preparing the make-up exam, I started this week's weekly contest. It is one of the few things I have kept doing over the past two months, and continuing it is no longer only about improving my algorithm skills. It is also a huge encouragement for my confidence in taking control of my own life.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-125/en-hero.webp" alt="A late Forest protects a practice habit among piled tasks, a trust web, four-way tower, maximum tree and illuminated grid" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
 
 <!-- more -->
 

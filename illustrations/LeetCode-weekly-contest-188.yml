@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-188.md
+context: >-
+  The contest reviews stack operations, XOR triplets, return trips through an apple tree and pizza-cutting DP; the author also reflects on faster pattern recognition after sustained practice and a thousand-problem milestone.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-188/en-hero.webp
+    placement: hero
+    alt: Forest reaches a practice milestone among stack blocks, cancelling bead loops, an apple-tree return path and stepwise pizza cuts
+    composition: >-
+      Use the fictional Forest. A distinct English workshop runs left to right from target stack blocks through a looping cancellation bead track, an apple-tree route returning to the root and pictorial pizza-cutting stages; Forest steps across an unlabelled practice marker as the four physical stations connect into a pattern library. No readable text, digits, letters, formulas, code, logos, fake UI or watermark.
+    review_status: approved

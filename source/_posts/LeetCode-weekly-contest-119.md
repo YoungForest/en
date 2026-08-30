@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 119
 date: 2019-01-13 10:56:25
+description: A contest setback revisited through closest points, maximum-perimeter triangles, matched prefix remainders and ordered odd-even jumps.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2019/01/13/LeetCode-weekly-contest-119/
   en: https://youngforest.github.io/en/2019/01/13/LeetCode-weekly-contest-119/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-119/en-hero.webp" alt="Forest repairs a looping raceway beside nearest points, triangle rods, matched remainder beads and ordered odd-even steps" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 This contest went rather badly. My rank was roughly 1486 / 3845. The problems were:
 - The second problem was relatively simple. Since it was an Easy problem, I directly used brute force and got one TLE. Earlier, because of carelessness, I also wrote the wrong variable in the `for` loop condition once. That caused two penalties.
 - The third problem was not very hard either, but in the end I did not think of the O(n) solution. I only thought of an O(n ^ 2) approach. I thought of prefix sums and noticed the keyword divisible, but I did not connect it to the key point that equal prefix sums work.

@@ -1,6 +1,7 @@
 ---
 title: LeetCode Weekly Contest 237
 date: 2021-04-18 16:55:22
+description: "Four solutions check a pangram, buy cheap ice creams, schedule a single-threaded CPU, and reduce pairwise AND-XOR to independent bit counts."
 tags:
 - Competitive Programming
 categories:
@@ -18,6 +19,12 @@ It had been a long time since I solved all four problems and entered the top 500
 I had been checking in for seven consecutive weeks and was almost unable to take it anymore. Recently LeetCode's difficulty has risen quite a bit, and many strong players have joined too. Achieving both four solved problems and top 500 is indeed not easy.
 
 Today's hand speed also counted as a normal performance.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-237/en-hero.webp" alt="A complete cabinet of abstract tokens leads to cheap ice creams, a one-lane task scheduler and paired signal lamps feeding an XOR prism" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## 1832. Check if the Sentence Is Pangram
 

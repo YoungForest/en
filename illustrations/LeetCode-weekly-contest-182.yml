@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-182.md
+context: >-
+  The contest review covers an integer whose frequency equals its value, counting rising or falling teams of three, designing underground travel-time tracking, and counting valid strings with automata and digit dynamic programming; the author also recalls pressure from a practice group.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-182/en-hero.webp
+    placement: hero
+    alt: Forest holds a blank amber envelope near matching pebble pedestals, rising and falling trios, underground circles and colour-bead gates
+    composition: >-
+      Use the fictional Forest. An independent outdoor lab pairs pebble groups with pedestals of matching height, arranges wooden trios in strict rises or falls, connects unmarked underground entrances with tunnels and blank clock discs, and routes coloured bead strings through open or closed physical gates. Forest holds a plain amber challenge envelope. No crosses, readable text, letters, digits, symbols, transit logos, fake UI or watermark.
+    review_status: approved

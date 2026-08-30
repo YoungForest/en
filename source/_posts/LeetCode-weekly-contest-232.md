@@ -1,6 +1,7 @@
 ---
 title: LeetCode Weekly Contest 232
 date: 2021-03-14 15:36:47
+description: "Four solutions test one swap, find a star centre, greedily improve pass ratios, and expand from a fixed index for the best subarray score."
 tags:
 - Competitive Programming
 categories:
@@ -15,6 +16,10 @@ translations:
 
 Yesterday I went out to repair my Mac because the screen kept flickering. Sure enough, for Apple products, AppleCare is necessary. Last time I repaired the keyboard; this time I repaired the screen, so all four sides have been replaced with new parts. I was out running around for a whole day and was especially tired. I woke up late this morning, and the contest started as soon as I got up. I had not had a sip of water or a bite of food.
 After solving 3 problems for two consecutive weeks, I finally solved 4. At first I was quite pleased and thought I should not need to check in this week. Later I found the clown was actually me. Other contestants even thought this round was a speed round. I overcomplicated T3 and T4, so I was a bit slow and did not enter the top 500. My Cruel ranking also fell from 10+ to 40+. My rating will drop next week. I did not expect 3 problems to raise rating and 4 problems to drop it.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-232/en-hero.webp" alt="Two mismatched beads swap into alignment, spokes reveal a central hub, bonus marbles enter the best-gain vessel and two rails expand from an anchored column" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
 
 <!-- more -->
 

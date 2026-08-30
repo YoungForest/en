@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/kick-start-2019-round-A.md
+context: >-
+  In the author's first serious round of the series, three solutions select a closely matched training group, place one new service office on a city grid to reduce the farthest distance, and allocate overlapping seat requests as fairly as possible.
+assets:
+  - id: hero
+    file: source/images/ai/kick-start-2019-round-A/en-hero.webp
+    placement: hero
+    alt: A folded planning board turns uneven training pieces, a distant city grid and overlapping seat ribbons into three increasingly fair arrangements
+    composition: >-
+      Do not use Forest. Create a distinct English composition as a folded planning board with three panels. First, a sliding transparent window selects similarly tall wooden pieces and lifts the shorter ones to a shared level. Second, a miniature unlabeled city grid receives one warm beacon so even the far corner has a short path to a service point. Third, overlapping fabric seat ribbons pass through a simple divider that gives each blank tray a fair segment. Keep the objects tactile and the chosen solution amber against muted teal alternatives. No digit, letter, score, code, scoreboard, postal/company identity, readable text, logo, trademark or watermark.
+    review_status: approved

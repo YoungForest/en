@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-biweekly-contest-50.md
+context: >-
+  Three in-contest solutions greedily raise an array to make it increasing, brute-force point counts inside circles, and walk backward through a prefix XOR to maximize each answer; the fourth problem has only a link and no completed solution.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-biweekly-contest-50/en-hero.webp
+    placement: hero
+    alt: A lifting rig minimally raises an increasing row, hoops count scattered pegs, a reverse bead chain feeds a complement prism and the final permutation cabinet remains closed and unresolved
+    composition: >-
+      Do not use Forest. Make a distinct English four-zone physical metaphor. A lifting rig moves left to right, raising each low stone only enough to stand above the previous one. Plain circular hoops descend over a field of pegs and small trays collect the pegs enclosed by each hoop. A bead chain is consumed from the far end while the remaining accumulated light enters a fixed-width complement prism to produce the brightest XOR result at each stage, with no binary symbols. The final string-sorting bay is deliberately unresolved: a closed permutation cabinet, an untouched key and idle tools, with no success cue. No people, characters, letters, digits, formulas, code, arrows, readable text, fake UI, logos, brands, trademarks or watermarks.
+    review_status: approved

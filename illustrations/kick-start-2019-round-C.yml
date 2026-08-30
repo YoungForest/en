@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/kick-start-2019-round-C.md
+context: >-
+  This post-contest algorithm write-up works through grid skipping, matrix intervals, and compressed state, moving from brute-force approaches that barely pass toward more dependable structured solutions across three problems.
+assets:
+  - id: hero
+    file: source/images/ai/kick-start-2019-round-C/en-hero.webp
+    placement: hero
+    alt: A folded puzzle board transforms three tangled challenges into a skipping grid route, a bounded circuit landscape and a compact path of collected clues
+    composition: >-
+      Do not use Forest. Create a distinct English composition as one large folded puzzle board opening from left to right. The first panel shows a small token leaping over dim previously visited grid cells; the second turns rows of uneven blocks into a circuit landscape constrained by a transparent frame; the third compresses many branching routes into one clean path gathering coloured markers. A warm amber thread becomes progressively straighter across the panels, while muted teal identifies the chosen structure. No contest or company identity, source-code screen, scoreboard, readable text, letter, number, logo, trademark or watermark.
+    review_status: approved

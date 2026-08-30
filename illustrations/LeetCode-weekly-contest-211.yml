@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-211.md
+context: >-
+  A contest recap on endpoint spans, cyclic string operations, conflict-free teams, and thresholded graph connectivity.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-211/en-hero.webp
+    placement: hero
+    alt: A circular workshop measures matching endpoints, rotates a bead necklace, arranges a balanced team and links stations through factor gears
+    composition: >-
+      Do not use Forest. Make a distinct English circular gear workshop. At one bench, matching geometric caps mark the two ends of a plain ribbon and a curved gauge spans the gap. A central turntable rotates a necklace of abstract beads while small levers raise selected beads. Nearby, simple wooden athlete-like pieces of different heights are sorted onto tiered bleachers without conflict. In the background, divisor-shaped gears bridge stations only when they clear a raised physical threshold. No characters, letters, digits, code, formulas, readable text, fake interface, logo, trademark or watermark.
+    review_status: approved

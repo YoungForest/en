@@ -1,6 +1,7 @@
 ---
 title: Creating Chinese and English Blogs with Hexo
 date: 2021-09-07 17:50:49
+description: "How I created a separate English Hexo blog from the Chinese site, configured deployment paths, and linked the two versions."
 categories:
 - Tinkering
 tags:
@@ -11,6 +12,12 @@ translations:
 ---
 Since joining Amazon, I have had more exposure to English and foreign colleagues. The need to practice using English has grown stronger. Also, to connect more with the international world, I decided to create my own English blog.
 
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Setup-English-blog/en-hero.webp" alt="Two blog houses built from the same modular blueprint deploy along separate tracks and remain connected by a two-way bridge" width="1536" height="864" decoding="async">
+</figure>
+
+<!-- more -->
+
 ## Steps
 
 Use the Chinese blog as a template and create an English blog.
@@ -18,8 +25,6 @@ Use the Chinese blog as a template and create an English blog.
 ```bash
 cp -r Hexo HexoEn
 ```
-
-<!-- more -->
 
 Delete the unused Chinese posts and resources from `HexoEn`.
 

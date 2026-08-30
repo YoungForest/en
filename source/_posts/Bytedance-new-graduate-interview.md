@@ -1,6 +1,7 @@
 ---
 title: ByteDance 2020 Fall Recruiting Interview
 date: 2020-06-23 18:56:43
+description: "Notes from a ByteDance backend interview on algorithms, operating systems, networking, databases, Python, and lessons from rushed preparation."
 tags:
 - ByteDance
 - New Graduate
@@ -14,11 +15,17 @@ I applied for ByteDance's early batch, for a backend development role in the Tec
 I did not review computer science fundamentals well enough, so my answers were poor.
 Wishing for an offer.
 
-# First Round
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Bytedance-new-graduate-interview/en-hero.webp" alt="Forest hurries toward an interview chair with one polished algorithm tool while the computer-fundamentals toolbox behind him still has several empty compartments" width="1536" height="864" decoding="async">
+</figure>
+
+<!-- more -->
+
+## First Round
 
 Self-introduction.
 
-## Algorithm Problem
+### Algorithm Problem
 
 Give the brute-force solution first, then optimize it.
 
@@ -67,9 +74,9 @@ int main() {
 }
 ```
 
-## Computer Science Fundamentals
+### Computer Science Fundamentals
 
-### Operating System
+#### Operating System
 
 Types of IPC
 semaphore
@@ -83,16 +90,16 @@ virtual memory
 For example, checking ports, memory, and process status.
 [The current working directory of a process](https://unix.stackexchange.com/questions/94357/find-out-current-working-directory-of-a-running-process): `lsof -p <PID> | grep cwd`
 
-### Computer Networking
+#### Computer Networking
 
 The process and necessity of the three-way handshake and four-way termination. I answered terribly.
 
-### Database
+#### Database
 
 Several normal forms
 Do I understand them deeply? No.
 
-### Language
+#### Language
 
 python
 - GIL
@@ -101,10 +108,13 @@ python
 This team is most likely writing python.
 
 
-## Summary
+<figure class="editorial-illustration">
+  <img src="/en/images/ai/Bytedance-new-graduate-interview/en-review-plan.webp" alt="Forest arranges scattered systems, networking, database, and language cards into a three-stage study bridge leading toward the next interview" width="1536" height="864" loading="lazy" decoding="async">
+</figure>
+
+### Summary
 
 The interview was scheduled yesterday for today. That was a mistake. It was too rushed. The early batch for fall recruiting is important, and the computer science fundamentals are exactly the questions in those question banks. Spending three days memorizing them is still necessary. Otherwise, relying only on what I learned during undergraduate studies will not lead to good answers and will hurt a lot.
 
 Many classmates asked where the question bank is. I also found it online: [https://github.com/CyC2018/CS-Notes](https://github.com/CyC2018/CS-Notes)
 It feels quite complete. I am already memorizing it.
-

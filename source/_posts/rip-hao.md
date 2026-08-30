@@ -5,6 +5,7 @@ tags:
 - RIP
 categories:
 - Life
+description: "Remembering Haoel: the help his writing gave a young programmer, the shock of his death, and a reflection on overwork and valuing life."
 translations:
   zh-CN: https://youngforest.github.io/2023/05/15/rip-hao/
   en: https://youngforest.github.io/en/2023/05/15/rip-hao/
@@ -12,6 +13,12 @@ translations:
 R.I.P.
 
 I was fortunate to be in the same problem-solving group as 左耳朵耗子. When everyone heard the news, we thought it was a rumor and even mentioned him in the group. But with multiple sources confirming it, it should be true now.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/rip-hao/en-hero.webp" alt="An empty workshop chair at dawn faces a closed blank notebook while a trail of small learning tools continues toward younger desks in the light" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ![左耳朵耗子 chat history in the Buddhist Problem Solving group](/images/hao-foxi.jpg)
 

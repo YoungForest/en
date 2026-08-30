@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/kick-start-2020-round-B.md
+context: >-
+  This four-problem contest write-up finds local mountain peaks, schedules bus routes backward from a deadline, decodes nested robot movement with a stack, and computes how a wandering robot can avoid a rectangular hole.
+assets:
+  - id: hero
+    file: source/images/ai/kick-start-2020-round-B/en-hero.webp
+    placement: hero
+    alt: Four connected travel dioramas show a highlighted mountain peak, backward bus tokens, a nested mechanical path and probability beads skirting a dark grid hole
+    composition: >-
+      Do not use Forest. Create a distinct English composition as four compact travel dioramas arranged around a central roundabout. One has a ridge where only true local peaks glow; one has blank bus-shaped tokens chosen backward from a destination; one contains a wind-up robot traversing nested wooden loops that fold back into the parent path; one lets paired probability beads flow around the top and left edge of a dark rectangular pit. Use a continuous muted-teal route and sparse amber decisions, with large tactile forms rather than a map or interface. No number, letter, direction label, code, real vehicle brand, scoreboard, contest/company identity, readable text, logo, trademark or watermark.
+    review_status: approved

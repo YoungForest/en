@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/timestamp-summary.md
+context: >-
+  While helping with lab projects, the author encounters unfamiliar timestamps and records the relationship and conversion between Unix time, Windows NT time and other common representations.
+assets:
+  - id: hero
+    file: source/images/ai/timestamp-summary/en-hero.webp
+    placement: hero
+    alt: Two clocks with different origins and tick mechanisms pass through conversion gears and align on one timeline
+    composition: >-
+      Do not use Forest. Place two distinct mechanical timekeepers on opposite sides: one counts from a comparatively recent simple reservoir, while the other receives fine pulses through a much older long pipe. Their rhythms enter a central muted-teal conversion gearbox and emerge aligned on a single amber timeline in the foreground. Use contrasting mechanisms to express different epochs and units without dates or values. No readable or pseudo-readable text, letters, digits, formulas, Windows marks, brands, UI, watermark or signature.
+    review_status: approved

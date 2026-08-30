@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/Complain-before-Weride-internship.md
+context: Graduate courses, an advisor's demands, an internship, and other people's expectations leave the author feeling that life is out of his control. After venting, he still resolves to recover agency through fragments of time.
+assets:
+  - id: hero
+    file: source/images/ai/Complain-before-Weride-internship/en-hero.webp
+    placement: hero
+    alt: Forest is pulled between study, work, and social expectations while assembling scattered pieces of time into a path he can choose
+    composition: Place Forest at an urban campus transit concourse rather than the Chinese setting. Fine cords from blank course folders, a degree scroll, work gears, and distant social silhouettes pull in different directions, while he assembles small clock fragments into his own path toward warm light. Preserve the standard Forest outfit and avoid school or company branding.
+    review_status: approved

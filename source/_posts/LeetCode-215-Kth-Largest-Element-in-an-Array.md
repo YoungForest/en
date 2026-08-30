@@ -4,10 +4,15 @@ date: 2018-09-15 11:20:06
 tags:
 categories:
 - LeetCode
+description: 'Practicing kth-largest selection before an interview: replacing an oversized memo table with repeated pivot partitioning.'
 translations:
   zh-CN: https://youngforest.github.io/2018/09/15/LeetCode-215-Kth-Largest-Element-in-an-Array/
   en: https://youngforest.github.io/en/2018/09/15/LeetCode-215-Kth-Largest-Element-in-an-Array/
 ---
+<figure class="editorial-illustration editorial-illustration--hero"><img src="/en/images/ai/LeetCode-215-Kth-Largest-Element-in-an-Array/en-hero.webp" width="1536" height="864" alt="Forest closes an oversized memo grid and narrows stone partitions through a pivot gate to the target rank" decoding="async" fetchpriority="high"></figure>
+
+<!-- more -->
+
 Description: https://leetcode.com/problems/kth-largest-element-in-an-array/description/
 Solution: https://leetcode.com/problems/kth-largest-element-in-an-array/discuss/
 Difficulty: Medium

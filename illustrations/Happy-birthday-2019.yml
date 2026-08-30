@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/Happy-birthday-2019.md
+context: Spending his twenty-third birthday at school, the author reflects on distance from family, an ordinary hope for a warm home in a big city, and mixed progress on health, study, internships, and interviews.
+assets:
+  - id: hero
+    file: source/images/ai/Happy-birthday-2019/en-hero.webp
+    placement: hero
+    alt: Forest sits at a dorm-room table with a blank small cake while a thin thread links the hot city outside to a distant warm home light
+    composition: Place Forest at a modest dorm-room table with a tiny unmarked cake and a half-turned blank calendar. Beyond the window is a heat-hazed city; a fine thread connects the desk to one distant warm home light. Running shoes, books, and unfinished blocks quietly represent health, study, and postponed plans.
+    review_status: approved

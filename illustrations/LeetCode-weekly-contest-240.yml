@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-240.md
+context: >-
+  Four solutions enumerate the most populated year, use binary search or two pointers for maximum distance between arrays, combine interval sum and minimum value for the best subarray min-product, and topologically accumulate colour counts along a directed graph.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-240/en-hero.webp
+    placement: hero
+    alt: Blank time bays accumulate arrivals and departures, two sliders stretch across sorted rows, a minimum-height frame drives an interval-weight gear and coloured graph tokens accumulate in topological order
+    composition: >-
+      Do not use Forest. Create a distinct English four-bay algorithm city model. A row of blank time bays receives arrival tokens and releases departure tokens, with the most occupied bay softly highlighted and no dates. Two monotone stone rows carry ordered sliders that preserve feasibility while stretching their physical separation. A histogram-like stone interval sits above a weight-accumulation rail; a horizontal frame rests on the minimum column and together they drive a product gear. A directed acyclic network uses physical indegree latches to release coloured nodes in topological order, propagating maximum colour-token counts to successors, while a closed loop remains locked. No people, characters, letters, digits, dates, formulas, code, readable text, arrows, fake UI, logo, brand, trademark or watermark.
+    review_status: approved

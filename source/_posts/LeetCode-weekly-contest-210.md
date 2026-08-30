@@ -1,6 +1,7 @@
 ---
 title: LeetCode Weekly Contest 210
 date: 2020-10-11 19:23:21
+description: "Four solutions cover nesting depth, city network rank, cross-string palindromes, and connected subtrees grouped by diameter."
 tags:
 - Competitive Programming
 categories:
@@ -14,6 +15,12 @@ translations:
 | 94 / 11792 | YoungForest | 18 | 0:51:30 | 0:03:13 | 0:08:36 | 0:21:59 | 0:51:30 |
 
 All the problems in this contest were routine problems. I did not run into real difficulties and finally made it into the top 100 again after a long while. It was hard-won. My ranking in the Cruel group also rose to 25 because of it.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-210/en-hero.webp" alt="A civic observatory layers nested hoops, road hubs, a mirrored splice ribbon and tree neighbourhoods measured end to end" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## 5535. Maximum Nesting Depth of the Parentheses
 

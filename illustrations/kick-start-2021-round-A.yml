@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/kick-start-2021-round-A.md
+context: >-
+  Returning to algorithm competition for interest rather than recruitment, the author reflects on earlier goals and solves four problems involving mirrored strings, L-shape counting, raised terrain, and breaking cycles in a graph; the reasoning matters more than the rank.
+assets:
+  - id: hero
+    file: source/images/ai/kick-start-2021-round-A/en-hero.webp
+    placement: hero
+    alt: A calm tabletop of four tactile puzzles shows mirrored beads, L-shaped tiles, rising rabbit terrain and a network ring opening into a tree
+    composition: >-
+      Do not use Forest. Create a distinct English composition as a quiet tabletop after a contest: four tactile puzzle objects sit in a generous arc, with mirrored beads whose mismatch can be repaired, interlocking L-shaped tiles, a small rabbit figure lifting stepped terrain, and a ring of connected nodes opening into a clean tree. A tiny blank medal is pushed to the edge while the solved objects occupy the warm centre, conveying curiosity over rank. Keep the scene spacious and phone-readable. No real contest or company identity, scoreboard, source-code interface, readable text, letter, number, logo, trademark or watermark.
+    review_status: approved

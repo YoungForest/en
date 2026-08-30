@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/Reality-Is-Not-What-It-Seems-The-Journey-to-Quantum-Gravity.md
+context: Moves from Greek philosophy and classical physics to relativity, quantum mechanics, loop quantum gravity, and a personal childhood fascination with physics.
+assets:
+  - id: hero
+    file: source/images/ai/Reality-Is-Not-What-It-Seems-The-Journey-to-Quantum-Gravity/en-hero.webp
+    placement: hero
+    alt: A smooth fabric of spacetime reveals a fine network of interlocking loops under magnification as two physical paths approach an open frontier
+    composition: A museum-like physics table shifts from continuous curved fabric to discrete loop structure, leaving relativity and quantum theory meeting at an unresolved horizon without formulas.
+    review_status: approved

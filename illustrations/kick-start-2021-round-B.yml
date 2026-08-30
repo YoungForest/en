@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/kick-start-2021-round-B.md
+context: >-
+  The upsolving notes cover increasing substrings and the longest arithmetic progression, including a type-conversion bug and a slower approach that timed out.
+assets:
+  - id: hero
+    file: source/images/ai/kick-start-2021-round-B/en-hero.webp
+    placement: hero
+    alt: An ascending bead run grows beneath a progression rail while an adjustable stone and nested gears expose a slower route
+    composition: >-
+      Do not use Forest. Build a distinct English scene as a quiet clockmaker's test bench. A necklace of abstract unmarked beads passes a height comparator; a small amber ribbon beneath it grows across each strictly rising run and resets at a drop. A central rail holds evenly spaced stepping stones, with one articulated clamp adjusting a single stone to extend the progression. In the background, one route passes through a direct mechanism while a second route winds through two nested gear rings and drains a sand timer, suggesting an unnecessarily slow implementation. No characters, letters, digits, code, formulas, readable text, logo, trademark or watermark.
+    review_status: approved

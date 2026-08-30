@@ -1,6 +1,7 @@
 ---
 title: LeetCode Biweekly Contest 26
 date: 2020-05-17 10:15:47
+description: A biweekly review of equal-character windows, simplified fractions, ancestor-maximum tree DFS and target-cost knapsack DP as practice builds confidence.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2020/05/17/LeetCode-biweekly-contest-26/
   en: https://youngforest.github.io/en/2020/05/17/LeetCode-biweekly-contest-26/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-biweekly-contest-26/en-hero.webp" alt="Forest carries accumulated practice through an equal-bead window, coprime gears, an ancestor-maximum tree and a budget workshop assembling the longest strong tile row" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (4) |	Q3 (5) |	Q4 (7)|
 |--|--|--|--|--|--|--|--|
 | 115 / 7795 |	YoungForest | 19 | 	0:33:49 |  0:03:55 |   0:08:25 | 0:11:57 |   0:28:49  1 |

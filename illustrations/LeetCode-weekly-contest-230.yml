@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-230.md
+context: >-
+  Three in-contest solutions filter items by a rule, backtrack over dessert toppings, and greedily balance two array sums; after the contest, a monotonic stack computes car-fleet collision times from the rear.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-230/en-hero.webp
+    placement: hero
+    alt: Objects pass a shape filter, dessert toppings branch three ways, high-impact marbles balance two jars and late-lit cars merge through a monotonic garage
+    composition: >-
+      Do not use Forest. Create a distinct English editorial-comic workshop linking a pantry to a miniature garage. Objects varying in colour, shape, and material pass through a three-slot adjustable filter and only matching pieces reach a basket. Dessert bases sit beside physical three-way topping trays for none, one, or two portions while a backtracking arm searches for the closest target weight. Two unequal jars balance on a scale and the mechanism always moves the marble with the largest possible impact first. Finally, unbranded miniature cars travel from rear to front along a steadily descending garage rack; cars that can catch a future fleet physically nest together, and evening headlamps indicate this monotonic-stack bay was completed after the contest. No people, characters, letters, digits, formulas, code, readable text, arrows, road signs, UI, car brands, logos, trademarks or watermarks.
+    review_status: approved

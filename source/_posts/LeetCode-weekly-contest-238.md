@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 238
 date: 2021-04-25 17:58:13
+description: "Four solutions convert bases, raise frequency with a sliding window, find five ordered vowel runs, and maximize height between sparse limits."
 tags:
 - Competitive Programming
 categories:
@@ -12,6 +13,10 @@ translations:
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (5) |	Q3 (5) |	Q4 (6)|
 |--|--|--|--|--|--|--|--|
 | 383 / 11635 | YoungForest | 18 | 1:53:50 | 0:01:05 | 0:13:02 |  0:20:59 | 1:28:50 5 |
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-238/en-hero.webp" alt="Beads regroup through a multi-slot wheel, a sliding frame raises blocks evenly, five colours flow in order and sparse height posts shape a skyline peak" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
 
 <!-- more -->
 

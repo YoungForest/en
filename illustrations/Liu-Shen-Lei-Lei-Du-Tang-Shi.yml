@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/Liu-Shen-Lei-Lei-Du-Tang-Shi.md
+context: >-
+  The author values the book's approachable storytelling, Jin Yong-like compassion, indirect criticism through the past, and unusually moving romanticism after a year of realist reading.
+assets:
+  - id: hero
+    file: source/images/ai/Liu-Shen-Lei-Lei-Du-Tang-Shi/en-hero.webp
+    placement: hero
+    alt: Four landscape windows for pastoral life, frontier unrest, ancient ruins, and farewell surround a blank scroll beneath an open moonlit skylight
+    composition: >-
+      Create a distinct gallery-like composition for English readers. A completely blank scroll rests at the centre of a quiet reading room, surrounded by four open landscape windows showing a secluded garden, a windswept frontier, weathered ruins, and two figures parting at a ferry. An overhead skylight opens to a warm moon, suggesting romantic imagination and the freedom to view the present through the past. No author, real poet, book cover, calligraphy, readable text, or political emblem.
+    review_status: approved

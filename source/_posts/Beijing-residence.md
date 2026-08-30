@@ -1,5 +1,6 @@
 ---
 title: Obtaining a Beijing Hukou Through a Separately Listed Quota
+description: "A personal account of eligibility and employer quotas under Beijing's 2021 separate route, followed through paperwork, waiting, and completion in 2023."
 date: 2022-01-12 12:46:52
 tags:
 - Beijing
@@ -13,6 +14,12 @@ translations:
 As a system with Chinese characteristics, hukou has always been an important consideration when people think about work, life, and settlement. Thirty years ago, our parents' generation went to great lengths to convert rural hukou into urban hukou; now we go to great lengths for a Beijing hukou. Many things have changed, yet some things have not.
 
 Fortunately, Beijing also issued its [new hukou rules](http://rsj.beijing.gov.cn/xxgk/zcwj/202107/t20210712_2433865.html) this year. Most of the content stayed the same, but the "separately listed quota" gave us an opportunity.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Beijing-residence/en-hero.webp" alt="Forest discovers a newly opened side path through a dense city maze while carrying a blank folder toward a softly lit home" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## Interpretation of the Separately Listed Quota
 
@@ -31,6 +38,10 @@ Another important question everyone cares about is whether it is a 1-year quota 
 The two types of settlement quotas require either half a year or three years of social insurance contributions. However, even for the half-year quota, by the time settlement is completed it basically takes nearly a year, so everyone still calls it a one-year quota.
 Unlike previous quota types, the government does not restrict whether the separately listed quota is one-year or three-year; it leaves that to the company and graduates to negotiate. More conscientious companies, such as my company Amazon, let students choose for themselves. Of course everyone chose the one-year option.
 But I have also heard that many companies, even familiar major companies such as Meituan and ByteDance, force the three-year option. Some even sign a five-year service-period agreement: after settlement is completed in three years, if you do not stay for five years, you have to compensate the company. The government's intention is to save companies employment costs, but these companies' behavior is really ugly. I sympathize with students at those companies, and there are quite a few of them. During the five-year service period, they are at the company's mercy, their pay and benefits do not rise, and they cannot change jobs.
+
+<figure class="editorial-illustration">
+  <img src="/en/images/ai/Beijing-residence/en-process.webp" alt="A blank folder passes between employer, school, archive, and waiting stations across changing seasons before becoming a simple house key" width="1536" height="864" loading="lazy" decoding="async">
+</figure>
 
 ## Settlement Process
 

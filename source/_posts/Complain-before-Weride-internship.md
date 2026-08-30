@@ -1,5 +1,6 @@
 ---
 title: Life | Some Complaints Before Starting My WeRide Internship
+description: "Feeling pulled by graduate school, an advisor, an internship, and other people's expectations, while still trying to regain agency in fragmented time."
 date: 2018-10-28 23:11:53
 tags:
 - WeRide
@@ -14,6 +15,12 @@ Author: YoungForest (from Douban)
 Source: https://www.douban.com/note/694767558/
 
 Recently I have kept feeling that I cannot control my own life.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Complain-before-Weride-internship/en-hero.webp" alt="Forest is pulled between study, work, and social expectations while assembling scattered pieces of time into a path he can choose" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 First, which is more important: living happily, or working hard to become what others expect? Right now, I identify more with the latter. Since childhood, I have been the "other people's child": obedient, well-behaved, no video games, no early romance, no fighting, and good grades. But was that life happy? Not necessarily. Now, even after graduating from college and already becoming ordinary among the crowd, I still cannot avoid gradually living more and more like what others expect. I even think this kind of life seems more meaningful. At the end of the day, I am still a person in "society". I need recognition from parents, classmates, teachers, and friends in order to keep going.
 

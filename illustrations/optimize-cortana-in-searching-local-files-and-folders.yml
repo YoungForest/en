@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/optimize-cortana-in-searching-local-files-and-folders.md
+context: >-
+  A historical Windows 10 note: local file search behaved inconsistently until overlooked file locations were connected to the system index.
+assets:
+  - id: hero
+    file: source/images/ai/optimize-cortana-in-searching-local-files-and-folders/en-hero.webp
+    placement: hero
+    alt: An indexing lamp connects overlooked local file shelves to one catalog so its search beam reaches every folder reliably
+    composition: >-
+      Do not use Forest. Show historical local search as a slightly untidy warm-gray file library. A central search lamp reaches only some shelves while several folder racks remain in shadow; a new muted-teal indexing rail joins the overlooked shelves to a rotating central catalog, allowing the beam to sweep all locations reliably. Add gentle humor with one lost blank folder finally joining the line. No readable or pseudo-readable text, letters, digits, formulas, Windows or Cortana marks, brands, real or fake UI, watermark or signature.
+    review_status: approved

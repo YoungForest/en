@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 187
 date: 2020-05-04 10:44:42
+description: A weekly review of terminal cities, spacing scans, two-pointer range windows and a deduplicated priority queue for the kth matrix-row sum.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2020/05/04/LeetCode-weekly-contest-187/
   en: https://youngforest.github.io/en/2020/05/04/LeetCode-weekly-contest-187/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-187/en-hero.webp" alt="Roads converge on a terminal town, glowing markers keep their distance, a sliding frame bounds wooden bars and sorted marbles feed a heap and duplicate gate" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (4) |	Q3 (5) |	Q4 (7)|
 |--|--|--|--|--|--|--|--|
 | 301 / 12353 |	YoungForest | 19 | 1:03:24 |  0:06:34 |  0:03:07 |  0:17:30 | 1:03:24 |

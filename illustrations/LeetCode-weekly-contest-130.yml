@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-130.md
+context: >-
+  A routine but speed-driven contest covers binary-prefix remainders, conversion to base negative two, the next greater linked-list node and boundary-first enclave search, followed by reflection on reaching harder practice.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-130/en-hero.webp
+    placement: hero
+    alt: Forest reaches a steeper practice path with a remainder carousel, negative-base balance, monotonic bead chain and boundary flood
+    composition: >-
+      Use fictional Forest in a distinct canal-side training yard where a gentle path becomes visibly steeper. Four tactile machines share the yard: prefix beads circulate through an unmarked remainder carousel; beads transfer across an alternating upper-and-lower negative-base balance; each linked bead is paired with the first taller bead to its right by a monotonic rack; and water enters a tile map from every outside edge, revealing a few enclosed dry islands. No readable text, letters, digits, formulas, code, logos, brands, fake UI or watermark.
+    review_status: approved

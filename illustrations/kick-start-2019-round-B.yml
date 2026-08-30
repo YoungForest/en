@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/kick-start-2019-round-B.md
+context: >-
+  This post-contest write-up covers frequency tests for rearrangeable palindromes, greedy ordering inside an energy-stone knapsack DP, and a segment tree over transformed gift events.
+assets:
+  - id: hero
+    file: source/images/ai/kick-start-2019-round-B/en-hero.webp
+    placement: hero
+    alt: A tactile puzzle bench balances mirrored tokens, fading energy stones and a branching machine that catches the highest gift wave
+    composition: >-
+      Do not use Forest. Create an independent English composition as one tactile puzzle bench. In front, paired abstract tokens slide into a symmetrical arch with one optional centre piece while a clear window samples a section. Behind it, glowing stones with different fading trails queue before a small canvas knapsack, the best order picked by an amber arm. Across the back, gift-shaped tokens become a rising and falling bead track feeding a compact branching range machine whose highest node lights amber. No letter, digit, code, formula, score, scoreboard, company identity, readable text, logo, trademark or watermark.
+    review_status: approved

@@ -6,6 +6,7 @@ tags:
 - The Almanack of Naval Ravikant
 categories:
 - Book Notes
+description: Notes on wealth, happiness, classic reading, and long-term consequences, connected with Atomic Habits, The Psychology of Money, and personal experience.
 translations:
   zh-CN: https://youngforest.github.io/2024/07/27/The-Almanack-of-Naval-Ravikant/
   en: https://youngforest.github.io/en/2024/07/27/The-Almanack-of-Naval-Ravikant/
@@ -13,6 +14,12 @@ translations:
 [Douban link](https://book.douban.com/subject/35876121/)
 
 The first half is about wealth, suitable for reading before age 35 to change one's current situation. Much of the wisdom is also widely recognized and easy to accept around the world. The second half is about happiness, suitable for reading after 35 to accept the current situation. But that part is more subjective and differs from person to person. It belongs to greater wisdom and is more rare. Finally, *Die with Zero* (also a book).
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/The-Almanack-of-Naval-Ravikant/en-hero.webp" alt="A long path runs from a lever-powered orchard toward a still pond while a telescope examines both present stones and distant consequences" width="1536" height="864" decoding="async">
+</figure>
+
+<!-- more -->
 
 It connects with many books I have read before. It really is an almanack. Much wisdom is explained clearly in just a few words. For example, *Atomic Habits* discusses how to build good habits, discard bad habits, and the importance of habits; *The Psychology of Money* discusses the definition of wealth and how to obtain wealth; and books such as evolutionary psychology and *The Evolution of Desire* discuss human psychology and gender psychology. Of course, those books are much more detailed and more actionable, belonging to the "technique" part. *The Almanack of Naval Ravikant* is a collection, a summary of the wisdom Naval, as a smart person and a person who has read many books, accumulated over decades. He explains it to everyone using the Feynman Technique, which he advocates. Different people, with different life experiences and reading histories, will feel completely different things. I truly wish I had encountered it earlier.
 

@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-242.md
+context: >-
+  Four solutions compare coloured runs, binary-search a minimum speed, update jump ranges once, and use linear DP for the best stone-game score difference.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-242/en-hero.webp
+    placement: hero
+    alt: Calipers compare two coloured runs, a speed gate narrows, jump tiles light only once and prefix stones move across a game balance
+    composition: >-
+      Do not use Forest. Create a distinct English coaching laboratory with four connected bays. Calipers compare the longest uninterrupted teal and ivory sections of a ribbon. A small road vehicle passes an unmarked speed gate while a binary-search slider closes inward from slow and fast ends to meet a plain sand timer. A row of jump tiles receives a fixed moving illumination interval; each reachable tile lights only once and overlap stops repeated work. Prefix stone piles merge along a game table where amber and teal sides alternate, while a folded dynamic-programming rail preserves the best future score difference. No people, characters, letters, digits, code, formulas, readable text, UI, contest branding, logo, trademark or watermark.
+    review_status: approved

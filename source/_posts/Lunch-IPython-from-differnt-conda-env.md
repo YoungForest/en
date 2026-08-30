@@ -3,11 +3,18 @@ title: Launch IPython from a Different Conda Env
 date: 2017-11-02 22:36:37
 tags:
 categories:
+description: "How to register an IPython kernel for a separate Conda environment, launch the intended session, and use package mirrors for faster installs."
 translations:
   zh-CN: https://youngforest.github.io/2017/11/02/Lunch-IPython-from-differnt-conda-env/
   en: https://youngforest.github.io/en/2017/11/02/Lunch-IPython-from-differnt-conda-env/
 ---
 [reference](http://ipython.readthedocs.io/en/stable/install/kernel_install.html)
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Lunch-IPython-from-differnt-conda-env/en-hero.webp" alt="A shared notebook desk selects one sealed environment capsule through its matching kernel key while the other capsules remain isolated" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ``` python
 # activate virtual python environment

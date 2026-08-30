@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-216.md
+context: >-
+  Four contest solutions concatenate and compare string arrays, greedily construct the smallest string for a numeric value, test a fair array with even and odd prefix/suffix sums, and sort tasks by the gap between required and consumed energy; an incorrect greedy happened to pass during the contest.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-216/en-hero.webp
+    placement: hero
+    alt: Differently cut strips form the same ribbon, bead slots fill from the far end, parity trays rebalance after one removal and task batteries line up by their energy gaps
+    composition: >-
+      Do not use Forest. Create a distinct English four-island workshop. Two differently cut sets of coloured strips concatenate into matching full ribbons. A row of empty bead sockets receives as much amber weight as possible from the far-right end while earlier sockets stay small. Alternating dark and pale stones sit in prefix and suffix trays; removing one stone makes the parity balance compare again. Task batteries show a consumed liquid band and a higher starting gate, then line up by the gap between them; an ill-fitting old key has accidentally opened one lock, while the corrected ordering rig supplies exactly enough initial energy. No people, characters, letters, digits, formulas, code, arrows, readable text, fake UI, logos, brands, trademarks or watermarks.
+    review_status: approved

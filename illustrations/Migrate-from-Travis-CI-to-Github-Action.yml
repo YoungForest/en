@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/Migrate-from-Travis-CI-to-Github-Action.md
+context: >-
+  When free builds stop and the old automatic deployment fails, the author migrates Hexo publishing to GitHub Actions, adjusts theme handling in the workflow and disables the old platform's triggers.
+assets:
+  - id: hero
+    file: source/images/ai/Migrate-from-Travis-CI-to-Github-Action/en-hero.webp
+    placement: hero
+    alt: Static-page crates cross from a dark stalled conveyor into a branching workflow machine that restores paired-site delivery
+    composition: >-
+      Use a pure technical migration metaphor with no Forest. In a distinct composition, a dark old conveyor has stopped beside an empty energy reservoir. Static-page crates cross a compact transfer bridge into a new branching workflow loom; a theme component is refitted at one junction, the old trigger lever is closed, and finished bundles resume toward two blank site beacons. Do not show Travis, GitHub or Actions logos, configuration text, terminals or real UI. No readable or pseudo-readable text, letters, digits, brands, watermark or signature.
+    review_status: approved

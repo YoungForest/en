@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 143
 date: 2019-07-01 10:22:51
+description: Weekly notes on growing candy distributions, zigzag-tree paths, shelf packing and parsing boolean expressions.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2019/07/01/LeetCode-weekly-contest-143/
   en: https://youngforest.github.io/en/2019/07/01/LeetCode-weekly-contest-143/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-143/en-hero.webp" alt="A mechanical workshop distributes growing bead portions, restores a zigzag tree path, prunes shelf layouts and opens nested logic gates" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (5) |	Q2 (5) |	Q3 (8) |	Q4 (8)|
 |--|--|--|--|--|--|--|--|
 | 396 / 4272 |	YoungForest | 14 | 1:01:14 | 0:11:38 | 0:28:38 | 0:56:14 1 | null |

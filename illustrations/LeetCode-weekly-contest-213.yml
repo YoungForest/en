@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-213.md
+context: >-
+  Four completed contest solutions concatenate distinct pieces into a target array, count sorted vowel strings with DP, reserve ladders greedily for the largest climbs, and use combination counts to choose each step of the k-th lexicographic path; the author was satisfied with four stable weeks.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-213/en-hero.webp
+    placement: hero
+    alt: Distinct pieces assemble into a long road, a five-tier bead staircase accumulates combinations, ladders span the tallest roofs and a triangular counter selects a path through a grid
+    composition: >-
+      Do not use Forest. Compose an independent English four-island workshop with a calm sense of completion. Distinctly shaped short track pieces are indexed by their first shape and connect into one target road. Five colours of unmarked beads accumulate down an ordered staircase into trays for longer combinations. Bricks and ladders cross rooftops of unequal height, with ladders saved for the tallest rises and bricks covering smaller steps. A Pascal-like triangular ball counter feeds a branching grid path, comparing the physical piles of remaining routes at each fork to select the target order; all four finish lamps glow without labels. No people, characters, letters, digits, formulas, code, arrows, readable text, fake UI, logos, brands, trademarks or watermarks.
+    review_status: approved

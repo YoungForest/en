@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/gogogo.md
+context: After failing a compiler test and a classroom quiz, the author looks back on two years of complaints and delay, considers graduate recommendation, work, study abroad, and entrepreneurship, and recognizes that his next step must begin with becoming dependable himself.
+assets:
+  - id: hero
+    file: source/images/ai/gogogo/en-hero.webp
+    placement: hero
+    alt: Forest stands at four future paths before dawn, carrying the accumulated stones of past coursework while gathering failed compiler pieces into his own toolbox
+    composition: Place the human Forest character at a campus crossroads as night gives way to dawn. Behind him, timetables, grade weights, and all-night lamps form the accumulated past. Four wordless routes ahead are suggested by a research shelf, an engineering bench, a distant bridge, and an unfinished market stall. Before choosing, he gathers failed compiler pieces into his own toolbox.
+    review_status: approved

@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/Programming-Pearls.md
+context: Revisits a 1986 programming classic and rediscovers simple, durable engineering insight in algorithms, constrained memory, and disks.
+assets:
+  - id: hero
+    file: source/images/ai/Programming-Pearls/en-hero.webp
+    placement: hero
+    alt: Algorithmic pearls travel through a narrow memory gate and a disk maze before forming a clean program chain across old and modern desks
+    composition: Binary search, sorting, data structures, and complexity become pearls that cross early-PC constraints and arrive at a modern workspace.
+    review_status: approved

@@ -1,6 +1,7 @@
 ---
 title: Configuring Google AdSense in Hexo NexT
 date: 2021-02-25 11:17:14
+description: A historical note on adding an ad script to Hexo NexT, verifying the site and configuring ads.txt through two integration paths.
 categories:
 - Tinkering
 tags:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2021/02/25/Google-AdSense-for-hexo-next/
   en: https://youngforest.github.io/en/2021/02/25/Google-AdSense-for-hexo-next/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Google-AdSense-for-hexo-next/en-hero.webp" alt="Forest fits blank ad frames to a small blog workshop while comparing direct wiring with a removable configuration junction" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 ## Motivation
 
 Recently, after watching some videos by "Banfo Xianren", I became more interested in money. Besides taking out part of my savings to invest in A-shares, I also started thinking about how to increase passive income. I have always had the habit of writing a blog. I have been writing for more than five years and have accumulated over a hundred articles. Although daily page views are only in the dozens, even a small fly still has meat. Referring to some experiences from experts, I tried making money by placing ads.

@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-153.md
+context: >-
+  The author records a last contest before moving abroad and the later time-zone constraint, reviewing the shortest direction around a bus loop, mapping a date to a weekday, maximum subarray sum with one deletion, and replacements that make an array strictly increasing.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-153/en-hero.webp
+    placement: hero
+    alt: Forest waits with a blank suitcase among a circular shuttle route, seven-light calendar wheel, one-bead removal track and replacement staircase
+    composition: >-
+      Use the fictional Forest. An independent transit hall combines a two-direction circular shuttle track, a blank seasonal wheel with seven lights, a long bead rail with one removable dark bead, and a staircase that becomes strictly rising after selecting substitutes from a spare rack. A blank suitcase suggests relocation without naming a place. No map labels, readable text, letters, digits, logos, fake UI or watermark.
+    review_status: approved

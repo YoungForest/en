@@ -1,6 +1,7 @@
 ---
 title: Kick Start 2020 Round A
 date: 2020-03-22 14:43:50
+description: "A four-problem contest recap covering greedy house allocation, plate-stack DP, binary search on workout gaps, and trie-based grouping."
 tags:
 - Competitive Programming
 categories:
@@ -18,6 +19,12 @@ Rank 570. Because everyone got 100 points, the final comparison was all about ti
 Let's do Round B next month! April 19, 7 AM.
 
 [Round A problem link](https://codingcompetitions.withgoogle.com/kickstart/round/000000000019ffc7)
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/kick-start-2020-round-A/en-hero.webp" alt="A circular contest workshop packs small houses, selects stacked plates, splits a long track and bundles ribbons deep in a branching tree" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## Allocation
 

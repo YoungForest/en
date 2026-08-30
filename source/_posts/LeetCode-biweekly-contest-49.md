@@ -1,6 +1,7 @@
 ---
 title: LeetCode Biweekly Contest 49
 date: 2021-04-04 19:52:35
+description: Four solutions use board parity, sentence-end matching, reversed-value differences and memoized remainder states, followed by a rejudge correction.
 tags:
 - Competitive Programming
 categories:
@@ -32,6 +33,10 @@ Because of my declining level and my China-site rating being too high, 2400+, I 
 Previously on the China site, I dropped twice in a row and almost fell out of the 2400 club.
 
 I plan to first push my US-site rating to 2400 as well. This way I do not put all my eggs in one basket, and my rating will be more stable.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-biweekly-contest-49/en-hero.webp" alt="Parity gears colour a checkerboard square, blank phrases meet from both ends, mirrored-value differences gather matching tokens and remainder trays feed a corrected memoized batch planner" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
 
 <!-- more -->
 

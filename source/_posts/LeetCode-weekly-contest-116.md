@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 116
 date: 2018-12-26 11:26:03
+description: A split-focus contest revisited through repeated-element sampling, maximum-width ramps, minimum rectangles and compact expressions.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2018/12/26/LeetCode-weekly-contest-116/
   en: https://youngforest.github.io/en/2018/12/26/LeetCode-weekly-contest-116/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-116/en-hero.webp" alt="Forest gathers split focus beside repeated beads, the widest ramp, a rotating minimum rectangle and a compact gear expression" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 It is time for the weekend LeetCode weekly contest again. This time the result was not good. The main reason was that I wanted to solve both the second and third problems, and ended up solving neither. If I had focused all my time on the second problem, I probably could still have ACed it.
 
 ## 961. N-Repeated Element in Size 2N Array

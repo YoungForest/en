@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-147.md
+context: >-
+  A full weekend of three contests leads into notes on a three-term recurrence, a board path with a special final cell, the largest one-bordered square, and memoised dynamic programming for a stone game.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-147/en-hero.webp
+    placement: hero
+    alt: Forest completes a three-stage contest relay with recurrence lanterns, a special-end board path, bordered tiles and stone-game memory drawers
+    composition: >-
+      Use the fictional Forest in a distinct riverside relay scene with three unlabelled stages. At the final bench, three earlier lanterns combine to light the next one; a blank tiled path has one isolated bottom cell that requires careful movement; hollow square frames are compared by their borders; and two players choose front stone piles while small drawers preserve earlier positions. Keep all board cells blank and avoid symbolic equations. No readable text, letters, digits, formulas, logos, fake UI or watermark.
+    review_status: approved

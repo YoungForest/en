@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-133.md
+context: >-
+  After a late start, the author solves three tasks but the stream query times out because the Trie points the wrong way; other topics are distance-ordered matrix cells, two-city scheduling and two non-overlapping subarrays.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-133/en-hero.webp
+    placement: hero
+    alt: Forest reverses a query tree beside distance rings, two-city assignments and two non-overlapping windows
+    composition: >-
+      Use fictional Forest in a distinct transit-map studio, with no depiction of illness. He arrives after the mechanisms have started and physically rotates a branching token tree so a moving stream is queried backward from its newest bead. Nearby, grid tiles radiate from a center in distance layers; generic travelers split evenly toward two abstract amber and teal skylines based on cost-difference scales; and two separate frames slide along one bead track without overlap to maximize their combined weight. No readable text, letters, digits, formulas, city names, logos, brands, real book covers, fake UI or watermark.
+    review_status: approved

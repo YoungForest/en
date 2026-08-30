@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-181.md
+context: >-
+  The contest reviews indexed insertion into a target array, selecting numbers with exactly four divisors, finding a valid path through a street grid, and the longest matching prefix and suffix; the author also records rating fluctuations.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-181/en-hero.webp
+    placement: hero
+    alt: Forest compares road connectors among an insertion rail, four-support cubes, a glowing street grid and a ribbon whose ends overlap
+    composition: >-
+      Use the fictional Forest. A distinct English winding rail surrounds four physical stations: a claw inserts a disk into an empty target slot, exactly one cube glows on four round supports, compatible street tiles form one lit route, and a patterned ribbon overlaps its beginning and end inside a mirror clamp. Forest holds two abstract road connectors. No bubbles, arrows, symbols, readable text, digits, code, logos, fake UI or watermark.
+    review_status: approved

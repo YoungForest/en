@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 132
 date: 2019-04-14 11:55:04
+description: "Four solutions move from an odd-even divisor pattern to ancestor extremes, arithmetic subsequences, and rebuilding a tree from preorder depth."
 tags:
 - Competitive Programming
 categories:
@@ -17,6 +18,12 @@ This contest was not hard, but the code was not easy to implement. It was not ea
 It probably required finishing within about 1 hour to enter the top 200.
 
 For the fourth problem, I spent quite a lot of time debugging because of some boundary conditions. I analyzed why it took so long. It is still because I have not written enough code and am not sensitive enough to boundary conditions for variable updates. For example, when `string::find` does not find a result, how should the other coordinates be updated? I made the mistake that when nothing was found, it returned `npos(-1)`, and `current_find_index` should have been equal to `end`, instead of continuing to add the delimiter length on top of -1.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-132/en-hero.webp" alt="A tree-restoration workshop sorts parity stones, measures ancestor fruit, extends even-spaced beads and raises a folded depth trail into branches" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## 1025. Divisor Game
 

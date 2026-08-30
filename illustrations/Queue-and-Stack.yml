@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/Queue-and-Stack.md
+context: The article moves from FIFO queues and LIFO stacks through array and circular-queue implementations, BFS and DFS, and the idea of implementing each structure with the other.
+assets:
+  - id: hero
+    file: source/images/ai/Queue-and-Stack/en-hero.webp
+    placement: hero
+    alt: Amber tiles enter the rear and leave the front of a serpentine lane while a gripper beside them can reach only the top disc of a sealed stack
+    composition: "Build one restrained physical sorting bench with two adjacent orders: flat tiles travel from rear to front through a waiting lane, while a sealed pedestal exposes only the top of a vertical disc stack to one gripper, communicating FIFO and LIFO without labels or code."
+    review_status: approved

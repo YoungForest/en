@@ -7,13 +7,22 @@ tags:
 - unordered_map
 categories:
 - Programming
+description: Why XOR is a weak way to hash C++ pairs, and a reusable hash_combine template for unordered_map, unordered_set, tuples, and custom types.
 translations:
   zh-CN: https://youngforest.github.io/2020/05/27/best-implement-to-use-pair-as-key-to-std-unordered-map-in-C/
   en: https://youngforest.github.io/en/2020/05/27/best-implement-to-use-pair-as-key-to-std-unordered-map-in-C/
 ---
 Reference: [C++ Standard Library: A tutorial and reference, Second version](https://www.mica.edu.vn/perso/Vu-Hai/EE3490/Ref/The%20C++Standard%20Library%20-%202nd%20Edition.pdf) Chapter 7.9.2: Creating and Controlling unordered Container
 
-All solutions I found in Google use `XOR` to generate hashcode of `pair`, which is totally bad. see [why-is-xor-the-default-way-to-combine-hashes](https://stackoverflow.com/questions/5889238/why-is-xor-the-default-way-to-combine-hashes). However, the book has given us the best solution, using `hash_combine`, which is taken from `Boost`. The solution is much better than XOR when I tested it in Online Judge([Atcoder](https://atcoder.jp/contests/abc168/tasks/abc168_e)). I organized the code as a template as follow. You can copy and paste it as much as you can. And it is convenient to change it to fit any custom struct/class.
+All solutions I found in Google use `XOR` to generate hashcode of `pair`, which is totally bad. see [why-is-xor-the-default-way-to-combine-hashes](https://stackoverflow.com/questions/5889238/why-is-xor-the-default-way-to-combine-hashes).
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/best-implement-to-use-pair-as-key-to-std-unordered-map-in-C/en-hero.webp" alt="A crude crossing chute drops several paired shapes into the same bin while a layered mixing mill distributes other pairs cleanly across separate compartments" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
+However, the book has given us the best solution, using `hash_combine`, which is taken from `Boost`. The solution is much better than XOR when I tested it in Online Judge([Atcoder](https://atcoder.jp/contests/abc168/tasks/abc168_e)). I organized the code as a template as follow. You can copy and paste it as much as you can. And it is convenient to change it to fit any custom struct/class.
 
 ```cpp
 #include <functional>

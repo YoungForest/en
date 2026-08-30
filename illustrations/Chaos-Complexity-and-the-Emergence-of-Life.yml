@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/Chaos-Complexity-and-the-Emergence-of-Life.md
+context: A reflection on chaos, the three-body problem, and the mathematical limits of prediction across the universe, life, and society.
+assets:
+  - id: hero
+    file: source/images/ai/Chaos-Complexity-and-the-Emergence-of-Life/en-hero.webp
+    placement: hero
+    alt: Three celestial bodies follow orderly paths that split into complex branches as an amber butterfly disturbs a clockwork model of the universe
+    composition: Center a tabletop clockwork universe whose neat gears and three orbital paths gradually branch into complex ripples, using a butterfly as the single small disturbance and no formulas or text.
+    review_status: approved

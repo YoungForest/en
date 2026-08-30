@@ -1,6 +1,7 @@
 ---
 title: LeetCode Weekly Contest 254
 date: 2021-08-15 11:40:36
+description: "Four solutions test substrings, alternate high and low values, maximize a non-zero product, and use union-find to reconnect a flooded grid."
 tags:
 - Competitive Programming
 categories:
@@ -16,6 +17,12 @@ translations:
 Without noticing, I had skipped the weekly contest blog for another three weeks. Although I kept participating in weekly contests, after contests I often forgot to summarize and review them. On ordinary days, I also relaxed my problem-solving practice. For daily check-ins, either I let my girlfriend solve them or copied previous submissions. After all, I have already solved 1300+ problems myself, and the problems that appear are often ones I have done before.
 
 The main reason is still that life has become much richer after starting work, and the priority of problem solving and weekly contests has dropped a lot. I skipped multiple biweekly contests too. The temptation of having fun is too strong.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-254/en-hero.webp" alt="Blank pattern strips pass a long tapestry, high and low blocks alternate, paired gears reshape a product and union links reconnect a flooded crossing" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## 1967. Number of Strings That Appear as Substrings in Word
 

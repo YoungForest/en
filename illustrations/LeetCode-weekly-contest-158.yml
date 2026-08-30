@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-158.md
+context: >-
+  The technical review covers splitting a two-symbol string at balanced counts, finding attackers along eight directions, simulating rolls with limits on consecutive equal outcomes, and the longest prefix whose frequencies become equal after one removal.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-158/en-hero.webp
+    placement: hero
+    alt: A wordless machine links balanced colour reservoirs, a radial centre piece, blank-cube repetition control and one bead lifted from frequency groups
+    composition: >-
+      No character. A two-colour ribbon reaches a cutter when paired reservoirs balance, a crown-like centre object is watched along straight rays by abstract tall pieces, a drum releases blank coloured cubes through a repetition spacer, and a claw lifts one bead from unequal groups to make the remaining frequencies equal. No chess markings, letters, text, digits, pips, punctuation, formulas, logos, fake UI or watermark.
+    review_status: approved

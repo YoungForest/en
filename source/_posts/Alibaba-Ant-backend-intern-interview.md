@@ -6,19 +6,26 @@ tags:
 - intern
 categories:
 - interview
+description: "A multi-stage Ant Financial backend internship interview covering data structures, algorithms, written tests, project deep dives, and behavioral questions."
 translations:
   zh-CN: https://youngforest.github.io/2020/03/09/Alibaba-Ant-backend-intern-interview/
   en: https://youngforest.github.io/en/2020/03/09/Alibaba-Ant-backend-intern-interview/
 ---
-# First Interview
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Alibaba-Ant-backend-intern-interview/en-hero.webp" alt="Forest carries algorithm blocks and project tools through four workshop gateways as hash buckets, matrix tiles, and data pipes become progressively deeper and more complex" width="1536" height="864" decoding="async">
+</figure>
+
+<!-- more -->
+
+## First Interview
 
 time: 2020-03-09 16:45:44
 
-## Resume Experience
+### Resume Experience
 
 Introduced each project experience. The interviewer asked questions at any time based on the projects, such as knowledge around RESTful API, SOAP, and so on.
 
-## Computer Science Fundamentals
+### Computer Science Fundamentals
 
 Implementation of HashMap
 
@@ -28,19 +35,19 @@ Implementation of HashMap
 
 Java unboxing and boxing mechanism. At first I did not react and said I did not know. With the interviewer's hint, I finally understood that it was about the relationship between primitive types and object types. Because the materials I had read before were all in English, `box` and `unbox`, I was not very sensitive to the Chinese terms.
 
-## Algorithm Questions
+### Algorithm Questions
 
 The recurrence formula for edit distance.
 
 K-means algorithm. I did not answer it well. I had studied machine learning a long time ago, but because I had put it aside for too long, I had basically forgotten it.
 
-## Questions for the Interviewer
+### Questions for the Interviewer
 
 My question for the interviewer: the position I applied for is backend development. Do I need to review machine learning algorithms?
 
 Answer: this depends on the company's product line. Ant Financial's products are closely related to machine learning. Development does not require deep understanding of machine learning, but it does require basic understanding. If you know it, it is a plus.
 
-# Second Interview
+## Second Interview
 
 time: 2020-03-24 16:20:56
 
@@ -67,7 +74,7 @@ Career planning.
 
 Overall I probably did not answer very well. The interviewer urged me to complete the written test, otherwise he could only ask about the content on my resume. After the written test, someone would contact me again. I was not in a very good state this afternoon and did not perform well. There was no hand-written coding section. Bad review~
 
-# Written Test
+## Written Test
 
 Alibaba has multiple written tests. The one I took was on 3.25.
 
@@ -210,7 +217,7 @@ int main() {
 }
 ```
 
-# Assessment
+## Assessment
 
 The written test did not defeat me, but the assessment took me quite a bit of time.
 
@@ -227,7 +234,7 @@ I heard it is very similar to the civil service exam, the administrative aptitud
 
 They probably would not use the assessment to filter people anyway. This is not the civil service exam. Hand-written coding is the real way.
 
-# Third Interview
+## Third Interview
 
 time: 2020-04-03 11:36:14
 
@@ -249,7 +256,11 @@ I finally asked about the interviewer's team and business.
 
 It was personal credit loan business for overseas markets, similar to Huabei and Jiebei.
 
-# Fourth Interview
+<figure class="editorial-illustration">
+  <img src="/en/images/ai/Alibaba-Ant-backend-intern-interview/en-fourth-round.webp" alt="Forest opens the nested layers of a project model with a magnifying glass while three unfamiliar question weights make an interview without coding feel unexpectedly heavy" width="1536" height="864" loading="lazy" decoding="async">
+</figure>
+
+## Fourth Interview
 
 time: 2020-04-03 15:22:02
 

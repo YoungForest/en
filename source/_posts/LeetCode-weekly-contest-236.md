@@ -1,6 +1,7 @@
 ---
 title: LeetCode Weekly Contest 236
 date: 2021-04-11 16:00:09
+description: "Three solutions determine a product sign, solve a Josephus circle, and use bottom-up DP for minimum side jumps; the fourth is unfinished."
 tags:
 - Competitive Programming
 categories:
@@ -12,6 +13,12 @@ translations:
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (5) |	Q3 (5) |	Q4 (6)|
 |--|--|--|--|--|--|--|--|
 | 1513 / 12115 | YoungForest | 12 | 0:45:18 | 0:02:57 | 0:08:59 | 0:40:18  1 | null |
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-236/en-hero.webp" alt="Directional weights feed a balance, tokens leave a circular carousel, a runner changes lanes around barriers and a fourth bench stays unopened" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## 1822. Sign of the Product of an Array
 
@@ -90,5 +97,4 @@ Time complexity: O(N),
 space complexity: O(1).
 
 ## 1825. Finding MK Average
-
 

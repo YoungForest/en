@@ -1,0 +1,16 @@
+version: editorial-comic-v1
+post: source/_posts/A-Global-History-From-Prehistory-to-the-21st-Century.md
+context: Reconsiders global history through a Western perspective and reflects on how modernization, technology, intellectual freedom, and institutions shape long-term national development.
+assets:
+  - id: hero
+    file: source/images/ai/A-Global-History-From-Prehistory-to-the-21st-Century/en-hero.webp
+    placement: hero
+    alt: A rotating globe passes through a many-sided prism and the same history appears as complementary silhouettes in several viewing windows
+    composition: A museum reading table holds a globe and a perspective prism that opens into several unlabeled archival windows, showing how different viewpoints complete a global history.
+    review_status: approved
+  - id: accelerator-brake
+    file: source/images/ai/A-Global-History-From-Prehistory-to-the-21st-Century/en-accelerator-brake.webp
+    placement: before-accelerator-brake
+    alt: One mechanical linkage presses a giant truck's accelerator and brake at once, grinding a deep trench beneath its wheels
+    composition: An unmarked industrial truck is caught between forward power and institutional resistance, with both pedals driven by the same contradictory mechanism and no national symbols.
+    review_status: approved

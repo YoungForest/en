@@ -1,6 +1,7 @@
 ---
 title: LeetCode Weekly Contest 182
 date: 2020-03-29 12:42:45
+description: Weekly notes on lucky frequencies, rising and falling teams, transit-time design and valid-string counting under practice-group pressure.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2020/03/29/LeetCode-weekly-contest-182/
   en: https://youngforest.github.io/en/2020/03/29/LeetCode-weekly-contest-182/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-182/en-hero.webp" alt="Forest holds a blank amber envelope near matching pebble pedestals, rising and falling trios, underground circles and colour-bead gates" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (4) |	Q3 (5) |	Q4 (8)|
 |--|--|--|--|--|--|--|--|
 | 727 / 11694 |	YoungForest | 12 | 	0:22:50 | 0:03:13 | 0:14:04 |  0:22:50 | null |

@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/shandong-trip.md
+context: >-
+  Returning to Shandong ten years after a childhood visit, the author takes an improvised seven-day route through Laiwu, Mount Tai, Qingdao and Jinan; stairs, sea wind, springs and solo wandering gradually open a low mood toward future possibilities.
+assets:
+  - id: hero
+    file: source/images/ai/shandong-trip/en-hero.webp
+    placement: hero
+    alt: Forest backpacks through mountain steps, a windy coast and spring-fed lakes on a seven-day journey from heaviness to openness
+    composition: >-
+      Use fictional Forest in an independently composed accordion travel panorama. A simple train compartment unfolds into stone mountain steps, a breezy coastal pier and clear spring-fed lakes. Forest carries a plain backpack from a close, shadowed left foreground toward spacious amber morning light on the right, while a small wordless cloud unravels into sea breeze. This is only an emotional journey hero; all factual travel photographs in the article remain untouched and must not be imitated. No map labels, place names, brands, landmark signs, real-person likenesses, copied photos, readable or pseudo-readable text, letters, digits, logos, fake UI, watermark or signature.
+    review_status: approved

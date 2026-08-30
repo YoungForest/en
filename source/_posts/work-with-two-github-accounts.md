@@ -4,6 +4,7 @@ date: 2017-12-12 20:32:52
 tags:
 - Git
 categories:
+description: Using work and personal code-hosting accounts on one computer with separate SSH keys, host aliases, repository remotes, and local Git identity.
 translations:
   zh-CN: https://youngforest.github.io/2017/12/12/work-with-two-github-accounts/
   en: https://youngforest.github.io/en/2017/12/12/work-with-two-github-accounts/
@@ -11,6 +12,10 @@ translations:
 Three months ago, I came to [Oushu Technology](http://www.oushu.io/) for an internship. Both studying and working used the Mac provided by the company. You get what you pay for; the Mac really is much easier to use than the 5000 RMB HP laptop I bought in 2015. So besides work, my study tasks and lab tasks also gradually migrated to the Mac. Now I have encountered a rather tricky problem: how to keep my work GitHub account from conflicting with my personal account while still using both conveniently.
 
 After looking through related materials, I implemented the following solution.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/work-with-two-github-accounts/en-hero.webp" alt="Forest operates a two-lane key switchyard where a default work lane and a repository-specific personal lane reach separate code workshops without colliding" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
 
 <!-- more -->
 Use the company account as the global default, and do nothing special where the company account is needed.

@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/SSD-Single-Shot-MultiBox-Detector-configuration.md
+context: >-
+  The author configures an SSD object-detection project in a CPU-only Ubuntu environment, documenting Python and dependency-path changes plus fixes for missing HDF5, OpenBLAS, and Boost libraries.
+assets:
+  - id: hero
+    file: source/images/ai/SSD-Single-Shot-MultiBox-Detector-configuration/en-hero.webp
+    placement: hero
+    alt: A modest CPU workshop casts several correctly sized frames around passing objects after three misplaced dependency parts are routed into matching sockets
+    composition: >-
+      Use a distinct English technical metaphor without Forest. A compact unbranded CPU-powered optical workshop views several everyday objects on one moving belt; in a single glance it projects multiple clean amber and teal frames of different sizes around them. Below the belt, three mismatched library-shaped mechanical parts are being redirected from dead-end channels into their uniquely matching sockets, allowing the detector to run. Do not depict a literal network diagram or software interface. No real hardware vendor, operating-system logo, code, path, library name, letters, numbers, labels, trademark or watermark.
+    review_status: approved

@@ -1,6 +1,7 @@
 ---
 title: My Dream -- Written in 2013 Before Senior Year of High School
 date: 2013-06-07 10:29:10
+description: "Rereading the dream I wrote at seventeen: ambition, curiosity, and the desire to change the world, seen again ten years later."
 tags:
 - Life
 categories:
@@ -13,6 +14,12 @@ June 7, 2013 was the last day of the Gaokao for the senior students one grade ab
 From that day on, I was the one closest to the Gaokao, although I would not officially enter senior year until September.
 At the time, I was studying at Xiangfen High School in Shanxi Province. I was not yet 17, and I wrote this "My Dream" to state my ambition and encourage myself. Now ten years have passed. In June 2023, while organizing files on my hard drive, I was pleasantly surprised to discover this "document." Looking back, I did not realize my Tsinghua dream back then. After being beaten by society, my ideals, including my literary talent, are far from as excellent as they were then. But the words from that year still move me. I thank my former self.
 I was once a young man.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/My-dream-when-3rd-years-in-high-school/en-hero.webp" alt="Adult Forest unfolds a blank letter recovered from an old drive, where teenage Forest climbs a long starlit stairway toward a distant campus arch" width="1536" height="864" decoding="async">
+</figure>
+
+<!-- more -->
 
 **Main Text Begins**
 

@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 150
 date: 2019-08-19 09:45:53
+description: Weekly notes on character counts, tree-level sums, multi-source distance search and greatest suffixes after a relaxed break.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2019/08/19/LeetCode-weekly-contest-150/
   en: https://youngforest.github.io/en/2019/08/19/LeetCode-weekly-contest-150/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-150/en-hero.webp" alt="Forest winds a practice mechanism beside colour-token blocks, tree-level baskets, expanding island ripples and racing patterned suffix ribbons" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (4) |	Q3 (5) |	Q4 (7)|
 |--|--|--|--|--|--|--|--|
 | 476 / 5091 |	YoungForest | 	19	 | 	1:31:13 | 0:03:52  | 0:09:23 | 1:16:13  2 |  0:50:16  1 |

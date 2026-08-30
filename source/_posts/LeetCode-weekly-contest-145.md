@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 145
 date: 2019-07-15 15:08:44
+description: Weekly notes on relative sorting, deepest-leaf ancestry, longest well-performing intervals and the smallest sufficient team.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2019/07/15/LeetCode-weekly-contest-145/
   en: https://youngforest.github.io/en/2019/07/15/LeetCode-weekly-contest-145/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-145/en-hero.webp" alt="Forest orders beads by a custom rail, traces deepest leaves, balances work tokens and selects the smallest complete tool team" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (5) |	Q2 (5) |	Q3 (8) |	Q4 (8)|
 |--|--|--|--|--|--|--|--|
 | 451 / 4931 |	YoungForest | 16 | 1:24:26 | 0:09:37 | 0:17:39 | 1:14:26 2 | null |

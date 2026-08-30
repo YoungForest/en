@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/My-dream-when-3rd-years-in-high-school.md
+context: Ten years later, an adult rereads the dream written at seventeen and rediscovers the younger self's curiosity, ambition, and determination beyond an unrealized university goal.
+assets:
+  - id: hero
+    file: source/images/ai/My-dream-when-3rd-years-in-high-school/en-hero.webp
+    placement: hero
+    alt: Adult Forest unfolds a blank letter recovered from an old drive, where teenage Forest climbs a long starlit stairway toward a distant campus arch
+    composition: Layer adult Forest discovering an old letter in the foreground with teenage Forest climbing a long staircase inside the paper, using a fictional campus arch with no names, logos, or readable writing.
+    review_status: approved

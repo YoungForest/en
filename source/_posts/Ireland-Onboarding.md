@@ -6,11 +6,18 @@ tags:
 - Life
 categories:
 - Ireland
+description: Practical lessons from getting an Irish SIM card after arrival, comparing airport, local-shop, and online routes and the pitfalls I hit.
 translations:
   zh-CN: https://youngforest.github.io/2022/11/11/Ireland-Onboarding/
   en: https://youngforest.github.io/en/2022/11/11/Ireland-Onboarding/
 ---
 It has been two weeks since I successfully moved to Ireland. Because I have been busy handling all kinds of things since arriving, life has slowly begun to get on track. Starting today, I will gradually share some guides for the early stage of working or studying in Ireland. On one hand, I have stepped into many pits myself; on the other hand, now I have finally succeeded at some things, so I have a bit of experience that can help everyone.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Ireland-Onboarding/en-hero.webp" alt="Forest stands with luggage and an envelope at a rainy three-way junction leading to an airport counter, a local shop, and a home mailbox" width="1536" height="864" decoding="async">
+</figure>
+
+<!-- more -->
 
 ![Irish flag](/images/ireland-flag.png)
 

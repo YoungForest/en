@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-141.md
+context: >-
+  Despite two imminent exams, the author makes time for a contest covering in-place zero duplication, greedy value selection under label limits, a shortest path through a binary grid, and shortest common supersequence construction.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-141/en-hero.webp
+    placement: hero
+    alt: Forest studies beside blank exam binders while duplicating hollow beads, limiting labelled weights, crossing a grid and weaving two sequences
+    composition: >-
+      Use fictional Forest in a distinct late-evening library nook. Two unmarked study binders and a nearly empty hourglass suggest exam week. Across the contest table he works backward along a fixed-length rail duplicating hollow beads; selects heavy tokens while respecting colour-group limits; traces the shortest route through a blocked square grid; and first finds the shared spine of two patterned ribbons before weaving their remaining pieces into one shortest ribbon. No readable text, letters, digits, formulas, logos, brands, fake UI or watermark.
+    review_status: approved

@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/my-britain-trip.md
+context: A first trip abroad becomes a two-week British exchange through university classes, travel, and cultural observation, strengthening the wish to study overseas and making the road ahead feel less solitary.
+assets:
+  - id: hero
+    file: source/images/ai/my-britain-trip/en-hero.webp
+    placement: hero
+    alt: Forest carries a suitcase onto his first overseas journey as a paper-map road links an airport, a classroom, a college courtyard, grey hills, and new friends waiting ahead
+    composition: Place the human young man Forest at the edge of an airport stepping onto an unfolded paper-map road, passing an unbranded classroom, college courtyard, cloudy hills, and distant friends to suggest exchange and growth while leaving the article's real travel photograph untouched.
+    review_status: approved

@@ -1,6 +1,7 @@
 ---
 title: LeetCode Biweekly Contest 39
 date: 2020-11-15 09:56:39
+description: A biweekly review covers circular arrays, split points, bounded BFS and subset DP; the last two were solved correctly only after contest timeouts.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2020/11/15/LeetCode-biweekly-contest-39/
   en: https://youngforest.github.io/en/2020/11/15/LeetCode-biweekly-contest-39/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-biweekly-contest-39/en-hero.webp" alt="A circular safety box gathers nearby beads, a cutter balances a two-colour strand, a jumper avoids blocked stones and a lean subset cabinet replaces an overgrown search tree" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (4) |	Q3 (5) |	Q4 (6)|
 |--|--|--|--|--|--|--|--|
 | 688 / 6047 | YoungForest | 7 | 0:16:02 | 0:03:44 | 0:11:02  1 |  null |  0:41:26 |

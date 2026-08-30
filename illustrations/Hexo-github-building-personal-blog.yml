@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/Hexo-github-building-personal-blog.md
+context: Moving from rarely writing and quickly forgetting past experiments to building a durable record with Hexo and GitHub Pages, the article explains both the motivation and the first setup and deployment.
+assets:
+  - id: hero
+    file: source/images/ai/Hexo-github-building-personal-blog/en-hero.webp
+    placement: hero
+    alt: Forest binds scattered technical notes into pages that form a small bridge toward an orderly public bookshelf
+    composition: Show Forest at a spare workbench binding curled, scattered technical notes into a continuous set of pages. The pages form a small bridge toward a tidy open bookshelf, turning forgotten experiments into a durable public record. Include no computer interface, platform mark, or readable writing.
+    review_status: approved

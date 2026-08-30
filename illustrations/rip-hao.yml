@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/rip-hao.md
+context: >-
+  The author mourns a programmer whose blog and problem-solving community helped him, then reflects on that lasting influence, overwork, sudden-death risk, and valuing life.
+assets:
+  - id: hero
+    file: source/images/ai/rip-hao/en-hero.webp
+    placement: hero
+    alt: An empty workshop chair at dawn faces a closed blank notebook while a trail of small learning tools continues toward younger desks in the light
+    composition: >-
+      Use a distinct English composition and a restrained, respectful abstract memorial: an empty workshop chair at dawn, a closed blank notebook, an unlit desk lamp, and a trail of small neutral learning tools passed forward toward several distant sunlit desks. Suggest enduring influence without depicting any person. No portrait, gravestone, religious symbol, melodrama, code, screen content, readable text, brands, or logos.
+    review_status: approved

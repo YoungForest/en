@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/bashang-grassland.md
+context: >-
+  During a cold National Day holiday, the author joins a group tour to Fengning's Bashang Grassland and is swept into a four-hour first horseback ride, mixing dramatic autumn scenery with biting wind, physical soreness, extra cost, and dry humour. The existing riding photograph remains factual evidence.
+assets:
+  - id: hero
+    file: source/images/ai/bashang-grassland/en-hero.webp
+    placement: hero
+    alt: Forest clings to a tall horse on a looping cold-weather grassland trail while birches, snowy hills and a tiny campfire mark the long ride
+    composition: >-
+      Use fictional Forest, never a portrait: short dark hair, round glasses, a thick unbranded charcoal down jacket with a muted-teal collar. Create a distinct English composition from a high three-quarter view: an absurdly long looping horse trail fills the grassland like a loose ribbon, with the large but friendly horse and increasingly stiff Forest appearing at two moments along the route. White birches, distant wind turbines, a snow-dusted ridge and a tiny evening campfire create the seasonal setting. Keep the bodily comedy gentle and readable on a phone. Do not copy the article photo or show any brand, tour-company mark, readable text, number, logo, trademark or watermark.
+    review_status: approved

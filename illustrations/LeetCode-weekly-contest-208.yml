@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-208.md
+context: >-
+  After three months crowded by a paper, academic milestones, an internship and recruiting, the author returns to weekly writeups with an ideal offer settled; the contest uses level counting, direct wheel simulation, preorder traversal and subset balancing while noting a late start and confusing statements.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-208/en-hero.webp
+    placement: hero
+    alt: Forest uncovers a dormant contest workshop beside thesis and internship props as folder steps, a wheel, a family tree and balanced buildings restart
+    composition: >-
+      Use fictional Forest in a distinct English-language university flat, with short dark hair, round glasses, charcoal overshirt and muted-teal T-shirt. Forest pulls a dust cover from a four-island contest workshop after a long pause; unmarked manuscript sheets, a graduation cap and a plain tool case imply paper, school and internship without brands. The large physical islands are a folder staircase, an unbranded slowly indexed observation wheel, an orderly branching family-tree sculpture, and miniature office blocks whose incoming and outgoing bead channels balance. A late unnumbered clock hints at arriving twenty-five minutes late. No readable text, letters, digits, formulas, code, arrows, logos, trademarks, branded objects, fake UI or watermark.
+    review_status: approved

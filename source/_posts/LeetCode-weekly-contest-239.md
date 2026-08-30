@@ -1,6 +1,7 @@
 ---
 title: LeetCode Weekly Contest 239
 date: 2021-05-02 11:47:52
+description: "Four solutions scan a nearest target, backtrack a descending split, combine next permutation with greedy swaps, and match shortest intervals offline."
 tags:
 - Competitive Programming
 categories:
@@ -16,6 +17,10 @@ translations:
 I have been exempt from check-ins for three consecutive weeks, and last night's biweekly contest also went pretty well as a hand-speed contest.
 
 The recent weekly contests have indeed become somewhat easier. It seems I am still more suited to easy problems. Hard+ problems are still not quite my thing.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-239/en-hero.webp" alt="A measuring trolley finds the nearest target, a strip splits into descending steps, beads swap toward a chosen permutation and short arches claim query pegs first" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
 
 <!-- more -->
 

@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-139.md
+context: >-
+  The author joins forty minutes late, solves the first two tasks and finishes the third afterwards, covering common string periods, complementary matrix rows, negabinary addition and target-sum submatrices.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-139/en-hero.webp
+    placement: hero
+    alt: A late Forest reaches four puzzle stations for periodic ropes, flipped grids, negative carries and target rectangles
+    composition: >-
+      Use fictional Forest in a distinct Sunday-morning studio, hurrying in from an unmade bed past a plain clock face without marks. Four physical stations show the ideas: one small repeating amber-teal rope unit builds two longer ropes; whole columns of a black-and-warm-grey tile board flip to align rows; beads carry alternately upward and downward across a balanced negative-base mechanism; and a sliding frame searches a weighted grid for a target rectangle. No readable text, letters, digits, formulas, logos, brands, fake UI or watermark.
+    review_status: approved

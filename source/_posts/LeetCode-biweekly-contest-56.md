@@ -1,6 +1,7 @@
 ---
 title: LeetCode biweekly contest 56
 date: 2021-07-12 18:20:27
+description: "Four solutions enumerate square-sum triples, use breadth-first search for the nearest exit, play a two-half sum game, and minimize cost under a time limit."
 tags:
 - Competitive Programming
 categories:
@@ -14,6 +15,12 @@ translations:
 | 998 / 10896 | YoungForest | 18 | 	1:27:14 | 0:02:33 | 0:13:25 |  1:17:14  🐞2 | null |
 
 The number of participants in biweekly contests has almost caught up with weekly contests.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-biweekly-contest-56/en-hero.webp" alt="Square tiles form a right triangle, maze waves reach the nearest exit, blank counters balance two halves and timed routes compare costs" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## 1925. Count Square Sum Triples
 

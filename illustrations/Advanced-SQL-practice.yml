@@ -1,0 +1,16 @@
+version: editorial-comic-v1
+post: source/_posts/Advanced-SQL-practice.md
+context: Complex Hive SQL exposed gaps in the author's knowledge during an internship. With a mentor's guidance, he learned to test small queries from the inside out, then revisited joins and partitions to answer questions he had once missed.
+assets:
+  - id: hero
+    file: source/images/ai/Advanced-SQL-practice/en-hero.webp
+    placement: hero
+    alt: Forest faces a tangled data-processing machine while a mentor demonstrates inside-out validation with a stack of small transparent trays
+    composition: In a distinct data warehouse workshop, Forest faces a large query machine tangled with blank data tiles and pipes. A mentor demonstrates small tests and inside-out validation using nested transparent trays. Preserve Forest's short dark hair, round glasses, charcoal overshirt, and muted-teal T-shirt; do not show code or an interface.
+    review_status: approved
+  - id: joins-partitions
+    file: source/images/ai/Advanced-SQL-practice/en-joins-partitions.webp
+    placement: before-interview-answers
+    alt: Three sets of transparent data trays overlap in different ways while a partition cabinet sorts a large stream of records into searchable drawers
+    composition: Use physical teaching objects in a different arrangement from the Chinese scene. Three sets of transparent trays holding blank data pieces show full overlap, a retained left edge, and a retained right edge. Beside them, a large compartment cabinet sorts a stream of pieces into tidy drawers. No labels, code, arrows with text, or interface.
+    review_status: approved

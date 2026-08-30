@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/Genome-The-autobiography-of-a-species-in-23-chapters.md
+context: Genes and behavior influence each other in a causal loop, raising questions about determinism, environment, free will, and unpredictable outcomes.
+assets:
+  - id: hero
+    file: source/images/ai/Genome-The-autobiography-of-a-species-in-23-chapters/en-hero.webp
+    placement: hero
+    alt: A DNA double helix passes through footprints, environmental gears, and an open branching gate before looping back into itself
+    composition: Build one continuous physical helix through behavioral footprints, adjustable environmental gears, and an open forked gate, then return it to the helix to show feedback rather than one-way fate.
+    review_status: approved

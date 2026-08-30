@@ -1,6 +1,7 @@
 ---
 title: LeetCode Weekly Contest 184
 date: 2020-04-12 20:04:46
+description: A weekly review of substring matching, move-to-front permutations, trie-based entity parsing and three-column colouring DP, with notes on tool choice.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2020/04/12/LeetCode-weekly-contest-184/
   en: https://youngforest.github.io/en/2020/04/12/LeetCode-weekly-contest-184/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-184/en-hero.webp" alt="Forest walks past nested picture cards, a move-to-front token rail, an oversized trie machine and falling three-column colour tiles" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (4) |	Q2 (4) |	Q3 (6) |	Q4 (7)|
 |--|--|--|--|--|--|--|--|
 | 589 / 9816 |	YoungForest | 19 | 0:55:30 | 0:07:04 |  0:15:05 | 0:37:18  1 | 0:50:30 |

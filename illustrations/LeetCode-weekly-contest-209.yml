@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-209.md
+context: >-
+  Contest solutions enumerate a value whose count of greater-or-equal elements matches it, validate parity and monotonic order level by level in a binary tree, use a duplicated circular angular window for maximum visible points, and recursively decompose minimum one-bit operations; the fourth was learned after the contest from an explanation.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-209/en-hero.webp
+    placement: hero
+    alt: One threshold step matches the stones above it, alternating tree levels order dark and pale fruit, a circular viewing sector covers the most points and a folded bit machine opens after the contest
+    composition: >-
+      Do not use Forest. Create a distinct English static four-island workshop. Sorted stones occupy threshold steps, and only one step has a physical height matching the number of stones at or above it. A binary tree alternates dark and pale fruit by level, with fruit sizes monotone in opposite directions across adjacent levels. Scattered pebbles repeat around a circular rim and one transparent viewing sector covers the largest cluster while coincident pebbles sit at the centre. A dark-and-light bit-tile mechanism appears first behind a closed contest cabinet and then as a separate post-contest recursive mirror staircase learned from a careful explanation. No people, characters, letters, digits, formulas, code, arrows, arrowheads, chevrons, dashed direction paths, readable text, fake UI, logos, brands, trademarks or watermarks.
+    review_status: approved

@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 130
 date: 2019-03-31 12:43:43
+description: Routine contest notes on binary-prefix remainders, base negative two, next-greater linked nodes and boundary-first enclave search.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2019/03/31/LeetCode-weekly-contest-130/
   en: https://youngforest.github.io/en/2019/03/31/LeetCode-weekly-contest-130/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-130/en-hero.webp" alt="Forest reaches a steeper practice path with a remainder carousel, negative-base balance, monotonic bead chain and boundary flood" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (4) |	Q2 (5) |	Q3 (5) |	Q4 (5)|
 |--|--|--|--|--|--|--|--|
 |258 / 5236|	YoungForest |	19|	0:57:19 |	0:06:23 |	0:25:41 |	0:36:25	|0:52:19(1) |

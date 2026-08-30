@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 134
 date: 2019-04-28 20:32:34
+description: Corner-case contest notes on moving stones, coloring a border, longest common subsequences and escaping a maze by bounding blockers.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2019/04/28/LeetCode-weekly-contest-134/
   en: https://youngforest.github.io/en/2019/04/28/LeetCode-weekly-contest-134/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-134/en-hero.webp" alt="Forest repairs corner-case gears beside consecutive stones, a colored border, uncrossed pairings and a bounded maze escape" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (4) |	Q2 (5) |	Q3 (5) |	Q4 (5)|
 |--|--|--|--|--|--|--|--|
 |220 / 4136	|	YoungForest |	17 | 		1:45:10 | 0:14:52 (1) | 0:33:50(1) |	null | 1:25:10 (2) |

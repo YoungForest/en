@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-249.md
+context: >-
+  Four solutions concatenate arrays, count length-three palindromes, colour grids with DP, and merge valid binary search trees.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-249/en-hero.webp
+    placement: hero
+    alt: A greenhouse line duplicates a tile ribbon, sorts mirrored bead triplets, weaves a three-colour grid and grafts saplings into one valid tree
+    composition: >-
+      Do not use Forest. Make a distinct English greenhouse assembly line. A short ribbon of plain geometric tiles passes through a copying roller and rejoins its duplicate end to end. Nearby, trays collect unique three-bead garlands whose outer beads match around varied centres. A compact mosaic loom advances column by column using exactly three restrained colours without matching neighbours. At the exit, several tiny binary-tree saplings are grafted root-to-leaf into one balanced orchard specimen, with branches visibly ordered by size. No characters, letters, digits, code, formulas, readable text, rankings, logo, trademark or watermark.
+    review_status: approved

@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/codeforces-round-633-Div2.md
+context: >-
+  Three solutions simplify diamond-belt states, reorder sorted values from the middle outward, and use doubling power to repair a nondecreasing array.
+assets:
+  - id: hero
+    file: source/images/ai/codeforces-round-633-Div2/en-hero.webp
+    placement: hero
+    alt: A jewel workshop links two diamond states, alternates sorted pillars from the centre and raises gaps with doubling lifts
+    composition: >-
+      Do not use Forest. Create a distinct English jewel workshop in three clear bays. Interlocking diamond-shaped wooden frames alternate between only two orientations and form a simple belt. Sorted stone pillars stand on a semicircular rack while a mechanical picker begins at the centre and alternates outward to create a smooth sequence. In the last bay, telescoping lifts double their reach step by step beneath any pillar lower than the historical maximum until the largest gap is covered. No people, characters, letters, digits, code, formulas, readable text, contest branding, logo, trademark or watermark.
+    review_status: approved

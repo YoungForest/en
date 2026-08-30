@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/kick-start-2020-round-C.md
+context: >-
+  Four algorithm solutions identify a descending pattern, build a stable wall from dependencies, find square-valued subarrays with prefix sums, and maintain alternating weighted candy queries with two segment trees.
+assets:
+  - id: hero
+    file: source/images/ai/kick-start-2020-round-C/en-hero.webp
+    placement: hero
+    alt: An overhead wooden puzzle case contains descending blank blocks, a dependency wall, square-making beads and two branching balances for alternating candies
+    composition: >-
+      Do not use Forest. Create a distinct English composition from directly overhead: a wooden case has four spacious compartments. A descending run of blank blocks crosses the first; an invented wall in the second is assembled only after its supporting colours are in place; a ribbon of prefix beads in the third snaps selected consecutive groups into solid square tiles; two branching balance mechanisms in the fourth combine alternating unbranded candies while one piece can be replaced. A single muted-teal groove links the compartments and amber marks only the active solution. No digit, letter, formula, code, scoreboard, contest/company identity, readable text, brand, logo, trademark or watermark.
+    review_status: approved

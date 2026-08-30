@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 176
 date: 2020-02-16 12:07:55
+description: A weekly review of sorted-matrix counting, rolling products, greedy event scheduling and reverse construction under last-minute pressure.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2020/02/16/LeetCode-weekly-contest-176/
   en: https://youngforest.github.io/en/2020/02/16/LeetCode-weekly-contest-176/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-176/en-hero.webp" alt="Forest races across a sorted checkerboard, reset gear chain, greedy flag scheduler and crane dismantling a target block pyramid" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (5) |	Q3 (5) |	Q4 (6)|
 |--|--|--|--|--|--|--|--|
 | 306 / 8105 |	YoungForest | 	19 | 	1:36:07 | 0:02:47 | 0:23:09 | 0:54:53  1 | 1:26:07  1 |

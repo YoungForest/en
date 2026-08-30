@@ -1,6 +1,7 @@
 ---
 title: kick start 2019 round B
 date: 2019-07-24 11:04:30
+description: "A post-contest write-up on palindrome frequency checks, greedy ordering inside an energy-stone knapsack, and segment trees over gift events."
 tags:
 - Competitive Programming
 categories:
@@ -11,6 +12,12 @@ translations:
 ---
 A post-contest write-up.
 [Problem link](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000050eda)
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/kick-start-2019-round-B/en-hero.webp" alt="A tactile puzzle bench balances mirrored tokens, fading energy stones and a branching machine that catches the highest gift wave" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## Building Palindromes
 

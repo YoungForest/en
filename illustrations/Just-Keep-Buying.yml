@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/Just-Keep-Buying.md
+context: Uses evidence to reconsider market timing, individual stocks, housing, luck, and time, emphasizing steady diversified investing and long-term accumulation.
+assets:
+  - id: hero
+    file: source/images/ai/Just-Keep-Buying/en-hero.webp
+    placement: hero
+    alt: Unmarked tokens arrive at regular intervals into a broad diversified basket while a young tree grows steadily through changing seasons
+    composition: A quiet mechanical rhythm feeds plain tokens into a wide basket and a growing tree across four seasons, showing consistency and time rather than market timing.
+    review_status: approved

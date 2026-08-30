@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/Beligum.md
+context: >-
+  The author looks back on a five-month exchange in Belgium: feeling safe in a lively university city, adapting to slow rainy routines, studying in long English-taught classes, and travelling more widely across Europe. Existing photographs remain factual records.
+assets:
+  - id: hero
+    file: source/images/ai/Beligum/en-hero.webp
+    placement: hero
+    alt: Forest crosses a compact exchange-year station where city life, rainy routines, a hilltop classroom, and onward travel meet on one journey
+    composition: >-
+      Use fictional Forest, never a portrait: short dark hair, round glasses, charcoal overshirt and muted-teal T-shirt. Create a distinct English composition inside a whimsical compact railway station with four connected platforms rather than panels. One platform opens onto a safe youthful street where an unbranded bus yields; one has rain outside, early-closing shutters and a warm apartment lamp; a steep little funicular climbs to a hilltop classroom with a blank hourglass; the final track points to a broad travel horizon as Forest carries a simple backpack. Keep the scene clear at phone size. No real landmark, flag, map label, price, school or transport brand, readable text, number, logo, trademark or watermark.
+    review_status: approved

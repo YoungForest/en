@@ -1,6 +1,7 @@
 ---
 title: LeetCode biweekly contest 19
 date: 2020-02-10 11:30:20
+description: A biweekly review of reduction to zero, sliding windows, clock angles and same-value jump paths, plus competing from home while rusty.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2020/02/10/LeetCode-biweekly-contest-19/
   en: https://youngforest.github.io/en/2020/02/10/LeetCode-biweekly-contest-19/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-biweekly-contest-19/en-hero.webp" alt="Forest watches a halving staircase, grocery sliding scale, blank clock hands and a runner using coloured island portals" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (4) |	Q3 (5) |	Q4 (6)|
 |--|--|--|--|--|--|--|--|
 | 179 / 3745 |	YoungForest | 18 | 0:41:10 | 0:02:39 | 0:10:36 |  0:12:53  | 0:36:10 1 |

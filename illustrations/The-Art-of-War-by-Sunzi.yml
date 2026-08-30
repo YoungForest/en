@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/The-Art-of-War-by-Sunzi.md
+context: Winning before fighting, knowing oneself, and planning before acting become practical habits of calculation, patience, and choosing decisive moments.
+assets:
+  - id: hero
+    file: source/images/ai/The-Art-of-War-by-Sunzi/en-hero.webp
+    placement: hero
+    alt: An amber game piece pauses before crossing a battle line to consult a balance scale, a mirror, and an hourglass as a safer route opens ahead
+    composition: Use a top-down abstract strategy board where one piece passes cost, self-knowledge, and patience checkpoints before moving, with no literal battlefield, historical figure, or book cover.
+    review_status: approved

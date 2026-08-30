@@ -1,6 +1,7 @@
 ---
 title: 2020 Year-End Summary and 2021 New Year Outlook
 date: 2020-11-25 20:28:16
+description: "A review of thesis work, remote internship, job hunting, coding practice, and delayed graduation in 2020, followed by goals for 2021."
 tags:
   - life
   - year-end summary
@@ -15,6 +16,12 @@ Reposted from [my blog](https://youngforest.github.io/en/2020/11/25/2020-summary
 This year-end summary is a bit early; December has not even arrived yet. But since I just submitted the plagiarism check for my master's thesis today, even though there are still many things to do, I have no mood to work at all. I might as well use this restless mood to write a first draft of my year-end summary. I do not know whether the mood will affect it.
 
 From the very beginning, 2020 was destined to be an extraordinary year. Before, I had only foreseen that because I was going to graduate, it would be extraordinary for me. I did not expect a pandemic sweeping the world to make it a challenging year for everyone.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/2020-summary-and-2021-resolutions/en-hero.webp" alt="Forest protects a thesis, remote-work laptop, and coding staircase as a black swan storm suddenly diverts the road ahead" width="1536" height="864" decoding="async">
+</figure>
+
+<!-- more -->
 
 ## 2020 Work Review
 
@@ -38,6 +45,10 @@ I originally thought I was about to escape the sea of bitterness, but unexpected
 Exercise, as in previous years, made no progress. I still look thin with clothes on and have no muscle with clothes off. My wisdom teeth also could not be handled because of the pandemic, schoolwork, and internship being too busy.
 
 Overall, although this year was full of black swans and bumps, and although it did not perfectly meet expectations, I am still very satisfied overall. Give myself a thumbs-up. Keep going!
+
+<figure class="editorial-illustration">
+  <img src="/en/images/ai/2020-summary-and-2021-resolutions/en-2021-outlook.webp" alt="Forest tends five seedlings representing graduation, professional skills, work, dental health, and a sustainable coding habit" width="1536" height="864" loading="lazy" decoding="async">
+</figure>
 
 ## Longing for a Good Life in 2021
 

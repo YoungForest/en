@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/Lunch-IPython-from-differnt-conda-env.md
+context: >-
+  The post registers an IPython kernel inside a separate Conda environment and launches the intended session by selecting that kernel, while also using package mirrors to make dependency installation faster.
+assets:
+  - id: hero
+    file: source/images/ai/Lunch-IPython-from-differnt-conda-env/en-hero.webp
+    placement: hero
+    alt: A shared notebook desk selects one sealed environment capsule through its matching kernel key while the other capsules remain isolated
+    composition: >-
+      Use a distinct English technical metaphor without Forest. A shared blank notebook desk faces three sealed glass environment capsules, each containing a different abstract tool set and each with a unique socket. A small kernel-shaped key is installed in one capsule; a single muted-teal cable from the desk matches that key and illuminates only the selected capsule, leaving the others safely isolated. A calm shortcut supply canal brings generic dependency crates from a nearby depot, suggesting a faster mirror. No real software logo, snake motif, notebook UI, code, environment name, command, letter, number, label, trademark or watermark.
+    review_status: approved

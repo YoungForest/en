@@ -1,0 +1,19 @@
+version: editorial-comic-v1
+post: source/_posts/pkg-config.md
+context: >-
+  Starting from discovering pc files while installing a test library, the article explains how pkg-config records headers, library locations, compiler options, and dependency relationships for compilation and linking.
+assets:
+  - id: hero
+    file: source/images/ai/pkg-config/en-hero.webp
+    placement: hero
+    alt: A small build cart follows blank catalogue cards through a rail junction to the correct header crates, library vault, and linking gate
+    composition: >-
+      Use a distinct overhead railway junction. A small build cart arrives with an empty basket while blank catalogue cards route it to a header-crate platform, a library vault, and finally a linking gate. The surrounding component tracks are complex but the metadata route is simple and visible. No code, commands, letters, logos, branded library names, or fake interface.
+    review_status: approved
+  - id: public-private
+    file: source/images/ai/pkg-config/en-public-private.webp
+    placement: inline-before-important-metadata-fields
+    alt: A library stage exposes only the components used by visitors while private gears and support machinery remain connected backstage
+    composition: >-
+      Use a theatre cutaway to distinguish exposed and private dependencies. The audience-facing stage presents only the components visitors actually touch, while gears and support machinery needed internally remain connected backstage. A build cart links to the visible pieces without hauling the whole backstage system away. No labels, text, letters, code, logos, or UI.
+    review_status: approved

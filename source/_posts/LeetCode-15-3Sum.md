@@ -4,10 +4,15 @@ date: 2018-10-25 23:54:23
 tags:
 - LeetCode
 categories:
+description: Classic 3Sum revisited from an interview hash approach and timeout to sorting, two pointers and duplicate skipping.
 translations:
   zh-CN: https://youngforest.github.io/2018/10/25/LeetCode-15-3Sum/
   en: https://youngforest.github.io/en/2018/10/25/LeetCode-15-3Sum/
 ---
+<figure class="editorial-illustration editorial-illustration--hero"><img src="/en/images/ai/LeetCode-15-3Sum/en-hero.webp" width="1536" height="864" alt="Forest moves inward from both ends of a sorted bead rail to find unique triples that balance a central scale" decoding="async" fetchpriority="high"></figure>
+
+<!-- more -->
+
 I happened to encounter this classic problem during my interview at JingChi. It was asked by Eric in the second round. I had not done this problem before, but I had done the related 2Sum problem, after all it is the first LeetCode problem and probably many people have done it. Also, when *Algorithms, Fourth Edition* discusses algorithm complexity, it uses the same kind of problem, though the details may differ, such as requiring no duplicate triplets in the result. I still had some impression of it at the time. I smoothly wrote an O(n^2) time-complexity solution, although afterward I found small bugs, such as list `sort` being in-place. But it did not really matter.
 Today I organized the solution from the interview, submitted it, and unexpectedly got Time Limit Exceeded.
 

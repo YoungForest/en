@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/kaggle-titanic-tutorial.md
+context: A hands-on Titanic beginner competition becomes a guide to framing the problem, understanding data, filling gaps, engineering features, comparing models, validating results, and submitting correctly.
+assets:
+  - id: hero
+    file: source/images/ai/kaggle-titanic-tutorial/en-hero.webp
+    placement: hero
+    alt: Mixed passenger clues enter a data workshop and pass through gap repair, feature drawers, competing model machines, a validation scale, and a final submission envelope
+    composition: Render the workflow as one wordless physical data workshop. Generic luggage, ticket shapes, cabin blocks, and life rings stand for raw passenger clues, then move through missing-piece repair, feature drawers, several model machines, a validation balance, and a sealed blank envelope. Do not recreate the real disaster or an identifiable ship.
+    review_status: approved

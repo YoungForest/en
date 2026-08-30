@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/investment-2023.md
+context: The personal investment story continues through quantitative easing, inflation, and rapid rate hikes until five years of learning finally move the result above water.
+assets:
+  - id: hero
+    file: source/images/ai/investment-2023/en-hero.webp
+    placement: hero
+    alt: Forest carries several low baskets across a five-ring bridge through flood, heat, and headwind as an amber seedling finally rises above the water
+    composition: Continue the long-horizon path metaphor from part one, using a five-ring bridge and changing weather for the macro environment, ending with a modest seedling just above water rather than a victory celebration.
+    review_status: approved

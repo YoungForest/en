@@ -5,11 +5,19 @@ tags:
 - life
 categories:
 - Diary
+description: A reflective note on turning 23 away from home, Beijing life, family warmth, study progress, interview lessons, and goals for the rest of 2019.
 translations:
   zh-CN: https://youngforest.github.io/2019/07/15/Happy-birthday-2019/
   en: https://youngforest.github.io/en/2019/07/15/Happy-birthday-2019/
 ---
 This year I still spent my 23rd birthday at school. In the afternoon, I went out with my roommates to watch the movie *The Lion King*. In the evening, we went to Chengnan Jiushi and ate "Beijing cuisine." I suppose that counts as celebrating my birthday. Happy birthday to me.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Happy-birthday-2019/en-hero.webp" alt="Forest sits at a dorm-room table with a blank small cake while a thin thread links the hot city outside to a distant warm home light" width="1536" height="864" decoding="async">
+</figure>
+
+<!-- more -->
+
 Since I left home at 18 and came alone to the capital to study, birthdays have no longer been as lively and warm as they were at home. Drifting away from home, even though classmates or friends still wish you happy birthday, and closer friends may accompany me to celebrate, the warmth of family is gone. People come and go, and those around you can basically only accompany you for a period of time. At moments like this, I always miss childhood.
 
 Beijing has been especially hot recently, and I cannot help feeling irritable. I keep drifting through life most of the time, then occasionally become full of ambition. I often think about so-called meaning of life, the value of effort, and my own goals.

@@ -1,6 +1,7 @@
 ---
 title: The Gains and Losses of Economic Changes in the Past Dynasties
 date: 2024-01-29 23:28:06
+description: "Notes on recurring economic reforms in Chinese history and the tension among state power, private markets, institutions, and lasting prosperity."
 tags:
 - Reading
 - The Gains and Losses of Economic Changes in the Past Dynasties
@@ -12,9 +13,15 @@ translations:
 ---
 [Douban link](https://book.douban.com/subject/24851460/)
 
-The best book I read this year, the one that resonated with me most and inspired the most thinking. Strongly recommended. I have many thoughts and feelings I want to share, but it is hard to judge the boundary. So bold, so brave. It summarizes economic reforms from ancient times to today, especially the six rounds of "the state advances while the private sector retreats" after the modern era. It contains many thoughts and many awakening golden lines. Although it seems to intentionally ignore Zhang Juzheng's reform, the flaws do not obscure the merits. Economic reforms under centralization are bound to compete with the people for profit, aiming at a rich state, strong military, and stable rule, but in the long run they instead lead to collusion between officials and merchants and to popular uprisings everywhere. Liberalism, rule of law, protection of private property, the bourgeoisie, and technological progress are the long-term solution, especially for the country and the people. The root of economic reform is still political reform. Without supporting institutions, economic reform cannot be thorough, and achievements already obtained will be lost. This book
+The best book I read this year, the one that resonated with me most and inspired the most thinking. Strongly recommended. I have many thoughts and feelings I want to share, but it is hard to judge the boundary. So bold, so brave. It summarizes economic reforms from ancient times to today, especially the six rounds of "the state advances while the private sector retreats" after the modern era. It contains many thoughts and many awakening golden lines. Although it seems to intentionally ignore Zhang Juzheng's reform, the flaws do not obscure the merits.
 
-was written in 2013, so it did not cover what happened afterward. The reforms after 2013 were the seventh round of "the state advances while the private sector retreats" in modern Chinese history. The landmark events were the renewed rise of state-owned enterprises and central SOEs, and stronger control over private capitalists. In 2020, blocking Ant's IPO opened the prelude to restricting the "disorderly expansion of capital." Again, it used common prosperity as the excuse. We have all seen the final result: when one whale falls, everything dies.
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/The-gains-and-losses-of-economic-changes-in-the-past-dynasties/en-hero.webp" alt="A giant historical pendulum swings between a state machine and an open marketplace, deepening the same groove with every pass" width="1536" height="864" decoding="async">
+</figure>
+
+<!-- more -->
+
+Economic reforms under centralization are bound to compete with the people for profit, aiming at a rich state, strong military, and stable rule, but in the long run they instead lead to collusion between officials and merchants and to popular uprisings everywhere. Liberalism, rule of law, protection of private property, the bourgeoisie, and technological progress are the long-term solution, especially for the country and the people. The root of economic reform is still political reform. Without supporting institutions, economic reform cannot be thorough, and achievements already obtained will be lost. This book was written in 2013, so it did not cover what happened afterward. The reforms after 2013 were the seventh round of "the state advances while the private sector retreats" in modern Chinese history. The landmark events were the renewed rise of state-owned enterprises and central SOEs, and stronger control over private capitalists. In 2020, blocking Ant's IPO opened the prelude to restricting the "disorderly expansion of capital." Again, it used common prosperity as the excuse. We have all seen the final result: when one whale falls, everything dies.
 
 In the afterword, Wu Xiaobo mentions four unprecedented new forces: the internet, NGOs, entrepreneurs, and liberal intellectuals. He placed great hope in them to promote economic reform and institutional change. Ten years later, these four forces had basically vanished.
 

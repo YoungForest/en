@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/atom-explore.md
+context: >-
+  The author needed a community package for formula previews in Markdown. When the download route failed, configuring a proxy for the package manager provided a successful detour.
+assets:
+  - id: hero
+    file: source/images/ai/atom-explore/en-hero.webp
+    placement: hero
+    alt: A formula component parcel reaches a Markdown workshop through a small relay bridge after the direct delivery chute jams
+    composition: >-
+      Do not use Forest. Create a distinct English composition as a compact parcel workshop: a direct overhead delivery chute is visibly jammed by a harmless mechanical barrier, while a small muted-teal relay bridge carries one parcel containing abstract formula-shaped pieces around it. At the right, the parcel completes a Markdown preview press and an amber indicator lamp turns on. Keep the causal route instantly readable and lightly humorous. Use only abstract unreadable marks; no real Atom symbol, app interface, website, URL, terminal, code, readable text, number, logo, trademark or watermark.
+    review_status: approved

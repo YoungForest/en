@@ -1,6 +1,7 @@
 ---
 title: LeetCode Weekly Contest 225
 date: 2021-01-24 19:58:06
+description: Four solutions complete the latest valid time, minimize character changes, rank prefix-XOR coordinates, and binary-search the smallest box footprint.
 tags:
 - Competitive Programming
 categories:
@@ -12,6 +13,12 @@ translations:
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (4) |	Q3 (5) |	Q4 (6)|
 |--|--|--|--|--|--|--|--|
 | 299 / 11282 | YoungForest | 18 | 1:16:19 | 0:05:09 | 0:18:06 | 0:29:04 |  1:11:19  1 |
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-225/en-hero.webp" alt="Blank position drums settle at their latest valid stops, two bead strings minimize recolouring, a prefix prism ranks grid light and a corner box tower tests the smallest footprint" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## 1736. Latest Time by Replacing Hidden Digits
 

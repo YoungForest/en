@@ -1,6 +1,7 @@
 ---
 title: LeetCode Weekly Contest 183
 date: 2020-04-07 12:33:13
+description: Weekly notes on greedy subsequences, binary reduction, diverse strings and stone-game DP, alongside a long-awaited rating recovery.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2020/04/07/LeetCode-weekly-contest-183/
   en: https://youngforest.github.io/en/2020/04/07/LeetCode-weekly-contest-183/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-183/en-hero.webp" alt="Forest studies a greedy balance, carry-bead spiral, guarded three-colour braid and two wooden players taking stones in turns" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (4) |	Q2 (4) |	Q3 (6) |	Q4 (7)|
 |--|--|--|--|--|--|--|--|
 | 91 / 12542 |	YoungForest | 	21 | 0:39:07 | 0:09:24 |  0:15:33 |  0:29:53 | 0:39:07 |

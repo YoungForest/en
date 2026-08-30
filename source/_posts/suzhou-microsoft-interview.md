@@ -6,6 +6,7 @@ tags:
 - Intern
 categories:
 - Interview
+description: "A three-round Microsoft Suzhou interview review covering recursion, memory copying, tree problems, SQL, rounding, and lessons from rejection."
 mathjax: true
 translations:
   zh-CN: https://youngforest.github.io/2018/06/01/suzhou-microsoft-interview/
@@ -14,18 +15,22 @@ translations:
 Thanks to a referral from senior schoolmate @lxc, I had the opportunity to go to Microsoft Suzhou and interview for a summer internship in the O365 department. Although I failed in the end, I learned a lot from this failure.
 I am summarizing it here to prepare for future internship and job hunting.
 
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/suzhou-microsoft-interview/en-hero.webp" alt="Forest moves through three engineering benches with a narrowing recursion coil, overlapping memory blocks, tree paths, joined data cards, and a rounding balance" width="1536" height="864" decoding="async">
+</figure>
+
 <!-- more -->
 
-# Interview Process
+## Interview Process
 
-## First Round
+### First Round
 
 - tail recursion, Fibonacci, which I did not know
 - merge two lists
 - determine Makefile compilation order
 - implementation method and safety issues of `memcpy`
 
-### Optimizing Recursive Fibonacci with Tail Recursion
+#### Optimizing Recursive Fibonacci with Tail Recursion
 
 Everyone should be familiar with the Fibonacci sequence, a classic recursive sequence mentioned in high school math textbooks.
 Its mathematical definition is:
@@ -83,7 +88,7 @@ def fibonacci(n):
     return func(n, 0, 1)
 ```
 
-### Implementation Method and Safety Issues of `memcpy`
+#### Implementation Method and Safety Issues of `memcpy`
 
 It also copies byte by byte. It is not, as I had assumed, copying whole blocks at a time, which would be faster.
 Recalling knowledge from Computer Organization:
@@ -97,7 +102,7 @@ For example, if `memcpy` copies a 200-byte pointer at address 100 to address 200
 [GCC without protection](https://github.com/gcc-mirror/gcc/blob/master/libgcc/memcpy.c)
 [Implementation with protection](https://blog.csdn.net/laoyang360/article/details/8020409)
 
-### Interviewer's Advice
+#### Interviewer's Advice
 
 When writing code during an interview, in Notepad, on paper, or on a whiteboard,
 the ease or convenience is:
@@ -106,26 +111,26 @@ whiteboard > paper > Notepad.
 After being told the interview question, first think clearly about the initial conditions and concrete requirements. If something is unclear, be sure to ask the interviewer. Do not start writing immediately.
 Otherwise, if you later discover ambiguity and ask again, it is already late.
 
-### Other Takeaways
+#### Other Takeaways
 
 When I have time, I must properly read SICP. Tail recursion in functional programming is discussed there.
 The interviewer had probably read it too.
 
-## Second Round
+### Second Round
 
 - find the maximum depth of a tree
 - maximum-sum chain
 - maximum-sum chain that can turn
 - rearrange an array to maximize weighted value, which I did not know
 
-### Other Takeaways
+#### Other Takeaways
 
 ACM contestants have a natural advantage in interviews.
 This interviewer may have done ACM as an undergraduate, because he said the "array weight" problem was one he had designed himself while in school.
 
 p.s. The interviewer said he had not graduated long ago either.
 
-## Third Round
+### Third Round
 
 After going to Suzhou for the interview on Tuesday, I received the result on Friday, and they scheduled a video interview for the following Tuesday.
 To be honest, I was a little nervous before the video interview. Also, because something happened at school, I only learned in the morning that there would be a video interview that afternoon.
@@ -139,13 +144,17 @@ It was similar to an academic affairs management system. There were three tables
 Query each student's math grade and Chinese grade, with the result as name, math grade, Chinese grade.
 At first, we assumed every student had selected both math and Chinese. Later, this assumption was removed, testing outer join.
 
-## The Second Problem
+#### The Second Problem
 
 The second problem tested one [IEEE rounding implementation](https://en.wikipedia.org/wiki/IEEE_754#Rounding_rules).
 
 First, the interviewer listed some numbers and asked me to observe the pattern.
 Under his guidance, I guessed it: round down at four, round up at six, and when it is five, look at the next digit.
 Then I implemented this `ieee_round` in C.
+
+<figure class="editorial-illustration">
+  <img src="/en/images/ai/suzhou-microsoft-interview/en-learning-loop.webp" alt="After a blank door closes, Forest sends rejected puzzle pieces through a magnifier and feedback loop to rebuild a clearer and sturdier solution" width="1536" height="864" loading="lazy" decoding="async">
+</figure>
 
 ## Result
 

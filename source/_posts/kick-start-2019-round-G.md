@@ -1,6 +1,7 @@
 ---
 title: Kick Start 2019 Round G
 date: 2019-10-20 18:53:36
+description: "A contest recap spanning divisor-based page counting, overflow-aware high-bit greedy search, and meet-in-the-middle enumeration."
 tags:
 - Competitive Programming
 categories:
@@ -12,6 +13,12 @@ translations:
 This round was the second-to-last round of the year, and also a relatively easy one.
 
 I solved the third problem and the small data sets for problems 1 and 2. My algorithm for the second problem was correct in itself, but I did not correctly estimate the maximum number of bits in `k` or prevent overflow, so I got WA on the large data set. The first problem was not hard either, but I was not sensitive enough to divisors, so I missed the better solution. Overall, this was the closest I got to AC in a round. My luck was relatively good, and I finished the contest one hour early. Later, because I really could not think of more solutions or details to watch out for, I gave up.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/kick-start-2019-round-G/en-hero.webp" alt="Blank book leaves climb a shrinking staircase, guarded beads descend a tall bit tower, and two puzzle caravans meet halfway" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## Book Reading
 

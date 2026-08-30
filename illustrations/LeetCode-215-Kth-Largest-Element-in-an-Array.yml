@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-215-Kth-Largest-Element-in-an-Array.md
+context: >-
+  Practicing the kth-largest problem before an interview, the author first times out with a two-dimensional memo approach, then adopts quickselect-style partitioning to repeatedly narrow the target range.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-215-Kth-Largest-Element-in-an-Array/en-hero.webp
+    placement: hero
+    alt: Forest closes an oversized memo grid and narrows stone partitions through a pivot gate to the target rank
+    composition: >-
+      Use fictional Forest in an independently composed anonymous interview-practice room. He folds shut an expanding, overheated two-dimensional memory lattice and turns to a physical pivot gate. Stones of different sizes split around the pivot; Forest closes the side that cannot contain the target, moves the boundary inward and partitions again until one amber stone rests on the correct blank raised seat. Convey rank through spatial order only, with no K, numbers or labels. No readable or pseudo-readable text, letters, digits, formulas, logos, employer identity, real interviewer, fake UI, watermark or signature.
+    review_status: approved

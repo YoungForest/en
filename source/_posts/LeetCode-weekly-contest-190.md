@@ -1,6 +1,7 @@
 ---
 title: LeetCode Weekly Contest 190
 date: 2020-05-24 12:43:24
+description: Post-contest notes on sentence prefixes, vowel windows, pseudo-palindromic tree paths and maximum dot products after a minor injury.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2020/05/24/LeetCode-weekly-contest-190/
   en: https://youngforest.github.io/en/2020/05/24/LeetCode-weekly-contest-190/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-190/en-hero.webp" alt="Forest solves an evening puzzle trail of blank prefix tiles, a five-colour window, lantern-tree paths and weighted bead pairings" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 Last night, my dad helped me clean my ear, and accidentally made it bleed. I went to the district hospital early this morning for a checkup. Fortunately, it was nothing serious; only the external ear canal was injured. Rest for a week and it should heal naturally. As long as it does not get infected, it is fine. I was prescribed some amoxicillin.
 So I skipped the weekly contest and solved the problems after the contest.
 

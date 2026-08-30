@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-180.md
+context: >-
+  The author joined the contest during a family visit, reviewing a lucky matrix value, a stack with range increments, balancing a binary search tree, and maximizing team performance from speed and minimum efficiency.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-180/en-hero.webp
+    placement: hero
+    alt: Forest works beside a glowing bead matrix, lifted lower trays, a balanced branching mobile and runners coupled to an efficiency gear
+    composition: >-
+      Use the fictional Forest. In an unmarked countryside kitchen, a bead matrix glows at a row-low and column-high crossing, lower layers of a tray stack rise together, an uneven branching mobile is balanced around its centre, and wind-up runners combine shared motion with the smallest efficiency gear. No identifiable people or place, illness imagery, readable text, numbers, formulas, logos, fake UI or watermark.
+    review_status: approved

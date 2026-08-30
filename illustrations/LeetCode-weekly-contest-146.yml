@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-146.md
+context: >-
+  After spending the day catching up with old classmates and rushing the contest, the author returns at night to finish rotating domino pairs, alternating-colour paths, a minimum-cost leaf tree and sign-combination enumeration.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-146/en-hero.webp
+    placement: hero
+    alt: Forest returns from a daytime reunion to rotate dominoes, trace alternating paths, lift large leaves and flip three sign levers at night
+    composition: >-
+      Use fictional Forest in a distinct split-day scene: a sunny café terrace with two old friends fades into a quiet night puzzle loft. At the loft, blank domino tiles rotate into canonical pairs; amber and teal stepping stones alternate along a shortest path; a tree model raises larger leaves toward its top to reduce combined weight; and three plain reversible levers produce eight physical configurations without symbols. Preserve the pleasure of solving after a full social day. No readable text, letters, digits, formulas, logos, brands, fake UI or watermark.
+    review_status: approved

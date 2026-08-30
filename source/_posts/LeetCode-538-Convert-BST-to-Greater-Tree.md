@@ -4,10 +4,15 @@ date: 2018-09-14 19:15:07
 tags:
 categories:
 - LeetCode
+description: 'Transforming a search tree with cumulative sums, simplified from recursive value passing to reverse inorder and an explicit stack.'
 translations:
   zh-CN: https://youngforest.github.io/2018/09/14/LeetCode-538-Convert-BST-to-Greater-Tree/
   en: https://youngforest.github.io/en/2018/09/14/LeetCode-538-Convert-BST-to-Greater-Tree/
 ---
+<figure class="editorial-illustration editorial-illustration--hero"><img src="/en/images/ai/LeetCode-538-Convert-BST-to-Greater-Tree/en-hero.webp" width="1536" height="864" alt="Amber light flows from the rightmost search-tree branch through every node, carrying the accumulated energy leftward" decoding="async" fetchpriority="high"></figure>
+
+<!-- more -->
+
 Description: https://leetcode.com/problems/convert-bst-to-greater-tree/description/
 Solution: https://leetcode.com/problems/convert-bst-to-greater-tree/solution/
 Difficulty: Easy

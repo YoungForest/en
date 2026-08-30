@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/The-gains-and-losses-of-economic-changes-in-the-past-dynasties.md
+context: Reflects on recurring economic reforms across Chinese history and the tension among state machinery, private markets, institutional limits, and durable prosperity.
+assets:
+  - id: hero
+    file: source/images/ai/The-gains-and-losses-of-economic-changes-in-the-past-dynasties/en-hero.webp
+    placement: hero
+    alt: A giant historical pendulum swings between a state machine and an open marketplace, deepening the same groove with every pass
+    composition: A museum-like cutaway of Chinese economic history places a heavy state machine opposite an open marketplace, joined by a pendulum that repeatedly wears the same path.
+    review_status: approved

@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/Niz-plum-option-key-not-work.md
+context: >-
+  A compact keyboard loses its left modifier only in Bluetooth mode while the wired path works; reconnecting and changing channels fail, but a four-corner factory reset and reconfiguration restore the key.
+assets:
+  - id: hero
+    file: source/images/ai/Niz-plum-option-key-not-work/en-hero.webp
+    placement: hero
+    alt: A split keyboard test bench shows a working cable path, a broken wireless modifier path, and a four-corner reset closing the circuit
+    composition: >-
+      Use a distinct English troubleshooting composition without Forest. Show a generic unbranded compact keyboard on a split diagnostic workbench: the wired lane forms a healthy teal circuit, while the wireless lane breaks specifically at the blank lower-left modifier key despite several faint reconnection loops. Four corner keys press down together like circuit switches, closing an amber loop that restores the missing connection. No recognizable product design, key legends, logos, operating-system marks, manual, readable text, numbers or interface.
+    review_status: candidate

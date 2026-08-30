@@ -1,6 +1,7 @@
 ---
 title: LeetCode 2021 Spring Contest - Team
 date: 2021-04-11 21:53:03
+description: "The recap balances bucket upgrades against water-filling rounds, then distributes a bounded connected colouring across a binary tree."
 tags:
 - Competitive Programming
 categories:
@@ -21,6 +22,11 @@ On Monday, during the Qingming Festival, I participated in the solo contest. [Su
 
 On Saturday, I teamed up with Lao Lai and George from the **Buddhist Problem-Solving Group** and set out in a very Buddhist way. The final result was indeed very Buddhist: we ended after two problems. I solved the first problem, and George solved the second problem, though I provided the idea and helped review + debug. I have to say, competing with two teammates was not as effective as me competing alone. No wonder ACM teams need a long time to build chemistry.
 
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LCCUP-21-Spring-Team/en-hero.webp" alt="Upgradeable buckets fill vats in shared rounds while a binary orchard divides a limited connected chain of teal lights" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## LCP 33. Store Water
 

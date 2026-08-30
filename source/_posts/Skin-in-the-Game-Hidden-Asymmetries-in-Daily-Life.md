@@ -1,6 +1,7 @@
 ---
 title: "Skin in the Game: Hidden Asymmetries in Daily Life"
 date: 2026-01-01 20:43:45
+description: "Notes on Skin in the Game: asymmetric risk, accountability, decentralization, and why survival comes before elegant theory."
 tags:
 - Reading
 - Skin in the Game
@@ -14,6 +15,10 @@ translations:
 [Douban link](https://book.douban.com/subject/30417612/)
 
 I had previously read *Antifragile* and was amazed; it absolutely lived up to its reputation. But this final book in the *Incerto* series, *Skin in the Game*, feels less full of new knowledge and less surprising. Many times I read it in a muddled state. Perhaps the author had exhausted his talent. After all, he has been retired from the world for so long, and his core views have more or less already been output. The translation is also barely satisfactory, especially the Chinese title. The original *Skin in the Game* is much better.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Skin-in-the-Game-Hidden-Asymmetries-in-Daily-Life/en-hero.webp" alt="A distant hand moves an oversized lever that drops risk onto strangers while a nearby operator carries the weight of a smaller lever" width="1536" height="864" decoding="async">
+</figure>
 
 <!-- more -->
 

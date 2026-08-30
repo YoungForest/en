@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-151.md
+context: >-
+  The author balances summer-camp classes against competitions and later reviews invalid transactions, comparing smallest-character frequencies, removing zero-sum consecutive linked-list segments, and managing multiple fixed-capacity plate stacks.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-151/en-hero.webp
+    placement: hero
+    alt: Forest carries a blank class card past conflicting tickets, minimum-bead comparisons, cancelling chains and a row of plate stacks
+    composition: >-
+      Use the fictional Forest. An independent unbranded study retreat uses blank ticket tokens to flag close-time location conflicts or excessive weight, compares the least-colour runs of two bead strings, folds away consecutive linked beads whose weights cancel, and operates fixed-capacity plate stacks from the earliest open or latest filled tower. Forest carries a blank class card. No company or hotel marks, readable text, letters, digits, currency symbols, fake UI or watermark.
+    review_status: approved

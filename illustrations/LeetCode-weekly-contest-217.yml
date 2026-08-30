@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-217.md
+context: >-
+  Four contest solutions sum wealth by row, use a monotonic stack to retain the most competitive subsequence, combine interval and difference-array thinking for complementary pairs, and repeatedly halve the largest even value to minimize deviation.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-217/en-hero.webp
+    placement: hero
+    alt: An abacus totals rows of coins, a monotone rack ejects larger stones, complementary pairs create interval ridges and repeated halving pulls the widest values together
+    composition: >-
+      Do not use Forest. Create an independent English four-island mechanical landscape. Rows of coins run through a bead abacus and the richest row gently rises. A sequence of value stones enters a monotone spring rack; larger earlier stones pop out while removal capacity remains, preserving a smaller stable subsequence. Paired stones cast overlapping interval ridges toward one common target trough, and their difference-style ridgelines accumulate until an amber lamp marks the lowest valley. At the final station, odd cogwheels are first expanded to even size, then the largest even wheel is repeatedly folded in half while maximum and minimum calipers close toward each other. No people, characters, letters, digits, formulas, code, arrows, readable text, fake UI, logos, brands, trademarks or watermarks.
+    review_status: approved

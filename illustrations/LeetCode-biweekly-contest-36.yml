@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-biweekly-contest-36.md
+context: >-
+  The post tracks remaining parking spaces by vehicle type, sorts access times to find three uses within one hour, greedily fills a matrix with given row and column sums, and rotates requests through available servers using a set and priority queue; only the first two were solved in contest, and an overcomplicated fourth solution timed out before later completion.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-biweekly-contest-36/en-hero.webp
+    placement: hero
+    alt: Three vehicle sizes consume matching bays, access tokens share one hourglass window, row and column vessels fill a grid and a repaired server carousel redistributes requests
+    composition: >-
+      Do not use Forest. Compose an independent English static four-island bench. Three sizes of unbranded vehicles occupy matching bays and physical empty slots show remaining capacity. Three matching access tokens sit together inside one unmarked hourglass window while other tokens remain outside. Row-capacity and column-capacity vessels feed a grid tray, each cell holding the smaller available amount until every vessel is empty. A server carousel has a ring of available seats and a stack of completion hourglasses; an overbuilt contest machine has overheated beside a lean repaired post-contest rig whose busiest seats glow. No people, characters, letters, digits, formulas, code, arrows, arrowheads, chevrons, dashed direction paths, clock markings, readable text, fake UI, logos, brands, trademarks or watermarks.
+    review_status: approved

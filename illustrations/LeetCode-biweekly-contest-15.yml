@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-biweekly-contest-15.md
+context: >-
+  The biweekly review covers an element occurring more than a quarter in a sorted array, removing covered intervals, iterating combinations, and a minimum falling path that cannot reuse a column; the author finished the speed contest early.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-biweekly-contest-15/en-hero.webp
+    placement: hero
+    alt: Forest finishes early beside a dominant pebble stream, nested interval arches, combination carousel and alternating-column falling ramp
+    composition: >-
+      Use the fictional Forest. A distinct outdoor speed workshop shows one pebble colour visibly dominating a sorted stream, nested arches losing fully covered inner spans, a rotating rack dispensing unique colour-token sets, and a layered ramp directing a marble away from the same vertical lane on consecutive levels; an unmarked sand timer retains plenty of sand. No leaderboard, flags, text, digits, percentages, formulas, logos, fake UI or watermark.
+    review_status: approved

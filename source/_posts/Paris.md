@@ -6,6 +6,7 @@ tags:
 - Travel Notes
 categories:
 - Diary
+description: "Four friends take a budget three-day trip through Paris, balancing exhaustion with museums, the Seine, Versailles, food, history and cultural confidence."
 translations:
   zh-CN: https://youngforest.github.io/2019/09/30/Paris/
   en: https://youngforest.github.io/en/2019/09/30/Paris/
@@ -14,6 +15,10 @@ Last Friday happened to be September 27, the holiday for the French-speaking reg
 
 Overall feeling: I like Paris so much. I love Paris.
 Here, I deeply felt France's cultural confidence.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Paris/en-hero.webp" alt="Forest and three companions cross a playful Paris stage of museum arches, a river boat, a glowing iron tower and a distant formal garden" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
 
 <!-- more -->
 

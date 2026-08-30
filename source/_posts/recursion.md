@@ -6,6 +6,7 @@ tags:
 - Algorithm
 categories:
 - Programming
+description: "A structured guide to recursion, recurrence relations, memoization, complexity analysis, call stacks, and tail-recursion optimization."
 translations:
   zh-CN: https://youngforest.github.io/2019/02/11/recursion/
   en: https://youngforest.github.io/en/2019/02/11/recursion/
@@ -13,6 +14,12 @@ translations:
 This article is based on LeetCode's tutorial [Introduction to Algorithms - Recursion I](https://leetcode.com/explore/learn/card/recursion-i/). Its purpose is to help me become more familiar with the important programming concept of "recursion". If it can also help others, that would be even better.
 
 The structure of this article is exactly the same as LeetCode's tutorial. It is divided into six parts: Introduction, Principles of Recursion, Recurrence Relation, Memoization, Complexity Analysis, and Conclusion.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/recursion/en-hero.webp" alt="A nested workshop unfolds into smaller copies until an amber base-case tile sends results back upward, while side drawers hold repeated results" width="1536" height="864" decoding="async">
+</figure>
+
+<!-- more -->
 
 ## Introduction
 

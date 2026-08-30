@@ -5,6 +5,7 @@ tags:
 - Competitive Programming
 categories:
 - KickStart
+description: "Three post-contest solutions move from brute force to structured algorithms through grid skipping, matrix intervals and compressed state."
 translations:
   zh-CN: https://youngforest.github.io/2019/07/25/kick-start-2019-round-C/
   en: https://youngforest.github.io/en/2019/07/25/kick-start-2019-round-C/
@@ -13,6 +14,12 @@ A post-contest write-up.
 [Problem link](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000050ff2)
 
 The main references were Kuang Shen's livestream solution and the official Analysis.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/kick-start-2019-round-C/en-hero.webp" alt="A folded puzzle board transforms three tangled challenges into a skipping grid route, a bounded circuit landscape and a compact path of collected clues" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## Wiggle Walk
 

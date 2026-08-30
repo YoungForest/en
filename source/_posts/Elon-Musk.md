@@ -6,6 +6,7 @@ tags:
 - Elon Musk
 categories:
 - Book Notes
+description: "Notes on a biography that inspires through rockets and electric vehicles while raising doubts about extreme cost cutting, rapid testing, and human cost."
 translations:
   zh-CN: https://youngforest.github.io/2024/03/07/Elon-Musk/
   en: https://youngforest.github.io/en/2024/03/07/Elon-Musk/
@@ -13,6 +14,12 @@ translations:
 [Douban link](https://book.douban.com/subject/36518892/)
 
 Giving up the English edition and switching to the translated edition was indeed the right choice. 380,000 Chinese characters, finished in one week. So satisfying. Especially the section about the first decade after 2000, covering the early days of SpaceX and Tesla, was truly inspiring: an adventure that changed the course of human history. Compared with the original, the translation is somewhat abridged, mainly around the China-related parts. I compared them; there is actually not much missing, and it is understandable for passing review.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Elon-Musk/en-hero.webp" alt="Four industrial rooms orbit an empty workbench as a glowing accelerator links a garage, payment pipes, a rocket test stand, and an electric assembly line" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 The whole book can roughly be divided into several parts:
 
@@ -25,6 +32,10 @@ The whole book can roughly be divided into several parts:
 10-20: The mature stage of Tesla and SpaceX. Although there were also Starship and Model 3+Y, it was not as exciting. During the same period there were also artificial intelligence company OpenAI, brain-computer interface company Neuralink, and tunnel-digging company The Boring Company.
 
 21-23: The final few years are written in great detail, mainly because the author followed Musk closely while writing the biography and therefore had a lot of information and material. The acquisition of Twitter is the most eye-catching plot. Twitter employees really fell from heaven into hell. After privatization, 75% were laid off. Unlike Tesla and SpaceX engineers, who had been under Musk from the beginning and were already used to it, Twitter received a tyrant from the sky. As a programmer, I really sympathize with them.
+
+<figure class="editorial-illustration">
+  <img src="/en/images/ai/Elon-Musk/en-delete-loop.webp" alt="A stripped-down machine and a tray of safety margins pull against each other on a workshop balance while a test loop returns only essential parts" width="1536" height="864" loading="lazy" decoding="async">
+</figure>
 
 After reading it, I no longer dare sit in a Tesla. Musk is too extreme about saving costs. He has a five-step work method used to accelerate manufacturing and reduce costs. Simply put, question all requirements and standards, whether industry standards or national standards, then delete as much as possible. If something does not work after deletion, add it back. If the things added back are less than 10% of what was deleted, it means not enough was deleted. For example, if the industry standard is to fasten four screws, he fastens two and believes that is enough. After testing, there is no problem. He does things very aggressively. He gives me the feeling of a national-server leader, liking campaign-style production and all kinds of Great Leap Forward efforts. Building rockets is similar. Explosions are fine; they are experiments that rapidly push testing forward.
 

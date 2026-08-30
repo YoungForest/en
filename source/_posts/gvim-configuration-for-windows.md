@@ -5,28 +5,35 @@ tags:
 - vim
 categories:
 - Tinkering
+description: Configuring gVim on Windows with shared and GUI-only settings, plus encoding, clipboard, font, and Markdown preview conveniences.
 translations:
   zh-CN: https://youngforest.github.io/2017/03/26/gvim-configuration-for-windows/
   en: https://youngforest.github.io/en/2017/03/26/gvim-configuration-for-windows/
 ---
 Recently, because I was preparing for the GRE, I spent all day memorizing words, practicing listening, and writing. I felt quite annoyed and had not tinkered with anything for a long time. So I took some time to download and configure gVim on my laptop, which also counted as a break.
 
-# [Download](http://www.vim.org/download.php#pc)
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/gvim-configuration-for-windows/en-hero.webp" alt="A shared configuration trunk feeds two editor rooms while a GUI room adds its own palette, type gauge, and preview window" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
 
-# Configuration Files
+<!-- more -->
+
+## [Download](http://www.vim.org/download.php#pc)
+
+## Configuration Files
 
 Unlike Linux, the gVim configuration files on Windows are `$HOME/_vimrc` for the personal configuration file and `$VIMROOT/_vimrc` for the system configuration file. By default, `$VIMROOT` is `C:\Program Files (x86)\Vim`. Besides these, there can also be a `_gvimrc` file, which is only read when opened in GUI mode, not in the terminal. This is helpful when applying different configurations to the two modes, especially when using different themes. The same theme can look very different in GUI and terminal mode. This avoids complicated configuration such as `if(has'gui_running')`.
 
-# `.vimrc` Configuration
+## `.vimrc` Configuration
 
-## Open Configuration Files
+### Open Configuration Files
 
 + `:e $MYVIMRC`: open the user configuration file. If it does not exist, refer to `help vimrc`.
 + `:e $MYGVIMRC`: open the GUI user configuration.
 
 The configuration file locations recommended in `help vimrc` are `$HOME/vimfiles/vimrc` on Windows or `~/.vim/vimrc` on Unix-like systems. This is more portable than `$HOME/_vimrc` and `~/.vim`.
 
-## Personalization
+### Personalization
 
 $MYGVIMRC
 ``` vim
@@ -47,7 +54,7 @@ set fileencoding=utf-8  "与系统兼容
 syntax enable
 ```
 
-## Markdown Support
+### Markdown Support
 
 Vim plugins can satisfy almost any need you have. However, here I do not use a Vim plugin; instead, I use a Chrome extension to satisfy my needs. The reason is that the configuration is simpler, and other editors can also use it in the future.
 
@@ -62,6 +69,6 @@ autocmd BufEnter *.md exe 'noremap <F5> :!start C:\Program Files (x86)\Google\Ch
 
 Press `F5` when using it.
 
-# Afterword
+## Afterword
 
 This post was completed with `gvim for MS-WINDOWS`.

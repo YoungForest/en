@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-149.md
+context: >-
+  The review records a lesson from forcing a segment-tree solution on the last problem, then covers day-of-year calculation, bounded dice sums, one-swap repeated runs, and random sampling plus binary search for range majorities.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-149/en-hero.webp
+    placement: hero
+    alt: Forest leaves an overgrown tree machine for a calendar wheel, bounded bead dice, broken colour ribbon and majority sampler
+    composition: >-
+      Use the fictional Forest in a distinct open-air puzzle pavilion. An absurdly overgrown branching interval machine sits unused at one side while Forest chooses four simpler physical devices: a seasonal month wheel, bounded bead chutes that combine toward a target bowl, a same-colour ribbon with one repairable gap, and a range tray where random beads are sampled then located along ordered rails. The humour is about choosing the fitting tool rather than the fanciest one. No readable text, letters, digits, formulas, logos, fake UI or watermark.
+    review_status: approved

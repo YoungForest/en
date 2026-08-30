@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/foreign-companies-comparision-between-China-Europe.md
+context: A first-person comparison of US internet companies in China and Europe across work-life balance, talent, benefits, time zones, and office centrality.
+assets:
+  - id: hero
+    file: source/images/ai/foreign-companies-comparision-between-China-Europe/en-hero.webp
+    placement: hero
+    alt: Forest sits at a long desk spanning Beijing and Dublin as morning and evening clocks face a distant US office and three teams relay one service lamp
+    composition: A desk across three time zones compares the two foreign-company settings while a follow-the-sun relay expresses their shared dependence on the US.
+    review_status: approved

@@ -1,5 +1,6 @@
 ---
 title: 2017 New Year Outlook
+description: "A late-night reflection on laziness becomes a concrete 2017 plan for English study, sleep, breakfast, exercise, and graduate-school preparation."
 date: 2017-2-22 12:36:31
 tags:
 - life
@@ -16,6 +17,12 @@ It is now the seventh day of the Lunar New Year, the day most working people ret
 Recently I finished reading Cai Dongfan's [History of the Five Dynasties](https://book.douban.com/subject/3089584/). After learning about the chaotic history of the Five Dynasties, I sighed that most rulers were muddleheaded and ruined their states, while even enlightened rulers had flaws. At the same time, I put myself in their shoes and asked whether I would be a wise emperor. The answer was no. I am a lazy person with no willpower. I dislike criticism and only like praise. If I were placed in the position of an emperor, I would definitely be a ruler who lost his country. Thinking about that is quite frightening.
 
 For the two reasons above, I plan to make changes in the new year: set New Year goals, complete New Year plans, and become a better version of myself.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/2017-resolutions/en-hero.webp" alt="At a late-night desk, Forest nudges aside an unmoving salted-fish cushion and arranges morning, breakfast, exercise, and study pieces into a new-year path" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## 2017 Goals and Plans
 

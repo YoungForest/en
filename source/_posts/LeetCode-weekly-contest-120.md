@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 120
 date: 2019-01-20 11:51:13
+description: A friendly contest milestone through sorted squares, turbulent runs, coin distribution in trees and a backtracking path over every grid cell.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2019/01/20/LeetCode-weekly-contest-120/
   en: https://youngforest.github.io/en/2019/01/20/LeetCode-weekly-contest-120/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-120/en-hero.webp" alt="Forest and an anonymous peer train beside sorted square beads, a turbulent ribbon, a balanced coin tree and an all-cell path" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 This week, I joined the weekly contest together with my good friend "Female Voice Male". Competing with a classmate still brings quite a bit of pressure. I have been practicing algorithm problems for half a year, while he is still a beginner. If I lost in the end, that would be embarrassing. Fortunately, the result was acceptable, and I did not embarrass myself. I ACed all problems with 10 minutes left, and every problem passed on the first try, so I was slightly ahead. I have to say that this contest's problems were much easier than previous ones. My previous level had stayed at solving only two problems with a ranking around 800, while this time my ranking was 356 / 3870. From the ranking, there was some progress.
 
 Below I share the ideas for the four problems.
@@ -240,4 +247,3 @@ public:
 
 Time complexity: O(4^n), where n is the number of grid cells, because each step can go in four directions and backtracking is necessarily exponential.
 Space complexity: O(n), the deepest recursion depth of DFS.
-

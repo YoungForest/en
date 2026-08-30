@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-134-Gas-Station.md
+context: >-
+  Six months after struggling with the circular gas-station problem in an internship interview, the author solves it independently, moving from trying every start to a linear strategy that skips all starts before a failed segment and reflecting on technical growth.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-134-Gas-Station/en-hero.webp
+    placement: hero
+    alt: Forest reroutes a circular energy course past a failed segment, leaving tangled trial paths behind for one clear loop ahead
+    composition: >-
+      Use the fictional Forest. A distinct circular energy course adds amber beads at blank refill towers and spends teal beads along each segment; after one deficit, several candidate starting pegs fold away and the route restarts immediately beyond the failed arc. Forest guides a plain route cord from a small tangle into one clean loop, expressing later understanding. No company marks, real petrol branding, readable text, numbers, code, fake UI or watermark.
+    review_status: approved

@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-156.md
+context: >-
+  The post-contest review covers unique occurrence counts, equal substrings within a budget, removing adjacent duplicates, and moving a two-segment snake to a target with rotations.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-156/en-hero.webp
+    placement: hero
+    alt: A wordless workshop links distinct bead towers, a budgeted sliding frame, collapsing colour groups and a rotating two-link wooden snake
+    composition: >-
+      No character. A distinct English workshop uses bead towers of different heights for unique counts, a frame moving across paired colour ribbons while tokens leave a budget bowl, same-colour groups dropping through a hatch at fixed size, and a two-link wooden snake translating and pivoting through a blank obstacle grid. No readable text, letters, digits, equations, arrows, logos, fake UI or watermark.
+    review_status: approved

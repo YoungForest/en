@@ -5,6 +5,7 @@ tags:
 - Algorithm
 categories:
 - Programming
+description: "Two linear approaches to maximum and second-maximum pairs in subarrays: a monotonic stack and expansion from the highest differing XOR bit."
 translations:
   zh-CN: https://youngforest.github.io/2019/12/14/find-all-unique-pairs-of-maximum-and-second-maximum-elements-over-all-sub-arrays-in-onlogn/
   en: https://youngforest.github.io/en/2019/12/14/find-all-unique-pairs-of-maximum-and-second-maximum-elements-over-all-sub-arrays-in-onlogn/
@@ -18,6 +19,12 @@ A lucky number is defined as the XOR value of the maximum and second maximum of 
 The brute force solution enumerates all subarrays, with time complexity O(N ^ 2).
 Is there a better method?
 That is the problem to discuss today.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/find-all-unique-pairs-of-maximum-and-second-maximum-elements-over-all-sub-arrays-in-onlogn/en-hero.webp" alt="A mountain ridge is buried under overlapping survey frames while a descending rack selects only the nearest taller peak on each side" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## General Solution: Fast Algorithm for Finding Maximum and Second-Maximum Pairs
 
@@ -67,6 +74,10 @@ int main() {
     return 0;
 }
 ```
+
+<figure class="editorial-illustration">
+  <img src="/en/images/ai/find-all-unique-pairs-of-maximum-and-second-maximum-elements-over-all-sub-arrays-in-onlogn/en-highest-bit.webp" alt="Tall amber beacons along a layered rail line send search carts in both directions until the next beacon blocks the route" width="1536" height="864" loading="lazy" decoding="async">
+</figure>
 
 ## The Solution I Thought of Independently
 

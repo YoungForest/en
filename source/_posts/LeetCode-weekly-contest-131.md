@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 131
 date: 2019-04-07 12:19:41
+description: Speed-contest notes on outer-parenthesis removal, root-to-leaf accumulation, tall-short pattern matching and greedy clip stitching.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2019/04/07/LeetCode-weekly-contest-131/
   en: https://youngforest.github.io/en/2019/04/07/LeetCode-weekly-contest-131/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-131/en-hero.webp" alt="Forest crosses a speed workshop of peeled hoops, path-sum beads, tall-short patterns and stitched blank film" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 The problem numbers in this contest startled me. LeetCode is really willful, directly starting problem numbers from 5000+. It looks like the room for growth in problem count has already exceeded my imagination.
 
 Back to the point, this contest was also mainly about speed on simple problems.
@@ -174,4 +181,3 @@ This summer, I should make time to study the algorithm contest books I bought ea
 If I had to name the things I regret most from college: first, not figuring out earlier what I wanted to do after graduation; second, not holding tightly onto tls's leg and getting started with ACM.
 
 One meaningful thing I did this week was signing up for Google Summer of Code. Although the chance of being selected is not high, I can try this year first and lay the groundwork for applying again next year.
-

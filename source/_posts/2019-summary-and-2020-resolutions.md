@@ -6,6 +6,7 @@ tags:
 categories:
   - Diary
 date: 2020-02-20 16:50:42
+description: "A review of coding practice, internships, research, and communication challenges, followed by graduation, career, and health goals for 2020."
 translations:
   zh-CN: https://youngforest.github.io/2020/02/20/2019-summary-and-2020-resolutions/
   en: https://youngforest.github.io/en/2020/02/20/2019-summary-and-2020-resolutions/
@@ -13,6 +14,12 @@ translations:
 [Reposted from my blog](https://youngforest.github.io/en/2020/02/20/2019-summary-and-2020-resolutions/)
 
 2020 is destined to be an unusual year for me, mainly because I am facing the two gates of graduation and job hunting. This is the most important challenge and task I have faced in the past two years. I have prepared for it for a long time, hoping that all the accumulation would finally pay off. Reality, however, did not go as I wished.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/2019-summary-and-2020-resolutions/en-hero.webp" alt="Forest carries algorithm blocks, internship tools, and research papers toward two parallel gates representing graduation and job hunting" width="1536" height="864" decoding="async">
+</figure>
+
+<!-- more -->
 
 ## Review of 2019
 
@@ -33,6 +40,10 @@ In terms of fitness, instead of moving forward, I regressed. I bought a gym memb
 Last year's OKR completion rate was about 60%.
 
 During the year, I also discovered some obvious shortcomings in myself:
+
+<figure class="editorial-illustration">
+  <img src="/en/images/ai/2019-summary-and-2020-resolutions/en-social-support.webp" alt="Forest carries heavy blocks alone on a tilting narrow bridge while nearby peers extend shared scaffolding and support ropes" width="1536" height="864" loading="lazy" decoding="async">
+</figure>
 
 ### Learning Detached From Social Interaction
 

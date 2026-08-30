@@ -1,6 +1,7 @@
 ---
 title: LeetCode Biweekly Contest 28
 date: 2020-06-15 12:53:36
+description: A biweekly review of monotonic stacks, rectangle updates, two non-overlapping target subarrays and interval DP, plus a memo bug and TLE.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2020/06/15/LeetCode-biweekly-contest-28/
   en: https://youngforest.github.io/en/2020/06/15/LeetCode-biweekly-contest-28/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-biweekly-contest-28/en-hero.webp" alt="Discount stones, a recoloured tile rectangle, two separate target tracks and mailboxes placed among median row houses form an algorithm neighbourhood" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (4) |	Q3 (5) |	Q4 (6)|
 |--|--|--|--|--|--|--|--|
 | 448 / 8571 | YoungForest | 14 | 1:22:34 | 0:07:28 | 0:11:43 | null | 1:17:34  1 |

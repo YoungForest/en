@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-136.md
+context: >-
+  The round tests whether a robot remains bounded, greedily colours adjacent gardens, partitions an array for maximum sum, and searches suffixes or lengths for the longest duplicate substring.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-136/en-hero.webp
+    placement: hero
+    alt: A tiny robot loops through a four-colour allotment beside raised partition blocks and overlapping patterned ribbons
+    composition: >-
+      Do not use Forest. Create a distinct English allotment seen from a low three-quarter angle. A small round-headed mechanical gardener follows a looping gravel path back to one plain centre stone. Connected garden plots choose among four solid flower colours so neighbours differ. Along the near edge, movable wooden dividers group uneven blocks and lift every block in a group to its local tallest height. Overhead, two long glyph-free patterned ribbons slide past each other; a warm clamp marks their longest exact overlap. No compass letters, digits, code, formula, text, scoreboard, logo, trademark or watermark.
+    review_status: approved

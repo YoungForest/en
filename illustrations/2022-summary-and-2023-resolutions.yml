@@ -1,0 +1,22 @@
+version: editorial-comic-v1
+post: source/_posts/2022-summary-and-2023-resolutions.md
+context: Reviews a 2022 journey from a confined Beijing home and European interview preparation to resignation, relocation, and a new life in Dublin, then looks toward career, health, family, and learning.
+assets:
+  - id: hero
+    file: source/images/ai/2022-summary-and-2023-resolutions/en-hero.webp
+    placement: hero
+    alt: Forest pulls a suitcase through a gateway of turning calendar pages from a confined Beijing room into the morning light of a rainy Dublin apartment
+    composition: A corridor made from 2022 calendar pages connects remote work, interview preparation, packed boxes, departure, and arrival in Dublin.
+    review_status: approved
+  - id: personal-review
+    file: source/images/ai/2022-summary-and-2023-resolutions/en-personal-review.webp
+    placement: before-2022-review
+    alt: Forest moves in relay through a home office, an interview practice track, packing boxes, and an international workplace
+    composition: Four continuous scenes summarize remote work, English interview preparation, international relocation, and adapting to a new team without factual pandemic imagery.
+    review_status: approved
+  - id: good-life-2023
+    file: source/images/ai/2022-summary-and-2023-resolutions/en-good-life-2023.webp
+    placement: before-2023-outlook
+    alt: Forest tends a code tree, running shoes, a warm family lamp, and a seedling growing from books as four paths join a calm river
+    composition: Four sustainable acts of care express career growth, health, family happiness, and lifelong learning.
+    review_status: approved

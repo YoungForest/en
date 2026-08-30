@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 193
 date: 2020-06-15 12:19:06
+description: A weekly review of prefix sums, greedy frequency removal, answer-space binary search and the tree binary-lifting idea learned afterward.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2020/06/15/LeetCode-weekly-contest-193/
   en: https://youngforest.github.io/en/2020/06/15/LeetCode-weekly-contest-193/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-193/en-hero.webp" alt="A cumulative canal, frequency baskets, a threshold greenhouse and a doubling scaffold on an ancestor oak create four linked learning stations" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (4) |	Q3 (5) |	Q4 (6)|
 |--|--|--|--|--|--|--|--|
 | 1854 / 13794 | YoungForest | 12 | 1:18:35 |  0:15:31 | 0:12:31 | 1:18:35	 | null |

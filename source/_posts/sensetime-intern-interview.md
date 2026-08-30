@@ -6,6 +6,7 @@ tags:
 - intern
 categories:
 - interview
+description: "Three demanding technical internship interviews, followed by a choice to value hands-on engineering and a lifetime of writing code over job-title prestige."
 translations:
   zh-CN: https://youngforest.github.io/2018/12/09/sensetime-intern-interview/
   en: https://youngforest.github.io/en/2018/12/09/sensetime-intern-interview/
@@ -17,6 +18,12 @@ SenseTime alumni are jokingly called the "BUAA lab," because SenseTime has recru
 During my interview process, the person who referred me was a classmate who had been interning there for a long time. The first-round interviewer was the TA from my junior-year compiler lab. The second- and third-round interviewers were also my undergraduate classmates. So it can be said that if you are a BUAA student, entering SenseTime is much easier than for students from other schools.
 
 The group I interviewed for was the "SenseTime Research Institute Basic Technology and Tools Group," which counts as a more engineering-oriented group inside the research institute. Overall, the interview process was still very hardcore and high-energy. Several times I thought I was done, but fortunately the interviewer gave timely hints and helped me continue. Below, I will record the process of the three interviews.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/sensetime-intern-interview/en-hero.webp" alt="Forest crosses three increasingly deep technical workbenches, moving from algorithm pieces into operating-system gears, compiler pipelines, and language mechanisms" width="1536" height="864" decoding="async">
+</figure>
+
+<!-- more -->
 
 ## First Interview
 
@@ -85,6 +92,10 @@ Given `n <= 20, a_i < 100, integer s`, solve how many assignments of positive an
 $$ \sum_i^{n} \pm a_i = s $$
 
 After I gave the solution, the interviewer asked: when constructing the table, what should we do if `s` is negative?
+
+<figure class="editorial-illustration">
+  <img src="/en/images/ai/sensetime-intern-interview/en-engineering-path.webp" alt="Forest leaves a floating staircase of career trophies and chooses a grounded engineering bench where he can build reliable software by hand" width="1536" height="864" loading="lazy" decoding="async">
+</figure>
 
 ## Afterword | Reflections
 

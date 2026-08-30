@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/pressure-test-to-CPU-memory-disk-network-IO.md
+context: "To satisfy a lab request, the author learns while building four adjustable stress tools: CPU busy/sleep cycles, timed disk reads and writes, memory testing, and client-server network traffic."
+assets:
+  - id: hero
+    file: source/images/ai/pressure-test-to-CPU-memory-disk-network-IO/en-hero.webp
+    placement: hero
+    alt: One unmarked control lever adjusts the load on a processor wheel, a memory-block tank, a disk rotor, and a two-ended network conduit
+    composition: Build one four-station engineering bench linked to a central lever with no scale. The stations are a spinning processor wheel, a reservoir of movable memory blocks, a disk rotor moving data pellets in and out, and a two-ended conduit exchanging pulses. Amber flow shows adjustable load without labels or code.
+    review_status: approved

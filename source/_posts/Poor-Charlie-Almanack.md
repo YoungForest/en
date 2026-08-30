@@ -1,6 +1,7 @@
 ---
 title: "Poor Charlie's Almanack: The Essential Wit and Wisdom of Charles T. Munger"
 date: 2024-08-07 22:35:33
+description: "Notes on multidisciplinary thinking, inversion, reading, and decisive action inspired by Poor Charlie's Almanack."
 tags:
 - Reading
 - Poor Charlie's Almanack
@@ -13,6 +14,12 @@ translations:
 Weekly book 18: *Poor Charlie's Almanack: The Essential Wit and Wisdom of Charles T. Munger*
 
 Charlie Munger passed away at the end of last year at age 99. I am ashamed that I only now read *Poor Charlie's Almanack*, which gathers the essence of his thinking. It can be considered the product of 80 years of his intellectual wisdom, since the third edition of the original book was completed in 2008. Recently I have read too many success books, and I am truly full of expectation and confidence about the future and myself.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Poor-Charlie-Almanack/en-hero.webp" alt="A lattice of gears, scales, compasses, and a telescope converges into one clear path toward a rare open opportunity" width="1536" height="864" decoding="async">
+</figure>
+
+<!-- more -->
 
 Read biographies and study those successful lives, as well as those lives that left regrets or met failure.
 

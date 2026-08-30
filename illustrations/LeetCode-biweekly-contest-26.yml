@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-biweekly-contest-26.md
+context: >-
+  After missing a holiday contest, daily practice and lectures made the author more confident with DP and hard problems; this round uses an equal-character window, GCD for simplified fractions, tree DFS carrying the ancestor maximum, and knapsack plus greedy reconstruction for the largest target-cost integer.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-biweekly-contest-26/en-hero.webp
+    placement: hero
+    alt: Forest carries accumulated practice through an equal-bead window, coprime gears, an ancestor-maximum tree and a budget workshop assembling the longest strong tile row
+    composition: >-
+      Use fictional Forest in a distinct English community workshop, with short dark hair, round glasses, charcoal overshirt and muted-teal T-shirt. Forest walks calmly through four large training stations along a path without direction marks: a fixed frame holds one uninterrupted run of equal-colour beads; two gears with different tooth counts meet cleanly with no repeated shared rhythm, suggesting a simplified ratio without fractions; amber fruits on an ancestor tree illuminate descendant fruits that remain at least as prominent as every fruit above; a knapsack bench spends a limited pile of plain tokens, preferring larger unmarked tile shapes at equal cost and assembling the longest strong row. No readable text, digits, letters, fraction marks, formulas, code, arrows, logos, trademarks, fake UI or watermark.
+    review_status: approved

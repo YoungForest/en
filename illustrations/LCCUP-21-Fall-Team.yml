@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LCCUP-21-Fall-Team.md
+context: >-
+  The solutions count colours on a tree, search bicycle states, reconstruct volunteer counts backwards, and use DP for stack-or-queue security choices.
+assets:
+  - id: hero
+    file: source/images/ai/LCCUP-21-Fall-Team/en-hero.webp
+    placement: hero
+    alt: A coloured firework tree, empty bicycle terrain, reverse-flow venue network and stack-or-queue gate share an autumn arena
+    composition: >-
+      Do not use Forest. Make a distinct English autumn arena with four linked but uncluttered stations. A binary firework tree blooms in a small set of amber and teal colours that fall into unique sorting bowls. An empty bicycle crosses a relief grid while a speed bead rises and falls with terrain and obstacles. Tokens flow backwards through connected volunteer pavilions to reconstruct their starting amounts. At the foreground gate, each capacity crate can enter a stack chute or a queue lane before both routes meet at one exit. No people, characters, letters, digits, team names, rankings, code, formulas, readable text, logo, trademark or watermark.
+    review_status: approved

@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-176.md
+context: >-
+  The contest review covers counting negatives in a sorted matrix, products of the last K numbers, attending the maximum number of events, and reversing repeated sums to construct a target array; the author recalls an accepted solution at the last moment.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-176/en-hero.webp
+    placement: hero
+    alt: Forest races across a sorted checkerboard, reset gear chain, greedy flag scheduler and crane dismantling a target block pyramid
+    composition: >-
+      Use the fictional Forest. A distinct English race links a light-to-dark checkerboard frontier, a cumulative gear chain reset by a hollow break, a scheduler placing event pennants on the earliest open discs, and a heap-shaped crane that removes the largest target block to recover simple seeds; an amber sand timer supplies the last-minute tension. No readable text, digits, formulas, logos, fake UI or watermark.
+    review_status: approved

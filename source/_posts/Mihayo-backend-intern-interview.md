@@ -6,11 +6,12 @@ tags:
 - Intern
 categories:
 - Interview
+description: "A three-round server-development interview covering system design, CS fundamentals, algorithms, smart pointers, and leaderboard architecture."
 translations:
   zh-CN: https://youngforest.github.io/2020/03/20/Mihayo-backend-intern-interview/
   en: https://youngforest.github.io/en/2020/03/20/Mihayo-backend-intern-interview/
 ---
-# First Round
+## First Round
 
 time: 2020-03-20 16:29:48
 
@@ -18,6 +19,12 @@ Last Friday I took the written test on Nowcoder. The questions were not hard and
 For computer science fundamentals, thanks to serious undergraduate study, there was no problem. The algorithm part was also around LeetCode Medium difficulty and I got AC quickly.
 System design, however, stumped me. I am not good at it and had not prepared for it. The task was to design a MOBA game's matchmaking mechanism, including solo and team queue. I had never thought about it before and just wrote something randomly.
 Yesterday I received a call saying I had passed the written test, and they scheduled a phone interview for 2:30 this afternoon.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Mihayo-backend-intern-interview/en-hero.webp" width="1536" height="864" alt="Forest clears familiar algorithm and fundamentals stepping stones but pauses at an unfamiliar multiplayer matchmaking machine to reorganize his tools" decoding="async">
+</figure>
+
+<!-- more -->
 
 I had a lovely expert roommate in undergraduate who eventually went to miHoYo. Although I am not particularly into games, with the attitude of doing more interviews and summarizing more, I also signed up for its spring referral recruiting.
 
@@ -44,7 +51,7 @@ Things I did not know:
 
 There was no live coding section, which was a little disappointing.
 
-# Second Round
+## Second Round
 
 time: 2020-04-03 12:54:20
 
@@ -54,31 +61,35 @@ Two full weeks passed between the first and second rounds. In between, HR called
 
 The whole interview lasted 50 minutes. It was not very difficult, but because it was a game company, many questions and projects were things I had not encountered or thought about before.
 
-## Algorithm
+### Algorithm
 
 Merge two sorted linked lists.
 
-## Project
+### Project
 
 - Projects under Linux. I told him most of mine were all on Linux.
 - A game I made in senior year (software engineering assignment), [GitHub](https://github.com/xxr5566833/Game).
 - memory leak diagnosis
 - protobuf
 
-## Computer Science Fundamentals
+### Computer Science Fundamentals
 
 - How to diagnose network problems?
 - Consistent hashing, adding buckets and removing buckets.
 - Singleton pattern, templated singleton, and singleton under multithreading. This was implemented locally in the IDE while sharing the screen.
 
-# Third Round
+<figure class="editorial-illustration">
+  <img src="/en/images/ai/Mihayo-backend-intern-interview/en-third-round.webp" width="1536" height="864" alt="Forest works through a shared-pointer knot, a coin-combination maze, and a balanced ranking tree at the third interview workbench" loading="lazy" decoding="async">
+</figure>
+
+## Third Round
 
 time: 2020-04-08 12:58:36
 
 [First round](https://www.nowcoder.com/discuss/387235)
 [Second round](https://www.nowcoder.com/discuss/399642)
 
-## Language Fundamentals
+### Language Fundamentals
 
 Implement the constructor and destructor of smart pointer `shared_ptr`.
 Question: why must `count` use a pointer?
@@ -133,7 +144,7 @@ shared_ptr<T> make_shared() {
 }
 ```
 
-## Algorithm
+### Algorithm
 
 > Coins with denominations 1, 7, and 10.
 Given an `n`, use the minimum number of coins to make this value.
@@ -153,7 +164,7 @@ dp(n) = min(
 O (7 + 1) = O(1)
 ```
 
-## Data Structure Design
+### Data Structure Design
 
 Design a million-level leaderboard that supports insertion, lookup score by `uid`, lookup rank by `uid`, and lookup `uid` by rank.
 Follow-up: when scores are the same, sort by time of entering the leaderboard.
@@ -172,12 +183,12 @@ hashmap<uid, pair<分数,时间>>: 按uid查分数 O(1)
 insert: O(1 + log N)
 ```
 
-## Computer Science Fundamentals
+### Computer Science Fundamentals
 
 Familiar with Linux?
 Troubleshoot an online process whose CPU usage is 100%.
 
-## Others
+### Others
 
 What is special about game companies?
 Have you played our company's games? (No.) Then what games do you usually play?

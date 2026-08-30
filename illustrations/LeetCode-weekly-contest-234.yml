@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-234.md
+context: >-
+  Four solutions extract distinct integers from a string, track a permutation until it resets, replace bracket keys through a dictionary, and maximize a product by splitting a fixed total into mostly equal groups.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-234/en-hero.webp
+    placement: hero
+    alt: A mixed ribbon yields deduplicated bead strings, a permutation carousel resets, paired capsules meet lookup drawers and equal blocks build a high product tower
+    composition: >-
+      Do not use Forest. Create a distinct English algorithm workshop in four linked bays. A ribbon of blank tiles and bead clusters passes through a separator; empty leading beads fall away and equivalent clusters merge, with no digits or letters. A carousel interleaves tokens from its two halves while one amber token is followed until the arrangement returns to its start. Paired curved capsules serve as abstract lookup keys and travel to matching dictionary drawers; missing keys receive a plain blank substitute, never a question mark. A fixed amount of clay is divided into mostly equal small groups and the few leftover pieces are redistributed to construct the tallest multiplicative block tower. No people, characters, letters, digits, brackets, question marks, symbols, formulas, code, readable text, UI, brand, trademark or watermark.
+    review_status: approved

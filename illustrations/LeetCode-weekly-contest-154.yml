@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-154.md
+context: >-
+  After an unsuitable early-morning contest time in Belgium, the author reviews frequency-based construction, reversing nested ranges, maximum subarray sums across repeated concatenations, and critical network connections.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-154/en-hero.webp
+    placement: hero
+    alt: Forest watches dawn beside paired balloon beads, reversing nested loops, a repeated belt and a network crossed by one fragile bridge
+    composition: >-
+      Use the fictional Forest. A separate dawn studio contains blank balloon clusters that require paired colours, a ribbon reversing through nested hoops, repeated conveyor sections with one brightest continuous run, and a garden network whose only fragile footbridge disconnects two sides; an unmarked clock disc suggests the time-zone conflict. No real landmark, readable text, letters, digits, logos, fake UI or watermark.
+    review_status: approved

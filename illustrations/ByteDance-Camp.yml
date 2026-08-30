@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/ByteDance-Camp.md
+context: >-
+  The author recalls a packed 2019 engineering camp that moved from selection tests and intensive lectures to a two-person, three-day project sprint, leaving him tired but happy and better connected.
+assets:
+  - id: hero
+    file: source/images/ai/ByteDance-Camp/en-hero.webp
+    placement: hero
+    alt: Younger Forest circles a one-week engineering track from a puzzle gate through a crowded lecture arc to a two-person midnight project bench
+    composition: >-
+      Use a distinct circular one-week track. Younger fictional Forest starts at a gate of operating-system gears and four progressively steeper puzzle blocks, moves through an amphitheatre arc packed with short technical demonstrations, and finishes beside one fictional teammate at a midnight project bench assembling and testing a shared-memory-like physical bridge. The loop glows with effort and satisfaction. No corporate logo, real lecturer, famous likeness, book cover, code, screen interface, or readable text.
+    review_status: approved

@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 221
 date: 2020-12-27 11:59:37
+description: Contest solutions compare string halves, prioritize expiring apples, trace balls through a maze, and query maximum XOR with a binary trie.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2020/12/27/LeetCode-weekly-contest-221/
   en: https://youngforest.github.io/en/2020/12/27/LeetCode-weekly-contest-221/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-221/en-hero.webp" alt="A balance compares two bowls of vowel beads, apples leave by freshness, balls cross a slatted maze and a branching machine speeds up after shedding heavy rings" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (4) |	Q3 (5) |	Q4 (6)|
 |--|--|--|--|--|--|--|--|
 | 231 / 8838 | YoungForest | 18 | 1:24:39 | 0:03:55	 | 0:21:00 | 0:30:16 | 1:09:39  3 |

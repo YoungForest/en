@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-115.md
+context: >-
+  Returning to timed contests for phone-interview preparation, the author reviews complete binary trees, cyclic prison states, regions divided by slashes and deleting columns to preserve order while rebuilding career-study momentum.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-115/en-hero.webp
+    placement: hero
+    alt: Forest restarts timed practice with a complete tree, cycling cells, diagonal regions and retained ordered color columns
+    composition: >-
+      Use fictional Forest in an independent reopened practice workshop. An unmarked hourglass and plain old-fashioned handset suggest phone-interview preparation without any employer, recruiter or screen. A newly lit path connects four tactile models: level-order slots verify a complete binary tree and stop accepting nodes after the first gap; a row of dark and light cell blocks cycles through states and loops back; diagonal wooden dividers split a blank grid into connected regions; several rows of colored upright columns lose the few columns that break their shared ordering, preserving the longest ordered skeleton. An abstract staircase of warm lights implies renewed career momentum without a company building. No readable or pseudo-readable text, letters, digits, formulas, logos, company cues, real-person likenesses, fake UI, watermark or signature.
+    review_status: approved

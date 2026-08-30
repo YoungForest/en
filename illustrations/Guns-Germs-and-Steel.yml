@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/Guns-Germs-and-Steel.md
+context: Explores geographic roots of unequal long-term development through agriculture, domesticable species, continental axes, diffusion, and population scale.
+assets:
+  - id: hero
+    file: source/images/ai/Guns-Germs-and-Steel/en-hero.webp
+    placement: hero
+    alt: Seeds, livestock, and technology gears move across a relief map at different speeds as mountains, deserts, and oceans shape their routes
+    composition: An unlabeled physical map contrasts a broad east-west diffusion corridor with climate barriers along north-south routes, avoiding borders, flags, and human stereotypes.
+    review_status: approved

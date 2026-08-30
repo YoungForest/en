@@ -5,11 +5,18 @@ tags:
 - Mac
 categories:
 - Tech
+description: Comparing a manual mount and a lightweight helper for writing to NTFS drives on macOS, with a practical choice for everyday use.
 translations:
   zh-CN: https://youngforest.github.io/2019/11/11/mac-write-ntfs-solution/
   en: https://youngforest.github.io/en/2019/11/11/mac-write-ntfs-solution/
 ---
 Using macOS does have some inconvenient parts, such as writing to NTFS hard drives or USB drives. By default, Mac only supports reading NTFS. But as long as you have the courage to tinker, the solution is still very simple.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/mac-write-ntfs-solution/en-hero.webp" alt="Two routes approach a read-only external drive, with a complex hand-built bridge beside a small helper ferry carrying write parcels across" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
 
 ## Most Recommended Method
 

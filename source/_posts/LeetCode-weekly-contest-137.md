@@ -1,6 +1,7 @@
 ---
 title: LeetCode weekly contest 137
 date: 2019-05-19 14:35:35
+description: DP-heavy contest notes on colliding stones, adjacent duplicate removal, longest word chains and a classic minimum partition.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2019/05/19/LeetCode-weekly-contest-137/
   en: https://youngforest.github.io/en/2019/05/19/LeetCode-weekly-contest-137/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-137/en-hero.webp" alt="Forest enters a dynamic-planning workshop of colliding stones, cancelling beads, growing links and two balanced baskets" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 This week's problems were harder than usual. You could also say they happened to hit my blind spot: DP problems. To be honest, I have not studied DP problems deeply. This contest had especially many DP problems, especially the fourth problem, which can be solved with the classic **knapsack problem**.
 
 | Rank |	Name |	Score |	Finish Time | 	Q1 (4) |	Q2 (5) |	Q3 (6) |	Q4 (8)|

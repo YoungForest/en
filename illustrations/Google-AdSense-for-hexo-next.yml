@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/Google-AdSense-for-hexo-next.md
+context: >-
+  This historical guide describes trying an ad network on a long-running low-traffic Hexo blog, then compares editing the NeXT theme directly with using site-level override files for the script, verification and ads.txt.
+assets:
+  - id: hero
+    file: source/images/ai/Google-AdSense-for-hexo-next/en-hero.webp
+    placement: hero
+    alt: Forest fits blank ad frames to a small blog workshop while comparing direct wiring with a removable configuration junction
+    composition: >-
+      Use fictional Forest. Depict a personal blog as a small long-tended workshop with only a few visitor footprints. Forest tests renting several completely blank display frames that return a modest trickle of coins. One route drills a wire directly into a theme beam; another uses a removable site-configuration junction and a root-level mailbox, with a blank approval seal and plain document roll suggesting verification and ads.txt. Make clear visual metaphor, not a real ad or current product endorsement. No readable text, letters, digits, formulas, logos, brands, fake UI or watermark.
+    review_status: approved

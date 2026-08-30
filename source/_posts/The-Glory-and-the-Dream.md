@@ -6,6 +6,7 @@ tags:
 - The Glory and the Dream
 categories:
 - Book Notes
+description: "Reading American society from 1932 to 1972 reframes crisis, division, media change, freedom, and tolerance through a longer historical lens."
 translations:
   zh-CN: https://youngforest.github.io/2025/05/18/The-Glory-and-the-Dream/
   en: https://youngforest.github.io/en/2025/05/18/The-Glory-and-the-Dream/
@@ -13,6 +14,12 @@ translations:
 [*The Glory and the Dream: A Narrative History of America, 1932-1972*](https://book.douban.com/subject/26314954/)
 
 Recommended by *Luoji Siwei*. The author's left-wing tendency is quite serious: he beautifies the Democratic Party and demonizes the Republican Party. The writing is so beautiful that it is almost excessive. It reminds me of the Grand Historian, and I cannot help wondering whether it is also "half hearsay and half imagination." Just kidding. I had just reached Roosevelt's election in 1932. American history has gone through many challenges far greater than today's. Roosevelt was also a person who changed America, moving it from liberalism toward statism, from isolationism toward globalism. It was also the moment in America's 250-year history when it came closest to the risk of dictatorship. This is what happens in a crisis. Liberal democracy is hard-won and should be cherished. Today, on the news and across the internet, people are always worrying about America's severe division, deglobalization, and the rise of the right. All I can say is: too young. Take history as a mirror. America is trustworthy.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/The-Glory-and-the-Dream/en-hero.webp" alt="A forty-year historical panorama runs from an empty bowl and factory gears to radio, television, and a rocket while a present-day storm looks tiny inside a foreground teacup" width="1536" height="864" decoding="async">
+</figure>
+
+<!-- more -->
 
 The whole book is a chronological account. For foreigners, many parts are passed over briefly and still feel quite unfamiliar. This is especially true of the history of entertainment and mass life. Those stars, films, and novels: I know none of them. It is a very long book, four thick volumes, the longest book I have finished this year. Another long book I am reading is *Les Miserables*, which I have not finished yet.
 

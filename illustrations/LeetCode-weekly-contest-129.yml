@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-129.md
+context: >-
+  After skipping the live contest to prepare for another event, the author independently solves all four tasks that evening: three equal partitions, a repeated-unit divisible number, the best sightseeing pair and binary-substring coverage.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-129/en-hero.webp
+    placement: hero
+    alt: Forest returns to an evening bench for three equal bead segments, a unit-bead remainder wheel, paired towers and coverage windows
+    composition: >-
+      Use fictional Forest in a distinct moonlit practice garden. One distant difficult course has gone dark, while he calmly completes four connected models at a small bench: two movable dividers create three equal-weight bead segments; identical unit beads circulate through a remainder wheel until it closes; a tensioned cord selects the best-valued pair of lookout towers after distance cost; and blank viewing frames of several lengths test whether a dark-light bead stream covers every required combination. No readable text, letters, digits, formulas, logos, brands, fake UI or watermark.
+    review_status: approved

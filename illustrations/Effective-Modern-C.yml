@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/Effective-Modern-C.md
+context: >-
+  This is an index page linking to the author's review of Effective Modern C++, centered on making C++ practice more modern and effective.
+assets:
+  - id: hero
+    file: source/images/ai/Effective-Modern-C/en-hero.webp
+    placement: hero
+    alt: A tangled legacy workbench is reorganized into a compact modern programming workshop where every tool has a clear place
+    composition: >-
+      Do not use Forest and do not depict a real book cover. On one side, a usable but crowded legacy programming bench has abstract gears, clamps and spools tangled together; after passing through a simple organizing gate, the same tools form a compact modern workshop with clear ownership, spacing and composability. Express modernization in general without inventing specific claims from the book. No readable or pseudo-readable text, letters, digits, code, formulas, title, real book cover, logos, UI, watermark or signature.
+    review_status: approved

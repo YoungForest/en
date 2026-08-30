@@ -1,0 +1,16 @@
+version: editorial-comic-v1
+post: source/_posts/Mihayo-backend-intern-interview.md
+context: Three server-development interview rounds move from familiar algorithms and fundamentals into game matchmaking, smart pointers, dynamic programming, ranking structures, and production diagnosis.
+assets:
+  - id: hero
+    file: source/images/ai/Mihayo-backend-intern-interview/en-hero.webp
+    placement: hero
+    alt: Forest clears familiar algorithm and fundamentals stepping stones but pauses at an unfamiliar multiplayer matchmaking machine to reorganize his tools
+    composition: Show Forest carrying familiar algorithm blocks and systems gears toward a physical matchmaking mechanism made of solo pieces, team clusters, and a balance scale, emphasizing the system-design surprise without game screens or branding.
+    review_status: approved
+  - id: third-round
+    file: source/images/ai/Mihayo-backend-intern-interview/en-third-round.webp
+    placement: before-third-round
+    alt: Forest works through a shared-pointer knot, a coin-combination maze, and a balanced ranking tree at the third interview workbench
+    composition: "Separate the third-round challenges into three physical puzzles: cords sharing one counter, coin paths that defeat a greedy shortcut, and a balanced tree supporting rank lookup, with no code or numbers."
+    review_status: approved

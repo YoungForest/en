@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-128.md
+context: >-
+  The author quickly solves three tasks but not the last, then reviews bit complements, minute-pair songs, binary-search shipping capacity and counting repeated digits while reaffirming a long-term interview-preparation goal.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-128/en-hero.webp
+    placement: hero
+    alt: Forest trains with flipped beads, paired sound discs, repeated ship-capacity trials and a cabinet of distinct patterns
+    composition: >-
+      Use fictional Forest in a distinct year-long training dock. Three compact stations are already solved, while he pauses at a harder counting cabinet: a row of dark-light beads flips completely; blank sound discs pair around an unmarked circular timing tray; cargo crates are repeatedly tested on differently sized model boats to find the smallest sufficient capacity; and patterned tokens are counted by constructing all-distinct arrangements before identifying repeats. A long path of foundational tools continues into the distance. No readable text, letters, digits, formulas, logos, brands, music symbols, fake UI or watermark.
+    review_status: approved

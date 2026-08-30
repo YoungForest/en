@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-biweekly-contest-22.md
+context: >-
+  The contest covers sorting plus binary search for array distance, bitmap-style greedy cinema seating, memoized integer power values, and circular DP for choosing non-adjacent pizza slices.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-biweekly-contest-22/en-hero.webp
+    placement: hero
+    alt: Sorted marble lanes meet compass light rings, family figures occupy adjacent lit seats, cached paths guide later beads and claws pick separated pizza slices
+    composition: >-
+      Do not use Forest. A distinct English workshop sorts marbles on sloped rails before compass light rings test proximity, fits two wooden family groups into unnumbered lit seat blocks, caches glowing iterative routes in a transparent cabinet, and uses claws plus mutually exclusive endpoint lamps to choose separated slices around a circular belt. No readable characters, code, brands, fake UI or watermark.
+    review_status: approved

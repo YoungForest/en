@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-239.md
+context: >-
+  Four solutions scan for a nearest target, backtrack a descending split, combine next permutation with greedy swaps, and match queries to shortest intervals offline.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-239/en-hero.webp
+    placement: hero
+    alt: A measuring trolley finds the nearest target, a strip splits into descending steps, beads swap toward a chosen permutation and short arches claim query pegs first
+    composition: >-
+      Do not use Forest. Make a distinct English sorting depot with four connected zones. A measuring trolley makes one pass along a rail and keeps the nearest of several identical target shapes. A continuous blank strip enters a branching cutter that backtracks over cut positions, retaining only pieces that form a strictly descending stair. A bead permutation advances through a ratchet sequence, then the nearest matching bead is greedily moved left by adjacent swaps into each target slot. Transparent arches enter from shortest to longest; an ordered multitray locates every unresolved query peg under an arch, removes it, and leaves the first fitting arch as the answer. No people, characters, letters, digits, code, formulas, readable text, UI, contest branding, logo, trademark or watermark.
+    review_status: approved

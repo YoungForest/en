@@ -1,6 +1,7 @@
 ---
 title: "Reality Is Not What It Seems: The Journey to Quantum Gravity"
 date: 2024-03-01 23:18:54
+description: "A journey from Greek philosophy and classical physics to loop quantum gravity, alongside a personal reflection on a childhood love of physics."
 tags:
 - Reading
 - Reality Is Not What It Seems
@@ -13,6 +14,12 @@ translations:
 [Douban link](https://book.douban.com/subject/27156306/)
 
 Another book that was delightful and hard to put down. Besides the familiar story from Greek philosophy to classical physics, and then to modern physics, including relativity and quantum physics, the book mainly focuses on cutting-edge "loop quantum gravity": a theory that tries to unify relativity and quantum mechanics. The earlier historical part is relatively brief, but it offers a different angle. For that part, you can also read Cao Tianyuan's [*Does God Play Dice?*](https://book.douban.com/subject/1467022/), which is also excellent and tells more of the story.
+
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Reality-Is-Not-What-It-Seems-The-Journey-to-Quantum-Gravity/en-hero.webp" alt="A smooth fabric of spacetime reveals a fine network of interlocking loops under magnification as two physical paths approach an open frontier" width="1536" height="864" decoding="async">
+</figure>
+
+<!-- more -->
 
 The author currently believes more in loop quantum gravity than in the now-popular string theory or M-theory. Of course, all of this lies at the boundary between the known and the unknown. There is still no decisive advantage or evidence to prove which side is correct.
 

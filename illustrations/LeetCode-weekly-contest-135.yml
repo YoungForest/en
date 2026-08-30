@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-weekly-contest-135.md
+context: >-
+  The author reaches the top two hundred for the first time after finishing the last task near the deadline, then reviews collinearity, a greater-sum tree, polygon triangulation and moving stones into consecutive positions.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-weekly-contest-135/en-hero.webp
+    placement: hero
+    alt: Forest reaches a blank finish arch beside a three-point frame, accumulating tree, triangulated polygon and consecutive stone track
+    composition: >-
+      Use fictional Forest in a distinct outdoor finish-yard. He arrives with one rolling puzzle cart just before a blank mechanical gate closes, then studies four nearby models: three pegs tested by a taut area frame; weights flowing from the greater side of a search-tree sculpture into earlier branches; a convex amber plate cut by several candidate diagonals; and endpoint stones moved along a rail until every position is consecutive. Celebrate a first breakthrough without rankings or platform imagery. No readable text, letters, digits, formulas, logos, brands, fake UI or watermark.
+    review_status: approved

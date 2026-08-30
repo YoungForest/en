@@ -1,0 +1,12 @@
+version: editorial-comic-v1
+post: source/_posts/LeetCode-136-Single-Number.md
+context: >-
+  Unable at first to meet both linear time and constant space, the author learns the cancellation property of XOR: all paired values disappear and one accumulator leaves only the unique element.
+assets:
+  - id: hero
+    file: source/images/ai/LeetCode-136-Single-Number/en-hero.webp
+    placement: hero
+    alt: Forest passes matching stones through a cancellation arch while one accumulator bowl preserves the lone amber stone
+    composition: >-
+      Use fictional Forest in an independent puzzle workshop. A large empty storage cabinet is pushed aside. Mixed unmarked stones pass one at a time through a compact mirrored cancellation chamber; matching pairs dissolve into harmless wisps while a single plain accumulator vessel carries the surviving state forward. At the end, one unmatched amber stone remains under a warm lamp. Convey the insight physically without XOR symbols, bits, numbers, formulas, diagrams or labels. No readable or pseudo-readable text, letters, logos, UI, watermark or signature.
+    review_status: approved

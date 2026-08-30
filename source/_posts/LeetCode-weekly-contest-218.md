@@ -1,6 +1,7 @@
 ---
 title: LeetCode Weekly Contest 218
 date: 2020-12-06 16:45:12
+description: Contest solutions use one-pass token parsing, hashed pairing, shift-and-modulo concatenation, and greedy bounds with pruned backtracking.
 tags:
 - Competitive Programming
 categories:
@@ -9,6 +10,12 @@ translations:
   zh-CN: https://youngforest.github.io/2020/12/06/LeetCode-weekly-contest-218/
   en: https://youngforest.github.io/en/2020/12/06/LeetCode-weekly-contest-218/
 ---
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-218/en-hero.webp" alt="Shape tokens pass through a parser, complementary weights lock together, dark and pale bead strings concatenate and a pruned grouping tree keeps the best balanced arrangement" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+
+<!-- more -->
+
 | Rank |	Name |	Score |	Finish Time | 	Q1 (3) |	Q2 (4) |	Q3 (5) |	Q4 (6)|
 |--|--|--|--|--|--|--|--|
 | 71 / 9827 | YoungForest | 18 | 	0:48:21 | 0:03:32	 | 0:05:23 |  0:12:14 | 0:43:21  1 |

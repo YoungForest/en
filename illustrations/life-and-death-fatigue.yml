@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/life-and-death-fatigue.md
+context: The notes connect Mo Yan's sense of social pressure and rural hardship with a protagonist who witnesses fifty years of upheaval through six reincarnations and ultimately lets go of greed and hatred.
+assets:
+  - id: hero
+    file: source/images/ai/life-and-death-fatigue/en-hero.webp
+    placement: hero
+    alt: A weathered six-spoked wheel crosses five animal-shadow landscapes and storms of social change before its knotted cord loosens in warm light
+    composition: Avoid the author, real people, and any book cover. Let a weathered six-spoked wheel pass through fields, collective labor, storms, and an opening road. Five stages carry restrained animal silhouettes, while a cord knotted around the rim loosens near a quiet warm light, expressing reincarnation, historical pressure, and release.
+    review_status: approved
