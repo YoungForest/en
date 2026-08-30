@@ -19,19 +19,22 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"youngforest.github.io","root":"/en/","images":"/en/images","scheme":"Mist","darkmode":false,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"buttons","active":"disqus","storage":true,"lazyload":true,"nav":null,"activeClass":"disqus"},"stickytabs":false,"motion":{"enable":false,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/en/search.json","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/en/js/config.js" defer></script>
 
-    <meta name="description" content="Thanks to a referral from senior schoolmate @lxc, I had the opportunity to go to Microsoft Suzhou and interview for a summer internship in the O365 department. Although I failed in the end, I learned">
+    <meta name="description" content="A three-round Microsoft Suzhou interview review covering recursion, memory copying, tree problems, SQL, rounding, and lessons from rejection.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Microsoft Suzhou Interview">
 <meta property="og:url" content="https://youngforest.github.io/en/2018/06/01/suzhou-microsoft-interview/index.html">
 <meta property="og:site_name" content="YoungForest&#39;s blog">
-<meta property="og:description" content="Thanks to a referral from senior schoolmate @lxc, I had the opportunity to go to Microsoft Suzhou and interview for a summer internship in the O365 department. Although I failed in the end, I learned">
+<meta property="og:description" content="A three-round Microsoft Suzhou interview review covering recursion, memory copying, tree problems, SQL, rounding, and lessons from rejection.">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://youngforest.github.io/en/images/ai/suzhou-microsoft-interview/en-hero.webp">
+<meta property="og:image" content="https://youngforest.github.io/en/images/ai/suzhou-microsoft-interview/en-learning-loop.webp">
 <meta property="article:published_time" content="2018-06-01T14:54:08.000Z">
-<meta property="article:modified_time" content="2026-08-17T11:12:58.323Z">
+<meta property="article:modified_time" content="2026-08-30T15:00:25.630Z">
 <meta property="article:author" content="YoungForest">
 <meta property="article:tag" content="Intern">
 <meta property="article:tag" content="Microsoft">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://youngforest.github.io/en/images/ai/suzhou-microsoft-interview/en-hero.webp">
 
 
 <link rel="canonical" href="https://youngforest.github.io/en/2018/06/01/suzhou-microsoft-interview/">
@@ -171,7 +174,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">Interview Process</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#First-Round"><span class="nav-number">1.1.</span> <span class="nav-text">First Round</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Optimizing-Recursive-Fibonacci-with-Tail-Recursion"><span class="nav-number">1.1.1.</span> <span class="nav-text">Optimizing Recursive Fibonacci with Tail Recursion</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Implementation-Method-and-Safety-Issues-of-memcpy"><span class="nav-number">1.1.2.</span> <span class="nav-text">Implementation Method and Safety Issues of memcpy</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Interviewer%E2%80%99s-Advice"><span class="nav-number">1.1.3.</span> <span class="nav-text">Interviewer’s Advice</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Other-Takeaways"><span class="nav-number">1.1.4.</span> <span class="nav-text">Other Takeaways</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Second-Round"><span class="nav-number">1.2.</span> <span class="nav-text">Second Round</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Other-Takeaways-v2"><span class="nav-number">1.2.1.</span> <span class="nav-text">Other Takeaways</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Third-Round"><span class="nav-number">1.3.</span> <span class="nav-text">Third Round</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#The-Second-Problem"><span class="nav-number">1.4.</span> <span class="nav-text">The Second Problem</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Result"><span class="nav-number">1.5.</span> <span class="nav-text">Result</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Interview-Process"><span class="nav-number">1.</span> <span class="nav-text">Interview Process</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#First-Round"><span class="nav-number">1.1.</span> <span class="nav-text">First Round</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Optimizing-Recursive-Fibonacci-with-Tail-Recursion"><span class="nav-number">1.1.1.</span> <span class="nav-text">Optimizing Recursive Fibonacci with Tail Recursion</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Implementation-Method-and-Safety-Issues-of-memcpy"><span class="nav-number">1.1.2.</span> <span class="nav-text">Implementation Method and Safety Issues of memcpy</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Interviewer%E2%80%99s-Advice"><span class="nav-number">1.1.3.</span> <span class="nav-text">Interviewer’s Advice</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Other-Takeaways"><span class="nav-number">1.1.4.</span> <span class="nav-text">Other Takeaways</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Second-Round"><span class="nav-number">1.2.</span> <span class="nav-text">Second Round</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Other-Takeaways-v2"><span class="nav-number">1.2.1.</span> <span class="nav-text">Other Takeaways</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Third-Round"><span class="nav-number">1.3.</span> <span class="nav-text">Third Round</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#The-Second-Problem"><span class="nav-number">1.3.1.</span> <span class="nav-text">The Second Problem</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Result"><span class="nav-number">2.</span> <span class="nav-text">Result</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -289,7 +292,7 @@
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
       <meta itemprop="name" content="Microsoft Suzhou Interview | YoungForest's blog">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="A three-round Microsoft Suzhou interview review covering recursion, memory copying, tree problems, SQL, rounding, and lessons from rejection.">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -311,7 +314,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2026-08-17 19:12:58" itemprop="dateModified" datetime="2026-08-17T19:12:58+08:00">2026-08-17</time>
+      <time title="Modified: 2026-08-30 23:00:25" itemprop="dateModified" datetime="2026-08-30T23:00:25+08:00">2026-08-30</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -326,6 +329,7 @@
   
 </div>
 
+            <div class="post-description">A three-round Microsoft Suzhou interview review covering recursion, memory copying, tree problems, SQL, rounding, and lessons from rejection.</div>
         </div>
       </header>
 
@@ -334,16 +338,19 @@
     
     <div class="post-body" itemprop="articleBody"><p>Thanks to a referral from senior schoolmate @lxc, I had the opportunity to go to Microsoft Suzhou and interview for a summer internship in the O365 department. Although I failed in the end, I learned a lot from this failure.<br>
 I am summarizing it here to prepare for future internship and job hunting.</p>
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/suzhou-microsoft-interview/en-hero.webp" alt="Forest moves through three engineering benches with a narrowing recursion coil, overlapping memory blocks, tree paths, joined data cards, and a rounding balance" width="1536" height="864" decoding="async">
+</figure>
 <span id="more"></span>
-<h1>Interview Process</h1>
-<h2 id="First-Round">First Round</h2>
+<h2 id="Interview-Process">Interview Process</h2>
+<h3 id="First-Round">First Round</h3>
 <ul>
 <li>tail recursion, Fibonacci, which I did not know</li>
 <li>merge two lists</li>
 <li>determine Makefile compilation order</li>
 <li>implementation method and safety issues of <code>memcpy</code></li>
 </ul>
-<h3 id="Optimizing-Recursive-Fibonacci-with-Tail-Recursion">Optimizing Recursive Fibonacci with Tail Recursion</h3>
+<h4 id="Optimizing-Recursive-Fibonacci-with-Tail-Recursion">Optimizing Recursive Fibonacci with Tail Recursion</h4>
 <p>Everyone should be familiar with the Fibonacci sequence, a classic recursive sequence mentioned in high school math textbooks.<br>
 Its mathematical definition is:</p>
 <p class="katex-block "><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo>=</mo><mrow><mo fence="true">{</mo><mtable rowspacing="0.36em" columnalign="left left" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><msub><mi>f</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>+</mo><msub><mi>f</mi><mrow><mi>n</mi><mo>−</mo><mn>2</mn></mrow></msub></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mspace width="1em"/><mtext>if </mtext><mi>n</mi><mo>&gt;</mo><mn>2</mn></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mspace width="1em"/><mtext>if </mtext><mi>n</mi><mo>=</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn></mrow></mstyle></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">f_n = \begin{cases}
@@ -364,7 +371,7 @@ So first, here is an iterative Fibonacci implementation with O(1) memory usage.<
 and one loop variable, <code>i</code>, to control the number of iterations, which is also the loop termination condition.<br>
 Using these variables as function arguments gives the tail-recursive Fibonacci implementation.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">fibonacci</span>(<span class="params">n</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">func</span>(<span class="params">n, ret1, ret2</span>):</span><br><span class="line">        <span class="keyword">if</span> n == <span class="number">0</span>:</span><br><span class="line">            <span class="keyword">return</span> ret1</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> func(n - <span class="number">1</span>, ret2, ret1 + ret2)</span><br><span class="line">    <span class="keyword">return</span> func(n, <span class="number">0</span>, <span class="number">1</span>)</span><br></pre></td></tr></table></figure>
-<h3 id="Implementation-Method-and-Safety-Issues-of-memcpy">Implementation Method and Safety Issues of <code>memcpy</code></h3>
+<h4 id="Implementation-Method-and-Safety-Issues-of-memcpy">Implementation Method and Safety Issues of <code>memcpy</code></h4>
 <p>It also copies byte by byte. It is not, as I had assumed, copying whole blocks at a time, which would be faster.<br>
 Recalling knowledge from Computer Organization:<br>
 the CPU and Memory are connected by a bus, and each time, one clock cycle, only one word of data can be read or written.</p>
@@ -374,27 +381,27 @@ Directly copying and pasting byte by byte from low addresses to high addresses c
 <p>For example, if <code>memcpy</code> copies a 200-byte pointer at address 100 to address 200, it will first overwrite part of its own data, addresses 200-300, and then later copies will all be wrong. This was the interviewer’s explanation, but I later found that this point is not necessarily true. Afterward I checked some standard library implementations of <code>memcpy</code>; in this situation, they may copy from back to front to avoid overwriting the data to be copied.<br>
 <a target="_blank" rel="noopener" href="https://github.com/gcc-mirror/gcc/blob/master/libgcc/memcpy.c">GCC without protection</a><br>
 <a target="_blank" rel="noopener" href="https://blog.csdn.net/laoyang360/article/details/8020409">Implementation with protection</a></p>
-<h3 id="Interviewer’s-Advice">Interviewer’s Advice</h3>
+<h4 id="Interviewer’s-Advice">Interviewer’s Advice</h4>
 <p>When writing code during an interview, in Notepad, on paper, or on a whiteboard,<br>
 the ease or convenience is:<br>
 whiteboard &gt; paper &gt; Notepad.</p>
 <p>After being told the interview question, first think clearly about the initial conditions and concrete requirements. If something is unclear, be sure to ask the interviewer. Do not start writing immediately.<br>
 Otherwise, if you later discover ambiguity and ask again, it is already late.</p>
-<h3 id="Other-Takeaways">Other Takeaways</h3>
+<h4 id="Other-Takeaways">Other Takeaways</h4>
 <p>When I have time, I must properly read SICP. Tail recursion in functional programming is discussed there.<br>
 The interviewer had probably read it too.</p>
-<h2 id="Second-Round">Second Round</h2>
+<h3 id="Second-Round">Second Round</h3>
 <ul>
 <li>find the maximum depth of a tree</li>
 <li>maximum-sum chain</li>
 <li>maximum-sum chain that can turn</li>
 <li>rearrange an array to maximize weighted value, which I did not know</li>
 </ul>
-<h3 id="Other-Takeaways-v2">Other Takeaways</h3>
+<h4 id="Other-Takeaways-v2">Other Takeaways</h4>
 <p>ACM contestants have a natural advantage in interviews.<br>
 This interviewer may have done ACM as an undergraduate, because he said the “array weight” problem was one he had designed himself while in school.</p>
 <p>p.s. The interviewer said he had not graduated long ago either.</p>
-<h2 id="Third-Round">Third Round</h2>
+<h3 id="Third-Round">Third Round</h3>
 <p>After going to Suzhou for the interview on Tuesday, I received the result on Friday, and they scheduled a video interview for the following Tuesday.<br>
 To be honest, I was a little nervous before the video interview. Also, because something happened at school, I only learned in the morning that there would be a video interview that afternoon.<br>
 In the rush, I did not nap or rest well. I was especially sleepy before the interview.<br>
@@ -404,11 +411,14 @@ Hearing that I was familiar with SQL, he gave me an SQL problem.</p>
 <p>It was similar to an academic affairs management system. There were three tables: students, with student ID and name; courses, with course ID and course name; and enrollments, with student ID, course ID, and grade.<br>
 Query each student’s math grade and Chinese grade, with the result as name, math grade, Chinese grade.<br>
 At first, we assumed every student had selected both math and Chinese. Later, this assumption was removed, testing outer join.</p>
-<h2 id="The-Second-Problem">The Second Problem</h2>
+<h4 id="The-Second-Problem">The Second Problem</h4>
 <p>The second problem tested one <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/IEEE_754#Rounding_rules">IEEE rounding implementation</a>.</p>
 <p>First, the interviewer listed some numbers and asked me to observe the pattern.<br>
 Under his guidance, I guessed it: round down at four, round up at six, and when it is five, look at the next digit.<br>
 Then I implemented this <code>ieee_round</code> in C.</p>
+<figure class="editorial-illustration">
+  <img src="/en/images/ai/suzhou-microsoft-interview/en-learning-loop.webp" alt="After a blank door closes, Forest sends rejected puzzle pieces through a magnifier and feedback loop to rebuild a clearer and sturdier solution" width="1536" height="864" loading="lazy" decoding="async">
+</figure>
 <h2 id="Result">Result</h2>
 <p>No Hire.</p>
 <blockquote>

@@ -19,18 +19,20 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"youngforest.github.io","root":"/en/","images":"/en/images","scheme":"Mist","darkmode":false,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"buttons","active":"disqus","storage":true,"lazyload":true,"nav":null,"activeClass":"disqus"},"stickytabs":false,"motion":{"enable":false,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/en/search.json","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/en/js/config.js" defer></script>
 
-    <meta name="description" content="[Problem link] This was my first time participating in Kick Start. Back in undergrad, I had joined its predecessor, Code Jam, with my roommate tls. This year I finally started preparing seriously for">
+    <meta name="description" content="A first serious contest round explores selecting a matched training group, placing one new service office and fairly allocating overlapping seat requests.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Kick start 2019 round A">
 <meta property="og:url" content="https://youngforest.github.io/en/2019/03/24/kick-start-2019-round-A/index.html">
 <meta property="og:site_name" content="YoungForest&#39;s blog">
-<meta property="og:description" content="[Problem link] This was my first time participating in Kick Start. Back in undergrad, I had joined its predecessor, Code Jam, with my roommate tls. This year I finally started preparing seriously for">
+<meta property="og:description" content="A first serious contest round explores selecting a matched training group, placing one new service office and fairly allocating overlapping seat requests.">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://youngforest.github.io/en/images/ai/kick-start-2019-round-A/en-hero.webp">
 <meta property="article:published_time" content="2019-03-24T05:29:15.000Z">
-<meta property="article:modified_time" content="2026-08-17T11:12:58.321Z">
+<meta property="article:modified_time" content="2026-08-30T15:00:25.628Z">
 <meta property="article:author" content="YoungForest">
 <meta property="article:tag" content="Competitive Programming">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://youngforest.github.io/en/images/ai/kick-start-2019-round-A/en-hero.webp">
 
 
 <link rel="canonical" href="https://youngforest.github.io/en/2019/03/24/kick-start-2019-round-A/">
@@ -286,7 +288,7 @@
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
       <meta itemprop="name" content="Kick start 2019 round A | YoungForest's blog">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="A first serious contest round explores selecting a matched training group, placing one new service office and fairly allocating overlapping seat requests.">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -308,7 +310,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2026-08-17 19:12:58" itemprop="dateModified" datetime="2026-08-17T19:12:58+08:00">2026-08-17</time>
+      <time title="Modified: 2026-08-30 23:00:25" itemprop="dateModified" datetime="2026-08-30T23:00:25+08:00">2026-08-30</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -323,6 +325,7 @@
   
 </div>
 
+            <div class="post-description">A first serious contest round explores selecting a matched training group, placing one new service office and fairly allocating overlapping seat requests.</div>
         </div>
       </header>
 
@@ -364,6 +367,10 @@ My scores were:</p>
 </table>
 <p>That is, I passed the warm-up problem and the small case of the second problem.<br>
 Overall, the problems were much harder than LeetCode. In the end, only two people got a full score.</p>
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/kick-start-2019-round-A/en-hero.webp" alt="A folded planning board turns uneven training pieces, a distant city grid and overlapping seat ribbons into three increasingly fair arrangements" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+<span id="more"></span>
 <h2 id="1-Training">1. Training</h2>
 <p>From a team of <code>N</code> people, choose <code>P</code> people. The goal is to minimize the total training hours. The training hours equal the sum, over every chosen person, of <code>the maximum skill point among the chosen people - this person's skill point</code>.<br>
 Intuition:<br>

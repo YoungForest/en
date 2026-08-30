@@ -19,18 +19,20 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"youngforest.github.io","root":"/en/","images":"/en/images","scheme":"Mist","darkmode":false,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"buttons","active":"disqus","storage":true,"lazyload":true,"nav":null,"activeClass":"disqus"},"stickytabs":false,"motion":{"enable":false,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/en/search.json","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/en/js/config.js" defer></script>
 
-    <meta name="description" content="Rank Name Score Finish Time Q1 (3) Q2 (4) Q3 (6) Q4 (6)     74 &#x2F; 12832 YoungForest 19 1:06:48 0:02:44 0:07:11 0:37:44 1:01:48 🐞1    Without noticing, I skipped updating the weekly contest blog for">
+    <meta name="description" content="Four solutions concatenate arrays, count length-three palindromes, colour grids with DP, and merge valid binary search trees.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="LeetCode Weekly Contest 249">
 <meta property="og:url" content="https://youngforest.github.io/en/2021/07/11/LeetCode-weekly-contest-249/index.html">
 <meta property="og:site_name" content="YoungForest&#39;s blog">
-<meta property="og:description" content="Rank Name Score Finish Time Q1 (3) Q2 (4) Q3 (6) Q4 (6)     74 &#x2F; 12832 YoungForest 19 1:06:48 0:02:44 0:07:11 0:37:44 1:01:48 🐞1    Without noticing, I skipped updating the weekly contest blog for">
+<meta property="og:description" content="Four solutions concatenate arrays, count length-three palindromes, colour grids with DP, and merge valid binary search trees.">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://youngforest.github.io/en/images/ai/LeetCode-weekly-contest-249/en-hero.webp">
 <meta property="article:published_time" content="2021-07-11T09:54:25.000Z">
-<meta property="article:modified_time" content="2026-08-17T11:12:58.318Z">
+<meta property="article:modified_time" content="2026-08-30T15:00:25.625Z">
 <meta property="article:author" content="YoungForest">
 <meta property="article:tag" content="Competitive Programming">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://youngforest.github.io/en/images/ai/LeetCode-weekly-contest-249/en-hero.webp">
 
 
 <link rel="canonical" href="https://youngforest.github.io/en/2021/07/11/LeetCode-weekly-contest-249/">
@@ -286,7 +288,7 @@
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
       <meta itemprop="name" content="LeetCode Weekly Contest 249 | YoungForest's blog">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="Four solutions concatenate arrays, count length-three palindromes, colour grids with DP, and merge valid binary search trees.">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -308,7 +310,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2026-08-17 19:12:58" itemprop="dateModified" datetime="2026-08-17T19:12:58+08:00">2026-08-17</time>
+      <time title="Modified: 2026-08-30 23:00:25" itemprop="dateModified" datetime="2026-08-30T23:00:25+08:00">2026-08-30</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -323,6 +325,7 @@
   
 </div>
 
+            <div class="post-description">Four solutions concatenate arrays, count length-three palindromes, colour grids with DP, and merge valid binary search trees.</div>
         </div>
       </header>
 
@@ -359,6 +362,10 @@
 <p>This week counts as my first week after joining Amazon, and my global rank surprisingly reached 74. Thinking carefully, the last time I entered the top 100 in a weekly contest was Contest 243, roughly a month and a half ago.</p>
 <p>The last two problems this week were both hard, so they really separated people.</p>
 <p>Because my China-site rating had reached 2460, I was worried about losing rating, so recently I have basically been playing on the US site. The US-site account is a 2330 “alt account”, so it is basically hard to lose points.</p>
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-249/en-hero.webp" alt="A greenhouse line duplicates a tile ribbon, sorts mirrored bead triplets, weaves a three-colour grid and grafts saplings into one valid tree" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+<span id="more"></span>
 <h2 id="1929-Concatenation-of-Array">1929. Concatenation of Array</h2>
 <p>A warm-up problem. Straightforward. Python can even solve it in one line with <code>return nums + nums</code>.</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">getConcatenation</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">        <span class="type">const</span> <span class="type">int</span> n = nums.<span class="built_in">size</span>();</span><br><span class="line">        <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">ans</span><span class="params">(<span class="number">2</span> * n)</span></span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; ++i) &#123;</span><br><span class="line">            ans[i] = ans[i+n] = nums[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>

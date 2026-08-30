@@ -19,18 +19,20 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"youngforest.github.io","root":"/en/","images":"/en/images","scheme":"Mist","darkmode":false,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"buttons","active":"disqus","storage":true,"lazyload":true,"nav":null,"activeClass":"disqus"},"stickytabs":false,"motion":{"enable":false,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/en/search.json","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/en/js/config.js" defer></script>
 
-    <meta name="description" content="Because Europe was on winter time, I was in UTC +1.00, so for this contest I deliberately got up at 6 a.m. to participate. After finishing, I rested for an hour, then went to Ghent with friends for th">
+    <meta name="description" content="A six-in-the-morning contest, a day trip and a rushed assignment frame solutions for a changing citation index, diagonal flips and balanced arrangements.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Kick Start 2019 Round H">
 <meta property="og:url" content="https://youngforest.github.io/en/2019/11/25/kick-start-2019-round-H/index.html">
 <meta property="og:site_name" content="YoungForest&#39;s blog">
-<meta property="og:description" content="Because Europe was on winter time, I was in UTC +1.00, so for this contest I deliberately got up at 6 a.m. to participate. After finishing, I rested for an hour, then went to Ghent with friends for th">
+<meta property="og:description" content="A six-in-the-morning contest, a day trip and a rushed assignment frame solutions for a changing citation index, diagonal flips and balanced arrangements.">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://youngforest.github.io/en/images/ai/kick-start-2019-round-H/en-hero.webp">
 <meta property="article:published_time" content="2019-11-25T14:11:22.000Z">
-<meta property="article:modified_time" content="2026-08-17T11:12:58.322Z">
+<meta property="article:modified_time" content="2026-08-30T15:00:25.628Z">
 <meta property="article:author" content="YoungForest">
 <meta property="article:tag" content="Competitive Programming">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://youngforest.github.io/en/images/ai/kick-start-2019-round-H/en-hero.webp">
 
 
 <link rel="canonical" href="https://youngforest.github.io/en/2019/11/25/kick-start-2019-round-H/">
@@ -286,7 +288,7 @@
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
       <meta itemprop="name" content="Kick Start 2019 Round H | YoungForest's blog">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="A six-in-the-morning contest, a day trip and a rushed assignment frame solutions for a changing citation index, diagonal flips and balanced arrangements.">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -308,7 +310,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2026-08-17 19:12:58" itemprop="dateModified" datetime="2026-08-17T19:12:58+08:00">2026-08-17</time>
+      <time title="Modified: 2026-08-30 23:00:25" itemprop="dateModified" datetime="2026-08-30T23:00:25+08:00">2026-08-30</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -323,6 +325,7 @@
   
 </div>
 
+            <div class="post-description">A six-in-the-morning contest, a day trip and a rushed assignment frame solutions for a changing citation index, diagonal flips and balanced arrangements.</div>
         </div>
       </header>
 
@@ -368,6 +371,10 @@
 Overall, my rank first went down and then went up. It does not reflect a change in ability so much as a change in mindset. Round D was relatively important, and at that time a classmate was competing too, so I did not have the heart to communicate with him during the contest. During Round E, I was at ByteDance’s summer camp and solved it together with a girl. I did want to do well, but because my Union-Find did not implement path compression in <code>find</code>, it caused TLE. This was also a blind spot I had not noticed before. The other three rounds with relatively good results were instead the ones where I had no burden and was more relaxed.</p>
 <p>Recently I also unexpectedly received an invitation to Google’s Beijing A Day with Google. Unfortunately I was not in Beijing anymore, so I had to decline. In addition, I emailed Google to report that all Google recruiting-related forms did not include Beihang University in the “My University” options. I guessed this might be because Beihang was on the U.S. Department of Commerce blacklist. Google resolved it quickly. From now on, my Beihang is no longer treated like a diploma mill.</p>
 <p>In this contest, I solved the warm-up problem and the small test set 1 of problem 3. I guess that counts as a normal performance.</p>
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/kick-start-2019-round-H/en-hero.webp" alt="A predawn puzzle cabinet links rising blank-paper steps, a diagonal tile loom and a balanced arrangement of coloured counters" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+<span id="more"></span>
 <h2 id="A-H-index">A. H-index</h2>
 <p>The first time I tried it, I misunderstood the statement and thought it only asked for the final H-index. I simply wrote a binary search solution that used a decision problem to find the maximum value.<br>
 Later I realized that the result after each paper was needed, and then several bugs I wrote affected the time cost.</p>

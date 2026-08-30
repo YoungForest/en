@@ -19,17 +19,19 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"youngforest.github.io","root":"/en/","images":"/en/images","scheme":"Mist","darkmode":false,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"buttons","active":"disqus","storage":true,"lazyload":true,"nav":null,"activeClass":"disqus"},"stickytabs":false,"motion":{"enable":false,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/en/search.json","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/en/js/config.js" defer></script>
 
-    <meta name="description" content="reference 1234567891011# activate virtual python environmentactivate python27# install package ipykernel in virtual environmentpip install ipykernel# install ipython kernel for virtual environmentpyth">
+    <meta name="description" content="How to register an IPython kernel for a separate Conda environment, launch the intended session, and use package mirrors for faster installs.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Launch IPython from a Different Conda Env">
 <meta property="og:url" content="https://youngforest.github.io/en/2017/11/02/Lunch-IPython-from-differnt-conda-env/index.html">
 <meta property="og:site_name" content="YoungForest&#39;s blog">
-<meta property="og:description" content="reference 1234567891011# activate virtual python environmentactivate python27# install package ipykernel in virtual environmentpip install ipykernel# install ipython kernel for virtual environmentpyth">
+<meta property="og:description" content="How to register an IPython kernel for a separate Conda environment, launch the intended session, and use package mirrors for faster installs.">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://youngforest.github.io/en/images/ai/Lunch-IPython-from-differnt-conda-env/en-hero.webp">
 <meta property="article:published_time" content="2017-11-02T14:36:37.000Z">
-<meta property="article:modified_time" content="2026-08-17T11:12:58.319Z">
+<meta property="article:modified_time" content="2026-08-30T15:00:25.625Z">
 <meta property="article:author" content="YoungForest">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://youngforest.github.io/en/images/ai/Lunch-IPython-from-differnt-conda-env/en-hero.webp">
 
 
 <link rel="canonical" href="https://youngforest.github.io/en/2017/11/02/Lunch-IPython-from-differnt-conda-env/">
@@ -285,7 +287,7 @@
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
       <meta itemprop="name" content="Launch IPython from a Different Conda Env | YoungForest's blog">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="How to register an IPython kernel for a separate Conda environment, launch the intended session, and use package mirrors for faster installs.">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -307,12 +309,13 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2026-08-17 19:12:58" itemprop="dateModified" datetime="2026-08-17T19:12:58+08:00">2026-08-17</time>
+      <time title="Modified: 2026-08-30 23:00:25" itemprop="dateModified" datetime="2026-08-30T23:00:25+08:00">2026-08-30</time>
     </span>
 
   
 </div>
 
+            <div class="post-description">How to register an IPython kernel for a separate Conda environment, launch the intended session, and use package mirrors for faster installs.</div>
         </div>
       </header>
 
@@ -320,6 +323,10 @@
     
     
     <div class="post-body" itemprop="articleBody"><p><a target="_blank" rel="noopener" href="http://ipython.readthedocs.io/en/stable/install/kernel_install.html">reference</a></p>
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Lunch-IPython-from-differnt-conda-env/en-hero.webp" alt="A shared notebook desk selects one sealed environment capsule through its matching kernel key while the other capsules remain isolated" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+<span id="more"></span>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># activate virtual python environment</span></span><br><span class="line">activate python27</span><br><span class="line"></span><br><span class="line"><span class="comment"># install package ipykernel in virtual environment</span></span><br><span class="line">pip install ipykernel</span><br><span class="line"></span><br><span class="line"><span class="comment"># install ipython kernel for virtual environment</span></span><br><span class="line">python -m ipykernel install --user --name py27 --display-name <span class="string">&quot;Python (py27)&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># lunch jupyter QTConsole with specific kernel</span></span><br><span class="line">jupyter qtconsole --kernel=py27</span><br></pre></td></tr></table></figure>
 <h2 id="Using-a-Mirror-Instead-of-Crossing-the-GFW">Using a Mirror Instead of Crossing the GFW</h2>
 <p>You have two choices to make it work inside the GFW.</p>

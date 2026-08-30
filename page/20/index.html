@@ -295,7 +295,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2026-08-17 19:12:58" itemprop="dateModified" datetime="2026-08-17T19:12:58+08:00">2026-08-17</time>
+      <time title="Modified: 2026-08-30 23:00:25" itemprop="dateModified" datetime="2026-08-30T23:00:25+08:00">2026-08-30</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -317,37 +317,10 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <table>
-<thead>
-<tr>
-<th>Rank</th>
-<th>Name</th>
-<th>Score</th>
-<th>Finish Time</th>
-<th>Q1 (3)</th>
-<th>Q2 (4)</th>
-<th>Q3 (5)</th>
-<th>Q4 (6)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>111 / 5333</td>
-<td>YoungForest</td>
-<td>18</td>
-<td>1:11:49</td>
-<td>0:11:56  1</td>
-<td>0:21:44  1</td>
-<td>0:37:27</td>
-<td>1:01:49</td>
-</tr>
-</tbody>
-</table>
-<p>In this contest, because of carelessness, I forgot to consider the corner case in the first problem: the permutation count of 0 is 1. In the second problem, I simply reversed <code>upper</code> and <code>lower</code>. I got two penalties. Otherwise I probably could have entered the top 100. The problems were relatively simple, all standard problems, and previous original problems could be adapted with small changes.</p>
-<h2 id="1175-Prime-Arrangements">1175. Prime Arrangements</h2>
+          <p>Weekly notes on prime arrangements, diet windows, palindrome queries and seven-letter puzzles, plus two careless penalties.</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/en/2019/09/01/LeetCode-weekly-contest-152/#more" rel="contents">
+              <a class="btn" href="/en/2019/09/01/LeetCode-weekly-contest-152/">
                 Read more &raquo;
               </a>
             </div>
@@ -414,7 +387,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2026-08-17 19:12:58" itemprop="dateModified" datetime="2026-08-17T19:12:58+08:00">2026-08-17</time>
+      <time title="Modified: 2026-08-30 23:00:25" itemprop="dateModified" datetime="2026-08-30T23:00:25+08:00">2026-08-30</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -436,12 +409,10 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>This week I went to ByteDance to attend the summer camp, and still had classes on Sunday, so I skipped the weekly contest. Then how could I participate in Kick Start? After all, this month’s Round E was the so-called golden round, important for getting interview slots, so I chose to skip the summer camp.</p>
-<p>After the summer camp ended, I made up the problems as promised. I have to say, LeetCode is still much less difficult than Kick Start. It feels like Kick Start’s warm-up problems are Medium, and the last two problems are Hard.</p>
-<h2 id="1169-Invalid-Transactions">1169. Invalid Transactions</h2>
+          <p>Post-contest notes on invalid transactions, smallest-character frequency, zero-sum list removal and multiple fixed-capacity stacks.</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/en/2019/08/31/LeetCode-weekly-contest-151/#more" rel="contents">
+              <a class="btn" href="/en/2019/08/31/LeetCode-weekly-contest-151/">
                 Read more &raquo;
               </a>
             </div>
@@ -508,7 +479,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2026-08-17 19:12:58" itemprop="dateModified" datetime="2026-08-17T19:12:58+08:00">2026-08-17</time>
+      <time title="Modified: 2026-08-30 23:00:25" itemprop="dateModified" datetime="2026-08-30T23:00:25+08:00">2026-08-30</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -530,14 +501,10 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h2 id="Cherries-Mesh">Cherries Mesh</h2>
-<p>Minimum spanning tree.<br>
-Pay special attention to the Union-Find implementation: <code>find</code> must use path compression to achieve O(1).<br>
-Otherwise it will time out.</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;vector&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">UF</span> &#123;</span><br><span class="line">	vector&lt;<span class="type">int</span>&gt; parents;</span><br><span class="line">	<span class="built_in">UF</span>(<span class="type">int</span> n) &#123;</span><br><span class="line">		parents.<span class="built_in">resize</span>(n);</span><br><span class="line">		<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; ++i) &#123;</span><br><span class="line">			parents[i] = i;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="type">int</span> <span class="title">find</span><span class="params">(<span class="type">int</span> x)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> parents[x] == x ? x : (parents[x] = <span class="built_in">find</span>(parents[x]));</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="type">void</span> <span class="title">unio</span><span class="params">(<span class="type">int</span> x, <span class="type">int</span> y)</span> </span>&#123;</span><br><span class="line">		<span class="type">int</span> px = <span class="built_in">find</span>(x);</span><br><span class="line">		<span class="type">int</span> py = <span class="built_in">find</span>(y);</span><br><span class="line">		parents[px] = py;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="type">int</span> T;</span><br><span class="line">	cin &gt;&gt; T;</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; T; ++i) &#123;</span><br><span class="line">		<span class="type">int</span> N, M;</span><br><span class="line">		cin &gt;&gt; N &gt;&gt; M;</span><br><span class="line">		<span class="function">UF <span class="title">uf</span><span class="params">(N)</span></span>;</span><br><span class="line">		<span class="type">int</span> ans = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; M; ++j) &#123;</span><br><span class="line">			<span class="type">int</span> l, r;</span><br><span class="line">			cin &gt;&gt; l &gt;&gt; r;</span><br><span class="line">			--l;</span><br><span class="line">			--r;</span><br><span class="line">			<span class="keyword">if</span> (uf.<span class="built_in">find</span>(l) == uf.<span class="built_in">find</span>(r)) &#123;</span><br><span class="line">				<span class="keyword">continue</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			uf.<span class="built_in">unio</span>(l, r);</span><br><span class="line">			ans += <span class="number">1</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		ans += (N - <span class="number">1</span> - ans) * <span class="number">2</span>;</span><br><span class="line">		cout &lt;&lt; <span class="string">&quot;Case #&quot;</span> &lt;&lt; i + <span class="number">1</span> &lt;&lt; <span class="string">&quot;: &quot;</span> &lt;&lt; ans &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          <p>Three solutions use a minimum spanning tree, a coding-versus-eating boundary, and odd-even divisor analysis to classify street numbers.</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/en/2019/08/29/kick-start-2019-round-E/#more" rel="contents">
+              <a class="btn" href="/en/2019/08/29/kick-start-2019-round-E/">
                 Read more &raquo;
               </a>
             </div>
@@ -604,7 +571,7 @@ Otherwise it will time out.</p>
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2026-08-17 19:12:58" itemprop="dateModified" datetime="2026-08-17T19:12:58+08:00">2026-08-17</time>
+      <time title="Modified: 2026-08-30 23:00:25" itemprop="dateModified" datetime="2026-08-30T23:00:25+08:00">2026-08-30</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -626,38 +593,10 @@ Otherwise it will time out.</p>
     
     
     <div class="post-body" itemprop="articleBody">
-          <table>
-<thead>
-<tr>
-<th>Rank</th>
-<th>Name</th>
-<th>Score</th>
-<th>Finish Time</th>
-<th>Q1 (3)</th>
-<th>Q2 (4)</th>
-<th>Q3 (5)</th>
-<th>Q4 (6)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>106 / 1901</td>
-<td>YoungForest</td>
-<td>18</td>
-<td>1:01:13</td>
-<td>0:05:46</td>
-<td>0:27:13</td>
-<td>0:35:34</td>
-<td>1:01:13</td>
-</tr>
-</tbody>
-</table>
-<p>This week I attended ByteDance’s summer camp. The opening ceremony was on Saturday, so I completed this biweekly contest from the bed in a five-star hotel. It was wonderfully comfortable, and the contest result was still decent.<br>
-Since I had to attend the summer camp classes the next morning, I skipped the weekly contest. But I still joined Kick Start Round E in the afternoon, skipping the summer camp class for it. What can I say? I really want to go to Google.</p>
-<p>The biweekly contest problems were not hard. They felt like the kind of beginner-level problems you see on other OJs.</p>
+          <p>Biweekly notes on a one-row keyboard, hierarchical paths, minimum-cost stick merging and village water distribution during camp.</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/en/2019/08/25/LeetCode-biweekly-contest-7/#more" rel="contents">
+              <a class="btn" href="/en/2019/08/25/LeetCode-biweekly-contest-7/">
                 Read more &raquo;
               </a>
             </div>
@@ -724,7 +663,7 @@ Since I had to attend the summer camp classes the next morning, I skipped the we
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2026-08-17 19:12:58" itemprop="dateModified" datetime="2026-08-17T19:12:58+08:00">2026-08-17</time>
+      <time title="Modified: 2026-08-30 23:00:25" itemprop="dateModified" datetime="2026-08-30T23:00:25+08:00">2026-08-30</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -746,37 +685,10 @@ Since I had to attend the summer camp classes the next morning, I skipped the we
     
     
     <div class="post-body" itemprop="articleBody">
-          <table>
-<thead>
-<tr>
-<th>Rank</th>
-<th>Name</th>
-<th>Score</th>
-<th>Finish Time</th>
-<th>Q1 (3)</th>
-<th>Q2 (4)</th>
-<th>Q3 (5)</th>
-<th>Q4 (7)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>476 / 5091</td>
-<td>YoungForest</td>
-<td>19</td>
-<td>1:31:13</td>
-<td>0:03:52</td>
-<td>0:09:23</td>
-<td>1:16:13  2</td>
-<td>0:50:16  1</td>
-</tr>
-</tbody>
-</table>
-<p>The result of this contest was poor again, with a rank in the 400s. The direct reason was that I spent too much time on search pruning for the third problem and did not get it right in one shot. The root cause was that I finally had a two-week holiday at home recently, relaxed my practice, and basically stopped grinding problems; naturally, my hands got rusty. It really matches the saying, “Excellence comes from diligence and is ruined by idleness.” Last week’s rank was also very bad.</p>
-<h2 id="1160-Find-Words-That-Can-Be-Formed-by-Characters">1160. Find Words That Can Be Formed by Characters</h2>
+          <p>Weekly notes on character counts, tree-level sums, multi-source distance search and greatest suffixes after a relaxed break.</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/en/2019/08/19/LeetCode-weekly-contest-150/#more" rel="contents">
+              <a class="btn" href="/en/2019/08/19/LeetCode-weekly-contest-150/">
                 Read more &raquo;
               </a>
             </div>
@@ -843,7 +755,7 @@ Since I had to attend the summer camp classes the next morning, I skipped the we
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2026-08-17 19:12:58" itemprop="dateModified" datetime="2026-08-17T19:12:58+08:00">2026-08-17</time>
+      <time title="Modified: 2026-08-30 23:00:25" itemprop="dateModified" datetime="2026-08-30T23:00:25+08:00">2026-08-30</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -865,37 +777,10 @@ Since I had to attend the summer camp classes the next morning, I skipped the we
     
     
     <div class="post-body" itemprop="articleBody">
-          <table>
-<thead>
-<tr>
-<th>Rank</th>
-<th>Name</th>
-<th>Score</th>
-<th>Finish Time</th>
-<th>Q1 (4)</th>
-<th>Q2 (5)</th>
-<th>Q3 (6)</th>
-<th>Q4 (9)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>476 / 5091</td>
-<td>YoungForest</td>
-<td>15</td>
-<td>1:00:14</td>
-<td>0:10:21</td>
-<td>0:42:14</td>
-<td>1:00:14</td>
-<td>null</td>
-</tr>
-</tbody>
-</table>
-<p>Ashamedly, my ranking fell back to 400+. I had half an hour to solve the last problem and kept trying to use a segment tree. Just like Kick Start Round D, I got obsessed with segment trees and crashed. The lesson learned is: do not insist that interval problems must be solved with segment trees. There are often simpler approaches.</p>
-<h2 id="1154-Day-of-the-Year">1154. Day of the Year</h2>
+          <p>Weekly notes on date arithmetic, bounded dice sums, repeated runs and range majorities, plus a lesson about forcing segment trees.</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/en/2019/08/11/LeetCode-weekly-contest-149/#more" rel="contents">
+              <a class="btn" href="/en/2019/08/11/LeetCode-weekly-contest-149/">
                 Read more &raquo;
               </a>
             </div>
@@ -962,7 +847,7 @@ Since I had to attend the summer camp classes the next morning, I skipped the we
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2026-08-17 19:12:58" itemprop="dateModified" datetime="2026-08-17T19:12:58+08:00">2026-08-17</time>
+      <time title="Modified: 2026-08-30 23:00:25" itemprop="dateModified" datetime="2026-08-30T23:00:25+08:00">2026-08-30</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -984,39 +869,10 @@ Since I had to attend the summer camp classes the next morning, I skipped the we
     
     
     <div class="post-body" itemprop="articleBody">
-          <table>
-<thead>
-<tr>
-<th>Rank</th>
-<th>Name</th>
-<th>Score</th>
-<th>Finish Time</th>
-<th>Q1 (4)</th>
-<th>Q2 (5)</th>
-<th>Q3 (6)</th>
-<th>Q4 (8)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>77 / 5319</td>
-<td>YoungForest</td>
-<td>23</td>
-<td>0:56:45</td>
-<td>0:09:51</td>
-<td>0:24:02</td>
-<td>0:41:20</td>
-<td>0:56:45</td>
-</tr>
-</tbody>
-</table>
-<p>This contest was my first time entering the top 100 again after three months, and it was also my second consecutive top-200 finish, so I was a little happy. It swept away the gloom from last week’s Kick Start failure.<br>
-In fact, because of <a target="_blank" rel="noopener" href="https://leetcode.com/problems/longest-chunked-palindrome-decomposition/discuss/350633/Wrong-problem-constraints-rejudge-all-wrong-submissions">a judge issue</a>, the rank I saw right after the contest ended was 56. Later, the official side rejudged the last problem, so some people’s submissions could pass, and there was no penalty time.<br>
-This was also a pretty high-quality contest. The problems were not very hard, but they covered knowledge points quite comprehensively, and the difficulty distribution was reasonable.</p>
-<h2 id="1144-Decrease-Elements-To-Make-Array-Zigzag">1144. Decrease Elements To Make Array Zigzag</h2>
+          <p>A top-100 contest review covering zigzag arrays, a tree-colouring game, change-only snapshots and greedy chunked palindromes.</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/en/2019/08/04/LeetCode-weekly-contest-148/#more" rel="contents">
+              <a class="btn" href="/en/2019/08/04/LeetCode-weekly-contest-148/">
                 Read more &raquo;
               </a>
             </div>
@@ -1083,7 +939,7 @@ This was also a pretty high-quality contest. The problems were not very hard, bu
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2026-08-17 19:12:58" itemprop="dateModified" datetime="2026-08-17T19:12:58+08:00">2026-08-17</time>
+      <time title="Modified: 2026-08-30 23:00:25" itemprop="dateModified" datetime="2026-08-30T23:00:25+08:00">2026-08-30</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -1105,38 +961,10 @@ This was also a pretty high-quality contest. The problems were not very hard, bu
     
     
     <div class="post-body" itemprop="articleBody">
-          <table>
-<thead>
-<tr>
-<th>Rank</th>
-<th>Name</th>
-<th>Score</th>
-<th>Finish Time</th>
-<th>Q1 (2)</th>
-<th>Q2 (5)</th>
-<th>Q3 (7)</th>
-<th>Q4 (7)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>175 / 4906</td>
-<td>YoungForest</td>
-<td>21</td>
-<td>1:14:32</td>
-<td>0:08:18  1</td>
-<td>0:27:17  1</td>
-<td>0:41:32</td>
-<td>1:04:32</td>
-</tr>
-</tbody>
-</table>
-<p>Yesterday I did the Biweekly Contest, and today I did the regular contest plus Google Kick Start Round D in the afternoon.<br>
-Three contests in a row made for a very full weekend.</p>
-<h2 id="1137-N-th-Tribonacci-Number">1137. N-th Tribonacci Number</h2>
+          <p>Weekly notes on a three-term recurrence, a board path with a special final cell, bordered squares and memoised stone-game DP.</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/en/2019/07/28/LeetCode-weekly-contest-147/#more" rel="contents">
+              <a class="btn" href="/en/2019/07/28/LeetCode-weekly-contest-147/">
                 Read more &raquo;
               </a>
             </div>
@@ -1203,7 +1031,7 @@ Three contests in a row made for a very full weekend.</p>
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2026-08-17 19:12:58" itemprop="dateModified" datetime="2026-08-17T19:12:58+08:00">2026-08-17</time>
+      <time title="Modified: 2026-08-30 23:00:25" itemprop="dateModified" datetime="2026-08-30T23:00:25+08:00">2026-08-30</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -1225,12 +1053,10 @@ Three contests in a row made for a very full weekend.</p>
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>Rank: 765 / 1866.</p>
-<h2 id="X-or-What">X or What</h2>
-<p>This problem is about finding patterns and tests one’s familiarity with xor. In fact, I had once been very close to the correct solution. But I was fixated on my past experience solving interval problems with segment trees, trying to figure out what information each node should record. As a result, I went further and further off track.</p>
+          <p>Kick Start notes on leaving an overcomplicated segment-tree path for a direct parity rule and the longest valid interval.</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/en/2019/07/28/kick-start-2019-round-D/#more" rel="contents">
+              <a class="btn" href="/en/2019/07/28/kick-start-2019-round-D/">
                 Read more &raquo;
               </a>
             </div>
@@ -1297,7 +1123,7 @@ Three contests in a row made for a very full weekend.</p>
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2026-08-17 19:12:58" itemprop="dateModified" datetime="2026-08-17T19:12:58+08:00">2026-08-17</time>
+      <time title="Modified: 2026-08-30 23:00:25" itemprop="dateModified" datetime="2026-08-30T23:00:25+08:00">2026-08-30</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -1319,38 +1145,10 @@ Three contests in a row made for a very full weekend.</p>
     
     
     <div class="post-body" itemprop="articleBody">
-          <table>
-<thead>
-<tr>
-<th>Rank</th>
-<th>Name</th>
-<th>Score</th>
-<th>Finish Time</th>
-<th>Q1 (3)</th>
-<th>Q2 (3)</th>
-<th>Q3 (5)</th>
-<th>Q4 (7)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>98 / 1634</td>
-<td>YoungForest</td>
-<td>18</td>
-<td>0:35:23</td>
-<td>0:11:01</td>
-<td>0:10:53</td>
-<td>0:22:40</td>
-<td>0:35:23</td>
-</tr>
-</tbody>
-</table>
-<p>It had been two months since I last participated in a biweekly contest, and the number jumped directly from 1 to 5.<br>
-This contest was very simple. All the problems were classic algorithm problems and belonged to the must-know category. After finishing all four problems, I still had nearly an hour left.</p>
-<h2 id="1133-Largest-Unique-Number">1133. Largest Unique Number</h2>
+          <p>Biweekly notes on largest unique values, Armstrong numbers, minimum spanning trees and topological ordering, finished with time to spare.</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/en/2019/07/27/LeetCode-biweekly-contest-5/#more" rel="contents">
+              <a class="btn" href="/en/2019/07/27/LeetCode-biweekly-contest-5/">
                 Read more &raquo;
               </a>
             </div>

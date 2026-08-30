@@ -19,17 +19,19 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"youngforest.github.io","root":"/en/","images":"/en/images","scheme":"Mist","darkmode":false,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"buttons","active":"disqus","storage":true,"lazyload":true,"nav":null,"activeClass":"disqus"},"stickytabs":false,"motion":{"enable":false,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/en/search.json","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/en/js/config.js" defer></script>
 
-    <meta name="description" content="Unlike a blog, a book is relatively more complete and more systematic. Blogs, by comparison, are much more scattered. However, excellent blog series are often adapted into books. If you want to share">
+    <meta name="description" content="How to organize Markdown notes into a small GitBook project and generate formats for previewing and publishing.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Writing a Book with GitBook">
 <meta property="og:url" content="https://youngforest.github.io/en/2019/07/16/gitbook/index.html">
 <meta property="og:site_name" content="YoungForest&#39;s blog">
-<meta property="og:description" content="Unlike a blog, a book is relatively more complete and more systematic. Blogs, by comparison, are much more scattered. However, excellent blog series are often adapted into books. If you want to share">
+<meta property="og:description" content="How to organize Markdown notes into a small GitBook project and generate formats for previewing and publishing.">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://youngforest.github.io/en/images/ai/gitbook/en-hero.webp">
 <meta property="article:published_time" content="2019-07-16T07:34:35.000Z">
-<meta property="article:modified_time" content="2026-08-17T11:12:58.321Z">
+<meta property="article:modified_time" content="2026-08-30T15:00:25.628Z">
 <meta property="article:author" content="YoungForest">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://youngforest.github.io/en/images/ai/gitbook/en-hero.webp">
 
 
 <link rel="canonical" href="https://youngforest.github.io/en/2019/07/16/gitbook/">
@@ -284,7 +286,7 @@
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
       <meta itemprop="name" content="Writing a Book with GitBook | YoungForest's blog">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="How to organize Markdown notes into a small GitBook project and generate formats for previewing and publishing.">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -306,7 +308,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2026-08-17 19:12:58" itemprop="dateModified" datetime="2026-08-17T19:12:58+08:00">2026-08-17</time>
+      <time title="Modified: 2026-08-30 23:00:25" itemprop="dateModified" datetime="2026-08-30T23:00:25+08:00">2026-08-30</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -321,6 +323,7 @@
   
 </div>
 
+            <div class="post-description">How to organize Markdown notes into a small GitBook project and generate formats for previewing and publishing.</div>
         </div>
       </header>
 
@@ -330,6 +333,10 @@
     <div class="post-body" itemprop="articleBody"><p>Unlike a blog, a book is relatively more complete and more systematic. Blogs, by comparison, are much more scattered. However, excellent blog series are often adapted into books.<br>
 If you want to share larger-scale, systematic knowledge, writing a small book is a good choice.<br>
 This article introduces a tool called <code>GitBook</code>, which lets you write a book in Markdown, put it on GitHub, and generate web and PDF versions of the book. Compared with traditional LaTeX, it is simpler and more convenient. It suits contemporary programmers.</p>
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/gitbook/en-hero.webp" alt="Loose blank note cards pass through a modular binding workshop and emerge as a structured book, a continuous web-page scroll, and printed folios" width="1536" height="864" decoding="async">
+</figure>
+<span id="more"></span>
 <p>The references for this article mainly come from the <a target="_blank" rel="noopener" href="https://github.com/GitbookIO/gitbook/blob/master/docs/setup.md">official website</a>. By comparison, this article is more focused and can help you quickly initialize, write, and publish a book.</p>
 <p>Install gitbook command line tool:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install gitbook-cli -g</span><br></pre></td></tr></table></figure>

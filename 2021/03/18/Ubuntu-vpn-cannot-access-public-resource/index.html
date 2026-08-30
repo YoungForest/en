@@ -19,22 +19,23 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"youngforest.github.io","root":"/en/","images":"/en/images","scheme":"Mist","darkmode":false,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"buttons","active":"disqus","storage":true,"lazyload":true,"nav":null,"activeClass":"disqus"},"stickytabs":false,"motion":{"enable":false,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/en/search.json","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/en/js/config.js" defer></script>
 
-    <meta name="description" content="Because of research needs, I needed to connect to the Hangzhou Research Institute VPN before I could use GPUs for neural network training tasks. However, after configuring OpenVPN on Ubuntu 18.04, I f">
+    <meta name="description" content="How a local route setting fixed an Ubuntu VPN connection that reached private research resources but blocked the public internet.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Ubuntu OpenVPN Cannot Access Public Internet Resources">
 <meta property="og:url" content="https://youngforest.github.io/en/2021/03/18/Ubuntu-vpn-cannot-access-public-resource/index.html">
 <meta property="og:site_name" content="YoungForest&#39;s blog">
-<meta property="og:description" content="Because of research needs, I needed to connect to the Hangzhou Research Institute VPN before I could use GPUs for neural network training tasks. However, after configuring OpenVPN on Ubuntu 18.04, I f">
+<meta property="og:description" content="How a local route setting fixed an Ubuntu VPN connection that reached private research resources but blocked the public internet.">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://youngforest.github.io/en/images/ai/Ubuntu-vpn-cannot-access-public-resource/en-hero.webp">
 <meta property="og:image" content="https://youngforest.github.io/images/vpn1.png">
 <meta property="og:image" content="https://youngforest.github.io/images/vpn2.png">
 <meta property="og:image" content="https://youngforest.github.io/images/vpn2.png">
 <meta property="article:published_time" content="2021-03-18T03:20:13.000Z">
-<meta property="article:modified_time" content="2026-08-17T11:12:58.320Z">
+<meta property="article:modified_time" content="2026-08-30T15:00:25.627Z">
 <meta property="article:author" content="YoungForest">
 <meta property="article:tag" content="Linux">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://youngforest.github.io/images/vpn1.png">
+<meta name="twitter:image" content="https://youngforest.github.io/en/images/ai/Ubuntu-vpn-cannot-access-public-resource/en-hero.webp">
 
 
 <link rel="canonical" href="https://youngforest.github.io/en/2021/03/18/Ubuntu-vpn-cannot-access-public-resource/">
@@ -290,7 +291,7 @@
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
       <meta itemprop="name" content="Ubuntu OpenVPN Cannot Access Public Internet Resources | YoungForest's blog">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="How a local route setting fixed an Ubuntu VPN connection that reached private research resources but blocked the public internet.">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -312,7 +313,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2026-08-17 19:12:58" itemprop="dateModified" datetime="2026-08-17T19:12:58+08:00">2026-08-17</time>
+      <time title="Modified: 2026-08-30 23:00:25" itemprop="dateModified" datetime="2026-08-30T23:00:25+08:00">2026-08-30</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -327,6 +328,7 @@
   
 </div>
 
+            <div class="post-description">How a local route setting fixed an Ubuntu VPN connection that reached private research resources but blocked the public internet.</div>
         </div>
       </header>
 
@@ -335,6 +337,10 @@
     
     <div class="post-body" itemprop="articleBody"><p>Because of research needs, I needed to connect to the Hangzhou Research Institute VPN before I could use GPUs for neural network training tasks.<br>
 However, after configuring OpenVPN on Ubuntu 18.04, I found a difficult problem: after connecting to the VPN, I could not access the public Internet, such as Baidu and similar websites. These were not sites outside the Great Firewall, but the “external network” relative to the local intranet. After disconnecting the VPN, I could access the public Internet, but could not access Hangzhou Research Institute resources. Since in daily work both the public Internet and the Hangzhou Research Institute intranet are basically indispensable, I spent two days investigating and fixing this problem. Also, other classmates using the VPN did not have similar issues, so I believed this was a problem specific to <code>Ubuntu</code>. The fix itself was simple, but the process of locating the problem was very bumpy.</p>
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Ubuntu-vpn-cannot-access-public-resource/en-hero.webp" alt="A harbour lock routes one research cargo boat through a private canal while ordinary boats remain on the open public waterway" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+<span id="more"></span>
 <h2 id="Symptoms">Symptoms</h2>
 <p>After connecting to the VPN, I could ping Baidu’s IP address, but the browser could not open Baidu, and I also could not directly ping <code>baidu.com</code>. The browser could only open Hangzhou Research Institute and BUAA internal websites.<br>
 My initial judgment was that it was a DNS server issue, but after investigation I found the DNS configuration had no problem.<br>

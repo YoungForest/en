@@ -19,19 +19,22 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"youngforest.github.io","root":"/en/","images":"/en/images","scheme":"Mist","darkmode":false,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"buttons","active":"disqus","storage":true,"lazyload":true,"nav":null,"activeClass":"disqus"},"stickytabs":false,"motion":{"enable":false,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/en/search.json","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/en/js/config.js" defer></script>
 
-    <meta name="description" content="First Round time: 2020-03-20 16:29:48 Last Friday I took the written test on Nowcoder. The questions were not hard and were divided into computer science fundamentals, algorithms, and system design. F">
+    <meta name="description" content="A three-round server-development interview covering system design, CS fundamentals, algorithms, smart pointers, and leaderboard architecture.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="miHoYo Server Development Summer Internship">
 <meta property="og:url" content="https://youngforest.github.io/en/2020/03/20/Mihayo-backend-intern-interview/index.html">
 <meta property="og:site_name" content="YoungForest&#39;s blog">
-<meta property="og:description" content="First Round time: 2020-03-20 16:29:48 Last Friday I took the written test on Nowcoder. The questions were not hard and were divided into computer science fundamentals, algorithms, and system design. F">
+<meta property="og:description" content="A three-round server-development interview covering system design, CS fundamentals, algorithms, smart pointers, and leaderboard architecture.">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://youngforest.github.io/en/images/ai/Mihayo-backend-intern-interview/en-hero.webp">
+<meta property="og:image" content="https://youngforest.github.io/en/images/ai/Mihayo-backend-intern-interview/en-third-round.webp">
 <meta property="article:published_time" content="2020-03-20T08:29:48.000Z">
-<meta property="article:modified_time" content="2026-08-17T11:12:58.319Z">
+<meta property="article:modified_time" content="2026-08-30T15:00:25.626Z">
 <meta property="article:author" content="YoungForest">
 <meta property="article:tag" content="Intern">
 <meta property="article:tag" content="miHoYo">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://youngforest.github.io/en/images/ai/Mihayo-backend-intern-interview/en-hero.webp">
 
 
 <link rel="canonical" href="https://youngforest.github.io/en/2020/03/20/Mihayo-backend-intern-interview/">
@@ -169,7 +172,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">First Round</span></a></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">2.</span> <span class="nav-text">Second Round</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Algorithm"><span class="nav-number">2.1.</span> <span class="nav-text">Algorithm</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Project"><span class="nav-number">2.2.</span> <span class="nav-text">Project</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Computer-Science-Fundamentals"><span class="nav-number">2.3.</span> <span class="nav-text">Computer Science Fundamentals</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">3.</span> <span class="nav-text">Third Round</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Language-Fundamentals"><span class="nav-number">3.1.</span> <span class="nav-text">Language Fundamentals</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Algorithm-v2"><span class="nav-number">3.2.</span> <span class="nav-text">Algorithm</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Data-Structure-Design"><span class="nav-number">3.3.</span> <span class="nav-text">Data Structure Design</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Computer-Science-Fundamentals-v2"><span class="nav-number">3.4.</span> <span class="nav-text">Computer Science Fundamentals</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Others"><span class="nav-number">3.5.</span> <span class="nav-text">Others</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#First-Round"><span class="nav-number">1.</span> <span class="nav-text">First Round</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Second-Round"><span class="nav-number">2.</span> <span class="nav-text">Second Round</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Algorithm"><span class="nav-number">2.1.</span> <span class="nav-text">Algorithm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Project"><span class="nav-number">2.2.</span> <span class="nav-text">Project</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Computer-Science-Fundamentals"><span class="nav-number">2.3.</span> <span class="nav-text">Computer Science Fundamentals</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Third-Round"><span class="nav-number">3.</span> <span class="nav-text">Third Round</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Language-Fundamentals"><span class="nav-number">3.1.</span> <span class="nav-text">Language Fundamentals</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Algorithm-v2"><span class="nav-number">3.2.</span> <span class="nav-text">Algorithm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Data-Structure-Design"><span class="nav-number">3.3.</span> <span class="nav-text">Data Structure Design</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Computer-Science-Fundamentals-v2"><span class="nav-number">3.4.</span> <span class="nav-text">Computer Science Fundamentals</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Others"><span class="nav-number">3.5.</span> <span class="nav-text">Others</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -287,7 +290,7 @@
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
       <meta itemprop="name" content="miHoYo Server Development Summer Internship | YoungForest's blog">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="A three-round server-development interview covering system design, CS fundamentals, algorithms, smart pointers, and leaderboard architecture.">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -309,7 +312,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2026-08-17 19:12:58" itemprop="dateModified" datetime="2026-08-17T19:12:58+08:00">2026-08-17</time>
+      <time title="Modified: 2026-08-30 23:00:25" itemprop="dateModified" datetime="2026-08-30T23:00:25+08:00">2026-08-30</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -324,18 +327,23 @@
   
 </div>
 
+            <div class="post-description">A three-round server-development interview covering system design, CS fundamentals, algorithms, smart pointers, and leaderboard architecture.</div>
         </div>
       </header>
 
     
     
     
-    <div class="post-body" itemprop="articleBody"><h1>First Round</h1>
+    <div class="post-body" itemprop="articleBody"><h2 id="First-Round">First Round</h2>
 <p>time: 2020-03-20 16:29:48</p>
 <p>Last Friday I took the written test on Nowcoder. The questions were not hard and were divided into computer science fundamentals, algorithms, and system design.<br>
 For computer science fundamentals, thanks to serious undergraduate study, there was no problem. The algorithm part was also around LeetCode Medium difficulty and I got AC quickly.<br>
 System design, however, stumped me. I am not good at it and had not prepared for it. The task was to design a MOBA game’s matchmaking mechanism, including solo and team queue. I had never thought about it before and just wrote something randomly.<br>
 Yesterday I received a call saying I had passed the written test, and they scheduled a phone interview for 2:30 this afternoon.</p>
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/Mihayo-backend-intern-interview/en-hero.webp" width="1536" height="864" alt="Forest clears familiar algorithm and fundamentals stepping stones but pauses at an unfamiliar multiplayer matchmaking machine to reorganize his tools" decoding="async">
+</figure>
+<span id="more"></span>
 <p>I had a lovely expert roommate in undergraduate who eventually went to miHoYo. Although I am not particularly into games, with the attitude of doing more interviews and summarizing more, I also signed up for its spring referral recruiting.</p>
 <p>The interview was expected to take 30 minutes, but actually took 40 minutes.</p>
 <p>Self-introduction + project experience + computer science fundamentals.</p>
@@ -362,35 +370,38 @@ Yesterday I received a call saying I had passed the written test, and they sched
 <li>name common design patterns. I mentioned a few, but the interviewer did not seem satisfied</li>
 </ul>
 <p>There was no live coding section, which was a little disappointing.</p>
-<h1>Second Round</h1>
+<h2 id="Second-Round">Second Round</h2>
 <p>time: 2020-04-03 12:54:20</p>
 <p>Previous <a target="_blank" rel="noopener" href="https://www.nowcoder.com/discuss/387235">first-round post</a>.</p>
 <p>Two full weeks passed between the first and second rounds. In between, HR called and hoped I could go to Shanghai for an onsite second round. I could only honestly say that the school currently did not allow cross-province movement. Your company is really bold. In the end, it still went according to plan as a video interview.</p>
 <p>The whole interview lasted 50 minutes. It was not very difficult, but because it was a game company, many questions and projects were things I had not encountered or thought about before.</p>
-<h2 id="Algorithm">Algorithm</h2>
+<h3 id="Algorithm">Algorithm</h3>
 <p>Merge two sorted linked lists.</p>
-<h2 id="Project">Project</h2>
+<h3 id="Project">Project</h3>
 <ul>
 <li>Projects under Linux. I told him most of mine were all on Linux.</li>
 <li>A game I made in senior year (software engineering assignment), <a target="_blank" rel="noopener" href="https://github.com/xxr5566833/Game">GitHub</a>.</li>
 <li>memory leak diagnosis</li>
 <li>protobuf</li>
 </ul>
-<h2 id="Computer-Science-Fundamentals">Computer Science Fundamentals</h2>
+<h3 id="Computer-Science-Fundamentals">Computer Science Fundamentals</h3>
 <ul>
 <li>How to diagnose network problems?</li>
 <li>Consistent hashing, adding buckets and removing buckets.</li>
 <li>Singleton pattern, templated singleton, and singleton under multithreading. This was implemented locally in the IDE while sharing the screen.</li>
 </ul>
-<h1>Third Round</h1>
+<figure class="editorial-illustration">
+  <img src="/en/images/ai/Mihayo-backend-intern-interview/en-third-round.webp" width="1536" height="864" alt="Forest works through a shared-pointer knot, a coin-combination maze, and a balanced ranking tree at the third interview workbench" loading="lazy" decoding="async">
+</figure>
+<h2 id="Third-Round">Third Round</h2>
 <p>time: 2020-04-08 12:58:36</p>
 <p><a target="_blank" rel="noopener" href="https://www.nowcoder.com/discuss/387235">First round</a><br>
 <a target="_blank" rel="noopener" href="https://www.nowcoder.com/discuss/399642">Second round</a></p>
-<h2 id="Language-Fundamentals">Language Fundamentals</h2>
+<h3 id="Language-Fundamentals">Language Fundamentals</h3>
 <p>Implement the constructor and destructor of smart pointer <code>shared_ptr</code>.<br>
 Question: why must <code>count</code> use a pointer?</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typename</span>&lt;T&gt;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">shared_ptr</span> &#123;</span><br><span class="line">    T* data = <span class="literal">nullptr</span>;</span><br><span class="line">    <span class="type">uint32_t</span>* count = <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">shared_ptr</span>(<span class="type">const</span> shared_ptr&amp; a) &#123;</span><br><span class="line">        data = a-&gt;data;</span><br><span class="line">        count = a-&gt;count;</span><br><span class="line">        ++(*count);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">shared_ptr</span>(T* t) &#123;</span><br><span class="line">        data = t;</span><br><span class="line">        <span class="keyword">if</span> (t) &#123;</span><br><span class="line">            count = <span class="keyword">new</span> <span class="built_in">uint32_t</span>();</span><br><span class="line">            count = <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    shared_ptr <span class="keyword">operator</span> = (<span class="type">const</span> shared_ptr&amp; a) &#123;</span><br><span class="line">        <span class="keyword">if</span> (a == <span class="keyword">this</span>) ;</span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">if</span> (<span class="keyword">this</span> != <span class="literal">nullptr</span>) &#123;</span><br><span class="line">                --(*count);</span><br><span class="line">                <span class="keyword">if</span> (*count == <span class="number">0</span>) &#123;</span><br><span class="line">                    <span class="keyword">delete</span> data;</span><br><span class="line">                    <span class="keyword">delete</span> count;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            data = a-&gt;data;</span><br><span class="line">            count = a-&gt;count;</span><br><span class="line">            ++(*count);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    ~<span class="built_in">shared_ptr</span>() &#123;</span><br><span class="line">        <span class="keyword">if</span> (data) &#123;</span><br><span class="line">            <span class="keyword">if</span> (*count &gt; <span class="number">0</span>) &#123;</span><br><span class="line">                --(*count);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">delete</span> data;</span><br><span class="line">                <span class="keyword">delete</span> count;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">typename</span>&lt;T&gt;</span></span><br><span class="line"><span class="function">shared_ptr&lt;T&gt; <span class="title">make_shared</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">ret</span>(<span class="keyword">new</span> <span class="built_in">T</span>());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="Algorithm-v2">Algorithm</h2>
+<h3 id="Algorithm-v2">Algorithm</h3>
 <blockquote>
 <p>Coins with denominations 1, 7, and 10.<br>
 Given an <code>n</code>, use the minimum number of coins to make this value.</p>
@@ -401,14 +412,14 @@ Given an <code>n</code>, use the minimum number of coins to make this value.</p>
 </blockquote>
 <p>Then I gave a DP solution with O(N). The interviewer then hinted: if <code>N</code> is very large, what optimization idea is there? This led to first taking modulo the least common multiple, then doing DP on the remainder, giving an O(1) solution.</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">dp</span>(n) = <span class="built_in">min</span>(</span><br><span class="line">    <span class="built_in">dp</span>(n - <span class="number">1</span>) + <span class="number">1</span>,</span><br><span class="line">    <span class="built_in">dp</span>(n - <span class="number">7</span>) + <span class="number">1</span>,</span><br><span class="line">    <span class="built_in">dp</span>(n - <span class="number">10</span>) + <span class="number">1</span>,</span><br><span class="line">); <span class="keyword">if</span> n &gt;= <span class="number">10</span>;</span><br><span class="line"><span class="number">1</span> * <span class="number">7</span> * <span class="number">10</span> = <span class="number">70</span></span><br><span class="line"><span class="built_in">O</span> (<span class="number">7</span> + <span class="number">1</span>) = <span class="built_in">O</span>(<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
-<h2 id="Data-Structure-Design">Data Structure Design</h2>
+<h3 id="Data-Structure-Design">Data Structure Design</h3>
 <p>Design a million-level leaderboard that supports insertion, lookup score by <code>uid</code>, lookup rank by <code>uid</code>, and lookup <code>uid</code> by rank.<br>
 Follow-up: when scores are the same, sort by time of entering the leaderboard.</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">order statisc tree</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">getSize</span><span class="params">(TreeNode* node)</span> </span>&#123;&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">set</span><br><span class="line">multiset</span><br><span class="line"></span><br><span class="line">order_statisc_tree&lt;pair&lt;分数, 时间&gt;，uid&gt;：按名次查uid log N</span><br><span class="line">hashmap&lt;uid, pair&lt;分数,时间&gt;&gt;: 按uid查分数 <span class="built_in">O</span>(<span class="number">1</span>)</span><br><span class="line">按uid查排名 <span class="built_in">O</span>(log N)</span><br><span class="line">insert: <span class="built_in">O</span>(<span class="number">1</span> + log N)</span><br></pre></td></tr></table></figure>
-<h2 id="Computer-Science-Fundamentals-v2">Computer Science Fundamentals</h2>
+<h3 id="Computer-Science-Fundamentals-v2">Computer Science Fundamentals</h3>
 <p>Familiar with Linux?<br>
 Troubleshoot an online process whose CPU usage is 100%.</p>
-<h2 id="Others">Others</h2>
+<h3 id="Others">Others</h3>
 <p>What is special about game companies?<br>
 Have you played our company’s games? (No.) Then what games do you usually play?</p>
 <p>At the end, the interviewer asked whether I could start the internship early before graduation. I said no, because I could not go to Shanghai.</p>

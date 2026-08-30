@@ -19,18 +19,20 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"youngforest.github.io","root":"/en/","images":"/en/images","scheme":"Mist","darkmode":false,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"buttons","active":"disqus","storage":true,"lazyload":true,"nav":null,"activeClass":"disqus"},"stickytabs":false,"motion":{"enable":false,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/en/search.json","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/en/js/config.js" defer></script>
 
-    <meta name="description" content="Rank Name Score Finish Time Q1 (4) Q2 (5) Q3 (6) Q4 (8)     220 &#x2F; 4109 YoungForest 15 0:59:43 0:17:07 0:29:36 0:54:43 (1) null    The quality of recent contests has been decent. Even the simplest w">
+    <meta name="description" content="A contest recap on bounded robot paths, four-colour garden graphs, maximum-sum partitions, and suffix or binary-search duplicate detection.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="LeetCode weekly contest 136">
 <meta property="og:url" content="https://youngforest.github.io/en/2019/05/12/LeetCode-weekly-contest-136/index.html">
 <meta property="og:site_name" content="YoungForest&#39;s blog">
-<meta property="og:description" content="Rank Name Score Finish Time Q1 (4) Q2 (5) Q3 (6) Q4 (8)     220 &#x2F; 4109 YoungForest 15 0:59:43 0:17:07 0:29:36 0:54:43 (1) null    The quality of recent contests has been decent. Even the simplest w">
+<meta property="og:description" content="A contest recap on bounded robot paths, four-colour garden graphs, maximum-sum partitions, and suffix or binary-search duplicate detection.">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://youngforest.github.io/en/images/ai/LeetCode-weekly-contest-136/en-hero.webp">
 <meta property="article:published_time" content="2019-05-12T04:04:20.000Z">
-<meta property="article:modified_time" content="2026-08-17T11:12:58.315Z">
+<meta property="article:modified_time" content="2026-08-30T15:00:25.621Z">
 <meta property="article:author" content="YoungForest">
 <meta property="article:tag" content="Competitive Programming">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://youngforest.github.io/en/images/ai/LeetCode-weekly-contest-136/en-hero.webp">
 
 
 <link rel="canonical" href="https://youngforest.github.io/en/2019/05/12/LeetCode-weekly-contest-136/">
@@ -286,7 +288,7 @@
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
       <meta itemprop="name" content="LeetCode weekly contest 136 | YoungForest's blog">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="A contest recap on bounded robot paths, four-colour garden graphs, maximum-sum partitions, and suffix or binary-search duplicate detection.">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -308,7 +310,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2026-08-17 19:12:58" itemprop="dateModified" datetime="2026-08-17T19:12:58+08:00">2026-08-17</time>
+      <time title="Modified: 2026-08-30 23:00:25" itemprop="dateModified" datetime="2026-08-30T23:00:25+08:00">2026-08-30</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -323,6 +325,7 @@
   
 </div>
 
+            <div class="post-description">A contest recap on bounded robot paths, four-colour garden graphs, maximum-sum partitions, and suffix or binary-search duplicate detection.</div>
         </div>
       </header>
 
@@ -358,6 +361,10 @@
 <p>The quality of recent contests has been decent. Even the simplest warm-up problem requires careful thought. There is also a DP problem every time. DP is the type of thing where even after doing many problems, you may still fail to write a new one when you encounter it.<br>
 This time I returned to my previous level and dropped to 200+.<br>
 For this contest, it probably required finishing the first three problems within 55 minutes to enter the top 200. First, I solved problems relatively slowly. Second, I got an index issue wrong in the DP for the third problem, which caused one penalty. So unfortunately I did not enter the top 200.</p>
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-136/en-hero.webp" alt="A tiny robot loops through a four-colour allotment beside raised partition blocks and overlapping patterned ribbons" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+<span id="more"></span>
 <h2 id="1041-Robot-Bounded-In-Circle">1041. Robot Bounded In Circle</h2>
 <p>Intuition:<br>
 Execute <code>instructions</code> until the robot faces north again. Because there are only 4 directions, it takes at most 4 executions, and may also take 2 or 1.<br>

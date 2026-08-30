@@ -19,18 +19,20 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"youngforest.github.io","root":"/en/","images":"/en/images","scheme":"Mist","darkmode":false,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"buttons","active":"disqus","storage":true,"lazyload":true,"nav":null,"activeClass":"disqus"},"stickytabs":false,"motion":{"enable":false,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/en/search.json","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/en/js/config.js" defer></script>
 
-    <meta name="description" content="Two months ago, I configured Travis CI to automatically deploy my blog in Travis CI Hexo Automatically Deploy. However, I found it do not work this month. Unfortunately, Travis do not support free bui">
+    <meta name="description" content="Migrating a Hexo blog deployment from Travis CI to GitHub Actions after free public-repository builds stopped working.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Migrate from Travis CI to Github Action">
 <meta property="og:url" content="https://youngforest.github.io/en/2021/12/18/Migrate-from-Travis-CI-to-Github-Action/index.html">
 <meta property="og:site_name" content="YoungForest&#39;s blog">
-<meta property="og:description" content="Two months ago, I configured Travis CI to automatically deploy my blog in Travis CI Hexo Automatically Deploy. However, I found it do not work this month. Unfortunately, Travis do not support free bui">
+<meta property="og:description" content="Migrating a Hexo blog deployment from Travis CI to GitHub Actions after free public-repository builds stopped working.">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://youngforest.github.io/en/images/ai/Migrate-from-Travis-CI-to-Github-Action/en-hero.webp">
 <meta property="article:published_time" content="2021-12-18T02:47:17.000Z">
-<meta property="article:modified_time" content="2026-08-17T11:12:58.319Z">
+<meta property="article:modified_time" content="2026-08-30T15:00:25.626Z">
 <meta property="article:author" content="YoungForest">
 <meta property="article:tag" content="Blog">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://youngforest.github.io/en/images/ai/Migrate-from-Travis-CI-to-Github-Action/en-hero.webp">
 
 
 <link rel="canonical" href="https://youngforest.github.io/en/2021/12/18/Migrate-from-Travis-CI-to-Github-Action/">
@@ -67,6 +69,14 @@
 
 
 
+
+  
+    <link rel="alternate" hreflang="zh-CN" href="https://youngforest.github.io/2021/12/18/Migrate-from-Travis-CI-to-Github-Action/">
+    <link rel="alternate" hreflang="x-default" href="https://youngforest.github.io/2021/12/18/Migrate-from-Travis-CI-to-Github-Action/">
+  
+  
+    <link rel="alternate" hreflang="en" href="https://youngforest.github.io/en/2021/12/18/Migrate-from-Travis-CI-to-Github-Action/">
+  
 
 
 
@@ -277,7 +287,7 @@
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
       <meta itemprop="name" content="Migrate from Travis CI to Github Action | YoungForest's blog">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="Migrating a Hexo blog deployment from Travis CI to GitHub Actions after free public-repository builds stopped working.">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -299,7 +309,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2026-08-17 19:12:58" itemprop="dateModified" datetime="2026-08-17T19:12:58+08:00">2026-08-17</time>
+      <time title="Modified: 2026-08-30 23:00:25" itemprop="dateModified" datetime="2026-08-30T23:00:25+08:00">2026-08-30</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -314,13 +324,16 @@
   
 </div>
 
+            <div class="post-description">Migrating a Hexo blog deployment from Travis CI to GitHub Actions after free public-repository builds stopped working.</div>
         </div>
       </header>
 
     
     
     
-    <div class="post-body" itemprop="articleBody"><p>Two months ago, I configured Travis CI to automatically deploy my blog in<br>
+    <div class="post-body" itemprop="articleBody"><figure class="editorial-illustration editorial-illustration--hero"><img src="/en/images/ai/Migrate-from-Travis-CI-to-Github-Action/en-hero.webp" width="1536" height="864" alt="Static-page crates cross from a dark stalled conveyor into a branching workflow machine that restores paired-site delivery" decoding="async" fetchpriority="high"></figure>
+<span id="more"></span>
+<p>Two months ago, I configured Travis CI to automatically deploy my blog in<br>
 <a href="https://youngforest.github.io/en/2021/10/09/Travis-CI-Hexo-Automatically-Deploy/">Travis CI Hexo Automatically Deploy</a>.<br>
 However, I found it do not work this month. Unfortunately, Travis do not support free build for public repos now. I have to migrate to Github Action in order to auto CD.</p>
 <p>I followed <a target="_blank" rel="noopener" href="https://sanonz.github.io/2020/deploy-a-hexo-blog-from-github-actions/">this post</a> to do that. Some changes should be applied in <code>deploy.yml</code> file, especially <strong>theme</strong>.<br>

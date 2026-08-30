@@ -19,21 +19,23 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"youngforest.github.io","root":"/en/","images":"/en/images","scheme":"Mist","darkmode":false,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"buttons","active":"disqus","storage":true,"lazyload":true,"nav":null,"activeClass":"disqus"},"stickytabs":false,"motion":{"enable":false,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/en/search.json","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/en/js/config.js" defer></script>
 
-    <meta name="description" content="Regarding how to migrate posts from other blogs to Hexo, the official documentation provides some guidance. I also followed the official documentation to try migrating my previous posts from CNBlogs t">
+    <meta name="description" content="Lessons from moving posts from CNBlogs to Hexo: local plugin scope, incomplete RSS exports, and formatting problems in legacy HTML.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Migrating Posts from CNBlogs to Hexo">
 <meta property="og:url" content="https://youngforest.github.io/en/2016/11/22/move-posts-from-cnblogs-to-Hexo/index.html">
 <meta property="og:site_name" content="YoungForest&#39;s blog">
-<meta property="og:description" content="Regarding how to migrate posts from other blogs to Hexo, the official documentation provides some guidance. I also followed the official documentation to try migrating my previous posts from CNBlogs t">
+<meta property="og:description" content="Lessons from moving posts from CNBlogs to Hexo: local plugin scope, incomplete RSS exports, and formatting problems in legacy HTML.">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://youngforest.github.io/en/images/ai/move-posts-from-cnblogs-to-Hexo/en-hero.webp">
 <meta property="og:image" content="https://cloud.githubusercontent.com/assets/13612111/20493077/5f16663e-b052-11e6-9a0f-256d35ca6110.png">
 <meta property="og:image" content="https://cloud.githubusercontent.com/assets/13612111/20493198/cc799b42-b052-11e6-9a0d-28f2e3f8e207.png">
+<meta property="og:image" content="https://youngforest.github.io/en/images/ai/move-posts-from-cnblogs-to-Hexo/en-format-repair.webp">
 <meta property="article:published_time" content="2016-11-21T17:42:23.000Z">
-<meta property="article:modified_time" content="2026-08-17T11:12:58.322Z">
+<meta property="article:modified_time" content="2026-08-30T15:00:25.629Z">
 <meta property="article:author" content="YoungForest">
 <meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://cloud.githubusercontent.com/assets/13612111/20493077/5f16663e-b052-11e6-9a0f-256d35ca6110.png">
+<meta name="twitter:image" content="https://youngforest.github.io/en/images/ai/move-posts-from-cnblogs-to-Hexo/en-hero.webp">
 
 
 <link rel="canonical" href="https://youngforest.github.io/en/2016/11/22/move-posts-from-cnblogs-to-Hexo/">
@@ -289,7 +291,7 @@
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
       <meta itemprop="name" content="Migrating Posts from CNBlogs to Hexo | YoungForest's blog">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="Lessons from moving posts from CNBlogs to Hexo: local plugin scope, incomplete RSS exports, and formatting problems in legacy HTML.">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -311,7 +313,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2026-08-17 19:12:58" itemprop="dateModified" datetime="2026-08-17T19:12:58+08:00">2026-08-17</time>
+      <time title="Modified: 2026-08-30 23:00:25" itemprop="dateModified" datetime="2026-08-30T23:00:25+08:00">2026-08-30</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -326,6 +328,7 @@
   
 </div>
 
+            <div class="post-description">Lessons from moving posts from CNBlogs to Hexo: local plugin scope, incomplete RSS exports, and formatting problems in legacy HTML.</div>
         </div>
       </header>
 
@@ -333,6 +336,9 @@
     
     
     <div class="post-body" itemprop="articleBody"><p>Regarding how to migrate posts from other blogs to <code>Hexo</code>, the <a target="_blank" rel="noopener" href="https://hexo.io/docs/migration.html">official documentation</a> provides some guidance. I also followed the official documentation to try migrating my previous posts from CNBlogs to the new blog. I encountered some problems during this process, so here are the solutions.</p>
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/move-posts-from-cnblogs-to-Hexo/en-hero.webp" alt="Younger Forest crosses from an old blog island to a static-site workshop after replacing a ferry of empty envelopes with complete archive crates" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
 <span id="more"></span>
 <h2 id="Migration-Plugin-Not-Installed">Migration Plugin Not Installed</h2>
 <p>CNBlogs needs RSS migration. Following the documentation, I installed the related plugin with <code>$ npm install hexo-migrator-rss --save</code>, but when running the migration command <code>$ hexo migrate rss &lt;source&gt;</code>, the following error was reported:</p>
@@ -345,6 +351,9 @@
 <p>This happened because the RSS exported by CNBlogs is exactly like that. Through observation, I found that the RSS link is only an <code>xml</code> file containing article information. In other words, if we can obtain an <code>xml</code> file with full article information, it should work. It happens that CNBlogs’ backup function can provide such a file. Replacing the RSS link with the backup file link and running the migration command again can migrate the complete articles into Hexo. Below is the effect of complete migration.</p>
 <p><img src="https://cloud.githubusercontent.com/assets/13612111/20493198/cc799b42-b052-11e6-9a0d-28f2e3f8e207.png" alt="Complete migration"></p>
 <p>However, this migration still lost information such as tags, so it was not completely satisfactory.</p>
+<figure class="editorial-illustration">
+  <img src="/en/images/ai/move-posts-from-cnblogs-to-Hexo/en-format-repair.webp" alt="Forest repairs a loom where tangled rich-text fabric becomes orderly body, quotation, and code-shaped blocks without replacing the original migration evidence" width="1536" height="864" loading="lazy" decoding="async">
+</figure>
 <h2 id="Strange-Formatting-Problems">Strange Formatting Problems</h2>
 <p>After successful migration, I found that the formatting of two posts became very strange. The main text was normal, but quoted sections and inserted code were laid out messily. Another post, however, was perfect. By observing the content of the migrated <code>xml</code> file, I found that the content of those two posts was in HTML format, while the other post was in <code>Markdown</code> format. Only then did I remember that the first two essays were written with the <code>TinyMCE editor</code> recommended by CNBlogs, and only later did I switch to <code>Markdown</code>. So of course Hexo could not support them perfectly.</p>
 

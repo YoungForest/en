@@ -19,18 +19,20 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"youngforest.github.io","root":"/en/","images":"/en/images","scheme":"Mist","darkmode":false,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"buttons","active":"disqus","storage":true,"lazyload":true,"nav":null,"activeClass":"disqus"},"stickytabs":false,"motion":{"enable":false,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/en/search.json","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/en/js/config.js" defer></script>
 
-    <meta name="description" content="Rank Name Score Finish Time Q1 (3) Q2 (4) Q3 (5) Q4 (6)     299 &#x2F; 11282 YoungForest 18 1:16:19 0:05:09 0:18:06 0:29:04 1:11:19  1    1736. Latest Time by Replacing Hidden Digits Greedy. Analyze eac">
+    <meta name="description" content="Four solutions complete the latest valid time, minimize character changes, rank prefix-XOR coordinates, and binary-search the smallest box footprint.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="LeetCode Weekly Contest 225">
 <meta property="og:url" content="https://youngforest.github.io/en/2021/01/24/LeetCode-weekly-contest-225/index.html">
 <meta property="og:site_name" content="YoungForest&#39;s blog">
-<meta property="og:description" content="Rank Name Score Finish Time Q1 (3) Q2 (4) Q3 (5) Q4 (6)     299 &#x2F; 11282 YoungForest 18 1:16:19 0:05:09 0:18:06 0:29:04 1:11:19  1    1736. Latest Time by Replacing Hidden Digits Greedy. Analyze eac">
+<meta property="og:description" content="Four solutions complete the latest valid time, minimize character changes, rank prefix-XOR coordinates, and binary-search the smallest box footprint.">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://youngforest.github.io/en/images/ai/LeetCode-weekly-contest-225/en-hero.webp">
 <meta property="article:published_time" content="2021-01-24T11:58:06.000Z">
-<meta property="article:modified_time" content="2026-08-17T11:12:58.317Z">
+<meta property="article:modified_time" content="2026-08-30T15:00:25.624Z">
 <meta property="article:author" content="YoungForest">
 <meta property="article:tag" content="Competitive Programming">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://youngforest.github.io/en/images/ai/LeetCode-weekly-contest-225/en-hero.webp">
 
 
 <link rel="canonical" href="https://youngforest.github.io/en/2021/01/24/LeetCode-weekly-contest-225/">
@@ -286,7 +288,7 @@
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
       <meta itemprop="name" content="LeetCode Weekly Contest 225 | YoungForest's blog">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="Four solutions complete the latest valid time, minimize character changes, rank prefix-XOR coordinates, and binary-search the smallest box footprint.">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -308,7 +310,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2026-08-17 19:12:58" itemprop="dateModified" datetime="2026-08-17T19:12:58+08:00">2026-08-17</time>
+      <time title="Modified: 2026-08-30 23:00:25" itemprop="dateModified" datetime="2026-08-30T23:00:25+08:00">2026-08-30</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -323,6 +325,7 @@
   
 </div>
 
+            <div class="post-description">Four solutions complete the latest valid time, minimize character changes, rank prefix-XOR coordinates, and binary-search the smallest box footprint.</div>
         </div>
       </header>
 
@@ -355,6 +358,10 @@
 </tr>
 </tbody>
 </table>
+<figure class="editorial-illustration editorial-illustration--hero">
+  <img src="/en/images/ai/LeetCode-weekly-contest-225/en-hero.webp" alt="Blank position drums settle at their latest valid stops, two bead strings minimize recolouring, a prefix prism ranks grid light and a corner box tower tests the smallest footprint" width="1536" height="864" decoding="async" fetchpriority="high">
+</figure>
+<span id="more"></span>
 <h2 id="1736-Latest-Time-by-Replacing-Hidden-Digits">1736. Latest Time by Replacing Hidden Digits</h2>
 <p>Greedy. Analyze each digit’s situation and solve it with <code>if-else</code>.</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">string <span class="title">maximumTime</span><span class="params">(string time)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (time[<span class="number">4</span>] == <span class="string">&#x27;?&#x27;</span>) &#123;</span><br><span class="line">            time[<span class="number">4</span>] = <span class="string">&#x27;9&#x27;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (time[<span class="number">3</span>] == <span class="string">&#x27;?&#x27;</span>) &#123;</span><br><span class="line">            time[<span class="number">3</span>] = <span class="string">&#x27;5&#x27;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (time[<span class="number">1</span>] == <span class="string">&#x27;?&#x27;</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (time[<span class="number">0</span>] == <span class="string">&#x27;?&#x27;</span>) &#123;</span><br><span class="line">                time[<span class="number">0</span>] = <span class="string">&#x27;2&#x27;</span>;</span><br><span class="line">                time[<span class="number">1</span>] = <span class="string">&#x27;3&#x27;</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (time[<span class="number">0</span>] == <span class="string">&#x27;2&#x27;</span>) &#123;</span><br><span class="line">                time[<span class="number">1</span>] = <span class="string">&#x27;3&#x27;</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                time[<span class="number">1</span>] = <span class="string">&#x27;9&#x27;</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">if</span> (time[<span class="number">0</span>] == <span class="string">&#x27;?&#x27;</span>) &#123;</span><br><span class="line">                <span class="keyword">if</span> (time[<span class="number">1</span>] &lt; <span class="string">&#x27;4&#x27;</span>) &#123;</span><br><span class="line">                    time[<span class="number">0</span>] = <span class="string">&#x27;2&#x27;</span>;</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    time[<span class="number">0</span>] = <span class="string">&#x27;1&#x27;</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> time;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
