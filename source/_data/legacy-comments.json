@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "generated_at": "2026-08-31T04:11:18Z",
+  "source_forums": [
+    "youngforest",
+    "youngforest96"
+  ],
+  "posts": {
+    "2022/03/19/Hennge-challenge-3/": {
+      "comment_count": 7,
+      "comments": [
+        {
+          "author": "Sean",
+          "created_at": "2022-05-31T03:17:04Z",
+          "created_at_label": "2022-05-31 03:17 UTC",
+          "message": "Hi, thanks for such a detailed post.\nJust wanted to follow up: did you get in to the internship? How was the interview?\nThanks",
+          "depth": 0
+        },
+        {
+          "author": "wtfisthistho",
+          "created_at": "2022-06-02T22:02:12Z",
+          "created_at_label": "2022-06-02 22:02 UTC",
+          "message": "They missed a critical instruction in the challenge (check their Drive link), so I'd be surprised if they went to interviews. Challenge instructs use of for loop is prohibited, and their solution relies exclusively on a for loop to complete the task.",
+          "depth": 1
+        },
+        {
+          "author": "Sean",
+          "created_at": "2022-06-12T14:31:41Z",
+          "created_at_label": "2022-06-12 14:31 UTC",
+          "message": "Yes true.\nI myself applied and passed the coding assignment( without for loops). Unfortunately, for some reason, they didn't let me pass the document screening. I wonder why they did not start with document screening instead of giving the coding assignment",
+          "depth": 2
+        },
+        {
+          "author": "Deepesh Dhakal",
+          "created_at": "2022-07-21T00:29:10Z",
+          "created_at_label": "2022-07-21 00:29 UTC",
+          "message": "You can do it with recursion.",
+          "depth": 2
+        },
+        {
+          "author": "YoungForest",
+          "created_at": "2022-07-28T04:01:12Z",
+          "created_at_label": "2022-07-28 04:01 UTC",
+          "message": "No, unfortunately. Don't know why. Maybe it is because that I missed the \"for loop\" restriction.\nBy the way, I applied the full time position.",
+          "depth": 1
+        },
+        {
+          "author": "Nika",
+          "created_at": "2023-04-06T09:17:31Z",
+          "created_at_label": "2023-04-06 09:17 UTC",
+          "message": "Thank you for detailed sharing, I've struggling to find a way to debug the TOTP too. Your online generator is really useful.",
+          "depth": 0
+        },
+        {
+          "author": "Surya",
+          "created_at": "2023-04-13T13:19:09Z",
+          "created_at_label": "2023-04-13 13:19 UTC",
+          "message": "Yeah, I don't understand why I've got rejected during the CV & cover letter review. I have done the challenge fast enough, using recursions for the challenge (golang), no global variables, etc\n\nWhy didn't they do CV review first before jumping into coding challenge, what a waste of time. What a sht company. I shouldn't have expect much :(",
+          "depth": 0
+        }
+      ]
+    }
+  }
+}
