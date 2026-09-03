@@ -1,0 +1,10 @@
+version: editorial-comic-v1
+post: source/_posts/Project-Hail-Mary.md
+context: The author finds the film worth watching but prefers the novel's scientific reasoning, the search for Rocky, and the richer detail.
+assets:
+  - id: hero
+    file: source/images/ai/Project-Hail-Mary/en-hero.webp
+    placement: hero
+    alt: An open, unlettered book unfolds into steps of discovery toward a star, beside a film frame showing the final space scene
+    composition: An open book becomes a short path of folded paper steps with a pendulum, a magnifying lens, and star dots leading to an amber star and muted-teal planet. A simple film frame shows the destination without the full path. Independently generated in the shared visual system, without character likenesses, film stills, or fake interfaces.
+    review_status: rejected

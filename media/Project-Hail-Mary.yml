@@ -1,0 +1,25 @@
+version: 1
+post: source/_posts/Project-Hail-Mary.md
+assets:
+  - id: book-cover
+    type: official-book-cover
+    file: source/images/books/Project-Hail-Mary/cover.jpg
+    isbn: "9780593135204"
+    source_page: https://www.penguinrandomhouse.com/books/611060/project-hail-mary-movie-tie-in-by-andy-weir/9780593135204/
+    source_image: https://images4.penguinrandomhouse.com/cover/9780593135204
+    retrieved_on: "2026-09-02"
+    width: 298
+    height: 450
+    bytes: 48957
+    transformation: none
+    placement: hero
+    alt: "English-language cover of Andy Weir's Project Hail Mary, with an astronaut floating against a black-and-gold background"
+    credit: "Source: Penguin Random House. Cover copyright remains with its rights holders."
+    review_status: approved
+    review_approved_on: "2026-09-03"
+    rights_status: criticism-review-rationale-recorded-not-licensed
+    rights_reference: https://www.penguinrandomhouse.com/terms/
+    rights_note: "No separate reproduction license obtained and no public-domain claim. Limited use in criticism/review: one low-resolution 298x450 cover identifies the specific work being reviewed, retaining its title, author, publisher source and original artwork; it is not a high-resolution substitute or standalone merchandise promotion. The cover is creative and the whole image is reproduced, so any exception depends on jurisdiction and the facts. This record is not a definitive legal conclusion."
+    use_basis_references:
+      - https://www.copyright.gov/fair-use/
+      - https://www.npc.gov.cn/c2/c30834/202011/t20201119_308796.html
