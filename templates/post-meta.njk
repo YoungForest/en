@@ -1,0 +1,3 @@
+{% if page and is_post() and page.translations and page.translations['zh-CN'] %}
+<span class="post-meta-item post-translation"><a href="{{ page.translations['zh-CN'] | escape }}" hreflang="zh-CN">阅读中文版</a></span>
+{% endif %}

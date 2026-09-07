@@ -26,8 +26,6 @@ Clink is a powerful tool that enhances the functionality of the Windows command 
 
 ### How to install and set up Clink
 
-### How to install and set up Clink
-
 1. Download the Clink installer from the [official website](https://mridgers.github.io/clink/).
 2. Run the installer and follow the on-screen instructions to install Clink on your system.
 3. Once the installation is complete, open the Windows command prompt.

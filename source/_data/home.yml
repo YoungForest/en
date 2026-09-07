@@ -1,0 +1,40 @@
+{
+  "label": "Reading guide",
+  "intro": "Software engineer writing about technology, reading, investing, and life",
+  "featured_title": "Start here",
+  "featured_path": "start-here/",
+  "latest_title": "Latest posts",
+  "topics_title": "Topics",
+  "featured": [
+    {
+      "title": "Three-Year Master's Program Review",
+      "path": "2021/07/03/my-3-years-master/"
+    },
+    {
+      "title": "From Beijing to Dublin: A Programmer's Journey to Europe",
+      "path": "2022/12/09/Find-a-Europe-SDE-job-from-China/"
+    },
+    {
+      "title": "The Worlds I See: Curiosity, Exploration, and Discovery at the Dawn of AI",
+      "path": "2025/12/31/The-World-I-see/"
+    }
+  ],
+  "topics": [
+    {
+      "title": "Engineering",
+      "path": "topics/technology/"
+    },
+    {
+      "title": "Career & growth",
+      "path": "topics/career-growth/"
+    },
+    {
+      "title": "Reading & reflection",
+      "path": "topics/reading/"
+    },
+    {
+      "title": "Life abroad",
+      "path": "topics/life-abroad/"
+    }
+  ]
+}
