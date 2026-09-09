@@ -47,6 +47,8 @@ A practical account of finding a European software engineering job from China, f
 
 [Explore this topic](https://youngforest.github.io/en/topics/career-growth/)
 
+[Browse yearly reviews](/en/series/year-in-review/)
+
 ## Reading & reflection
 
 Ideas, questions, and personal responses from reading.
@@ -64,6 +66,8 @@ Published 2025
 Reading Why Nations Fail through institutions, critical junctures, innovation, and long-term growth.
 
 [Explore this topic](https://youngforest.github.io/en/topics/reading/)
+
+[Browse all Books & Screen Notes](/en/reading/)
 
 ## Life abroad
 

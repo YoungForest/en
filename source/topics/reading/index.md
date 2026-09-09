@@ -25,4 +25,6 @@ Published 2025
 
 Reading Why Nations Fail through institutions, critical junctures, innovation, and long-term growth.
 
+[Browse all Books & Screen Notes](/en/reading/)
+
 [All topics](https://youngforest.github.io/en/topics/) · [Complete archive](https://youngforest.github.io/en/archives/)

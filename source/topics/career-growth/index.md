@@ -25,4 +25,6 @@ Published 2022
 
 A practical account of finding a European software engineering job from China, from preparation to relocation.
 
+[Browse yearly reviews](/en/series/year-in-review/)
+
 [All topics](https://youngforest.github.io/en/topics/) · [Complete archive](https://youngforest.github.io/en/archives/)
