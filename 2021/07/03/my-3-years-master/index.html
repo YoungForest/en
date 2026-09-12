@@ -122,7 +122,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/en/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-start-here"><a href="/en/start-here/" rel="section"><i class="fa fa-compass fa-fw"></i>Start here</a></li><li class="menu-item menu-item-topics"><a href="/en/topics/" rel="section"><i class="fa fa-th fa-fw"></i>Topics</a></li><li class="menu-item menu-item-about"><a href="/en/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-中文"><a href="https://youngforest.github.io/" rel="section"><i class="fa fa-globe fa-fw"></i>中文</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/en/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-start-here"><a href="/en/start-here/" rel="section"><i class="fa fa-compass fa-fw"></i>Start here</a></li><li class="menu-item menu-item-topics"><a href="/en/topics/" rel="section"><i class="fa fa-th fa-fw"></i>Topics</a></li><li class="menu-item menu-item-subscribe"><a href="/en/subscribe/" rel="section"><i class="fa fa-rss fa-fw"></i>Subscribe</a></li><li class="menu-item menu-item-about"><a href="/en/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-中文"><a href="https://youngforest.github.io/" rel="section"><i class="fa fa-globe fa-fw"></i>中文</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
         </a>
@@ -333,6 +333,8 @@
     
     
     
+    
+    
     <div class="post-body" itemprop="articleBody"><p>When I graduated from college, I wrote a four-year review: <a href="https://youngforest.github.io/en/2018/10/03/my-4-years-college/">Four-Year College Review</a>. Now, in the blink of an eye, three years have passed. I have graduated from graduate school and am about to enter the workplace.</p>
 <p>Although I went through half a year of delayed graduation, in the end I still graduated successfully without any real danger. Last week I completed my graduation trip to Wuhan, and over the weekend I returned to Beijing to move and prepare for onboarding. With bright expectations for the future, I feel full of ambition.</p>
 <figure class="editorial-illustration editorial-illustration--hero">
@@ -402,12 +404,12 @@
       </div>
 
       <div class="social-item">
-          <a target="_blank" class="social-link" href="/en/atom.xml">
+          <a target="_blank" class="social-link" href="/en/subscribe/">
             <span class="icon">
               <i class="fa fa-rss"></i>
             </span>
 
-            <span class="label">RSS</span>
+            <span class="label">Subscribe to updates</span>
           </a>
       </div>
   </div>
@@ -419,18 +421,26 @@
 
         
 
-          <div class="post-nav">
-            <div class="post-nav-item">
-                <a href="/en/2021/07/02/Wuhan-trip/" rel="prev" title="Wuhan Travelogue and Master&#39;s Graduation Trip">
-                  <i class="fa fa-angle-left"></i> Wuhan Travelogue and Master's Graduation Trip
-                </a>
-            </div>
-            <div class="post-nav-item">
-                <a href="/en/2021/07/11/LeetCode-weekly-contest-249/" rel="next" title="LeetCode Weekly Contest 249">
-                  LeetCode Weekly Contest 249 <i class="fa fa-angle-right"></i>
-                </a>
-            </div>
-          </div>
+
+        <nav class="related-reading" aria-labelledby="related-reading-title">
+  <h2 id="related-reading-title">Read next</h2>
+  <ul>
+    
+      <li>
+        <a href="/en/2018/10/03/my-4-years-college/">A Four-Year College Retrospective</a>
+        <time datetime="2018-10-03">Published 2018-10-03</time>
+        <p>Looking back on four years of university: classes, competitions, friendships, change, and pivotal choices.</p>
+      </li>
+    
+      <li>
+        <a href="/en/2022/12/09/Find-a-Europe-SDE-job-from-China/">From Beijing to Dublin: A Programmer&#39;s Journey to Europe</a>
+        <time datetime="2022-12-09">Published 2022-12-09</time>
+        <p>A practical account of finding a European software engineering job from China, from preparation to relocation.</p>
+      </li>
+    
+  </ul>
+</nav>
+
     </footer>
   </article>
 </div>
@@ -482,6 +492,7 @@
 <script src="/en/js/third-party/comments/utterances.js" defer></script>
 
 <script src="/en/js/discovery.js" defer></script>
+<script src="/en/js/reading-tools.js" defer></script>
 <script>
   (() => {
     if (window.location.hostname !== 'youngforest.github.io') return;

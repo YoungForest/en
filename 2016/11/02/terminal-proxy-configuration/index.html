@@ -119,7 +119,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/en/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-start-here"><a href="/en/start-here/" rel="section"><i class="fa fa-compass fa-fw"></i>Start here</a></li><li class="menu-item menu-item-topics"><a href="/en/topics/" rel="section"><i class="fa fa-th fa-fw"></i>Topics</a></li><li class="menu-item menu-item-about"><a href="/en/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-中文"><a href="https://youngforest.github.io/" rel="section"><i class="fa fa-globe fa-fw"></i>中文</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/en/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-start-here"><a href="/en/start-here/" rel="section"><i class="fa fa-compass fa-fw"></i>Start here</a></li><li class="menu-item menu-item-topics"><a href="/en/topics/" rel="section"><i class="fa fa-th fa-fw"></i>Topics</a></li><li class="menu-item menu-item-subscribe"><a href="/en/subscribe/" rel="section"><i class="fa fa-rss fa-fw"></i>Subscribe</a></li><li class="menu-item menu-item-about"><a href="/en/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-中文"><a href="https://youngforest.github.io/" rel="section"><i class="fa fa-globe fa-fw"></i>中文</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
         </a>
@@ -330,6 +330,13 @@
     
     
     
+    
+    
+      <details class="mobile-toc">
+        <summary>On this page · 7 sections</summary>
+        <nav aria-label="On this page"><ol class="mobile-toc-list"><li class="mobile-toc-list-item mobile-toc-list-level-2"><a class="mobile-toc-list-link" href="#Problem"><span class="mobile-toc-list-text">Problem</span></a></li><li class="mobile-toc-list-item mobile-toc-list-level-2"><a class="mobile-toc-list-link" href="#Tools-Needed"><span class="mobile-toc-list-text">Tools Needed</span></a><ol class="mobile-toc-list-child"><li class="mobile-toc-list-item mobile-toc-list-level-3"><a class="mobile-toc-list-link" href="#Shadowsocks"><span class="mobile-toc-list-text">Shadowsocks</span></a></li><li class="mobile-toc-list-item mobile-toc-list-level-3"><a class="mobile-toc-list-link" href="#Polipo"><span class="mobile-toc-list-text">Polipo</span></a></li></ol></li><li class="mobile-toc-list-item mobile-toc-list-level-2"><a class="mobile-toc-list-link" href="#Testing"><span class="mobile-toc-list-text">Testing</span></a></li><li class="mobile-toc-list-item mobile-toc-list-level-2"><a class="mobile-toc-list-link" href="#Going-Further"><span class="mobile-toc-list-text">Going Further</span></a></li><li class="mobile-toc-list-item mobile-toc-list-level-2"><a class="mobile-toc-list-link" href="#Configure-Proxy-for-Git"><span class="mobile-toc-list-text">Configure Proxy for Git</span></a></li></ol></nav>
+      </details>
+    
     <div class="post-body" itemprop="articleBody"><h2 id="Problem">Problem</h2>
 <p>As a Linuxer, being proficient with the terminal is an essential skill. But in the terminal, downloading and installing things can sometimes be very slow, which is frustrating. I naturally wondered whether I could add a proxy to improve the speed. I had been using Shadowsocks before, and the browser used SwitchyProxy, which achieved basic proxy-based internet access. So, is there a similar tool in the terminal? The answer is yes. Through targeted searching, I successfully solved the proxy problem in the terminal. I summarize it here and hope it can help everyone.</p>
 <figure class="editorial-illustration editorial-illustration--hero">
@@ -413,12 +420,12 @@ There are also other websites that provide similar IP-returning services:</p>
       </div>
 
       <div class="social-item">
-          <a target="_blank" class="social-link" href="/en/atom.xml">
+          <a target="_blank" class="social-link" href="/en/subscribe/">
             <span class="icon">
               <i class="fa fa-rss"></i>
             </span>
 
-            <span class="label">RSS</span>
+            <span class="label">Subscribe to updates</span>
           </a>
       </div>
   </div>
@@ -430,6 +437,8 @@ There are also other websites that provide similar IP-returning services:</p>
 
         
 
+
+        
           <div class="post-nav">
             <div class="post-nav-item">
                 <a href="/en/2016/11/02/Hexo-github-building-personal-blog/" rel="prev" title="Building a Personal Blog with Hexo + GitHub">
@@ -493,6 +502,7 @@ There are also other websites that provide similar IP-returning services:</p>
 <script src="/en/js/third-party/comments/utterances.js" defer></script>
 
 <script src="/en/js/discovery.js" defer></script>
+<script src="/en/js/reading-tools.js" defer></script>
 <script>
   (() => {
     if (window.location.hostname !== 'youngforest.github.io') return;

@@ -120,7 +120,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/en/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-start-here"><a href="/en/start-here/" rel="section"><i class="fa fa-compass fa-fw"></i>Start here</a></li><li class="menu-item menu-item-topics"><a href="/en/topics/" rel="section"><i class="fa fa-th fa-fw"></i>Topics</a></li><li class="menu-item menu-item-about"><a href="/en/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-中文"><a href="https://youngforest.github.io/" rel="section"><i class="fa fa-globe fa-fw"></i>中文</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/en/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-start-here"><a href="/en/start-here/" rel="section"><i class="fa fa-compass fa-fw"></i>Start here</a></li><li class="menu-item menu-item-topics"><a href="/en/topics/" rel="section"><i class="fa fa-th fa-fw"></i>Topics</a></li><li class="menu-item menu-item-subscribe"><a href="/en/subscribe/" rel="section"><i class="fa fa-rss fa-fw"></i>Subscribe</a></li><li class="menu-item menu-item-about"><a href="/en/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-中文"><a href="https://youngforest.github.io/" rel="section"><i class="fa fa-globe fa-fw"></i>中文</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
         </a>
@@ -330,6 +330,8 @@
     
     
     
+    
+    
     <div class="post-body" itemprop="articleBody"><p><a target="_blank" rel="noopener" href="https://book.douban.com/subject/36698437/">Douban link to the Taiwan translation</a></p>
 <p>When it first came out, I tried reading the original English edition. I found it too hard. As a scientist, Fei-Fei Li’s diction and sentence structures are too ornate and complex. Perhaps because she is a 1.5-generation immigrant with painful memories of language, now that she is fluent she has started showing off her skill. As a bestseller, it indeed quickly received a Chinese translation. Great!</p>
 <p>The National Air and Space Museum, which is repeatedly mentioned in the book, is also a place I long to visit. Unfortunately, I did not go there the last time I went to DC.</p>
@@ -380,12 +382,12 @@
       </div>
 
       <div class="social-item">
-          <a target="_blank" class="social-link" href="/en/atom.xml">
+          <a target="_blank" class="social-link" href="/en/subscribe/">
             <span class="icon">
               <i class="fa fa-rss"></i>
             </span>
 
-            <span class="label">RSS</span>
+            <span class="label">Subscribe to updates</span>
           </a>
       </div>
   </div>
@@ -398,18 +400,26 @@
 
         
 
-          <div class="post-nav">
-            <div class="post-nav-item">
-                <a href="/en/2025/12/27/2025-summary-and-2026-resolutions/" rel="prev" title="2025 Year-End Review and 2026 New Year Outlook">
-                  <i class="fa fa-angle-left"></i> 2025 Year-End Review and 2026 New Year Outlook
-                </a>
-            </div>
-            <div class="post-nav-item">
-                <a href="/en/2026/01/01/The-Bitcoin-Standard/" rel="next" title="The Bitcoin Standard: The Decentralized Alternative to Central Banking">
-                  The Bitcoin Standard: The Decentralized Alternative to Central Banking <i class="fa fa-angle-right"></i>
-                </a>
-            </div>
-          </div>
+
+        <nav class="related-reading" aria-labelledby="related-reading-title">
+  <h2 id="related-reading-title">Read next</h2>
+  <ul>
+    
+      <li>
+        <a href="/en/2024/03/07/Elon-Musk/">Elon Musk</a>
+        <time datetime="2024-03-07">Published 2024-03-07</time>
+        <p>Notes on a biography that inspires through rockets and electric vehicles while raising doubts about extreme cost cutting, rapid testing, and human cost.</p>
+      </li>
+    
+      <li>
+        <a href="/en/2018/07/03/recommender-systems-of-popular-apps/">How Recommendation Systems Transform and Enslave Your Thinking</a>
+        <time datetime="2018-07-03">Published 2018-07-03</time>
+        <p>How recommendation systems in popular apps shape attention, preferences, and the information we consume.</p>
+      </li>
+    
+  </ul>
+</nav>
+
     </footer>
   </article>
 </div>
@@ -461,6 +471,7 @@
 <script src="/en/js/third-party/comments/utterances.js" defer></script>
 
 <script src="/en/js/discovery.js" defer></script>
+<script src="/en/js/reading-tools.js" defer></script>
 <script>
   (() => {
     if (window.location.hostname !== 'youngforest.github.io') return;

@@ -122,7 +122,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/en/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-start-here"><a href="/en/start-here/" rel="section"><i class="fa fa-compass fa-fw"></i>Start here</a></li><li class="menu-item menu-item-topics"><a href="/en/topics/" rel="section"><i class="fa fa-th fa-fw"></i>Topics</a></li><li class="menu-item menu-item-about"><a href="/en/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-中文"><a href="https://youngforest.github.io/" rel="section"><i class="fa fa-globe fa-fw"></i>中文</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/en/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-start-here"><a href="/en/start-here/" rel="section"><i class="fa fa-compass fa-fw"></i>Start here</a></li><li class="menu-item menu-item-topics"><a href="/en/topics/" rel="section"><i class="fa fa-th fa-fw"></i>Topics</a></li><li class="menu-item menu-item-subscribe"><a href="/en/subscribe/" rel="section"><i class="fa fa-rss fa-fw"></i>Subscribe</a></li><li class="menu-item menu-item-about"><a href="/en/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-中文"><a href="https://youngforest.github.io/" rel="section"><i class="fa fa-globe fa-fw"></i>中文</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
         </a>
@@ -333,6 +333,8 @@
     
     
     
+    
+    
     <div class="post-body" itemprop="articleBody"><p>Because of research needs, I needed to connect to the Hangzhou Research Institute VPN before I could use GPUs for neural network training tasks.<br>
 However, after configuring OpenVPN on Ubuntu 18.04, I found a difficult problem: after connecting to the VPN, I could not access the public Internet, such as Baidu and similar websites. These were not sites outside the Great Firewall, but the “external network” relative to the local intranet. After disconnecting the VPN, I could access the public Internet, but could not access Hangzhou Research Institute resources. Since in daily work both the public Internet and the Hangzhou Research Institute intranet are basically indispensable, I spent two days investigating and fixing this problem. Also, other classmates using the VPN did not have similar issues, so I believed this was a problem specific to <code>Ubuntu</code>. The fix itself was simple, but the process of locating the problem was very bumpy.</p>
 <figure class="editorial-illustration editorial-illustration--hero">
@@ -384,12 +386,12 @@ Here is my full solution for reference.</p>
       </div>
 
       <div class="social-item">
-          <a target="_blank" class="social-link" href="/en/atom.xml">
+          <a target="_blank" class="social-link" href="/en/subscribe/">
             <span class="icon">
               <i class="fa fa-rss"></i>
             </span>
 
-            <span class="label">RSS</span>
+            <span class="label">Subscribe to updates</span>
           </a>
       </div>
   </div>
@@ -401,6 +403,8 @@ Here is my full solution for reference.</p>
 
         
 
+
+        
           <div class="post-nav">
             <div class="post-nav-item">
                 <a href="/en/2021/03/14/LeetCode-weekly-contest-232/" rel="prev" title="LeetCode Weekly Contest 232">
@@ -464,6 +468,7 @@ Here is my full solution for reference.</p>
 <script src="/en/js/third-party/comments/utterances.js" defer></script>
 
 <script src="/en/js/discovery.js" defer></script>
+<script src="/en/js/reading-tools.js" defer></script>
 <script>
   (() => {
     if (window.location.hostname !== 'youngforest.github.io') return;
