@@ -87,7 +87,7 @@
 <link rel="alternate" href="/en/atom.xml" title="YoungForest's blog" type="application/atom+xml">
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage">
+<body itemscope itemtype="http://schema.org/WebPage"><a class="skip-link" href="#reading-content">Skip to content</a>
   <div class="headband"></div>
 
   <main class="main">
@@ -264,7 +264,7 @@
 
     </div>
 
-    <div class="main-inner post posts-expand">
+    <div id="reading-content" class="main-inner post posts-expand">
 
 
   
@@ -331,6 +331,7 @@
     
     
     
+    <p class="print-source">YoungForest · <a href="https://youngforest.github.io/en/2019/03/17/pkg-config/">https://youngforest.github.io/en/2019/03/17/pkg-config/</a></p>
     
     
     <div class="post-body" itemprop="articleBody"><p>Recently I have been learning how to use <a target="_blank" rel="noopener" href="https://github.com/google/googletest">google-test</a> and reading its source code. When I ran <code>make install</code>, I noticed that besides installing header files into <code>/usr/local/</code> and a shared library into <code>/usr/lib/</code>, it also installed two <code>.pc</code> files into <code>/usr/local/lib/pkgconfig/</code>. So what exactly is <code>pkg-config</code>?</p>

@@ -89,7 +89,7 @@
 <link rel="alternate" href="/en/atom.xml" title="YoungForest's blog" type="application/atom+xml">
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage">
+<body itemscope itemtype="http://schema.org/WebPage"><a class="skip-link" href="#reading-content">Skip to content</a>
   <div class="headband"></div>
 
   <main class="main">
@@ -265,7 +265,7 @@
 
     </div>
 
-    <div class="main-inner post posts-expand">
+    <div id="reading-content" class="main-inner post posts-expand">
 
 
   
@@ -332,6 +332,7 @@
     
     
     
+    <p class="print-source">YoungForest · <a href="https://youngforest.github.io/en/2020/05/27/unordered-map-hash-pair-c/">https://youngforest.github.io/en/2020/05/27/unordered-map-hash-pair-c/</a></p>
     
     
     <div class="post-body" itemprop="articleBody"><p>Today, while solving <a target="_blank" rel="noopener" href="https://atcoder.jp/contests/abc168/tasks/abc168_e">an AtCoder problem</a>, one test case kept getting TLE. I studied the difference between that test case and the others, but could not figure it out no matter how hard I thought. Later, I replaced <code>unordered_map</code> with <code>map</code> and it passed. Although the difference between HashMap and TreeMap is not large on small datasets, HashMap should still be better when the data volume is large. So the best practice is to use a HashMap when ordering is not needed.</p>
