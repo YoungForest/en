@@ -126,7 +126,7 @@ After completing six hours of lessons, you can register for the road test.
 
 ### Road Test
 
-Register for the road test on [rsa.ie](ras.ie). I recommend registering as soon as possible after finishing the six hours of lessons, because many people are queuing and you can only join the waiting list. It takes roughly half a year to get a slot. I registered on September 14.
+Register for the road test on [rsa.ie](https://www.rsa.ie/). I recommend registering as soon as possible after finishing the six hours of lessons, because many people are queuing and you can only join the waiting list. It takes roughly half a year to get a slot. I registered on September 14.
 
 I live in south Dublin, and the best test center for me is Dun Laoghaire/Deansgrange.
 

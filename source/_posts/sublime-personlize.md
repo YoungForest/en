@@ -26,6 +26,6 @@ First, open any file in that language. Go to `Sublime Text 3 -> Preferences -> S
 ## Color Scheme
 The default theme of Sublime Text 3 is `Monokai(dark)`. I think it is quite easy on the eyes, but the disadvantage is that its Markdown support is especially poor. Another theme I like, `Solarized(dark)`, has the same problem. The default `Solarized` experience is far from what it feels like in Vim. So I installed the `Solarized Color Scheme` theme through `Package Contorl`. Compared with Vim below, it is still quite pleasant to look at.
 
-![Solarized optimized for sublime](../assets/sublime-solarized-optimized.PNG)
+![Solarized optimized for sublime](/assets/sublime-solarized-optimized.PNG)
 
-![Solarized for vim](../assets/vim-solarized.PNG)
+![Solarized for vim](/assets/vim-solarized.PNG)

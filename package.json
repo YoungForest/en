@@ -15,7 +15,10 @@
     "server": "hexo server",
     "validate:content": "node tools/validate-content.mjs",
     "validate:reading": "node tools/test-reading-dates.mjs && node tools/validate-reading.mjs",
-    "validate:discovery": "node tools/test-discovery.mjs && node tools/validate-discovery.mjs"
+    "validate:discovery": "node tools/test-discovery.mjs && node tools/validate-discovery.mjs",
+    "validate:links": "node tools/test-links.cjs && node tools/validate-links.cjs",
+    "validate:quality": "node tools/test-responsive-media.cjs && node tools/validate-quality.cjs",
+    "report:external-links": "node tools/report-external-links.cjs"
   },
   "hexo": {
     "version": "8.1.2"
