@@ -57,8 +57,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
 <script src="/en/js/utils.js" defer></script><script src="/en/js/sidebar.js" defer></script><script src="/en/js/next-boot.js" defer></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
-<script src="/en/js/third-party/search/local-search.js" defer></script>
+  
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/en/js/search-ui.js" defer></script>
 
 
 
@@ -93,66 +95,79 @@
 
   <main class="main">
     <div class="column">
-      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+
+<div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="Toggle navigation bar" role="button">
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
+        <span class="toggle-line"></span><span class="toggle-line"></span><span class="toggle-line"></span>
     </div>
   </div>
-
   <div class="site-meta">
-
+    
     <a href="/en/" class="brand" rel="start">
       <i class="logo-line"></i>
       <p class="site-title">YoungForest's blog</p>
       <i class="logo-line"></i>
     </a>
+    
+    
   </div>
-
   <div class="site-nav-right">
-    <div class="toggle popup-trigger" aria-label="Search" role="button">
-        <i class="fa fa-search fa-fw fa-lg"></i>
-    </div>
+    
+      <button type="button" class="toggle popup-trigger" data-search-trigger aria-label="Search" hidden><i class="fa fa-search fa-fw fa-lg" aria-hidden="true"></i></button>
+      <a class="toggle search-archive-fallback" data-search-fallback href="/en/archives/" aria-label="Browse archive"><i class="fa fa-list fa-fw fa-lg" aria-hidden="true"></i></a>
+    
   </div>
 </div>
 
 
 
+
+
 <nav class="site-nav">
   <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/en/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-start-here"><a href="/en/start-here/" rel="section"><i class="fa fa-compass fa-fw"></i>Start here</a></li><li class="menu-item menu-item-topics"><a href="/en/topics/" rel="section"><i class="fa fa-th fa-fw"></i>Topics</a></li><li class="menu-item menu-item-subscribe"><a href="/en/subscribe/" rel="section"><i class="fa fa-rss fa-fw"></i>Subscribe</a></li><li class="menu-item menu-item-about"><a href="/en/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-中文"><a href="https://youngforest.github.io/" rel="section"><i class="fa fa-globe fa-fw"></i>中文</a></li>
+    
       <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
-        </a>
+        <button type="button" class="popup-trigger" data-search-trigger hidden>
+          <i class="fa fa-search fa-fw" aria-hidden="true"></i>Search
+        </button>
+        <a data-search-fallback href="/en/archives/">Browse archive</a>
       </li>
+    
   </ul>
 </nav>
 
 
 
-  <div class="search-pop-overlay">
-    <div class="popup search-popup">
-      <div class="search-header">
-        <span class="search-icon">
-          <i class="fa fa-search"></i>
-        </span>
-        <div class="search-input-container">
-          <input autocomplete="off" autocapitalize="off" maxlength="80"
-                placeholder="Searching..." spellcheck="false"
-                type="search" class="search-input">
-        </div>
-        <span class="popup-btn-close" role="button">
-          <i class="fa fa-times-circle"></i>
-        </span>
-      </div>
-      <div class="search-result-container">
-        <div class="search-result-icon">
-          <i class="fa fa-spinner fa-pulse fa-5x"></i>
-        </div>
-      </div>
+
+<dialog class="search-popup search-dialog" id="site-search" aria-labelledby="site-search-title">
+  <h2 class="search-visually-hidden" id="site-search-title">Search this blog</h2>
+  <div class="search-header">
+    <span class="search-icon" aria-hidden="true"><i class="fa fa-search"></i></span>
+    <div class="search-input-container">
+      <label class="search-visually-hidden" for="site-search-input">Search English posts</label>
+      <input id="site-search-input" autocomplete="off" autocapitalize="off" maxlength="80" placeholder="Searching..." spellcheck="false" type="search" class="search-input">
     </div>
+    <button class="popup-btn-close" type="button" aria-label="Close search"><i class="fa fa-times" aria-hidden="true"></i></button>
   </div>
+  <div class="search-scroll">
+    <p class="search-status" role="status" aria-live="polite" aria-atomic="true"
+       data-empty="Search titles and article text. This searches English posts." data-loading="Loading search data…" data-none="No matching posts. Try a shorter query or browse the indexes."
+       data-error="Search data could not be loaded. Retry or browse the archive." data-library-error="The search component could not be loaded. Reload this page or browse the archive.">Search titles and article text. This searches English posts.</p>
+    <div class="search-actions">
+      <button type="button" class="search-retry" hidden>Retry</button>
+      <button type="button" class="search-reload" hidden>Reload page</button>
+    </div>
+    <nav class="search-browse" aria-label="Or browse">
+      <a href="/en/archives/">Browse archive</a>
+      <a href="/en/topics/">Topics</a>
+      <a href="/en/reading/">Books and screen notes</a>
+      <a href="https://youngforest.github.io/" lang="zh-CN">中文博客</a>
+    </nav>
+    <div class="search-result-container" id="site-search-results"></div>
+  </div>
+</dialog>
 
 </header>
         
@@ -359,34 +374,34 @@
 <li><a href="https://youngforest.github.io/en/2018/10/03/my-4-years-college/">Four-Year College Review</a></li>
 </ul>
 <p>These important posts are all under the <a href="https://youngforest.github.io/en/categories/Diary/">dairy category</a> on my blog.</p>
-<h2 id="2021-Work-Review">2021 Work Review</h2>
+<h2 id="2021-Work-Review">2021 Work Review<a class="section-link" href="#2021-Work-Review" aria-label="Link to section: 2021 Work Review"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>Many times it is hard to believe that next year will already be 2022. Sometimes, when writing the date, I even have to think for a moment about what year it is. I am probably getting older. I had heard before that as people grow up, time feels more rushed. Since each newly added stretch of time takes up a smaller and smaller proportion of one’s memories, this actually makes a lot of sense. Even now, I find it hard to believe that the pandemic has lasted almost two years. Time will only feel faster afterward. Better ways to cope are: 1. Hold on to the present and do not waste life; 2. Increase variety in life, because an unchanged life makes time feel even faster; 3. Record more, whether through photos or words, because what gets recorded thickens memory.</p>
 <p>For last year’s New Year outlook, I will analyze the progress item by item:</p>
-<h3 id="Graduate-Smoothly">Graduate Smoothly</h3>
+<h3 id="Graduate-Smoothly">Graduate Smoothly<a class="section-link" href="#Graduate-Smoothly" aria-label="Link to section: Graduate Smoothly"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h3>
 <p>Although I went through half a year of delayed-graduation turmoil, I finally passed my thesis defense in June and received both my graduation certificate and degree certificate. At first it was hard to accept the delay; I felt as if I had fallen behind. But time is the best medicine. Besides, because of the pandemic and all kinds of other reasons, one third of us delayed graduation. In our dorm, three out of four people delayed graduation, so graduating on time actually became the minority case.</p>
 <p>Although I was intimidated by Teacher Niu and my graduate-school years carried a lot of psychological pressure, I still made it through in the end.</p>
 <p>After graduation, everything became much smoother, especially work.</p>
-<h3 id="Spend-Spare-Time-on-Needed-Skills-Mainly-Work-Skills-System-Design-Spoken-English-etc">Spend Spare Time on Needed Skills, Mainly Work Skills, System Design, Spoken English, etc.</h3>
+<h3 id="Spend-Spare-Time-on-Needed-Skills-Mainly-Work-Skills-System-Design-Spoken-English-etc">Spend Spare Time on Needed Skills, Mainly Work Skills, System Design, Spoken English, etc.<a class="section-link" href="#Spend-Spare-Time-on-Needed-Skills-Mainly-Work-Skills-System-Design-Spoken-English-etc" aria-label="Link to section: Spend Spare Time on Needed Skills, Mainly Work Skills, System Design, Spoken English, etc."><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h3>
 <p>The biggest difference between people lies in the effective use of spare time. Although I had clear goals and relatively abundant spare time compared with fellow workers on a 996 schedule, honestly the results were not good. Tracing it back to the root, it was still because of laziness. Laziness may be human nature, but it is indeed a weakness, and I still need to find ways to overcome it.</p>
 <p>The three spare-time goals were all partially completed, but still far from ideal. I need to reflect on this and invest more time afterward, while reducing entertainment and ineffective time use.</p>
 <p>Work skills: I read part of <em>Effective Java</em> and <em>Core Java</em>. But Java is vast and deep; I probably covered only around one tenth of it. I finished quite a few iOS development books, including <em>Effective Objective-C 2.0</em> and <em>Programming in Objective-C</em>. I studied part of Stanford CS193p, but since development at the company was still mainly Objective-C, I gave it up halfway. To learn app optimization, I read most of <em>High Performance Browser Networking</em>.</p>
 <p>System design: I followed some YouTube creators. Actually, system design is quite suitable for learning through videos, because the focus is communication and expression. Of the two books I had long planned to read, Alex Xu’s <em>System Design Interview</em> and the famous wild-boar book DDIA, <em>Designing Data-Intensive Applications</em>, I only read a small part. Instead, work required a lot of system design, so I learned quite a few AWS components and completed the design and implementation of several projects. After designs were finished, Senior colleagues usually reviewed and guided them, and I learned a lot from that process. I created the <a target="_blank" rel="noopener" href="https://system.youngforest.me/">“Buddhist System Design Group”</a> and listed many resources there, but very few people speak in it.</p>
 <p>Spoken English: The company signed me up for English training, two hours each week. A South African teacher who now lives in Thailand teaches me grammar, vocabulary, and expression. The content is relatively simple, roughly junior-high-school level. What matters is that the course is one-on-one, which helps a lot with listening and speaking practice. Besides that, I also do input practice through podcasts and YouTube. At work, I occasionally need to communicate with foreign colleagues. Many times the colleagues are also not native English speakers, such as Indians, Middle Easterners, and Eastern Europeans. During communication I often understand only half of what is said, yet still have to bite the bullet and speak. Fortunately, I have handled it each time. Now I can complete 1:1 question consultation/answers fairly well, and can give presentations and answer questions in meetings. To prepare for future English interviews, I tried <a target="_blank" rel="noopener" href="https://youngforest.me/mock/">mock interviews and chose to record them on video</a>.</p>
-<h3 id="Intern-and-Work-Seriously-Pass-Probation-Safely-and-Prepare-for-Promotion-to-L5">Intern and Work Seriously, Pass Probation Safely, and Prepare for Promotion to L5</h3>
+<h3 id="Intern-and-Work-Seriously-Pass-Probation-Safely-and-Prepare-for-Promotion-to-L5">Intern and Work Seriously, Pass Probation Safely, and Prepare for Promotion to L5<a class="section-link" href="#Intern-and-Work-Seriously-Pass-Probation-Safely-and-Prepare-for-Promotion-to-L5" aria-label="Link to section: Intern and Work Seriously, Pass Probation Safely, and Prepare for Promotion to L5"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h3>
 <p>There are only a few days left before probation ends, so this goal is basically completed. The internship in the first half of the year also lasted quite a long time; I did not leave until April, making it eight months in total. Since it was WFH the whole time, it was relatively convenient and relaxed. So although I have only been a full-time employee for half a year, my current tenure is already one year and three months.</p>
 <p>Although I work very seriously, promotion to L5 may not happen in time. I found that most promotions happen after about two years. Although people are promoted every quarter, trying to get promoted before going to Europe is still not very secure. I can only give it my all and have a clear conscience. Whether or not I get promoted, I still need to go to Europe as an accompanying student spouse. A promotion would of course be icing on the cake, giving me a higher starting point when transferring to Europe or looking for work there.</p>
-<h3 id="Resolve-Wisdom-Teeth-and-Other-Dental-Issues">Resolve Wisdom Teeth and Other Dental Issues</h3>
+<h3 id="Resolve-Wisdom-Teeth-and-Other-Dental-Issues">Resolve Wisdom Teeth and Other Dental Issues<a class="section-link" href="#Resolve-Wisdom-Teeth-and-Other-Dental-Issues" aria-label="Link to section: Resolve Wisdom Teeth and Other Dental Issues"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h3>
 <p>This year I had the two upper wisdom teeth that were easier to extract removed. Including the one removed in 2018, I have completed three fourths of the task. Because the last one is an impacted wisdom tooth and the nerve is very close to the lower jaw, it is not easy to extract. So the doctor suggested that if it does not hurt in the future, I should leave it alone. Given the objective constraints, the wisdom-tooth task can be considered successfully completed.</p>
 <p>Besides that, I also had a crown placed on the molar that previously had its nerve killed, and received treatment for periodontitis. During the pandemic, all spray-producing treatments required nucleic-acid testing in advance. Dentistry basically always required it, and although the test at Peking University Third Hospital was free, it could only be done through the nose, which was extremely unpleasant. Fortunately, several treatments with the same doctor only required one nucleic-acid test.</p>
 <p>After going through the painful periodontitis treatment and cavity problems, I now not only brush my teeth carefully every day, but also floss every night. It is genuinely troublesome. But after experiencing the pain of treatment, the trouble feels acceptable.</p>
-<h3 id="Keep-Solving-Problems-Daily-as-a-Hobby-and-Habit">Keep Solving Problems Daily, as a Hobby and Habit</h3>
+<h3 id="Keep-Solving-Problems-Daily-as-a-Hobby-and-Habit">Keep Solving Problems Daily, as a Hobby and Habit<a class="section-link" href="#Keep-Solving-Problems-Daily-as-a-Hobby-and-Habit" aria-label="Link to section: Keep Solving Problems Daily, as a Hobby and Habit"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h3>
 <p>This year I still stayed in the <a target="_blank" rel="noopener" href="http://board.cruelcoding.com/">“Cruel Coding group”</a>, participated in almost every weekly contest (missing only two), and although I cannot say I solved problems every day, I did solve them on nearly half the days. Problem solving is no longer a burden for me; it has become recreation, truly a hobby and habit. My rating is now 2450+ on both the <a target="_blank" rel="noopener" href="https://leetcode.com/YoungForest/">US site</a> and the <a target="_blank" rel="noopener" href="https://leetcode-cn.com/YoungForest/">China site</a>, which counts as a small achievement.</p>
 <p>In the new year, I will continue maintaining this hobby and habit. But it does not mean solving problems every single day; rather, I will do it freely while staying within bounds. Solve when I want to solve. Later, if I go to Europe and cannot participate in LeetCode weekly contests because of the time difference, I will switch to another platform, such as Codeforces.</p>
 <p>Overall, in this crucial year, thanks to long-term preparation beforehand, I passed through fairly smoothly and reached shore safely. If a man takes no thought about what is distant, he will find sorrow near at hand. I have always liked planning ahead and working hard over the long term. In the new year, keep going!</p>
 <figure class="editorial-illustration">
   <img src="/en/images/ai/2021-summary-and-2022-resolutions/en-2022-outlook.webp" alt="Forest crosses a bridge toward a rainy European skyline while tending skill gears, conversation bubbles, a book seedling, and a microphone" width="1536" height="864" loading="lazy" decoding="async">
 </figure>
-<h2 id="Aspirations-for-a-Good-Life-in-2022">Aspirations for a Good Life in 2022</h2>
+<h2 id="Aspirations-for-a-Good-Life-in-2022">Aspirations for a Good Life in 2022<a class="section-link" href="#Aspirations-for-a-Good-Life-in-2022" aria-label="Link to section: Aspirations for a Good Life in 2022"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <ul>
 <li>Continue making good use of spare time to improve work skills, system design, spoken English, etc.</li>
 <li>Prepare actively for English interviews, both mock and real.</li>

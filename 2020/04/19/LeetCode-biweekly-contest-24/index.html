@@ -55,8 +55,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
 <script src="/en/js/utils.js" defer></script><script src="/en/js/sidebar.js" defer></script><script src="/en/js/next-boot.js" defer></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
-<script src="/en/js/third-party/search/local-search.js" defer></script>
+  
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/en/js/search-ui.js" defer></script>
 
 
 
@@ -91,66 +93,79 @@
 
   <main class="main">
     <div class="column">
-      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+
+<div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="Toggle navigation bar" role="button">
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
+        <span class="toggle-line"></span><span class="toggle-line"></span><span class="toggle-line"></span>
     </div>
   </div>
-
   <div class="site-meta">
-
+    
     <a href="/en/" class="brand" rel="start">
       <i class="logo-line"></i>
       <p class="site-title">YoungForest's blog</p>
       <i class="logo-line"></i>
     </a>
+    
+    
   </div>
-
   <div class="site-nav-right">
-    <div class="toggle popup-trigger" aria-label="Search" role="button">
-        <i class="fa fa-search fa-fw fa-lg"></i>
-    </div>
+    
+      <button type="button" class="toggle popup-trigger" data-search-trigger aria-label="Search" hidden><i class="fa fa-search fa-fw fa-lg" aria-hidden="true"></i></button>
+      <a class="toggle search-archive-fallback" data-search-fallback href="/en/archives/" aria-label="Browse archive"><i class="fa fa-list fa-fw fa-lg" aria-hidden="true"></i></a>
+    
   </div>
 </div>
 
 
 
+
+
 <nav class="site-nav">
   <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/en/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-start-here"><a href="/en/start-here/" rel="section"><i class="fa fa-compass fa-fw"></i>Start here</a></li><li class="menu-item menu-item-topics"><a href="/en/topics/" rel="section"><i class="fa fa-th fa-fw"></i>Topics</a></li><li class="menu-item menu-item-subscribe"><a href="/en/subscribe/" rel="section"><i class="fa fa-rss fa-fw"></i>Subscribe</a></li><li class="menu-item menu-item-about"><a href="/en/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-中文"><a href="https://youngforest.github.io/" rel="section"><i class="fa fa-globe fa-fw"></i>中文</a></li>
+    
       <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
-        </a>
+        <button type="button" class="popup-trigger" data-search-trigger hidden>
+          <i class="fa fa-search fa-fw" aria-hidden="true"></i>Search
+        </button>
+        <a data-search-fallback href="/en/archives/">Browse archive</a>
       </li>
+    
   </ul>
 </nav>
 
 
 
-  <div class="search-pop-overlay">
-    <div class="popup search-popup">
-      <div class="search-header">
-        <span class="search-icon">
-          <i class="fa fa-search"></i>
-        </span>
-        <div class="search-input-container">
-          <input autocomplete="off" autocapitalize="off" maxlength="80"
-                placeholder="Searching..." spellcheck="false"
-                type="search" class="search-input">
-        </div>
-        <span class="popup-btn-close" role="button">
-          <i class="fa fa-times-circle"></i>
-        </span>
-      </div>
-      <div class="search-result-container">
-        <div class="search-result-icon">
-          <i class="fa fa-spinner fa-pulse fa-5x"></i>
-        </div>
-      </div>
+
+<dialog class="search-popup search-dialog" id="site-search" aria-labelledby="site-search-title">
+  <h2 class="search-visually-hidden" id="site-search-title">Search this blog</h2>
+  <div class="search-header">
+    <span class="search-icon" aria-hidden="true"><i class="fa fa-search"></i></span>
+    <div class="search-input-container">
+      <label class="search-visually-hidden" for="site-search-input">Search English posts</label>
+      <input id="site-search-input" autocomplete="off" autocapitalize="off" maxlength="80" placeholder="Searching..." spellcheck="false" type="search" class="search-input">
     </div>
+    <button class="popup-btn-close" type="button" aria-label="Close search"><i class="fa fa-times" aria-hidden="true"></i></button>
   </div>
+  <div class="search-scroll">
+    <p class="search-status" role="status" aria-live="polite" aria-atomic="true"
+       data-empty="Search titles and article text. This searches English posts." data-loading="Loading search data…" data-none="No matching posts. Try a shorter query or browse the indexes."
+       data-error="Search data could not be loaded. Retry or browse the archive." data-library-error="The search component could not be loaded. Reload this page or browse the archive.">Search titles and article text. This searches English posts.</p>
+    <div class="search-actions">
+      <button type="button" class="search-retry" hidden>Retry</button>
+      <button type="button" class="search-reload" hidden>Reload page</button>
+    </div>
+    <nav class="search-browse" aria-label="Or browse">
+      <a href="/en/archives/">Browse archive</a>
+      <a href="/en/topics/">Topics</a>
+      <a href="/en/reading/">Books and screen notes</a>
+      <a href="https://youngforest.github.io/" lang="zh-CN">中文博客</a>
+    </nav>
+    <div class="search-result-container" id="site-search-results"></div>
+  </div>
+</dialog>
 
 </header>
         
@@ -369,22 +384,22 @@
 </tbody>
 </table>
 <p>Recently I participated in two Codeforces contests, and my CF rating is hovering around 1400+. Codeforces problems are much harder than LeetCode’s. I did not manage to keep going. This is also related to CF not having a very good discuss section; after each contest ends, I can only read the official editorial.</p>
-<h2 id="1413-Minimum-Value-to-Get-Positive-Step-by-Step-Sum">1413. Minimum Value to Get Positive Step by Step Sum</h2>
+<h2 id="1413-Minimum-Value-to-Get-Positive-Step-by-Step-Sum">1413. Minimum Value to Get Positive Step by Step Sum<a class="section-link" href="#1413-Minimum-Value-to-Get-Positive-Step-by-Step-Sum" aria-label="Link to section: 1413. Minimum Value to Get Positive Step by Step Sum"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>Track the most negative prefix sum. One thing to note is that <code>startValue</code> must be positive.</p>
 <p>Time complexity: O(N),<br>
 space complexity: O(N).</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">minStartValue</span>(<span class="params">self, nums: <span class="type">List</span>[<span class="built_in">int</span>]</span>) -&gt; <span class="built_in">int</span>:</span><br><span class="line">        min_sum = <span class="number">0</span></span><br><span class="line">        current_sum = <span class="number">0</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> nums:</span><br><span class="line">            current_sum += i</span><br><span class="line">            min_sum = <span class="built_in">min</span>(current_sum, min_sum)</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span> - min_sum <span class="keyword">if</span> min_sum &lt;= <span class="number">0</span> <span class="keyword">else</span> <span class="number">1</span></span><br></pre></td></tr></table></figure>
-<h2 id="1414-Find-the-Minimum-Number-of-Fibonacci-Numbers-Whose-Sum-Is-K">1414. Find the Minimum Number of Fibonacci Numbers Whose Sum Is K</h2>
+<h2 id="1414-Find-the-Minimum-Number-of-Fibonacci-Numbers-Whose-Sum-Is-K">1414. Find the Minimum Number of Fibonacci Numbers Whose Sum Is K<a class="section-link" href="#1414-Find-the-Minimum-Number-of-Fibonacci-Numbers-Whose-Sum-Is-K" aria-label="Link to section: 1414. Find the Minimum Number of Fibonacci Numbers Whose Sum Is K"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>Greedy. Always choose the largest Fibonacci number that is less than or equal to <code>i</code>, then recursively solve the remaining value.</p>
 <p>Time complexity: O((log k)^2),<br>
 space complexity: O(log k).</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">findMinFibonacciNumbers</span>(<span class="params">self, k: <span class="built_in">int</span></span>) -&gt; <span class="built_in">int</span>:</span><br><span class="line">        <span class="keyword">def</span> <span class="title function_">findLargestFibonacciLessEqualThan</span>(<span class="params">i</span>):</span><br><span class="line">            a = <span class="number">1</span></span><br><span class="line">            b = <span class="number">1</span></span><br><span class="line">            <span class="keyword">while</span> a &lt;= i:</span><br><span class="line">                a, b = a + b, a</span><br><span class="line">            <span class="keyword">return</span> b</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">def</span> <span class="title function_">dp</span>(<span class="params">i</span>):</span><br><span class="line">            x = findLargestFibonacciLessEqualThan(i)</span><br><span class="line">            <span class="keyword">if</span> x == i:</span><br><span class="line">                <span class="keyword">return</span> <span class="number">1</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">return</span> <span class="number">1</span> + dp(i - x)</span><br><span class="line">        <span class="keyword">return</span> dp(k)</span><br></pre></td></tr></table></figure>
-<h2 id="1415-The-k-th-Lexicographical-String-of-All-Happy-Strings-of-Length-n">1415. The k-th Lexicographical String of All Happy Strings of Length n</h2>
+<h2 id="1415-The-k-th-Lexicographical-String-of-All-Happy-Strings-of-Length-n">1415. The k-th Lexicographical String of All Happy Strings of Length n<a class="section-link" href="#1415-The-k-th-Lexicographical-String-of-All-Happy-Strings-of-Length-n" aria-label="Link to section: 1415. The k-th Lexicographical String of All Happy Strings of Length n"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>Use backtracking to enumerate all Happy strings in lexicographical order until the <code>k</code>-th one is found.</p>
 <p>Time complexity: O(min(3 ^ n, k)),<br>
 space complexity: O(n).</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">string <span class="title">getHappyString</span><span class="params">(<span class="type">int</span> n, <span class="type">int</span> k)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> rank = <span class="number">0</span>;</span><br><span class="line">        string ans;</span><br><span class="line">        function&lt;<span class="type">void</span>(string&amp;)&gt; backtracking = [&amp;](string&amp; current) -&gt; <span class="type">void</span> &#123;</span><br><span class="line">            <span class="keyword">if</span> (current.<span class="built_in">size</span>() == n) &#123;</span><br><span class="line">                ++rank;</span><br><span class="line">                <span class="keyword">if</span> (rank == k) &#123;</span><br><span class="line">                    ans = current;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="type">char</span> last = current.<span class="built_in">empty</span>() ? <span class="string">&#x27;0&#x27;</span> : current.<span class="built_in">back</span>();</span><br><span class="line">                <span class="keyword">for</span> (<span class="type">char</span> c : &#123;<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;b&#x27;</span>, <span class="string">&#x27;c&#x27;</span>&#125;) &#123;</span><br><span class="line">                    <span class="keyword">if</span> (c == last) <span class="keyword">continue</span>;</span><br><span class="line">                    current.<span class="built_in">push_back</span>(c);</span><br><span class="line">                    <span class="built_in">backtracking</span>(current);</span><br><span class="line">                    <span class="keyword">if</span> (rank &gt;= k) <span class="keyword">return</span>;</span><br><span class="line">                    current.<span class="built_in">pop_back</span>();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;;</span><br><span class="line">        string current;</span><br><span class="line">        <span class="built_in">backtracking</span>(current);</span><br><span class="line">        end:;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<h2 id="1416-Restore-The-Array">1416. Restore The Array</h2>
+<h2 id="1416-Restore-The-Array">1416. Restore The Array<a class="section-link" href="#1416-Restore-The-Array" aria-label="Link to section: 1416. Restore The Array"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>DP. <code>dp[i]</code>: the number of ways to split the array ending at the <code>i</code>-th element.<br>
 <code>dp[i] = sum(dp[j] for j + 1, ..., i can form a valid number)</code></p>
 <p>Time complexity: O(N * log K),<br>

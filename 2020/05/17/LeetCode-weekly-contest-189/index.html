@@ -55,8 +55,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
 <script src="/en/js/utils.js" defer></script><script src="/en/js/sidebar.js" defer></script><script src="/en/js/next-boot.js" defer></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
-<script src="/en/js/third-party/search/local-search.js" defer></script>
+  
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/en/js/search-ui.js" defer></script>
 
 
 
@@ -91,66 +93,79 @@
 
   <main class="main">
     <div class="column">
-      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+
+<div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="Toggle navigation bar" role="button">
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
+        <span class="toggle-line"></span><span class="toggle-line"></span><span class="toggle-line"></span>
     </div>
   </div>
-
   <div class="site-meta">
-
+    
     <a href="/en/" class="brand" rel="start">
       <i class="logo-line"></i>
       <p class="site-title">YoungForest's blog</p>
       <i class="logo-line"></i>
     </a>
+    
+    
   </div>
-
   <div class="site-nav-right">
-    <div class="toggle popup-trigger" aria-label="Search" role="button">
-        <i class="fa fa-search fa-fw fa-lg"></i>
-    </div>
+    
+      <button type="button" class="toggle popup-trigger" data-search-trigger aria-label="Search" hidden><i class="fa fa-search fa-fw fa-lg" aria-hidden="true"></i></button>
+      <a class="toggle search-archive-fallback" data-search-fallback href="/en/archives/" aria-label="Browse archive"><i class="fa fa-list fa-fw fa-lg" aria-hidden="true"></i></a>
+    
   </div>
 </div>
 
 
 
+
+
 <nav class="site-nav">
   <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/en/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-start-here"><a href="/en/start-here/" rel="section"><i class="fa fa-compass fa-fw"></i>Start here</a></li><li class="menu-item menu-item-topics"><a href="/en/topics/" rel="section"><i class="fa fa-th fa-fw"></i>Topics</a></li><li class="menu-item menu-item-subscribe"><a href="/en/subscribe/" rel="section"><i class="fa fa-rss fa-fw"></i>Subscribe</a></li><li class="menu-item menu-item-about"><a href="/en/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-中文"><a href="https://youngforest.github.io/" rel="section"><i class="fa fa-globe fa-fw"></i>中文</a></li>
+    
       <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
-        </a>
+        <button type="button" class="popup-trigger" data-search-trigger hidden>
+          <i class="fa fa-search fa-fw" aria-hidden="true"></i>Search
+        </button>
+        <a data-search-fallback href="/en/archives/">Browse archive</a>
       </li>
+    
   </ul>
 </nav>
 
 
 
-  <div class="search-pop-overlay">
-    <div class="popup search-popup">
-      <div class="search-header">
-        <span class="search-icon">
-          <i class="fa fa-search"></i>
-        </span>
-        <div class="search-input-container">
-          <input autocomplete="off" autocapitalize="off" maxlength="80"
-                placeholder="Searching..." spellcheck="false"
-                type="search" class="search-input">
-        </div>
-        <span class="popup-btn-close" role="button">
-          <i class="fa fa-times-circle"></i>
-        </span>
-      </div>
-      <div class="search-result-container">
-        <div class="search-result-icon">
-          <i class="fa fa-spinner fa-pulse fa-5x"></i>
-        </div>
-      </div>
+
+<dialog class="search-popup search-dialog" id="site-search" aria-labelledby="site-search-title">
+  <h2 class="search-visually-hidden" id="site-search-title">Search this blog</h2>
+  <div class="search-header">
+    <span class="search-icon" aria-hidden="true"><i class="fa fa-search"></i></span>
+    <div class="search-input-container">
+      <label class="search-visually-hidden" for="site-search-input">Search English posts</label>
+      <input id="site-search-input" autocomplete="off" autocapitalize="off" maxlength="80" placeholder="Searching..." spellcheck="false" type="search" class="search-input">
     </div>
+    <button class="popup-btn-close" type="button" aria-label="Close search"><i class="fa fa-times" aria-hidden="true"></i></button>
   </div>
+  <div class="search-scroll">
+    <p class="search-status" role="status" aria-live="polite" aria-atomic="true"
+       data-empty="Search titles and article text. This searches English posts." data-loading="Loading search data…" data-none="No matching posts. Try a shorter query or browse the indexes."
+       data-error="Search data could not be loaded. Retry or browse the archive." data-library-error="The search component could not be loaded. Reload this page or browse the archive.">Search titles and article text. This searches English posts.</p>
+    <div class="search-actions">
+      <button type="button" class="search-retry" hidden>Retry</button>
+      <button type="button" class="search-reload" hidden>Reload page</button>
+    </div>
+    <nav class="search-browse" aria-label="Or browse">
+      <a href="/en/archives/">Browse archive</a>
+      <a href="/en/topics/">Topics</a>
+      <a href="/en/reading/">Books and screen notes</a>
+      <a href="https://youngforest.github.io/" lang="zh-CN">中文博客</a>
+    </nav>
+    <div class="search-result-container" id="site-search-results"></div>
+  </div>
+</dialog>
 
 </header>
         
@@ -370,17 +385,17 @@
 </table>
 <p>The last problem this week was a classic computational geometry problem and was not easy to write. But the acceptance rate was still quite high, probably because the test cases were relatively weak.</p>
 <p>My ranking in the Cruel group dropped to 32, a 100% decline. The feeling I had before that I had become stronger was an illusion. It was because I got a good rank of 113 in Weekly Contest 186 three weeks ago, so according to the group’s ranking algorithm, my ranking stayed relatively high for the next three weeks. After that best result aged out, my ranking returned to its original level, around 30. It was not that I had become stronger; I was just lucky. Also, I happened to use Python in contest 186, and Python really does have an advantage in speed contests.</p>
-<h2 id="1450-Number-of-Students-Doing-Homework-at-a-Given-Time">1450. Number of Students Doing Homework at a Given Time</h2>
+<h2 id="1450-Number-of-Students-Doing-Homework-at-a-Given-Time">1450. Number of Students Doing Homework at a Given Time<a class="section-link" href="#1450-Number-of-Students-Doing-Homework-at-a-Given-Time" aria-label="Link to section: 1450. Number of Students Doing Homework at a Given Time"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>A warm-up problem. One pass.</p>
 <p>Time complexity: O(N),<br>
 space complexity: O(1).</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">busyStudent</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; startTime, vector&lt;<span class="type">int</span>&gt;&amp; endTime, <span class="type">int</span> queryTime)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> ans = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; startTime.<span class="built_in">size</span>(); ++i) &#123;</span><br><span class="line">            <span class="keyword">if</span> (startTime[i] &lt;= queryTime &amp;&amp; queryTime &lt;= endTime[i]) ++ans;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<h2 id="1451-Rearrange-Words-in-a-Sentence">1451. Rearrange Words in a Sentence</h2>
+<h2 id="1451-Rearrange-Words-in-a-Sentence">1451. Rearrange Words in a Sentence<a class="section-link" href="#1451-Rearrange-Words-in-a-Sentence" aria-label="Link to section: 1451. Rearrange Words in a Sentence"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>Use the sorting function provided by the C++ STL.</p>
 <p>Time complexity: O(N log N),<br>
 space complexity: O(N).</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    vector&lt;pair&lt;string,<span class="type">int</span>&gt;&gt; <span class="built_in">splitSentence</span>(<span class="type">const</span> string&amp; text) &#123;</span><br><span class="line">        string tmp;</span><br><span class="line">        vector&lt;pair&lt;string,<span class="type">int</span>&gt;&gt; stk;</span><br><span class="line">        <span class="function">stringstream <span class="title">ss</span><span class="params">(text)</span></span>;</span><br><span class="line">        <span class="type">int</span> position = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span>(<span class="built_in">getline</span>(ss,tmp,<span class="string">&#x27; &#x27;</span>)) &#123;</span><br><span class="line">            <span class="keyword">if</span> (!<span class="built_in">islower</span>(tmp[<span class="number">0</span>])) tmp[<span class="number">0</span>] = <span class="built_in">tolower</span>(tmp[<span class="number">0</span>]);</span><br><span class="line">            stk.<span class="built_in">push_back</span>(&#123;tmp, position&#125;);</span><br><span class="line">            ++position;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> stk;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">string <span class="title">arrangeWords</span><span class="params">(string text)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">auto</span> split = <span class="built_in">splitSentence</span>(text);</span><br><span class="line">        <span class="built_in">sort</span>(split.<span class="built_in">begin</span>(), split.<span class="built_in">end</span>(), [](<span class="type">const</span> <span class="keyword">auto</span>&amp; a, <span class="type">const</span> <span class="keyword">auto</span>&amp; b) -&gt; <span class="type">bool</span> &#123;</span><br><span class="line">            <span class="keyword">if</span> (a.first.<span class="built_in">size</span>() == b.first.<span class="built_in">size</span>()) &#123;</span><br><span class="line">                <span class="keyword">return</span> a.second &lt; b.second;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">return</span> a.first.<span class="built_in">size</span>() &lt; b.first.<span class="built_in">size</span>();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">        string ans;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">const</span> <span class="keyword">auto</span>&amp; word : split) &#123;</span><br><span class="line">            ans += word.first;</span><br><span class="line">            ans.<span class="built_in">push_back</span>(<span class="string">&#x27; &#x27;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        ans.<span class="built_in">pop_back</span>();</span><br><span class="line">        ans[<span class="number">0</span>] = <span class="built_in">toupper</span>(ans[<span class="number">0</span>]);</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<h2 id="1452-People-Whose-List-of-Favorite-Companies-Is-Not-a-Subset-of-Another-List">1452. People Whose List of Favorite Companies Is Not a Subset of Another List</h2>
+<h2 id="1452-People-Whose-List-of-Favorite-Companies-Is-Not-a-Subset-of-Another-List">1452. People Whose List of Favorite Companies Is Not a Subset of Another List<a class="section-link" href="#1452-People-Whose-List-of-Favorite-Companies-Is-Not-a-Subset-of-Another-List" aria-label="Link to section: 1452. People Whose List of Favorite Companies Is Not a Subset of Another List"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>Brute force. For each person, judge whether their list is contained by another person’s list. This is <code>N^2</code>.<br>
 When checking containment, sort the company lists first and then compare them sequentially, O(m * log m + m).<br>
 <code>N</code> is the number of people, and <code>M</code> is the number of companies.</p>
@@ -388,7 +403,7 @@ When checking containment, sort the company lists first and then compare them se
 space complexity: O(N).</p>
 <p>Here I used the <code>includes</code> function from STL algorithms, which can determine whether one sorted range contains another.</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">peopleIndexes</span><span class="params">(vector&lt;vector&lt;string&gt;&gt;&amp; favoriteCompanies)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">auto</span>&amp; v : favoriteCompanies) &#123;</span><br><span class="line">            <span class="built_in">sort</span>(v.<span class="built_in">begin</span>(), v.<span class="built_in">end</span>());</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">const</span> <span class="type">int</span> n = favoriteCompanies.<span class="built_in">size</span>();</span><br><span class="line">        vector&lt;<span class="type">int</span>&gt; ans;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; ++i) &#123;</span><br><span class="line">            <span class="type">bool</span> remove = <span class="literal">false</span>;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; n; ++j) &#123;</span><br><span class="line">                <span class="keyword">if</span> (i == j) <span class="keyword">continue</span>;</span><br><span class="line">                <span class="keyword">if</span> (<span class="built_in">includes</span>(favoriteCompanies[j].<span class="built_in">begin</span>(), favoriteCompanies[j].<span class="built_in">end</span>(), favoriteCompanies[i].<span class="built_in">begin</span>(), favoriteCompanies[i].<span class="built_in">end</span>())) &#123;</span><br><span class="line">                    remove = <span class="literal">true</span>;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (!remove) &#123;</span><br><span class="line">                ans.<span class="built_in">push_back</span>(i);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<h2 id="1453-Maximum-Number-of-Darts-Inside-of-a-Circular-Dartboard">1453. Maximum Number of Darts Inside of a Circular Dartboard</h2>
+<h2 id="1453-Maximum-Number-of-Darts-Inside-of-a-Circular-Dartboard">1453. Maximum Number of Darts Inside of a Circular Dartboard<a class="section-link" href="#1453-Maximum-Number-of-Darts-Inside-of-a-Circular-Dartboard" aria-label="Link to section: 1453. Maximum Number of Darts Inside of a Circular Dartboard"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>A classic problem: the disk partial covering problem.<br>
 You can find it with a casual online search. The principle can be referenced from <a target="_blank" rel="noopener" href="https://www.geeksforgeeks.org/angular-sweep-maximum-points-can-enclosed-circle-given-radius/">GeeksforGeeks</a> and this <a target="_blank" rel="noopener" href="https://leetcode.com/problems/maximum-number-of-darts-inside-of-a-circular-dartboard/discuss/636416/c%2B%2B-O(n2logn)-angular-sweep-(with-picture)">discuss post</a>; it is the famous angular sweep.</p>
 <p>Time complexity: O(n^2 log n)<br>

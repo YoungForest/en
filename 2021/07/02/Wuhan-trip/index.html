@@ -55,8 +55,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
 <script src="/en/js/utils.js" defer></script><script src="/en/js/sidebar.js" defer></script><script src="/en/js/next-boot.js" defer></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
-<script src="/en/js/third-party/search/local-search.js" defer></script>
+  
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/en/js/search-ui.js" defer></script>
 
 
 
@@ -91,66 +93,79 @@
 
   <main class="main">
     <div class="column">
-      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+
+<div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="Toggle navigation bar" role="button">
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
+        <span class="toggle-line"></span><span class="toggle-line"></span><span class="toggle-line"></span>
     </div>
   </div>
-
   <div class="site-meta">
-
+    
     <a href="/en/" class="brand" rel="start">
       <i class="logo-line"></i>
       <p class="site-title">YoungForest's blog</p>
       <i class="logo-line"></i>
     </a>
+    
+    
   </div>
-
   <div class="site-nav-right">
-    <div class="toggle popup-trigger" aria-label="Search" role="button">
-        <i class="fa fa-search fa-fw fa-lg"></i>
-    </div>
+    
+      <button type="button" class="toggle popup-trigger" data-search-trigger aria-label="Search" hidden><i class="fa fa-search fa-fw fa-lg" aria-hidden="true"></i></button>
+      <a class="toggle search-archive-fallback" data-search-fallback href="/en/archives/" aria-label="Browse archive"><i class="fa fa-list fa-fw fa-lg" aria-hidden="true"></i></a>
+    
   </div>
 </div>
 
 
 
+
+
 <nav class="site-nav">
   <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/en/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-start-here"><a href="/en/start-here/" rel="section"><i class="fa fa-compass fa-fw"></i>Start here</a></li><li class="menu-item menu-item-topics"><a href="/en/topics/" rel="section"><i class="fa fa-th fa-fw"></i>Topics</a></li><li class="menu-item menu-item-subscribe"><a href="/en/subscribe/" rel="section"><i class="fa fa-rss fa-fw"></i>Subscribe</a></li><li class="menu-item menu-item-about"><a href="/en/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-中文"><a href="https://youngforest.github.io/" rel="section"><i class="fa fa-globe fa-fw"></i>中文</a></li>
+    
       <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
-        </a>
+        <button type="button" class="popup-trigger" data-search-trigger hidden>
+          <i class="fa fa-search fa-fw" aria-hidden="true"></i>Search
+        </button>
+        <a data-search-fallback href="/en/archives/">Browse archive</a>
       </li>
+    
   </ul>
 </nav>
 
 
 
-  <div class="search-pop-overlay">
-    <div class="popup search-popup">
-      <div class="search-header">
-        <span class="search-icon">
-          <i class="fa fa-search"></i>
-        </span>
-        <div class="search-input-container">
-          <input autocomplete="off" autocapitalize="off" maxlength="80"
-                placeholder="Searching..." spellcheck="false"
-                type="search" class="search-input">
-        </div>
-        <span class="popup-btn-close" role="button">
-          <i class="fa fa-times-circle"></i>
-        </span>
-      </div>
-      <div class="search-result-container">
-        <div class="search-result-icon">
-          <i class="fa fa-spinner fa-pulse fa-5x"></i>
-        </div>
-      </div>
+
+<dialog class="search-popup search-dialog" id="site-search" aria-labelledby="site-search-title">
+  <h2 class="search-visually-hidden" id="site-search-title">Search this blog</h2>
+  <div class="search-header">
+    <span class="search-icon" aria-hidden="true"><i class="fa fa-search"></i></span>
+    <div class="search-input-container">
+      <label class="search-visually-hidden" for="site-search-input">Search English posts</label>
+      <input id="site-search-input" autocomplete="off" autocapitalize="off" maxlength="80" placeholder="Searching..." spellcheck="false" type="search" class="search-input">
     </div>
+    <button class="popup-btn-close" type="button" aria-label="Close search"><i class="fa fa-times" aria-hidden="true"></i></button>
   </div>
+  <div class="search-scroll">
+    <p class="search-status" role="status" aria-live="polite" aria-atomic="true"
+       data-empty="Search titles and article text. This searches English posts." data-loading="Loading search data…" data-none="No matching posts. Try a shorter query or browse the indexes."
+       data-error="Search data could not be loaded. Retry or browse the archive." data-library-error="The search component could not be loaded. Reload this page or browse the archive.">Search titles and article text. This searches English posts.</p>
+    <div class="search-actions">
+      <button type="button" class="search-retry" hidden>Retry</button>
+      <button type="button" class="search-reload" hidden>Reload page</button>
+    </div>
+    <nav class="search-browse" aria-label="Or browse">
+      <a href="/en/archives/">Browse archive</a>
+      <a href="/en/topics/">Topics</a>
+      <a href="/en/reading/">Books and screen notes</a>
+      <a href="https://youngforest.github.io/" lang="zh-CN">中文博客</a>
+    </nav>
+    <div class="search-result-container" id="site-search-results"></div>
+  </div>
+</dialog>
 
 </header>
         
@@ -344,34 +359,34 @@
   <img src="/en/images/ai/Wuhan-trip/en-hero.webp" alt="Forest and a companion leave an emptied campus room and follow a looping tabletop journey past family bowls, humid rain, a night bridge, and flat-pack furniture" width="1536" height="864" decoding="async" fetchpriority="high">
 </figure>
 <span id="more"></span>
-<h2 id="6-24-Day-0">6/24 Day 0</h2>
+<h2 id="6-24-Day-0">6/24 Day 0<a class="section-link" href="#6-24-Day-0" aria-label="Link to section: 6/24 Day 0"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>On this day I received my graduation certificate, packed up my dorm room, checked out of the dorm, and saw my roommates off. In the evening I waited for my girlfriend to finish her exam, then went to Shilibao to view apartments. After that I returned to school to pick up our travel luggage and went to a hotel near the train station. By the time we finished washing up, it was already past 1 a.m. We were intimate for a long time before sleeping. After all, it had already been two and a half months since the last time we booked a room, which was when we went out for my girlfriend’s birthday.</p>
-<h2 id="6-25-Day-1">6/25 Day 1</h2>
+<h2 id="6-25-Day-1">6/25 Day 1<a class="section-link" href="#6-25-Day-1" aria-label="Link to section: 6/25 Day 1"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>We slept until 11 a.m. at noon. We took a taxi to Beijing West Railway Station. Although it was very close, we still got on the train only ten minutes before departure.</p>
 <p>We took D2003 and arrived at Xiangfen West Station. Dad and my uncle came to pick us up. We went together to the oil-noodle restaurant on Fengqing Street for a meal, and Mom and my sister also came.</p>
-<h2 id="6-26-Day-2">6/26 Day 2</h2>
+<h2 id="6-26-Day-2">6/26 Day 2<a class="section-link" href="#6-26-Day-2" aria-label="Link to section: 6/26 Day 2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>The next morning we ate at home, then two cars took my girlfriend to Longshuyu. We climbed the mountain, walked across the glass bridge, and went down the stone slide.</p>
 <p>At noon we went back to the village to pick up Grandma, then returned to the city and ate a feast at the Weicun hand-pulled noodle restaurant.</p>
 <p>In the afternoon we rested at home for two hours, then drove my girlfriend to the city mall to hang out. We ate malaban in the food court.</p>
-<h2 id="6-27-Day-3">6/27 Day 3</h2>
+<h2 id="6-27-Day-3">6/27 Day 3<a class="section-link" href="#6-27-Day-3" aria-label="Link to section: 6/27 Day 3"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>In the morning we cooked and ate at home. I originally planned to make braised noodles, but because I bought the wrong kind of beans, we ended up making hand-pulled tomato-and-egg noodles.</p>
 <p>After eating, we rested briefly, and Dad drove us to the airport.</p>
 <p>We took a flight and arrived at Wuhan Tianhe Airport in the evening, then took the metro to Hankou Station and stayed at a nearby hotel.</p>
 <p>At night we went to Wansongyuan and ate pan-fried buns, beef noodles, and chouganzi.</p>
 <p>We walked around Zhongshan Park and the nearby mall. But because the mall was closing at 9:30, we only took some photos on the first floor.</p>
 <p>Right after arriving in Wuhan, we tasted the power of the River City. There was a heavy rain in the morning, and although there was no rain after we arrived at night, it was extremely humid and hot. On top of that, Wuhan’s food is spicy. After walking just a few steps, my whole body was soaked. It really almost killed me.</p>
-<h2 id="6-28-Day-4">6/28 Day 4</h2>
+<h2 id="6-28-Day-4">6/28 Day 4<a class="section-link" href="#6-28-Day-4" aria-label="Link to section: 6/28 Day 4"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>At noon we ate hot dry noodles beside the train station. They were pretty good. Then we took the high-speed train to Suizhou South. My girlfriend’s aunt and uncle picked us up. Afterward we went to the village to sit at her grandparents’ home and had dinner there. At night, her uncle picked us up and took us back to a hotel in the city. We ate xiaolongbao and fruit yogurt because we had not eaten enough at dinner. Rural meals were still hard to handle, but out of politeness and hunger I ate some.</p>
-<h2 id="6-29-Day-5">6/29 Day 5</h2>
+<h2 id="6-29-Day-5">6/29 Day 5<a class="section-link" href="#6-29-Day-5" aria-label="Link to section: 6/29 Day 5"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>In the morning we got up early, ate Xiangyang beef-offal noodles, and drank rice wine. Then we went to her grandparents’ home and sat there for the whole morning, saying goodbye to them.</p>
 <p>At noon we returned to the city and ate crawfish. Her aunt treated us. It was so satisfying.</p>
 <p>In the afternoon we took the high-speed train back to Wuhan and stayed at the original hotel again.</p>
 <p>When leaving the station, we ran into the internet-famous “Teacher Luo Xiang”, took a photo together, and posted it on Moments.</p>
 <p>At night we went to the “Hubu Alley” snack street and ate</p>
 <p>We walked across the famous Wuhan Yangtze River Bridge. I did not expect that after crossing the bridge and reaching Hanyang, the area was all major roads. It was also nearly midnight, with no buses and no shared bikes. We took a taxi back to Hankou Station. Everyone should try not to walk to strange places. Fortunately there were many taxis, otherwise it would have been truly desperate.</p>
-<h2 id="6-30-Day-6">6/30 Day 6</h2>
+<h2 id="6-30-Day-6">6/30 Day 6<a class="section-link" href="#6-30-Day-6" aria-label="Link to section: 6/30 Day 6"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>Jianghan Avenue</p>
-<h2 id="7-1-Day-7">7/1 Day 7</h2>
+<h2 id="7-1-Day-7">7/1 Day 7<a class="section-link" href="#7-1-Day-7" aria-label="Link to section: 7/1 Day 7"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>We took G520 back to Beijing early in the morning. I went back to school to move, and at night went to IKEA to buy furniture, spending another 2400 yuan.</p>
 <p>Travel really costs money. Moving does too.</p>
 

@@ -55,8 +55,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
 <script src="/en/js/utils.js" defer></script><script src="/en/js/sidebar.js" defer></script><script src="/en/js/next-boot.js" defer></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
-<script src="/en/js/third-party/search/local-search.js" defer></script>
+  
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/en/js/search-ui.js" defer></script>
 
 
 
@@ -91,66 +93,79 @@
 
   <main class="main">
     <div class="column">
-      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+
+<div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="Toggle navigation bar" role="button">
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
+        <span class="toggle-line"></span><span class="toggle-line"></span><span class="toggle-line"></span>
     </div>
   </div>
-
   <div class="site-meta">
-
+    
     <a href="/en/" class="brand" rel="start">
       <i class="logo-line"></i>
       <p class="site-title">YoungForest's blog</p>
       <i class="logo-line"></i>
     </a>
+    
+    
   </div>
-
   <div class="site-nav-right">
-    <div class="toggle popup-trigger" aria-label="Search" role="button">
-        <i class="fa fa-search fa-fw fa-lg"></i>
-    </div>
+    
+      <button type="button" class="toggle popup-trigger" data-search-trigger aria-label="Search" hidden><i class="fa fa-search fa-fw fa-lg" aria-hidden="true"></i></button>
+      <a class="toggle search-archive-fallback" data-search-fallback href="/en/archives/" aria-label="Browse archive"><i class="fa fa-list fa-fw fa-lg" aria-hidden="true"></i></a>
+    
   </div>
 </div>
 
 
 
+
+
 <nav class="site-nav">
   <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/en/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-start-here"><a href="/en/start-here/" rel="section"><i class="fa fa-compass fa-fw"></i>Start here</a></li><li class="menu-item menu-item-topics"><a href="/en/topics/" rel="section"><i class="fa fa-th fa-fw"></i>Topics</a></li><li class="menu-item menu-item-subscribe"><a href="/en/subscribe/" rel="section"><i class="fa fa-rss fa-fw"></i>Subscribe</a></li><li class="menu-item menu-item-about"><a href="/en/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-中文"><a href="https://youngforest.github.io/" rel="section"><i class="fa fa-globe fa-fw"></i>中文</a></li>
+    
       <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
-        </a>
+        <button type="button" class="popup-trigger" data-search-trigger hidden>
+          <i class="fa fa-search fa-fw" aria-hidden="true"></i>Search
+        </button>
+        <a data-search-fallback href="/en/archives/">Browse archive</a>
       </li>
+    
   </ul>
 </nav>
 
 
 
-  <div class="search-pop-overlay">
-    <div class="popup search-popup">
-      <div class="search-header">
-        <span class="search-icon">
-          <i class="fa fa-search"></i>
-        </span>
-        <div class="search-input-container">
-          <input autocomplete="off" autocapitalize="off" maxlength="80"
-                placeholder="Searching..." spellcheck="false"
-                type="search" class="search-input">
-        </div>
-        <span class="popup-btn-close" role="button">
-          <i class="fa fa-times-circle"></i>
-        </span>
-      </div>
-      <div class="search-result-container">
-        <div class="search-result-icon">
-          <i class="fa fa-spinner fa-pulse fa-5x"></i>
-        </div>
-      </div>
+
+<dialog class="search-popup search-dialog" id="site-search" aria-labelledby="site-search-title">
+  <h2 class="search-visually-hidden" id="site-search-title">Search this blog</h2>
+  <div class="search-header">
+    <span class="search-icon" aria-hidden="true"><i class="fa fa-search"></i></span>
+    <div class="search-input-container">
+      <label class="search-visually-hidden" for="site-search-input">Search English posts</label>
+      <input id="site-search-input" autocomplete="off" autocapitalize="off" maxlength="80" placeholder="Searching..." spellcheck="false" type="search" class="search-input">
     </div>
+    <button class="popup-btn-close" type="button" aria-label="Close search"><i class="fa fa-times" aria-hidden="true"></i></button>
   </div>
+  <div class="search-scroll">
+    <p class="search-status" role="status" aria-live="polite" aria-atomic="true"
+       data-empty="Search titles and article text. This searches English posts." data-loading="Loading search data…" data-none="No matching posts. Try a shorter query or browse the indexes."
+       data-error="Search data could not be loaded. Retry or browse the archive." data-library-error="The search component could not be loaded. Reload this page or browse the archive.">Search titles and article text. This searches English posts.</p>
+    <div class="search-actions">
+      <button type="button" class="search-retry" hidden>Retry</button>
+      <button type="button" class="search-reload" hidden>Reload page</button>
+    </div>
+    <nav class="search-browse" aria-label="Or browse">
+      <a href="/en/archives/">Browse archive</a>
+      <a href="/en/topics/">Topics</a>
+      <a href="/en/reading/">Books and screen notes</a>
+      <a href="https://youngforest.github.io/" lang="zh-CN">中文博客</a>
+    </nav>
+    <div class="search-result-container" id="site-search-results"></div>
+  </div>
+</dialog>
 
 </header>
         
@@ -371,7 +386,7 @@ Because I had done similar problems before for problems 2 and 3, I solved them q
 </tr>
 </tbody>
 </table>
-<h2 id="1012-Complement-of-Base-10-Integer">1012. Complement of Base 10 Integer</h2>
+<h2 id="1012-Complement-of-Base-10-Integer">1012. Complement of Base 10 Integer<a class="section-link" href="#1012-Complement-of-Base-10-Integer" aria-label="Link to section: 1012. Complement of Base 10 Integer"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">bitwiseComplement</span><span class="params">(<span class="type">int</span> N)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (N == <span class="number">0</span>) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        <span class="type">int</span> ret = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">32</span>; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> ((<span class="number">1</span> &lt;&lt; i) &gt; N) <span class="keyword">break</span>;</span><br><span class="line">            ret += ((N &amp; (<span class="number">1</span> &lt;&lt; i)) == <span class="number">0</span>) ? (<span class="number">1</span> &lt;&lt; i) : <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> ret;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <p>Time complexity: O(log N), proportional to the number of digits.<br>
 Space complexity: O(1).</p>
@@ -379,24 +394,24 @@ Space complexity: O(1).</p>
 My method is straightforward, with no special technique or trick. After all, it is a warm-up problem, and the time complexity is sufficient.<br>
 There are also some other ideas:<br>
 for example, find the largest <code>X = 1111..11</code> such that <code>X &gt;= N</code>, then simply <code>return X - N</code> or <code>return X^N</code>.</p>
-<h2 id="1013-Pairs-of-Songs-With-Total-Durations-Divisible-by-60">1013. Pairs of Songs With Total Durations Divisible by 60</h2>
+<h2 id="1013-Pairs-of-Songs-With-Total-Durations-Divisible-by-60">1013. Pairs of Songs With Total Durations Divisible by 60<a class="section-link" href="#1013-Pairs-of-Songs-With-Total-Durations-Divisible-by-60" aria-label="Link to section: 1013. Pairs of Songs With Total Durations Divisible by 60"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">numPairsDivisibleBy60</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; time)</span> </span>&#123;</span><br><span class="line">        <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">hashmap</span><span class="params">(<span class="number">60</span>, <span class="number">0</span>)</span></span>;</span><br><span class="line">        <span class="type">int</span> ret = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">const</span> <span class="type">int</span> &amp; t : time) &#123;</span><br><span class="line">            ret += hashmap[(<span class="number">60</span> - t + <span class="number">60000</span>) % <span class="number">60</span>];</span><br><span class="line">            hashmap[t % <span class="number">60</span>]++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ret;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <p>This uses the same idea as the famous <code>two sum</code>, testing the use of a <code>hashmap</code>.<br>
 To map all values, including negative numbers, into the range under 60, I used <code>(60 - t + 60000) % 60</code>. A better approach is actually <code>(60 - t % 60) % 60</code>.</p>
 <p>Time complexity: O(N),<br>
 space complexity: O(N).</p>
-<h2 id="1014-Capacity-To-Ship-Packages-Within-D-Days">1014. Capacity To Ship Packages Within D Days</h2>
+<h2 id="1014-Capacity-To-Ship-Packages-Within-D-Days">1014. Capacity To Ship Packages Within D Days<a class="section-link" href="#1014-Capacity-To-Ship-Packages-Within-D-Days" aria-label="Link to section: 1014. Capacity To Ship Packages Within D Days"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>A typical binary search problem. I also encountered one like this while helping my senior with ByteDance’s written test over the weekend. The idea was clear, and writing it felt quite practiced.</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="function"><span class="type">bool</span> <span class="title">possible</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; weights, <span class="type">int</span> capacity, <span class="type">int</span> D)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> day_count = <span class="number">0</span>;</span><br><span class="line">        <span class="type">int</span> weight_index = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (; day_count &lt; D; day_count++) &#123;</span><br><span class="line">            <span class="type">int</span> hasLoadedWeight = <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">for</span> (; weight_index &lt; weights.<span class="built_in">size</span>() &amp;&amp; hasLoadedWeight + weights[weight_index] &lt;= capacity; weight_index++) &#123;</span><br><span class="line">                hasLoadedWeight += weights[weight_index];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> weight_index == weights.<span class="built_in">size</span>();</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">shipWithinDays</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; weights, <span class="type">int</span> D)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// binary search，time complexity: 50000 * log(50000 * 500), Space: O(1)</span></span><br><span class="line">        <span class="type">int</span> hi = <span class="number">50000</span> * <span class="number">500</span>;</span><br><span class="line">        <span class="type">int</span> lo = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (lo &lt; hi) &#123;</span><br><span class="line">            <span class="comment">// loop invariant: possible(hi) == true</span></span><br><span class="line">            <span class="type">int</span> mid = lo + (hi - lo) / <span class="number">2</span>;</span><br><span class="line">            <span class="keyword">if</span> (<span class="built_in">possible</span>(weights, mid, D))</span><br><span class="line">                hi = mid;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">                lo = mid + <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> hi;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <p>Time complexity: 50000 * log(50000 * 500),<br>
 space: O(1).</p>
-<h2 id="1015-Numbers-With-1-Repeated-Digit">1015. Numbers With 1 Repeated Digit</h2>
+<h2 id="1015-Numbers-With-1-Repeated-Digit">1015. Numbers With 1 Repeated Digit<a class="section-link" href="#1015-Numbers-With-1-Repeated-Digit" aria-label="Link to section: 1015. Numbers With 1 Repeated Digit"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>I spent an hour on it and still did not solve it. Looking back, the correct idea is to count how many numbers have no repeated digits, and divide the number set into 0, 1 through <code>digit-1</code>, and <code>digit</code>. The wrong ideas were: not using permutation to simplify the counting; not analyzing the number patterns thoroughly enough. In fact, it only needs to be divided into two categories: 0 to <code>digit-1</code>, and <code>digit</code>. Because of these mistakes, although I could calculate the count by hand, the code implementation became too complex and too long, making it very hard to get right directly. In the end, I had to give up.</p>
 <p>I referred to the solutions from <a target="_blank" rel="noopener" href="https://leetcode.com/problems/numbers-with-1-repeated-digit/discuss/256725/JavaPython-Count-the-Number-Without-Repeated-Digit">lee215</a> and <a target="_blank" rel="noopener" href="https://leetcode.com/problems/numbers-with-1-repeated-digit/discuss/256866/Python-O(logN)-solution-with-clear-explanation">heqingy</a>.</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">permutation</span><span class="params">(<span class="type">int</span> n, <span class="type">int</span> m)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> ret = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">            ret *= m - i;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> ret;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">numDupDigitsAtMostN</span><span class="params">(<span class="type">int</span> N)</span> </span>&#123;</span><br><span class="line">        vector&lt;<span class="type">int</span>&gt; digits;</span><br><span class="line">        <span class="comment">// transform N + 1 to list. Attention: have to be N + 1, not N</span></span><br><span class="line">        <span class="type">int</span> tmp = N + <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span> (tmp &gt; <span class="number">0</span>) &#123;</span><br><span class="line">            digits.<span class="built_in">push_back</span>(tmp % <span class="number">10</span>);</span><br><span class="line">            tmp /= <span class="number">10</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">reverse</span>(digits.<span class="built_in">begin</span>(), digits.<span class="built_in">end</span>());</span><br><span class="line">        <span class="type">int</span> len = digits.<span class="built_in">size</span>();</span><br><span class="line">        <span class="type">int</span> ret = <span class="number">0</span>;</span><br><span class="line">        <span class="comment">// the first digit is 0</span></span><br><span class="line">        <span class="comment">// take 3452 as an example</span></span><br><span class="line">        <span class="comment">// len = 4</span></span><br><span class="line">        <span class="comment">// compute ***, **, *</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt; len; i++) &#123;</span><br><span class="line">            ret += <span class="number">9</span> * <span class="built_in">permutation</span>(len - i - <span class="number">1</span>, <span class="number">9</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// the first digits is not 0</span></span><br><span class="line">        set&lt;<span class="type">int</span>&gt; seen;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; len; i++) &#123;</span><br><span class="line">            <span class="comment">// if i == 2</span></span><br><span class="line">            <span class="comment">// compute 34**</span></span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> j = ((i == <span class="number">0</span>) ? <span class="number">1</span> : <span class="number">0</span>); j &lt; digits[i]; j++) &#123;</span><br><span class="line">                <span class="comment">// if j == 2</span></span><br><span class="line">                <span class="comment">// compute 342*</span></span><br><span class="line">                <span class="keyword">if</span> (seen.<span class="built_in">find</span>(j) == seen.<span class="built_in">end</span>()) &#123;</span><br><span class="line">                    ret += <span class="built_in">permutation</span>(len - <span class="number">1</span> - i, <span class="number">10</span> - (i + <span class="number">1</span>));</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// break if 344...</span></span><br><span class="line">            <span class="keyword">if</span> (seen.<span class="built_in">find</span>(digits[i]) != seen.<span class="built_in">end</span>()) <span class="keyword">break</span>;</span><br><span class="line">            seen.<span class="built_in">insert</span>(digits[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> N - ret;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <p>Time complexity: O(log n), the number of digits.<br>
 Space complexity: O(1).</p>
-<h2 id="Postscript">Postscript</h2>
+<h2 id="Postscript">Postscript<a class="section-link" href="#Postscript" aria-label="Link to section: Postscript"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>I have solved 279 problems now. I hope that after solving more problems, I can reach the state where, when I see a problem, I have an idea; once I have an idea, I can write it down from memory, bug-free. How many problems does it take to reach that state? 600? 900?<br>
 No matter how many it takes, I have to keep going.<br>
 I used to have a misunderstanding about grinding problems: I was not fast enough, and I did not set aside enough focused time every day. Only when the speed is high can it really be called grinding.<br>

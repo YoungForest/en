@@ -57,8 +57,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
 <script src="/en/js/utils.js" defer></script><script src="/en/js/sidebar.js" defer></script><script src="/en/js/next-boot.js" defer></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
-<script src="/en/js/third-party/search/local-search.js" defer></script>
+  
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/en/js/search-ui.js" defer></script>
 
 
 
@@ -93,66 +95,79 @@
 
   <main class="main">
     <div class="column">
-      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+
+<div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="Toggle navigation bar" role="button">
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
+        <span class="toggle-line"></span><span class="toggle-line"></span><span class="toggle-line"></span>
     </div>
   </div>
-
   <div class="site-meta">
-
+    
     <a href="/en/" class="brand" rel="start">
       <i class="logo-line"></i>
       <p class="site-title">YoungForest's blog</p>
       <i class="logo-line"></i>
     </a>
+    
+    
   </div>
-
   <div class="site-nav-right">
-    <div class="toggle popup-trigger" aria-label="Search" role="button">
-        <i class="fa fa-search fa-fw fa-lg"></i>
-    </div>
+    
+      <button type="button" class="toggle popup-trigger" data-search-trigger aria-label="Search" hidden><i class="fa fa-search fa-fw fa-lg" aria-hidden="true"></i></button>
+      <a class="toggle search-archive-fallback" data-search-fallback href="/en/archives/" aria-label="Browse archive"><i class="fa fa-list fa-fw fa-lg" aria-hidden="true"></i></a>
+    
   </div>
 </div>
 
 
 
+
+
 <nav class="site-nav">
   <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/en/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-start-here"><a href="/en/start-here/" rel="section"><i class="fa fa-compass fa-fw"></i>Start here</a></li><li class="menu-item menu-item-topics"><a href="/en/topics/" rel="section"><i class="fa fa-th fa-fw"></i>Topics</a></li><li class="menu-item menu-item-subscribe"><a href="/en/subscribe/" rel="section"><i class="fa fa-rss fa-fw"></i>Subscribe</a></li><li class="menu-item menu-item-about"><a href="/en/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-中文"><a href="https://youngforest.github.io/" rel="section"><i class="fa fa-globe fa-fw"></i>中文</a></li>
+    
       <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
-        </a>
+        <button type="button" class="popup-trigger" data-search-trigger hidden>
+          <i class="fa fa-search fa-fw" aria-hidden="true"></i>Search
+        </button>
+        <a data-search-fallback href="/en/archives/">Browse archive</a>
       </li>
+    
   </ul>
 </nav>
 
 
 
-  <div class="search-pop-overlay">
-    <div class="popup search-popup">
-      <div class="search-header">
-        <span class="search-icon">
-          <i class="fa fa-search"></i>
-        </span>
-        <div class="search-input-container">
-          <input autocomplete="off" autocapitalize="off" maxlength="80"
-                placeholder="Searching..." spellcheck="false"
-                type="search" class="search-input">
-        </div>
-        <span class="popup-btn-close" role="button">
-          <i class="fa fa-times-circle"></i>
-        </span>
-      </div>
-      <div class="search-result-container">
-        <div class="search-result-icon">
-          <i class="fa fa-spinner fa-pulse fa-5x"></i>
-        </div>
-      </div>
+
+<dialog class="search-popup search-dialog" id="site-search" aria-labelledby="site-search-title">
+  <h2 class="search-visually-hidden" id="site-search-title">Search this blog</h2>
+  <div class="search-header">
+    <span class="search-icon" aria-hidden="true"><i class="fa fa-search"></i></span>
+    <div class="search-input-container">
+      <label class="search-visually-hidden" for="site-search-input">Search English posts</label>
+      <input id="site-search-input" autocomplete="off" autocapitalize="off" maxlength="80" placeholder="Searching..." spellcheck="false" type="search" class="search-input">
     </div>
+    <button class="popup-btn-close" type="button" aria-label="Close search"><i class="fa fa-times" aria-hidden="true"></i></button>
   </div>
+  <div class="search-scroll">
+    <p class="search-status" role="status" aria-live="polite" aria-atomic="true"
+       data-empty="Search titles and article text. This searches English posts." data-loading="Loading search data…" data-none="No matching posts. Try a shorter query or browse the indexes."
+       data-error="Search data could not be loaded. Retry or browse the archive." data-library-error="The search component could not be loaded. Reload this page or browse the archive.">Search titles and article text. This searches English posts.</p>
+    <div class="search-actions">
+      <button type="button" class="search-retry" hidden>Retry</button>
+      <button type="button" class="search-reload" hidden>Reload page</button>
+    </div>
+    <nav class="search-browse" aria-label="Or browse">
+      <a href="/en/archives/">Browse archive</a>
+      <a href="/en/topics/">Topics</a>
+      <a href="/en/reading/">Books and screen notes</a>
+      <a href="https://youngforest.github.io/" lang="zh-CN">中文博客</a>
+    </nav>
+    <div class="search-result-container" id="site-search-results"></div>
+  </div>
+</dialog>
 
 </header>
         
@@ -357,14 +372,14 @@ I think reading one tutorial is enough.<br>
 The advantage of Runoob is that you can test and practice on the online database provided by the website, which is somewhat similar to the <a target="_blank" rel="noopener" href="https://www.w3schools.com/sql/">w3school tutorial</a>.<br>
 The advantage of <em>Sams Teach Yourself SQL in 10 Minutes</em> is that it contains more material. The author also teaches some experience in writing SQL and touches on portability and differences across different databases.</p>
 <p>There are <a target="_blank" rel="noopener" href="https://leetcode.com/problemset/database/">42 Database interview problems on LeetCode</a>. I must practice them when I have time.</p>
-<h2 id="Problems-Encountered-in-Practice">Problems Encountered in Practice</h2>
+<h2 id="Problems-Encountered-in-Practice">Problems Encountered in Practice<a class="section-link" href="#Problems-Encountered-in-Practice" aria-label="Link to section: Problems Encountered in Practice"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>Because my role is algorithm engineer in the recommendation team, there is a large amount of data mining work.<br>
 Also, what I write is not pure SQL, but <a target="_blank" rel="noopener" href="https://cwiki.apache.org/confluence/display/Hive/Home">Hive</a>-SQL.<br>
 Hive has many limitations and challenges. For example, you cannot nest a <code>select</code> clause inside <code>select</code>; <code>select 2 * (select 3);</code> is not allowed. The solution I finally found was to use aggregate functions or computable relationships between columns for the needed calculations, which really tests flexible use of <code>union</code> or <code>join</code>. The data volume is especially large, and each query is time-consuming. I learned to use small queries to verify ideas, validate layer by layer from the inside outward, and run queries and calculations in <code>jupyter notebook</code>.</p>
 <figure class="editorial-illustration">
   <img src="/en/images/ai/Advanced-SQL-practice/en-joins-partitions.webp" alt="Three sets of transparent data trays overlap in different ways while a partition cabinet sorts a large stream of records into searchable drawers" width="1536" height="864" loading="lazy" decoding="async">
 </figure>
-<h2 id="Answering-Interview-Questions">Answering Interview Questions</h2>
+<h2 id="Answering-Interview-Questions">Answering Interview Questions<a class="section-link" href="#Answering-Interview-Questions" aria-label="Link to section: Answering Interview Questions"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>The interviewer in the first round asked me at the time: Do you know SQL?</p>
 <p>Me: Yes, and I also previously had an internship at a database company.</p>
 <p>Interviewer: Then tell me the differences between <code>left join</code>, <code>right join</code>, and <code>inner join</code>.</p>
@@ -375,9 +390,9 @@ Hive has many limitations and challenges. For example, you cannot nest a <code>s
 <p>Me: Yes. And because I had not used it for a while, I had also become a bit rusty.</p>
 <p>Then the interviewer stopped asking SQL-related questions.</p>
 <p>After a week of work and systematic relearning of SQL, I can now answer these two questions.</p>
-<h3 id="Differences-Between-left-join-right-join-and-inner-join">Differences Between <code>left join</code>, <code>right join</code>, and <code>inner join</code></h3>
+<h3 id="Differences-Between-left-join-right-join-and-inner-join">Differences Between <code>left join</code>, <code>right join</code>, and <code>inner join</code><a class="section-link" href="#Differences-Between-left-join-right-join-and-inner-join" aria-label="Link to section: Differences Between left join, right join, and inner join"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h3>
 <p><code>inner join</code> is an inner join. Non-matching items do not appear in the joined result. <code>left join</code> is a left outer join. If an item on the left side has no matching item in the right table, one record still exists in the joined result, and the columns from the right table are all <code>NULL</code>. <code>right join</code> is similar. In fact, <code>left join</code> and <code>right join</code> can be interchanged; the two joined tables just need to swap left and right positions.</p>
-<h3 id="The-Concept-of-partition">The Concept of <code>partition</code></h3>
+<h3 id="The-Concept-of-partition">The Concept of <code>partition</code><a class="section-link" href="#The-Concept-of-partition" aria-label="Link to section: The Concept of partition"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h3>
 <p><code>partition</code> divides a table into different partitions to speed up queries.<br>
 The limitation is that during <code>select</code>, the partitioned column must be written in <code>where</code> as a filter.</p>
 

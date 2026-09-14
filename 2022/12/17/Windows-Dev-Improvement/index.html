@@ -55,8 +55,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
 <script src="/en/js/utils.js" defer></script><script src="/en/js/sidebar.js" defer></script><script src="/en/js/next-boot.js" defer></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
-<script src="/en/js/third-party/search/local-search.js" defer></script>
+  
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/en/js/search-ui.js" defer></script>
 
 
 
@@ -91,66 +93,79 @@
 
   <main class="main">
     <div class="column">
-      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+
+<div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="Toggle navigation bar" role="button">
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
+        <span class="toggle-line"></span><span class="toggle-line"></span><span class="toggle-line"></span>
     </div>
   </div>
-
   <div class="site-meta">
-
+    
     <a href="/en/" class="brand" rel="start">
       <i class="logo-line"></i>
       <p class="site-title">YoungForest's blog</p>
       <i class="logo-line"></i>
     </a>
+    
+    
   </div>
-
   <div class="site-nav-right">
-    <div class="toggle popup-trigger" aria-label="Search" role="button">
-        <i class="fa fa-search fa-fw fa-lg"></i>
-    </div>
+    
+      <button type="button" class="toggle popup-trigger" data-search-trigger aria-label="Search" hidden><i class="fa fa-search fa-fw fa-lg" aria-hidden="true"></i></button>
+      <a class="toggle search-archive-fallback" data-search-fallback href="/en/archives/" aria-label="Browse archive"><i class="fa fa-list fa-fw fa-lg" aria-hidden="true"></i></a>
+    
   </div>
 </div>
 
 
 
+
+
 <nav class="site-nav">
   <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/en/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-start-here"><a href="/en/start-here/" rel="section"><i class="fa fa-compass fa-fw"></i>Start here</a></li><li class="menu-item menu-item-topics"><a href="/en/topics/" rel="section"><i class="fa fa-th fa-fw"></i>Topics</a></li><li class="menu-item menu-item-subscribe"><a href="/en/subscribe/" rel="section"><i class="fa fa-rss fa-fw"></i>Subscribe</a></li><li class="menu-item menu-item-about"><a href="/en/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-中文"><a href="https://youngforest.github.io/" rel="section"><i class="fa fa-globe fa-fw"></i>中文</a></li>
+    
       <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
-        </a>
+        <button type="button" class="popup-trigger" data-search-trigger hidden>
+          <i class="fa fa-search fa-fw" aria-hidden="true"></i>Search
+        </button>
+        <a data-search-fallback href="/en/archives/">Browse archive</a>
       </li>
+    
   </ul>
 </nav>
 
 
 
-  <div class="search-pop-overlay">
-    <div class="popup search-popup">
-      <div class="search-header">
-        <span class="search-icon">
-          <i class="fa fa-search"></i>
-        </span>
-        <div class="search-input-container">
-          <input autocomplete="off" autocapitalize="off" maxlength="80"
-                placeholder="Searching..." spellcheck="false"
-                type="search" class="search-input">
-        </div>
-        <span class="popup-btn-close" role="button">
-          <i class="fa fa-times-circle"></i>
-        </span>
-      </div>
-      <div class="search-result-container">
-        <div class="search-result-icon">
-          <i class="fa fa-spinner fa-pulse fa-5x"></i>
-        </div>
-      </div>
+
+<dialog class="search-popup search-dialog" id="site-search" aria-labelledby="site-search-title">
+  <h2 class="search-visually-hidden" id="site-search-title">Search this blog</h2>
+  <div class="search-header">
+    <span class="search-icon" aria-hidden="true"><i class="fa fa-search"></i></span>
+    <div class="search-input-container">
+      <label class="search-visually-hidden" for="site-search-input">Search English posts</label>
+      <input id="site-search-input" autocomplete="off" autocapitalize="off" maxlength="80" placeholder="Searching..." spellcheck="false" type="search" class="search-input">
     </div>
+    <button class="popup-btn-close" type="button" aria-label="Close search"><i class="fa fa-times" aria-hidden="true"></i></button>
   </div>
+  <div class="search-scroll">
+    <p class="search-status" role="status" aria-live="polite" aria-atomic="true"
+       data-empty="Search titles and article text. This searches English posts." data-loading="Loading search data…" data-none="No matching posts. Try a shorter query or browse the indexes."
+       data-error="Search data could not be loaded. Retry or browse the archive." data-library-error="The search component could not be loaded. Reload this page or browse the archive.">Search titles and article text. This searches English posts.</p>
+    <div class="search-actions">
+      <button type="button" class="search-retry" hidden>Retry</button>
+      <button type="button" class="search-reload" hidden>Reload page</button>
+    </div>
+    <nav class="search-browse" aria-label="Or browse">
+      <a href="/en/archives/">Browse archive</a>
+      <a href="/en/topics/">Topics</a>
+      <a href="/en/reading/">Books and screen notes</a>
+      <a href="https://youngforest.github.io/" lang="zh-CN">中文博客</a>
+    </nav>
+    <div class="search-result-container" id="site-search-results"></div>
+  </div>
+</dialog>
 
 </header>
         
@@ -338,15 +353,15 @@
         <nav aria-label="On this page"><ol class="mobile-toc-list"><li class="mobile-toc-list-item mobile-toc-list-level-2"><a class="mobile-toc-list-link" href="#Introduction"><span class="mobile-toc-list-text">Introduction</span></a></li><li class="mobile-toc-list-item mobile-toc-list-level-2"><a class="mobile-toc-list-link" href="#Clink"><span class="mobile-toc-list-text">Clink</span></a><ol class="mobile-toc-list-child"><li class="mobile-toc-list-item mobile-toc-list-level-3"><a class="mobile-toc-list-link" href="#How-to-install-and-set-up-Clink"><span class="mobile-toc-list-text">How to install and set up Clink</span></a></li><li class="mobile-toc-list-item mobile-toc-list-level-3"><a class="mobile-toc-list-link" href="#Examples-of-using-Clink"><span class="mobile-toc-list-text">Examples of using Clink</span></a></li><li class="mobile-toc-list-item mobile-toc-list-level-3"><a class="mobile-toc-list-link" href="#Powershell"><span class="mobile-toc-list-text">Powershell</span></a></li><li class="mobile-toc-list-item mobile-toc-list-level-3"><a class="mobile-toc-list-link" href="#How-to-install-and-set-up-Powershell"><span class="mobile-toc-list-text">How to install and set up Powershell</span></a></li><li class="mobile-toc-list-item mobile-toc-list-level-3"><a class="mobile-toc-list-link" href="#Examples-of-using-Powershell"><span class="mobile-toc-list-text">Examples of using Powershell</span></a></li><li class="mobile-toc-list-item mobile-toc-list-level-3"><a class="mobile-toc-list-link" href="#Examples-of-how-Powershell-can-help-with-system-management-tasks"><span class="mobile-toc-list-text">Examples of how Powershell can help with system management tasks</span></a></li></ol></li><li class="mobile-toc-list-item mobile-toc-list-level-2"><a class="mobile-toc-list-link" href="#Winget"><span class="mobile-toc-list-text">Winget</span></a><ol class="mobile-toc-list-child"><li class="mobile-toc-list-item mobile-toc-list-level-3"><a class="mobile-toc-list-link" href="#Examples-of-using-Winget"><span class="mobile-toc-list-text">Examples of using Winget</span></a></li><li class="mobile-toc-list-item mobile-toc-list-level-3"><a class="mobile-toc-list-link" href="#OhMyPosh"><span class="mobile-toc-list-text">OhMyPosh</span></a></li></ol></li><li class="mobile-toc-list-item mobile-toc-list-level-2"><a class="mobile-toc-list-link" href="#Autojump"><span class="mobile-toc-list-text">Autojump</span></a><ol class="mobile-toc-list-child"><li class="mobile-toc-list-item mobile-toc-list-level-3"><a class="mobile-toc-list-link" href="#Installing-Autojump"><span class="mobile-toc-list-text">Installing Autojump</span></a></li><li class="mobile-toc-list-item mobile-toc-list-level-3"><a class="mobile-toc-list-link" href="#Using-Autojump"><span class="mobile-toc-list-text">Using Autojump</span></a></li></ol></li><li class="mobile-toc-list-item mobile-toc-list-level-2"><a class="mobile-toc-list-link" href="#Z-lua-a-faster-equivalent-of-autojump"><span class="mobile-toc-list-text">Z.lua, a faster equivalent of autojump</span></a></li><li class="mobile-toc-list-item mobile-toc-list-level-2"><a class="mobile-toc-list-link" href="#Conclusion"><span class="mobile-toc-list-text">Conclusion</span></a></li><li class="mobile-toc-list-item mobile-toc-list-level-2"><a class="mobile-toc-list-link" href="#References"><span class="mobile-toc-list-text">References</span></a></li></ol></nav>
       </details>
     
-    <div class="post-body" itemprop="articleBody"><h2 id="Introduction">Introduction</h2>
+    <div class="post-body" itemprop="articleBody"><h2 id="Introduction">Introduction<a class="section-link" href="#Introduction" aria-label="Link to section: Introduction"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>As a former Mac user, transitioning to Windows 11 was initially challenging for me. I found myself missing the ease of use and convenience of MacOS, and I struggled to adapt to the different development environment. However, with some effort and exploration, I discovered some tools and techniques that have helped me improve my experience as a developer in Windows. I know someone has to use Windows as his dev machine, like Microsoft employees. In this article, I want to share my experience and offer some tips and resources to help you enhance your Windows development environment, specifically with regards to shell improvements.</p>
 <figure class="editorial-illustration editorial-illustration--hero">
   <img src="/en/images/ai/Windows-Dev-Improvement/en-hero.webp" alt="A tangled railway signal room becomes a clean tool library of blank cards, routed crates, adjustable lamps, and a compass-guided lift" width="1536" height="864" decoding="async" fetchpriority="high">
 </figure>
 <span id="more"></span>
-<h2 id="Clink">Clink</h2>
+<h2 id="Clink">Clink<a class="section-link" href="#Clink" aria-label="Link to section: Clink"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>Clink is a powerful tool that enhances the functionality of the Windows command prompt. It provides several features that can help you be more productive and efficient when working with the command line.</p>
-<h3 id="How-to-install-and-set-up-Clink">How to install and set up Clink</h3>
+<h3 id="How-to-install-and-set-up-Clink">How to install and set up Clink<a class="section-link" href="#How-to-install-and-set-up-Clink" aria-label="Link to section: How to install and set up Clink"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h3>
 <ol>
 <li>Download the Clink installer from the <a target="_blank" rel="noopener" href="https://mridgers.github.io/clink/">official website</a>.</li>
 <li>Run the installer and follow the on-screen instructions to install Clink on your system.</li>
@@ -362,7 +377,7 @@
 <li>Change the values of the color codes to your desired values. For example, to change the foreground color of directory listings to yellow, you can set <code>ls+di=33;1</code>.</li>
 </ol>
 <p>You can find more information about customizing Clink in <a target="_blank" rel="noopener" href="https://mridgers.github.io/clink/">the official documentation</a>.</p>
-<h3 id="Examples-of-using-Clink">Examples of using Clink</h3>
+<h3 id="Examples-of-using-Clink">Examples of using Clink<a class="section-link" href="#Examples-of-using-Clink" aria-label="Link to section: Examples of using Clink"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h3>
 <p>Clink provides many useful features that can improve your command line experience on Windows. Here are some examples:</p>
 <h4 id="1-Tab-completion">1. Tab completion</h4>
 <p>Clink offers tab completion for commands, options, and file paths. To use tab completion, simply type the first few letters of a command or file path, then press the <code>Tab</code> key to complete it. If there are multiple options or file paths that match your input, you can press <code>Tab</code> repeatedly to cycle through them.</p>
@@ -402,9 +417,9 @@
 </ul>
 <p>By taking advantage of Clink’s features and aliases, you can navigate directories, copy and move files, and manage processes more easily and quickly.</p>
 <p>Overall, Clink is a powerful tool that can greatly enhance your command line experience on Windows. By using its features and customizing it to your needs, you can work more efficiently and productively.</p>
-<h3 id="Powershell">Powershell</h3>
+<h3 id="Powershell">Powershell<a class="section-link" href="#Powershell" aria-label="Link to section: Powershell"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h3>
 <p>Powershell is a more advanced command-line interface for Windows that provides a wide range of features and capabilities. It can help you perform complex tasks more efficiently and effectively.</p>
-<h3 id="How-to-install-and-set-up-Powershell">How to install and set up Powershell</h3>
+<h3 id="How-to-install-and-set-up-Powershell">How to install and set up Powershell<a class="section-link" href="#How-to-install-and-set-up-Powershell" aria-label="Link to section: How to install and set up Powershell"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h3>
 <p>PowerShell is a powerful command-line interface for Windows that provides a more powerful and flexible environment than the traditional Command Prompt. Here’s how to install and set up PowerShell:</p>
 <ol>
 <li>
@@ -424,8 +439,8 @@
 </li>
 </ol>
 <p>By installing and customizing PowerShell, you can have a more powerful and flexible command-line environment on Windows.</p>
-<h3 id="Examples-of-using-Powershell">Examples of using Powershell</h3>
-<h3 id="Examples-of-how-Powershell-can-help-with-system-management-tasks">Examples of how Powershell can help with system management tasks</h3>
+<h3 id="Examples-of-using-Powershell">Examples of using Powershell<a class="section-link" href="#Examples-of-using-Powershell" aria-label="Link to section: Examples of using Powershell"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h3>
+<h3 id="Examples-of-how-Powershell-can-help-with-system-management-tasks">Examples of how Powershell can help with system management tasks<a class="section-link" href="#Examples-of-how-Powershell-can-help-with-system-management-tasks" aria-label="Link to section: Examples of how Powershell can help with system management tasks"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h3>
 <p>PowerShell is a powerful tool for managing Windows systems. Here are a few examples of how PowerShell can help with system management tasks:</p>
 <h4 id="Managing-Windows-services">Managing Windows services</h4>
 <p>Powershell can be used to manage Windows services. For example, to start the Print Spooler service, you can use the following command:</p>
@@ -441,9 +456,9 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Get-Volume | Get-Partition | Get-Disk | Repair-Volume -SpotFix</span><br></pre></td></tr></table></figure>
 <p>This command checks all volumes, partitions, and disks for errors and attempts to fix them.</p>
 <p>These are just a few examples of how PowerShell can be used to manage and maintain Windows systems. With PowerShell, the possibilities are endless!</p>
-<h2 id="Winget">Winget</h2>
+<h2 id="Winget">Winget<a class="section-link" href="#Winget" aria-label="Link to section: Winget"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/en-us/windows/package-manager/winget/">Winget</a> is a package manager for Windows that allows you to easily install, manage, and update applications from the command line. It is similar to package managers like Homebrew on MacOS or apt on Ubuntu, and provides a simple and convenient way to manage software on your Windows system. With Winget, you can quickly install and update applications without having to search for and download installation files manually, making it a valuable tool for developers and power users on Windows.</p>
-<h3 id="Examples-of-using-Winget">Examples of using Winget</h3>
+<h3 id="Examples-of-using-Winget">Examples of using Winget<a class="section-link" href="#Examples-of-using-Winget" aria-label="Link to section: Examples of using Winget"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h3>
 <p>Winget makes it easy to install applications from the command line. Here are a few examples:</p>
 <h4 id="Install-an-application">Install an application</h4>
 <p>To install an application, simply enter the following command:</p>
@@ -464,19 +479,19 @@
 <p>For example, to uninstall Visual Studio Code, you would enter:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">winget uninstall Microsoft.VisualStudioCode</span><br></pre></td></tr></table></figure>
 <p>These are just a few examples of how you can use Winget to install and manage applications on your Windows system. With Winget, you can easily install and update applications from the command line, making it a valuable tool for developers and power users alike.</p>
-<h3 id="OhMyPosh">OhMyPosh</h3>
+<h3 id="OhMyPosh">OhMyPosh<a class="section-link" href="#OhMyPosh" aria-label="Link to section: OhMyPosh"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h3>
 <p>OhMyPosh is a tool that lets you customize your Powershell prompt. It allows you to create custom themes that can make your command-line interface more visually appealing and easier to use.</p>
 <p><a target="_blank" rel="noopener" href="https://ohmyposh.dev/docs/installation/windows">Install instructions</a></p>
-<h2 id="Autojump">Autojump</h2>
+<h2 id="Autojump">Autojump<a class="section-link" href="#Autojump" aria-label="Link to section: Autojump"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p><a target="_blank" rel="noopener" href="https://github.com/wting/autojump">Autojump</a> is a tool that helps you navigate your file system more efficiently. It remembers the directories you visit and lets you quickly jump back to them using a short command.</p>
-<h3 id="Installing-Autojump">Installing Autojump</h3>
+<h3 id="Installing-Autojump">Installing Autojump<a class="section-link" href="#Installing-Autojump" aria-label="Link to section: Installing Autojump"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h3>
 <p>Open a PowerShell terminal as an administrator.</p>
 <p>Install Autojump by running the following command:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">winget install autojump</span><br></pre></td></tr></table></figure>
 <p>You can find your PowerShell profile by running the following command:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$PROFILE</span><br></pre></td></tr></table></figure>
 <p>Restart your PowerShell terminal to apply the changes.</p>
-<h3 id="Using-Autojump">Using Autojump</h3>
+<h3 id="Using-Autojump">Using Autojump<a class="section-link" href="#Using-Autojump" aria-label="Link to section: Using Autojump"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h3>
 <p>Autojump is a command-line tool that allows you to navigate your file system more efficiently and quickly by remembering the directories you’ve visited and providing shortcuts to them.</p>
 <h4 id="Jump-to-a-directory">Jump to a directory</h4>
 <p>To jump to a directory that you’ve visited before, simply type j followed by a unique part of the directory name. For example:</p>
@@ -487,13 +502,13 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">j --stat</span><br></pre></td></tr></table></figure>
 <p>This will display a list of the directories along with the number of times you’ve visited each one.</p>
 <p>With Autojump, you can navigate your file system more efficiently and quickly, making your development experience on Windows more enjoyable and efficient.</p>
-<h2 id="Z-lua-a-faster-equivalent-of-autojump">Z.lua, a faster equivalent of autojump</h2>
+<h2 id="Z-lua-a-faster-equivalent-of-autojump">Z.lua, a faster equivalent of autojump<a class="section-link" href="#Z-lua-a-faster-equivalent-of-autojump" aria-label="Link to section: Z.lua, a faster equivalent of autojump"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p><a target="_blank" rel="noopener" href="https://github.com/skywind3000/z.lua">z.lua</a> is a faster equivalent of autojump. It is written in pure Lua and has no external dependencies. It is also faster than autojump. I use it more on Windows and PowerShell.</p>
-<h2 id="Conclusion">Conclusion</h2>
+<h2 id="Conclusion">Conclusion<a class="section-link" href="#Conclusion" aria-label="Link to section: Conclusion"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>In conclusion, Windows can be a great platform for development if you have the right tools and know how to use them. In this article, we have covered several tools that can help improve your Windows development experience, including Clink, PowerShell, OhMyPosh, Winget, and Autojump.</p>
 <p>Clink and PowerShell provide a powerful shell experience that is comparable to what you get on other platforms. OhMyPosh allows you to customize your PowerShell prompt and make it more visually appealing. Winget is a package manager that makes it easy to install and manage software on Windows. Autojump provides a quick and efficient way to navigate your file system.</p>
 <p>By using these tools and tips, you can enhance your development experience on Windows and work more efficiently. With the right setup, Windows can be just as powerful and enjoyable as other platforms for development.</p>
-<h2 id="References">References</h2>
+<h2 id="References">References<a class="section-link" href="#References" aria-label="Link to section: References"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <ul>
 <li><a target="_blank" rel="noopener" href="https://mridgers.github.io/clink/">https://mridgers.github.io/clink/</a></li>
 <li><a target="_blank" rel="noopener" href="https://github.com/wting/autojump">https://github.com/wting/autojump</a></li>

@@ -57,8 +57,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
 <script src="/en/js/utils.js" defer></script><script src="/en/js/sidebar.js" defer></script><script src="/en/js/next-boot.js" defer></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
-<script src="/en/js/third-party/search/local-search.js" defer></script>
+  
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/en/js/search-ui.js" defer></script>
 
 
 
@@ -93,66 +95,79 @@
 
   <main class="main">
     <div class="column">
-      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+
+<div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="Toggle navigation bar" role="button">
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
+        <span class="toggle-line"></span><span class="toggle-line"></span><span class="toggle-line"></span>
     </div>
   </div>
-
   <div class="site-meta">
-
+    
     <a href="/en/" class="brand" rel="start">
       <i class="logo-line"></i>
       <p class="site-title">YoungForest's blog</p>
       <i class="logo-line"></i>
     </a>
+    
+    
   </div>
-
   <div class="site-nav-right">
-    <div class="toggle popup-trigger" aria-label="Search" role="button">
-        <i class="fa fa-search fa-fw fa-lg"></i>
-    </div>
+    
+      <button type="button" class="toggle popup-trigger" data-search-trigger aria-label="Search" hidden><i class="fa fa-search fa-fw fa-lg" aria-hidden="true"></i></button>
+      <a class="toggle search-archive-fallback" data-search-fallback href="/en/archives/" aria-label="Browse archive"><i class="fa fa-list fa-fw fa-lg" aria-hidden="true"></i></a>
+    
   </div>
 </div>
 
 
 
+
+
 <nav class="site-nav">
   <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/en/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-start-here"><a href="/en/start-here/" rel="section"><i class="fa fa-compass fa-fw"></i>Start here</a></li><li class="menu-item menu-item-topics"><a href="/en/topics/" rel="section"><i class="fa fa-th fa-fw"></i>Topics</a></li><li class="menu-item menu-item-subscribe"><a href="/en/subscribe/" rel="section"><i class="fa fa-rss fa-fw"></i>Subscribe</a></li><li class="menu-item menu-item-about"><a href="/en/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-中文"><a href="https://youngforest.github.io/" rel="section"><i class="fa fa-globe fa-fw"></i>中文</a></li>
+    
       <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
-        </a>
+        <button type="button" class="popup-trigger" data-search-trigger hidden>
+          <i class="fa fa-search fa-fw" aria-hidden="true"></i>Search
+        </button>
+        <a data-search-fallback href="/en/archives/">Browse archive</a>
       </li>
+    
   </ul>
 </nav>
 
 
 
-  <div class="search-pop-overlay">
-    <div class="popup search-popup">
-      <div class="search-header">
-        <span class="search-icon">
-          <i class="fa fa-search"></i>
-        </span>
-        <div class="search-input-container">
-          <input autocomplete="off" autocapitalize="off" maxlength="80"
-                placeholder="Searching..." spellcheck="false"
-                type="search" class="search-input">
-        </div>
-        <span class="popup-btn-close" role="button">
-          <i class="fa fa-times-circle"></i>
-        </span>
-      </div>
-      <div class="search-result-container">
-        <div class="search-result-icon">
-          <i class="fa fa-spinner fa-pulse fa-5x"></i>
-        </div>
-      </div>
+
+<dialog class="search-popup search-dialog" id="site-search" aria-labelledby="site-search-title">
+  <h2 class="search-visually-hidden" id="site-search-title">Search this blog</h2>
+  <div class="search-header">
+    <span class="search-icon" aria-hidden="true"><i class="fa fa-search"></i></span>
+    <div class="search-input-container">
+      <label class="search-visually-hidden" for="site-search-input">Search English posts</label>
+      <input id="site-search-input" autocomplete="off" autocapitalize="off" maxlength="80" placeholder="Searching..." spellcheck="false" type="search" class="search-input">
     </div>
+    <button class="popup-btn-close" type="button" aria-label="Close search"><i class="fa fa-times" aria-hidden="true"></i></button>
   </div>
+  <div class="search-scroll">
+    <p class="search-status" role="status" aria-live="polite" aria-atomic="true"
+       data-empty="Search titles and article text. This searches English posts." data-loading="Loading search data…" data-none="No matching posts. Try a shorter query or browse the indexes."
+       data-error="Search data could not be loaded. Retry or browse the archive." data-library-error="The search component could not be loaded. Reload this page or browse the archive.">Search titles and article text. This searches English posts.</p>
+    <div class="search-actions">
+      <button type="button" class="search-retry" hidden>Retry</button>
+      <button type="button" class="search-reload" hidden>Reload page</button>
+    </div>
+    <nav class="search-browse" aria-label="Or browse">
+      <a href="/en/archives/">Browse archive</a>
+      <a href="/en/topics/">Topics</a>
+      <a href="/en/reading/">Books and screen notes</a>
+      <a href="https://youngforest.github.io/" lang="zh-CN">中文博客</a>
+    </nav>
+    <div class="search-result-container" id="site-search-results"></div>
+  </div>
+</dialog>
 
 </header>
         
@@ -348,7 +363,7 @@
   <img src="/en/images/ai/sensetime-intern-interview/en-hero.webp" alt="Forest crosses three increasingly deep technical workbenches, moving from algorithm pieces into operating-system gears, compiler pipelines, and language mechanisms" width="1536" height="864" decoding="async">
 </figure>
 <span id="more"></span>
-<h2 id="First-Interview">First Interview</h2>
+<h2 id="First-Interview">First Interview<a class="section-link" href="#First-Interview" aria-label="Link to section: First Interview"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>The first-round interviewer was the lead of this group, who had just graduated and converted to full-time this year. I had always thought he looked familiar. Later, after talking with classmates, I remembered: wasn’t this the TA who checked my compiler lab two years ago?</p>
 <p>Because the lead was hiring for his own team, the first interview was overall very tight-paced and substantial. He asked me about career planning, project experience, and two algorithm problems in order.</p>
 <p>Career planning was mainly related to the future internship work, from super hardcore embedded systems and operating systems, to optimizing deep learning frameworks and libraries, and then to optimizing computer vision strategies and algorithms.</p>
@@ -363,13 +378,13 @@
 <p>I rely more on inspiration and trial. For example, for the first problem, I was completely stuck at first. But after trying a few more times, I happened to think of computing prefix sums first, subtracting 1 on 0 and adding 1 on 1, and then the problem was solved. It is similar to some string comparison problems on LeetCode.</p>
 <p>This inspiration-and-trial-based solution method first of all does not work every time; if my state is bad, it may fail. Second, it is unreliable. When solving a problem, I do not feel grounded, and I am constantly nervous about whether the problem can be solved successfully.</p>
 <p>So, before facing more future interviews and dream jobs, it is necessary to form a stable and reliable problem-solving process.</p>
-<h2 id="Second-Interview">Second Interview</h2>
+<h2 id="Second-Interview">Second Interview<a class="section-link" href="#Second-Interview" aria-label="Link to section: Second Interview"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>The second-round interviewer was my undergraduate classmate, but we did not communicate much normally. He is the more geeky type.</p>
 <p>At the beginning, this classmate was not very talkative. He asked what was covered in the first interview and what I could write. I judged that he probably did not have much experience as an interviewer and was not very skilled at it. I relaxed a little and felt slightly happy.</p>
 <p>But very quickly, he really used technology to teach me how to be humble. After slowly getting familiar, he also entered interview mode. He asked from operating systems, such as what happens between typing a command in the shell and the program being executed, and the process creation process, to compilers, including the compilation process and details of each step; from compiler optimization, such as loop unrolling, to CPython implementation, including global variable handling and how Python runs. Seeing that I had used Django, he also asked about framework implementation and model implementation. He asked which language I was more familiar with. I said Python, so he asked many questions about Python implementation. He asked whether I had read the code of any large Python project. I could only say, ashamed, no.</p>
 <p>Except for the first few minutes, which were relatively relaxed, the pace of the whole interview got faster and faster. Every question went deeper and deeper until I really could not answer.</p>
 <p>To deal with this type of interview, I can only say that <strong>CSAPP</strong> and <strong>SICP</strong> are truly important. Although I had only read a few chapters of each, I still forced myself to talk based on my shallow memory. For example, I had never understood Python’s runtime process before. At first I only said it was interpreted execution. The other side asked for more detail: what is the process from start to finish? I thought Lisp is also an interpreted language, so I described the Lisp execution process I had read about long ago in SICP. After the interview, I looked up Python’s execution process and was pleasantly surprised to find that it really was similar. CSAPP gives deep introductions to compilation and processes. If I had been more familiar with those two chapters, I would definitely have been more composed during the interview. Not having read the source code of large projects is also one of my weaknesses. To be honest, not many people have read the source code of many large projects. But we should aim for great engineers. Reading more source code is necessary to become a better programmer.</p>
-<h2 id="Third-Interview">Third Interview</h2>
+<h2 id="Third-Interview">Third Interview<a class="section-link" href="#Third-Interview" aria-label="Link to section: Third Interview"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>The third-round interviewer was also my undergraduate classmate, and we were slightly more familiar. The last round was handled by a classmate from a different group and was called a cross-group interview, to prevent any group from privately hiring unqualified employees.</p>
 <p>Since we were relatively familiar, the interview process was quite relaxed. First he asked about my project experience one by one, then asked one language question and one algorithm question.</p>
 <p>The language question involved Python closures, specifically understanding the difference between:</p>
@@ -385,7 +400,7 @@
 <figure class="editorial-illustration">
   <img src="/en/images/ai/sensetime-intern-interview/en-engineering-path.webp" alt="Forest leaves a floating staircase of career trophies and chooses a grounded engineering bench where he can build reliable software by hand" width="1536" height="864" loading="lazy" decoding="async">
 </figure>
-<h2 id="Afterword-Reflections">Afterword | Reflections</h2>
+<h2 id="Afterword-Reflections">Afterword | Reflections<a class="section-link" href="#Afterword-Reflections" aria-label="Link to section: Afterword | Reflections"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>Having a clear career plan and skill direction is very important. When chatting with senior classmates normally, I can say that I do not know what I want to do or what I am most interested in. But saying this in an interview is definitely GG. It is best to have a relatively clear understanding of yourself, know your interests and career plan, and of course it is even better if these match the requirements of the position. If they do not match, the probability of GG is high, and you might even be criticized. See my Face++ interview experience from May, which can be found on my blog: <a href="https://youngforest.github.io/en/2018/08/14/face-interview/">https://youngforest.github.io/en/2018/08/14/face-interview/</a>.</p>
 <p>Algorithm positions are extremely hot this year, to the point that supply exceeds demand. Algorithm positions are also upstream in the programmer hierarchy of contempt, and the salary is somewhat higher than development positions.</p>
 <p>But combining my own experience and feelings, I found that I am still more interested in writing code: writing more elegant and higher-performance code, satisfying users’ needs, and creating impact. That makes me happy and satisfied. Although being a programmer is hard, I am happy. There is no need to chase careers that others consider good. The hierarchy of contempt is roughly: researcher &gt; algorithm engineer &gt; development engineer &gt; others.</p>

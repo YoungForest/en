@@ -57,8 +57,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
 <script src="/en/js/utils.js" defer></script><script src="/en/js/sidebar.js" defer></script><script src="/en/js/next-boot.js" defer></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
-<script src="/en/js/third-party/search/local-search.js" defer></script>
+  
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/en/js/search-ui.js" defer></script>
 
 
 
@@ -93,66 +95,79 @@
 
   <main class="main">
     <div class="column">
-      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+
+<div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="Toggle navigation bar" role="button">
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
+        <span class="toggle-line"></span><span class="toggle-line"></span><span class="toggle-line"></span>
     </div>
   </div>
-
   <div class="site-meta">
-
+    
     <a href="/en/" class="brand" rel="start">
       <i class="logo-line"></i>
       <p class="site-title">YoungForest's blog</p>
       <i class="logo-line"></i>
     </a>
+    
+    
   </div>
-
   <div class="site-nav-right">
-    <div class="toggle popup-trigger" aria-label="Search" role="button">
-        <i class="fa fa-search fa-fw fa-lg"></i>
-    </div>
+    
+      <button type="button" class="toggle popup-trigger" data-search-trigger aria-label="Search" hidden><i class="fa fa-search fa-fw fa-lg" aria-hidden="true"></i></button>
+      <a class="toggle search-archive-fallback" data-search-fallback href="/en/archives/" aria-label="Browse archive"><i class="fa fa-list fa-fw fa-lg" aria-hidden="true"></i></a>
+    
   </div>
 </div>
 
 
 
+
+
 <nav class="site-nav">
   <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/en/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-start-here"><a href="/en/start-here/" rel="section"><i class="fa fa-compass fa-fw"></i>Start here</a></li><li class="menu-item menu-item-topics"><a href="/en/topics/" rel="section"><i class="fa fa-th fa-fw"></i>Topics</a></li><li class="menu-item menu-item-subscribe"><a href="/en/subscribe/" rel="section"><i class="fa fa-rss fa-fw"></i>Subscribe</a></li><li class="menu-item menu-item-about"><a href="/en/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-中文"><a href="https://youngforest.github.io/" rel="section"><i class="fa fa-globe fa-fw"></i>中文</a></li>
+    
       <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
-        </a>
+        <button type="button" class="popup-trigger" data-search-trigger hidden>
+          <i class="fa fa-search fa-fw" aria-hidden="true"></i>Search
+        </button>
+        <a data-search-fallback href="/en/archives/">Browse archive</a>
       </li>
+    
   </ul>
 </nav>
 
 
 
-  <div class="search-pop-overlay">
-    <div class="popup search-popup">
-      <div class="search-header">
-        <span class="search-icon">
-          <i class="fa fa-search"></i>
-        </span>
-        <div class="search-input-container">
-          <input autocomplete="off" autocapitalize="off" maxlength="80"
-                placeholder="Searching..." spellcheck="false"
-                type="search" class="search-input">
-        </div>
-        <span class="popup-btn-close" role="button">
-          <i class="fa fa-times-circle"></i>
-        </span>
-      </div>
-      <div class="search-result-container">
-        <div class="search-result-icon">
-          <i class="fa fa-spinner fa-pulse fa-5x"></i>
-        </div>
-      </div>
+
+<dialog class="search-popup search-dialog" id="site-search" aria-labelledby="site-search-title">
+  <h2 class="search-visually-hidden" id="site-search-title">Search this blog</h2>
+  <div class="search-header">
+    <span class="search-icon" aria-hidden="true"><i class="fa fa-search"></i></span>
+    <div class="search-input-container">
+      <label class="search-visually-hidden" for="site-search-input">Search English posts</label>
+      <input id="site-search-input" autocomplete="off" autocapitalize="off" maxlength="80" placeholder="Searching..." spellcheck="false" type="search" class="search-input">
     </div>
+    <button class="popup-btn-close" type="button" aria-label="Close search"><i class="fa fa-times" aria-hidden="true"></i></button>
   </div>
+  <div class="search-scroll">
+    <p class="search-status" role="status" aria-live="polite" aria-atomic="true"
+       data-empty="Search titles and article text. This searches English posts." data-loading="Loading search data…" data-none="No matching posts. Try a shorter query or browse the indexes."
+       data-error="Search data could not be loaded. Retry or browse the archive." data-library-error="The search component could not be loaded. Reload this page or browse the archive.">Search titles and article text. This searches English posts.</p>
+    <div class="search-actions">
+      <button type="button" class="search-retry" hidden>Retry</button>
+      <button type="button" class="search-reload" hidden>Reload page</button>
+    </div>
+    <nav class="search-browse" aria-label="Or browse">
+      <a href="/en/archives/">Browse archive</a>
+      <a href="/en/topics/">Topics</a>
+      <a href="/en/reading/">Books and screen notes</a>
+      <a href="https://youngforest.github.io/" lang="zh-CN">中文博客</a>
+    </nav>
+    <div class="search-result-container" id="site-search-results"></div>
+  </div>
+</dialog>
 
 </header>
         
@@ -344,11 +359,11 @@
   <img src="/en/images/ai/Alibaba-Ant-backend-intern-interview/en-hero.webp" alt="Forest carries algorithm blocks and project tools through four workshop gateways as hash buckets, matrix tiles, and data pipes become progressively deeper and more complex" width="1536" height="864" decoding="async">
 </figure>
 <span id="more"></span>
-<h2 id="First-Interview">First Interview</h2>
+<h2 id="First-Interview">First Interview<a class="section-link" href="#First-Interview" aria-label="Link to section: First Interview"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>time: 2020-03-09 16:45:44</p>
-<h3 id="Resume-Experience">Resume Experience</h3>
+<h3 id="Resume-Experience">Resume Experience<a class="section-link" href="#Resume-Experience" aria-label="Link to section: Resume Experience"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h3>
 <p>Introduced each project experience. The interviewer asked questions at any time based on the projects, such as knowledge around RESTful API, SOAP, and so on.</p>
-<h3 id="Computer-Science-Fundamentals">Computer Science Fundamentals</h3>
+<h3 id="Computer-Science-Fundamentals">Computer Science Fundamentals<a class="section-link" href="#Computer-Science-Fundamentals" aria-label="Link to section: Computer Science Fundamentals"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h3>
 <p>Implementation of HashMap</p>
 <ul>
 <li>How is a hash value mapped into buckets???</li>
@@ -356,13 +371,13 @@
 <li>Expansion mechanism and amortized complexity</li>
 </ul>
 <p>Java unboxing and boxing mechanism. At first I did not react and said I did not know. With the interviewer’s hint, I finally understood that it was about the relationship between primitive types and object types. Because the materials I had read before were all in English, <code>box</code> and <code>unbox</code>, I was not very sensitive to the Chinese terms.</p>
-<h3 id="Algorithm-Questions">Algorithm Questions</h3>
+<h3 id="Algorithm-Questions">Algorithm Questions<a class="section-link" href="#Algorithm-Questions" aria-label="Link to section: Algorithm Questions"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h3>
 <p>The recurrence formula for edit distance.</p>
 <p>K-means algorithm. I did not answer it well. I had studied machine learning a long time ago, but because I had put it aside for too long, I had basically forgotten it.</p>
-<h3 id="Questions-for-the-Interviewer">Questions for the Interviewer</h3>
+<h3 id="Questions-for-the-Interviewer">Questions for the Interviewer<a class="section-link" href="#Questions-for-the-Interviewer" aria-label="Link to section: Questions for the Interviewer"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h3>
 <p>My question for the interviewer: the position I applied for is backend development. Do I need to review machine learning algorithms?</p>
 <p>Answer: this depends on the company’s product line. Ant Financial’s products are closely related to machine learning. Development does not require deep understanding of machine learning, but it does require basic understanding. If you know it, it is a plus.</p>
-<h2 id="Second-Interview">Second Interview</h2>
+<h2 id="Second-Interview">Second Interview<a class="section-link" href="#Second-Interview" aria-label="Link to section: Second Interview"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>time: 2020-03-24 16:20:56</p>
 <p>It had already been two weeks since the first interview. Yesterday I received a call and scheduled a phone interview for 3 p.m. today. It lasted half an hour.</p>
 <p>SenseTime internship project.</p>
@@ -378,7 +393,7 @@
 </ul>
 <p>Career planning.</p>
 <p>Overall I probably did not answer very well. The interviewer urged me to complete the written test, otherwise he could only ask about the content on my resume. After the written test, someone would contact me again. I was not in a very good state this afternoon and did not perform well. There was no hand-written coding section. Bad review~</p>
-<h2 id="Written-Test">Written Test</h2>
+<h2 id="Written-Test">Written Test<a class="section-link" href="#Written-Test" aria-label="Link to section: Written Test"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>Alibaba has multiple written tests. The one I took was on 3.25.</p>
 <p>The written test was not difficult. It was done on NowCoder, with two algorithm questions, both around LeetCode medium difficulty. I got full marks, which seemingly made Alibaba think I was quite good. The later process went very smoothly, and they especially wanted me to join. Many colleagues and leads added me on WeChat and called to persuade me. So when I finally rejected Alibaba’s offer, I actually felt pretty embarrassed.</p>
 <blockquote>
@@ -405,7 +420,7 @@ There are q queries asking whether the value at a specific position, using 1-bas
 <p>Time complexity: O(N * M),<br>
 Space complexity: O(N * M).</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;functional&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">using</span> ll = <span class="type">long</span> <span class="type">long</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> INF = <span class="number">0x3f3f3f3f</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> n, m, q;</span><br><span class="line">    cin &gt;&gt;  n &gt;&gt; m &gt;&gt; q;</span><br><span class="line">    vector&lt;vector&lt;<span class="type">int</span>&gt;&gt; <span class="built_in">A</span>(n, <span class="built_in">vector</span>&lt;<span class="type">int</span>&gt; (m, INF));</span><br><span class="line">    <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">row</span><span class="params">(n, <span class="number">-1</span>)</span></span>;</span><br><span class="line">    <span class="function">vector&lt;<span class="type">bool</span>&gt; <span class="title">row_ok</span><span class="params">(n, <span class="literal">false</span>)</span></span>;</span><br><span class="line">    <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">col</span><span class="params">(m, <span class="number">-1</span>)</span></span>;</span><br><span class="line">    <span class="function">vector&lt;<span class="type">bool</span>&gt; <span class="title">col_ok</span><span class="params">(m, <span class="literal">false</span>)</span></span>;</span><br><span class="line">    function&lt;<span class="type">void</span>(<span class="type">int</span>, <span class="type">int</span>, <span class="type">int</span>)&gt; fill = [&amp;](<span class="type">int</span> i, <span class="type">int</span> j, <span class="type">int</span> value) -&gt; <span class="type">void</span> &#123;</span><br><span class="line">        A[i][j] = value;</span><br><span class="line">        <span class="keyword">if</span> (col_ok[j] &amp;&amp; row_ok[i]) &#123;</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">if</span> (!col_ok[j]) &#123;</span><br><span class="line">                <span class="keyword">if</span> (col[j] == <span class="number">-1</span> || col[j] == i) &#123;</span><br><span class="line">                    col[j] = i;</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    col_ok[j] = <span class="literal">true</span>;</span><br><span class="line">                    <span class="type">int</span> diff = (A[i][j] - A[col[j]][j]) / (i - col[j]);</span><br><span class="line">                    <span class="keyword">for</span> (<span class="type">int</span> r = i - <span class="number">1</span>; r &gt;= <span class="number">0</span>; --r) &#123;</span><br><span class="line">                        <span class="built_in">fill</span>(r, j, A[r + <span class="number">1</span>][j] - diff);</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">for</span> (<span class="type">int</span> r = i + <span class="number">1</span>; r &lt; n; ++r) &#123;</span><br><span class="line">                        <span class="built_in">fill</span>(r, j, A[r - <span class="number">1</span>][j] + diff);</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (!row_ok[i]) &#123;</span><br><span class="line">                <span class="keyword">if</span> (row[i] == <span class="number">-1</span> || row[i] == j) &#123;</span><br><span class="line">                    row[i] = j;</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    row_ok[i] = <span class="literal">true</span>;</span><br><span class="line">                    <span class="type">int</span> diff = (A[i][j] - A[i][row[i]]) / (j - row[i]);</span><br><span class="line">                    <span class="keyword">for</span> (<span class="type">int</span> c = j - <span class="number">1</span>; c &gt;= <span class="number">0</span>; --c) &#123;</span><br><span class="line">                        <span class="built_in">fill</span>(i, c, A[i][c + <span class="number">1</span>] - diff);</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">for</span> (<span class="type">int</span> c = j + <span class="number">1</span>; c &lt; m; ++c) &#123;</span><br><span class="line">                        <span class="built_in">fill</span>(i, c, A[i][c - <span class="number">1</span>] + diff);</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; ++i) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; m; ++j) &#123;</span><br><span class="line">            <span class="type">int</span> v;</span><br><span class="line">            cin &gt;&gt; v;</span><br><span class="line">            <span class="keyword">if</span> (v != <span class="number">0</span>) &#123;</span><br><span class="line">                <span class="built_in">fill</span>(i, j, v);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; q; ++i) &#123;</span><br><span class="line">        <span class="type">int</span> r, c;</span><br><span class="line">        cin &gt;&gt; r &gt;&gt; c;</span><br><span class="line">        --r;</span><br><span class="line">        --c;</span><br><span class="line">        <span class="keyword">if</span> (A[r][c] == INF) &#123;</span><br><span class="line">            cout &lt;&lt; <span class="string">&quot;Unknown&quot;</span> &lt;&lt; endl;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            cout &lt;&lt; A[r][c] &lt;&lt; endl;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="Assessment">Assessment</h2>
+<h2 id="Assessment">Assessment<a class="section-link" href="#Assessment" aria-label="Link to section: Assessment"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>The written test did not defeat me, but the assessment took me quite a bit of time.</p>
 <p>It mainly tested:</p>
 <ul>
@@ -417,7 +432,7 @@ Space complexity: O(N * M).</p>
 <p>It all relied on the knowledge and skills I learned in high school. IQ is just natural, I guess.</p>
 <p>I heard it is very similar to the civil service exam, the administrative aptitude test. Friends who know about it can take a look.</p>
 <p>They probably would not use the assessment to filter people anyway. This is not the civil service exam. Hand-written coding is the real way.</p>
-<h2 id="Third-Interview">Third Interview</h2>
+<h2 id="Third-Interview">Third Interview<a class="section-link" href="#Third-Interview" aria-label="Link to section: Third Interview"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>time: 2020-04-03 11:36:14</p>
 <p>Yesterday they called to schedule today’s phone interview at 11:30. We talked for 40 minutes.</p>
 <p>Yesterday afternoon I took Alibaba’s online written test, and in the evening I did the assessment.</p>
@@ -434,7 +449,7 @@ Space complexity: O(N * M).</p>
 <figure class="editorial-illustration">
   <img src="/en/images/ai/Alibaba-Ant-backend-intern-interview/en-fourth-round.webp" alt="Forest opens the nested layers of a project model with a magnifying glass while three unfamiliar question weights make an interview without coding feel unexpectedly heavy" width="1536" height="864" loading="lazy" decoding="async">
 </figure>
-<h2 id="Fourth-Interview">Fourth Interview</h2>
+<h2 id="Fourth-Interview">Fourth Interview<a class="section-link" href="#Fourth-Interview" aria-label="Link to section: Fourth Interview"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>time: 2020-04-03 15:22:02</p>
 <p>Last week HR scheduled this week’s cross interview with me. It was originally a video interview on Monday, but the interviewer went on a business trip, so they changed to another interviewer and rescheduled to Wednesday (4.1). Also, the new interviewer was very busy and did not set a specific time. He only asked me to wait for a call in the afternoon and evening. I received the call at 7:30 p.m. and talked for 40 minutes.</p>
 <p>Because it was only a phone interview, there was no hand-written coding. He only asked one simple algorithm question: bucket sort.</p>

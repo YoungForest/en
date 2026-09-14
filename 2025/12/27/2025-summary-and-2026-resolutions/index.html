@@ -58,8 +58,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
 <script src="/en/js/utils.js" defer></script><script src="/en/js/sidebar.js" defer></script><script src="/en/js/next-boot.js" defer></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
-<script src="/en/js/third-party/search/local-search.js" defer></script>
+  
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/en/js/search-ui.js" defer></script>
 
 
 
@@ -94,66 +96,79 @@
 
   <main class="main">
     <div class="column">
-      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+
+<div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="Toggle navigation bar" role="button">
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
+        <span class="toggle-line"></span><span class="toggle-line"></span><span class="toggle-line"></span>
     </div>
   </div>
-
   <div class="site-meta">
-
+    
     <a href="/en/" class="brand" rel="start">
       <i class="logo-line"></i>
       <p class="site-title">YoungForest's blog</p>
       <i class="logo-line"></i>
     </a>
+    
+    
   </div>
-
   <div class="site-nav-right">
-    <div class="toggle popup-trigger" aria-label="Search" role="button">
-        <i class="fa fa-search fa-fw fa-lg"></i>
-    </div>
+    
+      <button type="button" class="toggle popup-trigger" data-search-trigger aria-label="Search" hidden><i class="fa fa-search fa-fw fa-lg" aria-hidden="true"></i></button>
+      <a class="toggle search-archive-fallback" data-search-fallback href="/en/archives/" aria-label="Browse archive"><i class="fa fa-list fa-fw fa-lg" aria-hidden="true"></i></a>
+    
   </div>
 </div>
 
 
 
+
+
 <nav class="site-nav">
   <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/en/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-start-here"><a href="/en/start-here/" rel="section"><i class="fa fa-compass fa-fw"></i>Start here</a></li><li class="menu-item menu-item-topics"><a href="/en/topics/" rel="section"><i class="fa fa-th fa-fw"></i>Topics</a></li><li class="menu-item menu-item-subscribe"><a href="/en/subscribe/" rel="section"><i class="fa fa-rss fa-fw"></i>Subscribe</a></li><li class="menu-item menu-item-about"><a href="/en/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-中文"><a href="https://youngforest.github.io/" rel="section"><i class="fa fa-globe fa-fw"></i>中文</a></li>
+    
       <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
-        </a>
+        <button type="button" class="popup-trigger" data-search-trigger hidden>
+          <i class="fa fa-search fa-fw" aria-hidden="true"></i>Search
+        </button>
+        <a data-search-fallback href="/en/archives/">Browse archive</a>
       </li>
+    
   </ul>
 </nav>
 
 
 
-  <div class="search-pop-overlay">
-    <div class="popup search-popup">
-      <div class="search-header">
-        <span class="search-icon">
-          <i class="fa fa-search"></i>
-        </span>
-        <div class="search-input-container">
-          <input autocomplete="off" autocapitalize="off" maxlength="80"
-                placeholder="Searching..." spellcheck="false"
-                type="search" class="search-input">
-        </div>
-        <span class="popup-btn-close" role="button">
-          <i class="fa fa-times-circle"></i>
-        </span>
-      </div>
-      <div class="search-result-container">
-        <div class="search-result-icon">
-          <i class="fa fa-spinner fa-pulse fa-5x"></i>
-        </div>
-      </div>
+
+<dialog class="search-popup search-dialog" id="site-search" aria-labelledby="site-search-title">
+  <h2 class="search-visually-hidden" id="site-search-title">Search this blog</h2>
+  <div class="search-header">
+    <span class="search-icon" aria-hidden="true"><i class="fa fa-search"></i></span>
+    <div class="search-input-container">
+      <label class="search-visually-hidden" for="site-search-input">Search English posts</label>
+      <input id="site-search-input" autocomplete="off" autocapitalize="off" maxlength="80" placeholder="Searching..." spellcheck="false" type="search" class="search-input">
     </div>
+    <button class="popup-btn-close" type="button" aria-label="Close search"><i class="fa fa-times" aria-hidden="true"></i></button>
   </div>
+  <div class="search-scroll">
+    <p class="search-status" role="status" aria-live="polite" aria-atomic="true"
+       data-empty="Search titles and article text. This searches English posts." data-loading="Loading search data…" data-none="No matching posts. Try a shorter query or browse the indexes."
+       data-error="Search data could not be loaded. Retry or browse the archive." data-library-error="The search component could not be loaded. Reload this page or browse the archive.">Search titles and article text. This searches English posts.</p>
+    <div class="search-actions">
+      <button type="button" class="search-retry" hidden>Retry</button>
+      <button type="button" class="search-reload" hidden>Reload page</button>
+    </div>
+    <nav class="search-browse" aria-label="Or browse">
+      <a href="/en/archives/">Browse archive</a>
+      <a href="/en/topics/">Topics</a>
+      <a href="/en/reading/">Books and screen notes</a>
+      <a href="https://youngforest.github.io/" lang="zh-CN">中文博客</a>
+    </nav>
+    <div class="search-result-container" id="site-search-results"></div>
+  </div>
+</dialog>
 
 </header>
         
@@ -364,12 +379,12 @@
 <li><a href="https://youngforest.github.io/en/2018/10/03/my-4-years-college/">Four-Year University Review</a></li>
 </ul>
 <p>These important posts are all under the <a href="https://youngforest.github.io/en/categories/Diary/">Diary category</a> on my blog.</p>
-<h2 id="2025-Review">2025 Review</h2>
+<h2 id="2025-Review">2025 Review<a class="section-link" href="#2025-Review" aria-label="Link to section: 2025 Review"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <figure class="editorial-illustration">
   <img src="/en/images/ai/2025-summary-and-2026-resolutions/en-historical-process.webp" alt="Blank paper, scarce metal tokens, asset blocks, and a glowing network converge as vast weather over a coastal city" width="1536" height="864" loading="lazy" decoding="async">
 </figure>
-<h2 id="The-Historical-Process">The Historical Process</h2>
-<h3 id="The-Strong-Rise-of-the-Euro">The Strong Rise of the Euro</h3>
+<h2 id="The-Historical-Process">The Historical Process<a class="section-link" href="#The-Historical-Process" aria-label="Link to section: The Historical Process"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
+<h3 id="The-Strong-Rise-of-the-Euro">The Strong Rise of the Euro<a class="section-link" href="#The-Strong-Rise-of-the-Euro" aria-label="Link to section: The Strong Rise of the Euro"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h3>
 <p>The euro was unusually strong this year. It stood out among many currencies, with the <a target="_blank" rel="noopener" href="https://finance.yahoo.com/quote/%5EXDE/?guccounter=1&amp;guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&amp;guce_referrer_sig=AQAAAJUbguSB1BaqGq5vWs0tiw-jx2VWEsDBXS0XAiJecjmnBMgQXQ7z7GCMNdtKYpRuF7W-48gBtYwSsBy-XyNpFju2VPx_MPREoTOpHDMv5oaQAXSf5I0bnyKKuY4m-3X-kMEW3jKDB5_0uE4IjqBKxR-rwCX9wENjGEiCaxlOosru">Euro Currency Index (^XDE)</a> up 13.5% YTD. Everyone knows the joke about the yen’s depreciation:</p>
 <blockquote>
 <p>When the company first offered Xiaoming an annual salary equivalent to RMB 800,000, he hesitated. After all, Tokyo’s cost of living was high.<br>
@@ -378,12 +393,12 @@ Still, Xiaoming believes that as long as he gets promoted to Manager next time, 
 </blockquote>
 <p>Thinking back to when I came to Europe three years ago: the pandemic had just ended, the Russia-Ukraine war had broken out less than a year earlier, and the situation was still extremely tense. Winter was coming. Without Russian natural gas, the outside world was worried about whether Europe could get through the heating season. Under that backdrop, the euro exchange rate fell to around 6.8, which left a deep impression on me. At the time, everyone was dumping euros. Even Amazon China paid interns in euros, with a fixed euro amount converted into RMB for everyone, as if it wanted to clear out euros as quickly as possible.</p>
 <p>Today, the euro has risen to 8.2, and reached as high as 8.4 this year. In three years it has risen more than 20%. I guess I physically bottom-fished the euro. As an elder once said, “personal effort must be combined with the historical process.” Without noticing it, my net worth went up.</p>
-<h3 id="Major-Asset-Appreciation">Major Asset Appreciation</h3>
+<h3 id="Major-Asset-Appreciation">Major Asset Appreciation<a class="section-link" href="#Major-Asset-Appreciation" aria-label="Link to section: Major Asset Appreciation"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h3>
 <p>This year was a dollar depreciation cycle. Apart from the US dollar and US Treasuries, almost every other asset rose like crazy. It was a bull market: buy anything and it rose, only the magnitude differed. Gold hit a new all-time high above 4,300 USD/oz; silver more than doubled in a year; the S&amp;P 500 exceeded 6,800. Even the long-disappointed A-shares, Chinese concept stocks, Japanese stocks, and European stocks all recovered. The A-share market reached 3,900 points, and Alibaba and Tencent doubled. The Nikkei also hit an all-time high, ending Japan’s lost 30 years. Major currencies all rose more than ten percentage points against the US dollar in half a year. Now the world is full of stock-picking gods; even Buffett and the S&amp;P 500 are not enough to look at. The more prices rise, the more frightening it feels. The power of the dollar tide is indeed strong. Capital flows from the United States to overseas markets. It is foreseeable that other markets, especially emerging markets such as India and Southeast Asia, will perform well economically in the next few years.</p>
 <p>The only thing getting beaten up was probably Bitcoin. Its yearly candle closed down 6%, at 88k USD, though that was also down from an all-time high of 125k.</p>
 <p>In the mainstream dollar-based monetary system, this pattern of dollar decline and asset rise is sometimes also an illusion. For example, although the yen and RMB also rose against the US dollar, they did not stand out much compared with the euro. Some people price the S&amp;P 500 in gold and argue that it has not actually risen, that there is no bubble, and that its valuation is reasonable. That does not make too much sense either.</p>
 <p>From my Austrian-school perspective, I agree more with the gold standard, or the Bitcoin standard, and I oppose and doubt fiat money backed by government credit and Modern Monetary Theory. But living inside this system, I still hold US stocks, euro-denominated real estate, and debt, practicing Wu Zhijian’s asset allocation philosophy.</p>
-<h3 id="The-Third-Year-of-AI">The Third Year of AI</h3>
+<h3 id="The-Third-Year-of-AI">The Third Year of AI<a class="section-link" href="#The-Third-Year-of-AI" aria-label="Link to section: The Third Year of AI"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h3>
 <p>At the end of 2022, when the pandemic ended, ChatGPT 3 appeared out of nowhere. That was also when I left my motherland and escaped to Europe. What a coincidence. Being at Microsoft, I also had the advantage of proximity, and the feeling and impact of the AI wave have been very obvious. Now three years have passed, and the AI bubble and technological revolution that people once hyped are becoming more and more concrete.</p>
 <p>In 2025, I deeply felt AI’s improvement to productivity, work, and life, and also its irreplaceability. When the ChatGPT moment began in 2022, Musk predicted that by the end of 2025 AI’s capabilities would exceed those of a single expert human. Looking back now, the claim was not empty.</p>
 <p>Although talk about AI replacing human jobs has always been loud, I am not particularly worried. This kind of “Luddite” view has existed since ancient times. Looking through the rearview mirror of history, on the one hand, they cannot stop technological progress; on the other hand, the feared consequences either did not happen or were not that severe. For an individual and for humanity as a whole, the situations are different. For individuals, choice matters more than effort. It is actually like the restructuring of state-owned enterprises in the 1990s: the Northeast declined from then on, while Sichuan, Guangdong, Jiangsu, and Zhejiang, which also went through restructuring, instead took off. Recognize reality and make choices, rather than escaping or deceiving yourself.</p>
@@ -394,7 +409,7 @@ Still, Xiaoming believes that as long as he gets promoted to Manager next time, 
 <figure class="editorial-illustration">
   <img src="/en/images/ai/2025-summary-and-2026-resolutions/en-reading.webp" alt="A book-built observatory opens windows into history, economics, science, philosophy, and human journeys" width="1536" height="864" loading="lazy" decoding="async">
 </figure>
-<h2 id="Reading-Ten-Thousand-Books">Reading Ten Thousand Books</h2>
+<h2 id="Reading-Ten-Thousand-Books">Reading Ten Thousand Books<a class="section-link" href="#Reading-Ten-Thousand-Books" aria-label="Link to section: Reading Ten Thousand Books"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>This year I read more than 30 books. See my <a href="https://youngforest.github.io/en/categories/Book-Notes/">list of book reviews</a>. Ones I especially liked include:</p>
 <ul>
 <li><a href="https://youngforest.github.io/en/2025/12/31/The-World-I-see/">Fei-Fei Li’s <em>The Worlds I See</em></a></li>
@@ -449,13 +464,13 @@ Still, Xiaoming believes that as long as he gets promoted to Manager next time, 
 <li><em>Eternal Sunshine of the Spotless Mind</em></li>
 </ul>
 <p>Too painful. I cried so hard. Do not watch it alone, especially if you have an ex, have experienced the pain of being together, then breaking up, and trying to forget the other person. The film realizes this science-fiction premise of forgetting the other person, only to discover that you did not want to forget at all, and did not want to break up either.</p>
-<h2 id="Traveling-Ten-Thousand-Miles">Traveling Ten Thousand Miles</h2>
+<h2 id="Traveling-Ten-Thousand-Miles">Traveling Ten Thousand Miles<a class="section-link" href="#Traveling-Ten-Thousand-Miles" aria-label="Link to section: Traveling Ten Thousand Miles"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>This year I went to Taiwan, Madeira in Portugal, and revisited London and Marseille. I finally passed the road test, got my Irish driver’s license, and applied for an international driving permit.</p>
 <p>Driving around Taiwan was the peak of all my travels over the years. I went in order to Taipei, Hualien, Taitung, Kenting, Kaohsiung, Tainan, Chiayi, Taichung, and Alishan. At Taipei’s Tonghua Night Market, I unexpectedly ran into Jensen Huang. In Hualien, I caught a free Mayday charity concert. In Taitung, I experienced an earthquake, something I had not encountered for many years.</p>
 <p>For many mainland Chinese people, Taiwan is the most familiar yet most unfamiliar place. Familiar means that, through various official and unofficial propaganda and history, people of all ages have deep impressions of Taiwan. Unfamiliar means that long-term separation, the Great Firewall, information control, and publishing censorship mean mainlanders actually do not understand the real Taiwan. As for information from official sources and the simplified-Chinese internet, it is basically dominated by self-deception and burying one’s head in the sand.</p>
 <p>As Gao Xiaosong said, “Taiwan is China’s past, and also China’s future.” “Past” means that Taiwan, because of political and geographic isolation, has protected and preserved much traditional Chinese culture, including the prevalence of Buddhist temples, national treasures in the Palace Museums of Taipei and Chiayi, traditional Chinese characters, and citizen and street culture. “Future” means that Taiwan ended martial law in the late 1980s, achieved party rotation in the 1990s, democratized and liberalized, and now enjoys the prosperity of democracy and freedom 30 years later. I visited Chiang Kai-shek Memorial Hall. A small part tells Chiang’s history and displays various relics, while most of it has been transformed into exhibitions about Taiwan’s democracy movement. But if we talk about “Republic of China legacy,” Taiwan actually does not feel that strong. Even Double Ten Day is a public holiday, but there is little private celebration. The Chinatowns of Manhattan and Boston actually have more of that atmosphere, where Double Ten Day is celebrated grandly.</p>
 <p>Madeira was in June. The weather was clear, the people were warm, and road infrastructure was good, suitable for driving around the island and hiking. I also happened to catch a festival parade, which was extremely festive. Portugal and Spain have quite a few large islands in the Atlantic, very suitable for vacation. As former leaders of the Age of Discovery and former empires on which the sun never set, they now have these overseas territories left as witnesses to their glory.</p>
-<h2 id="2026-Outlook">2026 Outlook</h2>
+<h2 id="2026-Outlook">2026 Outlook<a class="section-link" href="#2026-Outlook" aria-label="Link to section: 2026 Outlook"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>Next year, I will continue to be a friend of time. I will persist in doing things with long-term returns: keep exercising, reading, watching films, traveling (I want to go to Japan, Korea, and Southeast Asia), talking with people face to face, and Just Keep Buying and Holding as an investment strategy.</p>
 <p>In addition, I am also considering and preparing for changing jobs. I am already in my fourth year at Microsoft, and my sign-on stocks have only one more year to vest. I am facing a sharp income drop. At today’s MSFT price of 413 EUR, my pre-tax income would fall by 25%, and after-tax income by 20%. That is despite the euro’s major appreciation this year. The main reason is that I joined in the second half of 2022, exactly at the low point of US stocks, at the start of a three-year bull market. I physically bottom-fished again. I have talked with my boss, colleagues, and online friends. The best solution is changing jobs. Although I quite enjoy my current role, my colleagues are all very nice, and fully remote jobs are rare now, I still need to have options.</p>
 <p>I gave up grinding LeetCode for two years. Picking it up again, I find it quite challenging. It is especially hard to be bug-free. I still remember many algorithms, but I have completely forgotten many corner cases. The interview bar is now even higher. Truly, rowing upstream: if you do not advance, you retreat.</p>

@@ -56,8 +56,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
 <script src="/en/js/utils.js" defer></script><script src="/en/js/sidebar.js" defer></script><script src="/en/js/next-boot.js" defer></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
-<script src="/en/js/third-party/search/local-search.js" defer></script>
+  
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/en/js/search-ui.js" defer></script>
 
 
 
@@ -92,66 +94,79 @@
 
   <main class="main">
     <div class="column">
-      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+
+<div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="Toggle navigation bar" role="button">
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
+        <span class="toggle-line"></span><span class="toggle-line"></span><span class="toggle-line"></span>
     </div>
   </div>
-
   <div class="site-meta">
-
+    
     <a href="/en/" class="brand" rel="start">
       <i class="logo-line"></i>
       <p class="site-title">YoungForest's blog</p>
       <i class="logo-line"></i>
     </a>
+    
+    
   </div>
-
   <div class="site-nav-right">
-    <div class="toggle popup-trigger" aria-label="Search" role="button">
-        <i class="fa fa-search fa-fw fa-lg"></i>
-    </div>
+    
+      <button type="button" class="toggle popup-trigger" data-search-trigger aria-label="Search" hidden><i class="fa fa-search fa-fw fa-lg" aria-hidden="true"></i></button>
+      <a class="toggle search-archive-fallback" data-search-fallback href="/en/archives/" aria-label="Browse archive"><i class="fa fa-list fa-fw fa-lg" aria-hidden="true"></i></a>
+    
   </div>
 </div>
 
 
 
+
+
 <nav class="site-nav">
   <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/en/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-start-here"><a href="/en/start-here/" rel="section"><i class="fa fa-compass fa-fw"></i>Start here</a></li><li class="menu-item menu-item-topics"><a href="/en/topics/" rel="section"><i class="fa fa-th fa-fw"></i>Topics</a></li><li class="menu-item menu-item-subscribe"><a href="/en/subscribe/" rel="section"><i class="fa fa-rss fa-fw"></i>Subscribe</a></li><li class="menu-item menu-item-about"><a href="/en/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-中文"><a href="https://youngforest.github.io/" rel="section"><i class="fa fa-globe fa-fw"></i>中文</a></li>
+    
       <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
-        </a>
+        <button type="button" class="popup-trigger" data-search-trigger hidden>
+          <i class="fa fa-search fa-fw" aria-hidden="true"></i>Search
+        </button>
+        <a data-search-fallback href="/en/archives/">Browse archive</a>
       </li>
+    
   </ul>
 </nav>
 
 
 
-  <div class="search-pop-overlay">
-    <div class="popup search-popup">
-      <div class="search-header">
-        <span class="search-icon">
-          <i class="fa fa-search"></i>
-        </span>
-        <div class="search-input-container">
-          <input autocomplete="off" autocapitalize="off" maxlength="80"
-                placeholder="Searching..." spellcheck="false"
-                type="search" class="search-input">
-        </div>
-        <span class="popup-btn-close" role="button">
-          <i class="fa fa-times-circle"></i>
-        </span>
-      </div>
-      <div class="search-result-container">
-        <div class="search-result-icon">
-          <i class="fa fa-spinner fa-pulse fa-5x"></i>
-        </div>
-      </div>
+
+<dialog class="search-popup search-dialog" id="site-search" aria-labelledby="site-search-title">
+  <h2 class="search-visually-hidden" id="site-search-title">Search this blog</h2>
+  <div class="search-header">
+    <span class="search-icon" aria-hidden="true"><i class="fa fa-search"></i></span>
+    <div class="search-input-container">
+      <label class="search-visually-hidden" for="site-search-input">Search English posts</label>
+      <input id="site-search-input" autocomplete="off" autocapitalize="off" maxlength="80" placeholder="Searching..." spellcheck="false" type="search" class="search-input">
     </div>
+    <button class="popup-btn-close" type="button" aria-label="Close search"><i class="fa fa-times" aria-hidden="true"></i></button>
   </div>
+  <div class="search-scroll">
+    <p class="search-status" role="status" aria-live="polite" aria-atomic="true"
+       data-empty="Search titles and article text. This searches English posts." data-loading="Loading search data…" data-none="No matching posts. Try a shorter query or browse the indexes."
+       data-error="Search data could not be loaded. Retry or browse the archive." data-library-error="The search component could not be loaded. Reload this page or browse the archive.">Search titles and article text. This searches English posts.</p>
+    <div class="search-actions">
+      <button type="button" class="search-retry" hidden>Retry</button>
+      <button type="button" class="search-reload" hidden>Reload page</button>
+    </div>
+    <nav class="search-browse" aria-label="Or browse">
+      <a href="/en/archives/">Browse archive</a>
+      <a href="/en/topics/">Topics</a>
+      <a href="/en/reading/">Books and screen notes</a>
+      <a href="https://youngforest.github.io/" lang="zh-CN">中文博客</a>
+    </nav>
+    <div class="search-result-container" id="site-search-results"></div>
+  </div>
+</dialog>
 
 </header>
         
@@ -344,10 +359,10 @@
   <img src="/en/images/ai/2021-summer-intern-interview-summary/en-hero.webp" alt="Forest carries a resume through eight branching interview tracks whose exits show rejection, pause, success, and waiting without words" width="1536" height="864" decoding="async">
 </figure>
 <span id="more"></span>
-<h2 id="Failed">Failed</h2>
-<h3 id="ByteDance">ByteDance</h3>
+<h2 id="Failed">Failed<a class="section-link" href="#Failed" aria-label="Link to section: Failed"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
+<h3 id="ByteDance">ByteDance<a class="section-link" href="#ByteDance" aria-label="Link to section: ByteDance"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h3>
 <p>I failed in the <a target="_blank" rel="noopener" href="https://www.nowcoder.com/discuss/371946">first round</a>. ByteDance is still a company I feel quite connected to and also really like. Last year, I interviewed once for a summer internship in the Ads system and went through a brutal four rounds, all the way to the lead, Lizhe. In the end, I did not go because the internship timing did not work. Last summer, I also joined ByteDance’s summer camp. Since this was my first interview in a long time, I was not prepared enough and did not perform very well. I failed to solve the algorithm problem, Edit Distance, so I was rejected in the first round.</p>
-<h3 id="Microsoft">Microsoft</h3>
+<h3 id="Microsoft">Microsoft<a class="section-link" href="#Microsoft" aria-label="Link to section: Microsoft"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h3>
 <p>I found a senior schoolmate who had previously worked at Microsoft, and through him contacted another colleague currently working at Microsoft for a referral. In 2018, I once interviewed with <a href="https://youngforest.github.io/en/2018/06/01/suzhou-microsoft-interview/">Microsoft Suzhou</a>. Back then my level was limited, and I unfortunately failed. This year I was full of ambition and wanted to avenge that defeat. Unexpectedly, I capsized again. But I did learn a very important lesson: do not brag about having participated in contests.</p>
 <p>In the first round, the interviewer asked me whether I had participated in any contests. At that time, I stupidly answered that I had done some LeetCode, Kick Start, Codeforces, and AtCoder. In reality, only LeetCode weekly contests were something I participated in often. I joined Kick Start’s monthly rounds if the time worked. The total number of contests I had done on the other platforms was only a few. Because of this, the interviewer misunderstood my level and thought I was at a Codeforces level; in reality, my Codeforces rating was not even 1500. He only asked me system design questions and did not ask me to handwrite code. Even though I had solved 900 problems on LeetCode, I had no chance to show it.</p>
 <p>The second-round interviewer started with two very difficult algorithm problems. They felt like problems prepared for ACM contestants. It was all because I bragged in the first round, and then got arranged into this second round.</p>
@@ -355,29 +370,29 @@
 <li><a target="_blank" rel="noopener" href="https://www.geeksforgeeks.org/closest-pair-of-points-using-divide-and-conquer-algorithm/">find the closest point pair</a></li>
 <li>find any line on a plane that divides <code>N</code> points into two parts with equal counts</li>
 </ul>
-<h2 id="Ended">Ended</h2>
-<h3 id="Google">Google</h3>
+<h2 id="Ended">Ended<a class="section-link" href="#Ended" aria-label="Link to section: Ended"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
+<h3 id="Google">Google<a class="section-link" href="#Google" aria-label="Link to section: Google"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h3>
 <p>I passed the first phone interview, but unfortunately, because of the pandemic, Google China canceled the summer internship program. My interview process therefore stopped after the first round.</p>
-<h3 id="DingTalk">DingTalk</h3>
+<h3 id="DingTalk">DingTalk<a class="section-link" href="#DingTalk" aria-label="Link to section: DingTalk"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h3>
 <p>Because I previously thought Ant Financial was an independent company, I applied to both Ant and DingTalk. When I officially submitted applications in Alibaba’s system, I learned that only one could be submitted. Since Ant was in Beijing, I chose Ant. Before being entered into the system, I participated in one interview.</p>
 <p><a target="_blank" rel="noopener" href="https://www.nowcoder.com/discuss/375152">DingTalk first round</a></p>
 <figure class="editorial-illustration">
   <img src="/en/images/ai/2021-summer-intern-interview-summary/en-successful-landing.webp" alt="Forest steps out of a looping interview maze onto a small lit platform while several routes continue moving behind him" width="1536" height="864" loading="lazy" decoding="async">
 </figure>
-<h2 id="Successfully-Landed">Successfully Landed</h2>
-<h3 id="Ant-Financial">Ant Financial</h3>
+<h2 id="Successfully-Landed">Successfully Landed<a class="section-link" href="#Successfully-Landed" aria-label="Link to section: Successfully Landed"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
+<h3 id="Ant-Financial">Ant Financial<a class="section-link" href="#Ant-Financial" aria-label="Link to section: Ant Financial"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h3>
 <p>Received a letter of intent. The situation for this summer is unclear, and I do not know whether I will be able to go back to Beijing for the internship.</p>
 <p><a target="_blank" rel="noopener" href="https://www.nowcoder.com/discuss/377900">First round</a><br>
 <a target="_blank" rel="noopener" href="https://www.nowcoder.com/discuss/390413">Second round</a><br>
 <a target="_blank" rel="noopener" href="https://www.nowcoder.com/discuss/392312">Third round</a><br>
 <a target="_blank" rel="noopener" href="https://www.nowcoder.com/discuss/399613">Fourth round</a></p>
-<h3 id="miHoYo">miHoYo</h3>
+<h3 id="miHoYo">miHoYo<a class="section-link" href="#miHoYo" aria-label="Link to section: miHoYo"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h3>
 <p>I passed the interviews, but because it was impossible for me to go to Shanghai for the internship during the summer vacation, I declined.</p>
 <p><a target="_blank" rel="noopener" href="https://www.nowcoder.com/discuss/387235">First round</a><br>
 <a target="_blank" rel="noopener" href="https://www.nowcoder.com/discuss/399642">Second round</a><br>
 <a target="_blank" rel="noopener" href="https://www.nowcoder.com/discuss/402613">Third round</a></p>
-<h2 id="In-Progress">In Progress</h2>
-<h3 id="Tencent">Tencent</h3>
+<h2 id="In-Progress">In Progress<a class="section-link" href="#In-Progress" aria-label="Link to section: In Progress"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
+<h3 id="Tencent">Tencent<a class="section-link" href="#Tencent" aria-label="Link to section: Tencent"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h3>
 <p>Because of the base location of the job, I interviewed with many different groups. I got as far as HR conversations, but there just happened to be no HC in Beijing.</p>
 <p><a target="_blank" rel="noopener" href="https://www.nowcoder.com/discuss/378468">First round</a><br>
 <a target="_blank" rel="noopener" href="https://www.nowcoder.com/discuss/384452">Second round</a><br>
@@ -388,9 +403,9 @@
 <a target="_blank" rel="noopener" href="https://www.nowcoder.com/discuss/406795">Eighth round</a><br>
 <a target="_blank" rel="noopener" href="https://www.nowcoder.com/discuss/409853">Ninth round</a><br>
 <a target="_blank" rel="noopener" href="https://www.nowcoder.com/discuss/419602">Written test</a></p>
-<h3 id="Huawei">Huawei</h3>
+<h3 id="Huawei">Huawei<a class="section-link" href="#Huawei" aria-label="Link to section: Huawei"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h3>
 <p>I participated in the online written test. It was not difficult, about LeetCode Medium level.</p>
-<h3 id="Meituan">Meituan</h3>
+<h3 id="Meituan">Meituan<a class="section-link" href="#Meituan" aria-label="Link to section: Meituan"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h3>
 <p>I participated in the online written test. The result was not good. There were five programming problems; I only got AC on two, passed half of two others, and could not debug the last one in the end. The problems did not look very difficult, but my result was really poor. I felt I was probably going to fail.<br>
 Meituan was also referred by a close senior schoolmate from my lab, so I felt I had failed to live up to expectations.</p>
 <h4 id="First-Round">First Round</h4>

@@ -55,8 +55,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
 <script src="/en/js/utils.js" defer></script><script src="/en/js/sidebar.js" defer></script><script src="/en/js/next-boot.js" defer></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
-<script src="/en/js/third-party/search/local-search.js" defer></script>
+  
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/en/js/search-ui.js" defer></script>
 
 
 
@@ -91,66 +93,79 @@
 
   <main class="main">
     <div class="column">
-      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+
+<div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="Toggle navigation bar" role="button">
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
+        <span class="toggle-line"></span><span class="toggle-line"></span><span class="toggle-line"></span>
     </div>
   </div>
-
   <div class="site-meta">
-
+    
     <a href="/en/" class="brand" rel="start">
       <i class="logo-line"></i>
       <p class="site-title">YoungForest's blog</p>
       <i class="logo-line"></i>
     </a>
+    
+    
   </div>
-
   <div class="site-nav-right">
-    <div class="toggle popup-trigger" aria-label="Search" role="button">
-        <i class="fa fa-search fa-fw fa-lg"></i>
-    </div>
+    
+      <button type="button" class="toggle popup-trigger" data-search-trigger aria-label="Search" hidden><i class="fa fa-search fa-fw fa-lg" aria-hidden="true"></i></button>
+      <a class="toggle search-archive-fallback" data-search-fallback href="/en/archives/" aria-label="Browse archive"><i class="fa fa-list fa-fw fa-lg" aria-hidden="true"></i></a>
+    
   </div>
 </div>
 
 
 
+
+
 <nav class="site-nav">
   <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/en/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-start-here"><a href="/en/start-here/" rel="section"><i class="fa fa-compass fa-fw"></i>Start here</a></li><li class="menu-item menu-item-topics"><a href="/en/topics/" rel="section"><i class="fa fa-th fa-fw"></i>Topics</a></li><li class="menu-item menu-item-subscribe"><a href="/en/subscribe/" rel="section"><i class="fa fa-rss fa-fw"></i>Subscribe</a></li><li class="menu-item menu-item-about"><a href="/en/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-中文"><a href="https://youngforest.github.io/" rel="section"><i class="fa fa-globe fa-fw"></i>中文</a></li>
+    
       <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
-        </a>
+        <button type="button" class="popup-trigger" data-search-trigger hidden>
+          <i class="fa fa-search fa-fw" aria-hidden="true"></i>Search
+        </button>
+        <a data-search-fallback href="/en/archives/">Browse archive</a>
       </li>
+    
   </ul>
 </nav>
 
 
 
-  <div class="search-pop-overlay">
-    <div class="popup search-popup">
-      <div class="search-header">
-        <span class="search-icon">
-          <i class="fa fa-search"></i>
-        </span>
-        <div class="search-input-container">
-          <input autocomplete="off" autocapitalize="off" maxlength="80"
-                placeholder="Searching..." spellcheck="false"
-                type="search" class="search-input">
-        </div>
-        <span class="popup-btn-close" role="button">
-          <i class="fa fa-times-circle"></i>
-        </span>
-      </div>
-      <div class="search-result-container">
-        <div class="search-result-icon">
-          <i class="fa fa-spinner fa-pulse fa-5x"></i>
-        </div>
-      </div>
+
+<dialog class="search-popup search-dialog" id="site-search" aria-labelledby="site-search-title">
+  <h2 class="search-visually-hidden" id="site-search-title">Search this blog</h2>
+  <div class="search-header">
+    <span class="search-icon" aria-hidden="true"><i class="fa fa-search"></i></span>
+    <div class="search-input-container">
+      <label class="search-visually-hidden" for="site-search-input">Search English posts</label>
+      <input id="site-search-input" autocomplete="off" autocapitalize="off" maxlength="80" placeholder="Searching..." spellcheck="false" type="search" class="search-input">
     </div>
+    <button class="popup-btn-close" type="button" aria-label="Close search"><i class="fa fa-times" aria-hidden="true"></i></button>
   </div>
+  <div class="search-scroll">
+    <p class="search-status" role="status" aria-live="polite" aria-atomic="true"
+       data-empty="Search titles and article text. This searches English posts." data-loading="Loading search data…" data-none="No matching posts. Try a shorter query or browse the indexes."
+       data-error="Search data could not be loaded. Retry or browse the archive." data-library-error="The search component could not be loaded. Reload this page or browse the archive.">Search titles and article text. This searches English posts.</p>
+    <div class="search-actions">
+      <button type="button" class="search-retry" hidden>Retry</button>
+      <button type="button" class="search-reload" hidden>Reload page</button>
+    </div>
+    <nav class="search-browse" aria-label="Or browse">
+      <a href="/en/archives/">Browse archive</a>
+      <a href="/en/topics/">Topics</a>
+      <a href="/en/reading/">Books and screen notes</a>
+      <a href="https://youngforest.github.io/" lang="zh-CN">中文博客</a>
+    </nav>
+    <div class="search-result-container" id="site-search-results"></div>
+  </div>
+</dialog>
 
 </header>
         
@@ -372,26 +387,26 @@
 <p>Interestingly, after the contest, LC China went down. Scores could not be fetched, and the Cruel Coding board defaulted everyone to 0 points. I felt bad for the students on the China site.</p>
 <p>Although it recovered afterward, the rank shown above is the rank after recovery, with China-site participants included.</p>
 <p>Because there was actually a Google Kick Start contest today, the number of participants was somewhat lower.</p>
-<h2 id="1979-Find-Greatest-Common-Divisor-of-Array">1979. Find Greatest Common Divisor of Array</h2>
+<h2 id="1979-Find-Greatest-Common-Divisor-of-Array">1979. Find Greatest Common Divisor of Array<a class="section-link" href="#1979-Find-Greatest-Common-Divisor-of-Array" aria-label="Link to section: 1979. Find Greatest Common Divisor of Array"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>A warm-up problem. Using C++ here is basically cheating, because it has a built-in <code>gcd</code> function. Although it is only supported starting from C<ins>17, LeetCode happens to support C</ins>17.</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">findGCD</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">        <span class="built_in">sort</span>(nums.<span class="built_in">begin</span>(), nums.<span class="built_in">end</span>());</span><br><span class="line">        <span class="type">const</span> <span class="type">int</span> smallest = *nums.<span class="built_in">begin</span>();</span><br><span class="line">        <span class="type">const</span> <span class="type">int</span> largest = *nums.<span class="built_in">rbegin</span>();</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">gcd</span>(largest, smallest);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <p>Time complexity: O(n log n + log max(nums)),<br>
 space complexity: O(1).</p>
 <p>Time complexity of gcd: <a target="_blank" rel="noopener" href="https://www.quora.com/What-is-the-time-complexity-of-Euclids-GCD-algorithm">link</a>.</p>
-<h2 id="1980-Find-Unique-Binary-String">1980. Find Unique Binary String</h2>
+<h2 id="1980-Find-Unique-Binary-String">1980. Find Unique Binary String<a class="section-link" href="#1980-Find-Unique-Binary-String" aria-label="Link to section: 1980. Find Unique Binary String"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>Since <code>n</code> is very small, brute force is enough.</p>
 <p>Converting a number to a binary string and converting a binary string to a number were both searched online on the spot.</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">string <span class="title">findDifferentBinaryString</span><span class="params">(vector&lt;string&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// total number: 2 ^ n,</span></span><br><span class="line">        <span class="comment">// 2 ^ 16 = 65536</span></span><br><span class="line">        <span class="type">const</span> <span class="type">int</span> n = nums.<span class="built_in">size</span>();</span><br><span class="line">        unordered_set&lt;<span class="type">int</span>&gt; seen;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">const</span> <span class="keyword">auto</span>&amp; i : nums) &#123;</span><br><span class="line">            seen.<span class="built_in">insert</span>(<span class="built_in">stoi</span>(i, <span class="number">0</span>, <span class="number">2</span>));</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; (<span class="number">1</span> &lt;&lt; n); ++i) &#123;</span><br><span class="line">            <span class="keyword">if</span> (seen.<span class="built_in">find</span>(i) == seen.<span class="built_in">end</span>()) &#123;</span><br><span class="line">                <span class="keyword">return</span> std::<span class="built_in">bitset</span>&lt;<span class="number">16</span>&gt;(i).<span class="built_in">to_string</span>().<span class="built_in">substr</span>(<span class="number">16</span> - n);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <p>Time complexity: O(sum(nums[i].length) + 2 ^ n),<br>
 space complexity: O(n).</p>
-<h2 id="1981-Minimize-the-Difference-Between-Target-and-Chosen-Elements">1981. Minimize the Difference Between Target and Chosen Elements</h2>
+<h2 id="1981-Minimize-the-Difference-Between-Target-and-Chosen-Elements">1981. Minimize the Difference Between Target and Chosen Elements<a class="section-link" href="#1981-Minimize-the-Difference-Between-Target-and-Chosen-Elements" aria-label="Link to section: 1981. Minimize the Difference Between Target and Chosen Elements"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>Use DP to enumerate all possible sums, then find the closest one.</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">minimizeTheDifference</span><span class="params">(vector&lt;vector&lt;<span class="type">int</span>&gt;&gt;&amp; mat, <span class="type">int</span> target)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 1 * m ~ 70 * m = 4900</span></span><br><span class="line">        <span class="comment">// 4900 * n * m = 24,010,000</span></span><br><span class="line">        <span class="type">const</span> <span class="type">int</span> MAXNUMBER = <span class="number">70</span>;</span><br><span class="line">        <span class="type">const</span> <span class="type">int</span> m = mat.<span class="built_in">size</span>();</span><br><span class="line">        <span class="function">vector&lt;<span class="type">bool</span>&gt; <span class="title">dp</span><span class="params">(MAXNUMBER * m + <span class="number">1</span>, <span class="literal">false</span>)</span></span>;</span><br><span class="line">        dp[<span class="number">0</span>] = <span class="literal">true</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; m; ++i) &#123;</span><br><span class="line">            <span class="function">vector&lt;<span class="type">bool</span>&gt; <span class="title">newdp</span><span class="params">(MAXNUMBER * m + <span class="number">1</span>, <span class="literal">false</span>)</span></span>;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> j = MAXNUMBER * m; j &gt;= <span class="number">0</span>; --j) &#123;</span><br><span class="line">                <span class="keyword">if</span> (dp[j]) &#123;</span><br><span class="line">                    <span class="keyword">for</span> (<span class="type">int</span> k : mat[i]) &#123;</span><br><span class="line">                        <span class="keyword">if</span> (j + k &lt;= MAXNUMBER * m) newdp[j + k] = <span class="literal">true</span>;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            dp = <span class="built_in">move</span>(newdp);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">int</span> i;</span><br><span class="line">        <span class="keyword">for</span> (i = <span class="number">0</span>; target + i &lt;= MAXNUMBER * m || target - i &gt;= <span class="number">0</span>; ++i) &#123;</span><br><span class="line">            <span class="keyword">if</span> ((target + i &lt;= MAXNUMBER * m &amp;&amp; dp[target + i]) || (target - i &gt;= <span class="number">0</span> &amp;&amp; target - i &lt;= MAXNUMBER * m &amp;&amp; dp[target - i])) <span class="keyword">return</span> i;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> i;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <p>Time complexity: O(m * max(mat[i][j]) * m * n) = 24,010,000,<br>
 space complexity: O(max(mat[i][j]) * m).</p>
 <p>One WA: because each row must select one number and cannot select nothing. Therefore <code>dp</code> needs a new array and cannot reuse the original one.</p>
 <p>One Runtime Error: <code>target</code> may be greater than <code>MAXNUMBER * m</code>, so an additional check is necessary.</p>
-<h2 id="1982-Find-Array-Given-Subset-Sums">1982. Find Array Given Subset Sums</h2>
+<h2 id="1982-Find-Array-Given-Subset-Sums">1982. Find Array Given Subset Sums<a class="section-link" href="#1982-Find-Array-Given-Subset-Sums" aria-label="Link to section: 1982. Find Array Given Subset Sums"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>Only 50 people in the world solved it. I thought about it for half an hour and still had no clue. I decisively gave up and helped my girlfriend make Coca-Cola chicken wings. Although I did not AK, I did get to eat delicious chicken.</p>
 <p>After the contest, I naturally referred to <a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/find-array-given-subset-sums/solution/cong-zi-ji-de-he-huan-yuan-shu-zu-by-lee-aj8o/">LingShen’s solution</a>. YYDS.</p>
 

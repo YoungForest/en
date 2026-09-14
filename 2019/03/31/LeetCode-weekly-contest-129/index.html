@@ -55,8 +55,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
 <script src="/en/js/utils.js" defer></script><script src="/en/js/sidebar.js" defer></script><script src="/en/js/next-boot.js" defer></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
-<script src="/en/js/third-party/search/local-search.js" defer></script>
+  
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/en/js/search-ui.js" defer></script>
 
 
 
@@ -91,66 +93,79 @@
 
   <main class="main">
     <div class="column">
-      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+
+<div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="Toggle navigation bar" role="button">
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
+        <span class="toggle-line"></span><span class="toggle-line"></span><span class="toggle-line"></span>
     </div>
   </div>
-
   <div class="site-meta">
-
+    
     <a href="/en/" class="brand" rel="start">
       <i class="logo-line"></i>
       <p class="site-title">YoungForest's blog</p>
       <i class="logo-line"></i>
     </a>
+    
+    
   </div>
-
   <div class="site-nav-right">
-    <div class="toggle popup-trigger" aria-label="Search" role="button">
-        <i class="fa fa-search fa-fw fa-lg"></i>
-    </div>
+    
+      <button type="button" class="toggle popup-trigger" data-search-trigger aria-label="Search" hidden><i class="fa fa-search fa-fw fa-lg" aria-hidden="true"></i></button>
+      <a class="toggle search-archive-fallback" data-search-fallback href="/en/archives/" aria-label="Browse archive"><i class="fa fa-list fa-fw fa-lg" aria-hidden="true"></i></a>
+    
   </div>
 </div>
 
 
 
+
+
 <nav class="site-nav">
   <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/en/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-start-here"><a href="/en/start-here/" rel="section"><i class="fa fa-compass fa-fw"></i>Start here</a></li><li class="menu-item menu-item-topics"><a href="/en/topics/" rel="section"><i class="fa fa-th fa-fw"></i>Topics</a></li><li class="menu-item menu-item-subscribe"><a href="/en/subscribe/" rel="section"><i class="fa fa-rss fa-fw"></i>Subscribe</a></li><li class="menu-item menu-item-about"><a href="/en/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-中文"><a href="https://youngforest.github.io/" rel="section"><i class="fa fa-globe fa-fw"></i>中文</a></li>
+    
       <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
-        </a>
+        <button type="button" class="popup-trigger" data-search-trigger hidden>
+          <i class="fa fa-search fa-fw" aria-hidden="true"></i>Search
+        </button>
+        <a data-search-fallback href="/en/archives/">Browse archive</a>
       </li>
+    
   </ul>
 </nav>
 
 
 
-  <div class="search-pop-overlay">
-    <div class="popup search-popup">
-      <div class="search-header">
-        <span class="search-icon">
-          <i class="fa fa-search"></i>
-        </span>
-        <div class="search-input-container">
-          <input autocomplete="off" autocapitalize="off" maxlength="80"
-                placeholder="Searching..." spellcheck="false"
-                type="search" class="search-input">
-        </div>
-        <span class="popup-btn-close" role="button">
-          <i class="fa fa-times-circle"></i>
-        </span>
-      </div>
-      <div class="search-result-container">
-        <div class="search-result-icon">
-          <i class="fa fa-spinner fa-pulse fa-5x"></i>
-        </div>
-      </div>
+
+<dialog class="search-popup search-dialog" id="site-search" aria-labelledby="site-search-title">
+  <h2 class="search-visually-hidden" id="site-search-title">Search this blog</h2>
+  <div class="search-header">
+    <span class="search-icon" aria-hidden="true"><i class="fa fa-search"></i></span>
+    <div class="search-input-container">
+      <label class="search-visually-hidden" for="site-search-input">Search English posts</label>
+      <input id="site-search-input" autocomplete="off" autocapitalize="off" maxlength="80" placeholder="Searching..." spellcheck="false" type="search" class="search-input">
     </div>
+    <button class="popup-btn-close" type="button" aria-label="Close search"><i class="fa fa-times" aria-hidden="true"></i></button>
   </div>
+  <div class="search-scroll">
+    <p class="search-status" role="status" aria-live="polite" aria-atomic="true"
+       data-empty="Search titles and article text. This searches English posts." data-loading="Loading search data…" data-none="No matching posts. Try a shorter query or browse the indexes."
+       data-error="Search data could not be loaded. Retry or browse the archive." data-library-error="The search component could not be loaded. Reload this page or browse the archive.">Search titles and article text. This searches English posts.</p>
+    <div class="search-actions">
+      <button type="button" class="search-retry" hidden>Retry</button>
+      <button type="button" class="search-reload" hidden>Reload page</button>
+    </div>
+    <nav class="search-browse" aria-label="Or browse">
+      <a href="/en/archives/">Browse archive</a>
+      <a href="/en/topics/">Topics</a>
+      <a href="/en/reading/">Books and screen notes</a>
+      <a href="https://youngforest.github.io/" lang="zh-CN">中文博客</a>
+    </nav>
+    <div class="search-result-container" id="site-search-results"></div>
+  </div>
+</dialog>
 
 </header>
         
@@ -343,13 +358,13 @@
 </figure>
 <span id="more"></span>
 <p>Last weekend, because I was preparing for Google’s Kick Start Round A, I skipped one LeetCode weekly contest. But I still made up the LeetCode problems that evening. The four problems were not easy, but after thinking through them I solved them independently. It was a small comfort after Kick Start had beaten me into silence.</p>
-<h2 id="1020-Partition-Array-Into-Three-Parts-With-Equal-Sum">1020. Partition Array Into Three Parts With Equal Sum</h2>
+<h2 id="1020-Partition-Array-Into-Three-Parts-With-Equal-Sum">1020. Partition Array Into Three Parts With Equal Sum<a class="section-link" href="#1020-Partition-Array-Into-Three-Parts-With-Equal-Sum" aria-label="Link to section: 1020. Partition Array Into Three Parts With Equal Sum"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>Intuition:<br>
 One pass. Find the pivots at 1/3 and 2/3 of the total sum.</p>
 <p>Time complexity: O(N),<br>
 space complexity: O(1).</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">bool</span> <span class="title">canThreePartsEqualSum</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; A)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> sum_all = <span class="built_in">accumulate</span>(A.<span class="built_in">begin</span>(), A.<span class="built_in">end</span>(), <span class="number">0</span>);</span><br><span class="line">        <span class="keyword">if</span> (sum_all %<span class="number">3</span> != <span class="number">0</span>) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        <span class="type">int</span> sum_3 = sum_all / <span class="number">3</span>;</span><br><span class="line">        <span class="type">int</span> sum_prefix = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; A.<span class="built_in">size</span>(); i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (sum_prefix == sum_3 &amp;&amp; sum_3 != sum_all)</span><br><span class="line">                sum_3 += sum_all / <span class="number">3</span>;</span><br><span class="line">            sum_prefix += A[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> sum_3 == sum_all;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<h2 id="1022-Smallest-Integer-Divisible-by-K">1022. Smallest Integer Divisible by K</h2>
+<h2 id="1022-Smallest-Integer-Divisible-by-K">1022. Smallest Integer Divisible by K<a class="section-link" href="#1022-Smallest-Integer-Divisible-by-K" aria-label="Link to section: 1022. Smallest Integer Divisible by K"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>Intuition:<br>
 Simulate the long-division process.<br>
 If the last digit is not 1, 3, 7, or 9, directly return -1. That means no valid <code>N</code> can be found.<br>
@@ -358,20 +373,20 @@ Since a solution must exist in that case, the loop will eventually terminate.</p
 <p>Time complexity: O(result.length),<br>
 space complexity: O(1).</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="function"><span class="type">bool</span> <span class="title">all11</span><span class="params">(<span class="type">int</span> i)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">while</span> (i &gt; <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (i % <span class="number">10</span> != <span class="number">1</span>) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">            i /= <span class="number">10</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">smallestRepunitDivByK</span><span class="params">(<span class="type">int</span> K)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (K % <span class="number">10</span> != <span class="number">1</span> &amp;&amp; K % <span class="number">10</span> != <span class="number">3</span> &amp;&amp; K % <span class="number">10</span> != <span class="number">7</span> &amp;&amp; K % <span class="number">10</span> != <span class="number">9</span>) <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">        <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">dictionary</span><span class="params">(<span class="number">10</span>)</span></span>;</span><br><span class="line">        <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">gewei</span><span class="params">(<span class="number">10</span>)</span></span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; dictionary.<span class="built_in">size</span>(); i++) &#123;</span><br><span class="line">            dictionary[i] = K * i;</span><br><span class="line">            gewei[K * i % <span class="number">10</span>] = i;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">int</span> ret = <span class="number">0</span>;</span><br><span class="line">        <span class="type">int</span> remain = K;</span><br><span class="line">        <span class="keyword">while</span> (!<span class="built_in">all11</span>(remain)) &#123;</span><br><span class="line">            <span class="type">int</span> last = remain % <span class="number">10</span>;</span><br><span class="line">            <span class="type">int</span> new_value = <span class="number">0</span>;</span><br><span class="line">            new_value = gewei[(<span class="number">11</span> - last) % <span class="number">10</span>] * K;</span><br><span class="line">            ret++;</span><br><span class="line">            remain = (new_value + remain) / <span class="number">10</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span> (remain &gt; <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (remain % <span class="number">10</span> != <span class="number">1</span>) <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">            remain /= <span class="number">10</span>;</span><br><span class="line">            ret++;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> ret;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<h2 id="1021-Best-Sightseeing-Pair">1021. Best Sightseeing Pair</h2>
+<h2 id="1021-Best-Sightseeing-Pair">1021. Best Sightseeing Pair<a class="section-link" href="#1021-Best-Sightseeing-Pair" aria-label="Link to section: 1021. Best Sightseeing Pair"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>Intuition:<br>
 Dynamic programming. The optimal substructure is:<br>
 the maximum score of a pair ending at the <code>i</code>-th element equals <code>max(pair formed by i and i-1, pair formed by i and the pair ending at i-1)</code>.</p>
 <p>Time complexity: O(N), one pass.<br>
 Space complexity: O(1). Although the code below is implemented as O(N), the DP process only uses <code>dp[i-1]</code>, so it can be further optimized to O(1).</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">maxScoreSightseeingPair</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; A)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> n = A.<span class="built_in">size</span>();</span><br><span class="line">        <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">dp</span><span class="params">(n, <span class="number">0</span>)</span></span>;</span><br><span class="line">        <span class="type">int</span> ret = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt; n; i++) &#123;</span><br><span class="line">            dp[i] = <span class="built_in">max</span>(A[i] + A[i - <span class="number">1</span>] - <span class="number">1</span>, dp[i - <span class="number">1</span>] - A[i - <span class="number">1</span>] + A[i] - <span class="number">1</span>);</span><br><span class="line">            ret = <span class="built_in">max</span>(ret, dp[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> ret;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<h2 id="1023-Binary-String-With-Substrings-Representing-1-To-N">1023. Binary String With Substrings Representing 1 To N</h2>
+<h2 id="1023-Binary-String-With-Substrings-Representing-1-To-N">1023. Binary String With Substrings Representing 1 To N<a class="section-link" href="#1023-Binary-String-With-Substrings-Representing-1-To-N" aria-label="Link to section: 1023. Binary String With Substrings Representing 1 To N"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>Intuition:<br>
 Build a table first, then query the table.</p>
 <p>Time complexity: O(max(S.length, N)),<br>
 space complexity: O(N).</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">bool</span> <span class="title">queryString</span><span class="params">(string S, <span class="type">int</span> N)</span> </span>&#123;</span><br><span class="line">        <span class="function">vector&lt;<span class="type">bool</span>&gt; <span class="title">contain</span><span class="params">(N + <span class="number">1</span>)</span></span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">size_t</span> i = <span class="number">0</span>; i &lt; S.<span class="built_in">size</span>(); i++) &#123;</span><br><span class="line">            <span class="type">int</span> value = S[i] - <span class="string">&#x27;0&#x27;</span>;</span><br><span class="line">            contain[value] = <span class="literal">true</span>;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">size_t</span> j = <span class="number">1</span>; j &lt; <span class="number">31</span> &amp;&amp; i + j &lt; S.<span class="built_in">size</span>(); j++) &#123;</span><br><span class="line">                value = (value &lt;&lt; <span class="number">1</span>) + S[i + j] - <span class="string">&#x27;0&#x27;</span>;</span><br><span class="line">                <span class="keyword">if</span> (value &lt;= N) contain[value] = <span class="literal">true</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= N; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (!contain[i]) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<h2 id="Postscript">Postscript</h2>
+<h2 id="Postscript">Postscript<a class="section-link" href="#Postscript" aria-label="Link to section: Postscript"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>I still have not organized my notes for Google Kick Start Round A. The three-hour contest was, in practice, only two hours for me. I solved the warm-up problem and the small test set of the second problem. In the last hour I had no clue at all, and I knew that even with more time I would not make a breakthrough, so I gave up. My rank was 600. It seems there was a bug in the contest system, and submissions were unavailable for the last 25 minutes; otherwise my rank might have dropped further, because many people submit another wave of code near the end.</p>
 <p>Kick Start happens once a month. I want to continue participating in Round B next time and keep taking the beating. According to Teacher Tang, for Google campus recruiting in China, only Rounds D and E matter. I am still far away! I still need to keep grinding problems and also fill in my knowledge of competitive programming and CS. Even if I do not get into Google in the end, the job-search result should not be bad.<br>
 Keep going, Forest!</p>

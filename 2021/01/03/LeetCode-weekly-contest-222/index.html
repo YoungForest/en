@@ -55,8 +55,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
 <script src="/en/js/utils.js" defer></script><script src="/en/js/sidebar.js" defer></script><script src="/en/js/next-boot.js" defer></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
-<script src="/en/js/third-party/search/local-search.js" defer></script>
+  
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/en/js/search-ui.js" defer></script>
 
 
 
@@ -91,66 +93,79 @@
 
   <main class="main">
     <div class="column">
-      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+
+<div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="Toggle navigation bar" role="button">
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
+        <span class="toggle-line"></span><span class="toggle-line"></span><span class="toggle-line"></span>
     </div>
   </div>
-
   <div class="site-meta">
-
+    
     <a href="/en/" class="brand" rel="start">
       <i class="logo-line"></i>
       <p class="site-title">YoungForest's blog</p>
       <i class="logo-line"></i>
     </a>
+    
+    
   </div>
-
   <div class="site-nav-right">
-    <div class="toggle popup-trigger" aria-label="Search" role="button">
-        <i class="fa fa-search fa-fw fa-lg"></i>
-    </div>
+    
+      <button type="button" class="toggle popup-trigger" data-search-trigger aria-label="Search" hidden><i class="fa fa-search fa-fw fa-lg" aria-hidden="true"></i></button>
+      <a class="toggle search-archive-fallback" data-search-fallback href="/en/archives/" aria-label="Browse archive"><i class="fa fa-list fa-fw fa-lg" aria-hidden="true"></i></a>
+    
   </div>
 </div>
 
 
 
+
+
 <nav class="site-nav">
   <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/en/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-start-here"><a href="/en/start-here/" rel="section"><i class="fa fa-compass fa-fw"></i>Start here</a></li><li class="menu-item menu-item-topics"><a href="/en/topics/" rel="section"><i class="fa fa-th fa-fw"></i>Topics</a></li><li class="menu-item menu-item-subscribe"><a href="/en/subscribe/" rel="section"><i class="fa fa-rss fa-fw"></i>Subscribe</a></li><li class="menu-item menu-item-about"><a href="/en/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-中文"><a href="https://youngforest.github.io/" rel="section"><i class="fa fa-globe fa-fw"></i>中文</a></li>
+    
       <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
-        </a>
+        <button type="button" class="popup-trigger" data-search-trigger hidden>
+          <i class="fa fa-search fa-fw" aria-hidden="true"></i>Search
+        </button>
+        <a data-search-fallback href="/en/archives/">Browse archive</a>
       </li>
+    
   </ul>
 </nav>
 
 
 
-  <div class="search-pop-overlay">
-    <div class="popup search-popup">
-      <div class="search-header">
-        <span class="search-icon">
-          <i class="fa fa-search"></i>
-        </span>
-        <div class="search-input-container">
-          <input autocomplete="off" autocapitalize="off" maxlength="80"
-                placeholder="Searching..." spellcheck="false"
-                type="search" class="search-input">
-        </div>
-        <span class="popup-btn-close" role="button">
-          <i class="fa fa-times-circle"></i>
-        </span>
-      </div>
-      <div class="search-result-container">
-        <div class="search-result-icon">
-          <i class="fa fa-spinner fa-pulse fa-5x"></i>
-        </div>
-      </div>
+
+<dialog class="search-popup search-dialog" id="site-search" aria-labelledby="site-search-title">
+  <h2 class="search-visually-hidden" id="site-search-title">Search this blog</h2>
+  <div class="search-header">
+    <span class="search-icon" aria-hidden="true"><i class="fa fa-search"></i></span>
+    <div class="search-input-container">
+      <label class="search-visually-hidden" for="site-search-input">Search English posts</label>
+      <input id="site-search-input" autocomplete="off" autocapitalize="off" maxlength="80" placeholder="Searching..." spellcheck="false" type="search" class="search-input">
     </div>
+    <button class="popup-btn-close" type="button" aria-label="Close search"><i class="fa fa-times" aria-hidden="true"></i></button>
   </div>
+  <div class="search-scroll">
+    <p class="search-status" role="status" aria-live="polite" aria-atomic="true"
+       data-empty="Search titles and article text. This searches English posts." data-loading="Loading search data…" data-none="No matching posts. Try a shorter query or browse the indexes."
+       data-error="Search data could not be loaded. Retry or browse the archive." data-library-error="The search component could not be loaded. Reload this page or browse the archive.">Search titles and article text. This searches English posts.</p>
+    <div class="search-actions">
+      <button type="button" class="search-retry" hidden>Retry</button>
+      <button type="button" class="search-reload" hidden>Reload page</button>
+    </div>
+    <nav class="search-browse" aria-label="Or browse">
+      <a href="/en/archives/">Browse archive</a>
+      <a href="/en/topics/">Topics</a>
+      <a href="/en/reading/">Books and screen notes</a>
+      <a href="https://youngforest.github.io/" lang="zh-CN">中文博客</a>
+    </nav>
+    <div class="search-result-container" id="site-search-results"></div>
+  </div>
+</dialog>
 
 </header>
         
@@ -368,19 +383,19 @@
   <img src="/en/images/ai/LeetCode-weekly-contest-222/en-hero.webp" alt="Dense-unit crates fill a truck first, food tokens pair into doubling trays, two gates divide prefix weights and mapped target sockets feed a longest rising rail" width="1536" height="864" decoding="async" fetchpriority="high">
 </figure>
 <span id="more"></span>
-<h2 id="5641-Maximum-Units-on-a-Truck">5641. Maximum Units on a Truck</h2>
+<h2 id="5641-Maximum-Units-on-a-Truck">5641. Maximum Units on a Truck<a class="section-link" href="#5641-Maximum-Units-on-a-Truck" aria-label="Link to section: 5641. Maximum Units on a Truck"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>Greedy. Sort boxes by capacity from large to small, then use the larger boxes first.</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">maximumUnits</span><span class="params">(vector&lt;vector&lt;<span class="type">int</span>&gt;&gt;&amp; boxTypes, <span class="type">int</span> truckSize)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// greedy, put larger boxes first</span></span><br><span class="line">        <span class="built_in">sort</span>(boxTypes.<span class="built_in">begin</span>(), boxTypes.<span class="built_in">end</span>(), [](<span class="type">const</span> <span class="keyword">auto</span>&amp; a, <span class="type">const</span> <span class="keyword">auto</span>&amp; b) -&gt; <span class="type">bool</span> &#123;</span><br><span class="line">            <span class="keyword">if</span> (a[<span class="number">1</span>] != b[<span class="number">1</span>]) <span class="keyword">return</span> a[<span class="number">1</span>] &gt; b[<span class="number">1</span>];</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">return</span> a[<span class="number">0</span>] &gt; b[<span class="number">0</span>];</span><br><span class="line">        &#125;);</span><br><span class="line">        <span class="type">int</span> ans = <span class="number">0</span>;</span><br><span class="line">        <span class="type">int</span> i = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (truckSize &gt; <span class="number">0</span> &amp;&amp; i &lt; boxTypes.<span class="built_in">size</span>()) &#123;</span><br><span class="line">            <span class="type">const</span> <span class="type">int</span> put = <span class="built_in">min</span>(truckSize, boxTypes[i][<span class="number">0</span>]);</span><br><span class="line">            truckSize -= put;</span><br><span class="line">            ans += boxTypes[i][<span class="number">1</span>] * put;</span><br><span class="line">            ++i;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <p>Time complexity: O(n log n), <code>n = boxTypes.size()</code><br>
 space complexity: O(log n), from quicksort’s internal recursion cost.</p>
-<h2 id="5642-Count-Good-Meals">5642. Count Good Meals</h2>
+<h2 id="5642-Count-Good-Meals">5642. Count Good Meals<a class="section-link" href="#5642-Count-Good-Meals" aria-label="Link to section: 5642. Count Good Meals"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>Similar to <code>two-sum</code>. Use a hashtable to maintain previously seen numbers, except the number of targets becomes 22.<br>
 From <code>2^0</code> to the largest <code>2^21</code>.</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">using</span> ll = <span class="type">int</span>;</span><br><span class="line">    <span class="type">const</span> <span class="type">int</span> maxBit = <span class="number">22</span>;</span><br><span class="line">    <span class="type">const</span> <span class="type">int</span> MOD = <span class="number">1e9</span> + <span class="number">7</span>;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">countPairs</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; deliciousness)</span> </span>&#123;</span><br><span class="line">        <span class="function">vector&lt;ll&gt; <span class="title">target</span><span class="params">(maxBit)</span></span>;</span><br><span class="line">        target[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt; maxBit; ++i) &#123;</span><br><span class="line">            target[i] = target[i<span class="number">-1</span>] * <span class="number">2</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        unordered_map&lt;ll, <span class="type">int</span>&gt; count;</span><br><span class="line">        <span class="type">int</span> ans = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (ll i : deliciousness) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; maxBit; ++j) &#123;</span><br><span class="line">                <span class="keyword">auto</span> it = count.<span class="built_in">find</span>(target[j] - i);</span><br><span class="line">                <span class="keyword">if</span> (it != count.<span class="built_in">end</span>()) &#123;</span><br><span class="line">                    ans = (ans + it-&gt;second) % MOD;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            ++count[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <p>Time complexity: O(22n),<br>
 space complexity: O(n).</p>
 <p>During the contest, I misestimated the maximum power. <code>2^20 + 2^20 = 2^21</code>, but I mistakenly estimated it as <code>2^40</code>. That caused two TLE penalties.</p>
-<h2 id="5643-Ways-to-Split-Array-Into-Three-Subarrays">5643. Ways to Split Array Into Three Subarrays</h2>
+<h2 id="5643-Ways-to-Split-Array-Into-Three-Subarrays">5643. Ways to Split Array Into Three Subarrays<a class="section-link" href="#5643-Ways-to-Split-Array-Into-Three-Subarrays" aria-label="Link to section: 5643. Ways to Split Array Into Three Subarrays"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>Enumerate each left subarray. Then use prefix sums and binary search to determine the size of the middle subarray.</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="type">const</span> <span class="type">int</span> MOD = <span class="number">1e9</span> + <span class="number">7</span>;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">waysToSplit</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">        <span class="type">const</span> <span class="type">int</span> n = nums.<span class="built_in">size</span>();</span><br><span class="line">        <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">presum</span><span class="params">(n + <span class="number">1</span>)</span></span>;</span><br><span class="line">        presum[<span class="number">0</span>] = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; ++i) &#123;</span><br><span class="line">            presum[i<span class="number">+1</span>] = presum[i] + nums[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">auto</span> binarySearchRightLessThanMid = [&amp;](<span class="type">int</span> lo, <span class="type">int</span> hi) -&gt; <span class="type">int</span> &#123;</span><br><span class="line">            <span class="comment">// [lo, hi)</span></span><br><span class="line">            <span class="type">const</span> <span class="type">int</span> begin = lo;</span><br><span class="line">            <span class="keyword">while</span> (lo &lt; hi) &#123;</span><br><span class="line">                <span class="comment">// [begin, mid), [mid, end)</span></span><br><span class="line">                <span class="type">const</span> <span class="type">int</span> mid = lo + (hi - lo) / <span class="number">2</span>;</span><br><span class="line">                <span class="type">const</span> <span class="type">int</span> rightSum = presum[n] - presum[mid];</span><br><span class="line">                <span class="type">const</span> <span class="type">int</span> midSum = presum[mid] - presum[begin];</span><br><span class="line">                <span class="keyword">if</span> (rightSum &lt; midSum) &#123;</span><br><span class="line">                    hi = mid;</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123; <span class="comment">// rightSum &gt;= midSum</span></span><br><span class="line">                    lo = mid + <span class="number">1</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> lo;</span><br><span class="line">        &#125;;</span><br><span class="line">        <span class="keyword">auto</span> binarySearchFirstLargeEqualThan = [&amp;](<span class="type">int</span> lo, <span class="type">int</span> hi, <span class="type">const</span> <span class="type">int</span> leftSum) -&gt; <span class="type">int</span> &#123;</span><br><span class="line">            <span class="comment">// [lo, hi)</span></span><br><span class="line">            <span class="type">const</span> <span class="type">int</span> begin = lo;</span><br><span class="line">            <span class="keyword">while</span> (lo &lt; hi) &#123;</span><br><span class="line">                <span class="comment">// [begin, mid)</span></span><br><span class="line">                <span class="type">const</span> <span class="type">int</span> mid = lo + (hi - lo) / <span class="number">2</span>;</span><br><span class="line">                <span class="type">const</span> <span class="type">int</span> midSum = presum[mid] - presum[begin];</span><br><span class="line">                <span class="keyword">if</span> (midSum &gt;= leftSum) &#123;</span><br><span class="line">                    hi = mid;</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123; <span class="comment">// rightSum &lt; midSum</span></span><br><span class="line">                    lo = mid + <span class="number">1</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> lo;</span><br><span class="line">        &#125;;</span><br><span class="line">        <span class="type">int</span> ans = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> left = <span class="number">1</span>; left &lt;= n - <span class="number">2</span>; ++left) &#123;</span><br><span class="line">            <span class="comment">// [0, left)</span></span><br><span class="line">            <span class="type">const</span> <span class="type">int</span> leftSum = presum[left];</span><br><span class="line">            <span class="comment">// [left, mid)</span></span><br><span class="line">            <span class="type">int</span> midLeft = <span class="built_in">binarySearchFirstLargeEqualThan</span>(left, n, leftSum);</span><br><span class="line">            <span class="keyword">if</span> (midLeft == left) midLeft = left + <span class="number">1</span>;</span><br><span class="line">            <span class="type">const</span> <span class="type">int</span> midRight = <span class="built_in">binarySearchRightLessThanMid</span>(left, n);</span><br><span class="line">            <span class="comment">// cout &lt;&lt; left &lt;&lt; &quot; &quot; &lt;&lt; leftSum &lt;&lt; &quot; &quot; &lt;&lt; midLeft &lt;&lt; &quot; &quot; &lt;&lt; midRight &lt;&lt; endl;</span></span><br><span class="line">            <span class="keyword">if</span> (midRight &gt; midLeft)</span><br><span class="line">                ans = (ans + (midRight - midLeft)) % MOD;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <p>Time complexity: O(n log n),<br>
@@ -391,7 +406,7 @@ space complexity: O(n).</p>
 <li>When the whole array is all 9s, the right array must be non-empty.</li>
 </ul>
 <p>In fact, since <code>midRight</code> and <code>midleft</code> are monotonically increasing, a <a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/ways-to-split-array-into-three-subarrays/solution/cong-shuang-zhi-zhen-dao-san-zhi-zhen-by-klrb/">three-pointer method</a> can further reduce the time complexity to O(n).</p>
-<h2 id="5644-Minimum-Operations-to-Make-a-Subsequence">5644. Minimum Operations to Make a Subsequence</h2>
+<h2 id="5644-Minimum-Operations-to-Make-a-Subsequence">5644. Minimum Operations to Make a Subsequence<a class="section-link" href="#5644-Minimum-Operations-to-Make-a-Subsequence" aria-label="Link to section: 5644. Minimum Operations to Make a Subsequence"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>Everyone learned and copied this one live during the contest. The reason I say that is because this problem can be transformed into another classic problem.</p>
 <p>First, observe that numbers in <code>arr</code> that do not appear in <code>target</code> are useless and can be deleted directly.<br>
 After deletion, <code>arr</code> is a permutation of <code>target</code> (not exactly, because some numbers may be duplicated in <code>arr</code>).<br>
@@ -403,7 +418,7 @@ Specifically, for this special LCS case involving a permutation, it can be trans
 <p>Time complexity: O(n log n), <code>n = target.size()</code><br>
 space complexity: O(target.size()).</p>
 <p>Because I copied the LIS template wrong, I got TLE 3 times. Because I initially used the naive O(mn) LCS solution, I got TLE 2 more times.</p>
-<h2 id="Postscript">Postscript</h2>
+<h2 id="Postscript">Postscript<a class="section-link" href="#Postscript" aria-label="Link to section: Postscript"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>Today was the first weekly contest of 2021, and it was a bit harder than usual.<br>
 Winter in Beijing is truly too cold. Getting up has become extremely difficult, my enthusiasm for life is also quite lacking, and my state is a little negative and sad.<br>
 I want to cheer up and become positive again, and begin as a striving Forest.<br>

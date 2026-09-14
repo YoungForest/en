@@ -55,8 +55,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
 <script src="/en/js/utils.js" defer></script><script src="/en/js/sidebar.js" defer></script><script src="/en/js/next-boot.js" defer></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
-<script src="/en/js/third-party/search/local-search.js" defer></script>
+  
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/en/js/search-ui.js" defer></script>
 
 
 
@@ -91,66 +93,79 @@
 
   <main class="main">
     <div class="column">
-      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+
+<div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="Toggle navigation bar" role="button">
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
+        <span class="toggle-line"></span><span class="toggle-line"></span><span class="toggle-line"></span>
     </div>
   </div>
-
   <div class="site-meta">
-
+    
     <a href="/en/" class="brand" rel="start">
       <i class="logo-line"></i>
       <p class="site-title">YoungForest's blog</p>
       <i class="logo-line"></i>
     </a>
+    
+    
   </div>
-
   <div class="site-nav-right">
-    <div class="toggle popup-trigger" aria-label="Search" role="button">
-        <i class="fa fa-search fa-fw fa-lg"></i>
-    </div>
+    
+      <button type="button" class="toggle popup-trigger" data-search-trigger aria-label="Search" hidden><i class="fa fa-search fa-fw fa-lg" aria-hidden="true"></i></button>
+      <a class="toggle search-archive-fallback" data-search-fallback href="/en/archives/" aria-label="Browse archive"><i class="fa fa-list fa-fw fa-lg" aria-hidden="true"></i></a>
+    
   </div>
 </div>
 
 
 
+
+
 <nav class="site-nav">
   <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/en/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-start-here"><a href="/en/start-here/" rel="section"><i class="fa fa-compass fa-fw"></i>Start here</a></li><li class="menu-item menu-item-topics"><a href="/en/topics/" rel="section"><i class="fa fa-th fa-fw"></i>Topics</a></li><li class="menu-item menu-item-subscribe"><a href="/en/subscribe/" rel="section"><i class="fa fa-rss fa-fw"></i>Subscribe</a></li><li class="menu-item menu-item-about"><a href="/en/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-中文"><a href="https://youngforest.github.io/" rel="section"><i class="fa fa-globe fa-fw"></i>中文</a></li>
+    
       <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
-        </a>
+        <button type="button" class="popup-trigger" data-search-trigger hidden>
+          <i class="fa fa-search fa-fw" aria-hidden="true"></i>Search
+        </button>
+        <a data-search-fallback href="/en/archives/">Browse archive</a>
       </li>
+    
   </ul>
 </nav>
 
 
 
-  <div class="search-pop-overlay">
-    <div class="popup search-popup">
-      <div class="search-header">
-        <span class="search-icon">
-          <i class="fa fa-search"></i>
-        </span>
-        <div class="search-input-container">
-          <input autocomplete="off" autocapitalize="off" maxlength="80"
-                placeholder="Searching..." spellcheck="false"
-                type="search" class="search-input">
-        </div>
-        <span class="popup-btn-close" role="button">
-          <i class="fa fa-times-circle"></i>
-        </span>
-      </div>
-      <div class="search-result-container">
-        <div class="search-result-icon">
-          <i class="fa fa-spinner fa-pulse fa-5x"></i>
-        </div>
-      </div>
+
+<dialog class="search-popup search-dialog" id="site-search" aria-labelledby="site-search-title">
+  <h2 class="search-visually-hidden" id="site-search-title">Search this blog</h2>
+  <div class="search-header">
+    <span class="search-icon" aria-hidden="true"><i class="fa fa-search"></i></span>
+    <div class="search-input-container">
+      <label class="search-visually-hidden" for="site-search-input">Search English posts</label>
+      <input id="site-search-input" autocomplete="off" autocapitalize="off" maxlength="80" placeholder="Searching..." spellcheck="false" type="search" class="search-input">
     </div>
+    <button class="popup-btn-close" type="button" aria-label="Close search"><i class="fa fa-times" aria-hidden="true"></i></button>
   </div>
+  <div class="search-scroll">
+    <p class="search-status" role="status" aria-live="polite" aria-atomic="true"
+       data-empty="Search titles and article text. This searches English posts." data-loading="Loading search data…" data-none="No matching posts. Try a shorter query or browse the indexes."
+       data-error="Search data could not be loaded. Retry or browse the archive." data-library-error="The search component could not be loaded. Reload this page or browse the archive.">Search titles and article text. This searches English posts.</p>
+    <div class="search-actions">
+      <button type="button" class="search-retry" hidden>Retry</button>
+      <button type="button" class="search-reload" hidden>Reload page</button>
+    </div>
+    <nav class="search-browse" aria-label="Or browse">
+      <a href="/en/archives/">Browse archive</a>
+      <a href="/en/topics/">Topics</a>
+      <a href="/en/reading/">Books and screen notes</a>
+      <a href="https://youngforest.github.io/" lang="zh-CN">中文博客</a>
+    </nav>
+    <div class="search-result-container" id="site-search-results"></div>
+  </div>
+</dialog>
 
 </header>
         
@@ -381,7 +396,7 @@ Overall, my rank first went down and then went up. It does not reflect a change 
   <img src="/en/images/ai/kick-start-2019-round-H/en-hero.webp" alt="A predawn puzzle cabinet links rising blank-paper steps, a diagonal tile loom and a balanced arrangement of coloured counters" width="1536" height="864" decoding="async" fetchpriority="high">
 </figure>
 <span id="more"></span>
-<h2 id="A-H-index">A. H-index</h2>
+<h2 id="A-H-index">A. H-index<a class="section-link" href="#A-H-index" aria-label="Link to section: A. H-index"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>The first time I tried it, I misunderstood the statement and thought it only asked for the final H-index. I simply wrote a binary search solution that used a decision problem to find the maximum value.<br>
 Later I realized that the result after each paper was needed, and then several bugs I wrote affected the time cost.</p>
 <p>Intuition:<br>
@@ -390,14 +405,14 @@ Here I used the ordered property of C++ STL <code>set</code> and the iterator st
 <p>Time complexity: O(N log N),<br>
 space complexity: O(N).</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;set&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;vector&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> MAX_N = <span class="number">1e5</span> + <span class="number">5</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">(<span class="type">const</span> vector&lt;<span class="type">int</span>&gt; &amp;A, <span class="type">int</span> N)</span> </span>&#123;</span><br><span class="line">    multiset&lt;<span class="type">int</span>, std::greater&lt;<span class="type">int</span>&gt;&gt; s;</span><br><span class="line">    <span class="type">int</span> ans = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">auto</span> it = s.<span class="built_in">begin</span>();</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; N; ++i) &#123;</span><br><span class="line">        <span class="type">int</span> come = A[i];</span><br><span class="line">        <span class="keyword">if</span> (come &gt; <span class="number">0</span>) &#123;</span><br><span class="line">            s.<span class="built_in">insert</span>(come);</span><br><span class="line">            <span class="keyword">if</span> (s.<span class="built_in">size</span>() == <span class="number">1</span>) &#123;</span><br><span class="line">                it = s.<span class="built_in">begin</span>();</span><br><span class="line">                <span class="keyword">if</span> (come &gt;= <span class="number">1</span>) &#123;</span><br><span class="line">                    ans = <span class="number">1</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span> (come &gt; *it) &#123;</span><br><span class="line">                --it;</span><br><span class="line">                <span class="comment">// cout &lt;&lt; &quot; --it &quot; &lt;&lt; *it &lt;&lt; &quot; &quot;;</span></span><br><span class="line">                <span class="comment">// if (next(it) != s.end()) &#123;</span></span><br><span class="line">                <span class="comment">//     cout &lt;&lt; &quot; next(it): &quot; &lt;&lt; *(next(it)) &lt;&lt; &quot; &quot;;</span></span><br><span class="line">                <span class="comment">// &#125;</span></span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (it != s.<span class="built_in">end</span>() &amp;&amp; <span class="built_in">next</span>(it) != s.<span class="built_in">end</span>() &amp;&amp; *<span class="built_in">next</span>(it) &gt;= ans + <span class="number">1</span>) &#123;</span><br><span class="line">                ++ans;</span><br><span class="line">                ++it;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        cout &lt;&lt; ans &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> T;</span><br><span class="line">    cin &gt;&gt; T;</span><br><span class="line">    <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">A</span><span class="params">(MAX_N)</span></span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> iCase = <span class="number">0</span>; iCase &lt; T; ++iCase) &#123;</span><br><span class="line">        <span class="type">int</span> N;</span><br><span class="line">        cin &gt;&gt; N;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; N; ++i) &#123;</span><br><span class="line">            cin &gt;&gt; A[i];</span><br><span class="line">        &#125;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;Case #&quot;</span> &lt;&lt; iCase + <span class="number">1</span> &lt;&lt; <span class="string">&quot;: &quot;</span>;</span><br><span class="line">        <span class="built_in">solve</span>(A, N);</span><br><span class="line">        cout &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="B-Diagonal-Puzzle">B. Diagonal Puzzle</h2>
+<h2 id="B-Diagonal-Puzzle">B. Diagonal Puzzle<a class="section-link" href="#B-Diagonal-Puzzle" aria-label="Link to section: B. Diagonal Puzzle"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>During the contest I tried to enumerate all flips through backtracking to find the minimum solution, with time complexity O(2 ^ (4 * N)). I did not expect even the smallest dataset to time out. So the solutions below were learned from the official Analysis after the contest.</p>
-<h3 id="Small-Test-Set">Small Test Set</h3>
+<h3 id="Small-Test-Set">Small Test Set<a class="section-link" href="#Small-Test-Set" aria-label="Link to section: Small Test Set"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h3>
 <p>There is no need to enumerate all flips. We can enumerate only the flips in one direction, then check whether every line in the other direction has the same color.<br>
 There are <code>2 * N - 1</code> flips parallel to the main diagonal, and also <code>2 * N - 1</code> flips perpendicular to the main diagonal.<br>
 The complexity of checking same color is <code>O(N ^ 2)</code>.<br>
 So the total time complexity is <code>O(2 ^ (2 * N - 1) * N ^ 2)</code>.</p>
-<h3 id="Large-Test-Set">Large Test Set</h3>
+<h3 id="Large-Test-Set">Large Test Set<a class="section-link" href="#Large-Test-Set" aria-label="Link to section: Large Test Set"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h3>
 <p>This solution is based on an interesting observation: if we determine the flips of the main diagonal and anti-diagonal, then in order to make everything white in the end, all other flips can be determined from that. When N is odd, it is the main diagonal and the secondary anti-diagonal. The cases for <code>N == 6, 7</code> are shown below.</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">\..../ \......</span><br><span class="line">.\../. .\..../</span><br><span class="line">..\/.. ..\../.</span><br><span class="line">../\.. ...\/..</span><br><span class="line">./..\. .../\..</span><br><span class="line">/....\ ../..\.</span><br><span class="line">       ./....\</span><br></pre></td></tr></table></figure>
 <p>So we can enumerate the flip states of the main diagonals, four cases in total, and then determine the other flips according to the colors of the other elements on the diagonals. Finally, check whether everything is white.<br>
@@ -420,7 +435,7 @@ The total time complexity is <code>O(N ^ 2)</code>.</p>
 <li>How to store and construct the Graph.</li>
 <li>When using DFS, you need to traverse all nodes, because the whole graph can be divided into multiple connected components. Starting DFS from only one root gives incomplete coloring.</li>
 </ul>
-<h2 id="C-Elevanagram">C. Elevanagram</h2>
+<h2 id="C-Elevanagram">C. Elevanagram<a class="section-link" href="#C-Elevanagram" aria-label="Link to section: C. Elevanagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg></a></h2>
 <p>For the small test set, <code>0 &lt;= A_i &lt;= 20</code>, we can use backtracking and try every positive/negative sign assignment.</p>
 <p>Time complexity: O(A_i ^ 9). With pruning, the complexity will be lower.<br>
 Space complexity: O(9).</p>
