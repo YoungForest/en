@@ -12,7 +12,23 @@
   <rights>All rights reserved 2026, YoungForest</rights>
   <subtitle>Software engineer writing about technology, reading, investing, and life</subtitle>
   <title>YoungForest's blog</title>
-  <updated>2026-09-01T16:00:00.000Z</updated>
+  <updated>2026-10-14T16:00:00.000Z</updated>
+  <entry>
+    <author>
+      <name>YoungForest</name>
+      <email>yangsen758@foxmail.com</email>
+    </author>
+    <category term="Book Notes" scheme="https://youngforest.github.io/en/categories/Book-Notes/"/>
+    <category term="Reading" scheme="https://youngforest.github.io/en/tags/Reading/"/>
+    <category term="Economics" scheme="https://youngforest.github.io/en/tags/Economics/"/>
+    <id>https://youngforest.github.io/en/2026/10/15/The-Price-of-Time/</id>
+    <link href="https://youngforest.github.io/en/2026/10/15/The-Price-of-Time/"/>
+    <link href="https://youngforest.github.io/en/en/images/books/The-Price-of-Time/cover.png" rel="enclosure"/>
+    <published>2026-10-14T16:00:00.000Z</published>
+    <summary>I agree with much of Edward Chancellor's criticism of low interest rates, but find some arguments overstated. The closing chapters impressed me most.</summary>
+    <title>The Price of Time: Agreeing with the Views, Less Convinced by the Arguments</title>
+    <updated>2026-10-14T16:00:00.000Z</updated>
+  </entry>
   <entry>
     <author>
       <name>YoungForest</name>
@@ -301,20 +317,5 @@
     <summary>Notes on multidisciplinary thinking, inversion, reading, and decisive action inspired by Poor Charlie's Almanack.</summary>
     <title>Poor Charlie's Almanack: The Essential Wit and Wisdom of Charles T. Munger</title>
     <updated>2024-08-07T14:35:33.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>YoungForest</name>
-      <email>yangsen758@foxmail.com</email>
-    </author>
-    <category term="Book Notes" scheme="https://youngforest.github.io/en/categories/Book-Notes/"/>
-    <category term="Reading" scheme="https://youngforest.github.io/en/tags/Reading/"/>
-    <category term="The Almanack of Naval Ravikant" scheme="https://youngforest.github.io/en/tags/The-Almanack-of-Naval-Ravikant/"/>
-    <id>https://youngforest.github.io/en/2024/07/27/The-Almanack-of-Naval-Ravikant/</id>
-    <link href="https://youngforest.github.io/en/2024/07/27/The-Almanack-of-Naval-Ravikant/"/>
-    <published>2024-07-27T12:35:07.000Z</published>
-    <summary>Notes on wealth, happiness, classic reading, and long-term consequences, connected with Atomic Habits, The Psychology of Money, and personal experience.</summary>
-    <title>The Almanack of Naval Ravikant: A Guide to Wealth and Happiness</title>
-    <updated>2024-07-27T12:35:07.000Z</updated>
   </entry>
 </feed>
